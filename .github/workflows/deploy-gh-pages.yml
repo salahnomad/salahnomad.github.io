@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  
   workflow_dispatch:
 
 permissions:
@@ -25,25 +24,36 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      
+
+      # ÉTAPE AJOUTÉE/NÉCESSAIRE
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Ou une autre version LTS
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.147.6' # Votre version exacte
-          extended: true         # Important pour SCSS
+          hugo-version: '0.147.6'
+          extended: true
 
-      - name: Build
-        run: hugo --minify 
+      - name: Build Hugo site # Renommé pour clarté, anciennement "Build"
+        run: hugo --minify
+
+      # ÉTAPE AJOUTÉE/NÉCESSAIRE
+      - name: Build Pagefind Index
+        run: npx pagefind --site public --output-subdir _pagefind
+        # Scanne le dossier 'public' et y ajoute le dossier '_pagefind'
 
       - name: Setup Pages
-        id: pages 
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public' 
-          
+          path: './public' # Le dossier 'public' doit contenir le site ET l'index Pagefind
+
   deploy:
     environment:
       name: github-pages
