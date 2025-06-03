@@ -1,0 +1,147 @@
+{{/* themes/salah-nomad-theme/layouts/index.html */}}
+{{ define "main" }}
+  {{ $showSidebar := .Site.Params.homepageSidebar | default true }}
+
+  {{ $mainSectionNames := .Site.Params.mainSections | default (slice "posts") }}
+  {{ $collectedPagesFromSections := slice }}
+  {{ range $sectionName := $mainSectionNames }}
+    {{ $section := where site.Sections "Section" $sectionName }}
+    {{ if $section }}
+      {{ $sectionPage := index $section 0 }}
+      {{ if $sectionPage }}
+        {{ $pagesInSection := $sectionPage.RegularPagesRecursive }}
+        {{ $collectedPagesFromSections = $collectedPagesFromSections | append $pagesInSection }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $validPages := slice }}
+  {{ range $page := $collectedPagesFromSections }}
+    {{ if and $page $page.IsPage }}
+      {{ $validPages = $validPages | append $page }}
+    {{ end }}
+  {{ end }}
+
+  {{ $sortedPages := $validPages.ByDate.Reverse }}
+
+  {{/* --- Définition des articles pour le Hero --- */}}
+  {{ $featuredArticle := false }}
+  {{ $secondaryFeaturedArticles := slice }}
+
+  {{ if ge (len $sortedPages) 1 }}
+    {{ $featuredArticle = index $sortedPages 0 }}
+    {{ if ge (len $sortedPages) 5 }} 
+      {{ $secondaryFeaturedArticles = $sortedPages | first 5 | after 1 }}
+    {{ else if ge (len $sortedPages) 2 }} 
+      {{ $secondaryFeaturedArticles = $sortedPages | first (len $sortedPages) | after 1 }} 
+    {{ end }}
+  {{ end }}
+  {{/* --- Fin Définition des articles pour le Hero --- */}}
+
+  {{ $pagesForGrid := $sortedPages }}
+
+  <div class="container homepage-layout-container {{ if $showSidebar }}has-sidebar-layout{{ else }}no-sidebar-layout{{ end }}">
+    <div class="homepage-main-content-area">
+
+      {{ if $featuredArticle }}
+      <section class="hero-featured-section">
+        <div class="hero-featured-grid">
+          <div class="hero-main-article">
+            <a href="{{ $featuredArticle.RelPermalink }}" class="hero-main-article-link">
+              {{/* Pour l'article principal, on s'attend à ce qu'il utilise 'image' ou 'featured_image' */}}
+              {{ $heroMainImageCandidate := $featuredArticle.Params.image | default ($featuredArticle.Params.featured_image | default .Site.Params.defaultPlaceholderImage) }}
+              {{ partial "responsive-image.html" (dict
+                  "src" $heroMainImageCandidate
+                  "alt" ($featuredArticle.Title | default "Image principale du Hero")
+                  "page" $featuredArticle
+                  "loading" "eager"
+                  "sizesKey" "heroMain"
+                  "class" "hero-main-image"
+                  "figureClass" "hero-main-image-figure"
+              )}}
+              <div class="hero-main-article-overlay">
+                <h2 class="hero-main-article-title">{{ $featuredArticle.Title }}</h2>
+              </div>
+            </a>
+            {{ $categoryName := "" }}{{ $categoryLink := "" }}
+            {{ if $featuredArticle.Params.categories }}
+              {{ $firstCategory := index $featuredArticle.Params.categories 0 }}{{ $categoryName = $firstCategory }}
+              {{ with site.GetPage (printf "categories/%s" ($firstCategory | urlize)) }}{{ $categoryLink = .Permalink }}{{ end }}
+            {{ else if $featuredArticle.Section }}
+              {{ $categoryName = $featuredArticle.Section | humanize | title }}
+              {{ with site.GetPage (printf "%s" ($featuredArticle.Section | urlize)) }}{{ $categoryLink = .Permalink }}{{ end }}
+            {{ end }}
+            {{ if $categoryName }}
+              <span class="hero-main-article-category">
+                {{ if $categoryLink }}<a href="{{ $categoryLink }}" class="hero-category-link">{{ $categoryName }}</a>{{ else }}{{ $categoryName }}{{ end }}
+              </span>
+            {{ end }}
+          </div>
+
+          {{ if $secondaryFeaturedArticles }}
+          <div class="hero-secondary-articles">
+            {{ range $idx, $article := $secondaryFeaturedArticles }}
+              <article class="hero-secondary-article-item hero-secondary-new-layout">
+                <div class="hero-secondary-content-left">
+                  <h3 class="hero-secondary-title small-hero-title">
+                    <a href="{{ $article.RelPermalink }}">{{ $article.Title }}</a>
+                  </h3>
+                  <div class="hero-secondary-meta">
+                    {{ $secCategoryName := "" }}{{ $secCategoryLink := "" }}
+                    {{ if $article.Params.categories }}{{ $firstSecCategory := index $article.Params.categories 0 }}{{ $secCategoryName = $firstSecCategory }}{{ with $.Site.GetPage (printf "categories/%s" ($firstSecCategory | urlize)) }}{{ $secCategoryLink = .Permalink }}{{ end }}
+                    {{ else if $article.Section }}{{ $secCategoryName = $article.Section | humanize | title }}{{ with $.Site.GetPage (printf "%s" ($article.Section | urlize)) }}{{ $secCategoryLink = .Permalink }}{{ end }}{{ end }}
+                    {{ if $secCategoryName }}<span class="hero-secondary-category">{{ if $secCategoryLink }}<a href="{{ $secCategoryLink }}">{{ $secCategoryName }}</a>{{ else }}{{ $secCategoryName }}{{ end }}</span>{{ end }}
+                    <time class="hero-secondary-date" datetime="{{ $article.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $article.Date.Format $.Site.Params.dateFormat }}</time>
+                  </div>
+                </div>
+                <a href="{{ $article.RelPermalink }}" class="hero-secondary-image-link-right">
+                  <div class="hero-secondary-image-wrap-right">
+                    {{ $img := "" }}
+                    {{/* MODIFIÉ ICI pour utiliser $article.Params.featured_image */}}
+                    {{ $imgCandidate := $article.Params.featured_image | default ($.Site.Params.defaultPlaceholderImage | default "/images/placeholders/placeholder-1x1.jpg") }}
+                    {{ $res := $article.Resources.GetMatch $imgCandidate }}
+                    {{ if not $res }}{{ $res = resources.Get $imgCandidate }}{{ end }}
+
+                    {{ if $res }}
+                        {{ $img = $res.Fill "100x70 Lanczos" }} 
+                    {{ end }}
+
+                    {{ if $img }}
+                        <img src="{{ $img.RelPermalink }}" alt="{{ $article.Title }}" class="hero-secondary-image-right">
+                    {{ else if strings.HasPrefix $imgCandidate "http" }}
+                         <img src="{{ $imgCandidate }}" alt="{{ $article.Title }}" class="hero-secondary-image-right external-image">
+                    {{ else }}
+                        <img src="{{ $imgCandidate | absURL }}" alt="{{ $article.Title }}" class="hero-secondary-image-right placeholder-image">
+                    {{ end }}
+                  </div>
+                </a>
+              </article>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <div class="post-list content-loop homepage-listing-list">
+        {{ $paginator := .Paginate $pagesForGrid }}
+        {{ if $paginator.Pages }}
+          {{ range $paginator.Pages }}
+            {{ partial "article-card.html" . }}
+          {{ end }}
+          {{ if gt $paginator.TotalPages 1 }}
+            <nav class="navigation pagination" role="navigation" aria-label="{{ i18n "postsNavigation" | default "Posts navigation" }}">
+                {{ template "_internal/pagination.html" . }}
+            </nav>
+          {{ end }}
+        {{ else }}
+          <p class="no-posts text-center">{{ i18n "noPostsHomepage" | default "No articles have been published on the homepage yet. Check back soon!" }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ if $showSidebar }}
+      {{ partial "sidebar.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,66 @@
+{{/* layouts/connect/linktree.html */}}
+{{ define "main" }}
+  <div class="linktree-page-wrapper">
+    <section class="linktree-header" {{ with .Site.Params.linktreeHeaderImage | default "/images/malaga-rooftop.jpg" }}style="background-image: url('{{ . | relURL }}');"{{ end }}>
+      <div class="header-content">
+        <h1>🌿 {{ .Site.Title }}</h1>
+        {{ with .Site.Params.description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </section>
+
+    <div class="linktree-container">
+      <div class="linktree-grid">
+        <div class="link-group">
+          <h2><span>🌍</span> {{ i18n "linktreeEssentialLinks" | default "Essential Links" }}</h2>
+          <a href="{{ "/" | relLangURL }}" class="link-card">
+            {{ with partial "icons/document.svg" . }}{{ . }}{{ else }}📝{{ end }}
+            <span>{{ i18n "linktreeLatestBlog" | default "Latest Blog Posts" }}</span>
+          </a>
+          <a href="{{ "/malaga-codex/" | relLangURL }}" class="link-card">
+            {{ with partial "icons/map.svg" . }}{{ . }}{{ else }}🗺️{{ end }}
+            <span>{{ i18n "linktreeMalagaCodex" | default "Málaga Codex" }}</span>
+          </a>
+          {{/*
+          <a href="/shop/" class="link-card">
+            {{ with partial "icons/cart.svg" . }}{{ . }}{{ else }}🛒{{ end }}
+            <span>{{ i18n "linktreeShop" | default "Ritual Hammam Shop" }}</span>
+          </a> 
+          */}}
+        </div>
+
+        {{ $socialLinks := slice }}
+        {{ range .Site.Params.social_links }}
+          {{ if .subtitle }}
+            {{ $socialLinks = $socialLinks | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $socialLinks) 0 }}
+          <div class="link-group">
+            <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></span> {{ i18n "linktreeConnect" | default "Connect" }}</h2>
+            {{ range $socialLinks }}
+              <a href="{{ .url | safeURL }}" class="link-card social-link-card" target="_blank" rel="noopener noreferrer">
+                <span class="link-card-icon">{{ with partial .iconPartial . }}{{ . }}{{ else }}{{ .name }}{{ end }}</span>
+                <div class="link-card-text">
+                  <strong>{{ .name }}</strong>
+                  <small>{{ .subtitle }}</small>
+                </div>
+                <span class="link-card-arrow">→</span>
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div> 
+    </div> 
+
+    <footer class="linktree-footer">
+      {{ with .Site.Params.linktreeFooterText | default "« Want more rooted nomad insights? [Start here](/about/) »" }}
+        <p>{{ . | $.Page.RenderString }}</p>
+      {{ end }}
+      {{ with .Site.Params.linktreeAffiliateDisclaimer | default "Some links may be affiliates, gently nourishing this caravan – thanks for your support!" }}
+        <small>{{ . }}</small>
+      {{ end }}
+    </footer>
+  </div> 
+{{ end }} 
+{{ define "sidebar" }}{{ end }} 

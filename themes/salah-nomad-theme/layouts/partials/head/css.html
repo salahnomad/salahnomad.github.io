@@ -1,0 +1,37 @@
+{{/* themes/salah-nomad-theme/layouts/partials/head/css.html */}}
+{{/* --- VERSION MODIFIÉE : Chargement CSS Principal Standard --- */}}
+
+{{/* --- CSS Critique (Inline) --- */}}
+{{ $criticalOptions := (dict "outputStyle" "compressed") }}
+{{ $criticalCSS := resources.Get "scss/critical.scss" | toCSS $criticalOptions }}
+{{ with $criticalCSS }}
+  <style>{{ .Content | safeCSS }}</style>
+{{ else }}
+  {{ warnf "Fichier 'assets/scss/critical.scss' non trouvé." }}
+{{ end }}
+
+{{/* --- Google Fonts (Open Sans & Lora) --- */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+{{/* --- CSS Principal (Standard/Fingerprinted) --- */}}
+{{/* --- MODIFICATION ICI: Suppression de media='print' et onload --- */}}
+{{ $mainOptions := (dict "targetPath" "css/style.css" "outputStyle" "compressed") }}
+{{ $mainCSS := resources.Get "scss/main.scss" | toCSS $mainOptions | fingerprint }}
+{{ with $mainCSS }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{ else }}
+  {{ warnf "Fichier 'assets/scss/main.scss' non trouvé." }}
+{{ end }}
+{{/* --- FIN MODIFICATION --- */}}
+
+{{/* --- Pagefind UI CSS --- */}}
+{{/* Ce fichier sera généré par pagefind après le build hugo */}}
+{{/* Il est chargé normalement */}}
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+{{/* --- CSS d'Impression (Optionnel, reste commenté) --- */}}
+{{/*
+...
+*/}}

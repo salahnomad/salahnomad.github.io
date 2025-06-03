@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html */}}
+{{/* --- FINAL : Réactivation du focus sur l'input de recherche --- */}}
+<html lang="{{ .Site.Language.Lang | default "en" }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  {{ partial "head/seo.html" . }}
+  {{ partial "head/favicons.html" . }}
+  {{ partial "head/css.html" . }}
+
+  {{ with .OutputFormats.Get "html" }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+  {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end -}}
+  {{ hugo.Generator }}
+</head>
+<body class="{{ delimit (slice "page" .Kind .Type .Layout (cond .IsHome "is-home" "") (cond .IsSection "is-section" "") (cond .IsNode "is-node" "")) " " }}">
+
+  {{ partial "header.html" . }}
+
+  <div id="content" class="site-content">
+    <main id="main-content" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div><!-- #content -->
+
+  {{ partial "footer.html" . }}
+
+  {{/* --- MODAL DE RECHERCHE APPELÉ ICI (avant la fin du body) --- */}}
+  {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+    {{ partial "search-modal.html" . }}
+  {{ end }}
+
+  {{/* --- Script JS Principal --- */}}
+  {{ $jsOpts := dict "minify" true "target" "es2016" "module" true }}
+  {{ $mainJS := resources.Get "js/main.js" }}
+  {{ if $mainJS }}
+    {{ $js := $mainJS | js.Build $jsOpts | fingerprint }}
+    <script defer type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{ else }}
+    {{ warnf "'assets/js/main.js' not found." }}
+  {{ end }}
+
+  {{/* --- Pagefind UI JS et Logique du Modal --- */}}
+  {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+    <script src="{{ "/pagefind/pagefind-ui.js" | relURL }}" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const searchToggleButtons = document.querySelectorAll('.search-toggle, .mobile-search-trigger');
+        const searchModal = document.getElementById('header-search-form-container');
+        // Tentative de sélection initiale de l'input (peut être null si Pagefind pas encore initialisé)
+        let searchInput = searchModal ? searchModal.querySelector('.pagefind-ui__search-input') : null;
+        const searchModalCloseButton = searchModal ? searchModal.querySelector('.search-modal-close') : null;
+
+        function updateAllToggleButtonsState(isActive) {
+          searchToggleButtons.forEach(btn => {
+            btn.setAttribute('aria-expanded', isActive.toString());
+          });
+        }
+
+        function closeSearchModal() {
+          if (searchModal && searchModal.classList.contains('is-active')) {
+            searchModal.classList.remove('is-active');
+            updateAllToggleButtonsState(false);
+          }
+        }
+
+        function showSearchModal() {
+            if (searchModal) {
+                window.scrollTo(0, 0);
+                searchModal.classList.add('is-active');
+                updateAllToggleButtonsState(true);
+
+                // >>> RÉACTIVATION DU FOCUS <<<
+                // Essayer de trouver l'input au moment de l'appel (plus fiable si Pagefind est lent)
+                const currentSearchInput = searchModal.querySelector('.pagefind-ui__search-input');
+                if (currentSearchInput) {
+                    // Mettre le focus après un court délai pour laisser le temps au rendu et à l'animation
+                    setTimeout(() => {
+                       try { // Ajouter un try-catch au cas où l'élément disparaîtrait
+                          currentSearchInput.focus();
+                          console.log("Focus set on currentSearchInput");
+                       } catch (e) { console.error("Error setting focus:", e); }
+                    }, 100); // <<< Augmenté légèrement le délai à 100ms
+                } else if (searchInput) { // Fallback si sélectionné au chargement
+                    setTimeout(() => {
+                       try {
+                           searchInput.focus();
+                           console.log("Focus set on initial searchInput (fallback)");
+                       } catch (e) { console.error("Error setting focus on fallback:", e); }
+                    }, 100);
+                } else {
+                    // Si l'input n'est toujours pas trouvé, retenter après l'init de Pagefind peut être une option,
+                    // mais pour l'instant, on logue juste.
+                    console.warn("Search input element not found for focus.");
+                    // On pourrait aussi essayer de focus le modal lui-même comme fallback d'accessibilité
+                    // setTimeout(() => searchModal.focus(), 100); // Optionnel
+                }
+            }
+        }
+
+        function handleSearchToggle(clickedButton, eventFromListener) {
+          console.log("DEBUG: handleSearchToggle triggered by:", clickedButton);
+          eventFromListener.preventDefault();
+          eventFromListener.stopPropagation();
+
+          if (searchModal.classList.contains('is-active')) {
+            closeSearchModal();
+            return;
+          }
+
+          const mobileNavPanel = document.getElementById('mobile-nav-panel');
+          const isMobileSearchTrigger = clickedButton && clickedButton.classList.contains('mobile-search-trigger');
+
+          if (isMobileSearchTrigger && mobileNavPanel && mobileNavPanel.classList.contains('is-visible')) {
+            const mobileMenuCloseButtonJS = mobileNavPanel.querySelector('.mobile-menu-close');
+             if (mobileMenuCloseButtonJS && typeof mobileMenuCloseButtonJS.click === 'function') {
+                 mobileMenuCloseButtonJS.click();
+             } else {
+                 mobileNavPanel.classList.remove('is-visible');
+                 document.body.classList.remove('mobile-menu-active');
+                 const burgerButton = document.querySelector('.mobile-menu-toggle');
+                 if(burgerButton) burgerButton.setAttribute('aria-expanded', 'false');
+             }
+
+            setTimeout(() => {
+              showSearchModal();
+            }, 400);
+          } else {
+            showSearchModal();
+          }
+        }
+
+        if (typeof PagefindUI !== 'undefined' && searchModal) {
+          const pagefindUIElement = document.getElementById("pagefind-search-header");
+          if (pagefindUIElement) {
+              try {
+                 // Initialiser PagefindUI et stocker l'instance si besoin
+                 const pagefindInstance = new PagefindUI({ element: pagefindUIElement, showSubResults: true });
+                 // Mettre à jour notre référence à l'input si elle était null initialement
+                 if (!searchInput) {
+                     // Pagefind ajoute l'input de manière asynchrone, on utilise un observer ou on le cherche après un délai
+                     // Ici on essaie de le récupérer directement après l'init, mais ce n'est pas garanti
+                     searchInput = pagefindUIElement.querySelector('.pagefind-ui__search-input');
+                     console.log("Search input referenced after PagefindUI init.");
+                 }
+              }
+              catch (e) { console.error("PagefindUI init error:", e); }
+          } else { console.warn("Pagefind UI target #pagefind-search-header not found in search modal.");}
+
+          if (searchToggleButtons.length > 0) {
+            searchToggleButtons.forEach(button => {
+              button.addEventListener('click', function(e) { handleSearchToggle(this, e); });
+            });
+          }
+          if (searchModalCloseButton) {
+             searchModalCloseButton.addEventListener('click', function(e) { e.stopPropagation(); closeSearchModal(); });
+          }
+
+          document.addEventListener('click', function(e) {
+            let clickedOnAToggle = false;
+            searchToggleButtons.forEach(btn => { if (btn.contains(e.target)) clickedOnAToggle = true; });
+            // Le bouton close est DANS le modal, donc on ne le vérifie plus ici
+            if (searchModal.classList.contains('is-active') && !searchModal.contains(e.target) && !clickedOnAToggle ) {
+              closeSearchModal();
+            }
+          });
+
+          document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape" && searchModal.classList.contains('is-active')) {
+              closeSearchModal();
+            }
+          });
+        } else {
+            if (typeof PagefindUI === 'undefined') console.error("PagefindUI is not defined.");
+            if (!searchModal) console.error("Search modal element (#header-search-form-container) not found.");
+        }
+      });
+      //]]>
+    </script>
+  {{ end }}
+
+</body>
+</html>

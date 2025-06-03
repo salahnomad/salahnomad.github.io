@@ -1,0 +1,49 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\sidebar\widget-tags.html */}}
+{{/* --- VERSION CORRIGÉE (sans fonction max/min directe) --- */}}
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_tags">
+    <h3 class="widget-title"><span>{{ $widgetData.title | default "Tags Cloud" }}</span></h3>
+    {{ $taxo := "tags" }}
+    {{ if isset $.Site.Taxonomies $taxo }}
+      {{ $terms := index $.Site.Taxonomies $taxo }}
+      {{ if gt (len $terms) 0 }}
+        {{ $numTerms := $widgetData.count | default 15 }}
+        {{ $termsToDisplay := first $numTerms $terms.ByCount }}
+
+        {{/* Trouver le max count manuellement */}}
+        {{ $maxCount := 0 }}
+        {{ range $termsToDisplay }}
+          {{ if gt .Count $maxCount }}
+            {{ $maxCount = .Count }}
+          {{ end }}
+        {{ end }}
+        {{ $maxCountFloat := float $maxCount }} {{/* Convertir en float une seule fois */}}
+
+        <div class="tagcloud">
+          {{ range $termsToDisplay }}
+            {{ $weight := 1 }} {{/* Poids par défaut */}}
+            {{ if gt $maxCountFloat 0 }}
+              {{/* Échelle de 1 à 5 basée sur le ratio par rapport au max */}}
+              {{ $ratio := div (float .Count) $maxCountFloat }}
+              {{ $calculatedWeight := add 1 (mul $ratio 4.0) }} {{/* 1 + (ratio * 4) */}}
+              {{/* Capter entre 1 et 5 sans min/max */}}
+              {{ if gt $calculatedWeight 5.0 }}
+                 {{ $weight = 5 }}
+              {{ else if lt $calculatedWeight 1.0 }}
+                 {{ $weight = 1 }}
+              {{ else }}
+                 {{ $weight = int $calculatedWeight }}
+              {{ end }}
+            {{ end }}
+            <a href="{{ .Page.RelPermalink }}" class="tag-cloud-link" data-weight="{{ $weight }}">
+              {{ .Page.Title }}
+            </a>
+          {{ end }}
+        </div>
+      {{ else }}
+        <p><small>{{ i18n "noTagsFound" | default "No tags found yet." }}</small></p>
+      {{ end }}
+    {{ else }}
+      <p><small>{{ i18n "tagsNotConfigured" | default "Tags taxonomy not configured." }}</small></p>
+    {{ end }}
+</section>

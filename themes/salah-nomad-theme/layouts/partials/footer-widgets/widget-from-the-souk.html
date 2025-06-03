@@ -1,0 +1,31 @@
+{{/* layouts/partials/footer-widgets/widget-from-the-souk.html */}}
+{{/* --- MODIFIÉ : Simplification du titre --- */}}
+{{ $config := .config }}
+{{ $contextPage := .context.Page }}
+<div class="footer-column widget widget_from_the_souk">
+  {{ if $config.title }}
+    {{/* --- MODIFIÉ : Titre simplifié, la classe est sur le H3 --- */}}
+    <h3 class="widget-title">{{ $config.title }}</h3>
+  {{ end }}
+
+  {{ if eq $config.type "categories" }}
+    {{ $numTerms := $config.count | default 5 }}
+    {{ with site.Taxonomies.categories }}
+      <ul>
+        {{ range first $numTerms .ByCount }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title | $contextPage.RenderString }} <span class="count">({{ .Count }})</span></a></li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p><small>No categories to display.</small></p>
+    {{ end }}
+  {{ else if $config.links }} {{/* type "custom_links" */}}
+    <ul>
+      {{ range $config.links }}
+        <li><a href="{{ .url | relLangURL }}">{{ .name | $contextPage.RenderString }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p><small>No links configured for From The Souk.</small></p>
+  {{ end }}
+</div>

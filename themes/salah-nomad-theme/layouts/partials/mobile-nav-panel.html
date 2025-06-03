@@ -1,0 +1,212 @@
+{{/* layouts/partials/mobile-nav-panel.html */}}
+<div id="mobile-nav-panel" class="mobile-nav-panel" aria-hidden="true" hidden tabindex="-1">
+  <div class="mobile-nav-header">
+    <span class="mobile-nav-title">{{ i18n "menu" | default "Menu" }}</span>
+    <button class="mobile-menu-close" aria-label="{{ i18n "closeMenu" | default "Close Menu" }}">
+      {{ partial "icons/x.svg" . }}
+    </button>
+  </div>
+
+  <nav class="mobile-navigation" aria-label="{{ i18n "mobileNavigation" | default "Mobile Navigation" }}">
+    {{ $currentPage := . }}
+    {{ $currentRelPermalink := $currentPage.RelPermalink }}
+
+    {{/* --- Menu Principal --- */}}
+    {{ if .Site.Menus.main }}
+      <ul id="mobile-primary-menu" class="menu mobile-menu-main">
+        {{ range .Site.Menus.main.ByWeight }}
+          {{ $menuItem := . }}
+          {{ $hasChildren := $menuItem.HasChildren }}
+          {{ $menuID := $menuItem.Identifier | default ($menuItem.Name | urlize) }}
+          {{ $menuItemURL_obj := urls.Parse $menuItem.URL }}
+          {{ $menuItemRelPath := $menuItemURL_obj.Path | relLangURL }}
+          {{ $isLinkToCurrentPage := eq $currentRelPermalink $menuItemRelPath }}
+          
+          {{ $isParentOfCurrentPage := false }}
+          {{ if $hasChildren }}
+            {{ if and (ne $menuItemRelPath "/") (ne $menuItemRelPath "#") (not (strings.HasPrefix $menuItemRelPath "javascript:")) }}
+              {{ $menuItemPage := site.GetPage $menuItem.URL }} {{/* Définir menuItemPage ici aussi pour le principal */}}
+              {{ if $menuItemPage }} {{/* Vérifier si la page existe */}}
+                {{ if strings.HasPrefix $currentRelPermalink $menuItemRelPath }}
+                  {{ $pathAfterParent := strings.TrimPrefix $currentRelPermalink $menuItemRelPath }}
+                  {{ if and (ne $pathAfterParent "") (strings.HasPrefix $pathAfterParent "/") }}
+                    {{ $isParentOfCurrentPage = true }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ $isSectionOfCurrentPage := false }}
+           {{ if and (ne $menuItemRelPath "/") (ne $menuItemRelPath "#") (not (strings.HasPrefix $menuItemRelPath "javascript:")) }}
+              {{ $menuItemPage := site.GetPage $menuItem.URL }}
+              {{ if $menuItemPage }}
+                {{ if strings.HasPrefix $currentRelPermalink $menuItemRelPath }}
+                  {{ $pathAfterSection := strings.TrimPrefix $currentRelPermalink $menuItemRelPath }}
+                  {{ if or (eq $pathAfterSection "") (strings.HasPrefix $pathAfterSection "/") }}
+                      {{ $isSectionOfCurrentPage = true }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+          {{ end }}
+
+
+          <li class="menu-item
+              {{ if $hasChildren }}has-children{{ end }}
+              {{ if or $isLinkToCurrentPage $isSectionOfCurrentPage }}active{{ end }}
+              {{ if and $hasChildren (not (or $isLinkToCurrentPage $isSectionOfCurrentPage)) $isParentOfCurrentPage }}active-parent current-menu-ancestor{{ end }}
+              {{ if and (not (or $isLinkToCurrentPage $isSectionOfCurrentPage)) (not $isParentOfCurrentPage) ($currentPage.HasMenuCurrent "main" $menuItem) }}other-ancestor{{ end }}
+              ">
+
+            {{ $isLinkableParent := and $menuItem.URL (ne $menuItem.URL "#") (not (strings.HasPrefix $menuItem.URL "javascript:")) }}
+
+            {{ if $hasChildren | and $isLinkableParent }}
+              <div class="menu-item-mobile-wrapper">
+                <a href="{{ $menuItemRelPath }}" class="menu-link-parent">{{ $menuItem.Name }}</a>
+                <button class="submenu-toggle-mobile" 
+                        aria-expanded="{{ if $isParentOfCurrentPage }}true{{ else }}false{{ end }}" 
+                        aria-controls="mobile-submenu-main-{{ $menuID }}"
+                        aria-label="Toggle submenu for {{ $menuItem.Name }}">
+                  <span class="submenu-toggle-arrow"></span>
+                </button>
+              </div>
+            {{ else if $hasChildren }} 
+              <button class="menu-item-no-link submenu-toggle-mobile"
+                      aria-haspopup="true" 
+                      aria-expanded="{{ if $isParentOfCurrentPage }}true{{ else }}false{{ end }}" 
+                      aria-controls="mobile-submenu-main-{{ $menuID }}">
+                {{ $menuItem.Name }}
+                <span class="submenu-toggle-arrow"></span>
+              </button>
+            {{ else }} 
+              <a href="{{ if $isLinkableParent }}{{ $menuItemRelPath }}{{ else }}#{{ end }}">
+                {{ $menuItem.Name }}
+              </a>
+            {{ end }}
+            
+            {{ if $hasChildren }}
+              <ul class="sub-menu {{ if $isParentOfCurrentPage }}is-open{{ end }}" id="mobile-submenu-main-{{ $menuID }}">
+                {{ range $menuItem.Children.ByWeight }}
+                  {{ $childMenuItem := . }}
+                  {{ $childMenuItemURL_obj := urls.Parse $childMenuItem.URL }}
+                  {{ $childMenuItemRelPath := $childMenuItemURL_obj.Path | relLangURL }}
+                  {{ $isChildLinkToCurrentPage := eq $currentRelPermalink $childMenuItemRelPath }}
+                  {{ $isChildSectionOfCurrentPage := false }}
+                  {{ if and (ne $childMenuItemRelPath "/") (ne $childMenuItemRelPath "#") (not (strings.HasPrefix $childMenuItemRelPath "javascript:")) }}
+                    {{ $childMenuItemPage := site.GetPage $childMenuItem.URL }}
+                    {{ if $childMenuItemPage }}
+                      {{ if strings.HasPrefix $currentRelPermalink $childMenuItemRelPath }}
+                          {{ $pathAfterChildSection := strings.TrimPrefix $currentRelPermalink $childMenuItemRelPath }}
+                          {{ if or (eq $pathAfterChildSection "") (strings.HasPrefix $pathAfterChildSection "/") }}
+                              {{ $isChildSectionOfCurrentPage = true }}
+                          {{ end }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                  <li class="menu-item {{ if or $isChildLinkToCurrentPage $isChildSectionOfCurrentPage }}active{{ end }}">
+                    <a href="{{ $childMenuItemRelPath }}">{{ $childMenuItem.Name }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ if or .Site.Menus.secondary (.Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false)) }}
+      <hr class="mobile-menu-divider">
+      <ul id="mobile-secondary-and-search-menu" class="menu mobile-menu-secondary">
+        {{ if .Site.Menus.secondary }}
+          {{ range .Site.Menus.secondary.ByWeight }}
+            {{ $menuItem := . }} 
+            {{ $hasChildren_sec := $menuItem.HasChildren }} 
+            {{ $menuID_sec := $menuItem.Identifier | default ($menuItem.Name | urlize) }}
+            {{ $menuItemURL_obj_sec := urls.Parse $menuItem.URL }}
+            {{ $menuItemRelPath_sec := $menuItemURL_obj_sec.Path | relLangURL }}
+            {{ $isLinkable_sec := and $menuItem.URL (ne $menuItem.URL "#") (not (strings.HasPrefix $menuItem.URL "javascript:")) }}
+            
+            {{ $isCurrentItem_sec := and $isLinkable_sec (eq $currentRelPermalink $menuItemRelPath_sec) }}
+            {{ $isAncestor_sec := false }}
+            {{ if $hasChildren_sec }}
+                {{ if $isLinkable_sec }}
+                    {{ $menuPage_sec := site.GetPage $menuItem.URL }}
+                    {{/* === CORRECTION ICI === */}}
+                    {{ if $menuPage_sec }}                         {{/* Vérifier d'abord si menuPage_sec existe */}}
+                        {{ if $currentPage.IsDescendant $menuPage_sec }} {{/* Puis appeler IsDescendant */}}
+                            {{ $isAncestor_sec = true }}
+                        {{ end }}
+                    {{ end }}
+                    {{/* === FIN CORRECTION === */}}
+                {{ else }} 
+                    {{ range $menuItem.Children }}
+                        {{ $childUrlParsed := urls.Parse .URL }}{{ $childRelPath := $childUrlParsed.Path | relLangURL }}
+                        {{ if eq $currentRelPermalink $childRelPath }}{{ $isAncestor_sec = true }}{{ break }}{{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            <li class="menu-item
+                {{ if $hasChildren_sec }}has-children{{ end }}
+                {{ if $isCurrentItem_sec }}active{{ end }}
+                {{ if and $hasChildren_sec (not $isCurrentItem_sec) $isAncestor_sec }}active-parent current-menu-ancestor{{ end }}">
+
+               {{ if $hasChildren_sec | and $isLinkable_sec }}
+                  <div class="menu-item-mobile-wrapper">
+                    <a href="{{ $menuItemRelPath_sec }}" class="menu-link-parent">
+                      {{ with .Params.icon }}{{ partial (printf "icons/%s.svg" .) $ }}{{ end }}{{ $menuItem.Name }}
+                    </a>
+                    <button class="submenu-toggle-mobile"
+                            aria-expanded="{{ if $isAncestor_sec }}true{{ else }}false{{ end }}"
+                            aria-controls="mobile-submenu-sec-{{ $menuID_sec }}"
+                            aria-label="Toggle submenu for {{ $menuItem.Name }}">
+                       <span class="submenu-toggle-arrow"></span>
+                    </button>
+                  </div>
+               {{ else if $hasChildren_sec }} 
+                  <button class="menu-item-no-link submenu-toggle-mobile"
+                          aria-haspopup="true"
+                          aria-expanded="{{ if $isAncestor_sec }}true{{ else }}false{{ end }}"
+                          aria-controls="mobile-submenu-sec-{{ $menuID_sec }}">
+                    {{ with .Params.icon }}{{ partial (printf "icons/%s.svg" .) $ }}{{ end }}{{ $menuItem.Name }}
+                    <span class="submenu-toggle-arrow"></span>
+                  </button>
+               {{ else if $isLinkable_sec }} 
+                  <a href="{{ $menuItemRelPath_sec }}">
+                    {{ with .Params.icon }}{{ partial (printf "icons/%s.svg" .) $ }}{{ end }}{{ $menuItem.Name }}
+                  </a>
+               {{ else }} 
+                  <span>
+                    {{ with .Params.icon }}{{ partial (printf "icons/%s.svg" .) $ }}{{ end }}{{ $menuItem.Name }}
+                  </span>
+               {{ end }}
+                
+                {{ if $hasChildren_sec }}
+                  <ul class="sub-menu {{ if $isAncestor_sec }}is-open{{ end }}" id="mobile-submenu-sec-{{ $menuID_sec }}">
+                    {{ range $menuItem.Children.ByWeight }}
+                      {{ $childUrlParsed := urls.Parse .URL }}{{ $childRelPath := $childUrlParsed.Path | relLangURL }}
+                      {{ $isChildActive := eq $currentRelPermalink $childRelPath }}
+                      <li class="menu-item {{ if $isChildActive }}active{{ end }}">
+                        <a href="{{ if strings.HasPrefix .URL "#" }}{{ .URL }}{{ else }}{{ $childRelPath }}{{ end }}" {{ with .Params.target }}target="{{ . }}"{{ end }}>
+                          {{ .Name }}
+                        </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+            </li>
+          {{ end }}
+        {{ end }}
+
+        {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+          <li class="menu-item search-item-mobile">
+            <button class="search-toggle mobile-search-trigger">
+              {{ partial "icons/search.svg" . }}
+              {{ i18n "search" | default "Search" }}
+            </button>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </nav>
+</div>

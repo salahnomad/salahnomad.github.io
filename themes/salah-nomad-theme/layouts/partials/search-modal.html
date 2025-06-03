@@ -1,0 +1,8 @@
+{{/* layouts/partials/search-modal.html */}}
+<div id="header-search-form-container" class="header-search-form-wrap" aria-hidden="true" hidden>
+  {{/* Bouton de fermeture spécifique au modal, surtout pour mobile plein écran */}}
+  <button class="search-modal-close" aria-label="{{ i18n "closeSearch" | default "Close Search" }}">
+    {{ partial "icons/x.svg" . }} {{/* Assurez-vous que layouts/partials/icons/x.svg existe */}}
+  </button>
+  <div id="pagefind-search-header"></div> {{/* Pagefind s'injectera ici */}}
+</div>

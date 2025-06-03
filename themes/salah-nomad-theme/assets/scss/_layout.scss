@@ -1,0 +1,83 @@
+// _layout.scss
+// Définit la structure générale et la disposition en grille
+// --- MODIFIÉ : Ajout des styles pour .homepage-layout-container ---
+// --- MODIFIÉ : Sidebar visible et empilée sur mobile pour la homepage ---
+
+@import 'variables'; // Importer les variables une seule fois au début
+
+// --- Conteneur Principal ---
+.container {
+  width: 100%;
+  max-width: $container-width; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding; 
+  padding-right: $container-padding;
+}
+
+// --- Structure Contenu Principal + Sidebar (Optionnelle) ---
+// Le wrapper qui contient la liste/contenu et la sidebar.
+// Ces règles s'appliquent aux pages de liste et single.
+.content-loop-wrap,
+.single-page-container {
+  display: grid;
+  gap: $spacing-xl; 
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-lg) {
+    &.has-sidebar {
+      grid-template-columns: 2.5fr 1fr; 
+    }
+  }
+}
+
+// --- NOUVEAU : Structure pour la page d'accueil avec Hero et Sidebar haute ---
+.homepage-layout-container {
+  &.has-sidebar-layout {
+    display: grid;
+    grid-template-columns: 1fr; // Empilé par défaut sur mobile
+    gap: $spacing-xl;           // Espace entre contenu et sidebar si empilé
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 2.5fr 1fr; // Même ratio que les autres pages avec sidebar
+      gap: $spacing-xxl;                // Espace plus grand sur desktop
+    }
+  }
+
+  &.no-sidebar-layout { 
+    .homepage-main-content-area {
+      // Pas de règle spécifique nécessaire ici si la grille parente est bien configurée
+    }
+  }
+}
+
+.homepage-main-content-area {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; 
+}
+// --- FIN NOUVEAU ---
+
+
+// --- Zone de Liste des Articles (Maintenant en Liste Verticale) ---
+.post-list {
+   display: block; 
+}
+
+// --- Sélecteurs pour les zones de contenu spécifiques ---
+.post-list-main, 
+.single-main-content {
+  min-width: 0; 
+}
+
+// --- Zone Sidebar ---
+.sidebar {
+  @media (max-width: ($breakpoint-lg - 1px)) {
+      .content-loop-wrap.has-sidebar &,
+      .single-page-container.has-sidebar &,
+      .homepage-layout-container.has-sidebar-layout & { 
+          /* display: none; */  // MODIFIÉ : Ligne commentée pour afficher la sidebar sous le contenu sur mobile
+      }
+  }
+}

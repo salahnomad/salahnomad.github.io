@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+  <!-- Panier -->
+  <path d="M6 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 3h4l2.7 12.3a2 2 0 0 0 2 1.7h7.5a2 2 0 0 0 2-1.7L22 9H6"/>
+  <!-- Feuille d'olivier -->
+  <path d="M18 5l-1 2h-3" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

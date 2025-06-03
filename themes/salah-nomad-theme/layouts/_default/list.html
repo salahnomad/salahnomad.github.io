@@ -1,0 +1,145 @@
+{{/* layouts/_default/list.html */}}
+{{/* Affiche les articles de la section actuelle ET de ses sous-sections */}}
+{{/* V4 - Correction syntaxe potentielle et simplification logique image */}}
+
+{{ define "main" }}
+  <div class="container main-content-container">
+
+    {{ $showSidebar := .Params.sidebar | default (.Site.Params.listPageSidebar | default true) }}
+    <div class="content-loop-wrap {{ cond $showSidebar "has-sidebar" "no-sidebar" }}">
+
+      <div class="post-list content-loop"> {{/* Cette div est la colonne de contenu principale */}}
+        
+        <header class="page-header list-page-header">
+          <h1 class="page-title list-page-title">{{ .Title }}</h1>
+          {{ with .Content }}
+            <div class="page-description list-page-description taxonomy-description">{{ . }}</div>
+          {{ end }}
+        </header>
+        
+        {{/* --- Image en Vedette de la Section --- */}}
+        {{ $sectionImageSrc := "" }} {{/* Sera une URL string OU un objet ressource Hugo */}}
+        {{ $imagePathInFrontMatter := .Params.featured_image }}
+
+        {{ if $imagePathInFrontMatter }}
+            {{ if strings.HasPrefix $imagePathInFrontMatter "http" }}
+                {{/* 1. C'est une URL Externe */}}
+                {{ $sectionImageSrc = $imagePathInFrontMatter }}
+            {{ else }}
+                {{/* Ce n'est pas une URL externe, on cherche localement */}}
+                {{ $imgRes := "" }}
+
+                {{/* 2. Essayer Page Resources (peu probable pour _index.md, mais par robustesse) */}}
+                {{ $imgRes = .Resources.GetMatch $imagePathInFrontMatter }}
+
+                {{ if not $imgRes }}
+                    {{/* 3. Essayer /assets/ */}}
+                    {{ $imgRes = resources.Get $imagePathInFrontMatter }}
+                {{ end }}
+
+                {{ if $imgRes }}
+                    {{ $sectionImageSrc = $imgRes }} {{/* C'est un objet ressource Hugo */}}
+                {{ else }}
+                    {{/* L'image n'a pas été trouvée comme ressource. On vérifie /static ou content/SECTION/chemin */}}
+                    {{ if strings.HasPrefix $imagePathInFrontMatter "/" }}
+                        {{/* 4. Le chemin commence par /, on suppose /static/ */}}
+                        {{ $potentialStaticPath := printf "static%s" $imagePathInFrontMatter }}
+                        {{ if fileExists $potentialStaticPath }}
+                            {{ $sectionImageSrc = $imagePathInFrontMatter | relURL }}
+                        {{ end }}
+                    {{ else }}
+                        {{/* 5. Le chemin ne commence pas par /, on suppose un chemin relatif au dossier de la section */}}
+                        {{ $potentialContentPath := printf "%s%s" .File.Dir $imagePathInFrontMatter }}
+                        {{ if fileExists $potentialContentPath }}
+                            {{ $sectionImageSrc = printf "%s%s" .RelPermalink $imagePathInFrontMatter }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{ if $sectionImageSrc }}
+          <figure class="section-featured-image">
+            {{ partial "responsive-image.html" (dict
+                "src" $sectionImageSrc
+                "alt" (.Params.featured_image_alt | default (printf "Image d'illustration pour la section %s" (.Title | plainify)))
+                "page" .
+                "loading" "lazy"
+                "sizesKey" "singleFeatured" 
+                "class" "section-page-featured-img"
+                "figureClass" "section-page-featured-figure"
+                "caption" .Params.featured_image_caption
+            )}}
+          </figure>
+        {{ end }}
+        {{/* --- Fin Image en Vedette --- */}}
+
+        {{/* --- Logique d'agrégation des articles de la section et sous-sections --- */}}
+        {{ $parentSectionPage := . }}
+        {{ $aggregatedPages := slice }}
+        
+        {{ range where .Site.Pages "Kind" "page" }} 
+          {{ $isDescendantOrSelf := false }}
+          {{ $articlePage := . }}
+
+          {{ if eq $articlePage.Section $parentSectionPage.Section }}
+            {{ $isDescendantOrSelf = true }}
+          {{ else }}
+            {{ range $articlePage.Ancestors }}
+              {{ if eq . $parentSectionPage }}
+                {{ $isDescendantOrSelf = true }}
+                {{ break }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ if $isDescendantOrSelf }}
+            {{ $aggregatedPages = $aggregatedPages | append $articlePage }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $pagesToList := slice }}
+        {{ if gt (len $aggregatedPages) 0 }}
+          {{ $uniquePages := $aggregatedPages | uniq }}
+          {{ if gt (len $uniquePages) 0 }}
+            {{ $pagesToList = sort $uniquePages "Date" "desc" }}
+          {{ end }}
+        {{ end }}
+        {{/* --- Fin Logique d'agrégation --- */}}
+        
+        {{ $paginator := .Paginate $pagesToList }}
+        
+        {{ if $paginator.Pages }}
+          <div class="posts-list-header">
+            <hr class="separator-above-title">
+            <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
+            <hr class="separator-below-title">
+          </div>
+
+          <div class="article-grid list-page-grid">
+            {{ range $paginator.Pages }}
+              {{ partial "article-card.html" . }}
+            {{ end }}
+          </div>
+
+          {{ if gt $paginator.TotalPages 1 }}
+            <nav class="navigation pagination" role="navigation" aria-label="{{ i18n "postsNavigation" | default "Posts navigation" }}">
+                {{ template "_internal/pagination.html" . }}
+            </nav>
+          {{ end }}
+
+        {{ else }}
+          {{ if not .Content }} 
+            <p class="no-posts text-center">{{ i18n "noPostsInSection" | default "No posts found in this section or its subsections." }}</p>
+          {{ end }}
+        {{ end }}
+
+      </div><!-- /.post-list.content-loop -->
+
+      {{ if $showSidebar }}
+         {{ partial "sidebar.html" . }}
+      {{ end }}
+
+    </div><!-- /.content-loop-wrap -->
+  </div><!-- /.container.main-content-container -->
+{{ end }}

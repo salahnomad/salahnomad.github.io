@@ -1,0 +1,147 @@
+{{/* themes/salah-nomad-theme/layouts/partials/schema.html */}}
+{{/* --- FINAL V3 : Correction guillemets avec jsonify, logique logo depuis static uniquement --- */}}
+
+{{- $page := .context -}}
+{{- $site := $page.Site -}}
+{{- $pageDescription := .pageDescription -}}
+{{- $imageURLForSchema := .ogImageURL -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {{ if $page.IsHome }}
+  "@type": "WebSite",
+  "url": {{ $page.Permalink | jsonify }},
+  "name": {{ $site.Title | jsonify }},
+  {{- with $pageDescription -}}
+  "description": {{ . | jsonify }},
+  {{- end -}}
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ printf "%ssearch?q={search_term_string}" ($site.BaseURL | absURL) | jsonify }}
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ ($site.Params.organization.name | default $site.Title) | jsonify }},
+    "url": {{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) | jsonify }},
+    {{- $homePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+    {{- if and $homePublisherLogoPath (strings.HasPrefix $homePublisherLogoPath "/") -}}
+      {{- if fileExists (printf "static%s" $homePublisherLogoPath) -}}
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ ($homePublisherLogoPath | absURL) | jsonify }}
+    }
+      {{- end -}}
+    {{- end }}
+  }
+  {{ else if $page.IsPage }}
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ $page.Permalink | jsonify }}
+  },
+  "headline": {{ $page.Title | jsonify }},
+  {{- with $page.Date -}}
+  "datePublished": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end -}}
+  {{- with $page.Lastmod -}}
+  "dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end -}}
+  {{- $authorName := "" -}}
+  {{- $authorSchemaDetails := dict -}}
+  {{- if $page.Params.authors -}}
+    {{- $authorName = index $page.Params.authors 0 -}}
+  {{- else if $page.Params.author -}}
+    {{- $authorName = $page.Params.author -}}
+  {{- end -}}
+  {{- if $site.Params.author -}}
+    {{- if $authorName -}}
+      {{- if eq $authorName $site.Params.author.name -}}
+        {{- $authorSchemaDetails = $site.Params.author -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $authorName = $site.Params.author.name -}}
+      {{- $authorSchemaDetails = $site.Params.author -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $authorName -}}{{- $authorName = $site.Title -}}{{- end -}}
+  "author": {
+    "@type": "Person",
+    "name": {{ $authorName | jsonify }}
+    {{- with $authorSchemaDetails.url -}},"url": {{ (. | absURL) | jsonify }}{{- end -}}
+    {{- with $authorSchemaDetails.image -}} {{/* Image de l'auteur (avatar) */}}
+      {{- $authorImagePath := . -}}
+      {{- if and $authorImagePath (strings.HasPrefix $authorImagePath "/") -}}
+        {{- if fileExists (printf "static%s" $authorImagePath) -}}
+    ,"image": { "@type": "ImageObject", "url": {{ ($authorImagePath | absURL) | jsonify }} }
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- with $authorSchemaDetails.sameAs -}},"sameAs": {{ . | jsonify | safeJS }}{{- end -}} {{/* . | jsonify produit ["url1", "url2"], safeJS l'insère tel quel */}}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ ($site.Params.organization.name | default $site.Title) | jsonify }},
+    "url": {{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) | jsonify }},
+    {{- $blogPublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+    {{- if and $blogPublisherLogoPath (strings.HasPrefix $blogPublisherLogoPath "/") -}}
+      {{- if fileExists (printf "static%s" $blogPublisherLogoPath) -}}
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ ($blogPublisherLogoPath | absURL) | jsonify }}
+    }
+      {{- end -}}
+    {{- end }}
+  },
+  {{- with $pageDescription -}}
+  "description": {{ . | jsonify }},
+  {{- end -}}
+  {{- if $imageURLForSchema -}}
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ $imageURLForSchema | jsonify }},
+    "width": 1200,
+    "height": 630
+  }
+  {{- end }}
+  {{ else }} {{/* Pour les autres WebPage (listes, taxonomies etc.) */}}
+  "@type": "WebPage",
+  "url": {{ $page.Permalink | jsonify }},
+  {{- $webPageName := $page.Title -}}
+  {{- if eq $page.Kind "taxonomy" -}}
+    {{- $webPageName = strings.Title .Data.Term | default $page.Title -}}
+  {{- else if eq $page.Kind "term" -}}
+    {{- $webPageName = printf "%s %s" (strings.Title $page.Data.Singular) (strings.Title $page.Data.Term) | default $page.Title -}}
+  {{- end -}}
+  {{- if not $webPageName -}}{{- $webPageName = $site.Title -}}{{- end -}}
+  "name": {{ $webPageName | jsonify }},
+  {{- with $pageDescription -}}
+  "description": {{ . | jsonify }},
+  {{- end -}}
+  {{- if $imageURLForSchema -}}
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ $imageURLForSchema | jsonify }}
+  },
+  {{- end -}}
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ ($site.Params.organization.name | default $site.Title) | jsonify }},
+    "url": {{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) | jsonify }},
+    {{- $otherPagePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+    {{- if and $otherPagePublisherLogoPath (strings.HasPrefix $otherPagePublisherLogoPath "/") -}}
+      {{- if fileExists (printf "static%s" $otherPagePublisherLogoPath) -}}
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ ($otherPagePublisherLogoPath | absURL) | jsonify }}
+    }
+      {{- end -}}
+    {{- end }}
+  }
+  {{ end }}
+}
+</script>

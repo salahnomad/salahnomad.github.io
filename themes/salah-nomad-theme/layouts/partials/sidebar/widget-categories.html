@@ -1,0 +1,23 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_categories">
+    <h3 class="widget-title"><span>{{ $widgetData.title | default "Categories" }}</span></h3>
+    {{ $taxo := "categories" }}
+    {{ if isset $.Site.Taxonomies $taxo }}
+      {{ $terms := index $.Site.Taxonomies $taxo }}
+      {{ if gt (len $terms) 0 }}
+        {{ $numTerms := $widgetData.count | default 7 }}
+        <ul>
+          {{ range first $numTerms $terms.ByCount }}
+            <li>
+                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                <span class="category-count">({{ .Count }})</span>
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <p><small>{{ i18n "noCategoriesFound" | default "No categories found yet." }}</small></p>
+      {{ end }}
+    {{ else }}
+      <p><small>{{ i18n "categoriesNotConfigured" | default "Categories taxonomy not configured." }}</small></p>
+    {{ end }}
+</section>

@@ -1,0 +1,114 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\single.html */}}
+{{/* --- AJOUT ÉTAPE 2 : Gestion images assets/static/http via .Params.featured_image --- */}}
+{{ define "main" }}
+  {{ $showSidebarOnThisPage := .Site.Params.singlePageSidebar | default true }}
+  {{ if isset .Params "sidebar" }}
+    {{ $showSidebarOnThisPage = .Params.sidebar }}
+  {{ end }}
+
+  <div class="container single-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+
+    <div class="single-main-content">
+      <article class="post-single hentry" data-pagefind-body>
+        <header class="post-header">
+          <h1 class="post-title p-name">{{ .Title }}</h1>
+          {{ partial "post-meta.html" . }}
+        </header>
+
+        {{ $featuredImageSrc := "" }}
+        {{ $isPageBundleResource := false }}
+        {{ $altText := .Params.featured_image_alt | default (.Title | plainify) }}
+        {{ $caption := .Params.featured_image_caption }}
+
+        {{/* --- DÉBUT LOGIQUE IMAGE --- */}}
+        {{ $isLeafBundle := and (eq .Kind "page") (eq .File.BaseFileName "index") }}
+
+        {{/* 1. Essayer via .Params.featured_image si c'est un Leaf Bundle ET que l'image est une ressource de page */}}
+        {{ if .Params.featured_image }}
+          {{ $path := .Params.featured_image }}
+          {{ if $isLeafBundle }}
+            {{ $imgInBundle := $.Resources.GetMatch $path }}
+            {{ if $imgInBundle }}
+              {{ $featuredImageSrc = $imgInBundle }}
+              {{ $isPageBundleResource = true }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{/* 2. Si non trouvé via .Params.featured_image pour le bundle ET SI C'EST UN LEAF BUNDLE, chercher des noms communs */}}
+        {{ if and (not $featuredImageSrc) $isLeafBundle }}
+          {{ $commonImage := $.Resources.GetMatch "featured*" | default ($.Resources.GetMatch "cover*") }}
+          {{ if $commonImage }}
+            {{ $featuredImageSrc = $commonImage }}
+            {{ $isPageBundleResource = true }}
+          {{ end }}
+        {{ end }}
+
+        {{/* 3. Si toujours non trouvé, interpréter .Params.featured_image comme un chemin global (assets ou static) ou URL externe */}}
+        {{ if not $featuredImageSrc }}
+          {{ with .Params.featured_image }}
+            {{ $path := . }}
+            {{ if strings.HasPrefix $path "http" }} {{/* URL externe */}}
+              {{ $featuredImageSrc = $path }}
+              {{ $isPageBundleResource = false }} {{/* Ce n'est pas une ressource de page */}}
+            {{ else }}
+              {{ $assetImage := "" }}
+              {{ if not (strings.HasPrefix $path "/") }} {{/* Si pas de / au début, c'est pour assets/ */}}
+                {{ $assetImage = resources.Get $path }}
+              {{ end }}
+
+              {{ if $assetImage }}
+                {{ $featuredImageSrc = $assetImage }}
+                {{ $isPageBundleResource = false }} {{/* C'est une ressource globale, pas de page bundle */}}
+              {{ else }}
+                {{/* Si le chemin commence par / (pour static/) OU si non trouvé dans assets */}}
+                {{ $staticPath := $path }}
+                {{ if not (strings.HasPrefix $path "/") }}{{ $staticPath = printf "/%s" $path }}{{ end }}
+                {{ if fileExists (printf "static%s" $staticPath) }}
+                  {{ $featuredImageSrc = $staticPath | relURL }}
+                  {{ $isPageBundleResource = false }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        
+        {{/* --- FIN LOGIQUE IMAGE --- */}}
+        
+        {{ if $featuredImageSrc }}
+          <figure class="post-featured-image">
+            {{ partial "responsive-image.html" (dict 
+                "src" $featuredImageSrc 
+                "alt" $altText
+                "page" . 
+                "isPageBundleResource" $isPageBundleResource
+                "loading" "eager" 
+                "sizesKey" "singleFeatured" 
+                "caption" $caption
+                "class" "single-featured-image-img"
+                "figureClass" "single-featured-figure"
+            )}}
+          </figure>
+        {{ end }}
+
+        <div class="post-content e-content">
+          {{ .Content }}
+        </div>
+
+        <footer class="post-footer">
+          {{ partial "post-tags.html" . }}
+          {{ partial "post-share.html" . }}
+        </footer>
+      </article>
+
+      {{ partial "related-posts.html" . }}
+      {{ partial "comments.html" . }}
+
+    </div><!-- /.single-main-content -->
+
+    {{ if $showSidebarOnThisPage }}
+       {{ partial "sidebar.html" . }}
+    {{ end }}
+
+  </div><!-- /.container -->
+{{ end }}

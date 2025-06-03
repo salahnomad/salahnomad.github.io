@@ -1,0 +1,576 @@
+# H:\Salah-Nomad\NewBlog\hugo.toml
+# --- MIS À JOUR pour corriger l'erreur .Site.Author et optimiser JSON-LD ---
+
+###############################################################################
+# Configuration Principale du Site Hugo                                       #
+###############################################################################
+
+baseURL = 'https://salahnomad.com/' # URL de production pour métadonnées correctes
+languageCode = 'en-us'
+title = 'Salah Nomad' # Titre principal du site
+theme = "salah-nomad-theme"
+enableRobotsTXT = true
+
+# La section [author] à la racine est DÉPRÉCIÉE et a été supprimée.
+# Les informations globales de l'auteur sont maintenant dans [params.author]
+
+[pagination]
+  pagerSize = 6
+
+###############################################################################
+# Paramètres du Thème et du Site                                             #
+###############################################################################
+[params]
+  description = "Salah Nomad's Blog: Rooted Nomadism, Mediterranean insights, and digital exploration from Málaga."
+  logo = "/images/Salah-Nomad-Logo.png" # Chemin depuis static/
+  logo_dark = "/images/Salah-Nomad-Logo-Dark.png" # Chemin depuis static/
+  dateFormat = "January 2, 2006"
+  mainSections = ["about", "digital-compass", "malaga-codex", "cultural-bridges", "resources", "rooted-futures"]
+  readingTime = true
+  enableSearch = true
+  enableThemeToggle = true
+  relatedPostsLimit = 3
+  favicon = "/images/favicons/favicon.ico"
+  defaultPlaceholderImage = "/images/placeholders/placeholder-16x9.jpg"
+  linktree_url = "/connect/hub/"
+
+  # Informations sur l'organisation/éditeur pour Schema.org
+  [params.organization]
+    name = "Salah Nomad"
+    logo = "/images/Salah-Nomad-Logo.png" # Doit exister dans static/images/
+    url = "https://salahnomad.com/"
+
+  # Informations globales sur l'auteur pour fallback et bio
+  [params.author]
+    name = "Salah Nomad" # Nom de l'auteur par défaut/global
+    bio = "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech."
+    image = "/images/authors/salah-nomad-avatar.jpg" # Avatar pour la bio, depuis static/
+    myStoryLink = "/about/story/"
+    url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
+    sameAs = [ # Liens sociaux de l'auteur pour Schema Person
+      "https://linkedin.com/in/salahnomad",
+      "https://x.com/Salah_Nomad"
+      # Ajoutez d'autres profils ici si pertinent pour Schema Person
+    ]
+    twitter_handle = "@Salah_Nomad" # Pour twitter:creator dans seo.html
+
+  # --- Paramètres de Design ---
+  sunset_gold = "#F4A261"
+  mediterranean_blue = "#2A9D8F"
+  clay_white = "#FEFAE0"
+  dark_charcoal = "#264653"
+  brick_red = "#842E1B"
+  font_heading_name = "Poppins"
+  font_body_name = "Lora"
+
+  # --- Liens sociaux avec microcopies personnalisées ---
+  [[params.social_links]]
+    name = "Twitter/X"
+    subtitle = "Daily nomadic snippets"
+    iconPartial = "icons/social/logo-twitter.svg"
+    url = "https://x.com/Salah_Nomad"
+  [[params.social_links]]
+    name = "LinkedIn"
+    subtitle = "SEO meets Phoenician trade routes"
+    iconPartial = "icons/social/logo-linkedin.svg"
+    url = "https://linkedin.com/in/salahnomad"
+  [[params.social_links]]
+    name = "Instagram"
+    subtitle = "Málaga sun & workflow"
+    iconPartial = "icons/social/logo-instagram.svg"
+    url = "https://www.instagram.com/salahnomad/"
+  [[params.social_links]]
+    name = "YouTube"
+    subtitle = "Video diaries & tutorials"
+    iconPartial = "icons/social/logo-youtube.svg"
+    url = "https://www.youtube.com/@SalahNomad"
+  [[params.social_links]]
+    name = "TikTok"
+    subtitle = "60-sec nomad hacks"
+    iconPartial = "icons/social/logo-tiktok.svg"
+    url = "https://www.tiktok.com/@salahnomad"
+  [[params.social_links]]
+    name = "Medium"
+    subtitle = "Long-form nomadic wisdom"
+    iconPartial = "icons/social/logo-medium.svg"
+    url = "https://medium.com/@SalahNomad"
+  [[params.social_links]]
+    name = "Reddit"
+    subtitle = "Community Q&A"
+    iconPartial = "icons/social/logo-reddit.svg"
+    url = "https://www.reddit.com/user/salahnomad/"
+  [[params.social_links]]
+    name = "Quora"
+    subtitle = "Expert insights"
+    iconPartial = "icons/social/logo-quora.svg"
+    url = "https://www.quora.com/profile/SalahNomad"
+  [[params.social_links]]
+    name = "Facebook"
+    subtitle = "Nomad community hub"
+    iconPartial = "icons/social/logo-facebook.svg"
+    url = "https://www.facebook.com/salahnomad"
+  [[params.social_links]]
+    name = "Pinterest"
+    subtitle = "Visual inspiration"
+    iconPartial = "icons/social/logo-pinterest.svg"
+    url = "https://www.pinterest.com/salahnomad/"
+  [[params.social_links]]
+    name = "RSS"
+    subtitle = "Stay updated"
+    iconPartial = "icons/social/logo-rss.svg"
+    url = "/index.xml"
+
+
+  # --- Visibilité Sidebar par Type de Page ---
+  homepageSidebar = true
+  listPageSidebar = true
+  singlePageSidebar = true
+
+  # --- Configuration de la Sidebar ---
+  [params.sidebar]
+    [params.sidebar.weather]
+      enable = true
+      title = "Málaga Weather Now"
+      apiKey = "ee89e54157df1c3f5b131f3160a4ce51"
+      cityId = "2514256"
+      lang = "en"
+      unitProverb = "Every Mediterranean breeze speaks two languages: °C | °F"
+    [params.sidebar.newsletter_mediterranean]
+      enable = true
+      title = "Mediterranean Insights"
+      form_action = "https://formspree.io/f/mzzrrwrz"
+      placeholder = "Your email for wisdom..."
+      button_text = "Join the Caravan"
+      sub_text = "Wisdom from Olive Groves to Algorithms. By subscribing, you agree to our [privacy policy](/privacy/)."
+    [params.sidebar.map_compass]
+      enable = true
+      title = "My Nomadic Compass"
+      map_image = "/images/sidebar/nomad-compass-map.png"
+      image_alt = "Stylized world map illustrating nomadic journeys"
+      current_location = "Málaga, Spain"
+      destinations_page_link = "/digital-compass/nomad-destinations/"
+    [params.sidebar.quotes]
+      enable = true
+      title = "Roots & Wi-Fi"
+    [params.sidebar.social_feed]
+      enable = true
+      title = "Nomad Life Live"
+  # --- FIN [params.sidebar] ---
+
+  # --- CONFIGURATION DES WIDGETS DU FOOTER THÉMATIQUE ---
+  [params.footerWidgets]
+    enable = true
+    columns = 5
+    [params.footerWidgets.mediterraneanWisdom]
+      enable = true
+      title = "Mediterranean Wisdom"
+    [params.footerWidgets.quickCompass]
+      enable = true
+      title = "Quick Compass"
+      type = "custom_links"
+      links = [
+        { name = "My Story", url = "/about/story/" },
+        { name = "Digital Compass", url = "/digital-compass/" },
+        { name = "Málaga Codex", url = "/malaga-codex/" },
+        { name = "All My Links", url = "/connect/hub/" }
+      ]
+    [params.footerWidgets.stayRooted]
+      enable = true
+      title = "Stay Rooted"
+      text = "Exploring the world with deep roots in timeless wisdom. Discover the philosophy that guides this journey."
+      link_text = "My Philosophy →"
+      link_url = "/about/philosophy/"
+    [params.footerWidgets.fromTheSouk]
+      enable = true
+      title = "From the Souk"
+      type = "custom_links"
+      links = [
+        { name = "Nomad Toolkit", url = "/digital-compass/nomad-toolkit/" },
+        { name = "Visa & Legal", url = "/resources/visa-hacks/" },
+        { name = "SEO Alchemy", url = "/resources/seo-alchemy/" },
+        { name = "Partner Offers", url = "/partners/" }
+      ]
+    [params.footerWidgets.oliveNetwork]
+      enable = true
+      title = "Olive Network"
+      intro_text = "Join the caravan across the digital Mediterranean."
+
+  # --- PARAMÈTRES POUR LE BAS DU FOOTER ---
+  [params.footerBottom]
+    themeInfo_enable = true
+    themeInfo_name = "Salah Nomad"
+    themeInfo_url = "https://salahnomad.com/"
+    copyrightText = "All rights reserved."
+    enableBackToTop = true
+
+  [params.linktree_checks]
+    enabled = false
+    check_frequency = "weekly"
+
+  [params.contact]
+    formspree_action = "https://formspree.io/f/mzzrrwrz"
+  [params.giscus]
+    enable = true
+    repo = "salahnomad/blog-comments"
+    repoId = "R_kgDOOkD2tw"
+    category = "Comments"
+    categoryId = "DIC_kwDOOkD2t84CpvyU"
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "en"
+  [params.pagefind]
+    enable = true
+
+  contentColumnWidth = "720"
+
+  [params.imageProcessing.sizes]
+    singleFeatured = "(max-width: 767px) 90vw, 720px"
+    articleCard = "(max-width: 575px) 90vw, (max-width: 991px) 45vw, 30vw"
+    heroMain = "(max-width: 767px) 100vw, 750px"
+    heroSecondary = "(max-width: 575px) 90vw, (max-width: 991px) 45vw, 200px"
+    default = "100vw"
+
+[build]
+  writeStats = true
+
+# --- Définition des Menus ---
+[menu]
+  # --- MENU PRINCIPAL (Identité & Pilier) ---
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "rooted_journeys"
+    name = "Rooted Journeys"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "story"
+    name = "My Story"
+    url = "/about/story/"
+    parent = "rooted_journeys"
+    weight = 21
+  [[menu.main]]
+    identifier = "philosophy"
+    name = "Philosophy"
+    url = "/about/philosophy/"
+    parent = "rooted_journeys"
+    weight = 22
+  [[menu.main]]
+    identifier = "testimonials"
+    name = "Testimonials"
+    url = "/about/testimonials/"
+    parent = "rooted_journeys"
+    weight = 23
+
+  [[menu.main]]
+    identifier = "digital_compass"
+    name = "Digital Compass"
+    url = "/digital-compass/"
+    weight = 30
+  [[menu.main]]
+    identifier = "toolkit"
+    name = "Nomad Toolkit"
+    url = "/digital-compass/nomad-toolkit/"
+    parent = "digital_compass"
+    weight = 31
+  [[menu.main]]
+    identifier = "destinations"
+    name = "Nomad Destinations"
+    url = "/digital-compass/nomad-destinations/"
+    parent = "digital_compass"
+    weight = 32
+  [[menu.main]]
+    identifier = "future_nomadism"
+    name = "Future of Nomadism"
+    url = "/digital-compass/future-of-nomadism/"
+    parent = "digital_compass"
+    weight = 33
+
+  [[menu.main]]
+    identifier = "malaga_codex"
+    name = "Málaga Codex"
+    url = "/malaga-codex/"
+    weight = 40
+  [[menu.main]]
+    identifier = "coworking"
+    name = "Coworking Gems"
+    url = "/malaga-codex/coworking-gems/"
+    parent = "malaga_codex"
+    weight = 41
+  [[menu.main]]
+    identifier = "history_reborn_mc"
+    name = "History Reborn"
+    url = "/malaga-codex/history-reborn/"
+    parent = "malaga_codex"
+    weight = 42
+   [[menu.main]]
+    identifier = "local_rituals_mc"
+    name = "Local Rituals"
+    url = "/malaga-codex/local-rituals/"
+    parent = "malaga_codex"
+    weight = 43
+
+  [[menu.main]]
+    identifier = "cultural_bridges"
+    name = "Cultural Bridges"
+    url = "/cultural-bridges/"
+    weight = 50
+  [[menu.main]]
+    identifier = "cb_culinary_crossroads"
+    name = "Culinary Crossroads"
+    url = "/cultural-bridges/food/"
+    parent = "cultural_bridges"
+    weight = 51
+  [[menu.main]]
+    identifier = "cb_language_communication"
+    name = "Language & Communication"
+    url = "/cultural-bridges/language/"
+    parent = "cultural_bridges"
+    weight = 52
+  [[menu.main]]
+    identifier = "cb_historical_trade_routes"
+    name = "Historical Trade Routes"
+    url = "/cultural-bridges/trade/"
+    parent = "cultural_bridges"
+    weight = 53
+  [[menu.main]]
+    identifier = "cb_modern_collaborations"
+    name = "Modern Collaborations"
+    url = "/cultural-bridges/collaborations/"
+    parent = "cultural_bridges"
+    weight = 54
+  [[menu.main]]
+    identifier = "cb_art_craftsmanship"
+    name = "Art & Craftsmanship"
+    url = "/cultural-bridges/art/"
+    parent = "cultural_bridges"
+    weight = 55
+  [[menu.main]]
+    identifier = "cb_festivals_celebrations"
+    name = "Festivals & Celebrations"
+    url = "/cultural-bridges/festivals/"
+    parent = "cultural_bridges"
+    weight = 56
+  [[menu.main]]
+    identifier = "cb_migration_diaspora"
+    name = "Migration & Diaspora"
+    url = "/cultural-bridges/migration/"
+    parent = "cultural_bridges"
+    weight = 57
+  [[menu.main]]
+    identifier = "cb_technology_culture"
+    name = "Technology & Culture"
+    url = "/cultural-bridges/tech/"
+    parent = "cultural_bridges"
+    weight = 58
+
+  # --- MENU SECONDAIRE (Action & Communauté) ---
+  [[menu.secondary]]
+    identifier = "explore"
+    name = "Explore"
+    weight = 10
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "compass"
+  [[menu.secondary]]
+    identifier = "categories_link"
+    name = "Categories"
+    url = "/categories/"
+    parent = "explore"
+    weight = 11
+  [[menu.secondary]]
+    identifier = "popular_posts_link"
+    name = "Popular Posts"
+    url = "/popular/"
+    parent = "explore"
+    weight = 12
+  [[menu.secondary]]
+    identifier = "archives_link"
+    name = "Archives"
+    url = "/archives/"
+    parent = "explore"
+    weight = 13
+
+  [[menu.secondary]]
+    identifier = "connect"
+    name = "Connect"
+    weight = 20
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "anchor"
+  [[menu.secondary]]
+    identifier = "connect_all_links"
+    name = "All My Links"
+    url = "/connect/hub/"
+    parent = "connect"
+    weight = 21
+  [[menu.secondary]]
+    identifier = "newsletter_link"
+    name = "Newsletter"
+    url = "#sidebar-newsletter"
+    parent = "connect"
+    weight = 22
+    [menu.secondary.params]
+      target = "_self"
+  [[menu.secondary]]
+    identifier = "social_links_header"
+    name = "Social Media"
+    url = "#footer-social"
+    parent = "connect"
+    weight = 23
+  [[menu.secondary]]
+    identifier = "partners_sec"
+    name = "Partner Offers"
+    url = "/partners/"
+    parent = "connect"
+    weight = 24
+
+  [[menu.secondary]]
+    identifier = "resources_sec"
+    name = "Resources"
+    url = "/resources/"
+    weight = 30
+    [menu.secondary.params]
+      dropdown = true
+      icon = "folder"
+  [[menu.secondary]]
+    identifier = "visa_hacks_sec"
+    name = "Visa Hacks"
+    url = "/resources/visa-hacks/"
+    parent = "resources_sec"
+    weight = 31
+  [[menu.secondary]]
+    identifier = "remote_work_zen_sec"
+    name = "Remote Work Zen"
+    url = "/resources/remote-work-zen/"
+    parent = "resources_sec"
+    weight = 32
+  [[menu.secondary]]
+    identifier = "seo_alchemy_sec"
+    name = "SEO Alchemy"
+    url = "/resources/seo-alchemy/"
+    parent = "resources_sec"
+    weight = 33
+  [[menu.secondary]]
+    identifier = "nomad_finance_r_sec"
+    name = "Nomad Finance"
+    url = "/resources/nomad-finance/"
+    parent = "resources_sec"
+    weight = 34
+  [[menu.secondary]]
+    identifier = "cultural_compass_r_sec"
+    name = "Cultural Compass"
+    url = "/resources/cultural-compass/"
+    parent = "resources_sec"
+    weight = 35
+  [[menu.secondary]]
+    identifier = "eco_nomad_r_sec"
+    name = "Eco Nomad"
+    url = "/resources/eco-nomad/"
+    parent = "resources_sec"
+    weight = 36
+  [[menu.secondary]]
+    identifier = "wellness_move_r_sec"
+    name = "Wellness on the Move"
+    url = "/resources/wellness-on-the-move/"
+    parent = "resources_sec"
+    weight = 37
+  [[menu.secondary]]
+    identifier = "nomad_tech_toolkit_r_sec"
+    name = "Nomad Tech Toolkit"
+    url = "/resources/nomad-tech-toolkit/"
+    parent = "resources_sec"
+    weight = 38
+
+  [[menu.secondary]]
+    identifier = "rooted_futures_sec"
+    name = "Rooted Futures"
+    url = "/rooted-futures/"
+    weight = 39
+    [menu.secondary.params]
+      dropdown = true
+      icon = "seedling"
+  [[menu.secondary]]
+    identifier = "ai_ancestry_rf_sec"
+    name = "AI Ancestry"
+    url = "/rooted-futures/ai-ancestry/"
+    parent = "rooted_futures_sec"
+    weight = 1
+  [[menu.secondary]]
+    identifier = "sustainable_nomadism_rf_sec"
+    name = "Sustainable Nomadism"
+    url = "/rooted-futures/sustainable-nomadism/"
+    parent = "rooted_futures_sec"
+    weight = 2
+  [[menu.secondary]]
+    identifier = "post_digital_detox_rf_sec"
+    name = "Post-Digital Detox"
+    url = "/rooted-futures/post-digital-detox/"
+    parent = "rooted_futures_sec"
+    weight = 3
+
+  [[menu.secondary]]
+    identifier = "contact_sec"
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
+    [menu.secondary.params]
+      icon = "email"
+
+  # --- MENU FOOTER ---
+  [[menu.footer]]
+    name = "My Story"
+    url = "/about/story/salah-story"
+    weight = 5
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.footer]]
+    name = "Legal Notice"
+    url = "/terms/"
+    weight = 20
+  [[menu.footer]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 30
+
+# --- Configuration du rendu Markdown ---
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.highlight]
+   style = "github"
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+[related]
+  threshold = 80
+  includeNewer = false
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "section"
+    weight = 100
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 80
+  # anchor = "smart" # Décommentez si votre version Hugo et votre utilisation le justifient
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+# --- Fin du fichier ---

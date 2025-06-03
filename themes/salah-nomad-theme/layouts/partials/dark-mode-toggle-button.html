@@ -1,0 +1,9 @@
+{{/* Partial pour le bouton de changement de thème */}}
+<button id="theme-toggle" class="theme-toggle" title="{{ i18n "themeToggleLabel" | default "Switch theme" }}" aria-label="{{ i18n "themeToggleLabel" | default "Switch theme" }}">
+  <span class="icon-wrap icon-wrap-sun">
+    {{ partial "icons/sun.svg" . }}
+  </span>
+  <span class="icon-wrap icon-wrap-moon">
+    {{ partial "icons/moon.svg" . }}
+  </span>
+</button>

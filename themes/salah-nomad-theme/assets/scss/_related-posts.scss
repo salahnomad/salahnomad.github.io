@@ -1,0 +1,154 @@
+// H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_related-posts.scss
+// --- VERSION CORRIGÉE (Utilise var(--font-heading)) ---
+@import 'variables';
+
+.related-posts {
+  margin-top: $spacing-xxl;
+  padding-top: $spacing-xl;
+  border-top: 1px solid var(--color-border);
+  transition: border-color 0.3s ease;
+
+  .related-posts-title {
+    font-family: var(--font-heading); // <<< CORRIGÉ: Utilise la variable CSS
+    font-size: 1.6rem;
+    font-weight: $font-weight-bold;
+    color: var(--color-text-headings);
+    margin-top: 0;
+    margin-bottom: $spacing-xl;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+}
+
+.related-posts-grid {
+  display: grid;
+  gap: $spacing-lg;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.related-post-card {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border-light);
+  border-radius: $border-radius-lg; // Cohérence radius
+  overflow: hidden;
+  box-shadow: var(--box-shadow-light);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-out,
+              box-shadow 0.2s ease-out,
+              background-color 0.3s ease,
+              border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-medium);
+  }
+}
+
+.related-post-thumbnail {
+  line-height: 0;
+
+  a {
+    display: block;
+    position: relative;
+    &:focus-visible {
+      outline: none;
+       &::after {
+         content: '';
+         position: absolute;
+         top: 2px; bottom: 2px; left: 2px; right: 2px;
+         border: 2px solid var(--color-focus-outline);
+         box-shadow: 0 0 0 3px var(--color-focus-ring);
+         border-radius: $border-radius-lg - 2px; // Adapter au radius de la carte
+         z-index: 1;
+       }
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; // Standardiser avec article-card
+    object-fit: cover;
+    background-color: var(--color-border-light);
+    transition: filter 0.3s ease, transform 0.3s ease; // Ajouter transform
+     .related-post-card:hover & { // Effet zoom image au survol de la carte
+        transform: scale(1.03);
+     }
+  }
+
+  .related-post-placeholder-img { // Style placeholder si pas d'image
+    width: 100%;
+    aspect-ratio: 16 / 9; // Même ratio
+    background-color: var(--color-border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &::before { // Icône SVG placeholder
+       content: '';
+       display: block;
+       width: 40px;
+       height: 40px;
+       // SVG pour image (gris clair en light, gris moyen en dark)
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#{str-slice(inspect(gray("400")), 2)}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'%3E%3C/circle%3E%3Cpolyline points='21 15 16 10 5 21'%3E%3C/polyline%3E%3C/svg%3E");
+       background-repeat: no-repeat;
+       background-position: center;
+       opacity: 0.5;
+    }
+     html.dark-mode &::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#{str-slice(inspect(gray("600")), 2)}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'%3E%3C/circle%3E%3Cpolyline points='21 15 16 10 5 21'%3E%3C/polyline%3E%3C/svg%3E");
+     }
+  }
+}
+
+.related-post-content {
+  padding: $spacing-md;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-post-title {
+  font-family: var(--font-heading); // Utiliser Poppins
+  font-size: 1rem;
+  font-weight: $font-weight-semibold; // Un peu moins gras que H1
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: $spacing-xs;
+  flex-grow: 1;
+
+  a {
+    color: var(--color-text-headings);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover, &:focus {
+      color: var(--color-link);
+      text-decoration: none;
+    }
+     &:focus-visible {
+        @include a11y-focus;
+        color: var(--color-link);
+     }
+  }
+}
+
+.related-post-date {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: auto;
+  padding-top: $spacing-xs;
+  transition: color 0.3s ease;
+}

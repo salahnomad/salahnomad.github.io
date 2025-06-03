@@ -1,0 +1,53 @@
+/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\main.scss */
+
+@import 'variables';
+@import 'dark-mode';
+@import 'base';
+
+// Layouts
+@import 'layout'; // Si vous avez un _layout.scss général pour la structure de la page
+@import 'header';
+@import 'footer';
+@import 'sidebar';
+@import 'hero-featured'; // << AJOUTEZ CETTE LIGNE
+@import 'layout/mobile-menu'; // <<< AJOUTER CET IMPORT ICI
+
+// Components & Sections
+@import 'article-card';
+@import 'single';
+@import 'pagination';
+@import 'related-posts';
+@import 'pages/linktree';
+
+@import 'responsive';
+
+// Styles for section/term list headers
+.posts-list-header {
+  margin-top: 2rem; 
+  margin-bottom: 1.5rem;
+  text-align: center; 
+}
+
+.separator-above-title,
+.separator-below-title {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; // Adaptez cette couleur à votre palette
+  width: 60%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator-above-title {
+  margin-bottom: 0.75rem; 
+}
+
+.posts-list-title {
+  // margin-top: 0.75rem; // Déjà géré par la marge du bas de separator-above-title
+  margin-bottom: 0.75rem; 
+  font-size: 1.8rem; // Adaptez si besoin
+  // Ajoutez d'autres styles si nécessaire (font-weight, color, etc.)
+}
+
+// .separator-below-title n'a pas besoin de marge en haut si .posts-list-title a une marge en bas.
+// Vous pouvez ajuster ces marges pour l'espacement exact que vous souhaitez.

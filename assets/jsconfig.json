@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "..\\themes\\salah-nomad-theme\\assets\\*"
+   ]
+  }
+ }
+}

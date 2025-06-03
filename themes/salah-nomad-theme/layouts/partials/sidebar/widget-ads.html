@@ -1,0 +1,21 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+{{/* Slot 1 */}}
+{{ if and $widgetData.slot1_enable $widgetData.slot1_url $widgetData.slot1_image }}
+<section class="widget widget_text widget_ad widget_ad_slot1">
+    <div class="textwidget">
+        <a href="{{ $widgetData.slot1_url | safeURL }}" target="_blank" rel="noopener sponsored">
+            <img src="{{ $widgetData.slot1_image | relURL }}" alt="{{ $widgetData.slot1_alt | default "Advertisement" }}">
+        </a>
+    </div>
+</section>
+{{ end }}
+{{/* Slot 2 */}}
+{{ if and $widgetData.slot2_enable $widgetData.slot2_url $widgetData.slot2_image }}
+<section class="widget widget_text widget_ad widget_ad_slot2">
+    <div class="textwidget">
+        <a href="{{ $widgetData.slot2_url | safeURL }}" target="_blank" rel="noopener sponsored">
+            <img src="{{ $widgetData.slot2_image | relURL }}" alt="{{ $widgetData.slot2_alt | default "Advertisement" }}">
+        </a>
+    </div>
+</section>
+{{ end }}

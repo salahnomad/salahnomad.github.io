@@ -1,0 +1,37 @@
+{{/* themes/salah-nomad-theme/layouts/partials/search-form.html */}}
+{{/*
+  Génère un formulaire de recherche simple.
+  La recherche réelle sera effectuée côté client (JS).
+  Contexte attendu :
+  - .location (string, optionnel): Indique où le formulaire est utilisé (ex: "header", "sidebar") pour ID/classes uniques.
+*/}}
+{{ $location := .location | default "header" }} {{/* Défaut à "header" */}}
+{{ $formID := printf "search-form-%s" $location }}
+{{ $inputID := printf "search-input-%s" $location }}
+{{ $resultsID := printf "search-results-%s" $location }} {{/* ID pour le conteneur de résultats */}}
+
+{{/* role="search" pour l'accessibilité */}}
+<form id="{{ $formID }}" class="search-form" role="search" method="get" action="#" onsubmit="return false;"> {{/* Empêche la soumission HTML classique */}}
+  <label for="{{ $inputID }}" class="screen-reader-text">{{ i18n "searchLabel" | default "Search for:" }}</label>
+  <input type="search"
+         id="{{ $inputID }}"
+         class="search-field"
+         placeholder="{{ i18n "searchPlaceholder" | default "Type and press enter..." }}"
+         value=""
+         name="s" {{/* Nom standard, même si non utilisé par soumission directe */}}
+         autocomplete="off"
+         aria-label="{{ i18n "searchInputLabel" | default "Search Input" }}"> {{/* Label ARIA pour le champ */}}
+  <button type="submit" class="search-submit" aria-label="{{ i18n "searchSubmit" | default "Search" }}">
+    <span class="screen-reader-text">{{ i18n "searchSubmit" | default "Search" }}</span>
+    {{/* Utilise l'icône SVG de recherche */}}
+    {{/* MODIFICATION: Attributs width/height supprimés */}}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </button>
+</form>
+
+{{/* Zone pour afficher les résultats (sera peuplée par JS) */}}
+<div id="{{ $resultsID }}" class="search-results-container" aria-live="polite">
+  {{/* Les résultats de recherche apparaîtront ici... */}}
+</div>

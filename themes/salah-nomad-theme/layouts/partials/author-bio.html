@@ -1,0 +1,29 @@
+{{/* layouts/partials/author-bio.html */}}
+{{ $authorName := .Site.Params.author.name | default "Salah Nomad" }}
+{{ $authorBio := .Site.Params.author.bio | default "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech." }}
+{{ $authorImage := .Site.Params.author.image | default "/images/authors/salah-nomad-avatar.jpg" }} {{/* Chemin vers votre avatar */}}
+{{ $authorMyStoryLink := .Site.Params.author.myStoryLink | default (relLangURL "my-story/") }}
+
+{{ if $authorName }}
+<section class="author-bio">
+  <div class="author-bio-avatar">
+    {{ $imgRes := resources.Get $authorImage }}
+    {{ if $imgRes }}
+      {{ $avatar := $imgRes.Fill "100x100 Smart" }}
+      <img src="{{ $avatar.RelPermalink }}" alt="Avatar of {{ $authorName }}" width="100" height="100" loading="lazy">
+    {{ else if fileExists (printf "static%s" $authorImage) }}
+      <img src="{{ $authorImage | relURL }}" alt="Avatar of {{ $authorName }}" width="100" height="100" loading="lazy">
+    {{ else }}
+       <div class="avatar-placeholder" style="width:100px; height:100px; background:#ccc; border-radius:50%;"></div> {{/* Placeholder simple */}}
+    {{ end }}
+  </div>
+  <div class="author-bio-content">
+    <h3 class="author-bio-name">{{ $authorName }}</h3>
+    <p class="author-bio-description">{{ $authorBio | $.Page.RenderString }} {{/* Permet le markdown dans la bio */}}
+      {{ if $authorMyStoryLink }}
+        <a href="{{ $authorMyStoryLink }}" class="author-bio-readmore">{{ i18n "readMoreAboutAuthor" | default "Read more..." }}</a>
+      {{ end }}
+    </p>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_featured_posts">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Featured Posts" }}</span></h3>
+  {{ $featuredPaths := $widgetData.posts }}
+  {{ if $featuredPaths }}
+    {{ if gt (len $featuredPaths) 0 }}
+    <ul>
+      {{ range $featuredPaths }}
+        {{ $page := $.Site.GetPage . }}
+        {{ if $page }}
+          <li><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></li>
+        {{ else }}
+            {{ warnf "Featured post in sidebar not found: %s. Check path/slug in hugo.toml [params.sidebar.featuredPosts]" . }}
+        {{ end }}
+      {{ end }}
+    </ul>
+    {{ else }}
+      <p><small>{{ i18n "noFeaturedPosts" | default "No featured posts selected." }}</small></p>
+    {{ end }}
+  {{ else }}
+     <p><small>{{ i18n "noFeaturedPostsConfig" | default "Featured posts not configured in hugo.toml." }}</small></p>
+  {{ end }}
+</section>

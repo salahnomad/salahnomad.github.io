@@ -1,0 +1,7 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_newsletter_embed">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Newsletter" }}</span></h3>
+  <div class="newsletter-widget-content">
+    {{ $widgetData.embed_code | safeHTML }}
+  </div>
+</section>

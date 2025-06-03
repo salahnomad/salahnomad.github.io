@@ -1,0 +1,33 @@
+{{/* layouts/partials/footer-widgets/widget-olive-network.html */}}
+{{/* --- MODIFIÉ : Simplification du titre --- */}}
+{{ $config := .config }}
+<div class="footer-column widget widget_olive_network" id="footer-social">
+  {{ if $config.title }}
+    {{/* --- MODIFIÉ : Titre simplifié, la classe est sur le H3 --- */}}
+    <h3 class="widget-title">{{ $config.title }}</h3>
+  {{ end }}
+
+  {{ if $config.intro_text }}
+    <p class="intro-text">{{ $config.intro_text | $.context.Page.RenderString }}</p>
+  {{ end }}
+
+  {{ if site.Params.social_links }}
+    <ul class="social-icons footer-social-icons">
+      {{ range site.Params.social_links }}
+        {{ if .url }}
+        <li>
+          <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="{{ .name | default "Social media profile" }}">
+            {{ with .iconPartial }}
+               {{ partial . $.context }}
+            {{ else }}
+               {{ .name }}
+            {{ end }}
+          </a>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p><small>Social links not configured.</small></p>
+  {{ end }}
+</div>

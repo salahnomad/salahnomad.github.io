@@ -1,0 +1,36 @@
+{{/* themes/salah-nomad-theme/layouts/partials/post-share.html */}}
+{{/* --- VERSION MISE À JOUR : Ajout Pinterest et Reddit --- */}}
+{{ $page := . }}
+{{ $pageURL := $page.Permalink | absURL }}
+{{ $pageTitle := $page.Title | urlquery }}
+{{ $pageDesc := $page.Description | default $page.Summary | plainify | truncate 160 | urlquery }} {{/* Ajout pour description Pinterest */}}
+
+<div class="post-share">
+  <span class="share-label">{{ i18n "shareThis" | default "Share:" }}</span>
+  <ul class="share-icons">
+    {{/* Twitter */}}
+    <li><a href="https://twitter.com/intent/tweet?url={{ $pageURL }}&text={{ $pageTitle }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter" class="share-btn-twitter"> {{/* Ajout classe optionnelle */}}
+      {{ partial "icons/social/logo-twitter.svg" . }} {{/* Utilisation logo-twitter */}}
+    </a></li>
+    {{/* Facebook */}}
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook" class="share-btn-facebook"> {{/* Ajout classe optionnelle */}}
+      {{ partial "icons/social/logo-facebook.svg" . }} {{/* Utilisation logo-facebook */}}
+    </a></li>
+    {{/* LinkedIn */}}
+    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $pageURL }}&title={{ $pageTitle }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" class="share-btn-linkedin"> {{/* Ajout classe optionnelle */}}
+      {{ partial "icons/social/logo-linkedin.svg" . }} {{/* Utilisation logo-linkedin */}}
+    </a></li>
+    {{/* Pinterest (Version simple sans image obligatoire) */}}
+    <li><a href="https://pinterest.com/pin/create/button/?url={{ $pageURL }}&description={{ $pageTitle }}%20-%20{{ $pageDesc }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Pinterest" class="share-btn-pinterest"> {{/* <<< AJOUTÉ */}}
+      {{ partial "icons/social/logo-pinterest.svg" . }} {{/* <<< AJOUTÉ : Assure-toi que ce partial existe */}}
+    </a></li>
+    {{/* Reddit */}}
+    <li><a href="https://www.reddit.com/submit?url={{ $pageURL }}&title={{ $pageTitle }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Reddit" class="share-btn-reddit"> {{/* <<< AJOUTÉ */}}
+       {{ partial "icons/social/logo-reddit.svg" . }} {{/* <<< AJOUTÉ : Assure-toi que ce partial SVG existe */}}
+    </a></li>
+    {{/* Email */}}
+    <li><a href="mailto:?subject={{ printf "Check out: %s" $page.Title | urlquery }}&body={{ $pageURL | urlquery }}" aria-label="Share via Email" class="share-btn-email"> {{/* Ajout classe optionnelle + lien mailto corrigé */}}
+      {{ partial "icons/social/logo-email.svg" . }} {{/* <<< Assure-toi que ce partial SVG existe */}}
+    </a></li>
+  </ul>
+</div>

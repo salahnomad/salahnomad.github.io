@@ -1,0 +1,16 @@
+{{/* ==========================================================================
+    Partial: Post Tags
+    Affiche les tags d'un article single en bas de page.
+    Contexte attendu: La page de l'article (.)
+   ========================================================================== */}}
+{{ with .Params.tags }}
+  <div class="post-tags">
+    <span class="tags-label">{{ partial "icons/tag.svg" $ }} {{ i18n "tags" | default "Tags:" }}</span> {{/* Icône optionnelle - à créer */}}
+    <ul class="tags-list">
+      {{ range . }}
+        {{ $tagURL := printf "/tags/%s/" (. | urlize) }}
+        <li><a href="{{ $tagURL | relLangURL }}" rel="tag">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  </div><!-- /.post-tags -->
+{{ end }}

@@ -1,0 +1,23 @@
+{{/* layouts/partials/sidebar/widget-social-feed.html */}}
+{{ $widgetConfig := index .Site.Params.sidebar "social_feed" }}
+{{ $linktreeURL := .Site.Params.linktree_url }}
+
+{{ if and $widgetConfig.enable $linktreeURL }}
+<div class="widget widget_social_feed"> {{/* <<< CHANGEMENT ICI : widget_nomad_life DEVIENT widget_social_feed */}}
+  {{ if $widgetConfig.title }}
+    <h3 class="widget-title"><span>{{ $widgetConfig.title }}</span></h3>
+  {{ end }}
+  <div class="widget-content nomad-life-widget-content">
+    <a href="{{ $linktreeURL | relLangURL }}" class="nomad-cta">
+      {{ $iconPath := "icons/compass-phoenician.svg" }}
+      {{ if templates.Exists (printf "partials/%s" $iconPath) }}
+        {{ partial $iconPath . }}
+      {{ else }}
+        {{ warnf "Icon %s not found for Nomad Life Live widget" $iconPath }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> {{/* Fallback icon */}}
+      {{ end }}
+      <span>{{ i18n "followMyJourney" | default "Follow My Journey →" }}</span>
+    </a>
+  </div>
+</div>
+{{ end }}

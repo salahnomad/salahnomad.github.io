@@ -1,0 +1,89 @@
+{{/* layouts/partials/related-posts.html (MODIFIÉ POUR MIEUX GÉRER STATIC IMAGES) */}}
+{{ $relatedLimit := .Site.Params.relatedPostsLimit | default 3 }}
+{{ $relatedPages := first $relatedLimit (.Site.RegularPages.Related .) }}
+
+{{ if $relatedPages }}
+<section class="related-posts">
+  <h2 class="related-posts-title">{{ i18n "relatedArticles" | default "Related Articles" }}</h2>
+  <div class="related-posts-grid">
+    {{ range $relatedPages }}
+      <article class="related-post-card">
+        {{ $page := . }} {{/* Contexte de la page liée */}}
+        {{ $imageToDisplayInRelated := "" }}
+        {{ $isImageAResourceInRelated := false }}
+
+        {{/* 1. Essayer 'image' ou 'featured_image' du front matter */}}
+        {{ $fmImagePath := $page.Params.image | default $page.Params.featured_image }}
+
+        {{ if $fmImagePath }}
+          {{/* 1a. Essayer comme Page Resource (si chemin relatif sans /) */}}
+          {{ if not (strings.HasPrefix $fmImagePath "/") }}
+            {{ $pageResourceImg := $page.Resources.GetMatch $fmImagePath | default ($page.Resources.GetMatch (printf "%s*" $fmImagePath)) }}
+            {{ if $pageResourceImg }}
+              {{ $imageToDisplayInRelated = $pageResourceImg }}
+              {{ $isImageAResourceInRelated = true }}
+            {{ end }}
+          {{ end }}
+
+          {{/* 1b. Si pas Page Resource ou chemin absolu, essayer comme Asset ou Static */}}
+          {{ if not $imageToDisplayInRelated }}
+            {{ $assetImg := resources.Get $fmImagePath }}
+            {{ if $assetImg }}
+              {{ $imageToDisplayInRelated = $assetImg }}
+              {{ $isImageAResourceInRelated = true }}
+            {{ else if and (strings.HasPrefix $fmImagePath "/") (fileExists (printf "static%s" $fmImagePath)) }}
+              {{ $imageToDisplayInRelated = $fmImagePath }} {{/* Chemin string pour static */}}
+              {{ $isImageAResourceInRelated = false }}
+            {{ else if strings.HasPrefix $fmImagePath "http" }}
+              {{ $imageToDisplayInRelated = $fmImagePath }} {{/* URL Externe */}}
+              {{ $isImageAResourceInRelated = false }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{/* 2. Si toujours rien, essayer placeholder global du site */}}
+        {{ if not $imageToDisplayInRelated }}
+          {{ $defaultPlaceholder := site.Params.defaultPlaceholderImage | default "/images/placeholders/placeholder-16x9.jpg" }} {{/* Fallback explicite */}}
+          {{ $assetPlaceholder := resources.Get $defaultPlaceholder }}
+          {{ if $assetPlaceholder }}
+            {{ $imageToDisplayInRelated = $assetPlaceholder }}
+            {{ $isImageAResourceInRelated = true }}
+          {{ else if and (strings.HasPrefix $defaultPlaceholder "/") (fileExists (printf "static%s" $defaultPlaceholder)) }}
+            {{ $imageToDisplayInRelated = $defaultPlaceholder }}
+            {{ $isImageAResourceInRelated = false }}
+          {{ end }}
+        {{ end }}
+
+        <div class="related-post-thumbnail">
+          <a href="{{ $page.RelPermalink }}" aria-label="{{ printf "%s: %s" (i18n "readMoreAbout" | default "Read more about") $page.Title }}">
+            {{ if $imageToDisplayInRelated }}
+              {{ if $isImageAResourceInRelated }}
+                {{ $thumb := $imageToDisplayInRelated.Fill "300x200 Lanczos" }}
+                <img src="{{ $thumb.RelPermalink }}"
+                     alt="{{ printf "%s %s" (i18n "thumbnailFor" | default "Thumbnail for") $page.Title }}"
+                     loading="lazy" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+              {{ else }} {{/* Chemin string (static ou externe) */}}
+                <img src="{{ $imageToDisplayInRelated | relURL }}"
+                     alt="{{ printf "%s %s" (i18n "thumbnailFor" | default "Thumbnail for") $page.Title }}"
+                     loading="lazy" width="300" height="200" style="object-fit: cover;"> {{/* Ajout style pour static */}}
+              {{ end }}
+            {{ else }}
+              <div class="related-post-placeholder-img" aria-hidden="true"></div>
+              {{ warnf "Related Post: No image found or displayable for page '%s'. Specified path: '%s'" $page.Path $fmImagePath }}
+            {{ end }}
+          </a>
+        </div>
+
+        <div class="related-post-content">
+          <h3 class="related-post-title">
+            <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+          </h3>
+          <span class="related-post-date">
+            {{ $page.Date.Format (site.Params.dateFormat | default "January 2, 2006") }}
+          </span>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

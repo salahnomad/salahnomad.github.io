@@ -1,0 +1,40 @@
+{{/* layouts/partials/sidebar/widget-weather.html */}}
+{{ $widgetData := index .Site.Params.sidebar "weather" }}
+
+<div class="widget widget_weather" id="weather-widget-container" 
+     data-api-key="{{ $widgetData.apiKey }}" 
+     data-city-id="{{ $widgetData.cityId }}"
+     data-units="{{ $widgetData.units | default "metric" }}"
+     data-lang="{{ $widgetData.lang | default "en" }}">
+  <h3 class="widget-title">
+    <span>{{ $widgetData.title | default "Weather" }}</span>
+  </h3>
+  <div class="widget-content weather-widget-content">
+    <div class="weather-loading">
+      Loading weather... <span class="weather-spinner"></span>
+    </div>
+    <div class="weather-data" style="display: none;">
+      <div class="weather-icon-temp">
+        <img src="" alt="Weather icon" class="weather-icon" id="weather-widget-icon">
+        <span class="weather-temperature" id="weather-widget-temp">--</span>
+        <span class="weather-unit-toggle">
+          <button id="weather-unit-celsius" class="unit-button active" aria-pressed="true" data-unit="metric">°C</button> |
+          <button id="weather-unit-fahrenheit" class="unit-button" aria-pressed="false" data-unit="imperial">°F</button>
+        </span>
+      </div>
+      <p class="weather-description" id="weather-widget-desc">--</p>
+      
+      {{/* NOUVELLE CITATION POÉTIQUE POUR LES UNITÉS */}}
+      <p class="weather-unit-proverb">
+        {{ $widgetData.unitProverb | default "The sea's algorithm runs on dual scales: °C | °F" | $.Page.RenderString }}
+      </p>
+
+      {{ with $widgetData.weatherPageLink }}
+        <p class="weather-details-link"><a href="{{ . | safeURL }}" target="_blank" rel="noopener">View full forecast »</a></p>
+      {{ end }}
+    </div>
+    <div class="weather-error" style="display: none;">
+      Could not load weather data.
+    </div>
+  </div>
+</div>

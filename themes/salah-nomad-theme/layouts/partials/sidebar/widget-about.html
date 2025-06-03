@@ -1,0 +1,15 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_about">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "About Me" }}</span></h3>
+  <div class="widget-content about-widget-content">
+    {{ if $widgetData.image }}
+      <img src="{{ $widgetData.image | relURL }}" alt="{{ $widgetData.image_alt | default "About image" }}" class="about-widget-image">
+    {{ end }}
+    {{ if $widgetData.text }}
+      <div class="about-text">{{ $widgetData.text | $.Page.RenderString }}</div>
+    {{ end }}
+    {{ if and $widgetData.button_link $widgetData.button_text }}
+      <a href="{{ $widgetData.button_link | relURL }}" class="button about-widget-button">{{ $widgetData.button_text | default "Read More" }}</a>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<!-- compass-phoenician.svg - Version monochrome pour CSS externe -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="compass-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cercle racine -->
+    <circle cx="50" cy="50" r="45" stroke-width="3"/>
+
+    <!-- Compas phénicien stylisé (uniquement les contours) -->
+    <path d="M50 15l-5 20h10L50 15zm0 70l5-20h-10l5 20zm35-35l-20 5v-10l20 5zm-70 0l20-5v10l-20-5z" stroke-width="3"/>
+
+    <!-- Olivier central (simplifié en contour) -->
+    <path d="M50 45c-12 0-15 10-15 10 0-8 6-15 15-15s15 7 15 15c0 0-3-10-15-10z" stroke-width="3"/>
+
+    <!-- Racines numériques (simplifiées en lignes) -->
+    <g stroke-width="2" stroke-dasharray="3 2">
+        <path d="M35 62l5 5 M65 62l-5 5"/> 
+        <path d="M42 68l-7 7 M58 68l7 7"/>
+    </g>
+</svg>
