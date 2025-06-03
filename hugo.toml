@@ -5,7 +5,7 @@
 # Configuration Principale du Site Hugo                                       #
 ###############################################################################
 
-baseURL = 'https://salahnomad.com/' # URL de production pour métadonnées correctes
+baseURL = 'https://salahnomad.github.io/' # URL de production pour métadonnées correctes
 languageCode = 'en-us'
 title = 'Salah Nomad' # Titre principal du site
 theme = "salah-nomad-theme"
