@@ -55,7 +55,7 @@
       window.addEventListener('DOMContentLoaded', (event) => {
         const searchToggleButtons = document.querySelectorAll('.search-toggle, .mobile-search-trigger');
         const searchModal = document.getElementById('header-search-form-container');
-        let searchInput = searchModal ? searchModal.querySelector('.pagefind-ui__search-input') : null;
+        let searchInput = null; // Initialisé à null, sera peuplé par Pagefind
         const searchModalCloseButton = searchModal ? searchModal.querySelector('.search-modal-close') : null;
 
         function updateAllToggleButtonsState(isActive) {
@@ -67,6 +67,8 @@
         function closeSearchModal() {
           if (searchModal && searchModal.classList.contains('is-active')) {
             searchModal.classList.remove('is-active');
+            searchModal.setAttribute('hidden', 'true'); // Cacher visuellement et pour a11y
+            searchModal.setAttribute('aria-hidden', 'true');
             updateAllToggleButtonsState(false);
           }
         }
@@ -75,26 +77,23 @@
             if (searchModal) {
                 window.scrollTo(0, 0);
                 searchModal.classList.add('is-active');
+                searchModal.removeAttribute('hidden'); // Rendre visible
+                searchModal.setAttribute('aria-hidden', 'false');
                 updateAllToggleButtonsState(true);
 
-                const currentSearchInput = searchModal.querySelector('.pagefind-ui__search-input');
-                if (currentSearchInput) {
-                    setTimeout(() => {
-                       try {
-                          currentSearchInput.focus();
-                          console.log("Focus set on currentSearchInput");
-                       } catch (e) { console.error("Error setting focus:", e); }
-                    }, 100);
-                } else if (searchInput) {
-                    setTimeout(() => {
-                       try {
-                           searchInput.focus();
-                           console.log("Focus set on initial searchInput (fallback)");
-                       } catch (e) { console.error("Error setting focus on fallback:", e); }
-                    }, 100);
-                } else {
-                    console.warn("Search input element not found for focus.");
-                }
+                // Essayer de mettre le focus sur l'input après un court délai
+                // searchInput est maintenant défini après l'initialisation de PagefindUI
+                setTimeout(() => {
+                    const currentSearchInput = searchModal.querySelector('.pagefind-ui__search-input');
+                    if (currentSearchInput) {
+                        try {
+                            currentSearchInput.focus();
+                            console.log("Focus set on Pagefind search input.");
+                        } catch (e) { console.error("Error setting focus on Pagefind input:", e); }
+                    } else {
+                        console.warn("Pagefind search input element not found for focus in showSearchModal.");
+                    }
+                }, 100);
             }
         }
 
@@ -124,7 +123,7 @@
 
             setTimeout(() => {
               showSearchModal();
-            }, 400);
+            }, 400); // Délai pour permettre la fermeture du menu mobile
           } else {
             showSearchModal();
           }
@@ -136,51 +135,56 @@
                 const pagefindUIElement = document.getElementById("pagefind-search-header");
                 if (pagefindUIElement) {
                     try {
-                        const pagefindInstance = new PagefindUI({ element: pagefindUIElement, showSubResults: true });
-                        // Tentative de référencer l'input après l'initialisation de PagefindUI
-                        searchInput = pagefindUIElement.querySelector('.pagefind-ui__search-input');
-                        if (searchInput) {
-                            console.log("Search input referenced after PagefindUI init.");
-                        } else {
-                            // Si l'input n'est pas immédiatement disponible, un MutationObserver ou un délai supplémentaire pourrait être nécessaire
-                            // pour l'instant, on le logue
-                            console.warn("Search input element not found immediately after PagefindUI init.");
-                        }
+                        // Correction: Ajout de bundlePath
+                        const pagefindInstance = new PagefindUI({
+                            element: pagefindUIElement,
+                            showSubResults: true,
+                            bundlePath: "{{ "/_pagefind/" | relURL }}" // Indique où trouver pagefind.js et l'index
+                        });
+                        
+                        // Pagefind injecte son propre input, donc on le référence après l'init.
+                        // Il n'est plus nécessaire de le chercher au début du script.
+                        // searchInput sera utilisé par showSearchModal s'il est trouvé.
+                        console.log("PagefindUI initialized.");
+
+                    } catch (e) {
+                        console.error("PagefindUI init error:", e);
                     }
-                    catch (e) { console.error("PagefindUI init error:", e); }
                 } else {
                     console.warn("Pagefind UI target #pagefind-search-header not found in search modal.");
                 }
 
-                // Attacher les écouteurs d'événements seulement si le modal et PagefindUI sont prêts
+                // Attacher les écouteurs d'événements
                 if (searchToggleButtons.length > 0) {
                     searchToggleButtons.forEach(button => {
-                    button.addEventListener('click', function(e) { handleSearchToggle(this, e); });
+                        button.addEventListener('click', function(e) { handleSearchToggle(this, e); });
                     });
                 }
                 if (searchModalCloseButton) {
-                    searchModalCloseButton.addEventListener('click', function(e) { e.stopPropagation(); closeSearchModal(); });
+                    searchModalCloseButton.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        closeSearchModal();
+                    });
                 }
 
                 document.addEventListener('click', function(e) {
                     let clickedOnAToggle = false;
                     searchToggleButtons.forEach(btn => { if (btn.contains(e.target)) clickedOnAToggle = true; });
-                    if (searchModal.classList.contains('is-active') && !searchModal.contains(e.target) && !clickedOnAToggle ) {
-                    closeSearchModal();
+                    
+                    if (searchModal.classList.contains('is-active') && !searchModal.contains(e.target) && !clickedOnAToggle) {
+                        closeSearchModal();
                     }
                 });
 
                 document.addEventListener('keydown', function(e) {
                     if (e.key === "Escape" && searchModal.classList.contains('is-active')) {
-                    closeSearchModal();
+                        closeSearchModal();
                     }
                 });
             } else {
                 console.error("Search modal element (#header-search-form-container) not found.");
             }
         } else {
-            // Si PagefindUI n'est pas défini, logguer une erreur plus spécifique.
-            // Cela se produit généralement si pagefind-ui.js n'a pas été chargé ou a échoué.
             console.error("PagefindUI is not defined. Check if pagefind-ui.js loaded correctly and without errors.");
         }
       });
