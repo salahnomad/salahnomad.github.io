@@ -1,5 +1,5 @@
 {{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\article-card.html */}}
-{{/* --- CORRIGÉ pour gérer les URL externes dans featured_image --- */}}
+{{/* --- CORRIGÉ pour gérer les URL externes dans featured_image ET lien "Read More" amélioré --- */}}
 {{ $page := . }}
 
 {{ $categoriesFromParams := $page.Params.categories }}
@@ -120,7 +120,15 @@
       <p>{{ $page.Summary | plainify | truncate 110 | safeHTML }}</p> 
     </div>
     <footer class="entry-footer">
-        <span class="read-more"><a href="{{ $page.RelPermalink }}">{{ i18n "readMore" | default "Read More" }}</a></span>
+        {{/* --- DÉBUT DE LA MODIFICATION (version sans i18n actif pour ce lien spécifique) --- */}}
+        <span class="read-more">
+          <a href="{{ $page.RelPermalink }}" aria-label="{{ printf "Read more about %s" $page.Title }}">
+            {{ $readMoreText := "Read More:" }} {{/* Texte par défaut si pas d'i18n ou pour un site principalement en anglais */}}
+            {{ $truncatedTitle := $page.Title | truncate 15 "..." }} {{/* Ajustez la valeur de troncature (35) si besoin */}}
+            {{ printf "%s \"%s\"" $readMoreText $truncatedTitle | safeHTML }}
+          </a>
+        </span>
+        {{/* --- FIN DE LA MODIFICATION --- */}}
         {{ partial "post-share.html" . }}
     </footer>
   </div>
