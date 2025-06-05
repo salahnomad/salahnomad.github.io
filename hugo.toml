@@ -1,4 +1,3 @@
-# H:\Salah-Nomad\NewBlog\hugo.toml
 # --- MIS À JOUR pour corriger l'erreur .Site.Author et optimiser JSON-LD ---
 
 ###############################################################################
@@ -38,14 +37,14 @@ enableRobotsTXT = true
   [params.organization]
     name = "Salah Nomad"
     logo = "/images/Salah-Nomad-Logo.png" # Doit exister dans static/images/
-    url = "https://salahnomad.com/"
+    url = "https://salahnomad.com/" # Corrigé pour pointer vers le domaine principal
 
   # Informations globales sur l'auteur pour fallback et bio
   [params.author]
     name = "Salah Nomad" # Nom de l'auteur par défaut/global
     bio = "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech."
     image = "/images/authors/salah-nomad-avatar.jpg" # Avatar pour la bio, depuis static/
-    myStoryLink = "/about/story/"
+    myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
     url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
     sameAs = [ # Liens sociaux de l'auteur pour Schema Person
       "https://linkedin.com/in/salahnomad",
@@ -199,7 +198,7 @@ enableRobotsTXT = true
   [params.footerBottom]
     themeInfo_enable = true
     themeInfo_name = "Salah Nomad"
-    themeInfo_url = "https://salahnomad.com/"
+    themeInfo_url = "https://salahnomad.com/" # Corrigé pour pointer vers le domaine principal
     copyrightText = "All rights reserved."
     enableBackToTop = true
 
@@ -253,7 +252,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "story"
     name = "My Story"
-    url = "/about/story/"
+    url = "/about/story/" # Corrigé pour pointer vers la section
     parent = "rooted_journeys"
     weight = 21
   [[menu.main]]
@@ -292,6 +291,13 @@ enableRobotsTXT = true
     url = "/digital-compass/future-of-nomadism/"
     parent = "digital_compass"
     weight = 33
+  # AJOUT DE LA NOUVELLE SOUS-SECTION "CULTURAL DESIGN"
+  [[menu.main]]
+    identifier = "cultural_design" # Nouvel identifiant
+    name = "Cultural Design"
+    url = "/digital-compass/cultural-design/"
+    parent = "digital_compass"
+    weight = 34 # Pour le placer après "Future of Nomadism"
 
   [[menu.main]]
     identifier = "malaga_codex"
@@ -529,7 +535,7 @@ enableRobotsTXT = true
   # --- MENU FOOTER ---
   [[menu.footer]]
     name = "My Story"
-    url = "/about/story/salah-story"
+    url = "/about/story/" # Corrigé pour pointer vers la section
     weight = 5
   [[menu.footer]]
     name = "Contact"
@@ -546,9 +552,9 @@ enableRobotsTXT = true
 
 # --- Configuration du rendu Markdown ---
 [markup.goldmark.renderer]
-  unsafe = false
+  unsafe = false # Changé pour une meilleure sécurité par défaut
 [markup.highlight]
-   style = "github"
+   style = "github" # Style de coloration syntaxique
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]
@@ -557,14 +563,14 @@ enableRobotsTXT = true
   term = ["HTML", "RSS"]
 [related]
   threshold = 80
-  includeNewer = false
+  includeNewer = false # Changed to false
   toLower = true
   [[related.indices]]
     name = "tags"
     weight = 100
   [[related.indices]]
-    name = "section"
-    weight = 100
+    name = "section" # Changed from "categories"
+    weight = 100 # Changed from 200
 [imaging]
   resampleFilter = "Lanczos"
   quality = 80
