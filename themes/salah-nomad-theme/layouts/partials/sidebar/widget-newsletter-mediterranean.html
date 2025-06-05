@@ -1,6 +1,7 @@
 {{/* layouts/partials/sidebar/widget-newsletter-mediterranean.html */}}
 {{ $widgetData := index .Site.Params.sidebar "newsletter_mediterranean" }}
-<div class="widget widget_newsletter_mediterranean widget_lead_magnet"> {{/* Utilise les styles de widget_lead_magnet pour le formulaire */}}
+{{/* Ajout de l'ID 'sidebar-newsletter-anchor' à la div principale du widget */}}
+<div class="widget widget_newsletter_mediterranean widget_lead_magnet" id="sidebar-newsletter-anchor">
   <h3 class="widget-title"><span>{{ $widgetData.title | default "Newsletter" }}</span></h3>
   <div class="widget-content">
     <form action="{{ $widgetData.form_action | default "#" | safeURL }}" method="POST" class="lead-magnet-form">
