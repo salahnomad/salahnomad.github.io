@@ -188,17 +188,15 @@ This isn't just another productivity system. It is a **ritual that imbues your w
 
 The Digital Thermae is not a productivity hack; it’s a declaration of sovereignty over your own mind, a sanctuary you build for yourself wherever you are. It’s the art of finding silence and depth in a world of noise.
 
----
+### **Your Challenge & What's Next**
 
-## **VII. Your Challenge & What's Next**
-
-### **Your Challenge:**
+**Your Challenge:**
 This week, I invite you to try **one** *Thermae Flow State* session. Two hours of your day. Follow the four chambers.
 Notice how you feel. Share your experience in the comments below using the hashtag **#ThermaeFlowState**.
 
 {{< figure src="cta-thermae-flow-state.jpg" alt="A Roman mosaic path leading to a laptop with #ThermaeFlowState hashtag." caption="Take the challenge and find your flow." >}}
 
-### **What’s Next?**
+**What’s Next?**
 Now that we have built our inner sanctuary, how do we engage with the outer world authentically? In **Part 3 of our series**, we’ll explore the **"Virtual Forum"**—the art of forging real connections and community in the digital marketplace.
 
 ---
