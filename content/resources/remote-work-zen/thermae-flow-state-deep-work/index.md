@@ -64,7 +64,7 @@ The ancient Roman **Thermae**—not just baths, but centers of social life, phil
 
 To understand this blueprint, we must travel back in time—not just to the marble halls of Rome, but to the steam-filled, chaotic public hammam of my childhood in Ksar El-Kébir. The magic of the Thermae, and the hammam, lies in its **four-chambered journey**.
 
-{{< figure src="thermae-chambers-diagram.svg" alt="Four Roman Thermae chambers with icons for preparation, deep work, consolidation, and contemplation, styled in a Mediterranean color palette." caption="The sequential journey from chaos to clarity." >}}
+{{< figure src="thermae-chambers-diagram.jpg" alt="Four Roman Thermae chambers with icons for preparation, deep work, consolidation, and contemplation, styled in a Mediterranean color palette." caption="The sequential journey from chaos to clarity." >}}
 
 ### **1. The Tepidarium (The Warm Room) – The Sacred Threshold of Preparation**
 
