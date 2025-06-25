@@ -308,49 +308,51 @@
     }
   }
 }
-// --- Prompt Box Component (via Shortcode) ---
-// Style pour le shortcode [promptbox], utilisé pour mettre en évidence
-// des exemples de prompts, des citations clés, ou des blocs de texte importants.
-
+// --- Prompt Box Component (via Shortcode) - VERSION FINALE ---
 .prompt-box {
   background-color: var(--color-blockquote-background);
-  border: 1px solid var(--color-border-light);
   border-left: 4px solid var(--color-text-accent);
   border-radius: $border-radius-md;
+  padding: $spacing-md $spacing-lg;
   margin: $spacing-lg 0;
-  padding: $spacing-lg;
-  
+  font-size: 0.95rem;
+
   .prompt-box-title {
     font-family: var(--font-heading);
     font-weight: $font-weight-bold;
     color: var(--color-text-headings);
-    margin-bottom: $spacing-md;
+    margin: 0 0 $spacing-md 0;
     padding-bottom: $spacing-sm;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.1rem;
+    font-style: normal; // Assure que le titre n'est pas en italique
   }
 
-  // Cible le contenu qui a été traité par 'markdownify'
+  // Cible le contenu généré par le shortcode
   .prompt-box-content {
+    color: var(--color-text-blockquote);
+    font-style: italic;
     
-    // Style par défaut pour les paragraphes et listes dans la boîte
+    // Cible TOUS les paragraphes et listes pour un style unifié
     p, ul, ol {
       font-family: var(--font-body);
-      color: var(--color-text-blockquote);
-      font-style: italic;
       line-height: 1.6;
-      font-size: 0.95rem;
+      margin-bottom: $spacing-sm; // Ajoute un peu d'espace entre les éléments
     }
 
-    // Assure qu'il n'y a pas de marge sur le dernier élément à l'intérieur de la boîte
+    // Assure qu'il n'y a pas de marge sur le tout dernier élément
     *:last-child {
       margin-bottom: 0;
     }
 
     // Style pour les listes
     ul, ol {
-      margin-top: $spacing-sm;
       padding-left: $spacing-lg;
+    }
+    
+    // Annule le style italique pour le gras, pour une meilleure lisibilité
+    strong {
+      font-style: normal;
     }
   }
 }
