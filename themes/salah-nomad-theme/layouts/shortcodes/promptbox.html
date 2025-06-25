@@ -1,12 +1,12 @@
 {{/*
-  Shortcode Universel v2 pour une "Prompt Box".
-  Utilise nl2br pour préserver les sauts de ligne sans générer de paragraphes non désirés.
+  Shortcode Universel v3 pour une "Prompt Box".
+  Utilise replace et nl2br pour un contrôle total du rendu sans paragraphes non désirés.
 */}}
 <div class="prompt-box">
   {{ with .Get "title" }}
     <div class="prompt-box-title">{{ . }}</div>
   {{ end }}
   <div class="prompt-box-content">
-    {{ .Inner | .Page.RenderString }}
+    {{ .Inner | replace "\n" "<br>" | safeHTML }}
   </div>
 </div>
