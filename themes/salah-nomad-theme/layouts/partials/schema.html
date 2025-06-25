@@ -1,5 +1,5 @@
 {{/* themes/salah-nomad-theme/layouts/partials/schema.html */}}
-{{/* --- FINAL V4 : Correction des guillemets en remplaçant jsonify par safeJS --- */}}
+{{/* --- FINAL V5 : Correction manuelle du tableau 'sameAs' et nettoyage global --- */}}
 
 {{- $page := .context -}}
 {{- $site := $page.Site -}}
@@ -16,14 +16,6 @@
   {{- with $pageDescription -}}
   "description": "{{ . | safeJS }}",
   {{- end -}}
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "{{ printf "%ssearch?q={search_term_string}" ($site.BaseURL | absURL) }}"
-    },
-    "query-input": "required name=search_term_string"
-  },
   "publisher": {
     "@type": "Organization",
     "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
@@ -81,7 +73,13 @@
         {{- end -}}
       {{- end -}}
     {{- end -}}
-    {{- with $authorSchemaDetails.sameAs -}},"sameAs": {{ . | jsonify }}{{- end -}}
+    {{- with $authorSchemaDetails.sameAs -}}
+    ,"sameAs": [
+      {{- range $i, $v := . -}}
+        {{- if $i }},{{ end }}"{{ . }}"
+      {{- end -}}
+    ]
+    {{- end -}}
   },
   "publisher": {
     "@type": "Organization",
