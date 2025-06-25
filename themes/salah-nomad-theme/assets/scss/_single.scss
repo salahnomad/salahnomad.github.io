@@ -308,15 +308,17 @@
     }
   }
 }
-// --- Prompt Box Component (via Shortcode) - VERSION FINALE ---
+// --- Prompt Box Component (via Shortcode) - VERSION DÉFINITIVE ---
+// Style pour le shortcode [promptbox], conçu pour gérer le HTML
+// rendu par la fonction .Page.RenderString de Hugo.
+
 .prompt-box {
   background-color: var(--color-blockquote-background);
   border-left: 4px solid var(--color-text-accent);
   border-radius: $border-radius-md;
   padding: $spacing-md $spacing-lg;
   margin: $spacing-lg 0;
-  font-size: 0.95rem;
-
+  
   .prompt-box-title {
     font-family: var(--font-heading);
     font-weight: $font-weight-bold;
@@ -325,34 +327,38 @@
     padding-bottom: $spacing-sm;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.1rem;
-    font-style: normal; // Assure que le titre n'est pas en italique
+    font-style: normal; // Assure que le titre n'est jamais en italique
   }
 
-  // Cible le contenu généré par le shortcode
+  // Cible le conteneur du contenu rendu
   .prompt-box-content {
-    color: var(--color-text-blockquote);
-    font-style: italic;
     
-    // Cible TOUS les paragraphes et listes pour un style unifié
+    // Style de base pour tout le texte à l'intérieur
+    font-style: italic;
+    color: var(--color-text-blockquote);
+
+    // Cible spécifiquement les paragraphes et les listes générés par Hugo
     p, ul, ol {
       font-family: var(--font-body);
       line-height: 1.6;
-      margin-bottom: $spacing-sm; // Ajoute un peu d'espace entre les éléments
+      font-size: 0.95rem;
+      margin-bottom: $spacing-sm; // Espace entre les éléments
     }
 
-    // Assure qu'il n'y a pas de marge sur le tout dernier élément
-    *:last-child {
-      margin-bottom: 0;
-    }
-
-    // Style pour les listes
-    ul, ol {
-      padding-left: $spacing-lg;
+    // Annule le style italique pour le texte en gras pour une meilleure lisibilité
+    strong {
+      font-style: normal; 
     }
     
-    // Annule le style italique pour le gras, pour une meilleure lisibilité
-    strong {
-      font-style: normal;
+    // Positionne correctement les listes
+    ol, ul {
+      padding-left: $spacing-lg;
+      margin-top: $spacing-sm;
+    }
+
+    // Assure qu'il n'y a pas de marge sur le tout dernier élément de la boîte
+    *:last-child {
+      margin-bottom: 0;
     }
   }
 }
