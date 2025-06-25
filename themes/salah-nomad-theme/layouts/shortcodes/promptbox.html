@@ -1,20 +1,12 @@
 {{/*
-  Shortcode Universel pour une "Prompt Box" stylisée.
-  Affiche un bloc de contenu mis en évidence avec un titre optionnel.
-  Le contenu à l'intérieur est traité comme du Markdown.
-
-  Utilisation :
-  {{< promptbox title="Titre Optionnel" >}}
-  Contenu en **Markdown** que vous voulez.
-  - Avec des listes
-  - Et d'autres formatages.
-  {{< /promptbox >}}
+  Shortcode Universel v2 pour une "Prompt Box".
+  Utilise nl2br pour préserver les sauts de ligne sans générer de paragraphes non désirés.
 */}}
 <div class="prompt-box">
   {{ with .Get "title" }}
     <div class="prompt-box-title">{{ . }}</div>
   {{ end }}
   <div class="prompt-box-content">
-    {{ .Inner | markdownify }}
+    {{ .Inner | .Page.RenderString }}
   </div>
 </div>
