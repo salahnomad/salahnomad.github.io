@@ -1,7 +1,8 @@
 /* ==========================================================================
-   Expert Box Shortcode (Version Finale Simplifiée)
+   Expert Box Shortcode (Version finale minimaliste)
    ========================================================================== */
 
+/* --- Conteneur principal --- */
 .expert-box {
   background-color: var(--color-background-offset, #f0f4f8);
   border-left: 5px solid var(--mediterranean-blue, #2A9D8F);
@@ -9,58 +10,62 @@
   margin: 2em 0;
   padding: 1.5em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease-in-out;
+  color: var(--color-text, #333333);
 }
 
 [data-theme="dark"] .expert-box {
-  background-color: #3a506b;
+  background-color: #1a2639;
   border-left-color: var(--sunset-gold, #F4A261);
+  color: #e8e6e3;
 }
 
-.expert-box:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* === EN-TÊTE AVEC ALIGNEMENT FINAL === */
+/* --- En-tête (simplifié) --- */
 .expert-box-header {
-  display: flex;
-  /* La solution est 'align-items: baseline;' qui aligne le bas du texte avec le bas de l'icône. */
-  align-items: baseline;
-  gap: 0.6em; /* Un léger ajustement de l'espacement */
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* Juste une marge en bas */
 }
 
-.expert-box-icon {
-  flex-shrink: 0;
-  color: var(--mediterranean-blue, #2A9D8F);
-  opacity: 0.8;
-  /* Ajustement pour remonter légèrement l'icône et l'aligner avec le texte */
-  position: relative;
-  top: 0.15em; 
-  width: 1.25em; /* Donnons une taille à l'icône pour que le 'top' fonctionne bien */
-  height: 1.25em;
-}
-
-[data-theme="dark"] .expert-box-icon {
-  color: var(--sunset-gold, #F4A261);
-}
-
+/* --- Le Titre (h3) et sa couche décorative (span) --- */
 .expert-box-title {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
   font-weight: 700;
   margin: 0;
-  color: var(--color-heading, #264653);
-  line-height: 1.3;
+  padding: 0;
+  position: relative; /* Pour le pseudo-élément ::after */
+  padding-bottom: 0.4em; /* Espace pour le soulignage */
 }
 
-[data-theme="dark"] .expert-box-title {
-    color: var(--color-heading-dark, #FEFAE0);
+.expert-box-title span {
+  background: linear-gradient(90deg, #2A9D8F, #264653);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
+/* Soulignage dégradé */
+.expert-box-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50px; /* Longueur fixe pour le soulignage */
+  background: linear-gradient(90deg, #2A9D8F, #F4A261);
+}
 
-/* === STYLES DU CONTENU (INCHANGÉS) === */
+/* Styles pour le mode sombre */
+[data-theme="dark"] .expert-box-title span {
+  background: linear-gradient(90deg, #FFD166, #F4A261);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
+[data-theme="dark"] .expert-box-title::after {
+    background: linear-gradient(90deg, #FFD166, #F4A261);
+}
+
+/* --- Contenu de la boîte --- */
 .expert-box-content {
   font-size: 1em;
   line-height: 1.7;
@@ -70,28 +75,20 @@
   margin-bottom: 0;
 }
 
-.expert-box-content ul,
-.expert-box-content ol {
+.expert-box-content ul, .expert-box-content ol {
   padding-left: 20px;
 }
 
 .expert-box-content a {
   font-weight: 600;
-  color: var(--mediterranean-blue, #2A9D8F);
+  color: #2A9D8F;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
   text-decoration-color: rgba(42, 157, 143, 0.3);
-  transition: text-decoration-color 0.3s ease;
 }
 
 [data-theme="dark"] .expert-box-content a {
-  color: var(--sunset-gold, #F4A261);
+  color: #FFD166;
   text-decoration-color: rgba(244, 162, 97, 0.4);
-}
-
-.expert-box-content a:hover {
-  text-decoration-color: var(--mediterranean-blue, #2A9D8F);
-}
-
-[data-theme="dark"] .expert-box-content a:hover {
-  text-decoration-color: var(--sunset-gold, #F4A261);
 }

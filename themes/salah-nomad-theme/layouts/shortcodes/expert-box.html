@@ -1,5 +1,5 @@
 {{/*
-  Shortcode: expert-box (final)
+  Shortcode: expert-box (Version finale minimaliste)
   Usage:
   {{< expert-box title="Titre de la boîte" >}}
     Contenu en Markdown ici.
@@ -8,15 +8,9 @@
 
 <aside class="expert-box">
   <div class="expert-box-header">
-    <svg xmlns="http://www.w3.org/2000/svg" class="expert-box-icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z"></path>
-      <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" transform="rotate(72 12 12)"></path>
-      <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" transform="rotate(144 12 12)"></path>
-      <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" transform="rotate(216 12 12)"></path>
-      <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" transform="rotate(288 12 12)"></path>
-    </svg>
-    <h3 class="expert-box-title">{{ .Get "title" | default "Expert Insights" }}</h3>
+    <h3 class="expert-box-title">
+      <span>{{ .Get "title" | default "Expert Insights" }}</span>
+    </h3>
   </div>
   <div class="expert-box-content">
     {{ .Inner | .Page.RenderString }}
