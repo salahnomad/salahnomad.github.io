@@ -38,6 +38,10 @@ resources:
     title: "View across Strait of Gibraltar from Tarifa - the liquid border between worlds"
     slug: "strait-gibraltar-diaspora-view"
     alt: "Aerial view of the narrow sea passage separating Europe and Africa"
+  - src: "images/morisco-compass-infographic.jpg"
+    title: "Infographic of the Morisco Compass framework"
+    slug: "morisco-compass-framework"
+    alt: "Visual representation of the four cardinal points: Memory, Resilience, Adaptation, Contribution"
 ---
 
 ## The Weight of Ancestral Keys
@@ -58,7 +62,7 @@ Those keys represented more than lost homes; they symbolized the very essence of
 ## The Mirror Landscape Epiphany (2014 Journey)
 
 ### Driving Through Layers of Memory
-During my pivotal 2014 road trip from Ksar El-Kébir to Avignon (Chapter 11), a profound realization struck me near Granada's Sierra Nevada. As I describe in *Algorithmic Sardines*:
+During my pivotal 2014 road trip from Ksar El-Kébir to Avignon (as recounted in Chapter 11 of my book), a profound realization struck me near Granada's Sierra Nevada. As I describe in *Algorithmic Sardines*:
 
 > "The golden hills weren't foreign territory - they were **memory made terrain**. These Andalusian landscapes mirrored the Jbala mountains of my childhood with uncanny precision. The cork oaks, the wild thyme scent, the way light fell on olive groves - it was all a transplanted ecosystem."
 
@@ -69,7 +73,7 @@ During my pivotal 2014 road trip from Ksar El-Kébir to Avignon (Chapter 11), a 
 
 ### The Biology of Belonging
 This wasn't coincidence but **ecological continuity**. My ancestors had intuitively sought lands where:
-- The same aromatic herbs grew ([Jbala's wild thyme]({{< ref "/cultural-bridges/food/saffron-argan-algorithms" >}}))
+- The same aromatic herbs grew ([Jbala's wild thyme]({{< relref "/cultural-bridges/food/saffron-argan-algorithms" >}}))
 - Olive and cork oak cultivation techniques transferred seamlessly
 - The Mediterranean light behaved identically
 - Even the clay responded to familiar pottery methods
@@ -80,17 +84,22 @@ They hadn't just moved locations - they'd transferred an entire **cultural biome
 
 ## The Morisco Compass: My Four-Way Navigation System
 
+{{< figure 
+    src="images/morisco-compass-infographic.jpg"
+    alt="Infographic explaining the Morisco Compass framework: Memory, Resilience, Adaptation, Contribution"
+    caption="The four cardinal points for navigating identity across centuries" >}}
+
 ### 1. **Memory as Active Ritual (North Star)**
 > "We don't inherit memory - we perform it."
 
 The Moriscos preserved Granada through:
-- **Culinary rituals**: Recreating Andalusian dishes with Moroccan ingredients ([like my grandmother's recipes]({{< ref "/cultural-bridges/food/saffron-argan-algorithms" >}}))
+- **Culinary rituals**: Recreating Andalusian dishes with Moroccan ingredients ([like my grandmother's recipes]({{< relref "/cultural-bridges/food/saffron-argan-algorithms" >}}))
 - **Language fusion**: Blending Arabic with Spanish loanwords still heard in Northern Moroccan dialects
 - **Architectural echoes**: Reproducing Granada's courtyard homes in Chefchaouen's blue-washed medina
 
 **Modern application**: 
 - I maintain **digital zellige rituals**: Morning mint tea before checking emails, writing under olive trees
-- Recording family stories with [AI voice preservation]({{< ref "/rooted-futures/ai-ancestry/olive-tree-oracle" >}}) technology
+- Recording family stories with [AI voice preservation]({{< relref "/rooted-futures/ai-ancestry/olive-tree-oracle" >}}) technology
 - Cooking ancestral dishes as edible history lessons
 
 ### 2. **Resilience as Cultural Algorithm (True South)**
@@ -100,7 +109,7 @@ The trauma of exile encoded what I call our **diaspora operating system**:
 - Resourcefulness modules developed in borderlands
 
 **This manifested when:**
-- My e-commerce business collapsed during COVID lockdowns (Chapter 14)
+- My e-commerce business collapsed during COVID lockdowns (as told in Chapter 14 of *Algorithmic Sardines*)
 - Instead of despairing, I launched this blog - transforming physical limitation into digital expansion
 - Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks
 
@@ -116,9 +125,9 @@ The genius wasn't preservation but **recombination**:
 - Arabic calligraphy incorporating Mediterranean floral motifs
 
 **My modern synthesis:**
-- Blending Jbala herbal wisdom with digital marketing ([SEO Like a Phoenician Merchant]({{< ref "/resources/seo-alchemy/phoenician-merchant-seo" >}}))
+- Blending Jbala herbal wisdom with digital marketing ([SEO Like a Phoenician Merchant]({{< relref "/resources/seo-alchemy/phoenician-merchant-seo" >}}))
 - Fusing Moroccan storytelling with AI tools
-- Creating the [Zellige Blueprint productivity system]({{< ref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) from artisan principles
+- Creating the [Zellige Blueprint productivity system]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) from artisan principles
 
 ### 4. **Contribution as Rooting Mechanism (Western Anchor)**
 Moriscos secured belonging through indispensable gifts:
@@ -127,9 +136,9 @@ Moriscos secured belonging through indispensable gifts:
 - Elevating Andalusian culinary traditions in new lands
 
 **My application:**
-- Creating the [Cultural Compass guide]({{< ref "/resources/cultural-compass/art-of-seeing" >}}) for ethical travel
-- Developing regenerative tourism models ([Jbala Trail]({{< ref "/resources/eco-nomad/jbala-trail-andalusian-legacy" >}}))
-- Bridging European tech startups with Moroccan artisans ([Modern Collaborations]({{< ref "/cultural-bridges/collaborations/ghost-of-ritual-hammam" >}}))
+- Creating the [Cultural Compass guide]({{< relref "/resources/cultural-compass/art-of-seeing" >}}) for ethical travel
+- Developing regenerative tourism models ([Jbala Trail]({{< relref "/resources/eco-nomad/jbala-trail-andalusian-legacy" >}}))
+- Bridging European tech startups with Moroccan artisans ([Modern Collaborations]({{< relref "/cultural-bridges/collaborations/ghost-of-ritual-hammam" >}}))
 
 ---
 
@@ -159,13 +168,13 @@ Your hybridity is superpower:
 - You're the living embodiment of the compass points
 - Your "in-betweenness" creates unique mediation skills
 - You instinctively practice **identity remixology**
-- Read my guide: [The Art of Seeing Cultural Landscapes]({{< ref "/resources/cultural-compass/art-of-seeing" >}})
+- Read my guide: [The Art of Seeing Cultural Landscapes]({{< relref "/resources/cultural-compass/art-of-seeing" >}})
 
 ---
 
 ## Epilogue: My Living Compass
 
-Today when I walk through Málaga's Alcazaba ([The Alcazaba's Secret Code]({{< ref "/malaga-codex/history-reborn/alcazabas-secret-code" >}})), I touch the same zellige patterns my grandmother created in Ksar El-Kébir. The 500-year journey collapses into a single gesture. 
+Today when I walk through Málaga's Alcazaba ([The Alcazaba's Secret Code]({{< relref "/malaga-codex/history-reborn/alcazabas-secret-code" >}})), I touch the same zellige patterns my grandmother created in Ksar El-Kébir. The 500-year journey collapses into a single gesture. 
 
 **This is the Morisco Compass in action:**
 - **Memory**: Cooking my mother's *rfissa* while video-calling cousins in Morocco
