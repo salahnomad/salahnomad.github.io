@@ -9,8 +9,8 @@
 @import 'header';
 @import 'footer';
 @import 'sidebar';
-@import 'hero-featured'; // << AJOUTEZ CETTE LIGNE
-@import 'layout/mobile-menu'; // <<< AJOUTER CET IMPORT ICI
+@import 'hero-featured'; 
+@import 'layout/mobile-menu'; 
 
 // Components & Sections
 @import 'article-card';
@@ -18,6 +18,7 @@
 @import 'pagination';
 @import 'related-posts';
 @import 'pages/linktree';
+@import 'shortcodes'; // <--- AJOUTEZ CETTE LIGNE ICI
 
 @import 'responsive';
 
