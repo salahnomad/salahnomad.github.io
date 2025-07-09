@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "The Zellige Blueprint: A Nomad’s Guide to Soulful Productivity"
-date: 2025-06-24T00:00:00+02:00
+date: 2025-02-11T00:00:00+02:00
 draft: false
 description: "Tired of chaotic productivity apps and endless to-do lists? Discover the Zellige Blueprint, a system inspired by ancient artisans to organize your digital life with beauty, intention, and precision."
 # --- Categorization & Taxonomy ---

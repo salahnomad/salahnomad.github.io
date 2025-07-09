@@ -1,6 +1,6 @@
 ---
 title: "Rooted Nomadism: Where Ancient Roots Meet Digital Currents"
-date: 2024-05-08 # <<< Date corrigée
+date: 2025-01-21 # <<< Date corrigée
 draft: false
 layout: single
 featured_image: "images/philosophy.jpg"

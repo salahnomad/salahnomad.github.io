@@ -1,6 +1,6 @@
 ---
 title: "SEO Like a Phoenician Merchant: Ancient Strategies to Conquer Google's Shifting Tides"
-date: 2025-06-23T09:00:00+02:00
+date: 2025-03-04T09:00:00+02:00
 draft: false
 description: "Stop chasing algorithms and start building a digital empire. Discover how ancient Phoenician trade secrets can revolutionize your SEO strategy for the AI era."
 categories: ["Resources"]

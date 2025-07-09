@@ -2,7 +2,7 @@
 # --- SEO & Metadata ---
 title: "The Canary Melon Compass: A Rooted Nomad's Guide to Choosing Destinations"
 subtitle: "How 20 melons from Ksar El-Kébir taught me a soulful framework for finding home."
-date: 2025-07-04T14:00:00+02:00  # Date ajoutée - Obligatoire pour Hugo
+date: 2025-03-11T14:00:00+02:00  # Date ajoutée - Obligatoire pour Hugo
 draft: false  # Paramètre ajouté - Indique que l'article est prêt à publier
 description: "Stop choosing nomad destinations with sterile spreadsheets. Discover the Canary Melon Compass, a unique 3-step framework for finding a new home based on cultural flavor, resilience, and deep personal resonance."
 slug: "canary-melon-compass-nomad-destinations"

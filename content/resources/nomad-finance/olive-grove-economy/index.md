@@ -1,6 +1,6 @@
 ---
 title: "The Olive Grove Economy: A Nomad's Blueprint for Financial Resilience"
-date: 2025-06-24T09:00:00+02:00
+date: 2025-03-18T09:00:00+02:00
 draft: false
 description: "Stop living invoice to invoice. Discover the Olive Grove Economy, a powerful system inspired by ancient Mediterranean wisdom to build true financial resilience as a digital nomad."
 categories: ["Resources"]

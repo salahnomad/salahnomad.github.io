@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "A Tale of Two Visas: The Rooted Nomad's Alchemy for Turning Borders into Bridges"
-date: 2025-07-03T20:00:00+02:00
+date: 2025-02-25T20:00:00+02:00
 draft: false
 description: "UK visa approved. France visa refused. The difference? How I channeled my ancestors' exile into bureaucratic resilience. A nomad's guide to transforming 'REFUSÉ' stamps into roots."
 

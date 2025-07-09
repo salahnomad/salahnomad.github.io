@@ -1,7 +1,7 @@
 ---
 title: "The Anchored Nomad Manifesto: Why Roots Make You More Free, Not Less"
 subtitle: "Your Mediterranean Compass for Meaningful Travel: Part 1"
-date: 2024-01-15T10:00:00+01:00 # Ou la date de publication réelle souhaitée (ex: 2025-06-02T10:00:00+02:00)
+date: 2025-01-28T10:00:00+01:00 # Ou la date de publication réelle souhaitée (ex: 2025-06-02T10:00:00+02:00)
 description: "Discover how embracing your roots creates deeper freedom. A Mediterranean perspective on nomadic life from Ksar El-Kébir to Málaga."
 slug: "anchored-nomad-manifesto-part-1"
 categories:

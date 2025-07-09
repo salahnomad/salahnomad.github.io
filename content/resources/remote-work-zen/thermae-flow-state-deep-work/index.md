@@ -1,7 +1,7 @@
 ---
 title: "The Thermae Flow State: Ancient Roman Secrets to Deep Work & Digital Serenity"
 subtitle: "Your Mediterranean Compass for Meaningful Travel: Part 2"
-date: 2025-06-10T10:00:00+02:00
+date: 2025-02-04T10:00:00+02:00
 description: "Learn to build a 'Digital Thermae'—a sanctuary for focus. Discover ancient Roman bath rituals to achieve deep work and digital serenity in a distracted world."
 slug: "thermae-flow-state-deep-work"
 categories:

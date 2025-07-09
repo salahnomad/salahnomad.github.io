@@ -1,7 +1,7 @@
 ---
 title: "The Digital Agora: A Mediterranean Blueprint for Real Connection"
 subtitle: "Your Mediterranean Compass for Meaningful Travel: Part 3"
-date: 2025-06-15T10:00:00+02:00
+date: 2025-02-18T10:00:00+02:00
 description: "Transform digital loneliness into authentic connection. Discover how ancient Roman forums and Andalusian patios inspire a new paradigm for building a thriving online community."
 slug: "digital-agora-mediterranean-blueprint"
 categories: ["Resources"]
