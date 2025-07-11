@@ -1,6 +1,6 @@
 ---
 title: "The Alcazaba's Secret Code: How Málaga's Moorish Soul Informs its Digital Renaissance"
-date: 2025-06-23T14:00:00+02:00
+date: 2025-06-03T14:00:00+02:00
 draft: false
 description: "Málaga's tech boom isn't an accident. Discover how the ancient design principles of its Moorish Alcazaba fortress hold the blueprint for its modern, vibrant digital ecosystem."
 categories: ["Málaga Codex"]

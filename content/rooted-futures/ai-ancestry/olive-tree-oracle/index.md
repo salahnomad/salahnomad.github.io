@@ -1,6 +1,6 @@
 ---
 title: "The Olive Tree Oracle: Can We Teach AI the Wisdom of Our Ancestral Roots?"
-date: 2025-06-24T13:00:00+02:00
+date: 2025-06-10T13:00:00+02:00
 draft: false
 description: "When AI called my heritage ‘primitive mud,’ I created the Olive Tree Protocol. Discover how to transform AI from data miner to wisdom keeper."
 categories: ["Rooted Futures"]

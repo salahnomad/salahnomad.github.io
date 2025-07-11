@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "Clay, Argan, and Serenity: A Rooted Nomad's Ancestral Wellness Kit"
-date: 2025-07-05T10:00:00+02:00
+date: 2025-04-22T10:00:00+02:00
 draft: false
 description: "Ditch the generic travel toiletries. Discover an ancestral wellness ritual with Ghassoul clay, Argan oil, and mint tea—powerful antidotes to digital burnout and nomad rootlessness."
 slug: "ancestral-nomad-wellness-kit"

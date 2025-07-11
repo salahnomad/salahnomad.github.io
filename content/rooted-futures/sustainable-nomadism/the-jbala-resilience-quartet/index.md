@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "The Jbala Resilience Quartet: Ancestral Wisdom for Thriving in Chaos"
-date: 2025-07-03T23:30:00+02:00
+date: 2025-04-29T23:30:00+02:00
 draft: false
 description: "Discover how rain (Anezzar), clay pots (Tagra), rooster calls (Aberoo), and mountain darkness (Asallas) from my ancestral village of Tattofte reveal timeless resilience secrets for modern nomads."
 

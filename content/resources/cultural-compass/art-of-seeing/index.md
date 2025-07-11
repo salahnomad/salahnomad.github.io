@@ -1,7 +1,7 @@
 ---
 title: "The Art of Seeing: A Practical Compass for Navigating Cultural Landscapes"
 subtitle: "How to trade a tourist's gaze for an artisan's hands and a storyteller's heart."
-date: 2025-06-27T20:00:00+02:00
+date: 2025-03-21T20:00:00+02:00
 draft: false
 description: "Tired of surface-level travel? Discover a simple 3-step framework inspired by ancient artisans to see the world with depth, curiosity, and connection."
 

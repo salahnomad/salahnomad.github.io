@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "Saffron, Olive Oil & Algorithms: Preserving the Soul of Jbala-Andalusian Cuisine with AI"
-date: 2025-06-26T09:00:00+02:00
+date: 2025-06-17T09:00:00+02:00
 draft: false
 description: "How I taught AI to translate my grandmother's vanishing recipes, bridging ancestral wisdom from Jbala mountains to Andalusian saffron fields through digital stewardship."
 

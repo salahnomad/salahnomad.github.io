@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "Exile Isn't Erasure: How My Morisco Ancestors Forged a Compass for Modern Nomads"
-date: 2025-07-06T11:22:00+02:00
+date: 2025-05-06T11:22:00+02:00
 draft: false
 description: "Discover the Morisco Compass - a 500-year-old navigation tool born from ancestral exile that transforms displacement into resilience. Learn how my journey from Ksar El-Kébir to Málaga echoes modern diaspora experiences."
 

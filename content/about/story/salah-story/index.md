@@ -1,6 +1,6 @@
 ---
 title: "My Story: From Olive Groves to Algorithmic Sardines"
-date: 2024-05-08 # <<< Date corrigée
+date: 2025-01-17 # <<< Date corrigée
 draft: false
 layout: single
 featured_image: "images/story.jpg"

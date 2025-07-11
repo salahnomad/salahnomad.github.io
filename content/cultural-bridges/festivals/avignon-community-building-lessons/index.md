@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "The Zebra Shirt & The Pope's Palace: An Avignon Lesson in Building Authentic Communities"
-date: 2025-07-04T19:00:00+02:00
+date: 2025-02-21T19:00:00+02:00
 draft: false
 description: "How a Moroccan nomad's textile rebellion in Avignon revealed the ancient algorithm for authentic digital tribes. A journey from zebra patterns to Byzantine frescoes."
 slug: "avignon-community-building-lessons"

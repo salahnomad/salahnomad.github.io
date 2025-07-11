@@ -1,6 +1,6 @@
 ---
 title: "Espetos & Epiphanies: How Málaga's Sardine Ritual Teaches the Art of Slow Work"
-date: 2025-07-01T18:00:00+02:00
+date: 2025-04-08T18:00:00+02:00
 draft: false
 description: "Go beyond tapas. Discover how a simple, ancient beachside ritual in Málaga holds the secret to defeating burnout and mastering the art of soulful, focused work."
 

@@ -1,6 +1,6 @@
 ---
 title: "The Phoenician Blockchain: How Ancient Mediterranean Commerce Blueprints Modern Decentralized Trust"
-date: 2025-06-23T22:00:00+02:00
+date: 2025-06-06T22:00:00+02:00
 draft: false
 description: "Stop building your digital life on centralized platforms. Discover how ancient Phoenician traders invented blockchain principles 3,000 years before Bitcoin."
 categories: ["Cultural Bridges"]

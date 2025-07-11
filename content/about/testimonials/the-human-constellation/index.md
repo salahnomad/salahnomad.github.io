@@ -1,6 +1,6 @@
 ---
 title: "The Human Constellation: How Three Strangers Forged My Nomadic Identity"
-date: 2025-06-19T09:00:00+02:00
+date: 2025-05-13T09:00:00+02:00
 draft: false
 description: "The myth of the solitary nomad is a lie. Discover how a Dutch photographer, a British entrepreneur, and a Moroccan exile became the stars that guided my journey from wandering to rootedness."
 categories: ["Rooted Journeys"]

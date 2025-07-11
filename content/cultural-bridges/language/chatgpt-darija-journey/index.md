@@ -2,7 +2,7 @@
 # --- SEO & Metadata ---
 title: "When Algorithms Meet Al-Andalus: Can ChatGPT Decipher My Northern Moroccan Dialect?"
 subtitle: "A Jbala-born nomad's deep-dive into AI's limits when faced with a language shaped by olive groves, Spanish tides, and a millennium of Mediterranean whispers."
-date: 2025-06-26T23:00:00+02:00
+date: 2025-06-24T23:00:00+02:00
 draft: false
 description: "I put my Jbala-Andalusian dialect to the ChatGPT test. The result? A hilarious and profound journey into the soul of a language that algorithms can't flatten, and a lesson on what technology can never truly translate."
 

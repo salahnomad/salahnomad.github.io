@@ -1,6 +1,6 @@
 ---
 title: "When My Grandmother's Zellige Tiles Taught ChatGPT Patience: A Nomad's Guide to Slow AI"
-date: 2025-05-18
+date: 2025-06-13
 draft: false
 description: "Discover how ancestral Moroccan wisdom reshapes AI interactions. Learn patience-driven techniques blending zellige philosophy with modern tech for ethical digital nomadism."
 categories: ["Future of Nomadism", "AI Ethics", "Rooted Productivity"]

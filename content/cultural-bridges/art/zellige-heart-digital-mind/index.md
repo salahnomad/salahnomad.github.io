@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "Zellige Heart, Digital Mind: How Andalusian Craftsmanship Revolutionizes Ethical UX Design"
-date: 2025-07-07T01:00:00+02:00
+date: 2025-07-01T01:00:00+02:00
 draft: false
 description: "After my €50k Franco-Moroccan startup collapsed, I discovered salvation in my hometown's workshops. Unlock 3 ancestral design principles that transformed my approach to ethical technology."
 

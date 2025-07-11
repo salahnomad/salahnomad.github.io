@@ -1,6 +1,6 @@
 ---
 title: "The Ghost of Ritual Hammam Europe: A Post-Mortem on a Cross-Cultural Dream"
-date: 2025-07-02T11:00:00+02:00
+date: 2025-05-20T11:00:00+02:00
 draft: false
 description: "My most ambitious project failed spectacularly. It was the most valuable lesson of my life. Here is the honest post-mortem and the hard-won wisdom that no business school can teach you."
 
