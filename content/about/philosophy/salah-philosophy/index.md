@@ -23,7 +23,7 @@ resources:
 
 ### Prologue: The Loneliness of the Open Tab
 
-I was sitting in a sun-drenched plaza in Málaga, a digital nomad living the supposed dream. I had a fast internet connection, a view of jacaranda trees, and the freedom to work from anywhere. Yet, a profound sense of disconnection gnawed at me. My digital life was a sprawling, rootless metropolis of notifications, deadlines, and [fleeting online interactions](/testimonials/the-human-constellation/). I had the world at my fingertips, but I felt I belonged nowhere.
+I was sitting in a sun-drenched plaza in Málaga, a digital nomad living the supposed dream. I had a fast internet connection, a view of jacaranda trees, and the freedom to work from anywhere. Yet, a profound sense of disconnection gnawed at me. My digital life was a sprawling, rootless metropolis of notifications, deadlines, and [fleeting online interactions](/about/testimonials/the-human-constellation/). I had the world at my fingertips, but I felt I belonged nowhere.
 
 This is the core paradox that so many of us face: we chase geographic freedom only to find ourselves spiritually unmoored. We've optimized our workflows, but not our souls. It was this quiet crisis that led me back to the wisdom of my ancestors, to the olive groves of Morocco and the forgotten rhythms of the Mediterranean. It led me to a philosophy I now call **Rooted Nomadism**.
 
