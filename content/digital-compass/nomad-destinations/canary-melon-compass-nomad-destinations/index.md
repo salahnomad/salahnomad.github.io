@@ -1,25 +1,18 @@
 ---
-# --- SEO & Metadata ---
 title: "The Canary Melon Compass: A Rooted Nomad's Guide to Choosing Destinations"
 subtitle: "How 20 melons from Ksar El-Kébir taught me a soulful framework for finding home."
-date: 2025-03-11T14:00:00+02:00  # Date ajoutée - Obligatoire pour Hugo
-draft: false  # Paramètre ajouté - Indique que l'article est prêt à publier
+date: 2025-03-11T14:00:00+02:00
+draft: false
 description: "Stop choosing nomad destinations with sterile spreadsheets. Discover the Canary Melon Compass, a unique 3-step framework for finding a new home based on cultural flavor, resilience, and deep personal resonance."
 slug: "canary-melon-compass-nomad-destinations"
-
-# --- Categorization & Taxonomy ---
 categories: ["Digital Compass"]
 subcategory: ["Nomad Destinations"]
 tags: ["nomad-destinations", "slow-travel", "rooted-nomadism", "cultural-intelligence", "philosophy-of-place", "belonging"]
 keywords: ["how to choose digital nomad location", "authentic travel", "cultural resonance", "finding home as a nomad", "Salah Nomad philosophy", "Canary Melon strategy"]
-
-# --- Featured Image & Resources ---
 featured_image: "images/canary-melon-compass-hero.jpg"
 featured_image_alt: "Golden Canary melon from Ksar El-Kébir on a ferry, symbolizing a soulful guide for choosing digital nomad destinations"
 authors: ["Salah Nomad"]
 toc: true
-
-# --- Image Resources for Hugo ---
 resources:
   - src: "images/canary-melon-compass-hero.jpg"
     title: "A journey guided by terroir, not just coordinates"
@@ -29,8 +22,6 @@ resources:
     title: "Infographic: Canary Melon Compass framework - Sweetness, Rind, Recognition"
   - src: "images/malaga-nomad-destination-case-study.jpg"
     title: "Málaga case study - A nomad destination with soul"
-
-# --- Structured Data ---
 json_ld: |
   {
     "@context": "https://schema.org",
@@ -83,7 +74,7 @@ In that moment, we weren't officer and traveler. We were Mediterranean kin—lik
 
 ### Chapter 2: The Failure of Sterile Metrics
 
-We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **Ritual Hammam Europe** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing cultural resonance.
+We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing cultural resonance.
 
 Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy:
 
@@ -95,14 +86,14 @@ Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure.
 #### 1. The Sweetness Test: Terroir Over Terrain
 > *What unique flavor nourishes your soul?*
 
-In Málaga, it's woodsmoke from **espetos** on Playa La Malagueta—the exact scent from Larache's sardine nets. Not tourism, but living ritual since Phoenician times.
+In Málaga, it's woodsmoke from **[espetos](/malaga-codex/local-rituals/espetos-epiphanies/)** on Playa La Malagueta—the exact scent from Larache's sardine nets. Not tourism, but living ritual since Phoenician times.
 
 *Action:* Find where locals gather at dusk. What aromas dominate? If no essence calls you, you're a ghost passing through.
 
 #### 2. The Rind Test: Cultural Resilience
 > *Does this place protect its core from globalization's erosion?*
 
-Like Jbala's cork oaks regenerating after stripping, resilient cultures maintain integrity. In Málaga, I found it in:
+Like [Jbala's cork oaks](/resources/eco-nomad/jbala-trail-andalusian-legacy/) regenerating after stripping, resilient cultures maintain integrity. In Málaga, I found it in:
 - Fishermen teaching sons the **exact angle** to skewer sardines
 - The raw *duende* in hidden flamenco *tablaos*, not staged shows
 
@@ -121,7 +112,7 @@ When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmo
 |---------------|------------------------------------------|------------------------------------|
 | **Sweetness** | *Espetos* ritual at sunset               | Woodsmoke from Larache's sardine nets |
 | **Rind**      | Malagueños' fierce dialect protection    | Jbala tribes preserving traditions |
-| **Recognition**| Alcazaba's Moorish arches                | Grandmother's courtyard in Ksar El-Kébir |
+| **Recognition**| [Alcazaba's Moorish arches](/malaga-codex/history-reborn/alcazabas-secret-code/) | Grandmother's courtyard in Ksar El-Kébir |
 
 This isn't finding replicas of home. It's discovering where **new landscapes converse with your inner topography**—like Pieter seeing the nomad in my Arles stillness.
 
@@ -145,4 +136,4 @@ Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarq
 > *"The olive tree whispered: Your ancestors' tears are my nourishment.  
 > Now I understand—roots aren't anchors,  
 > but living threads weaving through all borders."*  
-> — [The Anchored Nomad Manifesto](/philosophy/anchored-nomad)
+> — [The Anchored Nomad Manifesto](/about/philosophy/anchored-nomad-manifesto-part-1/)

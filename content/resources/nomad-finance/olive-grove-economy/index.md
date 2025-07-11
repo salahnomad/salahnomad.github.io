@@ -16,17 +16,18 @@ toc_heading: "Cultivate Your Financial Grove"
 
 ### 1. The Silence That Changed Everything
 
-March 16, 2020. Tangier's port lay unnaturally still. The scent of Rif mountain clay - that earthy perfume of my livelihood - hung trapped in locked shipping containers. Thirty-seven cancellation emails glowed accusingly on my screen. In 48 hours, my physical product business had vaporized.
+March 16, 2020. Tangier's port lay unnaturally still. The scent of Rif mountain clay - that earthy perfume of my livelihood - hung trapped in locked shipping containers. Thirty-seven cancellation emails glowed accusingly on my screen. In 48 hours, [my physical product business had vaporized](/about/story/olive-trees-and-algorithms/).
+
+{{< figure 
+    src="images/tangier-port-stillness.jpg" 
+    alt="Deserted Tangier port during COVID-19 lockdown with stacked shipping containers and a laptop on a crate showing multiple cancellation emails" 
+    caption="**The catalyst for change:** the port's unnatural stillness and the digital death knell of 37 cancellations" 
+    class="narrow-image"
+>}}
 
 I drove to Ksar El-Kébir through villages frozen mid-breath. At our family olive grove, I pressed my forehead against an ancestor-planted tree. Its bark felt like cooled lava, etched with centuries of droughts and invasions. *"How do you survive?"* I whispered. The wind answered through silver leaves: *"You measure wealth in roots, not fruits."*
 
 > That epiphany birthed this truth: **Digital nomads obsess over cash flow (fruits). True freedom grows from assets (roots).**
-
-{{< figure 
-    src="images/olive-grove-financial-resilience.jpg" 
-    alt="Ancient olive tree roots intertwined with glowing digital financial growth circuits - Mediterranean resilience economy metaphor" 
-    caption="**Our modern economy needs ancient roots:** where living wood meets digital growth" 
->}}
 
 ### 2. The Digital Forager Trap
 
@@ -71,6 +72,7 @@ Most freelancers operate as **human search engines**:
 - Spend 90 mins creating a $7 PDF checklist from existing knowledge
 - Sell via Gumroad (zero setup)
 - Reinforce 20% into your Resilience Fund (Pillar 4)
+- [Avoid the trap of over-investing in unproven models](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)
 
 ---
 
@@ -102,6 +104,7 @@ Most freelancers operate as **human search engines**:
 - Saying "no" to toxic $200/hr clients
 - Funding 3-month "asset sprints"
 - Sleeping through market crashes
+- Inspired by the [resilience principles of the Jbala](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/)
 
 **Build It Berber-Style:**
 {{< mermaid >}}
