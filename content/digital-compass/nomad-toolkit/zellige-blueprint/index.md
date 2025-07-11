@@ -23,7 +23,7 @@ The rhythmic *tink-tink-tink* echoed through a sun-drenched alley in Córdoba, S
 
 He wasn't just breaking tiles. He was composing order, one precise strike at a time. This art, heir to the Roman mosaics of ancient Baetica, was a living philosophy of work. In that moment, I saw the synthesis of two great worlds: the unwavering discipline of Rome, refined through the soulful, geometric artistry of Al-Andalus.
 
-I instinctively reached for my phone, and its screen immediately assaulted me with a chaotic flood of notifications. The contrast was a physical blow. The Roman architect Vitruvius once defined all good design by three principles: *firmitas, utilitas, venustas*—strength, utility, and delight. My digital life, I realized, had none of these. It was fragile, cluttered, and anxiety-inducing. How had we, with all our advanced technology, lost this ancient wisdom? That was the day I stopped trying to manage my life and started composing it.
+I instinctively reached for my phone, and its screen immediately assaulted me with a chaotic flood of notifications. The contrast was a physical blow. The Roman architect Vitruvius once defined all [principles of design](/art/zellige-heart-digital-mind/) by three principles: *firmitas, utilitas, venustas*—strength, utility, and delight. My digital life, I realized, had none of these. It was fragile, cluttered, and anxiety-inducing. How had we, with all our advanced technology, lost this ancient wisdom? That was the day I stopped trying to manage my life and started composing it.
 
 ### 2. The Myth of the Blank Page: Tabula Rasa Syndrome
 
@@ -35,7 +35,7 @@ We've forgotten what Vitruvius knew 2,000 years ago. A system without *firmitas*
 
 > *"True productivity isn't about managing tasks. It's about composing a life that is strong, useful, and beautiful—one intentional tile at a time."*
 
-The Zellige Blueprint is my answer to this crisis. It’s not an app. It's a way of seeing, a system of organization inspired by the master artisans of Andalusia that infuses our work with the Vitruvian ideals.
+The Zellige Blueprint is my answer to this crisis. It’s not an app. It's [a way of seeing](/philosophy/salah-philosophy/), a system of organization inspired by the master artisans of Andalusia that infuses our work with the Vitruvian ideals.
 
 ### 3. The Three Layers of Hispano-Moorish Order
 
@@ -89,7 +89,7 @@ Adopting an artisan's mindset is a practice, not a quick fix. When your mosaic c
     *   **The Artisan's Solution: The *Ars Tria* (The Art of Three).** Don't try to shape them all. Once a week, quickly sort your raw notes into three piles: **Gold** (high-potential ideas to be shaped immediately), **Clay** (useful but not urgent material to be archived), and **Dust** (trivial noise to be discarded without guilt). A master knows not every stone is a gem.
 
 *   **Problem: "Acta tyranny! All my tiles are red (everything is an urgent action)."**
-    *   **The Artisan's Solution: The *Lex Cordubensis* (The Law of Córdoba).** Impose a daily quota. Your mind is not a legionary outpost. Mandate a balance: a maximum of 5 *Acta* (🔴), but a minimum of 3 *Cogitationes* (🔵) and 2 *Radices* (🟢). This forces you to rebalance your day away from pure reaction and toward deep, creative work.
+    *   **The Artisan's Solution: The *Lex Cordubensis* (The Law of Córdoba).** Impose a daily quota. Your mind is not a legionary outpost. Mandate a balance: a maximum of 5 *Acta* (🔴), but a minimum of 3 *Cogitationes* (🔵) and 2 *Radices* (🟢). This forces you to rebalance your day away from pure reaction and toward [deep, creative work](/remote-work-zen/thermae-flow-state-deep-work/).
 
 *   **Problem: "Stella obesity! My 'Website Redesign' project has 87 tiles."**
     *   **The Artisan's Solution: The *Principium Italicense* (The Italic Principle).** A star that is too large is not a pattern; it's a pile. Fragment monolithic projects into smaller, more focused *stellae*. "Redesign Website" becomes three elegant stars: "Refine Homepage Narrative," "Optimize Pillar Content," and "Streamline Contact Flow."

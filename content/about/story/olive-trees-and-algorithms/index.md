@@ -36,7 +36,7 @@ resources:
 ### Prologue: The Silence of a World Shut Down
 The scent of wild thyme clung to the Moroccan dusk. It was March 2020. My palms were pressed against the gnarled bark of an olive tree my ancestors called *The Witness*—a tree that had seen my great-grandfather’s birth. In my pocket, my phone was a cold, dead weight, its silence more damning than any notification.
 
-Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate.
+Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire [a new model of financial resilience](/nomad-finance/olive-grove-economy/).
 
 ---
 
@@ -61,7 +61,7 @@ I retreated to the Jbala mountains, to the olive groves that held my childhood. 
 - My father reading H.G. Wells' *The Time Machine* under a gas lamp.
 - The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe.
 
-Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis.
+Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy](/about/philosophy/salah-philosophy/).
 
 | **Olive Tree Wisdom** | **My Digital Translation** |
 |:----------------------|:-------------------------|

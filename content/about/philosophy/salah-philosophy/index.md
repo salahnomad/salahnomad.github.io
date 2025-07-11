@@ -1,17 +1,12 @@
 ---
-# --- SEO & Metadata ---
 title: "Rooted Nomadism: Where Ancient Roots Meet Digital Currents"
 date: 2025-01-21T09:00:00+01:00
 draft: false
 description: "Discover Rooted Nomadism, a life philosophy for finding belonging in movement. Learn how to blend ancestral wisdom with a digital life, turning roots into your greatest source of freedom."
-
-# --- Categorization & Taxonomy ---
 categories: ["Rooted Journeys"]
 subcategory: ["Philosophy"]
 tags: ["philosophy-of-nomadism", "rooted-nomadism", "digital-nomad-lifestyle", "cultural-identity", "slow-travel", "finding-meaning"]
 keywords: ["digital nomad philosophy", "what is rooted nomadism", "how to find meaning as a nomad", "balancing travel and home", "ancestral wisdom for modern life", "Salah Nomad philosophy"]
-
-# --- Featured Image & Leaf Bundle Resources ---
 featured_image: "images/rooted-nomadism-compass-rose.jpg"
 featured_image_alt: "An antique brass compass overlaid on a map of the Mediterranean, its needle pointing to a glowing olive tree, symbolizing the philosophy of Rooted Nomadism."
 authors: ["Salah Nomad"]
@@ -28,7 +23,7 @@ resources:
 
 ### Prologue: The Loneliness of the Open Tab
 
-I was sitting in a sun-drenched plaza in Málaga, a digital nomad living the supposed dream. I had a fast internet connection, a view of jacaranda trees, and the freedom to work from anywhere. Yet, a profound sense of disconnection gnawed at me. My digital life was a sprawling, rootless metropolis of notifications, deadlines, and fleeting online interactions. I had the world at my fingertips, but I felt I belonged nowhere.
+I was sitting in a sun-drenched plaza in Málaga, a digital nomad living the supposed dream. I had a fast internet connection, a view of jacaranda trees, and the freedom to work from anywhere. Yet, a profound sense of disconnection gnawed at me. My digital life was a sprawling, rootless metropolis of notifications, deadlines, and [fleeting online interactions](/testimonials/the-human-constellation/). I had the world at my fingertips, but I felt I belonged nowhere.
 
 This is the core paradox that so many of us face: we chase geographic freedom only to find ourselves spiritually unmoored. We've optimized our workflows, but not our souls. It was this quiet crisis that led me back to the wisdom of my ancestors, to the olive groves of Morocco and the forgotten rhythms of the Mediterranean. It led me to a philosophy I now call **Rooted Nomadism**.
 
@@ -40,7 +35,7 @@ This is the core paradox that so many of us face: we chase geographic freedom on
 
 **Rooted Nomadism** is the art of carrying your homeland like a compass, not a burden. It rejects the false choice between "settling down" and "wandering aimlessly." Instead, it asks a more profound question: *How can we move through the world in ways that deepen our connections—to place, past, and people—rather than dilute them?*
 
-Born from over 20 years of straddling Morocco’s olive groves and Europe’s digital hubs, this philosophy is a practical framework for living a modern, mobile life with an ancient soul. It's about finding stability in your own story, so you can navigate the currents of a rapidly changing world. As I discovered during the pandemic crisis that birthed this blog, true resilience isn't about having a fixed address; it's about having a fixed center.
+Born from over 20 years of straddling Morocco’s olive groves and Europe’s digital hubs, this philosophy is a practical framework for living a modern, mobile life with an ancient soul. It's about finding stability in your own story, so you can navigate the currents of a rapidly changing world. As I discovered during the [pandemic crisis that birthed this blog](/story/olive-trees-and-algorithms/), true resilience isn't about having a fixed address; it's about having a fixed center.
 
 ---
 
@@ -71,7 +66,7 @@ This means infusing your work with personal, cultural texture. When my first ven
 
 #### 2. Storm-Proof Roots
 *"Resilience isn’t rigidity. It’s the wisdom of a cork oak."*  
-When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**]({{< relref "/about/story/olive-trees-and-algorithms" >}}), I learned from the trees. True resilience comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
+When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**](/story/olive-trees-and-algorithms/), I learned from the trees. True resilience comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
 
 #### 3. Depth Over Distance
 *"Collect meaning, not passport stamps."*  
@@ -79,7 +74,7 @@ Choose journeys that layer your understanding of the world and yourself. For me,
 
 #### 4. The Mediterranean Mindset
 *"Think like a sea that connects, not a border that divides."*  
-This philosophy thrives on hybridity. It's how my early studies in biology and geology now inform my e-commerce strategies. It's about blending Amazigh patterns into web design, or using the structure of a *zellige* mosaic to build a more soulful productivity system, which I call the [**Zellige Blueprint**](/digital-compass/nomad-toolkit/zellige-blueprint/).
+This philosophy thrives on hybridity. It's how my early studies in biology and geology now inform my e-commerce strategies. It's about blending Amazigh patterns into web design, or using the structure of a *zellige* mosaic to build a more [soulful productivity system](/nomad-toolkit/zellige-blueprint/), which I call the **Zellige Blueprint**.
 
 #### 5. Ancestral Algorithms
 *"Ask your olive trees before your analytics."*  
