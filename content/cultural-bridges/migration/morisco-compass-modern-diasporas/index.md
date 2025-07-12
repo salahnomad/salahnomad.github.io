@@ -1,23 +1,16 @@
 ---
-# --- SEO & Metadata ---
 title: "Exile Isn't Erasure: How My Morisco Ancestors Forged a Compass for Modern Nomads"
 date: 2025-05-06T11:22:00+02:00
 draft: false
 description: "Discover the Morisco Compass - a 500-year-old navigation tool born from ancestral exile that transforms displacement into resilience. Learn how my journey from Ksar El-Kébir to Málaga echoes modern diaspora experiences."
-
-# --- Categorization & Taxonomy ---
 categories: ["Cultural Bridges"]
 subcategory: ["Migration & Diaspora"]
 tags: ["diaspora-identity", "cultural-memory", "morisco-history", "resilience", "rooted-nomadism", "philosophy-of-belonging"]
 keywords: ["Morisco diaspora", "diaspora identity", "cultural resilience", "exile transformation", "ancestral wisdom", "modern nomadism", "Strait of Gibraltar", "Ksar El-Kébir", "Salah Nomad philosophy"]
-
-# --- Featured Image & Resources ---
 featured_image: "images/morisco-compass-hero.jpg"
 featured_image_alt: "An antique brass compass rests on hand-drawn maps of Andalusia and Northern Morocco, overlaid with zellige patterns - symbolizing navigation through cultural memory"
 authors: ["Salah Nomad"]
 toc: true
-
-# --- Image Resources for Hugo ---
 resources:
   - src: "images/morisco-compass-hero.jpg"
     title: "The Morisco Compass: Navigating identity across centuries"
@@ -98,7 +91,7 @@ The Moriscos preserved Granada through:
 - **Architectural echoes**: Reproducing Granada's courtyard homes in Chefchaouen's blue-washed medina
 
 **Modern application**: 
-- I maintain **digital zellige rituals**: Morning mint tea before checking emails, writing under olive trees
+- I maintain **[digital zellige rituals]({{< relref "/cultural-bridges/art/zellige-heart-digital-mind" >}})**: Morning mint tea before checking emails, writing under olive trees
 - Recording family stories with [AI voice preservation]({{< relref "/rooted-futures/ai-ancestry/olive-tree-oracle" >}}) technology
 - Cooking ancestral dishes as edible history lessons
 
@@ -111,7 +104,7 @@ The trauma of exile encoded what I call our **diaspora operating system**:
 **This manifested when:**
 - My e-commerce business collapsed during COVID lockdowns (as told in Chapter 14 of *Algorithmic Sardines*)
 - Instead of despairing, I launched this blog - transforming physical limitation into digital expansion
-- Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks
+- Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet" >}})**
 
 ### 3. **Adaptation as Creative Fusion (Eastern Approach)**
 {{< figure 
@@ -178,11 +171,11 @@ Today when I walk through Málaga's Alcazaba ([The Alcazaba's Secret Code]({{< r
 
 **This is the Morisco Compass in action:**
 - **Memory**: Cooking my mother's *rfissa* while video-calling cousins in Morocco
-- **Resilience**: Using lockdown isolation to build this digital sanctuary
+- **Resilience**: Using lockdown isolation to build this **[digital sanctuary]({{< relref "/cultural-bridges/tech/cybercafe-digital-scarcity" >}})**
 - **Adaptation**: Blending Amazigh proverbs with AI poetry generators
 - **Contribution**: Teaching ancestral tech ethics to Silicon Valley developers
 
-Those iron keys in Granada's museum don't represent locked doors anymore. They're the first rudders that steered us toward becoming **citizens of the in-between** - the eternal navigators of straits physical and spiritual.
+Those iron keys in Granada's museum don't represent locked doors anymore. They're the first rudders that steered us toward becoming **[citizens of the in-between]({{< relref "/about/philosophy/salah-philosophy" >}})** - the eternal navigators of straits physical and spiritual.
 
 > "Our roots aren't buried in soil, but carried in our marrow. To be uprooted isn't to disappear - it's to become compost for new ways of belonging."
 

@@ -1,12 +1,12 @@
 ---
-# --- SEO & Metadata ---
+# SEO & Metadata
 title: "Málaga Coworking Sanctuaries: A Rooted Nomad's Expert Guide"
 subtitle: "Discover Workspaces Where Andalusian Soul Meets Digital Flow"
 date: 2025-04-01T10:00:00+02:00
 draft: false
 description: "Unlock Málaga's 3 transformative coworking spaces with our Mediterranean Triad framework. Includes insider rituals, data comparisons, and cultural insights for digital nomads. Find your perfect workspace sanctuary."
 
-# --- Categorization & Taxonomy ---
+# Categorization & Taxonomy
 categories: ["Málaga Codex"]
 subcategory: ["Coworking Gems"]
 tags: ["malaga", "coworking", "digital-nomad", "rooted-nomadism", "andalusian-culture", "productivity-rituals"]
@@ -19,13 +19,13 @@ keywords: [
      "guide travail malaga nomade digital"
 ]
 
-# --- Featured Image & Resources ---
+# Featured Image & Resources
 featured_image: "images/malaga-coworking-sanctuaries-hero.jpg"
 featured_image_alt: "Andalusian patio coworking space in Málaga with laptop and plants - ideal rooted nomad workspace"
 authors: ["Salah Nomad"]
 toc: true
 
-# --- Image Resources for Hugo ---
+# Image Resources for Hugo
 resources:
   - src: "images/malaga-coworking-sanctuaries-hero.jpg"
     title: "The ideal sanctuary: where modern work meets timeless soul."
@@ -65,7 +65,7 @@ Outside, the vibrant heart of Soho pulsed with life. I had achieved geographic f
 
 ### 2. The Mediterranean Triad: Your Productivity Compass
 
-Our framework for transformative workspaces:
+Our framework for transformative workspaces extends the [Canary Melon Compass](/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations/) methodology for choosing destinations that nourish both work and soul:
 
 {{< figure src="images/mediterranean-triad-framework.jpg" alt="Mediterranean Triad: Olive Tree, Zellige Pattern, Shared Tagine - cultural productivity framework" caption="The Olive-Zellige-Tagine: Ancient archetypes for modern productivity" >}}
 
@@ -88,7 +88,7 @@ Our framework for transformative workspaces:
 
 *   **Andalusian Timetable:**
     - 9 AM: Deep work with fountain acoustics
-    - 2 PM: 20-min "inspired siesta" under orange trees
+    - 2 PM: 20-min "inspired siesta" under orange trees (embodying the [Andalusian wisdom of slow work](/malaga-codex/local-rituals/espetos-epiphanies/))
     - 5 PM: Sunset strategy sessions
 
 #### **B. The Living Room: The Weaver's Hub** (Soho Adjacent)
@@ -116,7 +116,7 @@ Our framework for transformative workspaces:
 
 {{< figure src="images/andalusian-digital-legacy-stone.jpg" alt="Hand tracing code on ancient stone - digital nomad legacy in Andalusia" caption="Your keyboard is your chisel, Andalusia your marble" >}}
 
-Choosing a workspace in Málaga is sculpting your professional life in living heritage. The true sanctuary emerges when space disappears, leaving only the alchemy of Olive-Zellige-Tagine in your flow state.
+Choosing a workspace in Málaga is sculpting your professional life in living heritage. The true sanctuary emerges when space disappears, leaving only the alchemy of Olive-Zellige-Tagine in your flow state - a philosophy deepened through [regenerative journeys](/resources/eco-nomad/jbala-trail-andalusian-legacy/) across Andalusia's landscapes.
 
 ---
 

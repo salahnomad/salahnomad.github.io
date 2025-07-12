@@ -26,7 +26,7 @@ resources:
 
 ### Introduction: The Landscape Mirror
 
-When my Morisco ancestors crossed the Strait of Gibraltar in 1609, they carried Granada in their hearts like buried treasure. Imagine their astonishment when, after the harrowing voyage, they looked upon the hills around Ksar el-Kébir and saw not exile—but reflection. The same cork oaks whispered, the same rivers sang. 
+When my [Morisco ancestors](/cultural-bridges/migration/morisco-compass-modern-diasporas/) crossed the Strait of Gibraltar in 1609, they carried Granada in their hearts like buried treasure. Imagine their astonishment when, after the harrowing voyage, they looked upon the hills around Ksar el-Kébir and saw not exile—but reflection. The same cork oaks whispered, the same rivers sang. 
 
 But their true homecoming came when Ghomara elders welcomed them with steaming **seksou** (never "couscous"—that foreign word came later) served in a **kasria**—the wooden bowl carved from Loukkos elms that bears our city's name. As my great-grandmother Fatima would say while polishing her own century-old kasria: *"This bowl holds more than food. It holds the pact between our peoples: you bring your roots, we offer our earth."*
 
@@ -42,7 +42,7 @@ This journey from displacement to belonging is more than family lore. It's the o
 Regenerative travel begins with the radical act of listening. When you order **"seksou"** instead of "couscous" in Ksar el-Kébir's medina, you're doing more than pronouncing a word. You're whispering: *"Teach me your language, not mine."* This simple shift transforms you from consumer to guest. My ancestors understood this—they adopted Ghomara customs while sharing Andalusian irrigation techniques. Their integration wasn't assimilation; it was conversation.
 
 **Modern Application:**  
-- Learn 3 words in the local Jebli dialect before visiting  
+- [Learn 3 words in the local Jebli dialect before visiting](/resources/cultural-compass/art-of-seeing/)  
 - Ask elders: *"What did your grandparents call this place?"* before opening Google Maps  
 
 #### **2. The Artisan's Exchange (Economic Reciprocity)**
@@ -106,7 +106,7 @@ I travel with three keys:
 
 {{< figure src="images/jbala-andalusian-keys-to-belonging.jpg" alt="Three symbolic keys resting inside a traditional wooden kasria dish: a modern Málaga apartment key, an ancient rusted Morisco key from Córdoba, and a key carved from Loukkos elm wood" caption="The Morisco Compass: Modern, ancestral, and rooted keys to belonging" class="center" >}}
 
-Together, they unlock regenerative travel's secret: **We belong where we leave fertile ground.** The Jbala Trail begins when we see borders not as walls, but as seams waiting for stitching.
+Together, they unlock regenerative travel's secret: **We belong where we leave fertile ground.** The Jbala Trail begins when we see borders not as walls, but as seams waiting for stitching. These [principles of resilience](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/) transcend geography.
 
 > *"The deepest roots are those carried in open hands."*  
 > — Fatima's proverb, Ksar el-Kébir 1923

@@ -1,17 +1,14 @@
 ---
-# --- SEO & Metadata ---
 title: "The Jbala Resilience Quartet: Ancestral Wisdom for Thriving in Chaos"
 date: 2025-04-29T23:30:00+02:00
 draft: false
 description: "Discover how rain (Anezzar), clay pots (Tagra), rooster calls (Aberoo), and mountain darkness (Asallas) from my ancestral village of Tattofte reveal timeless resilience secrets for modern nomads."
 
-# --- Categorization & Taxonomy ---
 categories: ["Rooted Futures"]
 subcategory: ["Sustainable Nomadism"]
 tags: ["resilience", "jbala-wisdom", "ancestral-knowledge", "cultural-roots", "slow-living"]
 keywords: ["jbala philosophy", "ancestral resilience", "sustainable nomadism", "tattofte", "jbalaphilosophy"]
 
-# --- Featured Image & Resources ---
 featured_image: "images/jbala-resilience-quartet-tattofte.jpg"
 featured_image_alt: "Jbala Resilience Quartet: Rain terraces (Anezzar) | Clay tagine (Tagra) | Rooster at dawn (Aberoo) | Mountain night (Asallas) near Tattofte, Morocco"
 authors: ["Salah Nomad"]
@@ -28,21 +25,21 @@ resources:
 
 ### The Village That Whispers Resilience in the Jbala Tongue
 
-I still feel the first drops of **Anezzar**—the life-giving rain—on my face as we hurried back from Tattofte's Tuesday souk. Just 15km from Ksar El-Kébir, this village where the Jbala mountains begin speaks resilience in its own language. Not through complex theories, but through the daily poetry of:
+I still feel the first drops of **Anezzar**—the life-giving rain—on my face as we hurried back from Tattofte's Tuesday souk. Just 15km from Ksar El-Kébir, this village where the Jbala mountains begin speaks [**resilience**](/cultural-bridges/migration/morisco-compass-modern-diasporas/) in its own language. Not through complex theories, but through the daily poetry of:
 
 - **Anezzar** (the rain) that nourishes the cork oaks.
 - **Tagra** (the clay cooking pot) simmering in every home.
 - **Aberoo** (the rooster) announcing each dawn.
 - **Asallas** (the mountain darkness) that cradles restoration.
 
-These weren't just childhood memories; they were living wisdom keepers. When I later faced business collapse and pandemic isolation, I understood how they held secrets no MBA could teach.
+These weren't just childhood memories; they were [**living wisdom keepers**](/resources/cultural-compass/art-of-seeing/). When I later faced business collapse and pandemic isolation, I understood how they held secrets no MBA could teach.
 
 ---
 
 ### Rain, Pot, Rooster, Darkness: The Jbala Resilience Quartet
 
 #### 1. Anezzar: Channeling Uncertainty
-I learned resilience watching Jbala farmers welcome **Anezzar**—the sudden mountain rain that could flood fields or bless crops. They didn't resist its unpredictability; they channeled it through meticulously built terraces and irrigation ditches. #AnezzarWisdom
+I learned resilience watching Jbala farmers welcome **Anezzar**—the sudden mountain rain that could flood fields or bless crops. They didn't resist its unpredictability; they channeled it through meticulously built [**terraces**](/resources/eco-nomad/jbala-trail-andalusian-legacy/) and irrigation ditches. #AnezzarWisdom
 
 *Nomad Translation:*
 Like Anezzar, market shifts are inevitable. Build "terraces"—diversified income streams, a solid emergency fund—to channel the energy of uncertainty into nourishment rather than disaster.
@@ -118,4 +115,4 @@ When Google's algorithms shift or a client vanishes, I don't reach for business 
 #### **Your Roots, Your Resilience**
 - **Reflect:** Which of the four Jbala teachers—Anezzar, Tagra, Aberoo, or Asallas—speaks most directly to you today?
 - **Act:** Choose just one of these elements to consciously implement this week. Share your commitment in the comments below.
-- **Deeper Journey:** [Walk the terraced paths of Tattofte in my Jbala Trail Guide](/resources/eco-nomad/jbala-trail-andalusian-legacy/).
+- **Deeper Journey:** [Walk the terraced paths of Tattofte in my Jbala Trail Guide](/resources/eco-nomad/jbala-trail-andalusian-legacy/)

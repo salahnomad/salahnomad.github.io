@@ -1,6 +1,6 @@
 ---
 title: "Olive Grove Digital Detox: 3 Ancestral Rituals to Reset Your Nervous System"
-date: 2025-04-15T00:00:00+01:00 # Date mise à jour
+date: 2025-04-15T00:00:00+01:00
 draft: false
 description: "Salah Nomad reveals 3 olive tree rituals from Morocco & Spain to reset your nervous system. Grounding, bark communion & analog tea ceremony for digital overload. #RootedNomadism"
 categories: ["Rooted Futures"]
@@ -44,7 +44,7 @@ These gnarled sages offer profound neurobiological wisdom:
     Beneath soil, the "Wood Wide Web" exchanges nutrients through fungal networks - nature's original internet. As my Jbala grandmother said: *"True connection needs no likes."*
 
 3.  **Drought Response Protocol**  
-    During 2020's confinement (Chapter 14), I observed olives endure drought not by frantic activity, but **strategic stillness**. Their lesson: *"When overwhelmed, grow roots, not branches."*
+    During 2020's confinement (Chapter 14), I observed olives endure drought not by frantic activity, but **[strategic stillness](/resources/remote-work-zen/thermae-flow-state-deep-work/)**. Their lesson: *"When overwhelmed, grow roots, not branches."*
 
 ---
 
@@ -71,7 +71,7 @@ During confinement in Ksar El-Kébir, this ritual maintained my sanity. Walking 
 {{< figure src="images/bark-communion-ritual.jpg" alt="Hands and face against ancient olive bark in Casabermeja" caption="Bark Communion: cross-species data exchange">}}
 
 **Somatic Intelligence Transfer**  
-Near Casabermeja, an olive elder whispered: *"Your ancestors' tears fertilize my roots."* Our weekly communion became bioenergetic dialogue.
+Near Casabermeja, an olive elder whispered: *"Your ancestors' tears fertilize my roots."* Our weekly communion became bioenergetic dialogue. For complementary ancestral tools, see my **[ancestral wellness kit](/resources/wellness-on-the-move/ancestral-nomad-wellness-kit/)**.
 
 **The Data Exchange Protocol:**  
 1. Select 500+ year tree  
@@ -92,7 +92,7 @@ The tree shares resilience algorithms forged through centuries of adaptation. Yo
 {{< figure src="images/analog-tea-ceremony.jpg" alt="Hands holding mint tea cup under olive branches, no electronics" caption="Analog Anchor: oxytocin-rich connection">}}
 
 **The Neurochemistry of Presence**  
-Perfected in a Norwich pub with Zak (Chapter 6), this ritual proves: undivided attention creates biochemical magic no video call replicates.
+Perfected in a Norwich pub with Zak (Chapter 6), this ritual proves: undivided attention creates biochemical magic no video call replicates. This contrasts sharply with my early experiences of **[digital scarcity](/cultural-bridges/tech/cybercafe-digital-scarcity/)** in cybercafés.
 
 **Ceremonial Framework:**  
 - **Vessel:** Hand-thrown clay teapot (essential)  
@@ -145,5 +145,5 @@ Which ancestor's forgotten ritual holds your nervous system reset?
    - Photo of hand-on-bark moment  
    - One sentence of somatic wisdom received  
    - Tag **#OliveNeuralReset**  
-[View participant gallery](/community/challenges)
+[View participant gallery](/connect/hub/)
 {{< /promptbox >}}

@@ -18,7 +18,7 @@ toc: true
 
 There is a persistent image burned into our collective imagination—the lone digital nomad on a mountain in Bali, sunrise at their back, the world at their feet. It's beautiful, yes, but it's a lie. The truth is far more human.
 
-We are not solitary stars adrift in the universe. We are constellations—shaped not by solo journeys, but by the luminous encounters that chart our course. This is the origin story of Rooted Nomadism, a philosophy forged not in isolation, but in the **sacred geometry of human connection.** It is the story of three celestial bodies in my personal cosmos: a Dutch photographer who became my mirror, a British entrepreneur who built my bridge, and a Moroccan exile who was my anchor.
+We are not solitary stars adrift in the universe. We are constellations—shaped not by solo journeys, but by the luminous encounters that chart our course. This is the origin story of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/), a philosophy forged not in isolation, but in the **sacred geometry of human connection.** It is the story of three celestial bodies in my personal cosmos: a Dutch photographer who became my mirror, a British entrepreneur who built my bridge, and a Moroccan exile who was my anchor.
 
 ---
 
@@ -66,7 +66,7 @@ In that English pub, Zak gave me the final piece of the puzzle. He wasn't a ment
 
 Pieter. Sally. Zak. A mirror, a bridge, an anchor.
 
-These weren't random encounters. They formed the trinity of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/): Identity through reflection, Vision through connection, and Belonging through shared memory. Without them, I would have been a wandering star with no direction. With them, I learned that our strongest journeys are forged in the gravitational pull of human connection.
+These weren't random encounters. They formed the trinity of Rooted Nomadism: Identity through reflection, Vision through connection, and Belonging through shared memory. Without them, I would have been a wandering star with no direction. With them, I learned that our strongest journeys are forged in the gravitational pull of human connection.
 
 The solitary nomad is a myth; a connected traveler is the reality. My identity is not a monolith I carved alone; it is a mosaic, and its most beautiful tiles were placed in my hands by others.
 
@@ -74,7 +74,7 @@ As you walk your own path, I ask you this: **stop and look up. Who are the stars
 
 ---
 > **Join the Conversation:**  
-> What human connection changed your trajectory? Share your story in the comments below or on social media with the hashtag **#HumanConstellationJourney**. Your experience might illuminate someone else's path.
+> What human connection changed your trajectory? Share your story in the comments below or on social media with the hashtag **#HumanConstellationJourney**. Your experience might illuminate someone else's path. Discover frameworks for [**building community**](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/) in our digital age.
 > 
 > **Next Compass Point:**  
 > Wondering how this human-centered philosophy translates into digital mastery? Our next article explores just that. *Coming soon: "SEO Like a Phoenician Merchant: Ancient Trade Routes to Conquer Google’s AI Tides."*
