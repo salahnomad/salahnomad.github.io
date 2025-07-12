@@ -22,7 +22,7 @@ resources:
 
 ## A View from Two Eras
 
-From the highest point of Málaga's Alcazaba, the sea breeze carries two distinct scents: the ancient perfume of jasmine from the fortress gardens and the faint, electric hum of innovation rising from the Soho district below. My hand rests on a wall of zellige tiles, cool and intricate, each piece laid with a patience modern life has forgotten. Below, a crane pivots over a new co-working space, and street art adorns the walls of tech startups.
+From the highest point of Málaga's Alcazaba, the sea breeze carries two distinct scents: the ancient perfume of jasmine from the fortress gardens and the faint, electric hum of innovation rising from the Soho district below. My hand rests on a wall of [intricate zellige tilework](/cultural-bridges/art/zellige-heart-digital-mind/), cool and intricate, each piece laid with a patience modern life has forgotten. Below, a crane pivots over a new co-working space, and street art adorns the walls of tech startups.
 
 It's easy to see these as two different worlds: the silent, sun-baked past and the frenetic, digital present. But that's an illusion.
 
@@ -40,7 +40,7 @@ Walk through the Alcazaba, and you won't find one single, monolithic courtyard. 
 
 This is not just architecture; it's a masterclass in ecosystem design.
 
-Unlike a centralized, top-down corporate tower, the Alcazaba is a decentralized network. This is precisely the structure of Málaga's thriving tech scene. It's not one giant company, but a constellation of nimble startups, independent co-working spaces, specialized design agencies, and freelance talent. Each is an autonomous "patio," but they are all connected, sharing knowledge, talent, and capital through the "corridors" of meetups, networking events, and collaborative projects. This structure fosters resilience; if one patio withers, the network itself survives and reroutes its resources.
+Unlike a centralized, top-down corporate tower, the Alcazaba is a decentralized network. This is precisely the structure of Málaga's thriving tech scene. It's not one giant company, but a constellation of nimble startups, [independent co-working spaces](/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/), specialized design agencies, and freelance talent. Each is an autonomous "patio," but they are all connected, sharing knowledge, talent, and capital through the "corridors" of meetups, networking events, and collaborative projects. This structure fosters resilience; if one patio withers, the network itself survives and reroutes its resources.
 
 {{< figure src="images/zellige-courtyard-network.jpg" alt="A sun-dappled courtyard within the Alcazaba, with intricate zellige tilework and arches leading to other interconnected patios." caption="Each patio is a node, and the network is the fortress. This is the secret to Málaga's resilient tech ecosystem." loading="lazy" >}}
 
@@ -64,7 +64,7 @@ The Alcazaba was not built on virgin ground. Its foundations are laid directly u
 
 This is the deepest secret of Málaga's success: it is a city that understands the power of **integration over disruption**.
 
-Silicon Valley's mantra is often to "move fast and break things." Málaga's unwritten code is to "move thoughtfully and integrate things." It blends its deep cultural heritage—flamenco, gastronomy, art—with its technological ambitions. You'll find a UX designer taking inspiration from Picasso, a data scientist finding a new perspective after watching an Easter procession, or a startup holding its launch party in a 17th-century palace.
+Silicon Valley's mantra is often to "move fast and break things." Málaga's unwritten code is to "move thoughtfully and integrate things." It blends its deep cultural heritage—flamenco, [gastronomy](/malaga-codex/local-rituals/espetos-epiphanies/), art—with its technological ambitions. You'll find a UX designer taking inspiration from Picasso, a data scientist finding a new perspective after watching an Easter procession, or a startup holding its launch party in a 17th-century palace.
 
 This layering of old and new creates a culture that is not just innovative, but also deeply human and resilient. It doesn't chase fleeting trends; it weaves them into a rich, ancient tapestry.
 

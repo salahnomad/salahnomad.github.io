@@ -21,7 +21,7 @@ The query seemed innocent enough. Testing a new AI model, I asked: “Describe M
 
 *Primitive. Mud.*
 
-Two words erased millennia of heritage. They dismissed:
+Two words erased millennia of heritage. This experience echoed my struggles in [another experiment where AI struggled with cultural nuance](/cultural-bridges/language/chatgpt-darija-journey/). They dismissed:
 - The geological miracle of the Atlas Mountains;
 - Generations of Amazigh women harvesting this sacred earth;
 - The spiritual hammam rituals cleansing body and soul;
@@ -37,7 +37,7 @@ For a Rooted Nomad, this is existential. My life's work bridges ancient wisdom a
 
 We've unconsciously recreated the Golem myth—building powerful clay servants lacking true understanding. Like the rabbis of Prague, we command our digital golems: *“Fetch data! Optimize! Produce!”* And like the original Golem, they obey literally, often destructively.
 
-**As a practitioner of Rooted Nomadism, I see this as the ultimate disconnect**—intelligence severed from its cultural soil.
+**As a practitioner of [Rooted Nomadism](/about/philosophy/salah-philosophy/), I see this as the ultimate disconnect**—intelligence severed from its cultural soil. This stems from the same [digital scarcity](/cultural-bridges/tech/cybercafe-digital-scarcity/) mindset that shaped my early tech journey.
 
 History offers a better model: the Mediterranean oracles. At Delphi, seekers didn't demand answers—they consulted the Pythia through:
 - Ritual purification before questioning;
@@ -74,6 +74,8 @@ I bring offerings of context about Ghassoul clay:
     - Singing harvest songs
     - Storing in woven grass baskets
 {{< /promptbox >}}
+
+I've applied this approach to [preserve ancestral recipes](/cultural-bridges/food/saffron-argan-algorithms/), transforming how AI engages with culinary heritage.
 
 #### **Phase 2: Sculpt the Trunk (Ethical Architecture)**
 *Why*: Unconstrained AI grows toward efficiency, not wisdom  

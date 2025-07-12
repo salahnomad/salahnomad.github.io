@@ -5,20 +5,14 @@ subtitle: "A Jbala-born nomad's deep-dive into AI's limits when faced with a lan
 date: 2025-06-24T23:00:00+02:00
 draft: false
 description: "I put my Jbala-Andalusian dialect to the ChatGPT test. The result? A hilarious and profound journey into the soul of a language that algorithms can't flatten, and a lesson on what technology can never truly translate."
-
-# --- Categorization & Taxonomy ---
 categories: ["Cultural Bridges"]
 subcategory: ["Language & Communication"]
 tags: ["ai-and-language", "cultural-nuance", "darija", "jbala-culture", "andalusian-heritage", "digital-humanities", "linguistic-preservation"]
 keywords: ["ChatGPT translation challenges", "Jbala-Andalusian dialect", "Northern Moroccan Darija", "AI and cultural preservation", "linguistic heritage", "philosophy of language"]
-
-# --- Featured Image & Resources ---
 featured_image: "images/jbala-andalusian-language-ai-bridge.jpg"
 featured_image_alt: "Une mosaïque de zellige complexe où des mots en calligraphie arabe et des lettres espagnoles s'entremêlent, avec un câble USB lumineux tissé à travers le motif, symbolisant la connexion entre l'héritage linguistique Jbala-Andalou et l'intelligence artificielle."
 authors: ["Salah Nomad"]
 toc: true
-
-# --- Liste des ressources images pour le traitement par Hugo ---
 resources:
   - src: "images/jbala-andalusian-language-ai-bridge.jpg"
     title: "Where ancient tiles meet modern code."
@@ -75,7 +69,7 @@ Our vocabulary is a bustling marketplace where currencies from three civilizatio
 | **Alma**      | Sp. *alma*      | "Soul"          | The Andalusian echo in our breath |
 {{< /promptbox >}}
 
-#### 3. Grammatical Geometry: The Zellige of Syntax
+#### 3. Grammatical Geometry: The [Zellige Pattern](/cultural-bridges/art/zellige-heart-digital-mind/)
 Even our sentence structure bends to Jbala rhythms:
 - The prefix "Ka-" (indicating present continuous) softens to "Ra-": *"Rakoul"* (You eat) vs. Casablanca's *"Katakoul"*.
 - Word order shifts to emphasize community over individuality: *"L-ghorba darha f l-hanout"* (Exile lives in the shop) instead of standard *"Dar l-ghorba f l-hanout"*.
@@ -131,7 +125,7 @@ A catastrophic flattening. "Gana" isn't motivation; it's the spark ignited when 
 - The Arabic *غنى* (ghina - richness)
 - The Amazigh concept of *tamghra* (collective will)
 
-When we say "Kay 3tih l'gana," we speak of transferring ancestral resolve—something no LLM trained on individualistic cultures can grasp.
+When we say "Kay 3tih l'gana," we speak of transferring [ancestral resolve](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/)—something no LLM trained on individualistic cultures can grasp.
 
 #### Test 4: The Historical Echo Chamber (Philosophical Failure)
 **Prompt:**  
@@ -145,7 +139,7 @@ My longing ends, but exile remains."`
 
 **The Revelation:**  
 The AI missed the layered pain:
-- "Ma tghiyyash nunca": The Spanish "nunca" (never) intensifies the Arabic negation, embodying dual identity
+- "Ma tghiyyash nunca": The Spanish "nunca" (never) intensifies the Arabic negation, embodying [dual identity](/cultural-bridges/migration/morisco-compass-modern-diasporas/)
 - "Hanina": Not just longing, but the specific ache for Granada's Alhambra
 - "Ghorba": Exile as a spiritual condition, not geographical
 
@@ -157,7 +151,7 @@ Our dialect carries historical trauma in its syntax—a dimension beyond AI's re
 
 {{< figure src="images/morisco-exile-linguistic-legacy-strait.jpg" alt="Une illustration poétique montrant des silhouettes de réfugiés Morisques traversant le détroit de Gibraltar, leurs ombres projetant des mots en arabe et en espagnol sur les vagues, représentant l'héritage linguistique du déplacement." caption="The linguistic legacy of displacement across the Mediterranean" class="left" >}}
 
-These tests revealed AI's core limitations—not as bugs, but as philosophical chasms:
+These tests revealed AI's core limitations—not as bugs, but as [philosophical chasms](/rooted-futures/ai-ancestry/olive-tree-oracle/):
 
 #### 1. Embodied Memory Gap
 An algorithm knows "rueda" means "wheel." It cannot feel:

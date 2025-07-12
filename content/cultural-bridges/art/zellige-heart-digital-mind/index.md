@@ -1,23 +1,19 @@
 ---
-# --- SEO & Metadata ---
 title: "Zellige Heart, Digital Mind: How Andalusian Craftsmanship Revolutionizes Ethical UX Design"
 date: 2025-07-01T01:00:00+02:00
 draft: false
 description: "After my €50k Franco-Moroccan startup collapsed, I discovered salvation in my hometown's workshops. Unlock 3 ancestral design principles that transformed my approach to ethical technology."
 
-# --- Categorization & Taxonomy ---
 categories: ["Cultural Bridges"]
 subcategory: ["Art & Craftsmanship"]
 tags: ["ethical-ux", "zellige-design", "andalusian-craft", "business-failure", "cross-cultural-design"]
 keywords: ["Andalusian design principles", "ethical UX case study", "zellige philosophy tech", "Moroccan craftsmanship digital", "Ritual Hammam failure lessons"]
 
-# --- Featured Image & Resources ---
 featured_image: "images/zellige-heart-ux-hero.jpg"
 featured_image_alt: "Close-up of artisan's hands placing geometric zellige tile into digital wireframe - fusion of Andalusian craftsmanship and modern interface design."
 authors: ["Salah Nomad"]
 toc: true
 
-# --- Image Resources ---
 resources:
   - src: "images/zellige-heart-ux-hero.jpg"
     title: "Where ancestral craftsmanship meets digital innovation"
@@ -76,7 +72,7 @@ The **zellige master** never isolates a tile. He sees sunlight patterns across t
 
 *Ethical UX Translation*:  
 - Design beyond the screen edge: How does your feature affect attention spans? Local economies? Mental ecosystems?  
-- Implement "[digital serenity]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}})" patterns that respect cognitive load  
+- Implement "[digital serenity]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}})" patterns that create a **cognitive sanctuary**  
 - Case: We redesigned our checkout flow around Jbala herbal harvest cycles → 37% less cart abandonment  
 
 #### **2. Precision of Intent**
@@ -117,10 +113,10 @@ That Ksar El-Kébir craftsman saved more than tiles - he salvaged my design phil
 
 **Digital craftsmanship isn't about pixels. It's about conscience.**
 
-The same hands that failed in Avignon now create with ancestral wisdom. Whether you're designing interfaces, teams, or your life - these principles hold:
+The same hands that failed in Avignon now create with [ancestral wisdom]({{< relref "/digital-compass/cultural-design/zebra-shirt-interface" >}}) – a philosophy of composing a life through intentional design. Whether you're building interfaces, teams, or your nomadic existence - these principles hold:
 
 > "Build like the artesano del zellige: With systemic harmony, surgical intention, and uncompromising substance."
 
 **Your challenge**: Identify one element in your work violating the 0.5mm rule. How will you apply the Zellige remedy this week?
 
-*For the tools to begin: [Explore my Zellige Productivity System]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}})*
+*For the tools to begin: [Explore my Zellige Productivity System]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) – this system for soulful productivity transforms intention into tangible results.*
