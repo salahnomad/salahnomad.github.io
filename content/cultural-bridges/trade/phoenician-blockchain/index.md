@@ -44,12 +44,12 @@ No "Phoenicia" existed - only independent city-states (Tyre, Sidon, Carthage). W
 *Blockchain parallel:* Bitcoin/Ethereum survive node failures through distributed architecture.
 
 #### Pillar 2: Alphabet Protocol (Immutable Ledger)
-Their 22-character alphabet democratized commerce. Merchants recorded deals on *ostraka* (pottery shards), creating transparent records. **Trust shifted from kings to protocol**.
+Their 22-character alphabet democratized commerce. Merchants recorded deals on *ostraka* (pottery shards), creating transparent records. **Trust shifted from kings to protocol** - [ancient strategies for decentralized communication](/resources/seo-alchemy/phoenician-merchant-seo/) that still hold power in our digital age.
 
 *Blockchain parallel:* Distributed ledgers create tamper-proof records through cryptographic sealing.
 
 #### Pillar 3: Standardized Ingots (Tokenization)
-Value came from verifiable silver/gold weight - not royal decrees. Any merchant could validate worth with scales. **First cross-border, trustless tokens**.
+Value came from verifiable silver/gold weight - not royal decrees. Any merchant could validate worth with scales. **First cross-border, trustless tokens** - a precursor to building your modern [olive grove economy](/resources/nomad-finance/olive-grove-economy/) for financial resilience.
 
 *Blockchain parallel:* Crypto value derives from mathematical scarcity, not central banks.
 
@@ -65,7 +65,7 @@ Ugarit excavations reveal fired clay contracts sealed within envelopes. Terms we
 This isn't history - it's an operating manual:
 
 **For creators:**  
-Build your "home port" (personal site/newsletter). Use platforms as temporary trading posts. Form decentralized guilds to survive algorithm famines.
+Build your "home port" (personal site/newsletter). Use platforms as temporary trading posts. Form [decentralized guilds](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/) to survive algorithm famines.
 
 **For nomads:**  
 Escape passport/bank captivity. Explore decentralized identity (Ethereum ENS). Store credentials on-chain - accessible anywhere, controlled by you.

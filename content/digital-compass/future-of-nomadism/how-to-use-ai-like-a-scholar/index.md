@@ -7,7 +7,6 @@ categories: ["Future of Nomadism", "AI Ethics", "Rooted Productivity"]
 tags: ["Slow AI", "Cultural Technology", "Moroccan Wisdom", "Zellige Philosophy", "Digital Minimalism", "Ethical AI"]
 featured_image: "images/zellige-ai-craft.jpg"
 featured_image_alt: "Aged Moroccan artisan hands placing geometric zellige tile with open laptop in background - fusion of ancestral craft and modern technology"
-# og_image: ligne supprimée
 comments: true
 schema_type: "Article"
 reading_time: 9
@@ -16,7 +15,7 @@ reading_time: 9
 ## Prologue: Cedarwood and the Weight of Time
 The cedarwood shelves in my father's Ksar El-Kébir library held more than books—they cradled centuries of wisdom. Between Amazigh poetry collections and H.G. Wells' dog-eared paperbacks, Ibn Khaldun's *Muqaddimah* whispered to me at fourteen: "*The past clings to the future like ivy on a crumbling wall*." Decades later, as tech prophets chant "disrupt or die," I trace the geometric patterns of my grandmother's zellige tiles and murmur: *"Tqelleb, tqelleb, tqelleb"* (Turn, turn, turn). 
 
-This isn't resistance. This is **Rooted Nomadism**—where algorithms absorb cultural clay rather than erase it. Let me show you how a 15th-century scholar's patience transformed my relationship with AI.
+This isn't resistance. This is **[Rooted Nomadism](/about/philosophy/salah-philosophy/)**—where algorithms absorb cultural clay rather than erase it. Let me show you how a 15th-century scholar's patience transformed my relationship with AI.
 
 ---
 
@@ -25,7 +24,7 @@ This isn't resistance. This is **Rooted Nomadism**—where algorithms absorb cul
 
 The Meknès cybercafé in 2006 smelled of burnt circuitry and adolescent ambition. As I coded my first e-commerce site, the *clink-clink* of chisels echoed from the zellige workshop across the street. "*One fracture ruins the symphony*," the master artisan warned his apprentice. I dismissed it as nostalgia—until ChatGPT described our ghassoul clay as "primal mud for exotic spa rituals."
 
-**My cultural intervention**:
+**My [cultural intervention](/rooted-futures/ai-ancestry/olive-tree-oracle/)**:
 1. Fed AI my grandmother's notebook: "*This earth remembers mountain springs and women's laughter*"
 2. Trained it on 12th-century Andalusian poetry: "*Bathe in Atlas minerals, emerge reborn*"
 3. Refined outputs with Amazigh proverbs about soil memory
@@ -35,7 +34,7 @@ The result? *Ritual Hammam's* product descriptions now read like love letters to
 > *"Code with clay, not plastic—your tools should remember where they come from."*  
 > — *Algorithmic Sardines*, Ch. 7 (Penned during a Chefchaouen blackout)
 
-*Your turn*: Break your AI with something painfully human. I once crashed Jasper by inputting Aunt Fatima's *harira* recipe as a "brand manifesto."
+*Your turn*: Break your AI with something painfully human. I once crashed Jasper by inputting Aunt Fatima's [*harira* recipe](/cultural-bridges/food/saffron-argan-algorithms/) as a "brand manifesto."
 
 ---
 
@@ -91,7 +90,7 @@ Each dawn, I walk beneath Málaga's Alcazaba—its Moorish arches whispering "*A
 
 ---
 
-## Epilogue: The Zebra Shirt Manifesto
+## Epilogue: [The Zebra Shirt Manifesto](/digital-compass/cultural-design/zebra-shirt-interface/)
 ![Iconic zebra shirt overlaid with cobalt zellige patterns](images/zebra-zellige.jpg "Rooted nomad identity - where tradition meets innovation")
 
 That viral 2016 Arles photo? The shirt wasn't the story. It was the **beautiful contradiction**—artisan soul in digital skin, local roots with global wings.

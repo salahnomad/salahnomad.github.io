@@ -12,7 +12,6 @@ tags: ["transformation", "resilience", "digital-legacy", "rooted-nomadism", "pan
 keywords: ["rooted nomadism story", "digital transformation journey", "Mediterranean entrepreneur", "pandemic business pivot", "finding meaning in adversity", "Salah Nomad story", "cosmetic clay business", "wellness heritage"]
 
 # --- Featured Image & Leaf Bundle Resources ---
-# Paths are now relative to the bundle's 'images' subfolder
 featured_image: "images/rooted-nomad-crisis-pivot-hero.jpg"
 featured_image_alt: "A Moroccan man's weathered hand on ancient olive bark, his other hand on a glowing laptop keyboard, symbolizing where ancestral resilience meets a digital rebirth in Andalusia."
 authors: ["Salah Nomad"]
@@ -36,7 +35,7 @@ resources:
 ### Prologue: The Silence of a World Shut Down
 The scent of wild thyme clung to the Moroccan dusk. It was March 2020. My palms were pressed against the gnarled bark of an olive tree my ancestors called *The Witness*—a tree that had seen my great-grandfather’s birth. In my pocket, my phone was a cold, dead weight, its silence more damning than any notification.
 
-Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire [a new model of financial resilience](/nomad-finance/olive-grove-economy/).
+Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire [a new model of financial resilience](/resources/nomad-finance/olive-grove-economy/).
 
 ---
 
@@ -103,7 +102,7 @@ This was it. This was the legacy my olive tree foresaw: wisdom traveling faster 
 ---
 
 ### V. The Mediterranean Coin: One Face Roots, One Face Waves
-Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The philosophy of [**Rooted Nomadism**]({{< relref "/about/philosophy/salah-philosophy" >}}) is simply the art of holding that coin.
+Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The philosophy of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/) is simply the art of holding that coin.
 
 The pandemic proved what the Andalusian exiles knew five centuries ago: **walls can imprison bodies, but they often liberate minds.** Clay expires. Borders close. But a well-told story, rooted in truth, outlasts pandemics and algorithms alike.
 

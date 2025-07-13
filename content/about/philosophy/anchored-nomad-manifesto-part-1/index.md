@@ -63,13 +63,13 @@ This anchoring manifests at **Lixus**, where Rome met Morocco:
 ## III. Truth 2: Sardines Navigate Nutrient Currents
 
 **The Mediterranean Secret:**  
-*Watching Larache fishermen prepare '[espetos](/local-rituals/espetos-epiphanies/)' identical to Malaga's, I grasped why sardines migrate for millennia without destruction: they follow currents nourishing both shores.*
+*Watching Larache fishermen prepare '[espetos](/malaga-codex/local-rituals/espetos-epiphanies/)' identical to Malaga's, I grasped why sardines migrate for millennia without destruction: they follow currents nourishing both shores.*
 
 ![Sardine school forming silver vortex](images/sardine-migration.jpg "Sardines: masters of intentional mobility between continents")
 
 This is **Sardine Navigation** - the antidote to nomadic extraction. When I launched cross-Mediterranean collaborations:
 
-> "Each sample sent to partners was a bridge between roots and modern markets. [Ritual Hammam](/collaborations/ghost-of-ritual-hammam/) emerged from Roman baths meeting Moroccan traditions in my imagination."  
+> "Each sample sent to partners was a bridge between roots and modern markets. [Ritual Hammam](/cultural-bridges/collaborations/ghost-of-ritual-hammam/) emerged from Roman baths meeting Moroccan traditions in my imagination."  
 > *(Chapter 5: Nomad Seeds)*
 
 **On Larache Beach:**  
@@ -95,7 +95,7 @@ Moorish artisans didn't invent new tiles - they recombined core elements into co
 > "Like zellige, we carry essential patterns. The deeper magic? Its logic mirrors [how I build digital value](/digital-compass/nomad-toolkit/zellige-blueprint/): HTML as geometric framework, content as colored fragments, SEO as binding mortar."  
 > *(Chapter 12: The Ancestors' Road)*
 
-This fluid coherence creates authentic presence - the kind that [builds tribes](/testimonials/the-human-constellation/), not just traffic.
+This fluid coherence creates authentic presence - the kind that [builds tribes](/about/testimonials/the-human-constellation/), not just traffic.
 
 ## V. Your Anchored Freedom Starter Kit
 
@@ -111,7 +111,7 @@ Transform Mediterranean wisdom into daily practice:
 *Review day - "Which authentic 'tiles' did I express?"*  
 
 **First Steps:**  
-- Cook [one family recipe](/food/saffron-argan-algorithms/) this week  
+- Cook [one family recipe](/cultural-bridges/food/saffron-argan-algorithms/) this week  
 - Apply the 3-Question Navigator to your next meeting  
 - Express one core value tangibly tomorrow  
 

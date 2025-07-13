@@ -69,7 +69,7 @@ When distractions arise? Capture them on your "Parking Lot" notepad - honoring t
 
 ### 3. Frigidarium: The Shock of Consolidation
 
-> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, much like [The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/) teaches us about [intentional work](/nomad-toolkit/zellige-blueprint/)."  
+> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, much like [The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/) teaches us about [intentional work](/digital-compass/nomad-toolkit/zellige-blueprint/)."  
 > *(Algorithmic Sardines, Chapter 7: Clay and Living Waters)*
 
 Post-deep work, most skip this vital chamber. Don't. Spend 10 minutes:
@@ -93,7 +93,7 @@ After consolidation, 20 minutes of true analog rest:
 - Gaze at olive trees (their fractal patterns calm minds)
 - **Absolutely no screens**
 
-Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism](/about/philosophy/salah-philosophy/) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work](/local-rituals/espetos-epiphanies/) traditions.
+Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism](/about/philosophy/salah-philosophy/) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work](/malaga-codex/local-rituals/espetos-epiphanies/) traditions.
 
 ---
 
@@ -151,7 +151,7 @@ As I write this from my Málaga terrace, morning light gilding Roman theater rui
 This week, conduct **one full ritual**. Then join me in the comments sharing:
 1. Which chamber felt most transformative?
 2. What insight emerged during Palaestra?
-Use **#ThermaeFlowState** - let's build a [community of deep work artisans](/remote-work-zen/digital-agora-mediterranean-blueprint/).
+Use **#ThermaeFlowState** - let's build a [community of deep work artisans](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/).
 
 {{< figure src="images/cta-thermae-flow-state.jpg" alt="Roman mosaic path leading to laptop - timeless ritual meets digital workflow" caption="The eternal meets the algorithmic: your Digital Thermae awaits" >}}
 

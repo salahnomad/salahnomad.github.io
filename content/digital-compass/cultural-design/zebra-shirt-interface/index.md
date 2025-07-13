@@ -26,13 +26,13 @@ In 2016, during the **Arles Photography Festival**, a Dutch photographer named P
 
 {{< figure src="images/pieter-monsma-arles-photo.jpg" alt="Black and white photo of Salah Nomad wearing his iconic zebra-striped shirt, looking thoughtfully into the distance, captured in Arles by Pieter Monsma in 2016." caption="Pieter Monsma’s 2016 shot in Arles that became a manifesto." >}}
 
-That zebra shirt was more than clothing. It was a **design statement**—a fusion of Andalusian geometry (zellige) and African-inspired rhythm (zebra), embodying the tension and harmony of my Moroccan-Spanish heritage. It became a **user interface** of sorts: inviting curiosity, sparking conversations, and silently declaring an identity rooted in cultural synthesis.
+That zebra shirt was more than clothing. It was a **design statement**—a fusion of Andalusian geometry (zellige) and African-inspired rhythm (zebra), embodying the tension and harmony of my Moroccan-Spanish heritage. It became a **user interface** of sorts: inviting curiosity, [sparking conversations](/about/testimonials/the-human-constellation/), and silently declaring an identity rooted in cultural synthesis.
 
 ---
 
 ## The Zellige Principle: From Mosaics to UX
 
-The **zellige**—those intricate geometric tileworks of Morocco—are not just decorative. They are a testament to **precision, patience, and harmony**. Each tile, hand-cut with 0.5mm tolerance, contributes to a larger pattern that breathes with intentionality. This is the essence of **cultural UX design**:
+The **[zellige](/digital-compass/nomad-toolkit/zellige-blueprint/)**—those intricate geometric tileworks of Morocco—are not just decorative. They are a testament to **precision, patience, and harmony**. Each tile, hand-cut with 0.5mm tolerance, contributes to a larger pattern that breathes with intentionality. This is the essence of **cultural UX design**:
 
 {{< figure src="images/zellige-detail-ux-juxtaposition.jpg" alt="Close-up of intricate, colorful Moroccan zellige tilework placed side-by-side with a clean, modern UX wireframe design, illustrating the dialogue between ancient craft and digital interface planning." caption="Zellige patterns juxtaposed with a modern UX wireframe, holding timeless lessons." >}}
 
@@ -66,7 +66,7 @@ Add intentional pauses to your interface. A beautifully designed loading animati
 
 ## Why This Matters: Beyond Aesthetics
 
-This isn’t about slapping cultural motifs onto sterile interfaces. It’s about **imbuing the spirit of ancient crafts** into modern tech. When we design with the patience of a zellige maâlem (artisan), the precision of Phoenician trade routes—those ancient networks that optimized maritime paths and standardized cargo for efficiency—and the harmony of a Mediterranean breeze, we create interfaces that feel less like machines and more like living tools.[^1]
+This isn’t about slapping cultural motifs onto sterile interfaces. It’s about **imbuing the spirit of ancient crafts** into modern tech. When we design with the patience of a zellige maâlem (artisan), the precision of Phoenician trade routes—those ancient networks that optimized maritime paths and standardized cargo for efficiency—and the harmony of a Mediterranean breeze, we create interfaces that feel less like machines and more like living tools.[^1] This applies equally to physical [community spaces](/cultural-bridges/festivals/avignon-community-building-lessons/) as to digital ones.
 
 As I wrote in *Algorithmic Sardines*:  
 > *"The most profound interfaces are not those that shout for attention, but those that whisper of connection, crafted with the patience of a maâlem and the heart of a storyteller."*  

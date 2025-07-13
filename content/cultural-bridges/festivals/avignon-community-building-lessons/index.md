@@ -1,24 +1,20 @@
 ---
-# --- SEO & Metadata ---
 title: "The Zebra Shirt & The Pope's Palace: An Avignon Lesson in Building Authentic Communities"
 date: 2025-02-21T19:00:00+02:00
 draft: false
 description: "How a Moroccan nomad's textile rebellion in Avignon revealed the ancient algorithm for authentic digital tribes. A journey from zebra patterns to Byzantine frescoes."
 slug: "avignon-community-building-lessons"
 
-# --- Categorization & Taxonomy ---
 categories: ["Cultural Bridges"]
 subcategory: ["Festivals & Celebrations"]
 tags: ["community-building", "avignon-festival", "rooted-nomadism", "digital-alchemy"]
 keywords: ["authentic community building", "avignon festival lessons", "Salah Nomad zebra shirt", "digital nomad community", "cultural storytelling", "experiential marketing"]
 
-# --- Featured Image & Resources ---
 featured_image: "images/avignon-festival-stage-hero.jpg"
 featured_image_alt: "Medieval courtyard in Avignon transformed into contemporary festival stage at dusk - stone arches framing vibrant lighting"
 authors: ["Salah Nomad"]
 toc: true
 
-# --- Image Resources for Hugo ---
 resources:
   - src: "images/avignon-festival-stage-hero.jpg"
     title: "Where 14th-century stones meet 21st-century creativity - Avignon's timeless stage"
@@ -62,14 +58,14 @@ Our command center wasn't a boardroom. It was **Table 7 at Lou Mistrau** - Bruno
 
 One twilight, between lavender farmers and Off Festival actors, alchemy occurred:
 
-> SAAD: "Imagine... Ritual Hammam pop-up in the Chapelle des Pénitents Noirs."  
+> SAAD: "Imagine... [Ritual Hammam pop-up](/cultural-bridges/collaborations/ghost-of-ritual-hammam/) in the Chapelle des Pénitents Noirs."  
 > ACTRESS: "Your Ghassoul clay for our stage makeup remover!"  
 > TECH FOUNDER: "My cousin curates that 14th-century space."
 
-This was no meeting. It was a **21st-century hammam** - steam of ideas, exfoliation of assumptions, the massage of perspectives. As I described in [*Algorithmic Sardines*](/resources/remote-work-zen/thermae-flow-state/): *"True innovation needs the friction of elbow-to-elbow seating, the scent of spilled Pastis on terracotta tiles."*
+This was no meeting. It was a **21st-century hammam** - steam of ideas, exfoliation of assumptions, the massage of perspectives. As I described in [*Algorithmic Sardines*](/resources/remote-work-zen/thermae-flow-state/): *"True innovation needs the friction of elbow-to-elbow seating, the scent of spilled Pastis on terracotta tiles."* Lou Mistrau became our [*agora*](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/) - equal parts café, incubator, and confessional.
 
 **The Rooted Ritual:**  
-Communities thrive in "third spaces" where hierarchy dissolves. Lou Mistrau became our *agora* - equal parts café, incubator, and confessional. Where's your nomadic hammam? That sacred space where ideas soak until they soften?
+Communities thrive in "third spaces" where hierarchy dissolves. Where's your nomadic hammam? That sacred space where ideas soak until they soften?
 
 ---
 
@@ -105,7 +101,7 @@ Leaving Avignon, I didn't just carry memories. I carried three talismans, three 
 
 {{< promptbox title="The Three Avignon Talismans" type="info" >}}
 1.  **The Zebra Stone: To Be Seen.**  
-    Dare to express your unique, hybrid identity. Authenticity is a beacon that attracts your true tribe.
+    Dare to express your unique, hybrid identity. Authenticity is a beacon that attracts your [true tribe](/about/testimonials/the-human-constellation/).
 
 2.  **The Rosé Stone: To Connect.**  
     Engineer spaces for serendipity—those "third places" where unscripted collaboration can spark and deep trust can be forged.

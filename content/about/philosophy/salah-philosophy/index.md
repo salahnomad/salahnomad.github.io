@@ -35,7 +35,7 @@ This is the core paradox that so many of us face: we chase geographic freedom on
 
 **Rooted Nomadism** is the art of carrying your homeland like a compass, not a burden. It rejects the false choice between "settling down" and "wandering aimlessly." Instead, it asks a more profound question: *How can we move through the world in ways that deepen our connections—to place, past, and people—rather than dilute them?*
 
-Born from over 20 years of straddling Morocco’s olive groves and Europe’s digital hubs, this philosophy is a practical framework for living a modern, mobile life with an ancient soul. It's about finding stability in your own story, so you can navigate the currents of a rapidly changing world. As I discovered during the [pandemic crisis that birthed this blog](/story/olive-trees-and-algorithms/), true resilience isn't about having a fixed address; it's about having a fixed center.
+Born from over 20 years of straddling Morocco’s olive groves and Europe’s digital hubs, this philosophy is a practical framework for living a modern, mobile life with an ancient soul. It's about finding stability in your own story, so you can navigate the currents of a rapidly changing world. As I discovered during the [pandemic crisis that birthed this blog](/about/story/olive-trees-and-algorithms/), true resilience isn't about having a fixed address; it's about having a fixed center.
 
 ---
 
@@ -66,7 +66,7 @@ This means infusing your work with personal, cultural texture. When my first ven
 
 #### 2. Storm-Proof Roots
 *"Resilience isn’t rigidity. It’s the wisdom of a cork oak."*  
-When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**](/story/olive-trees-and-algorithms/), I learned from the trees. True resilience comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
+When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**](/about/story/olive-trees-and-algorithms/), I learned from the trees. True resilience comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
 
 #### 3. Depth Over Distance
 *"Collect meaning, not passport stamps."*  
@@ -74,7 +74,7 @@ Choose journeys that layer your understanding of the world and yourself. For me,
 
 #### 4. The Mediterranean Mindset
 *"Think like a sea that connects, not a border that divides."*  
-This philosophy thrives on hybridity. It's how my early studies in biology and geology now inform my e-commerce strategies. It's about blending Amazigh patterns into web design, or using the structure of a *zellige* mosaic to build a more [soulful productivity system](/nomad-toolkit/zellige-blueprint/), which I call the **Zellige Blueprint**.
+This philosophy thrives on hybridity. It's how my early studies in biology and geology now inform my e-commerce strategies. It's about blending Amazigh patterns into web design, or using the structure of a *zellige* mosaic to build a more [soulful productivity system](/digital-compass/nomad-toolkit/zellige-blueprint/), which I call the **Zellige Blueprint**.
 
 #### 5. Ancestral Algorithms
 *"Ask your olive trees before your analytics."*  
