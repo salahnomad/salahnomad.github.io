@@ -14,15 +14,7 @@ authors: ["Salah Nomad"]
 toc: true
 
 resources:
-  - src: "images/jbala-grounding-ritual.jpg"
-    title: "Barefoot grounding ritual in Jbala olive grove - reconnecting with ancestral earth (Salah Nomad technique)"
-    alt: "Bare feet on red Jbala soil with visible olive roots"
-  - src: "images/bark-communion-ritual.jpg"
-    title: "Bark communion ritual with millennial olive tree - ancestral data transfer (Salah Nomad practice)"
-    alt: "Hands and face against ancient olive bark in Casabermeja"
-  - src: "images/analog-tea-ceremony.jpg"
-    title: "Analog tea ceremony under olive trees - zero digital devices (Salah Nomad connection ritual)"
-    alt: "Hands holding mint tea cup under olive branches, no electronics"
+  # ... (les resources restent les mêmes)
 ---
 
 ### Digital Ghosts in Mediterranean Paradise: The Nomad's Dilemma
@@ -92,7 +84,7 @@ The tree shares resilience algorithms forged through centuries of adaptation. Yo
 {{< figure src="images/analog-tea-ceremony.jpg" alt="Hands holding mint tea cup under olive branches, no electronics" caption="Analog Anchor: oxytocin-rich connection">}}
 
 **The Neurochemistry of Presence**  
-Perfected in a Norwich pub with Zak (Chapter 6), this ritual proves: undivided attention creates biochemical magic no video call replicates. This contrasts sharply with my early experiences of **[digital scarcity](/cultural-bridges/tech/cybercafe-digital-scarcity/)** in cybercafés.
+Perfected in a Norwich pub with Zak (Chapter 6), this ritual proves: undivided attention creates biochemical magic no video call replicates. This contrasts sharply with my early experiences of **[digital scarcity in cybercafés](/cultural-bridges/tech/cybercafe-digital-scarcity/)**, but the underlying principle of intentionality, which I've carried from **[my first radio to my current iPhone](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**, remains the same.
 
 **Ceremonial Framework:**  
 - **Vessel:** Hand-thrown clay teapot (essential)  

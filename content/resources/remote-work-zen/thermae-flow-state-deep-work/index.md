@@ -133,6 +133,8 @@ Neuroscience confirms these DMN-activating pauses aren't idle - they're when you
 > "Good tools disappear when intuition takes over - like the *maâlem*'s chisel becoming hand-memory when cutting *zellige* tiles."  
 > *(Algorithmic Sardines, Chapter 7)*
 
+These are the applications that facilitate the ritual, but the true sanctuary is built with intention. This selection reflects a broader philosophy on choosing one's tools, a minimalist approach I've refined over decades, **[from my first radio to my current smartphone](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+
 {{< figure src="images/zellige-artisan-focus.jpg" alt="Hands of zellige artisan carving tiles - absolute focus as craft" caption="The master artisan's state: when tool becomes extension of will" >}}
 
 ---

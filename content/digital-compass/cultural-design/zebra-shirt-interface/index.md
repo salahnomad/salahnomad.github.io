@@ -46,7 +46,7 @@ Zellige teaches us to draw from diverse cultural aesthetics **not as superficial
 
 ### 3. **Intentional Pauses**
 > *"The olive grove knows when to breathe."*  
-In a world obsessed with speed, zellige reminds us to **carve breathing gaps**. These are the pauses between keystrokes, the silence between screens, the moments where a loading animation becomes a celebration of olive branches growing. They are the **Mediterranean rhythms**—mint tea rituals, sunset silences—that teach us to slow down digital design.
+In a world obsessed with speed, zellige reminds us to **carve breathing gaps**. These are the pauses between keystrokes, the silence between screens, the moments where a loading animation becomes a celebration of olive branches growing. They are the **Mediterranean rhythms**—mint tea rituals, sunset silences—that teach us to slow down digital design. This philosophy of integrating 'breathing gaps' extends beyond UX to **[the very selection of tools we allow into our lives](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
 
 {{< figure src="images/olive-grove-breathing-gap.jpg" alt="Sun-dappled path winding through an ancient Mediterranean olive grove, its tranquility symbolizing the concept of 'breathing gaps' and intentional pauses in user experience design." caption="An olive grove path, symbolizing an intentional pause or 'breathing gap' in design." >}}
 

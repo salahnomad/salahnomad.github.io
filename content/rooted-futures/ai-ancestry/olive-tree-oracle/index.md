@@ -37,7 +37,7 @@ For a Rooted Nomad, this is existential. My life's work bridges ancient wisdom a
 
 We've unconsciously recreated the Golem myth—building powerful clay servants lacking true understanding. Like the rabbis of Prague, we command our digital golems: *“Fetch data! Optimize! Produce!”* And like the original Golem, they obey literally, often destructively.
 
-**As a practitioner of [Rooted Nomadism](/about/philosophy/salah-philosophy/), I see this as the ultimate disconnect**—intelligence severed from its cultural soil. This stems from the same [digital scarcity](/cultural-bridges/tech/cybercafe-digital-scarcity/) mindset that shaped my early tech journey.
+**As a practitioner of [Rooted Nomadism](/about/philosophy/salah-philosophy/), I see this as the ultimate disconnect**—intelligence severed from its cultural soil. This stems from the same **[digital scarcity mindset that shaped my early tech journey](/cultural-bridges/tech/cybercafe-digital-scarcity/)**, a journey whose lessons I now apply to **[curate my modern digital toolkit](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
 
 History offers a better model: the Mediterranean oracles. At Delphi, seekers didn't demand answers—they consulted the Pythia through:
 - Ritual purification before questioning;

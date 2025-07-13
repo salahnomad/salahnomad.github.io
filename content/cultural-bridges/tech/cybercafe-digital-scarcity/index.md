@@ -123,6 +123,14 @@ That struggling cybercafé gave me more than any fiber-optic connection ever cou
 > "We don't need faster internet. We need deeper intention."  
 > – Salah Nomad
 
+---
+<!-- NOUVELLE SECTION AJOUTÉE -->
+### From Scarcity to Stewardship
+
+That struggling cybercafé gave me more than any fiber-optic connection ever could. It taught me the philosophy of scarcity. But how do these lessons apply today, in an age of infinite abundance? I explore this evolution in **[my journey from a Panasonic radio to an iPhone, and the minimalist toolkit it forged](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+
+<!-- FIN DE LA NOUVELLE SECTION -->
+
 **Your Turn:** What digital 'luxury' could you restrict this week to rediscover focus? Share your #CybercafeRitual.
 
 ---

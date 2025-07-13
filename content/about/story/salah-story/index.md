@@ -8,7 +8,7 @@ comments: false
 ---
 
 ## Roots & Radio Waves
-I was born in 1968 in Ksar El-Kébir, Morocco’s oldest continuously inhabited city—a place where Spanish, Amazigh, and Arabic cultures intertwine like olive tree roots. My father’s library introduced me to H.G. Wells’ *The Time Machine*, while his Panasonic radio brought BBC voices crackling through our Meknès home. By 14, I was mailing letters to strangers in Tokyo and Toronto, unaware these were my first “blog posts.”
+I was born in 1968 in Ksar El-Kébir, Morocco’s oldest continuously inhabited city—a place where Spanish, Amazigh, and Arabic cultures intertwine like olive tree roots. My father’s library introduced me to H.G. Wells’ *The Time Machine*, while his Panasonic radio brought BBC voices crackling through our Meknès home—**[a piece of technology whose lessons on scarcity and presence still shape my digital life today](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**. By 14, I was mailing letters to strangers in Tokyo and Toronto, unaware these were my first “blog posts.”
 
 ---
 

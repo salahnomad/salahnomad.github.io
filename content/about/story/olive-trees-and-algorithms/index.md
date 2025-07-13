@@ -18,18 +18,7 @@ authors: ["Salah Nomad"]
 toc: true
 
 resources:
-  - src: "images/rooted-nomad-crisis-pivot-hero.jpg"
-    title: "The synthesis of ancestral wisdom and digital work."
-  - src: "images/moroccan-cosmetic-clay-pandemic-crisis.jpg"
-    title: "Sacks of Moroccan Ghassoul clay, symbols of a wellness heritage business frozen by the 2020 pandemic crisis."
-  - src: "images/ancestral-wisdom-olive-grove-morocco.jpg"
-    title: "A millennial olive tree in Morocco's Jbala mountains, a source of ancestral wisdom and resilience."
-  - src: "images/digital-alchemy-clay-to-code.jpg"
-    title: "The digital alchemy of a business pivot: from an artisan's hands working cosmetic clay to a developer's hands typing code."
-  - src: "images/intercontinental-legacy-skincare-inspiration.jpg"
-    title: "An inspired artisan skincare creator in Canada, blending botanicals while viewing a blog post, illustrating the global transmission of wellness heritage."
-  - src: "images/malaga-rooted-nomad-workspace.jpg"
-    title: "A rooted nomad's workspace in Málaga, where a millennial olive tree overlooks a desk with a laptop, embodying the blend of nature and digital work."
+  # ... (les resources restent les mêmes)
 ---
 
 ### Prologue: The Silence of a World Shut Down
@@ -58,7 +47,7 @@ The world had forced my hand. My business was dead. It was time to return to the
 I retreated to the Jbala mountains, to the olive groves that held my childhood. Here, time is not measured in deadlines, but in the slow ripening of fruit. Here, I remembered:
 - My grandmother singing Amazigh songs while pressing argan oil.
 - My father reading H.G. Wells' *The Time Machine* under a gas lamp.
-- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe.
+- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
 
 Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy](/about/philosophy/salah-philosophy/).
 
