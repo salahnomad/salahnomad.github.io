@@ -1,5 +1,5 @@
 {{/* themes/salah-nomad-theme/layouts/partials/responsive-image.html */}}
-{{/* --- CORRIGÉ pour supprimer "hasMethod" et affiner la logique --- */}}
+{{/* --- CORRIGÉ pour supprimer "hasMethod" et affiner la logique . --- */}}
 {{ $srcInput := .src }}
 {{ $alt := .alt | default "" }}
 {{ $imgClass := .class }}
@@ -130,6 +130,6 @@
       {{/* Cas où $originalImage est une chaîne (URL externe ou chemin static non traité par Hugo Pipes) */}}
       <img src="{{ $originalImage }}" alt="{{ $alt | plainify }}" loading="{{ $loading }}" decoding="async" class="responsive-image-img {{ $imgClass }}">
     {{ end }}
-    {{ with $caption }}{{ if $pageContext }}<figcaption>{{ . | $pageContext.RenderString }}</figcaption>{{ end }}{{ end }}
+    {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
   </figure>
 {{ end }}

@@ -1,38 +1,34 @@
 {{/*
-  Shortcode 'figure' - Version Sécurisée et Autonome
-  ----------------------------------------------------
-  - Objectif : Afficher une image du corps du texte (Leaf Bundle) de manière simple.
-  - NE DÉPEND D'AUCUN AUTRE PARTIAL pour éviter les boucles de récursion.
-  - Ne génère pas d'images responsives, mais une <img> simple et correcte.
-    C'est un compromis pour garantir la stabilité et la vitesse de compilation.
+  Shortcode 'figure' - Version Finale
+  -----------------------------------
+  Ce shortcode est le point d'entrée pour toutes les images du corps du texte.
+  Il trouve la ressource d'image et délègue l'affichage complexe. (responsive, webp )
+  au partial 'responsive-image.html'.
 */}}
-
 {{ $src := .Get "src" }}
-{{ $alt := .Get "alt" | default (.Get "caption") | default $src }}
-{{ $caption := .Get "caption" }}
-{{ $class := .Get "class" }}
-{{ $page := .Page }}
-
-{{/* La clé est le wildcard "**" qui cherche dans les sous-dossiers (comme "images/") */}}
 {{ $imageResource := "" }}
-{{ with $page.Resources }}
-  {{ $imageResource = .GetMatch (printf "**%s" $src) }}
+
+{{ if .Page.Resources }}
+  {{/* On utilise une recherche avec wildcard pour trouver l'image même si elle est dans un sous-dossier comme /images/ */}}
+  {{ $imageResource = .Page.Resources.GetMatch (printf "**%s" $src) }}
 {{ end }}
 
 {{ if $imageResource }}
-  <figure class="shortcode-figure {{ $class }}">
-    <img 
-      src="{{ $imageResource.RelPermalink }}" 
-      alt="{{ $alt }}" 
-      width="{{ $imageResource.Width }}" 
-      height="{{ $imageResource.Height }}"
-      loading="lazy">
-    {{ if $caption }}
-      {{/* On utilise .RenderString car une légende peut contenir du Markdown simple (gras, italique) */}}
-      <figcaption>{{ $caption | $page.RenderString }}</figcaption>
-    {{ end }}
-  </figure>
+  {{/* 
+    L'image est trouvée ! On passe toutes les infos au partial 'responsive-image.html'
+    pour un rendu cohérent avec le reste du site.
+  */}}
+  {{ partial "responsive-image.html" (dict 
+      "src" $imageResource 
+      "alt" (.Get "alt")
+      "caption" (.Get "caption")
+      "page" .Page 
+      "isPageBundleResource" true
+      "loading" "lazy" 
+      "sizesKey" "default"
+      "class" (.Get "class")
+      "figureClass" (printf "shortcode-figure %s" (.Get "class"))
+  )}}
 {{ else }}
-  {{/* Message d'erreur clair si l'image n'est pas trouvée */}}
-  <p style="color: red; font-weight: bold;">[Image not found in Page Resources: {{ $src }}]</p>
+  <p style="color: red; font-weight: bold;">[Image not found: {{ $src }}]</p>
 {{ end }}
