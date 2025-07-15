@@ -8,15 +8,11 @@ authors: ["Salah Nomad"]
 toc: false
 page_count: 320
 
-# --- CORRECTION FINALE SELON VOTRE PROCÉDURE STANDARD ---
-# Le chemin DOIT inclure le sous-dossier "images/", comme pour vos autres articles.
+# Le chemin est correct ici pour votre template single.html
 featured_image: "images/ebook-cover-hero.jpg"
-featured_image_alt: "Stylized book cover for Algorithmic Sardines, showing a Mediterranean map with glowing digital trade routes."
+featured_image_alt: "Stylized book cover for Algorithmic Sardines."
 featured_image_caption: "The journey from olive groves to digital shores, encapsulated."
 
-# --- Leaf Bundle Resources ---
-# Cette section déclare les images à Hugo, mais ne les affiche pas.
-# Elle est utile pour le traitement d'images avancé si votre thème l'utilise.
 resources:
   - src: "images/ebook-cover-hero.jpg"
     name: "ebook-cover-hero.jpg"
@@ -27,7 +23,6 @@ resources:
   - src: "images/malaga-writing-epilogue.jpg"
     name: "malaga-writing-epilogue.jpg"
 
-# --- SEO & Données Structurées ---
 json_ld: |
   {
     "@context": "https://schema.org",
@@ -94,18 +89,18 @@ journey
 *   **Chapter 3: Digital Awakening**  
     The full story of the *Extranet* cybercafé, where slow connections taught the patience that defines my approach to SEO and digital craft.
 
-    ![A dimly lit cybercafé with old CRT monitors, evoking a sense of nostalgia.](images/cybercafe-origin-story.jpg "The glow of a 2 AM cybercafé—my first digital port.")
+    {{< figure src="images/cybercafe-origin-story.jpg" alt="A dimly lit cybercafé with old CRT monitors, evoking a sense of nostalgia." caption="The glow of a 2 AM cybercafé—my first digital port." >}}
 
-*   **Chapter 11: The Ancestors' Road**  
+*   **Chapter 11: The Ancestors’ Road**  
     How twenty Canary melons became a compass revealing Morisco echoes in Andalusia, leading to the **[Canary Melon Compass](/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations/)** framework.
 
-    ![A close-up of bright yellow Canary melons in a rustic market setting.](images/ancestors-road-melons.jpg "The twenty Canary melons that revealed my ancestral echoes.")
+    {{< figure src="images/ancestors-road-melons.jpg" alt="A close-up of bright yellow Canary melons in a rustic market setting." caption="The twenty Canary melons that revealed my ancestral echoes." >}}
 
 *   **Chapter 14: Roots in the Wind**  
     The raw account of lockdown 2020, business collapse, and the olive tree moment that birthed `salahnomad.com`.
 
 *   **Chapter 15: AI, Fellow Traveler**  
-    Private dialogues where I use olive grove wisdom to "train" algorithms in cultural nuance.
+    Private dialogues where I use olive grove wisdom to “train” algorithms in cultural nuance.
 
 ---
 
@@ -138,7 +133,7 @@ Each chapter ends with "Wisdom Harvest"—actionable principles drawn from the j
 
 This culmination of travel, failure, and connection will be available in ebook and paperback formats.
 
-![A laptop on a terrace table overlooking the sea in Málaga.](images/malaga-writing-epilogue.jpg "Writing from Málaga terrace, where the journey finds its voice.")
+{{< figure src="images/malaga-writing-epilogue.jpg" alt="A laptop on a terrace table overlooking the sea in Málaga." caption="Writing from Málaga terrace, where the journey finds its voice." >}}
 
 {{< promptbox title="Be the First to Know" >}}
 Join **"Mediterranean Insights"** for launch notifications:
