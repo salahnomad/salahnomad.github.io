@@ -1,5 +1,5 @@
 ---
-title: "Algorithmic Sardines: A Rooted Nomad's Journey"
+title: "Algorithmic Sardines: A Rooted Nomad's Journey."
 date: 2025-07-14T10:00:00+01:00
 draft: false
 description: "The full story behind Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion. Pre-order coming soon."
