@@ -1,145 +1,158 @@
-{{/* themes/salah-nomad-theme/layouts/partials/schema.html */}}
-{{/* --- FINAL V5 : Correction manuelle du tableau 'sameAs' et nettoyage global --- */}}
+{{/* --- FINAL V6 : Intégration de la surcharge via .Params.json_ld --- */}}
 
 {{- $page := .context -}}
-{{- $site := $page.Site -}}
-{{- $pageDescription := .pageDescription -}}
-{{- $imageURLForSchema := .ogImageURL -}}
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  {{ if $page.IsHome }}
-  "@type": "WebSite",
-  "url": "{{ $page.Permalink }}",
-  "name": "{{ $site.Title | safeJS }}",
-  {{- with $pageDescription -}}
-  "description": "{{ . | safeJS }}",
-  {{- end -}}
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
-    "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
-    {{- $homePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
-    {{- if and $homePublisherLogoPath (strings.HasPrefix $homePublisherLogoPath "/") -}}
-      {{- if fileExists (printf "static%s" $homePublisherLogoPath) -}}
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ $homePublisherLogoPath | absURL }}"
+{{ if .page.Params.json_ld }}
+  {{/* 
+    CAS 1: La page fournit son propre schéma JSON-LD personnalisé.
+    On l'utilise en priorité et on ignore toute la logique ci-dessous.
+    C'est la solution pour notre page de livre.
+  */}}
+  <script type="application/ld+json">{{ .page.Params.json_ld | safeJS }}</script>
+{{ else }}
+  {{/* 
+    CAS 2: Pas de schéma personnalisé. On applique la logique standard du thème.
+    Ce bloc ci-dessous est votre code original, maintenant encapsulé dans un "else".
+  */}}
+  {{- $site := $page.Site -}}
+  {{- $pageDescription := .pageDescription -}}
+  {{- $imageURLForSchema := .ogImageURL -}}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    {{ if $page.IsHome }}
+    "@type": "WebSite",
+    "url": "{{ $page.Permalink }}",
+    "name": "{{ $site.Title | safeJS }}",
+    {{- with $pageDescription -}}
+    "description": "{{ . | safeJS }}",
+    {{- end -}}
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
+      "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
+      {{- $homePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+      {{- if and $homePublisherLogoPath (strings.HasPrefix $homePublisherLogoPath "/") -}}
+        {{- if fileExists (printf "static%s" $homePublisherLogoPath) -}}
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ $homePublisherLogoPath | absURL }}"
+      }
+        {{- end -}}
+      {{- end }}
     }
-      {{- end -}}
-    {{- end }}
-  }
-  {{ else if $page.IsPage }}
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ $page.Permalink }}"
-  },
-  "headline": "{{ $page.Title | safeJS }}",
-  {{- with $page.Date -}}
-  "datePublished": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
-  {{- end -}}
-  {{- with $page.Lastmod -}}
-  "dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
-  {{- end -}}
-  {{- $authorName := "" -}}
-  {{- $authorSchemaDetails := dict -}}
-  {{- if $page.Params.authors -}}
-    {{- $authorName = index $page.Params.authors 0 -}}
-  {{- else if $page.Params.author -}}
-    {{- $authorName = $page.Params.author -}}
-  {{- end -}}
-  {{- if $site.Params.author -}}
-    {{- if $authorName -}}
-      {{- if eq $authorName $site.Params.author.name -}}
+    {{ else if $page.IsPage }}
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ $page.Permalink }}"
+    },
+    "headline": "{{ $page.Title | safeJS }}",
+    {{- with $page.Date -}}
+    "datePublished": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
+    {{- end -}}
+    {{- with $page.Lastmod -}}
+    "dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
+    {{- end -}}
+    {{- $authorName := "" -}}
+    {{- $authorSchemaDetails := dict -}}
+    {{- if $page.Params.authors -}}
+      {{- $authorName = index $page.Params.authors 0 -}}
+    {{- else if $page.Params.author -}}
+      {{- $authorName = $page.Params.author -}}
+    {{- end -}}
+    {{- if $site.Params.author -}}
+      {{- if $authorName -}}
+        {{- if eq $authorName $site.Params.author.name -}}
+          {{- $authorSchemaDetails = $site.Params.author -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $authorName = $site.Params.author.name -}}
         {{- $authorSchemaDetails = $site.Params.author -}}
       {{- end -}}
-    {{- else -}}
-      {{- $authorName = $site.Params.author.name -}}
-      {{- $authorSchemaDetails = $site.Params.author -}}
     {{- end -}}
-  {{- end -}}
-  {{- if not $authorName -}}{{- $authorName = $site.Title -}}{{- end -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{ $authorName | safeJS }}"
-    {{- with $authorSchemaDetails.url -}},"url": "{{ . | absURL }}"{{- end -}}
-    {{- with $authorSchemaDetails.image -}}
-      {{- $authorImagePath := . -}}
-      {{- if and $authorImagePath (strings.HasPrefix $authorImagePath "/") -}}
-        {{- if fileExists (printf "static%s" $authorImagePath) -}}
-    ,"image": { "@type": "ImageObject", "url": "{{ $authorImagePath | absURL }}" }
+    {{- if not $authorName -}}{{- $authorName = $site.Title -}}{{- end -}}
+    "author": {
+      "@type": "Person",
+      "name": "{{ $authorName | safeJS }}"
+      {{- with $authorSchemaDetails.url -}},"url": "{{ . | absURL }}"{{- end -}}
+      {{- with $authorSchemaDetails.image -}}
+        {{- $authorImagePath := . -}}
+        {{- if and $authorImagePath (strings.HasPrefix $authorImagePath "/") -}}
+          {{- if fileExists (printf "static%s" $authorImagePath) -}}
+      ,"image": { "@type": "ImageObject", "url": "{{ $authorImagePath | absURL }}" }
+          {{- end -}}
         {{- end -}}
       {{- end -}}
+      {{- with $authorSchemaDetails.sameAs -}}
+      ,"sameAs": [
+        {{- range $i, $v := . -}}
+          {{- if $i }},{{ end }}"{{ . }}"
+        {{- end -}}
+      ]
+      {{- end -}}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
+      "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
+      {{- $blogPublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+      {{- if and $blogPublisherLogoPath (strings.HasPrefix $blogPublisherLogoPath "/") -}}
+        {{- if fileExists (printf "static%s" $blogPublisherLogoPath) -}}
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ $blogPublisherLogoPath | absURL }}"
+      }
+        {{- end -}}
+      {{- end }}
+    },
+    {{- with $pageDescription -}}
+    "description": "{{ . | safeJS }}",
     {{- end -}}
-    {{- with $authorSchemaDetails.sameAs -}}
-    ,"sameAs": [
-      {{- range $i, $v := . -}}
-        {{- if $i }},{{ end }}"{{ . }}"
-      {{- end -}}
-    ]
+    {{- if $imageURLForSchema -}}
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ $imageURLForSchema }}",
+      "width": 1200,
+      "height": 630
+    }
+    {{- end }}
+    {{ else }}
+    "@type": "WebPage",
+    "url": "{{ $page.Permalink }}",
+    {{- $webPageName := $page.Title -}}
+    {{- if eq $page.Kind "taxonomy" -}}
+      {{- $webPageName = strings.Title .Data.Term | default $page.Title -}}
+    {{- else if eq $page.Kind "term" -}}
+      {{- $webPageName = printf "%s %s" (strings.Title $page.Data.Singular) (strings.Title $page.Data.Term) | default $page.Title -}}
     {{- end -}}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
-    "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
-    {{- $blogPublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
-    {{- if and $blogPublisherLogoPath (strings.HasPrefix $blogPublisherLogoPath "/") -}}
-      {{- if fileExists (printf "static%s" $blogPublisherLogoPath) -}}
-    "logo": {
+    {{- if not $webPageName -}}{{- $webPageName = $site.Title -}}{{- end -}}
+    "name": "{{ $webPageName | safeJS }}",
+    {{- with $pageDescription -}}
+    "description": "{{ . | safeJS }}",
+    {{- end -}}
+    {{- if $imageURLForSchema -}}
+    "image": {
       "@type": "ImageObject",
-      "url": "{{ $blogPublisherLogoPath | absURL }}"
+      "url": "{{ $imageURLForSchema }}"
+    },
+    {{- end -}}
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
+      "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
+      {{- $otherPagePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
+      {{- if and $otherPagePublisherLogoPath (strings.HasPrefix $otherPagePublisherLogoPath "/") -}}
+        {{- if fileExists (printf "static%s" $otherPagePublisherLogoPath) -}}
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ $otherPagePublisherLogoPath | absURL }}"
+      }
+        {{- end -}}
+      {{- end }}
     }
-      {{- end -}}
-    {{- end }}
-  },
-  {{- with $pageDescription -}}
-  "description": "{{ . | safeJS }}",
-  {{- end -}}
-  {{- if $imageURLForSchema -}}
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ $imageURLForSchema }}",
-    "width": 1200,
-    "height": 630
+    {{ end }}
   }
-  {{- end }}
-  {{ else }}
-  "@type": "WebPage",
-  "url": "{{ $page.Permalink }}",
-  {{- $webPageName := $page.Title -}}
-  {{- if eq $page.Kind "taxonomy" -}}
-    {{- $webPageName = strings.Title .Data.Term | default $page.Title -}}
-  {{- else if eq $page.Kind "term" -}}
-    {{- $webPageName = printf "%s %s" (strings.Title $page.Data.Singular) (strings.Title $page.Data.Term) | default $page.Title -}}
-  {{- end -}}
-  {{- if not $webPageName -}}{{- $webPageName = $site.Title -}}{{- end -}}
-  "name": "{{ $webPageName | safeJS }}",
-  {{- with $pageDescription -}}
-  "description": "{{ . | safeJS }}",
-  {{- end -}}
-  {{- if $imageURLForSchema -}}
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ $imageURLForSchema }}"
-  },
-  {{- end -}}
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ ($site.Params.organization.name | default $site.Title) | safeJS }}",
-    "url": "{{ ($site.Params.organization.url | default ($site.BaseURL | absURL)) }}",
-    {{- $otherPagePublisherLogoPath := $site.Params.organization.logo | default $site.Params.logo -}}
-    {{- if and $otherPagePublisherLogoPath (strings.HasPrefix $otherPagePublisherLogoPath "/") -}}
-      {{- if fileExists (printf "static%s" $otherPagePublisherLogoPath) -}}
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ $otherPagePublisherLogoPath | absURL }}"
-    }
-      {{- end -}}
-    {{- end }}
-  }
-  {{ end }}
-}
-</script>
+  </script>
+{{ end }}
