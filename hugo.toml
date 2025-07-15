@@ -24,7 +24,7 @@ enableRobotsTXT = true
   logo = "/images/Salah-Nomad-Logo.png" # Chemin depuis static/
   logo_dark = "/images/Salah-Nomad-Logo-Dark.png" # Chemin depuis static/
   dateFormat = "January 2, 2006"
-  mainSections = ["about", "digital-compass", "malaga-codex", "cultural-bridges", "resources", "rooted-futures"]
+  mainSections = ["about", "digital-compass", "malaga-codex", "cultural-bridges", "resources", "rooted-futures", "ebook"]
   readingTime = true
   enableSearch = true
   enableThemeToggle = true
@@ -252,7 +252,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "story"
     name = "My Story"
-    url = "/about/story/" # Corrigé pour pointer vers la section
+    url = "/about/story/"
     parent = "rooted_journeys"
     weight = 21
   [[menu.main]]
@@ -291,13 +291,12 @@ enableRobotsTXT = true
     url = "/digital-compass/future-of-nomadism/"
     parent = "digital_compass"
     weight = 33
-  # AJOUT DE LA NOUVELLE SOUS-SECTION "CULTURAL DESIGN"
   [[menu.main]]
-    identifier = "cultural_design" # Nouvel identifiant
+    identifier = "cultural_design"
     name = "Cultural Design"
     url = "/digital-compass/cultural-design/"
     parent = "digital_compass"
-    weight = 34 # Pour le placer après "Future of Nomadism"
+    weight = 34
 
   [[menu.main]]
     identifier = "malaga_codex"
@@ -392,18 +391,26 @@ enableRobotsTXT = true
     url = "/categories/"
     parent = "explore"
     weight = 11
+  # --- AJOUT DE "THE LIBRARY" AU SOUS-MENU EXPLORE ---
+  [[menu.secondary]]
+    identifier = "library_link"
+    name = "The Library"
+    url = "/ebook/"
+    parent = "explore"
+    weight = 12 # Placé après "Categories"
+  # ----------------------------------------------------
   [[menu.secondary]]
     identifier = "popular_posts_link"
     name = "Popular Posts"
     url = "/popular/"
     parent = "explore"
-    weight = 12
+    weight = 13 # Poids ajusté (était 12)
   [[menu.secondary]]
     identifier = "archives_link"
     name = "Archives"
     url = "/archives/"
     parent = "explore"
-    weight = 13
+    weight = 14 # Poids ajusté (était 13)
 
   [[menu.secondary]]
     identifier = "connect"
@@ -533,14 +540,21 @@ enableRobotsTXT = true
       icon = "email"
 
   # --- MENU FOOTER ---
+  # L'entrée 'My Book' a été déplacée vers le menu secondaire.
+  # Nous la laissons ici commentée au cas où vous changeriez d'avis,
+  # ou nous pouvons la supprimer complètement pour plus de propreté.
   [[menu.footer]]
     name = "My Story"
-    url = "/about/story/" # Corrigé pour pointer vers la section
+    url = "/about/story/"
     weight = 5
   [[menu.footer]]
     name = "Contact"
     url = "/contact/"
     weight = 10
+  [[menu.footer]]
+    name = "The Library"
+    url = "/ebook/"
+    weight = 15
   [[menu.footer]]
     name = "Legal Notice"
     url = "/terms/"
@@ -552,9 +566,9 @@ enableRobotsTXT = true
 
 # --- Configuration du rendu Markdown ---
 [markup.goldmark.renderer]
-  unsafe = false # Changé pour une meilleure sécurité par défaut
+  unsafe = true
 [markup.highlight]
-   style = "github" # Style de coloration syntaxique
+   style = "github"
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]
@@ -563,18 +577,17 @@ enableRobotsTXT = true
   term = ["HTML", "RSS"]
 [related]
   threshold = 80
-  includeNewer = false # Changed to false
+  includeNewer = false
   toLower = true
   [[related.indices]]
     name = "tags"
     weight = 100
   [[related.indices]]
-    name = "section" # Changed from "categories"
-    weight = 100 # Changed from 200
+    name = "section"
+    weight = 100
 [imaging]
   resampleFilter = "Lanczos"
   quality = 80
-  # anchor = "smart" # Décommentez si votre version Hugo et votre utilisation le justifient
 [sitemap]
   changefreq = "weekly"
   priority = 0.5

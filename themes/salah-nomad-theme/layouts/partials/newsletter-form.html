@@ -1,0 +1,12 @@
+{{ $formAction := .Site.Params.sidebar.newsletter_mediterranean.form_action | default .Site.Params.contact.formspree_action }}
+{{ if $formAction }}
+<form action="{{ $formAction }}" method="POST" class="newsletter-form">
+  <div class="form-group">
+    <input type="email" name="email" class="form-control" placeholder="Your best email for wisdom..." required>
+    <button type="submit" class="btn btn-primary">Join the Caravan</button>
+  </div>
+  <p class="form-disclaimer">By subscribing, you agree to our <a href="{{ "/privacy/" | relURL }}">privacy policy</a>.</p>
+</form>
+{{ else }}
+  <p><em>Newsletter form is not configured. Please set a 'form_action' in your site parameters.</em></p>
+{{ end }}
