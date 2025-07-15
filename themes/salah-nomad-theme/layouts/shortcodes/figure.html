@@ -1,31 +1,38 @@
-{{/* themes/salah-nomad-theme/layouts/shortcodes/figure.html */}}
+{{/*
+  Shortcode 'figure' - Version Sécurisée et Autonome
+  ----------------------------------------------------
+  - Objectif : Afficher une image du corps du texte (Leaf Bundle) de manière simple.
+  - NE DÉPEND D'AUCUN AUTRE PARTIAL pour éviter les boucles de récursion.
+  - Ne génère pas d'images responsives, mais une <img> simple et correcte.
+    C'est un compromis pour garantir la stabilité et la vitesse de compilation.
+*/}}
+
 {{ $src := .Get "src" }}
-{{ $alt := .Get "alt" | default $src }}
+{{ $alt := .Get "alt" | default (.Get "caption") | default $src }}
 {{ $caption := .Get "caption" }}
 {{ $class := .Get "class" }}
 {{ $page := .Page }}
 
-{{/* Essayer de trouver l'image comme une ressource de la page actuelle */}}
+{{/* La clé est le wildcard "**" qui cherche dans les sous-dossiers (comme "images/") */}}
 {{ $imageResource := "" }}
-{{ if $page.Resources }}
-  {{ $imageResource = $page.Resources.GetMatch $src }}
+{{ with $page.Resources }}
+  {{ $imageResource = .GetMatch (printf "**%s" $src) }}
 {{ end }}
 
-
 {{ if $imageResource }}
-  {{/* L'image a été trouvée dans le bundle de la page */}}
   <figure class="shortcode-figure {{ $class }}">
-    <img src="{{ $imageResource.RelPermalink }}" alt="{{ $alt }}" loading="lazy">
+    <img 
+      src="{{ $imageResource.RelPermalink }}" 
+      alt="{{ $alt }}" 
+      width="{{ $imageResource.Width }}" 
+      height="{{ $imageResource.Height }}"
+      loading="lazy">
     {{ if $caption }}
+      {{/* On utilise .RenderString car une légende peut contenir du Markdown simple (gras, italique) */}}
       <figcaption>{{ $caption | $page.RenderString }}</figcaption>
     {{ end }}
   </figure>
 {{ else }}
-  {{/* Solution de repli : si l'image n'est pas une ressource, on la cherche dans /static */}}
-  <figure class="shortcode-figure {{ $class }}">
-    <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="lazy">
-    {{ if $caption }}
-      <figcaption>{{ $caption | $page.RenderString }}</figcaption>
-    {{ end }}
-  </figure>
+  {{/* Message d'erreur clair si l'image n'est pas trouvée */}}
+  <p style="color: red; font-weight: bold;">[Image not found in Page Resources: {{ $src }}]</p>
 {{ end }}
