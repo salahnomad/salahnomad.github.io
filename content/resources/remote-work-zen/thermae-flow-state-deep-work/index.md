@@ -21,6 +21,7 @@ series: ["Your Mediterranean Compass for Meaningful Travel"]
 series_order: 2
 toc: true
 draft: false
+cta: tool
 ---
 
 ### The Plaza de la Merced Epiphany: When Digital Chaos Consumed Me

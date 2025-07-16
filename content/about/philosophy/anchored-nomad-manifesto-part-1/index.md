@@ -22,6 +22,7 @@ series: ["Your Mediterranean Compass for Meaningful Travel"]
 series_order: 1
 toc: true
 draft: false
+cta: true
 ---
 
 ## I. The Scent of Dry Earth at 3 AM

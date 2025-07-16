@@ -11,6 +11,7 @@ featured_image: "images/zebra-shirt-mosaic-fusion.jpg"
 featured_image_alt: "Salah Nomad's iconic zebra shirt creatively merged with intricate Moroccan zellige tile patterns, symbolizing the fusion of personal identity and cultural design principles in UX."
 authors: ["Salah Nomad"]
 toc: true
+cta: tool
 resources:
   - src: "images/pieter-monsma-arles-photo.jpg"
     title: "Pieter Monsma’s 2016 shot in Arles that became a manifesto"

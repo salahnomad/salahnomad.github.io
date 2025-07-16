@@ -12,6 +12,7 @@ featured_image_alt: "Ancient olive tree roots intertwined with glowing digital f
 authors: ["Salah Nomad"]
 toc: true
 toc_heading: "Cultivate Your Financial Grove"
+cta: finance
 ---
 
 ### 1. The Silence That Changed Everything

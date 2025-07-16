@@ -10,6 +10,7 @@ featured_image_alt: "Aged Moroccan artisan hands placing geometric zellige tile 
 comments: true
 schema_type: "Article"
 reading_time: 9
+cta: tool
 ---
 
 ## Prologue: Cedarwood and the Weight of Time

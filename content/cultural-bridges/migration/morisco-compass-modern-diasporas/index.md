@@ -11,6 +11,7 @@ featured_image: "images/morisco-compass-hero.jpg"
 featured_image_alt: "An antique brass compass rests on hand-drawn maps of Andalusia and Northern Morocco, overlaid with zellige patterns - symbolizing navigation through cultural memory"
 authors: ["Salah Nomad"]
 toc: true
+cta: story
 resources:
   - src: "images/morisco-compass-hero.jpg"
     title: "The Morisco Compass: Navigating identity across centuries"

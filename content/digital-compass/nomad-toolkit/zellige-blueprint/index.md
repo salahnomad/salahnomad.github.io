@@ -15,6 +15,7 @@ featured_image_alt: "A digital tablet showing a soulful productivity dashboard w
 # --- Authoring & Structure ---
 authors: ["Salah Nomad"]
 toc: true
+cta: tool
 ---
 
 ### 1. The Artisan’s Rhythm in a Digital World

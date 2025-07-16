@@ -5,6 +5,7 @@ draft: false
 layout: single
 featured_image: "images/story.jpg"
 comments: false
+cta: story
 ---
 
 ## Roots & Radio Waves
