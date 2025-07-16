@@ -1,5 +1,5 @@
 {{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\single.html */}}
-{{/* --- AJOUT ÉTAPE 2 : Gestion images assets/static/http via .Params.featured_image --- */}}
+{{/* Intégration de la logique CTA Ebook (version crème de la crème) */}}
 {{ define "main" }}
   {{ $showSidebarOnThisPage := .Site.Params.singlePageSidebar | default true }}
   {{ if isset .Params "sidebar" }}
@@ -94,6 +94,23 @@
         <div class="post-content e-content">
           {{ .Content }}
         </div>
+        
+        {{/* ----------------------------------------------------------------- */}}
+        {{/* --- DÉBUT DE LA MODIFICATION : Intégration du bloc CTA Ebook --- */}}
+        {{/* ----------------------------------------------------------------- */}}
+        {{/*
+          Cette section vérifie si le paramètre 'cta' est défini dans
+          le front matter de l'article en cours. S'il est présent, 
+          elle appelle le partial `cta-ebook.html` pour afficher le bloc.
+          Le contexte (`.Params.cta`) est passé au partial pour permettre
+          l'affichage de textes personnalisés.
+        */}}
+        {{ if .Params.cta }}
+          {{ partial "cta-ebook.html" (dict "cta" .Params.cta "Page" .) }}
+        {{ end }}
+        {{/* --------------------------------------------------------------- */}}
+        {{/* --- FIN DE LA MODIFICATION : Intégration du bloc CTA Ebook --- */}}
+        {{/* --------------------------------------------------------------- */}}
 
         <footer class="post-footer">
           {{ partial "post-tags.html" . }}
