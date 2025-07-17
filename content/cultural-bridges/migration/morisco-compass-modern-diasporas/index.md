@@ -42,7 +42,7 @@ resources:
 
 > "We carry exile in our bones like the salt of the Mediterranean."
 
-When I stood before those ancient iron keys at the Alhambra Museum - the ones my Morisco ancestors clutched as they were expelled from Granada in 1492 - I didn't just see historical artifacts. I felt the cold metal against my own palm. This visceral connection, described in Chapter 11 of *Algorithmic Sardines*, sparked an epiphany that would reshape my understanding of belonging. 
+When I stood before those ancient iron keys at the Alhambra Museum - the ones my Morisco ancestors clutched as they were expelled from Granada in 1492 - I didn't just see historical artifacts. I felt the cold metal against my own palm. This visceral connection, described in [Chapter 11 of *Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}), sparked an epiphany that would reshape my understanding of belonging. 
 
 Those keys represented more than lost homes; they symbolized the very essence of diaspora identity. Like when I faced Spanish customs officers with my Moroccan passport, or navigated French bureaucracy for *Ritual Hammam Europe* - experiences where **physical borders collided with cultural fluidity**. 
 
@@ -56,7 +56,7 @@ Those keys represented more than lost homes; they symbolized the very essence of
 ## The Mirror Landscape Epiphany (2014 Journey)
 
 ### Driving Through Layers of Memory
-During my pivotal 2014 road trip from Ksar El-Kébir to Avignon (as recounted in Chapter 11 of my book), a profound realization struck me near Granada's Sierra Nevada. As I describe in *Algorithmic Sardines*:
+During my pivotal 2014 road trip from Ksar El-Kébir to Avignon (as recounted in [Chapter 11 of my book]({{< relref "/ebook/algorithmic-sardines" >}})), a profound realization struck me near Granada's Sierra Nevada. As I describe in [*Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}):
 
 > "The golden hills weren't foreign territory - they were **memory made terrain**. These Andalusian landscapes mirrored the Jbala mountains of my childhood with uncanny precision. The cork oaks, the wild thyme scent, the way light fell on olive groves - it was all a transplanted ecosystem."
 
@@ -103,7 +103,7 @@ The trauma of exile encoded what I call our **diaspora operating system**:
 - Resourcefulness modules developed in borderlands
 
 **This manifested when:**
-- My e-commerce business collapsed during COVID lockdowns (as told in Chapter 14 of *Algorithmic Sardines*)
+- My e-commerce business collapsed during COVID lockdowns (as told in [Chapter 14 of *Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}))
 - Instead of despairing, I launched this blog - transforming physical limitation into digital expansion
 - Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet" >}})**
 

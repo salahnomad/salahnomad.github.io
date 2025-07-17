@@ -30,7 +30,7 @@ Down on Playa de la Malagueta, an *espetero* began his ancient ritual. As I watc
 What looks like simple grilling is actually a 200-year-old **living algorithm**, a dance between human, element, and time, passed down from the fishermen of El Palo. To see it is to understand a different kind of operating system.
 
 *   **The Hardware:** A *caña*—a reed or bamboo rod sharpened to a precise 45° angle.
-*   **The Data:** The sardines themselves. The best begin their journey in the rich Atlantic waters near Larache—my Moroccan hometown—before migrating through the Strait of Gibraltar. Their flavor carries the memory of two shores, just like [the journey of a Rooted Nomad](/about/philosophy/salah-philosophy/).
+*   **The Data:** The sardines themselves. The best begin their journey in the rich Atlantic waters near Larache—my Moroccan hometown—before migrating through the Strait of Gibraltar. Their flavor carries the memory of two shores, just like [the journey of a Rooted Nomad]({{< relref "/about/philosophy/salah-philosophy" >}}).
 *   **The Server:** A boat filled with sand, cradling olive wood embers burning at a steady 650°C.
 *   **The Code:** The *espetero*'s hands execute nature's perfect algorithm.
     ```python
@@ -50,7 +50,7 @@ What looks like simple grilling is actually a 200-year-old **living algorithm**,
 As the sun dissolved into the sea, three revelations rewired my understanding of work:
 
 #### 🔥 1. Single-Task Alchemy
-The *espetero* doesn't multitask. His entire being enters a feedback loop: wind → heat → fish → adjust. This is **[deep work incarnate](/resources/remote-work-zen/thermae-flow-state-deep-work/)**—what Cal Newport theorized, Mediterranean fishermen perfected centuries ago.
+The *espetero* doesn't multitask. His entire being enters a feedback loop: wind → heat → fish → adjust. This is **[deep work incarnate]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}})**—what Cal Newport theorized, Mediterranean fishermen perfected centuries ago.
 **Your Ritual: The "Espeto Hour"**
 - Choose one "sardine" (task).
 - Eliminate all digital winds (notifications).
@@ -94,7 +94,7 @@ Every Friday, share one creation you're proud of. The rule: no "feedback," only 
 Integrate these rituals into your digital life:
 
 1.  **Morning Ember Ignition**  
-    Before you work, light olive wood incense (or play a [Mediterranean Soundscape](#)). Ask: *"Which single 'sardine' deserves my full focus today?"*
+    Before you work, light olive wood incense. Ask: *"Which single 'sardine' deserves my full focus today?"*
 
 2.  **The Bamboo Protocol**  
     Every 90 minutes, stand up like a *caña* in the sand. Use an app like [Stretchly](https://stretchly.app/) for automated reminders. Visualize the sea breeze clearing your mental tabs.
@@ -109,7 +109,7 @@ Integrate these rituals into your digital life:
 > "We aren't grilling fish. We are translators between fire and sea."  
 > — Old espetero proverb, El Palo
 
-*   **Reflect:** What ancestral ritual from your roots could become your anti-burnout algorithm?
-*   **Act:** Tomorrow, execute one task with *espetero* principles. Report your "mental thermodynamics" in our [Slow Work Lab](#). Looking for a sanctuary in Málaga? Explore our guide to [coworking sanctuaries](/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/).
+This ritual is just one piece of a larger mosaic of Mediterranean wisdom. To dive deeper into the slow work philosophy and discover other ancestral frameworks for a more intentional life, I invite you to **[explore the Rooted Nomad's Library]({{< relref "/ebook" >}})**.
 
-**BONUS:** Download our [Espeto Hour Toolkit](#) (a Zellige-themed focus timer + Mediterranean soundscapes).
+*   **Reflect:** What ancestral ritual from your roots could become your anti-burnout algorithm?
+*   **Act:** Tomorrow, execute one task with *espetero* principles. Report your "mental thermodynamics." Looking for a sanctuary in Málaga? Explore our guide to [coworking sanctuaries]({{< relref "/malaga-codex/coworking-gems/malaga-coworking-sanctuaries" >}}).

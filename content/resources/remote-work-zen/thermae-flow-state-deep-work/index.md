@@ -32,7 +32,7 @@ February 2020. Málaga's Plaza de la Merced vibrated with life - children chasin
 
 This crisis isn't unique. Neuroscience confirms our brains weren't built for this digital barrage. When researchers at the University of California Irvine studied workplace interruptions, they found it takes **23 minutes** to refocus after a single distraction. We're not failing at focus - we're attempting cognitive labor in environments designed to fracture attention.
 
-But salvation arrived from unexpected sources: the **Roman Thermae** of my travels and the **public hammam** of my Ksar El-Kébir childhood. Their four-chambered ritual holds the blueprint for what I now call the **Digital Thermae** - your sanctuary for deep work in a distracted world, building on the foundations of [The Anchored Nomad Manifesto: Part 1](/about/philosophy/anchored-nomad-manifesto-part-1/).
+But salvation arrived from unexpected sources: the **Roman Thermae** of my travels and the **public hammam** of my Ksar El-Kébir childhood. Their four-chambered ritual holds the blueprint for what I now call the **Digital Thermae** - your sanctuary for deep work in a distracted world, building on the foundations of [The Anchored Nomad Manifesto: Part 1]({{< relref "/about/philosophy/anchored-nomad-manifesto-part-1" >}}).
 
 ---
 
@@ -41,7 +41,7 @@ But salvation arrived from unexpected sources: the **Roman Thermae** of my trave
 ### 1. Tepidarium: The Sacred Threshold
 
 > "My father, a primary school teacher in Meknès, began each lesson with a ritual: meticulous cleaning of the blackboard. This small act commanded respect. The slate wasn't just erased - it was made sacred."  
-> *(Algorithmic Sardines, Chapter 2: Seeds of Vocation)*
+> *([Algorithmic Sardines, Chapter 2: Seeds of Vocation]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 {{< figure src="images/thermae-chambers-diagram.jpg" alt="Diagram of the 4 Thermae chambers: Tepidarium, Caldarium, Frigidarium, Palaestra" caption="The Mediterranean blueprint for cognitive architecture" >}}
 
@@ -56,7 +56,7 @@ This 5-minute ritual isn't preparation - it's cognitive alchemy transforming dig
 ### 2. Caldarium: The Beautiful Inferno
 
 > "The public hammam's hot chamber was a beautiful hell. The heat forced surrender before the *gommage* - my father scrubbing dead skin with coarse *sabon beldi*. It wasn't comfortable but **necessary purification through endured struggle**."  
-> *(Algorithmic Sardines, Chapter 7: Clay and Living Waters)*
+> *([Algorithmic Sardines, Chapter 7: Clay and Living Waters]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 {{< figure src="images/hammam-steam-and-light.jpg" alt="Steam-filled Moroccan hammam with shafts of light - focus born in discomfort" caption="The Caldarium lesson: deep work requires uncomfortable immersion" >}}
 
@@ -70,8 +70,8 @@ When distractions arise? Capture them on your "Parking Lot" notepad - honoring t
 
 ### 3. Frigidarium: The Shock of Consolidation
 
-> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, much like [The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/) teaches us about [intentional work](/digital-compass/nomad-toolkit/zellige-blueprint/)."  
-> *(Algorithmic Sardines, Chapter 7: Clay and Living Waters)*
+> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, much like [The Zellige Blueprint]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) teaches us about [intentional work]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}})."  
+> *([Algorithmic Sardines, Chapter 7: Clay and Living Waters]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 Post-deep work, most skip this vital chamber. Don't. Spend 10 minutes:
 
@@ -84,7 +84,7 @@ Like a potter cooling ceramics slowly, this prevents cognitive shattering.
 ### 4. Palaestra: Where Olive Trees Whisper Insights
 
 > "My best ideas never came staring at screens. They emerged watching sunsets over Málaga's port - moments activating the brain's Default Mode Network where **unconscious cognition weaves breakthroughs**."  
-> *(Algorithmic Sardines, Chapter 11: The Ancestors' Road)*
+> *([Algorithmic Sardines, Chapter 11: The Ancestors' Road]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 {{< figure src="images/malaga-roman-theatre-sunset.jpg" alt="Sunset over Málaga Roman theatre - neuroscience confirms rest sparks innovation" caption="Modern Palaestra: where insights emerge from stillness" >}}
 
@@ -94,7 +94,7 @@ After consolidation, 20 minutes of true analog rest:
 - Gaze at olive trees (their fractal patterns calm minds)
 - **Absolutely no screens**
 
-Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism](/about/philosophy/salah-philosophy/) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work](/malaga-codex/local-rituals/espetos-epiphanies/) traditions.
+Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism]({{< relref "/about/philosophy/salah-philosophy" >}}) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work]({{< relref "/malaga-codex/local-rituals/espetos-epiphanies" >}}) traditions.
 
 ---
 
@@ -132,9 +132,9 @@ Neuroscience confirms these DMN-activating pauses aren't idle - they're when you
 - **Palaestra Companions**: Small notebook + walking shoes
 
 > "Good tools disappear when intuition takes over - like the *maâlem*'s chisel becoming hand-memory when cutting *zellige* tiles."  
-> *(Algorithmic Sardines, Chapter 7)*
+> *([Algorithmic Sardines, Chapter 7]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
-These are the applications that facilitate the ritual, but the true sanctuary is built with intention. This selection reflects a broader philosophy on choosing one's tools, a minimalist approach I've refined over decades, **[from my first radio to my current smartphone](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+These are the applications that facilitate the ritual, but the true sanctuary is built with intention. This selection reflects a broader philosophy on choosing one's tools, a minimalist approach I've refined over decades, **[from my first radio to my current smartphone]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
 
 {{< figure src="images/zellige-artisan-focus.jpg" alt="Hands of zellige artisan carving tiles - absolute focus as craft" caption="The master artisan's state: when tool becomes extension of will" >}}
 
@@ -154,9 +154,9 @@ As I write this from my Málaga terrace, morning light gilding Roman theater rui
 This week, conduct **one full ritual**. Then join me in the comments sharing:
 1. Which chamber felt most transformative?
 2. What insight emerged during Palaestra?
-Use **#ThermaeFlowState** - let's build a [community of deep work artisans](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/).
+Use **#ThermaeFlowState** - let's build a [community of deep work artisans]({{< relref "/resources/remote-work-zen/digital-agora-mediterranean-blueprint" >}}).
 
 {{< figure src="images/cta-thermae-flow-state.jpg" alt="Roman mosaic path leading to laptop - timeless ritual meets digital workflow" caption="The eternal meets the algorithmic: your Digital Thermae awaits" >}}
 
 ---
-*Continue your journey with [The Anchored Nomad Manifesto: Part 1](/about/philosophy/anchored-nomad-manifesto-part-1/) or explore how [Málaga's Moorish soul informs digital innovation](/malaga-codex/history-reborn/alcazabas-secret-code/).*
+*Continue your journey with [The Anchored Nomad Manifesto: Part 1]({{< relref "/about/philosophy/anchored-nomad-manifesto-part-1" >}}) or explore how [Málaga's Moorish soul informs digital innovation]({{< relref "/malaga-codex/history-reborn/alcazabas-secret-code" >}}).*

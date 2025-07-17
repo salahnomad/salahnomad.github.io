@@ -25,16 +25,16 @@ resources:
 ### Prologue: The Silence of a World Shut Down
 The scent of wild thyme clung to the Moroccan dusk. It was March 2020. My palms were pressed against the gnarled bark of an olive tree my ancestors called *The Witness*—a tree that had seen my great-grandfather’s birth. In my pocket, my phone was a cold, dead weight, its silence more damning than any notification.
 
-Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire [a new model of financial resilience](/resources/nomad-finance/olive-grove-economy/).
+Days earlier, it had buzzed with cancellation emails, a death knell for my business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown. My thriving wellness business, built on the tangible heritage of my homeland, had turned to dust. I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire [a new model of financial resilience]({{< relref "/resources/nomad-finance/olive-grove-economy" >}}).
 
 ---
 
 ### I. When Borders Ate My Business
 The collapse began with the brutal simplicity of a single headline: **"All EU Shipments Suspended Indefinitely."**
 
-I had survived crises before. After the 2008 financial crash, I’d intentionally pivoted to physical products, believing them to be "recession-proof" assets. Like the Phoenician traders in my book, *Algorithmic Sardines*, who mistrusted the sea's whims, I’d anchored my security in tangible cargo. Now, that very cargo was my undoing.
+I had survived crises before. After the 2008 financial crash, I’d intentionally pivoted to physical products, believing them to be "recession-proof" assets. Like the Phoenician traders in [my book, *Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}), who mistrusted the sea's whims, I’d anchored my security in tangible cargo. Now, that very cargo was my undoing.
 
-As I thought of Sally's London warehouse, where I’d once proudly watched English hands massage Moroccan clay into their skin (a story born from the ashes of the [*Ghost of Ritual Hammam Europe*](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)), a painful realization hit me:
+As I thought of Sally's London warehouse, where I’d once proudly watched English hands massage Moroccan clay into their skin (a story born from the ashes of the [*Ghost of Ritual Hammam Europe*]({{< relref "/cultural-bridges/collaborations/ghost-of-ritual-hammam" >}})), a painful realization hit me:
 
 > *"We had turned ancestral wisdom into a commodity, forgetting that its true value flows through stories, not shipping containers."*
 
@@ -48,9 +48,9 @@ The world had forced my hand. My business was dead. It was time to return to the
 I retreated to the Jbala mountains, to the olive groves that held my childhood. Here, time is not measured in deadlines, but in the slow ripening of fruit. Here, I remembered:
 - My grandmother singing Amazigh songs while pressing argan oil.
 - My father reading H.G. Wells' *The Time Machine* under a gas lamp.
-- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
 
-Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy](/about/philosophy/salah-philosophy/).
+Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy]({{< relref "/about/philosophy/salah-philosophy" >}}).
 
 | **Olive Tree Wisdom** | **My Digital Translation** |
 |:----------------------|:-------------------------|
@@ -69,9 +69,9 @@ It was then I realized what my ancestors knew when they were expelled from Andal
 ### III. Digital Alchemy: Transmuting Heritage into Code
 By June 2020, `salahnomad.com` was born—not as a consolation prize, but as a consecration. My pivot from physical products to digital wisdom mirrored the very clay-purification rituals I had once sold:
 
-1.  **Washing the Raw Material:** I took the oral histories of the spice routes and washed them clean, turning them into essays for [Culinary Crossroads](/cultural-bridges/food/).
-2.  **Kneading the Wisdom:** I took the raw resilience practices of the mountains and kneaded them into a framework, [The Jbala Resilience Quartet](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/).
-3.  **Firing the Legacy:** I took 20 years of cross-border commerce experience and fired it into a new, durable form: [SEO strategies inspired by Phoenician traders](/resources/seo-alchemy/phoenician-merchant-seo/).
+1.  **Washing the Raw Material:** I took the oral histories of the spice routes and washed them clean, turning them into essays for [Culinary Crossroads]({{< relref "/cultural-bridges/food" >}}).
+2.  **Kneading the Wisdom:** I took the raw resilience practices of the mountains and kneaded them into a framework, [The Jbala Resilience Quartet]({{< relref "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet" >}}).
+3.  **Firing the Legacy:** I took 20 years of cross-border commerce experience and fired it into a new, durable form: [SEO strategies inspired by Phoenician traders]({{< relref "/resources/seo-alchemy/phoenician-merchant-seo" >}}).
 
 {{< figure src="images/digital-alchemy-clay-to-code.jpg" caption="The true ritual: Transmuting earth wisdom into digital light." alt="A morphing image showing artisan hands kneading Moroccan clay, which then transform into the same fingers typing code on a keyboard, representing the alchemy of heritage into a digital legacy." >}}
 
@@ -92,7 +92,7 @@ This was it. This was the legacy my olive tree foresaw: wisdom traveling faster 
 ---
 
 ### V. The Mediterranean Coin: One Face Roots, One Face Waves
-Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The philosophy of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/) is simply the art of holding that coin.
+Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The philosophy of [**Rooted Nomadism**]({{< relref "/about/philosophy/salah-philosophy" >}}) is simply the art of holding that coin.
 
 The pandemic proved what the Andalusian exiles knew five centuries ago: **walls can imprison bodies, but they often liberate minds.** Clay expires. Borders close. But a well-told story, rooted in truth, outlasts pandemics and algorithms alike.
 

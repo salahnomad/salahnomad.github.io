@@ -14,20 +14,21 @@ series: ["Your Mediterranean Compass for Meaningful Travel"]
 series_order: 3
 toc: true
 draft: false
+cta: community
 ---
 
 ### 1. Introduction: The Digital Orphan's Dilemma
 
 > "We've built global villages only to become digital orphans."
 
-That February morning in Málaga's Plaza de la Merced, I witnessed the cruel paradox of our age: children laughing under Picasso's statue while my laptop screen screamed silent accusations. Americans now spend over six hours daily in the digital realm, yet studies show [a majority feel more isolated than ever](/about/testimonials/the-human-constellation/). We've traded the warmth of a neighborly chat on "Main Street" for the cold algorithms of Silicon Valley.
+That February morning in Málaga's Plaza de la Merced, I witnessed the cruel paradox of our age: children laughing under Picasso's statue while my laptop screen screamed silent accusations. Americans now spend over six hours daily in the digital realm, yet studies show [a majority feel more isolated than ever]({{< relref "/about/testimonials/the-human-constellation" >}}). We've traded the warmth of a neighborly chat on "Main Street" for the cold algorithms of Silicon Valley.
 
 This isn't just a feeling. It's a neurological hijacking, validated by research:
 ⚠️ Trivial interruptions slash our cognitive capacity by 40% *(Journal of Experimental Psychology)*
 📉 40% of remote workers report feeling isolated despite constant connectivity *(Harvard Business Review, 2025)*
 💔 57% feel *more* isolated on social media *(Cigna Study)*
 
-In **[Part 1 of this series](/about/philosophy/anchored-nomad-manifesto-part-1/)**, we rooted our identity. In **[Part 2](/resources/remote-work-zen/thermae-flow-state-deep-work/)**, we built our inner sanctuary. Now, we confront the void where humanity should thrive, exploring a journey between two Mediterranean archetypes: the sun-drenched Roman Forum and the shaded Andalusian patio.
+In **[Part 1 of this series]({{< relref "/about/philosophy/anchored-nomad-manifesto-part-1" >}})**, we rooted our identity. In **[Part 2]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}})**, we built our inner sanctuary. Now, we confront the void where humanity should thrive, exploring a journey between two Mediterranean archetypes: the sun-drenched Roman Forum and the shaded Andalusian patio.
 
 ---
 
@@ -35,7 +36,7 @@ In **[Part 1 of this series](/about/philosophy/anchored-nomad-manifesto-part-1/)
 
 {{< figure src="images/arles-forum-cafe.jpg" alt="A café terrace at the iconic Café Van Gogh in Arles, with Roman columns in the background." caption="Where Van Gogh's Café La Nuit meets 21st-century nomads." >}}
 
-**July 2016.** [The collapse of Ritual Hammam Europe](/cultural-bridges/collaborations/ghost-of-ritual-hammam/) still raw, I wandered Arles like a ghost—until destiny struck through Pieter Monsma's lens. That zebra-shirt moment birthed #SalahNomad, but the **Place du Forum** itself imprinted deeper wisdom. Built where the city's main arteries intersected, this wasn't just stone—it was Rome's masterclass in community architecture.
+**July 2016.** [The collapse of Ritual Hammam Europe]({{< relref "/cultural-bridges/collaborations/ghost-of-ritual-hammam" >}}) still raw, I wandered Arles like a ghost—until destiny struck through Pieter Monsma's lens. That zebra-shirt moment birthed #SalahNomad, but the **Place du Forum** itself imprinted deeper wisdom. Built where the city's main arteries intersected, this wasn't just stone—it was Rome's masterclass in community architecture.
 
 The Forum teaches us our first crucial lesson: **a thriving community needs a visible, transparent public stage where ideas are debated and value is exchanged openly.**
 
@@ -93,7 +94,7 @@ Here is a starter kit to move from theory to reality.
 
 {{< figure src="images/forum-builder-ritual-mockup.jpg" alt="A handcrafted PDF titled '30-Day Forum Builder Ritual' on a wooden table with a fountain pen and olive branch." caption="Your 30-Day Ritual: A tangible blueprint for building authentic community." >}}
 
-> **[➡️ Download your Full 30-Day Ritual Calendar (PDF) here](#) to build a forum that lasts longer than an algorithm.**
+> **To go deeper on these principles, I invite you to [explore the Rooted Nomad's Library]({{< relref "/ebook" >}}), where my books expand on these frameworks.**
 
 ---
 
@@ -105,7 +106,7 @@ Arles' Forum teaches us that **visibility enables accountability**. Málaga's Pa
 
 This isn't about audience-building—it's about **reclaiming the human soul of the internet.**
 
-> [You become a weaver in an age of fragmentation](/cultural-bridges/festivals/avignon-community-building-lessons/).
+> [You become a weaver in an age of fragmentation]({{< relref "/cultural-bridges/festivals/avignon-community-building-lessons" >}}).
 
 Your agora awaits in the next thoughtful comment, the next private DM, the next shared geranium. The stones of Arles and the courtyards of Málaga have shown us the way. **Now, it is your turn to build.**
 

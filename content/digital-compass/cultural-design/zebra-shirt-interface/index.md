@@ -27,13 +27,13 @@ In 2016, during the **Arles Photography Festival**, a Dutch photographer named P
 
 {{< figure src="images/pieter-monsma-arles-photo.jpg" alt="Black and white photo of Salah Nomad wearing his iconic zebra-striped shirt, looking thoughtfully into the distance, captured in Arles by Pieter Monsma in 2016." caption="Pieter Monsma’s 2016 shot in Arles that became a manifesto." >}}
 
-That zebra shirt was more than clothing. It was a **design statement**—a fusion of Andalusian geometry (zellige) and African-inspired rhythm (zebra), embodying the tension and harmony of my Moroccan-Spanish heritage. It became a **user interface** of sorts: inviting curiosity, [sparking conversations](/about/testimonials/the-human-constellation/), and silently declaring an identity rooted in cultural synthesis.
+That zebra shirt was more than clothing. It was a **design statement**—a fusion of Andalusian geometry (zellige) and African-inspired rhythm (zebra), embodying the tension and harmony of my Moroccan-Spanish heritage. It became a **user interface** of sorts: inviting curiosity, [sparking conversations]({{< relref "/about/testimonials/the-human-constellation" >}}), and silently declaring an identity rooted in cultural synthesis.
 
 ---
 
 ## The Zellige Principle: From Mosaics to UX
 
-The **[zellige](/digital-compass/nomad-toolkit/zellige-blueprint/)**—those intricate geometric tileworks of Morocco—are not just decorative. They are a testament to **precision, patience, and harmony**. Each tile, hand-cut with 0.5mm tolerance, contributes to a larger pattern that breathes with intentionality. This is the essence of **cultural UX design**:
+The **[zellige]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}})**—those intricate geometric tileworks of Morocco—are not just decorative. They are a testament to **precision, patience, and harmony**. Each tile, hand-cut with 0.5mm tolerance, contributes to a larger pattern that breathes with intentionality. This is the essence of **cultural UX design**:
 
 {{< figure src="images/zellige-detail-ux-juxtaposition.jpg" alt="Close-up of intricate, colorful Moroccan zellige tilework placed side-by-side with a clean, modern UX wireframe design, illustrating the dialogue between ancient craft and digital interface planning." caption="Zellige patterns juxtaposed with a modern UX wireframe, holding timeless lessons." >}}
 
@@ -47,7 +47,7 @@ Zellige teaches us to draw from diverse cultural aesthetics **not as superficial
 
 ### 3. **Intentional Pauses**
 > *"The olive grove knows when to breathe."*  
-In a world obsessed with speed, zellige reminds us to **carve breathing gaps**. These are the pauses between keystrokes, the silence between screens, the moments where a loading animation becomes a celebration of olive branches growing. They are the **Mediterranean rhythms**—mint tea rituals, sunset silences—that teach us to slow down digital design. This philosophy of integrating 'breathing gaps' extends beyond UX to **[the very selection of tools we allow into our lives](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+In a world obsessed with speed, zellige reminds us to **carve breathing gaps**. These are the pauses between keystrokes, the silence between screens, the moments where a loading animation becomes a celebration of olive branches growing. They are the **Mediterranean rhythms**—mint tea rituals, sunset silences—that teach us to slow down digital design. This philosophy of integrating 'breathing gaps' extends beyond UX to **[the very selection of tools we allow into our lives]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
 
 {{< figure src="images/olive-grove-breathing-gap.jpg" alt="Sun-dappled path winding through an ancient Mediterranean olive grove, its tranquility symbolizing the concept of 'breathing gaps' and intentional pauses in user experience design." caption="An olive grove path, symbolizing an intentional pause or 'breathing gap' in design." >}}
 
@@ -67,9 +67,9 @@ Add intentional pauses to your interface. A beautifully designed loading animati
 
 ## Why This Matters: Beyond Aesthetics
 
-This isn’t about slapping cultural motifs onto sterile interfaces. It’s about **imbuing the spirit of ancient crafts** into modern tech. When we design with the patience of a zellige maâlem (artisan), the precision of Phoenician trade routes—those ancient networks that optimized maritime paths and standardized cargo for efficiency—and the harmony of a Mediterranean breeze, we create interfaces that feel less like machines and more like living tools.[^1] This applies equally to physical [community spaces](/cultural-bridges/festivals/avignon-community-building-lessons/) as to digital ones.
+This isn’t about slapping cultural motifs onto sterile interfaces. It’s about **imbuing the spirit of ancient crafts** into modern tech. When we design with the patience of a zellige maâlem (artisan), the precision of Phoenician trade routes—those ancient networks that optimized maritime paths and standardized cargo for efficiency—and the harmony of a Mediterranean breeze, we create interfaces that feel less like machines and more like living tools.[^1] This applies equally to physical [community spaces]({{< relref "/cultural-bridges/festivals/avignon-community-building-lessons" >}}) as to digital ones.
 
-As I wrote in *Algorithmic Sardines*:  
+As I wrote in [*Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}):  
 > *"The most profound interfaces are not those that shout for attention, but those that whisper of connection, crafted with the patience of a maâlem and the heart of a storyteller."*  
 *(Inspired by watching maâlems in the Fes medina, their hands moving with ancestral grace.)*
 
@@ -89,8 +89,8 @@ Let’s build a more rooted, more human digital world—together.
 ---
 
 ### **Continue Your Journey**
-- **Read more**: [Olive Trees & Algorithms](/about/story/)  
-- **Explore**: [AI & Ancestry](/digital-compass/future-of-nomadism/)  
+- **Read more**: [Olive Trees & Algorithms]({{< relref "/about/story/olive-trees-and-algorithms" >}}) 
+- **Explore**: [AI & Ancestry]({{< relref "/digital-compass/future-of-nomadism" >}})  
 - **Subscribe**: [Mediterranean Insights](#sidebar-newsletter-anchor)  
 
 [^1]: The Phoenicians, master navigators of the first millennium BCE, established durable trade networks by integrating strategic criteria: local resources, natural harbors, and standardization of methods (e.g., gold/silver ingots). Their precision lay in blending technical innovation (wooden piers adapted to tides, metal smelting) with cultural adaptability (métissage with indigenous populations).

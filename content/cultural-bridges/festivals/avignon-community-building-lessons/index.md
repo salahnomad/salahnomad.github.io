@@ -29,7 +29,7 @@ resources:
 
 ### Prologue: When the City Became Our Stage Director
 
-July 2012. The papal ramparts of Avignon breathed theatre - baroque costumes brushing against startup hoodies, fragments of Racine tangling with smartphone notifications. I'd come to build an e-commerce venture with my cousin Saad, but the city had other plans. As chronicled in [*Algorithmic Sardines* (Chapter 10)](/about/story/), Avignon revealed its secret: **community isn't built, it's performed**.
+July 2012. The papal ramparts of Avignon breathed theatre - baroque costumes brushing against startup hoodies, fragments of Racine tangling with smartphone notifications. I'd come to build an e-commerce venture with my cousin Saad, but the city had other plans. As chronicled in [*Algorithmic Sardines* (Chapter 10)]({{< relref "/ebook/algorithmic-sardines" >}}), Avignon revealed its secret: **community isn't built, it's performed**.
 
 In that medieval crucible, I discovered timeless patterns etched in zebra stripes and Byzantine frescoes. This is how a Moroccan nomad learned to weave digital tribes using threads older than the Palais des Papes.
 
@@ -44,7 +44,7 @@ Saad greeted me at Place de l'Horloge with a conspiratorial grin. "You look like
 > "Rehearsing for *Ice Station Zebra*?" an actress called from Café de la Comédie.  
 > "What role? The Merchant of the Orient 2.0?" a street performer grinned.
 
-The magic wasn't in the cotton, but in the permission it granted. As I confessed in [*Algorithmic Sardines* (Chapter 10)](/digital-compass/cultural-design/zebra-shirt-interface/): *"From the first wear, I knew it embodied my essence: wild elegance, embraced contrasts, freedom in motion."* Suddenly, I wasn't documenting the festival - I was part of its living tapestry.
+The magic wasn't in the cotton, but in the permission it granted. As I confessed in [*Algorithmic Sardines* (Chapter 10)]({{< relref "/digital-compass/cultural-design/zebra-shirt-interface" >}}): *"From the first wear, I knew it embodied my essence: wild elegance, embraced contrasts, freedom in motion."* Suddenly, I wasn't documenting the festival - I was part of its living tapestry.
 
 **The Rooted Revelation:**  
 True communities crystallize around visible authenticity. Your "zebra shirt" is that irreducible core where heritage meets aspiration. Mine merged Amazigh silver with digital fluency. What pattern makes *you* irreplaceably visible?
@@ -59,11 +59,11 @@ Our command center wasn't a boardroom. It was **Table 7 at Lou Mistrau** - Bruno
 
 One twilight, between lavender farmers and Off Festival actors, alchemy occurred:
 
-> SAAD: "Imagine... [Ritual Hammam pop-up](/cultural-bridges/collaborations/ghost-of-ritual-hammam/) in the Chapelle des Pénitents Noirs."  
+> SAAD: "Imagine... [Ritual Hammam pop-up]({{< relref "/cultural-bridges/collaborations/ghost-of-ritual-hammam" >}}) in the Chapelle des Pénitents Noirs."  
 > ACTRESS: "Your Ghassoul clay for our stage makeup remover!"  
 > TECH FOUNDER: "My cousin curates that 14th-century space."
 
-This was no meeting. It was a **21st-century hammam** - steam of ideas, exfoliation of assumptions, the massage of perspectives. As I described in [*Algorithmic Sardines*](/resources/remote-work-zen/thermae-flow-state/): *"True innovation needs the friction of elbow-to-elbow seating, the scent of spilled Pastis on terracotta tiles."* Lou Mistrau became our [*agora*](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/) - equal parts café, incubator, and confessional.
+This was no meeting. It was a **21st-century hammam** - steam of ideas, exfoliation of assumptions, the massage of perspectives. As I described in [*Algorithmic Sardines*]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}}): *"True innovation needs the friction of elbow-to-elbow seating, the scent of spilled Pastis on terracotta tiles."* Lou Mistrau became our [*agora*]({{< relref "/resources/remote-work-zen/digital-agora-mediterranean-blueprint" >}}) - equal parts café, incubator, and confessional.
 
 **The Rooted Ritual:**  
 Communities thrive in "third spaces" where hierarchy dissolves. Where's your nomadic hammam? That sacred space where ideas soak until they soften?
@@ -102,7 +102,7 @@ Leaving Avignon, I didn't just carry memories. I carried three talismans, three 
 
 {{< promptbox title="The Three Avignon Talismans" type="info" >}}
 1.  **The Zebra Stone: To Be Seen.**  
-    Dare to express your unique, hybrid identity. Authenticity is a beacon that attracts your [true tribe](/about/testimonials/the-human-constellation/).
+    Dare to express your unique, hybrid identity. Authenticity is a beacon that attracts your [true tribe]({{< relref "/about/testimonials/the-human-constellation" >}}).
 
 2.  **The Rosé Stone: To Connect.**  
     Engineer spaces for serendipity—those "third places" where unscripted collaboration can spark and deep trust can be forged.
@@ -111,16 +111,14 @@ Leaving Avignon, I didn't just carry memories. I carried three talismans, three 
     Anchor modern innovation in the timeless patterns of human ritual. Technology changes, but the human need for shared meaning is eternal.
 {{< /promptbox >}}
 
-As I explore in my philosophy of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/): *"Digital nomadism is the art of sensing invisible threads between a forgotten fresco and a search engine algorithm."*
-
-The festival taught me that **community is the ultimate rooted journey**—belonging everywhere because you are authentically somewhere. From the Jbala mountains to papal palaces, we are all performers on history's timeless stage.
+The festival taught me that **community is the ultimate rooted journey**—belonging everywhere because you are authentically somewhere. The full story of this Avignon summer, and how it became a turning point in my understanding of commerce and connection, is a cornerstone of my memoir, [*Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}). Now, it's your turn to step onto the stage.
 
 ---
 
 #### Your Avignon Challenge
 
 {{< promptbox title="Your Avignon Challenge" type="challenge" >}}
-**REFLECT:** What aspect of your authentic self remains backstage? How might revealing it change your community's script?
+**REFLECT:** What aspect of your authentic self remains backstage? How might revealing it change your community’s script?
 
 ---
 

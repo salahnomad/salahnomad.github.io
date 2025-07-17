@@ -36,7 +36,7 @@ resources:
 The streets of Meknès slept as I walked toward the blue neon glow - **"Extranet Cybercafé"**. Inside, the air hung thick with the scent of mint tea, stale cigarettes, and overheating Pentium processors. At 2 AM, when the pre-ADSL lines finally cleared, I'd claim my terminal. For 15 dirhams/hour (about $1.50), I entered a world where webpages materialized line-by-painful-line. 
 
 > "The modem's screech was our call to prayer. That 56k wail meant connection - not convenience."  
-> *(Algorithmic Sardines, Chapter 3)*
+> *([Algorithmic Sardines, Chapter 3]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 Today, we swim in digital abundance. Yet I owe everything to that **sacred scarcity**. When every minute cost dirhams and every click demanded surgical precision, I learned what modern nomads desperately need: *Digital constraints create depth*.
 
@@ -128,7 +128,7 @@ That struggling cybercafé gave me more than any fiber-optic connection ever cou
 <!-- NOUVELLE SECTION AJOUTÉE -->
 ### From Scarcity to Stewardship
 
-That struggling cybercafé gave me more than any fiber-optic connection ever could. It taught me the philosophy of scarcity. But how do these lessons apply today, in an age of infinite abundance? I explore this evolution in **[my journey from a Panasonic radio to an iPhone, and the minimalist toolkit it forged](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/)**.
+That struggling cybercafé gave me more than any fiber-optic connection ever could. It taught me the philosophy of scarcity. But how do these lessons apply today, in an age of infinite abundance? I explore this evolution in **[my journey from a Panasonic radio to an iPhone, and the minimalist toolkit it forged]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
 
 <!-- FIN DE LA NOUVELLE SECTION -->
 

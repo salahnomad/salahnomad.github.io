@@ -24,7 +24,7 @@ resources:
 
 ## The Consulate's Waiting Room: Where My Ancestors Whispered
 
-That sterile air—polished marble mixed with hopelessness—still lives in my nostrils. When Nathalie's dreams for us dissolved under a rubber stamp's crimson "REFUSÉ", I tasted the bitterness of borders. But when Sally's invitation became my passport to new worlds, I heard [my Morisco ancestors whisper](/cultural-bridges/migration/morisco-compass-modern-diasporas/): **"Bureaucracy fears rooted stories more than blank papers."**
+That sterile air—polished marble mixed with hopelessness—still lives in my nostrils. When Nathalie's dreams for us dissolved under a rubber stamp's crimson "REFUSÉ", I tasted the bitterness of borders. But when Sally's invitation became my passport to new worlds, I heard [my Morisco ancestors whisper]({{< relref "/cultural-bridges/migration/morisco-compass-modern-diasporas" >}}): **"Bureaucracy fears rooted stories more than blank papers."**
 
 {{< figure src="images/bureaucracy-heritage-inkwell.jpg" 
     alt="Antique Moroccan brass inkwell with visa documents emerging like scrolls - Fusion of bureaucratic process and ancestral heritage wisdom" 
@@ -36,7 +36,7 @@ This is the dance of two stamps that carved my nomadic path—and how the **Oliv
 
 ### Act I: The Merchant's Visa (UK 2009) - When Sally Became My Phoenician Trireme
 
-**The Backstory:** You met Sally in [Chapter 5 of my memoir](/about/story/olive-trees-and-algorithms/)—the whirlwind Brit who hauled clay from Atlas caves. Her invitation wasn't paper; it was a **Phoenician trading vessel** navigating bureaucratic storms.
+**The Backstory:** You met Sally in [Chapter 5 of my memoir]({{< relref "/about/story/salah-story" >}})-the whirlwind Brit who hauled clay from Atlas caves. Her invitation wasn't paper; it was a **Phoenician trading vessel** navigating bureaucratic storms.
 
 **The Perfect Storm:**
 - A Moroccan passport, blank as Saharan dawn.
@@ -63,7 +63,7 @@ When the visa officer scanned it, I saw his shoulders unlock. He wasn't approvin
 
 The "REFUSÉ" stamp echoed like a medina gate slamming at dusk. That crimson ink wasn't rejection—it was **the Garonne River swallowing our dreams whole**.
 
-**The Wisdom Harvested:** Years later in Arles, [Pieter would frame my essence in the zebra shirt](/digital-compass/cultural-design/zebra-shirt-interface/) (Chapter 12). But in 2006? I was a rootless sapling. The lesson bled through:
+**The Wisdom Harvested:** Years later in Arles, [Pieter would frame my essence in the zebra shirt]({{< relref "/digital-compass/cultural-design/zebra-shirt-interface" >}}) (Chapter 12). But in 2006? I was a rootless sapling. The lesson bled through:
 > "Passion evaporates at border control. Only interlocking proof—like the tiles in a zellige mosaic—holds weight and builds a story of stability."
 
 ---
@@ -78,7 +78,7 @@ The "REFUSÉ" stamp echoed like a medina gate slamming at dusk. That crimson ink
 *Channel ancient Mediterranean traders who built trust across seas.*
 
 - **The Sally Protocol:** Demand **watermarked, embossed** invitations. Digital PDFs are disposable rafts; a physical letter is an unsinkable vessel.
-- **The Melon Ballast Technique:** Remember [my Canary melons crossing to Spain](/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations/) (Chapter 11)? Present your property deeds and family records like those melons—impossible-to-ignore cultural ballast.
+- **The Melon Ballast Technique:** Remember [my Canary melons crossing to Spain]({{< relref "/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations" >}})? Present your property deeds and family records like those melons—impossible-to-ignore cultural ballast.
 - **The Exile's Advantage:** Research heritage visas. My Morisco expulsion, once a source of pain, later became my Spanish residency key.
 
 ### 2. The Zellige Narrative Method (Structural Truth)
@@ -100,37 +100,18 @@ _Bureaucrats are weary fishermen. Be their perfect catch, the one that doesn't f
 
 ---
 
-## Your Visa Resilience Crucible
-
-### Ritual: Rejection → Root Fertilizer
-1.  Take your refusal letter to an olive grove (or a quiet park).
-2.  Read the reasons for rejection aloud to the trees.
-3.  For each reason, bury one olive pit in the earth while naming a concrete solution:
-    - *"Insufficient ties?"* → (Bury a pit) *"I will register our family land in my name."*
-    - *"Purpose of visit unclear?"* → (Bury a pit) *"I will secure a notarized invitation for my next attempt."*
-4.  Water the pits with your morning coffee. Let the bitterness of rejection feed the growth of new roots.
-
-### The Ancestral Visa Roots Map (Downloadable PDF)
-{{< figure src="images/ancestral-visa-roots-map.jpg" 
-    alt="Ancestral visa roots map showing glowing migration routes between Morocco, Spain and France with key heritage visa locations marked" 
-    caption="Click to download your guide and unlock hidden pathways in your bloodline" >}}
-
-Unlock hidden pathways in your lineage:
-- [ ] Have I researched Sephardic/Morisco visas? (Spain/Portugal)
-- [ ] Have I translated and notarized my great-grandparents' birth certificates?
-- [ ] Have I located consulates or cultural centers near my ancestral villages? (Geography can build empathy.)
-
----
-
 ## Epilogue: The Sacred Geometry of Stamps
 
 That French refusal? It became the fault line where my nomadic wisdom erupted. Now, when officials see that faded "REFUSÉ" amidst newer, successful stamps, they sometimes ask, "What happened here?"
 
 I touch my zebra shirt's stripes—those black-and-white borders dancing on fabric. "This," I say. "This happened. And it taught me that **our roots grow fractal-deep when borders press hardest.**"
 
+This ancestral approach to navigating borders, and the full story of how rejection became a cornerstone of my philosophy, is a central theme in my memoir.
+
+**To discover the complete journey and the resilience framework it inspired, I invite you to explore [*Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}).**
+
 ---
 
 ### **Your Roots, Your Ritual**
 - **Reflect:** What bureaucratic Gibraltar Strait blocks your path? Share your story in the comments below—let's weave resilience together.
 - **Act:** Practice the "Zellige Narrative" on something small today—a library card application, a gym membership form. Master the pattern of precision.
-- **Root:** Download your **[Ancestral Visa Roots Map](#)** and plant one seed from your lineage.
