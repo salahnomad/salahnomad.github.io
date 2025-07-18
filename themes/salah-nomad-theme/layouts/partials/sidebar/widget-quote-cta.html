@@ -1,0 +1,10 @@
+{{/* layouts/partials/sidebar/widget-quote-cta.html */}}
+<div class="widget widget_quote_cta">
+  <h3 class="widget-title"><span>{{ .widgetData.title }}</span></h3>
+  <div class="widget-content">
+    {{/* On récupère les citations depuis le fichier de données */}}
+    {{ $quotes := site.Data.widget_quotes }}
+    {{/* On appelle le partial de rendu en lui passant les citations et un ID unique pour la sidebar */}}
+    {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "sidebar") }}
+  </div>
+</div>

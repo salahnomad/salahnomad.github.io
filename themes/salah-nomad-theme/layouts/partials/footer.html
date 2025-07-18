@@ -1,4 +1,5 @@
 {{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\footer.html */}}
+{{/* --- VERSION MISE À JOUR POUR LE NOUVEAU WIDGET 'quote_cta' --- */}}
 <footer id="colophon" class="site-footer" role="contentinfo">
 
   {{/* --- Section des Widgets Thématiques du Footer --- */}}
@@ -6,10 +7,17 @@
   <div class="footer-themed-widgets-wrap">
     <div class="container">
       <div class="footer-themed-widgets-grid">
-        {{/* Widget 1: Mediterranean Wisdom */}}
-        {{ with .Site.Params.footerWidgets.mediterraneanWisdom }}
+        
+        {{/* Widget 1: Quote CTA (Nouveau) */}}
+        {{ with .Site.Params.footerWidgets.quote_cta }}
           {{ if .enable }}
-            {{ partial "footer-widgets/widget-wisdom.html" (dict "context" $ "config" .) }}
+            <div class="footer-column widget widget_quote_cta">
+              <h3 class="widget-title">{{ .title }}</h3>
+              <div class="textwidget">
+                {{ $quotes := site.Data.widget_quotes }}
+                {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "footer") }}
+              </div>
+            </div>
           {{ end }}
         {{ end }}
 

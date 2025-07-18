@@ -1,0 +1,9 @@
+# data/widget_quotes.yaml
+# Courtes phrases ou citations pour le CTA dynamique des widgets.
+
+- text: "Every journey begins with a single line of code, or a whispered story."
+- text: "Discover the philosophy that connects ancient olive groves to modern algorithms."
+- text: "My full story, from the souks of Morocco to the digital shores of Málaga."
+- text: "Go beyond the articles. Explore the complete narrative."
+- text: "The tools, the mindset, the journey. All in one place."
+- text: "For the rooted nomad in all of us."

@@ -43,3 +43,59 @@
   background-color: var(--color-button-hover-background, var(--color-link-hover));
   transform: translateY(-2px);
 }
+
+
+/*
+==================================================================
+RÈGLES D'HARMONISATION POUR L'INTÉGRATION DANS UN WIDGET
+(VERSION "ULTIME" AVEC HAUTE SPÉCIFICITÉ ET !IMPORTANT)
+==================================================================
+*/
+.widget .cta-ebook-block {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.widget .cta-ebook-content {
+  text-align: left !important;
+}
+
+/* --- RÈGLE DE FORCE POUR MASQUER LES ÉLÉMENTS --- */
+.widget .cta-ebook-icon,
+.widget .cta-ebook-title {
+  display: none !important;
+}
+
+.widget .cta-ebook-text {
+  font-size: 1rem !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.widget .cta-ebook-action {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.widget .cta-ebook-button {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0.7rem 1rem !important;
+}
+
+/*
+Styles spécifiques et puissants pour le widget dans le footer.
+*/
+.footer-themed-widgets-grid .widget .cta-ebook-block,
+.footer-themed-widgets-grid .widget .cta-ebook-content {
+  text-align: center !important;
+  align-items: center !important;
+}

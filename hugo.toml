@@ -151,18 +151,20 @@ enableRobotsTXT = true
     [params.sidebar.quotes]
       enable = true
       title = "Roots & Wi-Fi"
-    [params.sidebar.social_feed]
+    # --- MODIFICATION: Remplacement de l'ancien widget par le nouveau ---
+    [params.sidebar.quote_cta]
       enable = true
-      title = "Nomad Life Live"
+      title = "From the Author's Desk"
   # --- FIN [params.sidebar] ---
 
   # --- CONFIGURATION DES WIDGETS DU FOOTER THÉMATIQUE ---
   [params.footerWidgets]
     enable = true
     columns = 5
-    [params.footerWidgets.mediterraneanWisdom]
+    # --- MODIFICATION: Remplacement de l'ancien widget par le nouveau ---
+    [params.footerWidgets.quote_cta]
       enable = true
-      title = "Mediterranean Wisdom"
+      title = "The Full Journey"
     [params.footerWidgets.quickCompass]
       enable = true
       title = "Quick Compass"

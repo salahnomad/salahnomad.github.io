@@ -1,8 +1,8 @@
 {{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\sidebar.html */}}
-{{/* --- VERSION FINALE ULTIME (Appelle les 5 nouveaux widgets) --- */}}
+{{/* --- VERSION MISE À JOUR POUR LE NOUVEAU WIDGET 'quote_cta' --- */}}
 {{ $sidebarParams := .Site.Params.sidebar }}
-{{/* Définit l'ordre souhaité pour les 5 nouveaux widgets */}}
-{{ $widgetOrder := slice "weather" "newsletter_mediterranean" "map_compass" "quotes" "social_feed" }}
+{{/* Définit l'ordre souhaité pour les widgets, avec le nouveau CTA */}}
+{{ $widgetOrder := slice "weather" "newsletter_mediterranean" "map_compass" "quotes" "quote_cta" }}
 
 <aside id="secondary" class="widget-area sidebar">
   {{ range $widgetOrder }}

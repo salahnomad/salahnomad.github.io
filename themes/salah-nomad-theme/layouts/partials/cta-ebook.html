@@ -1,17 +1,14 @@
 {{/* themes/salah-nomad-theme/layouts/partials/cta-ebook.html */}}
-{{/* Version Finale "Crème de la Crème" - PLAN B (Hardcodé pour fiabilité maximale) */}}
+{{/* VERSION MISE À JOUR "INTELLIGENTE" - Gère l'affichage en fonction du contexte */}}
 
-{{/* On récupère le contexte (`cta` value) passé depuis le front matter de l'article */}}
+{{/* On récupère le contexte (`cta` value) et on vérifie si on est dans un widget */}}
 {{ $context := .cta }}
+{{ $is_in_widget := .is_in_widget | default false }}
 
-{{/* On définit les variables pour le titre et le texte qui seront utilisées plus bas */}}
+{{/* Logique pour définir les textes (ne change pas) */}}
 {{ $title := "" }}
 {{ $text := "" }}
 
-{{/*
-  On utilise une structure if/else if pour choisir le bon texte
-  en fonction du contexte fourni par l'article.
-*/}}
 {{ if eq $context "story" }}
   {{ $title = "The Story Continues..." }}
   {{ $text = "This moment was a pivotal point in my journey. To see how it fits into the larger narrative of my transformation from a product merchant to a digital storyteller, dive into the full memoir." }}
@@ -25,22 +22,31 @@
   {{ $title = "From Ideas to a Tribe" }}
   {{ $text = "Building authentic communities is an art. To learn more about the encounters and lessons that shaped this philosophy of connection, discover the complete narrative in my memoir." }}
 {{ else }}
-  {{/* C'est le contexte par défaut, utilisé si `cta: true` ou si le contexte n'est pas reconnu */}}
   {{ $title = "Explore the Full Journey" }}
   {{ $text = "This article is a single thread in a much larger tapestry. To discover the complete story behind Rooted Nomadism and how these experiences forged its core principles, I invite you to explore my memoir." }}
 {{ end }}
 
-{{/* On affiche maintenant le bloc HTML en utilisant les variables $title et $text que nous venons de définir */}}
-<aside class="cta-ebook-block">
-  <div class="cta-ebook-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true">
-      <path d="M20 2H4C2.9 2 2 2.9 2 4v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path>
-    </svg>
-  </div>
-  <div class="cta-ebook-content">
-    <h3 class="cta-ebook-title">{{ $title }}</h3>
-    <p class="cta-ebook-text">{{ $text }}</p>
-  </div>
+{{/* --- MODIFICATION MAJEURE DE L'AFFICHAGE HTML --- */}}
+<aside class="cta-ebook-block {{ if $is_in_widget }}in-widget-context{{ end }}">
+  
+  {{/* On affiche l'icône et le titre UNIQUEMENT si on N'EST PAS dans un widget */}}
+  {{ if not $is_in_widget }}
+    <div class="cta-ebook-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" aria-hidden="true">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path>
+      </svg>
+    </div>
+    <div class="cta-ebook-content">
+      <h3 class="cta-ebook-title">{{ $title }}</h3>
+      <p class="cta-ebook-text">{{ $text }}</p>
+    </div>
+  {{ else }}
+    {{/* Si on EST dans un widget, on affiche SEULEMENT le texte et le bouton */}}
+    <div class="cta-ebook-content">
+      <p class="cta-ebook-text">{{ $text }}</p>
+    </div>
+  {{ end }}
+
   <div class="cta-ebook-action">
     <a href="/ebook/algorithmic-sardines/" class="cta-ebook-button">Discover "Algorithmic Sardines"</a>
   </div>
