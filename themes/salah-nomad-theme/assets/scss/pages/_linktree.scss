@@ -224,7 +224,7 @@
   }
 }
 
-/* --- STYLES POUR LE NOUVEAU WIDGET ET LES LIENS SOCIAUX --- */
+/* --- STYLES POUR LE WIDGET ET LES LIENS SOCIAUX --- */
 .linktree-widget-content {
   flex-grow: 1;
   display: flex;
@@ -239,9 +239,6 @@
       border: none;
       padding: 0;
     }
-    .footer-widget-button {
-      width: 100%;
-    }
   }
 }
 
@@ -255,4 +252,41 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: $spacing-md;
+}
+
+/* --- MODIFICATION : Application du style du bouton du footer au bouton de cette page --- */
+.linktree-widget-content .footer-widget-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-footer-widget-button-bg); 
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius-md;
+  font-family: var(--font-heading);
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: $spacing-sm; 
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
+
+  &, span, svg {
+    color: var(--color-footer-widget-button-text) !important; 
+  }
+
+  svg {
+    fill: currentColor;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    flex-shrink: 0;
+  }
+  
+  &:hover, &:focus {
+    background-color: var(--color-footer-widget-button-hover-bg); 
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  &:focus-visible { @include a11y-focus; }
 }
