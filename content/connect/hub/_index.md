@@ -8,5 +8,5 @@ description: "Your central hub to connect with Salah Nomad across all social pla
 ---
 
 {{%/*
-Ce contenu n'est pas utilisé car le layout "linktree" gère tout l'affichage.
+Ce contenu n'est pas utilisé car le layout "linktree" gère tout l'affichage..
 */%}}

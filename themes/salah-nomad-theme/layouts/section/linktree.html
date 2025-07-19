@@ -1,7 +1,7 @@
 {{/* layouts/page/linktree.html */}}
 {{ define "main" }}
   {{/* --- MODIFICATION CLÉ : Logique du Leaf Bundle --- */}}
-  {{/* On cherche l'image dans le sous-dossier 'images' de la page actuelle */}}
+  {{/* On cherche l'image dans le sous-dossier 'images' de la page actuelle. */}}
   {{ $banner := .Resources.GetMatch "images/banner.jpg" | default (.Resources.GetMatch "images/banner.png") }}
   {{/* En cas d'échec, on utilise une image de secours depuis /static */}}
   {{ $fallbackBanner := "/images/malaga-rooftop.jpg" | relURL }}
