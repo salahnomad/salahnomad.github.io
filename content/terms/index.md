@@ -81,7 +81,7 @@ We may update Terms. Continued use means you embrace new trails. Check the "Last
 ---
 
 ### **11. Campfire Conversations: Contact Us**
-Questions? Reach us at [salah@salahnomad.com]. <!-- <<< REMPLACER PAR TON EMAIL -->
+Questions? Send a message through our secure [Contact Page](/contact/).
 
 ---
 

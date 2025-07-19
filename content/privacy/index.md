@@ -77,7 +77,7 @@ We use HTTPS (SSL encryption). Giscus and potential newsletter providers have th
 
 - **EU travelers (GDPR)**: Access, correct, delete your data where applicable (e.g., newsletter list). Request restriction or portability. Object. Withdraw consent.
 - **California voyagers (CCPA/CPRA)**: Know, delete, opt-out (we don't "sell/share" under the typical definition). Non-discrimination.
-Contact us at [salah@salahnomad.com] <!-- <<< REMPLACER PAR TON EMAIL --> to exercise rights related to data we directly control (like a potential newsletter list). For comment data, refer to Giscus/GitHub.
+To exercise rights related to data we directly control (like a potential newsletter list), please use our secure [Contact Page](/contact/). For comment data, refer to Giscus/GitHub.
 
 ---
 
@@ -97,7 +97,7 @@ Changes ripple here with a new **Last Updated** date.
 ---
 
 ### **12. Campfire Council: Reach Us**
-Privacy queries? [salah@salahnomad.com] <!-- <<< REMPLACER PAR TON EMAIL --> awaits.
+For privacy-related queries, please reach out via our [Contact Page](/contact/).
 
 ---
 
