@@ -1,6 +1,4 @@
 ---
-title: "Connect with Salah Nomad"
-# layout: list (ou un layout spécifique pour cette section si besoin)
-# sidebar: true (ou false)
+title: "Connect"
+# Ce fichier définit la section /connect/. Il n'a pas besoin de plus de contenu.
 ---
-Let's connect! Find all my links and social platforms here.

@@ -1,0 +1,89 @@
+{{/* layouts/page/linktree.html */}}
+{{ define "main" }}
+  {{/* --- MODIFICATION CLÉ : Logique du Leaf Bundle --- */}}
+  {{/* On cherche l'image dans le sous-dossier 'images' de la page actuelle */}}
+  {{ $banner := .Resources.GetMatch "images/banner.jpg" | default (.Resources.GetMatch "images/banner.png") }}
+  {{/* En cas d'échec, on utilise une image de secours depuis /static */}}
+  {{ $fallbackBanner := "/images/malaga-rooftop.jpg" | relURL }}
+
+  <div class="linktree-page-wrapper">
+    <section class="linktree-header" style="background-image: url('{{ with $banner }}{{ .RelPermalink }}{{ else }}{{ $fallbackBanner }}{{ end }}');">
+      <div class="header-content">
+        <h1>🌿 {{ .Site.Title }}</h1>
+        {{/* On utilise la description du Front Matter de la page elle-même pour plus de contrôle */}}
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </section>
+
+    <div class="linktree-container">
+      {{/* --- MODIFICATION CLÉ : Nouvelle grille à 2 colonnes --- */}}
+      <div class="linktree-grid">
+
+        {{/* --- COLONNE DE GAUCHE : Liens Essentiels --- */}}
+        <div class="link-group">
+          <h2><span>🌍</span> {{ i18n "linktreeEssentialLinks" | default "Essential Links" }}</h2>
+          <a href="{{ "/" | relLangURL }}" class="link-card">
+            {{ partial "icons/document.svg" . }}
+            <div class="link-card-text">
+              <strong>Latest Blog Posts</strong>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+          <a href="{{ "/malaga-codex/" | relLangURL }}" class="link-card">
+            {{ partial "icons/map.svg" . }}
+            <div class="link-card-text">
+              <strong>Málaga Codex</strong>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+        </div>
+
+        {{/* --- COLONNE DE DROITE : Widget Dynamique --- */}}
+        <div class="link-group">
+          {{/* On utilise la même structure de titre que la colonne de gauche pour la cohérence */}}
+          <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span> Journey Deeper</h2>
+          <div class="linktree-widget-content">
+            {{/* On appelle notre partial de widget de citations tournantes */}}
+            {{ $quotes := site.Data.widget_quotes }}
+            {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "linktree") }}
+          </div>
+        </div>
+      </div>
+
+      {{/* --- MODIFICATION CLÉ : Section des liens sociaux séparée et en pleine largeur --- */}}
+      {{ $socialLinks := slice }}
+      {{ range .Site.Params.social_links }}
+        {{ if .subtitle }}{{ $socialLinks = $socialLinks | append . }}{{ end }}
+      {{ end }}
+
+      {{ if gt (len $socialLinks) 0 }}
+        <div class="link-group link-group-fullwidth">
+          <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></span> {{ i18n "linktreeConnect" | default "Connect" }}</h2>
+          <div class="social-links-grid">
+            {{ range $socialLinks }}
+              <a href="{{ .url | safeURL }}" class="link-card social-link-card" target="_blank" rel="noopener noreferrer">
+                <span class="link-card-icon">{{ partial .iconPartial . }}</span>
+                <div class="link-card-text">
+                  <strong>{{ .name }}</strong>
+                  <small>{{ .subtitle }}</small>
+                </div>
+                <span class="link-card-arrow">→</span>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+    </div> 
+
+    <footer class="linktree-footer">
+      {{ with .Site.Params.linktreeFooterText | default "« Want more rooted nomad insights? [Start here](/about/) »" }}
+        <p>{{ . | $.Page.RenderString }}</p>
+      {{ end }}
+      {{ with .Site.Params.linktreeAffiliateDisclaimer | default "Some links may be affiliates, gently nourishing this caravan – thanks for your support!" }}
+        <small>{{ . }}</small>
+      {{ end }}
+    </footer>
+  </div> 
+{{ end }} 
+{{ define "sidebar" }}{{ end }}
