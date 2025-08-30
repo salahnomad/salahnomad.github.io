@@ -4,14 +4,11 @@
 # Configuration Principale du Site Hugo                                       #
 ###############################################################################
 
-baseURL = 'https://salahnomad.github.io/' # URL de production pour métadonnées correctes
+baseURL = 'https://salahnomad.com/' # MODIFIÉ: URL finale pour production
 languageCode = 'en-us'
 title = 'Salah Nomad' # Titre principal du site
 theme = "salah-nomad-theme"
 enableRobotsTXT = true
-
-# La section [author] à la racine est DÉPRÉCIÉE et a été supprimée.
-# Les informations globales de l'auteur sont maintenant dans [params.author]
 
 [pagination]
   pagerSize = 6
@@ -196,7 +193,7 @@ enableRobotsTXT = true
       title = "Olive Network"
       intro_text = "Join the caravan across the digital Mediterranean."
 
-  # --- PARAMÈTRES POUR LE BAS DU FOOTER ---
+  # --- PARAMÈTES POUR LE BAS DU FOOTER ---
   [params.footerBottom]
     themeInfo_enable = true
     themeInfo_name = "Salah Nomad"
