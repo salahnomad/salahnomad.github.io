@@ -23,7 +23,7 @@ This isn't resistance. This is **[Rooted Nomadism](/about/philosophy/salah-philo
 ## 1. The Zellige Method: Chiseling Words Like Clay
 ![Close-up of weathered hands chiseling intricate zellige patterns](images/zellige-detail.jpg "Tqelleb, tqelleb, tqelleb - the rhythm of patient creation")
 
-The Meknès cybercafé in 2006 smelled of burnt circuitry and adolescent ambition. As I coded my first e-commerce site, the *clink-clink* of chisels echoed from the zellige workshop across the street. "*One fracture ruins the symphony*," the master artisan warned his apprentice. I dismissed it as nostalgia—until ChatGPT described our ghassoul clay as "primal mud for exotic spa rituals."
+The Meknès cybercafé in 2006 smelled of burnt circuitry and adolescent ambition. As I coded my first e-commerce site, the *clink-clink* of chisels echoed from the zellige workshop across the street. "*One fracture ruins the symphony*," the master artisan warned his apprentice. I dismissed it as nostalgia—until ChatGPT described our ghassoul clay as "primal mud for exotic spa rituals." This artisan wisdom is the foundation of my productivity system, **[The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/)**.
 
 **My [cultural intervention](/rooted-futures/ai-ancestry/olive-tree-oracle/)**:
 1. Fed AI my grandmother's notebook: "*This earth remembers mountain springs and women's laughter*"
@@ -42,7 +42,7 @@ The result? *Ritual Hammam's* product descriptions now read like love letters to
 ## 2. Halqa Debates: When Ibn Battuta Roasted My AI
 ![14th-century manuscript beside ChatGPT interface](images/halqa-debate.jpg "Where medieval scholarship meets modern algorithms")
 
-In 2008, I nearly automated my soul. Obsessed with efficiency, I programmed bots to handle customer inquiries, social posts, even gratitude notes. Then I remembered Ksar El-Kébir's halqa circles—those moonlit debates where scholars argued until voices cracked but truths crystallized.
+In 2008, I nearly automated my soul. Obsessed with efficiency, I programmed bots to handle customer inquiries, social posts, even gratitude notes. Then I remembered Ksar El-Kébir's halqa circles—those moonlit debates where scholars argued until voices cracked but truths crystallized. They were the original **[Digital Agora](/resources/remote-work-zen/digital-agora-mediterranean-blueprint/)**, a space for true connection.
 
 **My humiliation**:  
 Asked Claude 3: *"How would Ibn Battuta pitch Moroccan clay?"* Its reply still stings:  
@@ -53,7 +53,7 @@ Now my AI must pass three tests:
 2. Historical figure critique (Ibn Khaldun is merciless)
 3. Poetry resonance check
 
-*Your move*: Make ChatGPT debate your draft. Mine once compared my SEO strategy to "*a donkey chasing mirages in the Merzouga dunes.*"
+*Your move*: Make ChatGPT debate your draft. Mine once compared my **[SEO strategy](/resources/seo-alchemy/phoenician-merchant-seo/)** to "*a donkey chasing mirages in the Merzouga dunes.*"
 
 ---
 
@@ -84,7 +84,7 @@ Each dawn, I walk beneath Málaga's Alcazaba—its Moorish arches whispering "*A
 - **Full Moon**: Digital purge (recent casualty: HustleGPT)
 - **Waning Moon**: Olive grove walks without devices
 
-> *"A nomad's true office lives in the space between keystrokes and birdsong."*  
+> *"A nomad's true office lives in the space between keystrokes and birdsong, a sanctuary for deep work I call **[The Thermae Flow State](/resources/remote-work-zen/thermae-flow-state-deep-work/)**."*  
 > — *Algorithmic Sardines*, Ch. 11 (Drafted on the Algeciras-Tangier ferry)
 
 *SEO secret*: I rank for "*Ksar El-Kébir slow productivity*" (18 monthly searches) by writing during olive harvests—the chaos murders clichés.
