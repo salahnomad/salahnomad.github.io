@@ -1,6 +1,9 @@
 ---
-title: "Rooted Nomadism" # Ce titre est déjà généré par Hugo, mais c'est bien de l'avoir
-featured_image: "/images/rooted-journeys.jpg" # Remplacez par une vraie image
-# Vous pouvez aussi ajouter du `content` ici qui s'affichera comme description
+title: "Articles on Rooted Nomadism"
+description: "Explore all articles tagged with Rooted Nomadism, the core philosophy of blending ancestral wisdom with a modern, mobile life to find freedom through roots."
+featured_image: "/images/rooted-journeys.jpg"
 ---
-Description optionnelle pour le tag Rooted Nomadism.
+
+You have arrived at the central wellspring of this blog. "Rooted Nomadism" is more than a tag; it is a way of life. It is the conviction that our deepest roots—our heritage, our stories, our values—are not anchors that trap us, but the very source of our freedom to navigate a complex world.
+
+The articles gathered here explore every facet of this philosophy, from practical frameworks for financial resilience to the art of seeing cultural landscapes with a storyteller's heart. This is your comprehensive guide to living a life of meaningful movement.

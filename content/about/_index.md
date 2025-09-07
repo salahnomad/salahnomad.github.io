@@ -13,4 +13,7 @@ Every map has a starting point. Mine lies in the ochre earth of Ksar El-Kébir, 
 
 It's here that I share the foundational stories, the hard-won philosophy, and the human connections that have transformed a wandering existence into a purposeful path. It is the answer to a question that has guided my life: how can we move freely through the world, not by shedding our roots, but by carrying them as our most trusted compass?
 
-Dive into the core of this philosophy through the pillars below.
+Explore the pillars of this journey:
+- **[My Story](/about/story/):** The pivotal moments, from a Panasonic radio to a pandemic reinvention.
+- **[Philosophy](/about/philosophy/):** The core principles of Rooted Nomadism.
+- **[The Human Constellation](/about/testimonials/):** The people who became my guides.

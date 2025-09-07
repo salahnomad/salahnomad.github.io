@@ -7,4 +7,6 @@ layout: list # Assurez-vous que c'est le layout pour vos pages de section
 featured_image: "images/digital-compass.jpg" # Pointe vers content/digital-compass/images/digital-compass.jpg
 ---
 
-Welcome to the Digital Compass. Discover articles on equipping your journey, exploring new horizons, and blending technology with tradition. Below you'll find the latest entries from our explorations into the future of nomadism, essential toolkits, and inspiring destinations.
+Welcome to the Digital Compass. In a world of infinite digital horizons, a simple GPS is not enough; we need a moral and philosophical compass. This is where we learn to navigate the digital world not just with efficiency, but with purpose.
+
+This section provides the tools, strategies, and mindsets for the modern nomad. We explore how to choose destinations that nourish the soul, curate a tech toolkit that serves our humanity, and anticipate the future without losing sight of our past. This is not about finding shortcuts, but about charting a more meaningful course.
