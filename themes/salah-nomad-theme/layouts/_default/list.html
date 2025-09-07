@@ -1,6 +1,9 @@
-{{/* layouts/_default/list.html */}}
-{{/* Affiche les articles de la section actuelle ET de ses sous-sections */}}
-{{/* V4 - Correction syntaxe potentielle et simplification logique image */}}
+{{/* 
+  FICHIER MIS À JOUR : themes/salah-nomad-theme/layouts/_default/list.html
+  -----------------------------------------------------------------------
+  Logique de listing modifiée pour différencier les sections de premier niveau
+  des sous-sections.
+*/}}
 
 {{ define "main" }}
   <div class="container main-content-container">
@@ -8,7 +11,7 @@
     {{ $showSidebar := .Params.sidebar | default (.Site.Params.listPageSidebar | default true) }}
     <div class="content-loop-wrap {{ cond $showSidebar "has-sidebar" "no-sidebar" }}">
 
-      <div class="post-list content-loop"> {{/* Cette div est la colonne de contenu principale */}}
+      <div class="post-list content-loop">
         
         <header class="page-header list-page-header">
           <h1 class="page-title list-page-title">{{ .Title }}</h1>
@@ -17,40 +20,27 @@
           {{ end }}
         </header>
         
-        {{/* --- Image en Vedette de la Section --- */}}
-        {{ $sectionImageSrc := "" }} {{/* Sera une URL string OU un objet ressource Hugo */}}
+        {{/* --- Image en Vedette de la Section (Code inchangé) --- */}}
+        {{ $sectionImageSrc := "" }}
         {{ $imagePathInFrontMatter := .Params.featured_image }}
 
         {{ if $imagePathInFrontMatter }}
             {{ if strings.HasPrefix $imagePathInFrontMatter "http" }}
-                {{/* 1. C'est une URL Externe */}}
                 {{ $sectionImageSrc = $imagePathInFrontMatter }}
             {{ else }}
-                {{/* Ce n'est pas une URL externe, on cherche localement */}}
                 {{ $imgRes := "" }}
-
-                {{/* 2. Essayer Page Resources (peu probable pour _index.md, mais par robustesse) */}}
                 {{ $imgRes = .Resources.GetMatch $imagePathInFrontMatter }}
-
-                {{ if not $imgRes }}
-                    {{/* 3. Essayer /assets/ */}}
-                    {{ $imgRes = resources.Get $imagePathInFrontMatter }}
-                {{ end }}
+                {{ if not $imgRes }}{{ $imgRes = resources.Get $imagePathInFrontMatter }}{{ end }}
 
                 {{ if $imgRes }}
-                    {{ $sectionImageSrc = $imgRes }} {{/* C'est un objet ressource Hugo */}}
+                    {{ $sectionImageSrc = $imgRes }}
                 {{ else }}
-                    {{/* L'image n'a pas été trouvée comme ressource. On vérifie /static ou content/SECTION/chemin */}}
                     {{ if strings.HasPrefix $imagePathInFrontMatter "/" }}
-                        {{/* 4. Le chemin commence par /, on suppose /static/ */}}
-                        {{ $potentialStaticPath := printf "static%s" $imagePathInFrontMatter }}
-                        {{ if fileExists $potentialStaticPath }}
+                        {{ if fileExists (printf "static%s" $imagePathInFrontMatter) }}
                             {{ $sectionImageSrc = $imagePathInFrontMatter | relURL }}
                         {{ end }}
                     {{ else }}
-                        {{/* 5. Le chemin ne commence pas par /, on suppose un chemin relatif au dossier de la section */}}
-                        {{ $potentialContentPath := printf "%s%s" .File.Dir $imagePathInFrontMatter }}
-                        {{ if fileExists $potentialContentPath }}
+                        {{ if fileExists (printf "%s%s" .File.Dir $imagePathInFrontMatter) }}
                             {{ $sectionImageSrc = printf "%s%s" .RelPermalink $imagePathInFrontMatter }}
                         {{ end }}
                     {{ end }}
@@ -74,45 +64,53 @@
         {{ end }}
         {{/* --- Fin Image en Vedette --- */}}
 
-        {{/* --- Logique d'agrégation des articles de la section et sous-sections --- */}}
-        {{ $parentSectionPage := . }}
-        {{ $aggregatedPages := slice }}
         
-        {{ range where .Site.Pages "Kind" "page" }} 
-          {{ $isDescendantOrSelf := false }}
-          {{ $articlePage := . }}
+        {{/* ========================================================================= */}}
+        {{/* ======================== MODIFICATION STRATÉGIQUE ======================= */}}
+        {{/* ========================================================================= */}}
 
-          {{ if eq $articlePage.Section $parentSectionPage.Section }}
-            {{ $isDescendantOrSelf = true }}
-          {{ else }}
-            {{ range $articlePage.Ancestors }}
-              {{ if eq . $parentSectionPage }}
-                {{ $isDescendantOrSelf = true }}
-                {{ break }}
-              {{ end }}
+        {{ $pagesToList := slice }}
+
+        {{/* --- On vérifie si la page est une sous-section (si elle a un parent dans sa section) --- */}}
+        {{ if .Parent.IsSection }}
+          {{/* 
+            CAS A : C'est une SOUS-SECTION (ex: /about/story/).
+            On ne prend que les pages qui sont directement ses enfants.
+          */}}
+          {{ $pagesToList = where .Pages "Kind" "page" }}
+
+        {{ else }}
+          {{/* 
+            CAS B : C'est une SECTION DE PREMIER NIVEAU (ex: /about/).
+            On garde la logique d'agrégation originale pour afficher tout le contenu.
+          */}}
+          {{ $parentSectionPage := . }}
+          {{ $aggregatedPages := slice }}
+          
+          {{ range where .Site.Pages "Kind" "page" }} 
+            {{ if .IsDescendant $parentSectionPage }}
+              {{ $aggregatedPages = $aggregatedPages | append . }}
             {{ end }}
           {{ end }}
+          
+          {{ if gt (len $aggregatedPages) 0 }}
+            {{ $pagesToList = sort ($aggregatedPages | uniq) "Date" "desc" }}
+          {{ end }}
 
-          {{ if $isDescendantOrSelf }}
-            {{ $aggregatedPages = $aggregatedPages | append $articlePage }}
-          {{ end }}
         {{ end }}
+        {{/* ====================== FIN DE LA MODIFICATION ======================= */}}
         
-        {{ $pagesToList := slice }}
-        {{ if gt (len $aggregatedPages) 0 }}
-          {{ $uniquePages := $aggregatedPages | uniq }}
-          {{ if gt (len $uniquePages) 0 }}
-            {{ $pagesToList = sort $uniquePages "Date" "desc" }}
-          {{ end }}
-        {{ end }}
-        {{/* --- Fin Logique d'agrégation --- */}}
-        
+
         {{ $paginator := .Paginate $pagesToList }}
         
         {{ if $paginator.Pages }}
           <div class="posts-list-header">
             <hr class="separator-above-title">
-            <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
+            {{ if .Parent.IsSection }}
+              <h2 class="posts-list-title">{{ i18n "articlesInSubSection" | default (printf "Articles in %s" .Title) }}</h2>
+            {{ else }}
+              <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
+            {{ end }}
             <hr class="separator-below-title">
           </div>
 
