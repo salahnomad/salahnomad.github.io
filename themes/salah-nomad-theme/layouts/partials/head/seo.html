@@ -1,6 +1,31 @@
-{{/* themes/salah-nomad-theme/layouts/partials/head/seo.html */}}
-{{/* --- MIS À JOUR pour URL externes et featured_image_alt --- */}}
+{{/* 
+  FICHIER MIS À JOUR : /themes/salah-nomad-theme/layouts/partials/head/seo.html
+  -------------------------------------------------------------------------
+  Intégration du bloc SEO stratégique pour la gestion de l'indexation et des URL canoniques.
+*/}}
 
+{{/* ======================================================================== */}}
+{{/* ======================== BLOC SEO STRATÉGIQUE ======================== */}}
+{{/* ======================================================================== */}}
+
+{{/* --- 1. Gestion de l'Indexation des Taxonomies (Tags) --- */}}
+{{/* Objectif : Dire à Google de ne pas indexer les pages de tags pour concentrer l'autorité du site. */}}
+{{ if and (eq .Kind "taxonomy") (eq .Type "tags") }}
+  <meta name="robots" content="noindex, follow">
+{{ end }}
+
+{{/* --- 2. Déclaration de l'URL Canonique --- */}}
+{{/* Objectif : Prévenir les problèmes de contenu dupliqué en déclarant une URL unique et officielle pour chaque page. */}}
+{{ if .IsHome }}
+  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+{{ else }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{ end }}
+
+{{/* ====================== FIN DU BLOC SEO STRATÉGIQUE ===================== */}}
+
+
+{{/* --- DÉBUT DE VOTRE CODE SEO EXISTANT (INCHANGÉ) --- */}}
 {{- $siteTitle := .Site.Title -}}
 {{- $pageTitle := .Title -}}
 {{- $pagePermalink := .Permalink -}}
