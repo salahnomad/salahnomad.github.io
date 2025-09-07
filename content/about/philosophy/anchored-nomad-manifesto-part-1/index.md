@@ -4,9 +4,10 @@ subtitle: "Your Mediterranean Compass for Meaningful Travel"
 date: 2025-01-28T10:00:00+01:00
 description: "Discover why embracing your roots creates deeper freedom. A Mediterranean perspective on nomadic life from Ksar El-Kébir to Málaga."
 slug: "anchored-nomad-manifesto-part-1"
-categories:
-  - "Rooted Journeys"
-  - "Philosophy"
+
+# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+categories: ["Rooted Journeys"]
+subcategory: "Philosophy" # <-- "Philosophy" est maintenant la sous-catégorie
 tags:
   - "Anchored Nomadism"
   - "Cultural Identity"
@@ -14,6 +15,9 @@ tags:
   - "Freedom Through Roots"
   - "Zellige Identity"
   - "Practical Freedom"
+  - "Philosophy" # <-- On peut aussi le garder en tag pour la transversalité
+# -----------------------------------
+
 authors:
   - "Salah Nomad"
 featured_image: "images/signature-hands-earth-keyboard.jpg"

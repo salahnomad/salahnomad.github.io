@@ -3,8 +3,21 @@ title: "When My Grandmother's Zellige Tiles Taught ChatGPT Patience: A Nomad's G
 date: 2025-06-13
 draft: false
 description: "Discover how ancestral Moroccan wisdom reshapes AI interactions. Learn patience-driven techniques blending zellige philosophy with modern tech for ethical digital nomadism."
-categories: ["Future of Nomadism", "AI Ethics", "Rooted Productivity"]
-tags: ["Slow AI", "Cultural Technology", "Moroccan Wisdom", "Zellige Philosophy", "Digital Minimalism", "Ethical AI"]
+
+# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+categories: ["Digital Compass"]
+subcategory: "Future of Nomadism" # Optionnel mais recommandé
+tags: 
+  - "Slow AI"
+  - "Cultural Technology"
+  - "Moroccan Wisdom"
+  - "Zellige Philosophy"
+  - "Digital Minimalism"
+  - "Ethical AI"
+  - "AI Ethics"             # <-- Ancien "category" transformé en tag
+  - "Rooted Productivity"   # <-- Ancien "category" transformé en tag
+# -----------------------------------
+
 featured_image: "images/zellige-ai-craft.jpg"
 featured_image_alt: "Aged Moroccan artisan hands placing geometric zellige tile with open laptop in background - fusion of ancestral craft and modern technology"
 comments: true

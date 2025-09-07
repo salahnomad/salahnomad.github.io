@@ -4,15 +4,19 @@ subtitle: "How Roman baths and Moroccan hammams taught me to reclaim focus in a 
 date: 2025-02-04T10:00:00+02:00
 description: "Discover the 4-chamber ritual that saved my focus. Blend Roman bath wisdom with Moroccan hammam resilience to build your sanctuary for deep work in a chaotic digital age."
 slug: "thermae-flow-state-deep-work"
-categories:
-  - "Resources"
-  - "Remote Work Zen"
+
+# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+categories: ["Resources"]
+subcategory: "Remote Work Zen" # <-- "Remote Work Zen" est maintenant une sous-catégorie
 tags:
   - "Deep Work"
   - "Flow State"
   - "Digital Minimalism"
   - "Mediterranean Wisdom"
   - "Rooted Nomadism"
+  - "Remote Work Zen" # <-- On peut aussi le garder en tag pour la transversalité
+# -----------------------------------
+
 authors:
   - "Salah Nomad"
 featured_image: "images/digital-thermae-flow.jpg"
