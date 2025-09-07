@@ -1,0 +1,68 @@
+{{/* 
+  FICHIER : /layouts/404.html
+  -------------------------------------------------------------
+  Page 404 personnalisée pour SalahNomad.com.
+  Affiche un message thématique et redirige vers la page d'accueil.
+*/}}
+
+{{ define "main" }}
+<main id="main-content" class="site-main">
+    <div class="container main-content-container" style="text-align: center; padding: 4rem 1rem;">
+
+        <header class="page-header">
+            <h1 class="page-title" style="font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: 1rem; color: var(--color-heading);">404 - A Shore Uncharted</h1>
+        </header>
+
+        <div class="page-content" style="font-size: 1.1rem; max-width: 650px; margin: 1rem auto 2rem auto; line-height: 1.7;">
+            <p>The page you seek may have drifted with the tides, its story now part of a different current in the digital sea.</p>
+            <p>Like a nomad finding his way, all paths eventually lead back to a place of belonging. Let me guide you back to a familiar shore.</p>
+            
+            <div class="redirect-timer" style="margin-top: 2rem; font-style: italic; color: var(--color-text-secondary);">
+                You will be guided to the homepage in <span id="countdown" style="font-weight: bold;">5</span> seconds...
+            </div>
+        </div>
+
+        <a href="{{ .Site.BaseURL }}" class="button-primary" style="display: inline-block; margin-top: 1rem; text-decoration: none;">
+            Return to the Harbor Now
+        </a>
+
+        {{/* --- SCRIPTS ET META POUR LA REDIRECTION --- */}}
+        <script>
+            (function() {
+                var countdownElement = document.getElementById('countdown');
+                var seconds = parseInt(countdownElement.textContent, 10);
+                
+                // Fonction pour rediriger immédiatement sans attendre le compte à rebours.
+                // Utile pour les moteurs de recherche.
+                var redirect = function() {
+                    window.location.href = "{{ .Site.BaseURL }}";
+                };
+
+                // Lancement du compte à rebours visuel pour l'utilisateur
+                var countdownInterval = setInterval(function() {
+                    seconds--;
+                    if (countdownElement) {
+                        countdownElement.textContent = seconds;
+                    }
+                    if (seconds <= 0) {
+                        clearInterval(countdownInterval);
+                        redirect(); // Redirection à la fin du compte à rebours
+                    }
+                }, 1000);
+
+                // Déclenche la redirection après 5 secondes, même si le JS du compte à rebours échoue.
+                setTimeout(redirect, 5000);
+            })();
+        </script>
+
+        {{/* 
+          Indique aux moteurs de recherche que la page d'accueil est la "vraie" page.
+          Bien que la redirection 301 soit idéale (gérée par le serveur), ceci est la meilleure
+          alternative pour une solution côté client comme sur GitHub Pages.
+        */}}
+        <link rel="canonical" href="{{ .Site.BaseURL }}" />
+        <meta name="robots" content="noindex, follow">
+
+    </div>
+</main>
+{{ end }}
