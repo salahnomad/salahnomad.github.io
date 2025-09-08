@@ -172,7 +172,7 @@
                     <span class="submenu-toggle-arrow"></span>
                   </button>
                {{ else if $isLinkable_sec }} 
-                  <a href="{{ $menuItemRelPath_sec }}">
+                  <a href="{{ $menuItemRelPath_sec }}" class="menu-item-simple-link"> {{/* <-- CONFIRMEZ QUE CETTE CLASSE EST BIEN LÀ */}}
                     {{ with .Params.icon }}{{ partial (printf "icons/%s.svg" .) $ }}{{ end }}{{ $menuItem.Name }}
                   </a>
                {{ else }} 

@@ -1,5 +1,5 @@
 // themes/salah-nomad-theme/assets/scss/layout/_mobile-menu.scss
-// Version 6.0 - Finale et Nettoyée. La surcharge pour .home a été retirée.
+// Version 7.0 - FINALE, COMPLÈTE ET STABLE.
 
 @import '../variables';
 
@@ -88,20 +88,47 @@
           }
         }
         
+        // C'EST LE BLOC QUE NOUS MODIFIONS
         > button.menu-item-no-link.submenu-toggle-mobile,
         > a:not([class*="menu-link-parent"]) { 
-          display: flex; justify-content: space-between; align-items: center;
-          padding: $spacing-md 0; text-decoration: none; color: var(--color-text-primary);
-          font-family: var(--font-heading); font-weight: $font-weight-semibold; font-size: 1.1rem;
-          width: 100%; background: none; border: none; text-align: left; cursor: pointer;
+          display: flex;
+          // justify-content: space-between; // LA LIGNE PROBLÉMATIQUE A ÉTÉ RETIRÉE
+          align-items: center;
+          padding: $spacing-md 0;
+          text-decoration: none;
+          color: var(--color-text-primary);
+          font-family: var(--font-heading);
+          font-weight: $font-weight-semibold;
+          font-size: 1.1rem;
+          width: 100%;
+          background: none;
+          border: none;
+          text-align: left;
+          cursor: pointer;
           
-          &:hover, &:focus { color: var(--color-text-accent); }
+          &:hover, &:focus {
+            color: var(--color-text-accent);
+          }
+
+          // RÈGLE AJOUTÉE POUR GÉRER L'ICÔNE DE "CONTACT"
+          svg {
+            margin-right: $spacing-sm;
+            width: 1em;
+            height: 1em;
+            opacity: 0.9;
+          }
 
           &.submenu-toggle-mobile .submenu-toggle-arrow {
-             font-family: sans-serif; font-size: 1em; line-height: 1;
+             font-family: sans-serif;
+             font-size: 1em; 
+             line-height: 1;
              transition: transform 0.2s ease-in-out;
-             font-weight: $font-weight-normal; min-width: 1.2em; text-align: center;
-             margin-left: auto; padding-left: $spacing-sm; display: inline-block;
+             font-weight: $font-weight-normal;
+             min-width: 1.2em;
+             text-align: center;
+             margin-left: auto; // Pousse la flèche à droite pour les boutons comme "Explore"
+             padding-left: $spacing-sm;
+             display: inline-block;
              &::after { content: '▼'; }
           }
         }
@@ -164,4 +191,8 @@ body.mobile-menu-active {
   overflow: hidden !important;
 }
 
-// Le bloc de surcharge pour body.home a été supprimé car il n'est plus nécessaire.
+// Nettoyage de la surcharge pour .home devenue inutile après la modification du menu
+// Cette section peut être gardée vide ou supprimée. Je la garde vide par clarté.
+body.home .mobile-nav-panel {
+  // Aucune surcharge n'est plus nécessaire ici.
+}
