@@ -425,20 +425,20 @@ enableRobotsTXT = true
     url = "/connect/hub/"
     parent = "connect"
     weight = 21
-  [[menu.secondary]]
-    identifier = "newsletter_link"
-    name = "Newsletter"
-    url = "#sidebar-newsletter"
-    parent = "connect"
-    weight = 22
-    [menu.secondary.params]
-      target = "_self"
-  [[menu.secondary]]
-    identifier = "social_links_header"
-    name = "Social Media"
-    url = "#footer-social"
-    parent = "connect"
-    weight = 23
+  # [[menu.secondary]]                        # <-- SUPPRIMÉ
+  #   identifier = "newsletter_link"
+  #   name = "Newsletter"
+  #   url = "#sidebar-newsletter"
+  #   parent = "connect"
+  #   weight = 22
+  #   [menu.secondary.params]
+  #     target = "_self"
+  # [[menu.secondary]]                        # <-- SUPPRIMÉ
+  #   identifier = "social_links_header"
+  #   name = "Social Media"
+  #   url = "#footer-social"
+  #   parent = "connect"
+  #   weight = 23
   [[menu.secondary]]
     identifier = "partners_sec"
     name = "Partner Offers"
