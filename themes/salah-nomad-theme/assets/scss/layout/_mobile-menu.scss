@@ -1,21 +1,25 @@
 // themes/salah-nomad-theme/assets/scss/layout/_mobile-menu.scss
-// Version Stable Corrigée - Modification minimale pour l'alignement.
+// Version 9.1 - INTÉGRALE ET COMPLÈTE - Ajout de la structure Flex pour le scroll.
 
 @import '../variables';
 
 .mobile-nav-panel {
-  display: block;
+  // CORRECTION MAJEURE POUR LE SCROLL
+  display: flex;
+  flex-direction: column;
+  // FIN CORRECTION
+
   position: fixed;
   top: 0;
   left: 0;
   width: 300px;
   max-width: 85%;
-  height: 100vh;
+  height: 100%; // Modifié de 100vh pour une meilleure compatibilité
   background-color: var(--color-header-background);
   border-right: 1px solid var(--color-border);
   padding: 0;
   z-index: $zindex-mobile-menu;
-  overflow-y: auto;
+  // overflow-y: auto; // Sera géré par .mobile-navigation
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 
@@ -30,6 +34,8 @@
     align-items: center;
     padding: $spacing-lg;
     border-bottom: 1px solid var(--color-border-light);
+    flex-shrink: 0; // CORRECTION SCROLL : Empêche l'en-tête de se réduire
+    
     .mobile-nav-title {
       font-family: var(--font-heading);
       font-size: 1.2rem;
@@ -53,6 +59,12 @@
   .mobile-navigation {
     padding: $spacing-lg;
 
+    // CORRECTION MAJEURE POUR LE SCROLL
+    flex-grow: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    // FIN CORRECTION
+    
     .menu {
       list-style: none;
       padding: 0;
@@ -65,7 +77,6 @@
           border-bottom: none;
         }
 
-        // Wrapper pour lien parent + bouton de bascule
         .menu-item-mobile-wrapper {
           display: flex;
           justify-content: space-between;
@@ -123,12 +134,9 @@
           }
         }
         
-        // Styles pour les items qui sont des boutons seuls (parents sans lien propre)
-        // OU les items simples (sans enfants) qui sont des liens <a>
         > button.menu-item-no-link.submenu-toggle-mobile,
         > a:not([class*="menu-link-parent"]) { 
           display: flex;
-          // justify-content: space-between; // LA LIGNE PROBLÉMATIQUE A ÉTÉ RETIRÉE
           align-items: center;
           padding: $spacing-md 0;
           text-decoration: none;
@@ -143,8 +151,6 @@
           text-align: left;
           cursor: pointer;
 
-          // CORRECTION : On redéfinit le justify-content UNIQUEMENT pour les boutons qui ont une flèche.
-          // Pour les liens simples comme "Contact", il n'y aura pas de justify-content.
           &.submenu-toggle-mobile {
             justify-content: space-between;
           }
@@ -154,12 +160,10 @@
             color: var(--color-text-accent);
           }
           
-          // NOUVEAU : On ajoute la marge pour l'icône directement ici
           > svg {
             margin-right: $spacing-sm;
           }
 
-          // Flèche pour les boutons "menu-item-no-link" qui basculent un sous-menu
           &.submenu-toggle-mobile .submenu-toggle-arrow {
              font-family: sans-serif;
              font-size: 1em; 
@@ -171,10 +175,7 @@
              margin-left: auto; 
              padding-left: $spacing-sm;
              display: inline-block;
-
-             &::after {
-               content: '▼';
-             }
+             &::after { content: '▼'; }
           }
         }
 
@@ -210,11 +211,8 @@
           }
         }
 
-        // Rotation de la flèche (span) quand le sous-menu est ouvert
         &.has-children.submenu-open {
-            // Cible la flèche dans le bouton séparé
             .menu-item-mobile-wrapper button.submenu-toggle-mobile .submenu-toggle-arrow,
-            // Cible la flèche dans le bouton qui est aussi un titre
             > button.submenu-toggle-mobile .submenu-toggle-arrow {
                 transform: rotate(90deg);
             }
@@ -246,7 +244,7 @@
   }
   .menu-item.active-parent > .menu-item-mobile-wrapper button.submenu-toggle-mobile .submenu-toggle-arrow,
   .menu-item.current-menu-ancestor > .menu-item-mobile-wrapper button.submenu-toggle-mobile .submenu-toggle-arrow {
-     // color: var(--color-text-accent); // Optionnel: colorer la flèche si le parent est actif
+     // color: var(--color-text-accent);
   }
 }
 
