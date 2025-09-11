@@ -568,12 +568,17 @@ enableRobotsTXT = true
   unsafe = true
 [markup.highlight]
    style = "github"
+
+# --- Configuration des Formats de Sortie ---
+# Objectif : Générer des flux RSS uniquement là où c'est pertinent, 
+# pour éviter de créer des centaines de flux inutiles pour les tags.
+
 [outputs]
-  home = ["HTML", "RSS"]
-  page = ["HTML"]
-  section = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  term = ["HTML", "RSS"]
+  home = ["HTML", "RSS"]      # Garde le flux RSS principal pour la page d'accueil (essentiel)
+  page = ["HTML"]            # Les articles n'ont pas besoin de leur propre flux RSS
+  section = ["HTML", "RSS"]  # Garde un flux RSS pour chaque section (ex: /about/index.xml), c'est une bonne pratique
+  taxonomy = ["HTML"]        # NE GÉNÈRE PAS de flux RSS pour les listes de taxonomies (ex: /tags/index.xml)
+  term = ["HTML"]            # NE GÉNÈRE PAS de flux RSS pour les termes de taxonomie (ex: /tags/rooted-nomadism/index.xml)
 [related]
   threshold = 80
   includeNewer = false
