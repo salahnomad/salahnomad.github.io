@@ -1,7 +1,7 @@
 ---
-title: "Algorithmic Sardines"
+title: "Algorithmic Sardines: A Rooted Nomad's Journey"
 subtitle: "Your Compass for the Journey Between Worlds."
-date: 2024-07-16T20:00:00+02:00
+date: 2025-07-13T10:00:00+01:00
 draft: false
 description: "The full story of Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion. Join the caravan to be notified of the launch."
 layout: "single"
