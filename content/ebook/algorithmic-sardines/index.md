@@ -1,27 +1,15 @@
 ---
-title: "Algorithmic Sardines: A Rooted Nomad's Journey"
-date: 2025-07-13T10:00:00+01:00
+title: "Algorithmic Sardines"
+subtitle: "Your Compass for the Journey Between Worlds."
+date: 2024-07-16T20:00:00+02:00
 draft: false
-description: "The full story behind Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion. Pre-order coming soon."
+description: "The full story of Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion. Join the caravan to be notified of the launch."
 layout: "single"
 authors: ["Salah Nomad"]
 toc: false
-page_count: 320
 
-# Le chemin est correct ici pour votre template single.html
-featured_image: "images/ebook-cover-hero.jpg"
-featured_image_alt: "Stylized book cover for Algorithmic Sardines."
-featured_image_caption: "The journey from olive groves to digital shores, encapsulated."
-
-resources:
-  - src: "images/ebook-cover-hero.jpg"
-    name: "ebook-cover-hero.jpg"
-  - src: "images/cybercafe-origin-story.jpg"
-    name: "cybercafe-origin-story.jpg"
-  - src: "images/ancestors-road-melons.jpg"
-    name: "ancestors-road-melons.jpg"
-  - src: "images/malaga-writing-epilogue.jpg"
-    name: "malaga-writing-epilogue.jpg"
+featured_image: "images/algorithmic-sardines-hero-4x3.jpg"
+featured_image_alt: "A copy of the book 'Algorithmic Sardines' held on a ferry, with the sea wake in the background, symbolizing a journey between worlds."
 
 json_ld: |
   {
@@ -34,119 +22,61 @@ json_ld: |
       "url": "/about/story/"
     },
     "url": "/ebook/algorithmic-sardines/",
-    "description": "The full story behind Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion.",
-    "image": "/ebook/algorithmic-sardines/images/ebook-cover-hero.jpg",
+    "description": "The full story of Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion.",
+    "image": "/ebook/algorithmic-sardines/images/algorithmic-sardines-hero-4x3.jpg",
     "numberOfPages": 320,
-    "workExample": [
-      {
-        "@type": "Book",
-        "isbn": "YOUR_ISBN_HERE_WHEN_AVAILABLE",
-        "bookEdition": "First Edition",
-        "bookFormat": "https://schema.org/Paperback"
-      },
-      {
-        "@type": "Book",
-        "isbn": "YOUR_EBOOK_ISBN_HERE_WHEN_AVAILABLE",
-        "bookEdition": "First Edition",
-        "bookFormat": "https://schema.org/EBook"
-      }
-    ]
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder"
+    }
   }
 ---
 
-## A Journey from Roots to Algorithms
+<!-- SECTION HÉROS -->
+_How ancient wisdom, migratory sardines, and the ghost of a failed startup forged a new map for belonging in a world without borders._
 
-> *"The Mediterranean wind carries echoes of Ksar El-Kébir, shared laughter in Avignon, and whispers of olive trees from Jbala and Málaga."*
-> — Epilogue, *Algorithmic Sardines*
+<!-- BOUTON DÉSACTIVÉ DE PRÉ-LANCEMENT STYLISÉ -->
+<a href="#" class="cta-button disabled footer-widget-button" aria-disabled="true">
+  <span>Launching Soon... (Join the Caravan Below)</span>
+</a>
 
-Discover the complete narrative behind the philosophy of Rooted Nomadism. **_Algorithmic Sardines: A Rooted Nomad's Journey from Olive Groves to Digital Shores_** is an intimate map for finding your anchor in constant motion.
-
----
-
-### **The Full Odyssey**
-
-{{< mermaid >}}
-journey
-    title The Nomad's Transformation
-    section Roots (Ch 1-5)
-      Ksar El-Kébir: 5: Family heritage
-      Digital Awakening: 3: Cybercafé nights
-      First Ventures: 4: Crossing borders
-    section Crossing (Ch 6-11)
-      UK Markets: 5: Campervan journey
-      Ancestral Road: 4: Melon compass
-      Avignon & Arles: 3: Rebirth
-    section Harvest (Ch 12-15)
-      Lockdown Insights: 5: Olive tree wisdom
-      AI Dialogue: 4: New conversations
-      Rooted Manifesto: 5: Synthesis
-{{< /mermaid >}}
+> **A Note from Salah:** To celebrate our shared journey, this book will launch as a gift to my community. You will choose its value. Join "Mediterranean Insights" to be the first to receive your copy.
 
 ---
 
-### **Key Stories Expanded**
-
-*   **Chapter 3: Digital Awakening**  
-    The full story of the *Extranet* cybercafé, where slow connections taught the patience that defines my approach to SEO and digital craft.
-
-    {{< figure src="images/cybercafe-origin-story.jpg" alt="A dimly lit cybercafé with old CRT monitors, evoking a sense of nostalgia." caption="The glow of a 2 AM cybercafé—my first digital port." >}}
-
-*   **Chapter 11: The Ancestors’ Road**  
-    How twenty Canary melons became a compass revealing Morisco echoes in Andalusia, leading to the **[Canary Melon Compass](/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations/)** framework.
-
-    {{< figure src="images/ancestors-road-melons.jpg" alt="A close-up of bright yellow Canary melons in a rustic market setting." caption="The twenty Canary melons that revealed my ancestral echoes." >}}
-
-*   **Chapter 14: Roots in the Wind**  
-    The raw account of lockdown 2020, business collapse, and the olive tree moment that birthed `salahnomad.com`.
-
-*   **Chapter 15: AI, Fellow Traveler**  
-    Private dialogues where I use olive grove wisdom to “train” algorithms in cultural nuance.
+<!-- SECTION PROMESSE -->
+## The Myth of Rootless Freedom
+We were promised freedom through movement, only to find ourselves digitally adrift, belonging nowhere. We collected passport stamps but lost our stories. **What if true freedom isn't about escaping our roots, but learning how to carry them like a compass?**
 
 ---
 
-{{< expert-box title="More Than Memoir: Life Toolkit" >}}
-Each chapter ends with "Wisdom Harvest"—actionable principles drawn from the journey:
--   Build **resilience frameworks** from Jbala mountain wisdom
--   Apply the **Zellige Blueprint** to digital life
--   Develop your **"human constellation"** against loneliness
--   Use **ancestral wisdom** as a compass for modern challenges
-{{< /expert-box >}}
+<!-- SECTION CONTENU DU LIVRE -->
+## Inside the Captain's Logbook
+*Algorithmic Sardines* is more than a memoir; it's a toolkit of hard-won philosophies for navigating a hybrid life. This book is a deep dive into the core concepts you've discovered on this site:
+
+*   **The Olive Grove Economy:** A system for financial resilience inspired by millennial trees, not volatile markets. [Explore the concept &rarr;](/resources/nomad-finance/olive-grove-economy/)
+*   **The Zellige Blueprint:** A framework for soulful productivity born from the master artisans of Morocco. [Discover the method &rarr;](/digital-compass/nomad-toolkit/zellige-blueprint/)
+*   **The Morisco Compass:** How ancestral exile forged a powerful tool for navigating modern diaspora and identity. [Read the philosophy &rarr;](/cultural-bridges/migration/morisco-compass-modern-diasporas/)
 
 ---
 
-### **Praise for the Rooted Nomad Philosophy**
-
-{{< expert-box title="What Readers Are Saying" >}}
-*"Salah's writing changed how I see my own nomadic journey. He gives words to a feeling I couldn't name: the need for roots even in movement."*  
-**— Anna V., Digital Creator, Lisbon**
-
-*"The Zellige Blueprint isn't just a productivity hack; it's a way to bring soul back into your work. It's been transformative for me."*  
-**— David L., Software Engineer, Austin**
-
-*"Algorithmic Sardines is the book I wish I had when I started my digital nomad journey. It balances practical wisdom with profound insights."*  
-**— Mei C., Travel Writer, Taipei**
-{{< /expert-box >}}
+<!-- SECTION AUTEUR -->
+## Meet Your Captain
+{{< figure src="images/salah-author-portrait.png" alt="A portrait of the author, Salah Nomad." class="author-image-circle" >}}
+Born in Morocco's oldest city, my path was forged in smoky cybercafés and shaped by a twenty-year journey across the Mediterranean. I'm not a guru; I'm a bridge-builder, a cultural translator, and a fellow traveler. This book is the map of my journey. I hope it helps you navigate yours.
 
 ---
 
-### **Coming Soon to Amazon**
-
-This culmination of travel, failure, and connection will be available in ebook and paperback formats.
-
-{{< figure src="images/malaga-writing-epilogue.jpg" alt="A laptop on a terrace table overlooking the sea in Málaga." caption="Writing from Málaga terrace, where the journey finds its voice." >}}
-
-{{< promptbox title="Be the First to Know" >}}
-Join **"Mediterranean Insights"** for launch notifications:
--   Exclusive **launch-day discount** (up to 30% off)
--   **Preview of unreleased chapter** delivered immediately
--   Special **author's notes** on the writing process
--   Early access to **audiobook samples**
+<!-- CTA PRINCIPAL : NEWSLETTER -->
+## Join the Caravan
+Be the first to know when the journey begins. Join "Mediterranean Insights" for launch notifications, exclusive excerpts, and subscriber-only discounts.
 
 {{< newsletter >}}
-{{< /promptbox >}}
 
 <div class="back-to-library">
   <a href="{{< relref "/ebook" >}}" class="btn-library">
-    ← Explore the Full Library
+    &larr; Back to the Library
   </a>
 </div>

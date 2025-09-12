@@ -1,5 +1,4 @@
 // --- Fichier : themes/salah-nomad-theme/assets/scss/_base.scss ---
-// --- MODIFIÉ : Ajout de micro-interactions globales subtiles ---
 @import 'variables'; 
 
 *,
@@ -50,22 +49,21 @@ h6 { font-size: 1rem; }
 
 a {
   color: var(--color-link);
-  text-decoration: none; // Par défaut, pas de soulignement, il apparaîtra au survol
-  // --- MODIFIÉ : Transitions pour les liens ---
+  text-decoration: none;
   transition: color 0.2s ease-out, 
               text-decoration-color 0.2s ease-out, 
               opacity 0.2s ease-out;
 
   &:hover,
-  &:focus { // Inclure :focus pour la cohérence visuelle avec :focus-visible
+  &:focus {
     color: var(--color-link-hover);
     text-decoration: underline;
-    text-decoration-color: var(--color-link-hover); // Assure que le soulignement prend la couleur de survol
+    text-decoration-color: var(--color-link-hover);
   }
 
-  &:focus-visible { // Style de focus spécifique pour l'accessibilité
-    color: var(--color-link-hover); // Conserver le changement de couleur
-    text-decoration: none; // L'outline de a11y-focus est suffisant
+  &:focus-visible {
+    color: var(--color-link-hover);
+    text-decoration: none;
     @include a11y-focus;
   }
 }
@@ -75,7 +73,6 @@ img, svg {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  // --- MODIFIÉ : Transition de base pour filtres ou opacité ---
   transition: filter 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out; 
 }
 
@@ -89,8 +86,7 @@ ul, ol {
 // --- Autres ---
 hr {
   border: 0;
-  // --- MODIFIÉ : S'assurer que --color-hr est défini ou utiliser une variable existante ---
-  border-top: 1px solid var(--color-border, #{mix($dark-charcoal, $clay-white, 15%)}); // Fallback si --color-hr non défini
+  border-top: 1px solid var(--color-border, #{mix($dark-charcoal, $clay-white, 15%)});
   margin: $spacing-xl 0;
   transition: border-color 0.3s ease;
 }
@@ -110,22 +106,63 @@ input[type="reset"] {
   font-family: inherit; 
   font-size: inherit;   
   cursor: pointer;
-  // --- MODIFIÉ : Transitions pour boutons ---
   transition: background-color 0.2s ease-out, 
               border-color 0.2s ease-out, 
               color 0.2s ease-out, 
               box-shadow 0.2s ease-out,
-              transform 0.15s ease-out; // Transition plus rapide pour le transform
+              transform 0.15s ease-out;
 
   &:hover {
-    // Exemple de léger soulèvement, peut être surchargé par des styles de bouton spécifiques
     // transform: translateY(-1px); 
   }
-  &:active { // Effet de "pression" au clic
+  &:active {
     transform: translateY(1px) scale(0.98); 
   }
   &:focus-visible {
      @include a11y-focus;
+  }
+}
+
+/*
+==================================================================
+Styles pour les boutons CTA désactivés (Version finale avec texte foncé)
+==================================================================
+*/
+a.cta-button.disabled {
+  // Structure et espacement
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  
+  // Style "Fantôme" / "En attente"
+  background-color: transparent !important;
+  border: 2px dashed var(--color-footer-widget-button-bg, #F4A261) !important; // La bordure reste ORANGE
+  
+  // ### MODIFICATION PRINCIPALE ICI ###
+  // Le texte utilise maintenant la couleur des titres pour un meilleur contraste
+  color: var(--color-text-headings, #264653) !important; 
+  
+  // Comportement
+  cursor: not-allowed;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  
+  // Effet de survol subtil
+  &:hover,
+  &:active {
+    background-color: rgba(244, 162, 97, 0.1) !important; // Le fond devient légèrement ORANGE
+    border-style: solid !important;
+    
+    // ### MODIFICATION AUSSI ICI ###
+    // Le texte reste foncé au survol
+    color: var(--color-text-headings, #264653) !important; 
+    
+    transform: none;
+    box-shadow: none;
   }
 }
 
@@ -146,11 +183,10 @@ input[type="date"], input[type="password"], textarea, select {
               box-shadow 0.2s ease-out;
 
   &::placeholder {
-      // --- MODIFIÉ : S'assurer que --color-text-placeholder est défini ou utiliser une variable existante ---
-      color: var(--color-text-placeholder, #{mix($dark-charcoal, $clay-white, 50%)}); // Fallback
+      color: var(--color-text-placeholder, #{mix($dark-charcoal, $clay-white, 50%)});
       opacity: 1;
   }
-  &:focus-visible { // Appliqué via le sélecteur commun plus haut, mais on peut spécifier ici aussi
+  &:focus-visible {
      @include a11y-focus;
      border-color: var(--color-focus-outline); 
   }

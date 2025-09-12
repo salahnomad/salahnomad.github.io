@@ -22,8 +22,12 @@
         <div class="featured-ebook">
           <div class="ebook-cover">
             <a href="{{ .RelPermalink }}" title="Discover more about {{ .Title }}">
-              {{/* On récupère l'image de couverture depuis les ressources du livre */}}
-              {{ $coverImage := .Resources.GetMatch "ebook-cover-hero.jpg" }}
+              
+              <!-- ### MODIFICATION APPORTÉE ICI ### -->
+              <!-- Au lieu de chercher un nom fixe, on cherche le nom défini dans le Front Matter du livre -->
+              {{ $coverImage := .Resources.GetMatch .Params.featured_image }}
+              <!-- ############################## -->
+
               {{ with $coverImage }}
                 <img src="{{ .RelPermalink }}" alt="Cover of the book {{ $.Title }}" loading="lazy">
               {{ end }}

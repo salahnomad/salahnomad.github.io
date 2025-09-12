@@ -56,3 +56,24 @@
 
 // .separator-below-title n'a pas besoin de marge en haut si .posts-list-title a une marge en bas.
 // Vous pouvez ajuster ces marges pour l'espacement exact que vous souhaitez.
+
+/* 
+==============================================
+Custom Styles for Author Portrait in Book Pages
+==============================================
+*/
+.author-image-circle {
+  
+  // Assure que l'image elle-même devient un cercle
+  img {
+    border-radius: 50%;
+    
+    // Optionnel : Ajoutez une petite bordure pour un effet plus net et professionnel.
+    // La couleur 'var(--border-color)' utilisera la couleur de bordure définie dans vos variables,
+    // s'adaptant ainsi automatiquement au mode clair/sombre.
+    border: 3px solid var(--border-color, #eee);
+
+    // Optionnel : Une ombre douce pour donner un peu de profondeur.
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
