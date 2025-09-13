@@ -1,7 +1,7 @@
 ---
 title: "The Rooted Nomad's Library"
 description: "Dive deeper into the philosophy of Rooted Nomadism with my books. Each volume expands on the journey from ancestral wisdom to digital horizons."
-date: 2025-09-13T10:00:00+01:00
+date: "2025-09-12T23:00:00+01:00"
 layout: "ebook-library"
 
 # Utilise un Page Bundle (dossier) pour les ressources de la bibliothèque
