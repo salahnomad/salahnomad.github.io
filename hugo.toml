@@ -17,7 +17,7 @@ enableRobotsTXT = true
 # Paramètres du Thème et du Site                                             #
 ###############################################################################
 [params]
-  description = "Salah Nomad's Blog: Rooted Nomadism, Mediterranean insights, and digital exploration from Málaga."
+  description = "Salah Nomad's Blog: Discover Rooted Nomadism, a philosophy for thriving in a modern world. Explore Mediterranean wisdom, digital alchemy, and timeless strategies for a resilient life, from Málaga, Spain."
   logo = "/images/Salah-Nomad-Logo.png" # Chemin depuis static/
   logo_dark = "/images/Salah-Nomad-Logo-Dark.png" # Chemin depuis static/
   dateFormat = "January 2, 2006"
@@ -39,7 +39,7 @@ enableRobotsTXT = true
   # Informations globales sur l'auteur pour fallback et bio
   [params.author]
   name = "Salah Nomad" # Nom de l'auteur par défaut/global
-  bio = "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech."
+  bio = "Writer and cultural translator. Salah Nomad shares actionable wisdom from his journey—from Mediterranean olive groves to Málaga's tech scene—to help you build a more resilient, meaningful, and rooted life in a world of constant movement."
   image = "/ebook/algorithmic-sardines/images/salah-author-portrait.png" # <<< C'EST LA LIGNE CORRECTE ET MISE À JOUR
   myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
   url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
