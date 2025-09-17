@@ -1,75 +1,35 @@
-{{/* layouts/partials/breadcrumbs.html */}}
-{{/* Basé sur https://www.gohugo.io/content-management/sections/#example-breadcrumb-partial */}}
-{{/* et adapté pour une page 'single' */}}
-
+{{/* layouts/partials/breadcrumbs.html - Version Améliorée et Complète */}}
+{{ if .Parent }}
 <nav aria-label="breadcrumb" class="breadcrumbs">
   <ol class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    {{/* 1. Lien vers la page d'accueil (toujours présent) */}}
     <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <a itemprop="item" href="{{ .Site.Home.RelPermalink }}">
-        <span itemprop="name">{{ .Site.Params.breadcrumbHomeName | default (i18n "home" | default "Home") }}</span>
+        <span itemprop="name">{{ .Site.Params.breadcrumbHomeName | default "Home" }}</span>
       </a>
       <meta itemprop="position" content="1" />
     </li>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      {{ if $currentPage.HasMenuCurrent "main" . }}
-        {{ range .Ancestors }}
-          <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="{{ .URL | relLangURL }}">
-              <span itemprop="name">{{ .Name }}</span>
-            </a>
-            <meta itemprop="position" content="{{ add .Weight 1 }}" /> {{/* Suppose que .Weight commence à 1 pour les sections */}}
-          </li>
-        {{ end }}
-        {{/* S'il y a une section parente directe non dans le menu mais que l'article est dans cette section */}}
-        {{ $section := $currentPage.CurrentSection }}
-        {{ if and $section (ne $section $currentPage) (ne $section.IsHome) }}
-            {{ $isSectionInBreadcrumb := false }}
-            {{ range .Ancestors }}
-                {{ if eq . $section }}
-                    {{ $isSectionInBreadcrumb = true }}
-                {{ end }}
-            {{ end }}
-            {{ if not $isSectionInBreadcrumb }}
-                 {{/* On ne l'ajoute que si ce n'est pas déjà un ancêtre du menu */}}
-                {{ $position := 2 }} {{/* Default si pas d'ancêtre de menu */}}
-                {{ if $currentPage.HasMenuCurrent "main" . }}
-                    {{ $lastAncestor := index .Ancestors (sub (len .Ancestors) 1) }}
-                    {{ if $lastAncestor }}
-                        {{ $position = add $lastAncestor.Weight 1 }}
-                    {{ end }}
-                {{ end }}
-                <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="{{ $section.RelPermalink }}">
-                        <span itemprop="name">{{ $section.Title }}</span>
-                    </a>
-                    <meta itemprop="position" content="{{ $position }}" />
-                </li>
-            {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
+
+    {{/* 2. Boucle sur les ancêtres (les sections parentes) */}}
+    {{- range .Ancestors.Reverse -}}
+      {{- if not .IsHome -}}
+        <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="{{ .RelPermalink }}">
+            <span itemprop="name">{{ .Title }}</span>
+          </a>
+          {{/* La position est calculée dynamiquement */}}
+          <meta itemprop="position" content="{{ .Parent.Weight | add 2 }}" />
+        </li>
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 3. La page actuelle (non cliquable) */}}
     <li class="breadcrumbs-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
       <span itemprop="name">{{ .Title }}</span>
-      {{ $finalPosition := 2 }} {{/* Default si pas de section/menu parent */}}
-       {{ range .Site.Menus.main }}
-        {{ if $currentPage.HasMenuCurrent "main" . }}
-            {{ $finalPosition = add (len .Ancestors) 2 }}
-            {{ $section := $currentPage.CurrentSection }}
-            {{ if and $section (ne $section $currentPage) (ne $section.IsHome) }}
-                {{ $isSectionInBreadcrumb := false }}
-                {{ range .Ancestors }}
-                    {{ if eq . $section }}
-                        {{ $isSectionInBreadcrumb = true }}
-                    {{ end }}
-                {{ end }}
-                {{ if not $isSectionInBreadcrumb }}
-                    {{ $finalPosition = add $finalPosition 1 }}
-                {{ end }}
-            {{ end }}
-        {{ end }}
-      {{ end }}
-      <meta itemprop="position" content="{{ $finalPosition }}" />
+      <meta itemprop="position" content="{{ .Parent.Weight | add 2 }}" />
     </li>
+
   </ol>
 </nav>
+{{ end }}
