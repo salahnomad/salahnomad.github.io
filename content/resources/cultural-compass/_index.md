@@ -1,10 +1,18 @@
 ﻿---
-title: "Cultural Compass"
+title: "The Cultural Compass: Navigating the World with an Artisan's Eye"
 date: 2025-05-26
-description: "Navigating intercultural interactions with grace, understanding, and respect. Tools for effective cross-cultural communication and adaptation."
+description: "Travel is a craft. This section provides the tools to move beyond the tourist's gaze, helping you to see patterns, ask deeper questions, and find meaningful connection in any landscape."
 layout: list
 draft: false
-featured_image: "images/cultural-compass-hero.jpg" # Pointe vers le placeholder créé
+featured_image: "images/cultural-compass-hero.jpg"
+cascade:
+  - categories: ["Resources"]
+    subcategory: "Cultural Compass"
 ---
 
-Your guide to understanding and embracing cultural diversity. Develop intercultural competence, learn to decode unspoken rules, and build meaningful connections wherever your journey takes you.
+True travel isn’t about consuming places; it’s about learning to see. It’s the art of trading a tourist’s fleeting gaze for an artisan’s patient hands and a storyteller’s curious heart. In a world that encourages surface-level interaction, developing a deep cultural intelligence is a revolutionary act.
+
+This is your guide to that art. Here, you will find practical frameworks for observing the world with more depth, for decoding the unspoken rules of a new environment, and for building genuine connections that transcend language and background. This is not about checklists of what to see, but about learning *how* to see.
+
+**Begin your training in the art of seeing:**
+- **[The Art of Seeing: A Practical Compass for Navigating Cultural Landscapes](/resources/cultural-compass/art-of-seeing/)**
