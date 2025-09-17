@@ -1,10 +1,17 @@
 ﻿---
-title: "Essential Nomad Resources"
-date: 2025-05-26 # Ou une date fixe si vous préférez
-description: "A curated collection of tools, guides, and insights to empower your nomadic journey, from visa hacks to digital well-being."
+title: "The Nomad's Arsenal: A Library of Rooted Resources"
+date: 2025-05-26
+description: "This is where philosophy becomes practice. A curated collection of actionable guides, frameworks, and toolkits to empower your journey as a resilient and resourceful nomad."
 layout: list
 draft: false
-featured_image: "images/resources-hero.jpg" # Pointe vers le placeholder créé
+featured_image: "images/resources-hero.jpg"
 ---
 
-Navigate the nomadic lifestyle with confidence. This hub gathers practical resources, expert advice, and essential toolkits covering everything from legalities and finance to productivity and sustainable practices on the road.
+A philosophy without practice is like a map without a journey. This section is the arsenal, the toolkit, the practical library for the Rooted Nomad. Here, we transform the wisdom of ancient olive groves and Phoenician merchants into actionable strategies for the modern world.
+
+Whether you're navigating the complexities of visa applications, building a resilient financial ecosystem, or seeking to master the art of deep work, these resources are your trusted companions. They are the hard-won lessons from a twenty-year journey, distilled into frameworks designed to help you not just survive, but thrive.
+
+**Equip yourself for the journey:**
+- **[SEO Alchemy](/resources/seo-alchemy/):** Turn your content into digital gold.
+- **[Nomad Finance](/resources/nomad-finance/):** Build an unshakeable financial foundation.
+- **[Remote Work Zen](/resources/remote-work-zen/):** Cultivate focus and serenity in a distracted world.
