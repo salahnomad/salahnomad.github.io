@@ -10,13 +10,14 @@ description: "Unlock Málaga's 3 transformative coworking spaces with our Medite
 categories: ["Málaga Codex"]
 subcategory: ["Coworking Gems"]
 tags: ["malaga", "coworking", "digital-nomad", "rooted-nomadism", "andalusian-culture", "productivity-rituals"]
-keywords: [  
-     "coworking malaga centre historique",  
-     "espaces travail vue mer malaga",  
-     "communauté nomade digitale malaga",  
-     "rituels productivité andalousie",
-     "meilleur coworking malaga",
-     "guide travail malaga nomade digital"
+keywords: [
+    "best coworking malaga",
+    "malaga digital nomad guide",
+    "working in malaga",
+    "coworking malaga historic center",
+    "malaga digital nomad community",
+    "malaga for remote workers",
+    "workspaces in malaga"
 ]
 
 # Featured Image & Resources
