@@ -38,16 +38,16 @@ enableRobotsTXT = true
 
   # Informations globales sur l'auteur pour fallback et bio
   [params.author]
-    name = "Salah Nomad" # Nom de l'auteur par défaut/global
-    bio = "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech."
-    image = "/images/authors/salah-nomad-avatar.jpg" # Avatar pour la bio, depuis static/
-    myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
-    url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
-    sameAs = [ # Liens sociaux de l'auteur pour Schema Person
-      "https://linkedin.com/in/salahnomad",
-      "https://x.com/Salah_Nomad"
-      # Ajoutez d'autres profils ici si pertinent pour Schema Person
-    ]
+  name = "Salah Nomad" # Nom de l'auteur par défaut/global
+  bio = "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech."
+  image = "/ebook/algorithmic-sardines/images/salah-author-portrait.png" # <<< C'EST LA LIGNE CORRECTE ET MISE À JOUR
+  myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
+  url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
+  sameAs = [ # Liens sociaux de l'auteur pour Schema Person
+    "https://linkedin.com/in/salahnomad",
+    "https://x.com/Salah_Nomad"
+    # Ajoutez d'autres profils ici si pertinent pour Schema Person
+  ]
     twitter_handle = "@Salah_Nomad" # Pour twitter:creator dans seo.html
 
   # --- Paramètres de Design ---
