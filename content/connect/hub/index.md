@@ -1,13 +1,14 @@
 ---
-title: "All My Links - Salah Nomad" # Titre pour l'onglet et le SEO
-layout: linktree                    # Indique à Hugo d'utiliser layouts/page/linktree.html
-# slug: hub                         # Le nom de fichier "hub.md" créera /connect/hub/
-# Pas besoin de type: page ici, car c'est une page régulière dans une section.
+title: "The Hub: All My Links - Salah Nomad"
+date: 2024-01-01
+draft: false
+layout: linktree
 sidebar: false 
 comments: false 
 toc: false
-# featured_image: "/linktree/images/linktree-placeholder.jpg" # Image pour le partage de cette page
-# description: "Your central hub to connect with Salah Nomad across all platforms and discover key resources."
+featured_image: "images/linktree-placeholder.jpg" # Assurez-vous que cette image existe dans content/connect/hub/images/
+featured_image_alt: "A vibrant digital mosaic of social media icons and key project symbols, arranged in a zellige pattern around the Salah Nomad logo, representing a central hub for all connections."
+description: "Your central hub to connect with Salah Nomad. Explore the blog, dive into the Málaga Codex, join the caravan on social media, and discover the full story of Rooted Nomadism."
 ---
 
 {{%/*

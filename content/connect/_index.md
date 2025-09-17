@@ -1,6 +1,6 @@
 ---
-title: "Connect with Salah Nomad"
-# layout: list (ou un layout spécifique pour cette section si besoin)
-# sidebar: true (ou false)
+title: "Connect Section"
+headless: true # Indique à Hugo de ne pas publier cette page
 ---
-Let's connect! Find all my links and social platforms here.
+
+This is a headless bundle that organizes connection-related pages like the `/connect/hub`.

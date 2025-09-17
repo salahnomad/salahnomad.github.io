@@ -1,16 +1,15 @@
 ---
-title: "Terms and Conditions"
+title: "Terms of the Caravan: Our Shared Path" # Titre plus engageant
 date: 2024-05-08
 draft: false
 layout: single
-# slug: terms # Supprimé si le dossier est 'terms'
-# aliases: ["/legal/", "/terms-and-conditions/"] # Optionnel, gardez si vous voulez rediriger depuis ces URL
+slug: terms # Assure l'URL /terms/
 comments: false
-featured_image: "images/terms-placeholder.jpg" # <<< MODIFIÉ pour pointer vers la nouvelle image
-featured_image_alt: "Scales of justice adorned with olive branches, alongside legal books and a gavel, symbolizing the balance of rights and responsibilities for Salah Nomad's website terms." # <<< METTEZ UN ALT TEXT DESCRIPTIF ET PERTINENT pour terms-placeholder.jpg
+featured_image: "images/terms-placeholder.jpg"
+featured_image_alt: "Scales of justice adorned with olive branches, alongside legal books and a gavel, symbolizing the balance of rights and responsibilities for Salah Nomad's website terms."
 ---
 
-*Where Digital Paths Meet Ancient Roots*
+*Where Digital Paths Meet Mediterranean Shores*
 
 ---
 
