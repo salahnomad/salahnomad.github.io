@@ -427,3 +427,83 @@ On réplique le style du .footer-widget-button pour une cohérence parfaite.
   }
   &:focus-visible { @include a11y-focus; }
 }
+
+/* ==========================================================================
+   Styles Complets pour le Widget "Start Here" (Version Finale Définitive V3)
+   ========================================================================== */
+
+.widget_start_here {
+
+  .pillar-section {
+    margin-bottom: $spacing-lg;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .pillar-section-title {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-sidebar-widget-text); /* Couleur blanc/gris clair - OK */
+    margin-bottom: $spacing-sm;
+    padding-bottom: $spacing-xs;
+    border-bottom: 1px dotted var(--color-sidebar-widget-border);
+  }
+
+  .pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: $spacing-xs;
+      padding: 0;
+      border: none;
+
+      /* SÉLECTEUR PLUS SPÉCIFIQUE POUR GAGNER LA BATAILLE CSS */
+      a {
+        display: flex;
+        align-items: flex-start;
+        gap: $spacing-sm;
+        padding: $spacing-xs;
+        border-radius: $border-radius-sm;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        text-decoration: none;
+        
+        /* CORRECTION DÉFINITIVE : Couleur par défaut */
+        color: var(--color-sidebar-widget-text-muted);
+
+        .pillar-icon {
+          flex-shrink: 0;
+          margin-top: 2px;
+          svg {
+            width: 1em;
+            height: 1em;
+            stroke: currentColor;
+            opacity: 0.8;
+          }
+        }
+
+        .pillar-text {
+          font-size: 0.9em;
+          line-height: 1.4;
+          color: inherit;
+        }
+
+        /* CORRECTION DÉFINITIVE : Couleur au survol */
+        &:hover, &:focus {
+          background-color: rgba(var(--clay-white-rgb, 254, 250, 224), 0.05);
+          color: var(--color-sidebar-widget-link-hover); /* Garde la couleur dorée brillante */
+          text-decoration: underline; /* <<< AJOUTEZ JUSTE CETTE LIGNE */
+          
+          .pillar-icon {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

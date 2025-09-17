@@ -2,7 +2,8 @@
 {{/* --- VERSION MISE À JOUR POUR LE NOUVEAU WIDGET 'quote_cta' --- */}}
 {{ $sidebarParams := .Site.Params.sidebar }}
 {{/* Définit l'ordre souhaité pour les widgets, avec le nouveau CTA */}}
-{{ $widgetOrder := slice "weather" "newsletter_mediterranean" "map_compass" "quotes" "quote_cta" }}
+{{/* Mettez "start_here" en deuxième position */}}
+{{ $widgetOrder := slice "weather" "start_here" "newsletter_mediterranean" "quotes" "quote_cta" }}
 
 <aside id="secondary" class="widget-area sidebar">
   {{ range $widgetOrder }}

@@ -131,6 +131,14 @@ enableRobotsTXT = true
       cityId = "2514256"
       lang = "en"
       unitProverb = "Every Mediterranean breeze speaks two languages: °C | °F"
+	# Ajoutez ceci à la fin de la section [params.sidebar]
+	[params.sidebar.start_here]
+	  enable = true
+	  title = "Start Your Journey"
+	  primary_title = "The Foundations"
+	  secondary_title = "In Practice"
+	  primary_limit = 5   # Affiche les 5 articles piliers principaux
+	  secondary_limit = 3 # Affiche les 3 articles piliers secondaires
     [params.sidebar.newsletter_mediterranean]
       enable = true
       title = "Mediterranean Insights"
@@ -138,13 +146,6 @@ enableRobotsTXT = true
       placeholder = "Your email for wisdom..."
       button_text = "Join the Caravan"
       sub_text = "Wisdom from Olive Groves to Algorithms. By subscribing, you agree to our [privacy policy](/privacy/)."
-    [params.sidebar.map_compass]
-      enable = true
-      title = "My Nomadic Compass"
-      map_image = "/images/sidebar/nomad-compass-map.png"
-      image_alt = "Stylized world map illustrating nomadic journeys"
-      current_location = "Málaga, Spain"
-      destinations_page_link = "/digital-compass/nomad-destinations/"
     [params.sidebar.quotes]
       enable = true
       title = "Roots & Wi-Fi"
