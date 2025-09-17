@@ -16,6 +16,7 @@ featured_image_alt: "An antique brass compass resting on a vibrant, detailed cul
 
 authors: ["Salah Nomad"]
 toc: true
+pillar_content: true
 ---
 
 ### The Ghost of London

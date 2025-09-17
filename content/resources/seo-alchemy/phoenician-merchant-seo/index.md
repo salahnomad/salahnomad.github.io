@@ -11,6 +11,7 @@ featured_image: "images/phoenician-ship-digital-sea.jpg"
 featured_image_alt: "A majestic Phoenician trading ship navigating a digital sea of data streams, its sails catching the light of a Google-shaped constellation, symbolizing ancient wisdom guiding modern SEO."
 authors: ["Salah Nomad"]
 toc: true
+pillar_content: true
 resources:
   - src: "images/phoenician-ship-digital-sea.jpg"
     title: "The Phoenician Merchant navigating the digital Mediterranean."

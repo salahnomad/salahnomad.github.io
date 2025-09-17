@@ -15,7 +15,7 @@ featured_image_alt: "A single, beautifully cracked zellige tile, with light shin
 
 authors: ["Salah Nomad"]
 toc: true
-
+secondary_pillar: true
 cta: "story"  # <-- La seule ligne ajoutée, sans rien supprimer.
 ---
 

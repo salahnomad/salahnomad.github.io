@@ -16,6 +16,7 @@ featured_image: "images/rooted-nomad-crisis-pivot-hero.jpg"
 featured_image_alt: "A Moroccan man's weathered hand on ancient olive bark, his other hand on a glowing laptop keyboard, symbolizing where ancestral resilience meets a digital rebirth in Andalusia."
 authors: ["Salah Nomad"]
 toc: true
+pillar_content: true
 cta: story
 
 resources:

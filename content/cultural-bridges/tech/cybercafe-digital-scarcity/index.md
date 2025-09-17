@@ -13,6 +13,7 @@ featured_image_alt: "Nostalgic close-up of a CRT monitor in a dark cybercafé, m
 featured_image_caption: "**My digital dojo (2002):** Where dirhams bought minutes, not megabytes."
 authors: ["Salah Nomad"]
 toc: true
+secondary_pillar: true
 cta: story
 resources:
   - src: "images/cybercafe-hero-scarcity.jpg"

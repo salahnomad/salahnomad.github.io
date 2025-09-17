@@ -15,6 +15,7 @@ featured_image_alt: "Freshly grilled espeto de sardinas on a skewer, silhouetted
 
 authors: ["Salah Nomad"]
 toc: true
+secondary_pillar: true
 ---
 
 ### The Digital Storm and the Sardine's Whisper

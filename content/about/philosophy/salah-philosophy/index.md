@@ -11,6 +11,7 @@ featured_image: "images/rooted-nomadism-compass-rose.jpg"
 featured_image_alt: "An antique brass compass overlaid on a map of the Mediterranean, its needle pointing to a glowing olive tree, symbolizing the philosophy of Rooted Nomadism."
 authors: ["Salah Nomad"]
 toc: true
+pillar_content: true
 cta: true
 
 resources:

@@ -24,6 +24,7 @@ featured_image_alt: "Laptop beside mint tea under Roman columns with zellige pat
 series: ["Your Mediterranean Compass for Meaningful Travel"]
 series_order: 2
 toc: true
+pillar_content: true
 draft: false
 cta: tool
 ---

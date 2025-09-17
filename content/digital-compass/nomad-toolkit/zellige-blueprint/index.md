@@ -15,6 +15,7 @@ featured_image_alt: "A digital tablet showing a soulful productivity dashboard w
 # --- Authoring & Structure ---
 authors: ["Salah Nomad"]
 toc: true
+pillar_content: true
 cta: tool
 ---
 
