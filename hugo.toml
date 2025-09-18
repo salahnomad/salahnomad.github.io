@@ -44,9 +44,13 @@ enableRobotsTXT = true
   myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
   url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
   sameAs = [ # Liens sociaux de l'auteur pour Schema Person
-    "https://linkedin.com/in/salahnomad",
-    "https://x.com/Salah_Nomad"
-    # Ajoutez d'autres profils ici si pertinent pour Schema Person
+    "https://www.linkedin.com/in/salahnomad/",
+    "https://x.com/Salah_Nomad",
+    "https://www.instagram.com/salahnomad/",
+    "https://www.youtube.com/@SalahNomad",
+    "https://medium.com/@SalahNomad",
+    "https://www.facebook.com/salahnomad",
+    "https://www.quora.com/profile/SalahNomad"
   ]
     twitter_handle = "@Salah_Nomad" # Pour twitter:creator dans seo.html
 
