@@ -414,3 +414,95 @@
     }
   }
 }
+
+/* ==========================================================================
+   Styles pour la Page "The Compass" (Version Finale)
+   ========================================================================== */
+
+.framework-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Une colonne sur mobile */
+  gap: 2rem;
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablette */
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes sur de plus grands écrans */
+  }
+}
+
+.framework-card {
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-background-alt);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-medium);
+  }
+
+  .framework-icon {
+    /* Ce conteneur est maintenant responsable de l'apparence de l'icône */
+    width: 70px;  /* Taille légèrement augmentée pour plus d'impact */
+    height: 70px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%; /* La magie du cercle est ici */
+    border: 2px solid var(--color-border-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Ajoute une subtile profondeur */
+    overflow: hidden; /* Important pour que l'image à l'intérieur respecte le cercle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* On s'assure que le <figure> généré par Hugo n'ajoute pas de marges */
+    figure {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* S'assure que l'image remplit le cercle sans se déformer */
+    }
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; 
+  }
+
+  a {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+  }
+}
+
+.book-cover-on-compass img {
+  max-width: 300px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-medium);
+}
