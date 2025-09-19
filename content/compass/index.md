@@ -21,54 +21,79 @@ This page is your compass. It's the official guide to the philosophy of **Rooted
 
 ### The Core Frameworks: Your Toolkit for a Meaningful Journey
 
-<div class="framework-grid">
+{{< framework-grid >}}
 
-<div class="framework-card">
-{{< figure src="images/zellige-blueprint-icon.jpg" alt="A geometric icon representing the Zellige Blueprint." class="framework-icon" >}}
+{{< framework-card >}}
+<div class="framework-icon">
+
+![A geometric icon representing the Zellige Blueprint.](images/zellige-blueprint-icon.jpg)
+
+</div>
+
 ## The Zellige Blueprint
 #### A system for soulful productivity.
 Inspired by Moroccan artisans, this framework teaches you to compose a life of meaning, one intentional tile at a time—blending your work, passions, and personal life into a beautiful, cohesive mosaic.
 
 [**Discover the Blueprint &rarr;**]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}})
+{{< /framework-card >}}
+
+{{< framework-card >}}
+<div class="framework-icon">
+
+![An icon of a resilient, ancient olive tree.](images/olive-grove-icon.jpg)
+
 </div>
 
-<div class="framework-card">
-{{< figure src="images/olive-grove-icon.jpg" alt="An icon of a resilient, ancient olive tree." class="framework-icon" >}}
 ## The Olive Grove Economy
 #### A blueprint for financial resilience.
 Move from the freelancer's constant hunt to the gardener's patient cultivation. This model redefines wealth, focusing on building sustainable, long-term assets that nourish your freedom, inspired by the enduring wisdom of millennial olive trees.
 
 [**Cultivate Your Grove &rarr;**]({{< relref "/resources/nomad-finance/olive-grove-economy" >}})
+{{< /framework-card >}}
+
+{{< framework-card >}}
+<div class="framework-icon">
+
+![An icon of an antique compass.](images/morisco-compass-icon.jpg)
+
 </div>
 
-<div class="framework-card">
-{{< figure src="images/morisco-compass-icon.jpg" alt="An icon of an antique compass." class="framework-icon" >}}
 ## The Morisco Compass
 #### A guide for navigating a hybrid identity.
 Your history is not a weight; it's your true north. Born from the story of my Morisco ancestors' exile, this framework is a powerful tool for anyone living between worlds, helping you turn displacement into your greatest strength.
 
 [**Find Your True North &rarr;**]({{< relref "/cultural-bridges/migration/morisco-compass-modern-diasporas" >}})
+{{< /framework-card >}}
+
+{{< framework-card >}}
+<div class="framework-icon">
+
+![An icon representing the Thermae Flow State.](images/thermae-flow-icon.png)
+
 </div>
 
-<div class="framework-card">
-{{< figure src="images/thermae-flow-icon.png" alt="An icon representing the Thermae Flow State." class="framework-icon" >}}
 ## The Thermae Flow State
 #### An ancient ritual for deep work.
 In a world engineered for distraction, focus is a revolutionary act. This four-chambered ritual, inspired by the serene wisdom of Roman baths, is your practical guide to building a mental sanctuary and reclaiming your attention.
 
 [**Enter the Flow &rarr;**]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}})
+{{< /framework-card >}}
+
+{{< framework-card >}}
+<div class="framework-icon">
+
+![An icon of a Phoenician ship navigating.](images/phoenician-seo-icon.jpg)
+
 </div>
 
-<div class="framework-card">
-{{< figure src="images/phoenician-seo-icon.jpg" alt="An icon of a Phoenician ship navigating." class="framework-icon" >}}
 ## Phoenician Merchant SEO
 #### Timeless strategies for digital navigation.
 Stop chasing algorithms. This framework reframes SEO as the timeless art of building a digital "port" so valuable that the currents of the web naturally flow to you, inspired by the trust-based networks of ancient Phoenician traders.
 
 [**Navigate the Digital Sea &rarr;**]({{< relref "/resources/seo-alchemy/phoenician-merchant-seo" >}})
-</div>
+{{< /framework-card >}}
 
-</div>
+{{< /framework-grid >}}
 
 ---
 
@@ -76,7 +101,7 @@ Stop chasing algorithms. This framework reframes SEO as the timeless art of buil
 
 These frameworks are the map. The full story—the journey, the failures, the discoveries—is in my book.
 
-{{< figure src="images/algorithmic-sardines-cover.jpg" alt="The book cover for Algorithmic Sardines by Salah Nomad." class="book-cover-on-compass" >}}
+![The book cover for Algorithmic Sardines by Salah Nomad.](images/algorithmic-sardines-cover.jpg)
 
 *Algorithmic Sardines* is my memoir and manifesto. It's the deep dive into how I forged this philosophy and how you can apply it to build a life that is both profoundly free and deeply rooted.
 
