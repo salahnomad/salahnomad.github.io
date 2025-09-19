@@ -5,10 +5,13 @@ draft: false
 description: "The ebook 'Algorithmic Sardines' is coming soon. Join the caravan to be notified of the launch."
 layout: single
 slug: coming-soon
-# --- LIGNE CRUCIALE POUR GOOGLE ---
 robots: "noindex, nofollow"
-# ------------------------------------
 comments: false
+_build:
+  list: false 
+# --- LIGNE À AJOUTER POUR UN SITEMAP PARFAIT ---
+sitemap:
+  disable: true
 ---
 
 <div class="coming-soon-container">
