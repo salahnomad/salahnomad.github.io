@@ -1,0 +1,14 @@
+{{ $widgetData := index .Site.Params.sidebar "the_compass" }}
+
+{{ if $widgetData.enable }}
+<div class="widget widget_the_compass">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "The Compass" }}</span></h3>
+  <div class="widget-content">
+    <p class="compass-widget-description">{{ $widgetData.description | default "Your guide to the core philosophy of this blog." }}</p>
+    <a href="/compass/" class="compass-widget-button">
+      {{ partial "icons/compass.svg" . }}
+      <span>{{ $widgetData.button_text | default "Explore the Frameworks" }}</span>
+    </a>
+  </div>
+</div>
+{{ end }}

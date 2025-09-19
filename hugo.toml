@@ -136,6 +136,12 @@ enableRobotsTXT = true
       lang = "en"
       unitProverb = "Every Mediterranean breeze speaks two languages: °C | °F"
 	# Ajoutez ceci à la fin de la section [params.sidebar]
+	# Ajoutez ceci dans la section [params.sidebar]
+	[params.sidebar.the_compass]
+	  enable = true
+	  title = "The Compass (Start Here)"
+	  description = "Your guide to the core philosophy of this blog. Discover the frameworks for a meaningful journey."
+	  button_text = "Explore The Map"
 	[params.sidebar.start_here]
 	  enable = true
 	  title = "Start Your Journey"
@@ -424,6 +430,20 @@ enableRobotsTXT = true
     [menu.secondary.params]
       dropdown = true
       icon = "anchor"
+
+  # ====================================================================
+  # ===================== DÉBUT DE L'AJOUT STRATÉGIQUE ===================
+  # ====================================================================
+  [[menu.secondary]]
+    identifier = "compass_link"
+    name = "The Compass (Start Here)"
+    url = "/compass/"
+    parent = "connect"
+    weight = 20 # Le poids le plus faible pour le mettre en premier
+  # ====================================================================
+  # ====================== FIN DE L'AJOUT STRATÉGIQUE ====================
+  # ====================================================================
+
   [[menu.secondary]]
     identifier = "connect_all_links"
     name = "All My Links"

@@ -3,7 +3,7 @@
 {{ $sidebarParams := .Site.Params.sidebar }}
 {{/* Définit l'ordre souhaité pour les widgets, avec le nouveau CTA */}}
 {{/* Mettez "start_here" en deuxième position */}}
-{{ $widgetOrder := slice "weather" "start_here" "newsletter_mediterranean" "quotes" "quote_cta" }}
+{{ $widgetOrder := slice "weather" "the_compass" "start_here" "newsletter_mediterranean" "quotes" "quote_cta" }}
 
 <aside id="secondary" class="widget-area sidebar">
   {{ range $widgetOrder }}
