@@ -1,0 +1,23 @@
+{{ $icon := .icon }}
+{{ $alt := .alt }}
+{{ $title := .title }}
+{{ $subtitle := .subtitle }}
+{{ $description := .description }}
+{{ $link := .link }}
+{{ $link_text := .link_text }}
+
+<div class="framework-card">
+  {{ with $icon }}
+    {{ with $.Page.Resources.GetMatch . }}
+      <div class="framework-icon">
+          <img src="{{ .RelPermalink }}" alt="{{ $alt }}">
+      </div>
+    {{ end }}
+  {{ end }}
+  
+  <h2>{{ $title }}</h2>
+  <h4>{{ $subtitle }}</h4>
+  <p class="framework-description">{{ $description }}</p>
+
+  <a href="{{ $link }}" class="framework-link">{{ $link_text }} &rarr;</a>
+</div>
