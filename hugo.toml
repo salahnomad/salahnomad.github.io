@@ -178,6 +178,7 @@ enableRobotsTXT = true
       title = "Quick Compass"
       type = "custom_links"
       links = [
+        { name = "The Compass (Start Here)", url = "/compass/" }, # <-- AJOUTÉ ICI
         { name = "My Story", url = "/about/story/" },
         { name = "Digital Compass", url = "/digital-compass/" },
         { name = "Málaga Codex", url = "/malaga-codex/" },
@@ -194,6 +195,7 @@ enableRobotsTXT = true
       title = "From the Souk"
       type = "custom_links"
       links = [
+        { name = "The Compass (Frameworks)", url = "/compass/" }, # <-- AJOUTÉ ICI
         { name = "Nomad Toolkit", url = "/digital-compass/nomad-toolkit/" },
         { name = "Visa & Legal", url = "/resources/visa-hacks/" },
         { name = "SEO Alchemy", url = "/resources/seo-alchemy/" },

@@ -7,11 +7,55 @@ featured_image: "images/compass-frameworks-hero.jpg"
 featured_image_alt: "An antique brass compass open on a large, hand-drawn map of the Mediterranean, with key concepts like 'Zellige' and 'Olive Grove' sketched as constellations, symbolizing a guide to philosophical frameworks."
 layout: single
 slug: compass
+json_ld: |
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "The Compass: Frameworks for a Rooted Life",
+    "description": "Your official guide to the core frameworks of Rooted Nomadism. Discover the mental models and actionable systems for building a resilient, meaningful, and soulful life.",
+    "url": "https://salahnomad.com/compass/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "The Zellige Blueprint",
+          "url": "https://salahnomad.com/digital-compass/nomad-toolkit/zellige-blueprint/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Olive Grove Economy",
+          "url": "https://salahnomad.com/resources/nomad-finance/olive-grove-economy/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Morisco Compass",
+          "url": "https://salahnomad.com/cultural-bridges/migration/morisco-compass-modern-diasporas/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "The Thermae Flow State",
+          "url": "https://salahnomad.com/resources/remote-work-zen/thermae-flow-state-deep-work/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Phoenician Merchant SEO",
+          "url": "https://salahnomad.com/resources/seo-alchemy/phoenician-merchant-seo/"
+        }
+      ]
+    }
+  }
 ---
 
 <div class="compass-page-wrapper">
 
-# Lost in the Digital Sea? Find Your Anchor.
+# The Compass: Frameworks for a Rooted Life
+## Lost in the Digital Sea? Find Your Anchor.
 
 The freedom to work from anywhere promised a world of adventure. But for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map.
 
