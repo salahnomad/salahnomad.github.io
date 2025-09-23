@@ -71,7 +71,7 @@ Now my AI must pass three tests:
 ---
 
 ## 3. Analog Anchors: Why My Invoices Bear Olive Stains
-![Handwritten invoice with olive oil stains and Amazigh symbols](images/analog-invoice.jpg "Where digital efficiency meets human imperfection")
+![Handwritten invoice with olive oil stains and Amazigh symbols](images/analog-invoice.jpg "Where [digital efficiency](/cultural-bridges/tech/cybercafe-digital-scarcity/) meets human imperfection")
 
 The "Morrocan Clary" incident of 2009 still haunts me. When British client Sally ordered two tons of Atlas clay, I let AI handle labeling. The result? "*Morrocan Clary—perfect for your spirtual jounrey!*" She canceled. That day I drew my line:
 

@@ -75,7 +75,7 @@ In that moment, we weren't officer and traveler. We were Mediterranean kin—lik
 
 ### Chapter 2: The Failure of Sterile Metrics
 
-We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing cultural resonance.
+We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing [cultural resonance](/resources/cultural-compass/art-of-seeing/).
 
 Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy:
 
@@ -103,7 +103,7 @@ Like [Jbala's cork oaks](/resources/eco-nomad/jbala-trail-andalusian-legacy/) re
 #### 3. The Recognition Test: Ancestral Echoes
 > *Where does your history vibrate in this landscape?*
 
-When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmother's house in Ksar El-Kébir—proof my Morisco ancestors carried home in muscle memory after the 1492 exile.
+When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmother's house in Ksar El-Kébir—proof my [Morisco ancestors](/cultural-bridges/migration/morisco-compass-modern-diasporas/) carried home in muscle memory after the 1492 exile.
 
 {{< figure src="images/canary-melon-compass-framework.jpg" alt="Infographic of Canary Melon Compass framework: Sweetness (Terroir), Rind (Resilience), Recognition (Echoes)" caption="The melon compass for soulful destination choice" >}}
 
