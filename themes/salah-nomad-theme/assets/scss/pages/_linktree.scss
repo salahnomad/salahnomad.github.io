@@ -343,3 +343,78 @@
   }
   &:focus-visible { @include a11y-focus; }
 }
+
+// ==========================================================================
+// Widget de Promotion du Livre
+// ==========================================================================
+.widget-book-promo {
+  margin-top: 1.5rem; // Espace par rapport au widget de citation au-dessus
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%; // S'assure que le widget prend toute la largeur disponible
+
+  .book-cover {
+    flex-shrink: 0;
+    width: 100px; // Taille de la couverture
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    }
+
+    a:hover img, a:focus img {
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+  }
+
+  .book-promo-content {
+    text-align: left;
+    flex-grow: 1;
+
+    h4 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      margin: 0 0 0.25rem 0;
+      color: var(--color-text-headings);
+    }
+
+    p {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
+    }
+
+    // Styles pour le bouton
+    .payhip-cta-container {
+      margin: 0; // Réinitialise les marges si nécessaire
+    }
+    .compass-cta-button {
+       // Le style est déjà défini globalement, mais on peut ajuster si besoin
+       padding: 0.5rem 1rem;
+       font-size: 0.8rem;
+       width: 100%; // Le bouton prend toute la largeur disponible
+       text-align: center;
+    }
+  }
+
+  // --- Styles pour l'affichage sur mobile ---
+  @media (max-width: 480px) {
+    flex-direction: column; // Empile les éléments verticalement
+    text-align: center;
+
+    .book-promo-content {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
