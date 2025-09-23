@@ -7,7 +7,7 @@ layout: single
 slug: coming-soon
 robots: "noindex, nofollow"
 comments: false
-_build:
+build:
   list: false 
 # --- LIGNE À AJOUTER POUR UN SITEMAP PARFAIT ---
 sitemap:
