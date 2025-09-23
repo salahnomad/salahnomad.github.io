@@ -11,7 +11,15 @@ Welcome to the Málaga Codex. This is not a travel guide. It is a key—a way of
 
 Here, we will learn to read the city's soul. We will uncover the design principles hidden in the Alcazaba, taste the philosophy of "slow work" in a simple *espeto de sardinas*, and find sanctuaries for deep work where Wi-Fi and jasmine-scented air coexist. This is your compass for navigating Málaga not as a tourist, but as a student of its timeless wisdom.
 
-**Begin deciphering the codex:**
-- **[History Reborn](/malaga-codex/history-reborn/):** How the past shapes Málaga's innovative present.
-- **[Local Rituals](/malaga-codex/local-rituals/):** The daily ceremonies that reveal the city's heart.
-- **[Coworking Gems](/malaga-codex/coworking-gems/):** Sanctuaries for work, soul, and connection.
+---
+
+### Begin Deciphering the Codex
+
+*   **[The Alcazaba's Secret Code: How Málaga's Moorish Soul Informs its Digital Renaissance](/malaga-codex/history-reborn/alcazabas-secret-code/)**  
+    *Discover how the ancient design principles of Málaga's Moorish fortress hold the blueprint for its modern digital ecosystem.*
+
+*   **[Espetos & Epiphanies: How Málaga's Sardine Ritual Teaches the Art of Slow Work](/malaga-codex/local-rituals/espetos-epiphanies/)**  
+    *Learn the secret to defeating burnout and mastering soulful, focused work from a simple, ancient beachside ritual.*
+
+*   **[Málaga Coworking Sanctuaries: A Rooted Nomad's Expert Guide](/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/)**  
+    *Find workspaces where Andalusian soul meets digital flow, transforming how and where you work.*

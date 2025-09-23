@@ -11,7 +11,15 @@ A philosophy without practice is like a map without a journey. This section is t
 
 Whether you're navigating the complexities of visa applications, building a resilient financial ecosystem, or seeking to master the art of deep work, these resources are your trusted companions. They are the hard-won lessons from a twenty-year journey, distilled into frameworks designed to help you not just survive, but thrive.
 
-**Equip yourself for the journey:**
-- **[SEO Alchemy](/resources/seo-alchemy/):** Turn your content into digital gold.
-- **[Nomad Finance](/resources/nomad-finance/):** Build an unshakeable financial foundation.
-- **[Remote Work Zen](/resources/remote-work-zen/):** Cultivate focus and serenity in a distracted world.
+---
+
+### Equip Yourself for the Journey
+
+*   **[The Olive Grove Economy: A Nomad's Blueprint for Financial Resilience](/resources/nomad-finance/olive-grove-economy/)**  
+    *My powerful system for building true financial freedom, moving from the freelancer's hunt to the gardener's patient cultivation.*
+
+*   **[The Thermae Flow State: Ancient Rituals for Deep Work & Digital Serenity](/resources/remote-work-zen/thermae-flow-state-deep-work/)**  
+    *A 4-chamber ritual inspired by Roman baths to help you reclaim your focus in a world engineered for distraction.*
+
+*   **[SEO Like a Phoenician Merchant: Ancient Strategies for Google's Shifting Tides](/resources/seo-alchemy/phoenician-merchant-seo/)**  
+    *Stop chasing algorithms and learn the timeless art of building a digital 'port' so valuable that traffic flows to you.*

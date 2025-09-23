@@ -13,7 +13,15 @@ Every map has a starting point. Mine lies in the ochre earth of Ksar El-Kébir, 
 
 It's here that I share the foundational stories, the hard-won philosophy, and the human connections that have transformed a wandering existence into a purposeful path. It is the answer to a question that has guided my life: how can we move freely through the world, not by shedding our roots, but by carrying them as our most trusted compass?
 
-**Explore the pillars of this journey:**
-- **[My Story](/about/story/):** The pivotal moments, from a Panasonic radio to a pandemic reinvention.
-- **[Philosophy](/about/philosophy/):** The core principles of Rooted Nomadism.
-- **[The Human Constellation](/about/testimonials/):** The people who became my guides.
+---
+
+### Explore the Pillars of This Journey
+
+*   **[My Story: From Olive Groves to Algorithmic Sardines](/about/story/olive-trees-and-algorithms/)**  
+    *The foundational crisis that birthed this blog and the philosophy of Rooted Nomadism. This is the "why" behind it all.*
+
+*   **[The Philosophy of Rooted Nomadism](/about/philosophy/salah-philosophy/)**  
+    *A deep dive into the core principles, frameworks, and mental models that guide this journey, from the Algorithmic Sardine to the five pillars of practice.*
+
+*   **[The Human Constellation: How Three Strangers Forged My Nomadic Identity](/about/testimonials/the-human-constellation/)**  
+    *Discover the key encounters that shaped my path, proving that the myth of the solitary nomad is a lie. We navigate by human light.*

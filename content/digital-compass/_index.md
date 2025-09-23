@@ -11,7 +11,15 @@ Welcome to the Digital Compass. In a world of infinite digital horizons, a simpl
 
 This section provides the tools, strategies, and mindsets for the modern nomad. We explore how to choose destinations that nourish the soul, curate a tech toolkit that serves our humanity, and anticipate the future without losing sight of our past. This is not about finding shortcuts, but about charting a more meaningful course.
 
-**Chart your course with these key instruments:**
-- **[Nomad Toolkit](/digital-compass/nomad-toolkit/):** Frameworks and tools for soulful productivity.
-- **[Nomad Destinations](/digital-compass/nomad-destinations/):** The art of choosing where to plant your roots.
-- **[Future of Nomadism](/digital-compass/future-of-nomadism/):** Exploring the horizon where technology meets tradition.
+---
+
+### Chart Your Course with These Key Instruments
+
+*   **[The Zellige Blueprint: A Nomad’s Guide to Soulful Productivity](/digital-compass/nomad-toolkit/zellige-blueprint/)**  
+    *My signature system for organizing your digital life with the precision and beauty of an ancient artisan.*
+
+*   **[The Canary Melon Compass: A Rooted Nomad's Guide to Choosing Destinations](/digital-compass/nomad-destinations/canary-melon-compass-nomad-destinations/)**  
+    *A soulful framework for finding a new home based on cultural flavor, resilience, and personal resonance.*
+
+*   **[When My Grandmother's Zellige Tiles Taught ChatGPT Patience](/digital-compass/future-of-nomadism/how-to-use-ai-like-a-scholar/)**  
+    *Learn patience-driven techniques for a more ethical and meaningful interaction with AI.*

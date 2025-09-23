@@ -11,7 +11,15 @@ Welcome to Rooted Futures. This is our shared space for envisioning a future whe
 
 This is not about utopian speculation. It is about applying the timeless principles of resilience, connection, and deep-rooted wisdom to the challenges and opportunities of tomorrow. We are the bridge-keepers between the ancient and the algorithmic.
 
-**Explore the path forward:**
-- **[AI Ancestry](/rooted-futures/ai-ancestry/):** Teaching machines the language of the soul.
-- **[Sustainable Nomadism](/rooted-futures/sustainable-nomadism/):** Pioneering regenerative ways to live and travel.
-- **[Post-Digital Detox](/rooted-futures/post-digital-detox/):** Crafting a mindful relationship with technology.
+---
+
+### Explore the Path Forward
+
+*   **[The Olive Tree Oracle: Can We Teach AI the Wisdom of Our Ancestral Roots?](/rooted-futures/ai-ancestry/olive-tree-oracle/)**  
+    *Discover the Olive Tree Protocol, a framework for transforming AI from a cold data-miner into a respectful steward of cultural wisdom.*
+
+*   **[The Jbala Resilience Quartet: Ancestral Wisdom for Thriving in Chaos](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/)**  
+    *Learn timeless secrets for resilience from the daily rhythms of an ancient Moroccan mountain village.*
+
+*   **[Olive Grove Digital Detox: 3 Ancestral Rituals to Reset Your Nervous System](/rooted-futures/post-digital-detox/olive-grove-rituals-salah-nomad/)**  
+    *Move beyond simple detoxes with powerful, grounding rituals designed to rewire your relationship with technology.*

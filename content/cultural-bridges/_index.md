@@ -11,8 +11,18 @@ I am a cultural translator. My work is to find the echo of a Moroccan souk in a 
 
 Here, we journey across the fertile spaces *between* cultures. We explore how food carries memory across oceans, how ancient crafts hold the blueprints for ethical technology, and how the languages we speak shape the worlds we build. This is not an academic exercise; it is an exploration of the living, breathing connections that unite us all as citizens of the same ancient, sun-drenched sea.
 
-**Explore the threads of this tapestry:**
-- **[Food](/cultural-bridges/food/):** Where every dish tells a story of migration.
-- **[Art & Craftsmanship](/cultural-bridges/art/):** Wisdom carried in the hands of artisans.
-- **[Language & Communication](/cultural-bridges/language/):** The words that build worlds.
-- **[Migration & Diaspora](/cultural-bridges/migration/):** The art of carrying home within you.
+---
+
+### Explore the Threads of This Tapestry
+
+*   **[Exile Isn't Erasure: The Morisco Compass for Modern Nomads](/cultural-bridges/migration/morisco-compass-modern-diasporas/)**  
+    *The cornerstone of this section, exploring how ancestral displacement forges a powerful tool for navigating a hybrid identity.*
+
+*   **[Zellige Heart, Digital Mind: How Andalusian Craftsmanship Revolutionizes Ethical UX Design](/cultural-bridges/art/zellige-heart-digital-mind/)**  
+    *A deep dive into how ancient artisan principles can provide a moral and practical compass for building modern technology.*
+
+*   **[The Ghost of Ritual Hammam Europe: A Post-Mortem on a Cross-Cultural Dream](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)**  
+    *The hard-won lessons from a failed Franco-Moroccan startup, revealing the invisible fault lines in cross-cultural collaboration.*
+
+*   **[When Algorithms Meet Al-Andalus: My Northern Moroccan Dialect vs. ChatGPT](/cultural-bridges/language/chatgpt-darija-journey/)**  
+    *A profound and often humorous journey into what technology can, and cannot, translate about our cultural soul.*
