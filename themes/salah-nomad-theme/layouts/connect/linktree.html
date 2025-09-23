@@ -11,26 +11,48 @@
     <div class="linktree-container">
       <div class="linktree-grid">
 
-        {{/* --- COLONNE DE GAUCHE : Liens Essentiels (Inchangée) --- */}}
+        {{/* --- COLONNE DE GAUCHE : Le Parcours d'Intégration --- */}}
         <div class="link-group">
-          <h2><span>🌍</span> {{ i18n "linktreeEssentialLinks" | default "Essential Links" }}</h2>
-          <a href="{{ "/" | relLangURL }}" class="link-card">
-            {{ with partial "icons/document.svg" . }}{{ . }}{{ else }}📝{{ end }}
+          <h2><span>🧭</span> Your Compass (Start Here)</h2>
+          
+          <a href="{{ "/compass/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span>
             <div class="link-card-text">
-                <strong>Latest Blog Posts</strong>
+                <strong>The Compass (Frameworks)</strong>
+                <small>Discover the core philosophy & tools.</small>
             </div>
             <span class="link-card-arrow">→</span>
           </a>
-          <a href="{{ "/malaga-codex/" | relLangURL }}" class="link-card">
-            {{ with partial "icons/map.svg" . }}{{ . }}{{ else }}🗺️{{ end }}
+        
+          <a href="{{ "/about/story/olive-trees-and-algorithms/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
             <div class="link-card-text">
-                <strong>Málaga Codex</strong>
+                <strong>My Story: From Clay to Code</strong>
+                <small>The journey that forged this philosophy.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+          
+          <a href="{{ "/digital-compass/nomad-toolkit/zellige-blueprint/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></span>
+            <div class="link-card-text">
+                <strong>The Zellige Blueprint</strong>
+                <small>A system for soulful productivity.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+          
+          <a href="#footer-newsletter" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+            <div class="link-card-text">
+                <strong>Join "Mediterranean Insights"</strong>
+                <small>My weekly letter on wisdom & work.</small>
             </div>
             <span class="link-card-arrow">→</span>
           </a>
         </div>
 
-        {{/* --- MODIFICATION : La colonne de droite contient maintenant notre widget --- */}}
+        {{/* --- COLONNE DE DROITE : Widget "Journey Deeper" --- */}}
         <div class="link-group">
           <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span> Journey Deeper</h2>
           <div class="linktree-widget-content">
@@ -40,7 +62,7 @@
         </div>
       </div> 
 
-      {{/* --- MODIFICATION : Les réseaux sociaux sont maintenant en pleine largeur en dessous --- */}}
+      {{/* --- LIENS SOCIAUX en pleine largeur --- */}}
       {{ $socialLinks := slice }}
       {{ range .Site.Params.social_links }}
         {{ if .subtitle }}{{ $socialLinks = $socialLinks | append . }}{{ end }}
@@ -66,14 +88,22 @@
 
     </div> 
 
+    {{/* --- NEWSLETTER DANS LE FOOTER --- */}}
     <footer class="linktree-footer">
-      {{ with .Site.Params.linktreeFooterText | default "« Want more rooted nomad insights? [Start here](/about/) »" }}
-        <p>{{ . | $.Page.RenderString }}</p>
-      {{ end }}
-      {{ with .Site.Params.linktreeAffiliateDisclaimer | default "Some links may be affiliates, gently nourishing this caravan – thanks for your support!" }}
-        <small>{{ . }}</small>
-      {{ end }}
+      <div class="footer-newsletter-section">
+        <h3>Become a Rooted Insider</h3>
+        <p>Join the "Mediterranean Insights" newsletter for exclusive stories and frameworks not found on the blog.</p>
+        {{ partial "newsletter-form.html" . }}
+      </div>
+      <div class="footer-bottom-text">
+        {{ with .Site.Params.linktreeFooterText | default "« Want more rooted nomad insights? [Start here](/about/) »" }}
+          <p>{{ . | $.Page.RenderString }}</p>
+        {{ end }}
+        {{ with .Site.Params.linktreeAffiliateDisclaimer | default "Some links may be affiliates, gently nourishing this caravan – thanks for your support!" }}
+          <small>{{ . }}</small>
+        {{ end }}
+      </div>
     </footer>
   </div> 
 {{ end }} 
-{{ define "sidebar" }}{{ end }} 
+{{ define "sidebar" }}{{ end }}
