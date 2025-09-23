@@ -44,7 +44,7 @@ If Pieter showed me *who* I was, it was Sally who taught me how to share it. Yea
 
 What followed was a summer in a **Volkswagen camper van**, crisscrossing England. Sally taught me to see my work not as obscure heritage, but as a bridge. Like the Phoenician traders of old, we weren't just exchanging goods; we were sharing stories. The most profound moment came in a small town market. A woman picked up my clay cream, inhaled deeply, and whispered, **"This smells like my grandmother's garden."**
 
-In that instant, I understood. This wasn't about beauty products. It was about transmitting memory through skin, a story I've told in more detail in my journey from [**ancient clay to a digital legacy**](/about/story/olive-trees-and-algorithms/). Sally had built the road between my ancestral mountains and the global marketplace. **She proved that heritage can travel, but it needs a bridge of pragmatism and human trust to cross.**
+In that instant, I understood. This wasn't about beauty products. It was about transmitting memory through skin, a story I've told in more detail in my journey from [**ancient clay to a digital legacy**](/about/story/olive-trees-and-algorithms/). She had [built the road](/cultural-bridges/collaborations/ghost-of-ritual-hammam/) between my ancestral mountains and the global marketplace. **She proved that heritage can travel, but it needs a bridge of pragmatism and human trust to cross.**
 
 {{< figure src="images/sally-clay-market.jpg" alt="Sally introducing customers to Moroccan clay products at a UK market" caption="The bridge builder: Sally turning local heritage into global connection at a UK market." >}}
 

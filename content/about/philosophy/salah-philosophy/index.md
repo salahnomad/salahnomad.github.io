@@ -64,11 +64,11 @@ These are not abstract ideals. They are five actionable pillars I use to build a
 
 #### 1. Code with Clay
 *"Let your digital creations be hand-thrown vessels, not plastic cups."*  
-This means infusing your work with personal, cultural texture. When my first venture, [*Ritual Hammam Europe*](/cultural-bridges/collaborations/ghost-of-ritual-hammam/), failed, it was because we focused on sleek packaging instead of the story of the clay itself. Today, I use technology to amplify human craftsmanship, not erase it.
+This means infusing your work with [personal, cultural texture](/cultural-bridges/food/saffron-argan-algorithms/). When my first venture, [*Ritual Hammam Europe*](/cultural-bridges/collaborations/ghost-of-ritual-hammam/), failed, it was because we focused on sleek packaging instead of the story of the clay itself. Today, I use technology to amplify human craftsmanship, not erase it.
 
 #### 2. Storm-Proof Roots
 *"Resilience isn’t rigidity. It’s the wisdom of a cork oak."*  
-When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**](/about/story/olive-trees-and-algorithms/), I learned from the trees. True resilience comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
+When the pandemic shattered my business, as I shared in [**Olive Trees & Algorithms**](/about/story/olive-trees-and-algorithms/), I learned from the trees. [True resilience](/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/) comes from nourishing hidden networks (your community) and storing sustenance (turning fleeting success into evergreen skills and content).
 
 #### 3. Depth Over Distance
 *"Collect meaning, not passport stamps."*  

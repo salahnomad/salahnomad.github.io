@@ -31,7 +31,7 @@ cta: true
 
 ## I. The Scent of Dry Earth at 3 AM
 
-*The Mediterranean doesn't lie. That night in Málaga, watching pixelated olive harvest videos from Ksar El-Kébir, I tasted the bitter truth: my digital nomad dream had become a gilded cage. The world was at my fingertips, yet I ached for the specific scent of dry earth after rain in my hometown. Here's how [Mediterranean truths](/about/philosophy/salah-philosophy/) saved my soul from rootless freedom...*
+*The Mediterranean doesn't lie. That night in Málaga, watching pixelated olive harvest videos from Ksar El-Kébir, I tasted the bitter truth: my digital nomad dream had become a [gilded cage](/about/story/olive-trees-and-algorithms/). The world was at my fingertips, yet I ached for the specific scent of dry earth after rain in my hometown. Here's how [Mediterranean truths](/about/philosophy/salah-philosophy/) saved my soul from rootless freedom...*
 
 ![Vintage radio with global light waves](images/radio-waves.jpg "Confinement lifeline: where inner energy met cosmic vibrations")
 

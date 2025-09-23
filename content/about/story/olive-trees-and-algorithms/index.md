@@ -49,7 +49,7 @@ The world had forced my hand. My business was dead. It was time to return to the
 I retreated to the Jbala mountains, to the olive groves that held my childhood. Here, time is not measured in deadlines, but in the slow ripening of fruit. Here, I remembered:
 - My grandmother singing Amazigh songs while pressing argan oil.
 - My father reading H.G. Wells' *The Time Machine* under a gas lamp.
-- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
+- The *click-hiss* of the [shortwave radio](/cultural-bridges/tech/cybercafe-digital-scarcity/) that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
 
 Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy]({{< relref "/about/philosophy/salah-philosophy" >}}).
 

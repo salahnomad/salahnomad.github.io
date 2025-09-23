@@ -25,7 +25,7 @@ By 2005, I’d become:
 
 ## Cross-Border Sparks
 ### Nathalie & The Phantom Commerce
-In 2006, a French accountant named Nathalie helped me craft a business plan rejected by every Moroccan bank. *“You don’t need their permission to conquer your market,”* she wrote via MSN. Though visas kept us apart, she ignited my belief that borders are mental constructs.
+In 2006, a French accountant named Nathalie helped me craft a business plan rejected by every Moroccan bank. *“You don’t need their permission to conquer your market,”* she wrote via MSN. Though [visas](/resources/visa-hacks/a-tale-of-two-visas/) kept us apart, she ignited my belief that borders are mental constructs.
 
 ### Sally’s Clay Epiphany
 Two tons of Atlas Mountain clay changed everything. When British entrepreneur Sally demanded I visit England in 2009, I watched Londoners rub Moroccan earth into chapped hands. The campervan markets taught me: *Authenticity travels farther than passports.*
