@@ -64,7 +64,7 @@ The Alcazaba was not built on virgin ground. Its foundations are laid directly u
 
 This is the deepest secret of Málaga's success: it is a city that understands the power of **integration over disruption**.
 
-Silicon Valley's mantra is often to "move fast and break things." Málaga's unwritten code is to "move thoughtfully and integrate things." It blends its deep cultural heritage—flamenco, [gastronomy](/malaga-codex/local-rituals/espetos-epiphanies/), art—with its technological ambitions. You'll find a UX designer taking inspiration from Picasso, a data scientist finding a new perspective after watching an Easter procession, or a startup holding its launch party in a 17th-century palace.
+Silicon Valley's mantra is often to "move fast and break things." Málaga's unwritten code is to "move thoughtfully and integrate things." It blends its [deep cultural heritage](/cultural-bridges/migration/morisco-compass-modern-diasporas/)—flamenco, [gastronomy](/malaga-codex/local-rituals/espetos-epiphanies/), art—with its technological ambitions. You'll find a UX designer taking inspiration from Picasso, a data scientist finding a new perspective after watching an Easter procession, or a startup holding its launch party in a 17th-century palace.
 
 This layering of old and new creates a culture that is not just innovative, but also deeply human and resilient. It doesn't chase fleeting trends; it weaves them into a rich, ancient tapestry.
 

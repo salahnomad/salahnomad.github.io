@@ -31,7 +31,7 @@ Down on Playa de la Malagueta, an *espetero* began his ancient ritual. As I watc
 What looks like simple grilling is actually a 200-year-old **living algorithm**, a dance between human, element, and time, passed down from the fishermen of El Palo. To see it is to understand a different kind of operating system.
 
 *   **The Hardware:** A *caña*—a reed or bamboo rod sharpened to a precise 45° angle.
-*   **The Data:** The sardines themselves. The best begin their journey in the rich Atlantic waters near Larache—my Moroccan hometown—before migrating through the Strait of Gibraltar. Their flavor carries the memory of two shores, just like [the journey of a Rooted Nomad]({{< relref "/about/philosophy/salah-philosophy" >}}).
+*   **The Data:** The sardines themselves. The best begin their journey in the rich Atlantic waters near Larache—my Moroccan hometown—before migrating through the Strait of Gibraltar. Their flavor [carries the memory of two shores]({{< relref "/ebook/algorithmic-sardines" >}}), just like the journey of a Rooted Nomad.
 *   **The Server:** A boat filled with sand, cradling olive wood embers burning at a steady 650°C.
 *   **The Code:** The *espetero*'s hands execute nature's perfect algorithm.
     ```python

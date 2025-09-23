@@ -61,7 +61,7 @@ Outside, the vibrant heart of Soho pulsed with life. I had achieved geographic f
 ---
 > #### **The Day Zellige Solved My Code**
 >
-> During the 2023 Feria, stuck on an algorithm bug in that glass box, I escaped to **La Aduana**'s courtyard. Tracing a 300-year-old zellige pattern, the solution appeared - the recursive tile logic mirrored my code flaw. **Functional beauty is a timeless algorithm.**
+> During the 2023 Feria, stuck on an algorithm bug in that glass box, I escaped to **La Aduana**'s courtyard. Tracing a 300-year-old zellige pattern, the solution appeared - the recursive tile logic mirrored my code flaw. **[Functional beauty](/cultural-bridges/art/zellige-heart-digital-mind/) is a timeless algorithm.**
 ---
 
 ### 2. The Mediterranean Triad: Your Productivity Compass
