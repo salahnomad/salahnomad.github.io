@@ -13,7 +13,7 @@ Here, we will learn to read the city's soul. We will uncover the design principl
 
 ---
 
-### Begin Deciphering the Codex
+### Start with Our Foundational Guides
 
 *   **[The Alcazaba's Secret Code: How Málaga's Moorish Soul Informs its Digital Renaissance](/malaga-codex/history-reborn/alcazabas-secret-code/)**  
     *Discover how the ancient design principles of Málaga's Moorish fortress hold the blueprint for its modern digital ecosystem.*
@@ -23,3 +23,22 @@ Here, we will learn to read the city's soul. We will uncover the design principl
 
 *   **[Málaga Coworking Sanctuaries: A Rooted Nomad's Expert Guide](/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/)**  
     *Find workspaces where Andalusian soul meets digital flow, transforming how and where you work.*
+
+---
+
+### Or, Explore by Topic
+
+<div class="subsection-grid">
+    <a href="/malaga-codex/history-reborn/" class="subsection-card">
+        <h4>History Reborn</h4>
+        <p>How the past shapes Málaga's innovative present.</p>
+    </a>
+    <a href="/malaga-codex/local-rituals/" class="subsection-card">
+        <h4>Local Rituals</h4>
+        <p>The daily ceremonies that reveal the city's heart.</p>
+    </a>
+    <a href="/malaga-codex/coworking-gems/" class="subsection-card">
+        <h4>Coworking Gems</h4>
+        <p>Sanctuaries for work, soul, and connection.</p>
+    </a>
+</div>

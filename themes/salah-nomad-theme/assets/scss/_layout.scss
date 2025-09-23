@@ -81,3 +81,60 @@
       }
   }
 }
+
+// ==========================================================================
+// Subsection Grid - Le Jardin Japonais (Styles pour les _index.md)
+// ==========================================================================
+
+.subsection-grid {
+  display: grid;
+  // Sur mobile, une seule colonne.
+  grid-template-columns: 1fr;
+  gap: 1.5rem; // Espace entre les cartes
+  margin-top: 2rem;
+  margin-bottom: 3rem; // Espace avant la liste d'articles automatique
+
+  // Sur les tablettes et plus, passer à 2 colonnes.
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Sur les grands écrans, on peut envisager 3 colonnes si beaucoup d'items.
+  // Pour l'instant, 2 colonnes est plus élégant et moins chargé.
+  // @media (min-width: 992px) {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
+}
+
+.subsection-card {
+  display: block; // Pour que le lien remplisse toute la carte
+  text-decoration: none;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius); // Utilise le radius global de ton thème
+  background-color: var(--card-bg);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 100%; // Assure que les cartes sur une même ligne ont la même hauteur
+
+  &:hover {
+    transform: translateY(-5px); // Effet de lévitation subtil
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color); // Utilise la couleur primaire (le bleu-vert) au survol
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); // Titre de la carte avec la couleur d'accent
+    font-size: 1.25rem;
+    font-weight: 600; // Poppins semibold
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--text-color-light); // Couleur de texte légèrement plus claire pour la description
+    font-family: var(--font-family-body); // Assure la police Lora
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}

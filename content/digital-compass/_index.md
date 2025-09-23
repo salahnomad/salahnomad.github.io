@@ -13,7 +13,7 @@ This section provides the tools, strategies, and mindsets for the modern nomad. 
 
 ---
 
-### Chart Your Course with These Key Instruments
+### Start with Our Foundational Guides
 
 *   **[The Zellige Blueprint: A Nomad’s Guide to Soulful Productivity](/digital-compass/nomad-toolkit/zellige-blueprint/)**  
     *My signature system for organizing your digital life with the precision and beauty of an ancient artisan.*
@@ -23,3 +23,26 @@ This section provides the tools, strategies, and mindsets for the modern nomad. 
 
 *   **[When My Grandmother's Zellige Tiles Taught ChatGPT Patience](/digital-compass/future-of-nomadism/how-to-use-ai-like-a-scholar/)**  
     *Learn patience-driven techniques for a more ethical and meaningful interaction with AI.*
+
+---
+
+### Or, Explore by Topic
+
+<div class="subsection-grid">
+    <a href="/digital-compass/nomad-toolkit/" class="subsection-card">
+        <h4>Nomad Toolkit</h4>
+        <p>Frameworks and tools for soulful productivity.</p>
+    </a>
+    <a href="/digital-compass/nomad-destinations/" class="subsection-card">
+        <h4>Nomad Destinations</h4>
+        <p>The art of choosing where to plant your roots.</p>
+    </a>
+    <a href="/digital-compass/future-of-nomadism/" class="subsection-card">
+        <h4>Future of Nomadism</h4>
+        <p>Exploring the horizon where technology meets tradition.</p>
+    </a>
+     <a href="/digital-compass/cultural-design/" class="subsection-card">
+        <h4>Cultural Design</h4>
+        <p>Weaving heritage into our digital experiences.</p>
+    </a>
+</div>

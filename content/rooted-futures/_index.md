@@ -13,7 +13,7 @@ This is not about utopian speculation. It is about applying the timeless princip
 
 ---
 
-### Explore the Path Forward
+### Start with Our Core Frameworks for the Future
 
 *   **[The Olive Tree Oracle: Can We Teach AI the Wisdom of Our Ancestral Roots?](/rooted-futures/ai-ancestry/olive-tree-oracle/)**  
     *Discover the Olive Tree Protocol, a framework for transforming AI from a cold data-miner into a respectful steward of cultural wisdom.*
@@ -23,3 +23,22 @@ This is not about utopian speculation. It is about applying the timeless princip
 
 *   **[Olive Grove Digital Detox: 3 Ancestral Rituals to Reset Your Nervous System](/rooted-futures/post-digital-detox/olive-grove-rituals-salah-nomad/)**  
     *Move beyond simple detoxes with powerful, grounding rituals designed to rewire your relationship with technology.*
+
+---
+
+### Or, Explore by Topic
+
+<div class="subsection-grid">
+    <a href="/rooted-futures/ai-ancestry/" class="subsection-card">
+        <h4>AI Ancestry</h4>
+        <p>Teaching machines the language of the soul.</p>
+    </a>
+    <a href="/rooted-futures/sustainable-nomadism/" class="subsection-card">
+        <h4>Sustainable Nomadism</h4>
+        <p>Pioneering regenerative ways to live and travel.</p>
+    </a>
+    <a href="/rooted-futures/post-digital-detox/" class="subsection-card">
+        <h4>Post-Digital Detox</h4>
+        <p>Crafting a mindful relationship with technology.</p>
+    </a>
+</div>

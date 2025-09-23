@@ -15,13 +15,32 @@ It's here that I share the foundational stories, the hard-won philosophy, and th
 
 ---
 
-### Explore the Pillars of This Journey
+### Start with Our Foundational Stories
 
 *   **[My Story: From Olive Groves to Algorithmic Sardines](/about/story/olive-trees-and-algorithms/)**  
     *The foundational crisis that birthed this blog and the philosophy of Rooted Nomadism. This is the "why" behind it all.*
 
 *   **[The Philosophy of Rooted Nomadism](/about/philosophy/salah-philosophy/)**  
-    *A deep dive into the core principles, frameworks, and mental models that guide this journey, from the Algorithmic Sardine to the five pillars of practice.*
+    *A deep dive into the core principles, frameworks, and mental models that guide this journey.*
 
 *   **[The Human Constellation: How Three Strangers Forged My Nomadic Identity](/about/testimonials/the-human-constellation/)**  
-    *Discover the key encounters that shaped my path, proving that the myth of the solitary nomad is a lie. We navigate by human light.*
+    *Discover the key encounters that shaped my path, proving that no nomad is an island.*
+
+---
+
+### Or, Explore by Topic
+
+<div class="subsection-grid">
+    <a href="/about/story/" class="subsection-card">
+        <h4>My Story</h4>
+        <p>The pivotal moments, from a Panasonic radio to a pandemic reinvention.</p>
+    </a>
+    <a href="/about/philosophy/" class="subsection-card">
+        <h4>Philosophy</h4>
+        <p>The core principles of Rooted Nomadism.</p>
+    </a>
+    <a href="/about/testimonials/" class="subsection-card">
+        <h4>The Human Constellation</h4>
+        <p>The people who became my guides and mirrors.</p>
+    </a>
+</div>
