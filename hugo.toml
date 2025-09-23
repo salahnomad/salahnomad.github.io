@@ -6,7 +6,7 @@
 
 baseURL = 'https://salahnomad.com/' # MODIFIÉ: URL finale pour production
 languageCode = 'en-us'
-title = 'Salah Nomad' # Titre principal du site
+title = 'Salah Nomad: Where Roots & Wi-Fi Meet' # <<< LIGNE MODIFIÉE
 theme = "salah-nomad-theme"
 enableRobotsTXT = true
 
@@ -17,7 +17,7 @@ enableRobotsTXT = true
 # Paramètres du Thème et du Site                                             #
 ###############################################################################
 [params]
-  description = "Salah Nomad's Blog: Discover Rooted Nomadism, a philosophy for thriving in a modern world. Explore Mediterranean wisdom, digital alchemy, and timeless strategies for a resilient life, from Málaga, Spain."
+  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons." # <<< LIGNE MODIFIÉE
   logo = "/images/Salah-Nomad-Logo.png" # Chemin depuis static/
   logo_dark = "/images/Salah-Nomad-Logo-Dark.png" # Chemin depuis static/
   dateFormat = "January 2, 2006"
