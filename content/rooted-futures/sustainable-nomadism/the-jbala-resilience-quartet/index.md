@@ -51,7 +51,7 @@ Like Anezzar, market shifts are inevitable. Build "terraces"—diversified incom
 Every Jbala home had its **Tagra**, the conical clay pot where humble ingredients transformed through hours of patient simmering. "Rush the Tagra, ruin the feast," my grandmother would say. #TagraWisdom
 
 *Nomad Translation:*
-Your creative energy is the Tagra. Maintain a steady, low heat—through focused deep work balanced with rest—rather than boiling over with the frantic heat of "hustle." True creation requires patient containment.
+Your creative energy is the Tagra. Maintain a steady, low heat—through [focused deep work balanced with rest](/resources/remote-work-zen/thermae-flow-state-deep-work/)—rather than boiling over with the frantic heat of "hustle." True creation requires patient containment.
 
 {{< figure src="images/tagra-clay-pot-jbala-wisdom.jpg" alt="A traditional, rustic Jbala tagra, a conical clay cooking pot, simmering gently over a charcoal fire." caption="Tagra wisdom: True nourishment requires patient containment." >}}
 

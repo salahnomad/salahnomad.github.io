@@ -33,7 +33,7 @@ The scent of olive wood smoke still clings to my memory when I recall my first p
 
 **This radio taught me three sacred truths of connection:**  
 1. **Distance dissolves at 49 meters** - The magic wavelength where BBC voices materialized through static like desert mirages  
-2. **Scarcity breeds presence** - Each captured frequency demanded full attention, like a *maâlem* crafting zellige  
+2. **[Scarcity breeds presence](/cultural-bridges/tech/cybercafe-digital-scarcity/)** - Each captured frequency demanded full attention, like a *maâlem* crafting zellige  
 3. **Patience is bandwidth** - Waiting for 2am when atmospherics cleared taught me more than any [system for soulful productivity](/digital-compass/nomad-toolkit/zellige-blueprint/)  
 
 ### The Silent Flood
@@ -93,4 +93,4 @@ Tomorrow morning, perform a "Gibraltar Tuning" ritual:
 3. Listen only to your environment  
 What true signal emerges from the static of your life?  
 
-*"The most advanced technology is that which disappears, leaving only human connection." - Ancient Jbala proverb*  
+*"The most advanced technology is that which disappears, leaving only human connection." - Ancient Jbala proverb*

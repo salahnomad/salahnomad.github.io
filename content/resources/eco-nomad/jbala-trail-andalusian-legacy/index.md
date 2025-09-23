@@ -46,7 +46,7 @@ Regenerative travel begins with the radical act of listening. When you order **"
 - Ask elders: *"What did your grandparents call this place?"* before opening Google Maps  
 
 #### **2. The Artisan's Exchange (Economic Reciprocity)**
-The kasria isn't just a bowl. Its name comes from **Ksar** (el-Kébir), carved for centuries from Loukkos elms by master artisans. When you buy from cooperatives like the **Women Pottery Collective** in the old tannery district, you're investing in living heritage. My Morisco ancestors didn't just take land; they enriched it. Their zellige tilework fused with Berber patterns, creating a new art form.
+The kasria isn't just a bowl. Its name comes from **Ksar** (el-Kébir), carved for centuries from Loukkos elms by master artisans. When you buy from cooperatives like the **Women Pottery Collective** in the old tannery district, you're [investing in living heritage](/cultural-bridges/collaborations/ghost-of-ritual-hammam/). My Morisco ancestors didn't just take land; they enriched it. Their zellige tilework fused with Berber patterns, creating a new art form.
 
 **Modern Application:**  
 - Commission a kasria directly from artisans like Youssef  

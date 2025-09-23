@@ -33,7 +33,7 @@ That’s when it hit me: **True travel isn’t about consuming places. It’s ab
 
 The first step is to heal ourselves of what I call "landmark blindness." We are trained to look *at* things, but we have forgotten how to *see* the patterns that connect them.
 
-In Ksar el-Kébir, I once watched a *zellige* master work for hours. His hands didn’t just place tiles; they seemed to *listen* to their geometry. "Every mosaic," he told me, his voice raspy with clay dust, "whispers where the next piece belongs." That is the artisan’s gift: seeing not a collection of objects, but a living, breathing system of meaning.
+In Ksar el-Kébir, I once watched a [*zellige* master](/cultural-bridges/art/zellige-heart-digital-mind/) work for hours. His hands didn’t just place tiles; they seemed to *listen* to their geometry. "Every mosaic," he told me, his voice raspy with clay dust, "whispers where the next piece belongs." That is the artisan’s gift: seeing not a collection of objects, but a living, breathing system of meaning.
 
 {{< figure src="images/tourist-vs-traveler.jpg" alt="A split-screen image: a tourist takes a frantic selfie, while a traveler calmly sketches patterns in a bustling market." caption="The tourist looks at landmarks; the traveler sees the patterns between them." >}}
 
