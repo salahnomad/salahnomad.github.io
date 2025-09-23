@@ -51,7 +51,7 @@ I, on the other hand, was trying to share a **sacred ritual built on geographica
 
 For me, this journey to the source was non-negotiable. Every quarter, I would make the pilgrimage to this ancient borderland. I'd traverse the Atlas passes to where miners extract Ghassoul from seams formed when mountains and desert began their eternal dialogue. I needed to touch this earth myself, to ensure we used only clay formed at this precise geological crossroads—the same cleansing mineral my grandmother called "God's soap."
 
-The collision was profound. How could I explain that this 1000 km round trip wasn't a supply chain inefficiency, but the very essence of our value? That the Ghassoul's power came not just from its chemistry, but from its birthplace where mountains defy the desert? Saad saw a **product**. I was honoring a **pilgrimage to nature's frontier**.
+The collision was profound. How could I explain that this 1000 km round trip wasn't a supply chain inefficiency, but the very essence of our value? That the Ghassoul's power came not just from its chemistry, but from its birthplace where mountains defy the desert? Saad saw a **product**. I was honoring a [**pilgrimage to nature's frontier**](/resources/wellness-on-the-move/ancestral-nomad-wellness-kit/).
 
 #### **Fracture #3: The Contract vs. The Handshake (A Collision of Trust)**
 

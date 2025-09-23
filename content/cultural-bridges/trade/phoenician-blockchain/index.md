@@ -17,7 +17,7 @@ toc: true
 
 From my Málaga terrace, the Mediterranean whispers stories. As I trace Africa's coastline - that tangible link to my Moroccan roots - I see more than container ships. I see Phoenician galleys cutting through ancient waters, cedarwood hulls heavy with olive oil amphorae and Tyrian purple silk. These sailors were history's first global network architects.
 
-Yet beneath these same waves, another cargo flows: billions of terabytes through undersea cables. Financial transactions, creative works, digital identities - all funneled through modern Romes (Google, Meta, Amazon). We've built digital lives in their walled gardens, hoping emperors stay benevolent.
+Yet beneath these same waves, another cargo flows: billions of terabytes through undersea cables. Financial transactions, creative works, digital identities - all funneled through modern Romes (Google, Meta, Amazon). We've built [digital lives](/resources/nomad-tech-toolkit/evolving-nomad-toolkit/) in their walled gardens, hoping emperors stay benevolent.
 
 The revelation? Silicon Valley doesn't hold decentralized solutions. The most resilient blueprint was perfected here 3,000 years ago. Phoenicians didn't just trade goods; they engineered the first trust protocol - a human blockchain powering history's longest-running trade network.
 
