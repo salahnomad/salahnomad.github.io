@@ -1,8 +1,6 @@
 // assets/scss/pages/_linktree.scss
 @import '../variables'; 
 
-// ... (le code de .linktree-page-wrapper à .linktree-grid reste inchangé) ...
-
 .linktree-page-wrapper {
   // background-color: var(--color-background); 
 }
@@ -57,6 +55,40 @@
   }
 }
 
+// ==========================================================================
+// --- NOUVEAU BLOC DE STYLE POUR L'INTRODUCTION ---
+// ==========================================================================
+.linktree-intro {
+  padding: 2.5rem 0;
+  background-color: var(--color-background);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border-light);
+
+  .container {
+    max-width: 720px;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--color-text-headings);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+
+    strong {
+      color: var(--color-text-accent);
+      font-weight: 600;
+    }
+  }
+}
+// --- FIN DU NOUVEAU BLOC ---
+
 .linktree-container {
   @extend .container; 
   padding-top: $spacing-xl;
@@ -75,13 +107,9 @@
   }
 }
 
-// ==========================================================================
-// --- DÉBUT DE LA MODIFICATION STRATÉGIQUE ---
-// ==========================================================================
 .link-group {
-  // background-color: var(--color-background-alt); // ANCIENNE LIGNE (grise)
-  background-color: var(--color-background);    // NOUVELLE LIGNE : Fond plus subtil
-  border: 1px solid var(--color-border);       // NOUVELLE LIGNE : Bordure pour la structure
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
   padding: $spacing-lg;
   border-radius: $border-radius-lg;
   box-shadow: var(--box-shadow-medium); 
@@ -115,12 +143,7 @@
     }
   }
 }
-// ==========================================================================
-// --- FIN DE LA MODIFICATION STRATÉGIQUE ---
-// ==========================================================================
 
-
-// ... (le reste du fichier, de .link-card à la fin, reste inchangé) ...
 .link-card {
   display: flex;
   align-items: center;
@@ -209,30 +232,48 @@
 
 .linktree-footer {
   text-align: center;
-  padding: $spacing-xl $container-padding $spacing-xxl; 
+  padding-top: $spacing-xl; 
   margin-top: $spacing-lg;
   border-top: 1px solid var(--color-border-light);
 
-  p {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    margin-bottom: $spacing-sm; 
-    a {
-      color: var(--color-text-accent-secondary);
-      text-decoration: underline;
-      font-weight: $font-weight-semibold;
-      &:hover {
-        text-decoration: none;
-        color: darken($mediterranean-blue, 10%);
-      }
+  .footer-newsletter-section {
+    max-width: 500px;
+    margin: 0 auto $spacing-xl;
+    h3 {
+      font-family: var(--font-heading);
+      margin-bottom: $spacing-sm;
+    }
+    p {
+      font-family: var(--font-body);
+      color: var(--color-text-secondary);
+      margin-bottom: $spacing-lg;
+      font-size: 0.95rem;
     }
   }
-  small {
-    font-family: var(--font-body);
-    font-size: 0.85rem; 
-    color: var(--color-text-secondary);
-    line-height: 1.5;
+
+  .footer-bottom-text {
+    padding-bottom: $spacing-xxl;
+    p {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--color-text-primary);
+      margin-bottom: $spacing-sm; 
+      a {
+        color: var(--color-text-accent-secondary);
+        text-decoration: underline;
+        font-weight: $font-weight-semibold;
+        &:hover {
+          text-decoration: none;
+          color: darken($mediterranean-blue, 10%);
+        }
+      }
+    }
+    small {
+      font-family: var(--font-body);
+      font-size: 0.85rem; 
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
   }
 }
 
