@@ -1,6 +1,8 @@
 // assets/scss/pages/_linktree.scss
 @import '../variables'; 
 
+// ... (le code de .linktree-page-wrapper à .linktree-grid reste inchangé) ...
+
 .linktree-page-wrapper {
   // background-color: var(--color-background); 
 }
@@ -73,8 +75,13 @@
   }
 }
 
+// ==========================================================================
+// --- DÉBUT DE LA MODIFICATION STRATÉGIQUE ---
+// ==========================================================================
 .link-group {
-  background-color: var(--color-background-alt);
+  // background-color: var(--color-background-alt); // ANCIENNE LIGNE (grise)
+  background-color: var(--color-background);    // NOUVELLE LIGNE : Fond plus subtil
+  border: 1px solid var(--color-border);       // NOUVELLE LIGNE : Bordure pour la structure
   padding: $spacing-lg;
   border-radius: $border-radius-lg;
   box-shadow: var(--box-shadow-medium); 
@@ -108,7 +115,12 @@
     }
   }
 }
+// ==========================================================================
+// --- FIN DE LA MODIFICATION STRATÉGIQUE ---
+// ==========================================================================
 
+
+// ... (le reste du fichier, de .link-card à la fin, reste inchangé) ...
 .link-card {
   display: flex;
   align-items: center;
