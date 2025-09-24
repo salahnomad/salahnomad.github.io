@@ -6,7 +6,7 @@
 
 baseURL = 'https://salahnomad.com/' # MODIFIÉ: URL finale pour production
 languageCode = 'en-us'
-title = 'Salah Nomad: Where Roots & Wi-Fi Meet' # <<< LIGNE MODIFIÉE
+title = 'Salah Nomad: Where Roots & Wi-Fi Meet' 
 theme = "salah-nomad-theme"
 enableRobotsTXT = true
 
@@ -17,7 +17,7 @@ enableRobotsTXT = true
 # Paramètres du Thème et du Site                                             #
 ###############################################################################
 [params]
-  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons." # <<< LIGNE MODIFIÉE
+  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons."
   logo = "/images/Salah-Nomad-Logo.png" # Chemin depuis static/
   logo_dark = "/images/Salah-Nomad-Logo-Dark.png" # Chemin depuis static/
   dateFormat = "January 2, 2006"
@@ -33,25 +33,29 @@ enableRobotsTXT = true
   # Informations sur l'organisation/éditeur pour Schema.org
   [params.organization]
     name = "Salah Nomad"
-    logo = "/images/Salah-Nomad-Logo.png" # Doit exister dans static/images/
-    url = "https://salahnomad.com/" # Corrigé pour pointer vers le domaine principal
+    logo = "/images/Salah-Nomad-Logo.png" 
+    url = "https://salahnomad.com/" 
 
   # Informations globales sur l'auteur pour fallback et bio
   [params.author]
-  name = "Salah Nomad" # Nom de l'auteur par défaut/global
-  bio = "Writer and cultural translator. Salah Nomad shares actionable wisdom from his journey—from Mediterranean olive groves to Málaga's tech scene—to help you build a more resilient, meaningful, and rooted life in a world of constant movement."
-  image = "/ebook/algorithmic-sardines/images/salah-author-portrait.png" # <<< C'EST LA LIGNE CORRECTE ET MISE À JOUR
-  myStoryLink = "/about/story/" # Corrigé pour pointer vers la section story
-  url = "https://salahnomad.com/about/story/" # Lien vers la page "À propos" de l'auteur pour Schema
-  sameAs = [ # Liens sociaux de l'auteur pour Schema Person
-    "https://www.linkedin.com/in/salahnomad/",
-    "https://x.com/Salah_Nomad",
-    "https://www.instagram.com/salahnomad/",
-    "https://www.youtube.com/@SalahNomad",
-    "https://medium.com/@SalahNomad",
-    "https://www.facebook.com/salahnomad",
-    "https://www.quora.com/profile/SalahNomad"
-  ]
+    name = "Salah Nomad" 
+    bio = "Writer and cultural translator. Salah Nomad shares actionable wisdom from his journey—from Mediterranean olive groves to Málaga's tech scene—to help you build a more resilient, meaningful, and rooted life in a world of constant movement."
+    image = "/ebook/algorithmic-sardines/images/salah-author-portrait.png" 
+    myStoryLink = "/about/story/" 
+    url = "https://salahnomad.com/about/story/" 
+    sameAs = [ # Liens sociaux de l'auteur pour Schema Person
+      "https://www.linkedin.com/in/salahnomad/",
+      "https://x.com/Salah_Nomad",
+      "https://www.instagram.com/salahnomad/",
+      "https://www.youtube.com/@SalahNomad",
+      "https://medium.com/@SalahNomad",
+      "https://www.facebook.com/salahnomad",
+      "https://www.quora.com/profile/SalahNomad",
+      "https://www.tiktok.com/@salahnomad",        # <-- AJOUTÉ
+      "https://www.pinterest.com/salahnomad/",      # <-- AJOUTÉ
+      "https://www.reddit.com/user/salahnomad/",  # <-- AJOUTÉ
+      "https://github.com/salahnomad"               # <-- AJOUTÉ
+    ]
     twitter_handle = "@Salah_Nomad" # Pour twitter:creator dans seo.html
 
   # --- Paramètres de Design ---
@@ -73,7 +77,7 @@ enableRobotsTXT = true
     name = "LinkedIn"
     subtitle = "SEO meets Phoenician trade routes"
     iconPartial = "icons/social/logo-linkedin.svg"
-    url = "https://linkedin.com/in/salahnomad"
+    url = "https://www.linkedin.com/in/salahnomad/" # <-- MODIFIÉ pour être complet
   [[params.social_links]]
     name = "Instagram"
     subtitle = "Málaga sun & workflow"
@@ -114,11 +118,21 @@ enableRobotsTXT = true
     subtitle = "Visual inspiration"
     iconPartial = "icons/social/logo-pinterest.svg"
     url = "https://www.pinterest.com/salahnomad/"
+  [[params.social_links]] # <-- NOUVEAU BLOC AJOUTÉ
+    name = "GitHub"
+    subtitle = "The code behind the caravan"
+    iconPartial = "icons/social/logo-github.svg" 
+    url = "https://github.com/salahnomad"
   [[params.social_links]]
     name = "RSS"
     subtitle = "Stay updated"
     iconPartial = "icons/social/logo-rss.svg"
     url = "/index.xml"
+
+# ... (le reste du fichier, de [params.sidebar] à la fin, reste inchangé) ...
+# ...
+# J'ai omis le reste du fichier pour la clarté, car il n'y a pas de changements.
+# Assurez-vous de ne modifier que la partie [params] comme indiqué ci-dessus.
 
 
   # --- Visibilité Sidebar par Type de Page ---

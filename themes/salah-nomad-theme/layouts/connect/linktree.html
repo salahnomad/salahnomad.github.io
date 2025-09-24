@@ -1,30 +1,29 @@
 {{/* layouts/connect/linktree.html */}}
 {{ define "main" }}
   <div class="linktree-page-wrapper">
-		{{- $headerImage := "" -}}
-	{{- with .Params.header_image -}}
-	  {{- with $.Page.Resources.GetMatch . -}}
-		{{- $headerImage = (.Resize "1920x webp q85").RelPermalink -}}
-	  {{- end -}}
-	{{- end -}}
-	{{- if not $headerImage -}}
-	  {{- $headerImage = ("/images/malaga-rooftop.jpg" | relURL) -}}
-	{{- end -}}
-	<section class="linktree-header" style="background-image: url('{{ $headerImage }}');">
+    {{- $headerImage := "" -}}
+    {{- with .Params.header_image -}}
+      {{- with $.Resources.GetMatch . -}}
+        {{- $headerImage = (.Resize "1920x webp q85").RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $headerImage -}}
+      {{- $headerImage = ("/images/malaga-rooftop.jpg" | relURL) -}}
+    {{- end -}}
+    <section class="linktree-header" style="background-image: url('{{ $headerImage }}');">
       <div class="header-content">
         <h1>🌿 {{ .Site.Title }}</h1>
         {{ with .Site.Params.description }}<p>{{ . }}</p>{{ end }}
       </div>
     </section>
 
-    {{/* --- NOUVELLE SECTION D'INTRODUCTION --- */}}
+    {{/* --- SECTION D'INTRODUCTION --- */}}
     <div class="linktree-intro">
       <div class="container">
         <h2>Welcome to the Crossroads</h2>
         <p>You've arrived at the digital harbor of Salah Nomad and the philosophy of <strong>Rooted Nomadism</strong>. This isn't just a list of links; it's a map to a different way of living and working—one that blends ancient Mediterranean wisdom with modern digital life. I believe true freedom isn't about escaping our roots, but learning to carry them as our most trusted compass. Below, you'll find the tools, stories, and frameworks to begin your own journey. Welcome to the caravan.</p>
       </div>
     </div>
-    {{/* --- FIN DE LA NOUVELLE SECTION --- */}}
 
     <div class="linktree-container">
       <div class="linktree-grid">
@@ -78,9 +77,7 @@
             {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "linktree") }}
           </div>
           
-          {{/* --- LIGNE À AJOUTER : APPEL AU WIDGET DU LIVRE --- */}}
           {{ partial "widget-book-promo.html" . }}
-
         </div>
       </div> 
 
@@ -107,7 +104,6 @@
           </div>
         </div>
       {{ end }}
-
     </div> 
 
     {{/* --- NEWSLETTER DANS LE FOOTER --- */}}
@@ -127,5 +123,31 @@
       </div>
     </footer>
   </div> 
+
+  {{/* --- SCRIPT SCHEMA PLACÉ ICI, À L'INTÉRIEUR DU BLOC "MAIN" --- */}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Salah Nomad",
+      "alternateName": "SalahNomad",
+      "url": "{{ .Site.BaseURL | absURL }}",
+      "image": "{{ "/images/salah-author-portrait.png" | absURL }}",
+      "description": "Founder of the Rooted Nomadism philosophy, author, and digital strategist exploring the intersection of Mediterranean wisdom and modern technology.",
+      "sameAs": [
+        {{- range $index, $url := .Site.Params.author.sameAs -}}
+          "{{ $url }}"{{ if ne $index (sub (len $.Site.Params.author.sameAs) 1) }},{{ end }}
+        {{- end -}}
+      ]
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Rooted Nomadism",
+      "description": "A philosophy for thriving in a modern world by blending ancestral wisdom with a digital life, turning roots into a source of freedom."
+    }
+  }
+  </script>
 {{ end }} 
 {{ define "sidebar" }}{{ end }}
