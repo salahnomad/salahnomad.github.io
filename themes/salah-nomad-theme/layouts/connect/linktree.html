@@ -1,7 +1,16 @@
 {{/* layouts/connect/linktree.html */}}
 {{ define "main" }}
   <div class="linktree-page-wrapper">
-    <section class="linktree-header" {{ with .Site.Params.linktreeHeaderImage | default "/images/malaga-rooftop.jpg" }}style="background-image: url('{{ . | relURL }}');"{{ end }}>
+		{{- $headerImage := "" -}}
+	{{- with .Params.header_image -}}
+	  {{- with $.Page.Resources.GetMatch . -}}
+		{{- $headerImage = (.Resize "1920x webp q85").RelPermalink -}}
+	  {{- end -}}
+	{{- end -}}
+	{{- if not $headerImage -}}
+	  {{- $headerImage = ("/images/malaga-rooftop.jpg" | relURL) -}}
+	{{- end -}}
+	<section class="linktree-header" style="background-image: url('{{ $headerImage }}');">
       <div class="header-content">
         <h1>🌿 {{ .Site.Title }}</h1>
         {{ with .Site.Params.description }}<p>{{ . }}</p>{{ end }}

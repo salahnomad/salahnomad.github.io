@@ -7,5 +7,6 @@ sidebar: false
 comments: false 
 toc: false
 # Les images "featured" sont gérées par le bundle, pas besoin ici.
+header_image: "images/malaga-rooftop.jpg" # <-- AJOUTEZ CETTE LIGNE
 description: "Your central hub to connect with Salah Nomad. Explore the blog, discover the Málaga Codex, join the caravan on social media, and discover the full story of Rooted Nomadism."
 ---
