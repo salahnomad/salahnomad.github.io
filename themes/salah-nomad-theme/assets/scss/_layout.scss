@@ -138,3 +138,89 @@
     line-height: 1.6;
   }
 }
+/* ==========================================================================
+   Shortcode: Figure-Link Card
+   ========================================================================== */
+
+// Ce composant est un appel à l'action visuel utilisé pour guider les lecteurs
+// vers des pages ou articles piliers de l'écosystème de contenu.
+
+.figure-link-card {
+  display: block; // Pour que le lien englobe tout le bloc
+  text-decoration: none;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-lg, 12px); // Utilise la variable du thème ou une valeur par défaut
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  // Effet au survol : élévation subtile et mise en évidence
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-text-accent);
+
+    .figure-link-arrow {
+      transform: translateX(5px);
+    }
+  }
+
+  // Conteneur pour l'image
+  .figure-link-image-wrapper {
+    aspect-ratio: 16 / 9; // Ratio cinématique pour la cohérence visuelle
+    background-color: var(--color-background-tertiary); // Couleur de fond pendant le chargement
+    overflow: hidden;
+
+    // Assurer que la <figure> générée par le partial d'image ne casse pas le layout
+    .responsive-image-figure {
+      margin: 0;
+      height: 100%;
+    }
+
+    .figure-link-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // L'image remplit le conteneur sans se déformer
+      transition: transform 0.4s ease-out;
+    }
+  }
+  
+  &:hover .figure-link-image {
+      transform: scale(1.05); // Effet de zoom subtil sur l'image au survol
+  }
+
+  // Section pour la légende (titre et texte)
+  .figure-link-caption {
+    padding: 1.5rem;
+    position: relative; // Pour positionner la flèche
+  }
+
+  .figure-link-title {
+    font-family: var(--font-heading, sans-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-heading);
+  }
+
+  .figure-link-text {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text-secondary); // Couleur légèrement plus douce pour le texte descriptif
+  }
+
+  // La flèche qui indique une action cliquable
+  .figure-link-arrow {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--color-text-accent);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
