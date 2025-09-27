@@ -1,6 +1,6 @@
 ---
 title: "The Algorithmic Sardine: A Philosophy for Purposeful Movement"
-date: 2025-09-26
+date: 2025-09-27
 draft: false
 description: "Stop wandering. Start navigating. How the ancient migration of sardines between Spain and Morocco taught me to move through the world with intention and impact."
 categories: ["Rooted Journeys"]
