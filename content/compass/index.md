@@ -1,8 +1,8 @@
 ---
-title: "The Compass: Frameworks for a Rooted Life"
-date: 2025-09-19T10:00:00+02:00
+title: "The Compass: Your Guide to the Frameworks of a Rooted Life"
+date: 2025-09-19
 draft: false
-description: "Your official guide to the core frameworks of Rooted Nomadism. Discover the mental models and actionable systems for building a resilient, meaningful, and soulful life in a world of constant movement."
+description: "Your official guide to the core frameworks of Rooted Nomadism. Start with our foundational 'Operating System,' then explore the specialized tools for a resilient, meaningful, and soulful life."
 featured_image: "images/compass-frameworks-hero.jpg"
 featured_image_alt: "An antique brass compass open on a large, hand-drawn map of the Mediterranean, with key concepts like 'Zellige' and 'Olive Grove' sketched as constellations, symbolizing a guide to philosophical frameworks."
 layout: single
@@ -11,41 +11,67 @@ json_ld: |
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "The Compass: Frameworks for a Rooted Life",
-    "description": "Your official guide to the core frameworks of Rooted Nomadism. Discover the mental models and actionable systems for building a resilient, meaningful, and soulful life.",
+    "name": "The Compass: Your Guide to the Frameworks of a Rooted Life",
+    "description": "The official guide to the core frameworks of Rooted Nomadism. Start with our foundational 'Operating System,' then explore the specialized tools for a resilient, meaningful, and soulful life.",
     "url": "https://salahnomad.com/compass/",
+    "author": {
+      "@type": "Person",
+      "name": "Salah Nomad",
+      "url": "https://salahnomad.com/about/story/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Salah Nomad",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://salahnomad.com/images/Salah-Nomad-Logo.png"
+      }
+    },
     "mainEntity": {
       "@type": "ItemList",
+      "name": "Core Frameworks of Rooted Nomadism",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "The Zellige Blueprint",
-          "url": "https://salahnomad.com/digital-compass/nomad-toolkit/zellige-blueprint/"
+          "url": "https://salahnomad.com/digital-compass/nomad-toolkit/zellige-blueprint/",
+          "description": "The operating system for a composed life, inspired by artisan wisdom."
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "The Olive Grove Economy",
-          "url": "https://salahnomad.com/resources/nomad-finance/olive-grove-economy/"
+          "name": "The Baker's Code",
+          "url": "https://salahnomad.com/malaga-codex/local-rituals/bakers-code/",
+          "description": "A ritual for deep work and creative flow."
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "The Morisco Compass",
-          "url": "https://salahnomad.com/cultural-bridges/migration/morisco-compass-modern-diasporas/"
+          "name": "The Analog API",
+          "url": "https://salahnomad.com/cultural-bridges/tech/analog-api/",
+          "description": "A protocol for ethical digital communication."
         },
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "The Thermae Flow State",
-          "url": "https://salahnomad.com/resources/remote-work-zen/thermae-flow-state-deep-work/"
+          "name": "The Souk Algorithm",
+          "url": "https://salahnomad.com/resources/seo-alchemy/souk-algorithm/",
+          "description": "A strategy for human-centered value and authentic marketing."
         },
         {
           "@type": "ListItem",
           "position": 5,
-          "name": "Phoenician Merchant SEO",
-          "url": "https://salahnomad.com/resources/seo-alchemy/phoenician-merchant-seo/"
+          "name": "The Hammam Principle",
+          "url": "https://salahnomad.com/digital-compass/cultural-design/hammam-principle/",
+          "description": "A blueprint for building communities of trust."
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "The Weaver's Prompt",
+          "url": "https://salahnomad.com/rooted-futures/ai-ancestry/weavers-prompt/",
+          "description": "A method for creative and cultural AI collaboration."
         }
       ]
     }
@@ -57,90 +83,103 @@ json_ld: |
 # The Compass: Frameworks for a Rooted Life
 ## Lost in the Digital Sea? Find Your Anchor.
 
-The freedom to work from anywhere promised a world of adventure. But for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map.
+The freedom to work from anywhere promised adventure, but for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map.
 
 **You don't have to choose between your roots and your wings.**
 
-This page is your compass. It's the official guide to the philosophy of **Rooted Nomadism**—a collection of practical frameworks for building a life of freedom, meaning, and resilience. They were forged in my own journey, from the olive groves of Morocco to the tech hubs of Spain. They are now yours to explore.
+This page is your official guide to the philosophy of **Rooted Nomadism**. It's a library of practical, battle-tested frameworks designed to help you build a life of freedom, meaning, and resilience. Each framework was forged in my own twenty-year journey, from the olive groves of Morocco to the tech hubs of Spain. They are now yours to explore.
 
 ---
 
-### The Core Frameworks: Your Toolkit for a Meaningful Journey
+### Start Here: Your Foundational Operating System
+
+Every meaningful journey needs an operating system. Before exploring specialized tools, master the foundation. It's the meta-framework that organizes all the others.
+
+{{< figure-link
+  href="/digital-compass/nomad-toolkit/zellige-blueprint/"
+  img_src="images/zellige-blueprint-promo.jpg"
+  img_alt="A modern productivity interface with geometric Moroccan tile patterns"
+  caption_title="The Zellige Blueprint"
+  caption_text="The art of composing a life with intention. This is your core system for soulful productivity, inspired by 1,000-year-old artisan wisdom."
+>}}
+
+---
+
+### The Core Frameworks: Specialized Tools for Your Journey
+
+Once you have your foundation, explore these five pillars that apply the philosophy to the core challenges of a modern, independent life.
 
 <div class="framework-grid">
+  
+  {{< framework_card
+      img="baker-code-promo.jpg"
+      alt="Hands of a baker dusting flour, symbolizing the Baker's Code for deep work."
+      title="The Baker's Code"
+      for="A Ritual for Deep Work & Creative Flow"
+      link="/malaga-codex/local-rituals/bakers-code/"
+      link_text="Learn the Code &rarr;"
+  >}}
 
-  <div class="framework-card">
-    <div class="framework-icon">
-      {{< figure src="images/zellige-blueprint-icon.jpg" alt="A geometric icon representing the Zellige Blueprint." >}}
-    </div>
-    <h2>The Zellige Blueprint</h2>
-    <h4>A system for soulful productivity.</h4>
-    <p class="framework-description">Inspired by Moroccan artisans, this framework teaches you to compose a life of meaning, one intentional tile at a time—blending your work, passions, and personal life into a beautiful, cohesive mosaic.</p>
-    <a href="/digital-compass/nomad-toolkit/zellige-blueprint/" class="framework-link">Discover the Blueprint &rarr;</a>
-  </div>
+  {{< framework_card
+      img="api-promo.jpg"
+      alt="A vintage radio glowing, symbolizing the Analog API for digital ethics."
+      title="The Analog API"
+      for="A Protocol for Ethical Communication"
+      link="/cultural-bridges/tech/analog-api/"
+      link_text="Discover the Protocol &rarr;"
+  >}}
 
-  <div class="framework-card">
-    <div class="framework-icon">
-      {{< figure src="images/olive-grove-icon.jpg" alt="An icon of a resilient, ancient olive tree." >}}
-    </div>
-    <h2>The Olive Grove Economy</h2>
-    <h4>A blueprint for financial resilience.</h4>
-    <p class="framework-description">Move from the freelancer's constant hunt to the gardener's patient cultivation. This model redefines wealth, focusing on building sustainable, long-term assets that nourish your freedom, inspired by the enduring wisdom of millennial olive trees.</p>
-    <a href="/resources/nomad-finance/olive-grove-economy/" class="framework-link">Cultivate Your Grove &rarr;</a>
-  </div>
+  {{< framework_card
+      img="souk-promo.jpg"
+      alt="A spice merchant's hand offering saffron, symbolizing the Souk Algorithm for authentic value."
+      title="The Souk Algorithm"
+      for="A Strategy for Human-Centered Value"
+      link="/resources/seo-alchemy/souk-algorithm/"
+      link_text="Master the Algorithm &rarr;"
+  >}}
 
-  <div class="framework-card">
-    <div class="framework-icon">
-      {{< figure src="images/morisco-compass-icon.jpg" alt="An icon of an antique compass." >}}
-    </div>
-    <h2>The Morisco Compass</h2>
-    <h4>A guide for navigating a hybrid identity.</h4>
-    <p class="framework-description">Your history is not a weight; it's your true north. Born from the story of my Morisco ancestors' exile, this framework is a powerful tool for anyone living between worlds, helping you turn displacement into your greatest strength.</p>
-    <a href="/cultural-bridges/migration/morisco-compass-modern-diasporas/" class="framework-link">Find Your True North &rarr;</a>
-  </div>
-
-  <div class="framework-card">
-    <div class="framework-icon">
-      {{< figure src="images/thermae-flow-icon.png" alt="An icon representing the Thermae Flow State." >}}
-    </div>
-    <h2>The Thermae Flow State</h2>
-    <h4>An ancient ritual for deep work.</h4>
-    <p class="framework-description">In a world engineered for distraction, focus is a revolutionary act. This four-chambered ritual, inspired by the serene wisdom of Roman baths, is your practical guide to building a mental sanctuary and reclaiming your attention.</p>
-    <a href="/resources/remote-work-zen/thermae-flow-state-deep-work/" class="framework-link">Enter the Flow &rarr;</a>
-  </div>
-
-  <div class="framework-card">
-    <div class="framework-icon">
-      {{< figure src="images/phoenician-seo-icon.jpg" alt="An icon of a Phoenician ship navigating." >}}
-    </div>
-    <h2>Phoenician Merchant SEO</h2>
-    <h4>Timeless strategies for digital navigation.</h4>
-    <p class="framework-description">Stop chasing algorithms. This framework reframes SEO as the timeless art of building a digital 'port' so valuable that the currents of the web naturally flow to you, inspired by the trust-based networks of ancient Phoenician traders.</p>
-    <a href="/resources/seo-alchemy/phoenician-merchant-seo/" class="framework-link">Navigate the Digital Sea &rarr;</a>
-  </div>
+  {{< framework_card
+      img="hammam-promo.jpg"
+      alt="Light streaming into a steamy hammam, symbolizing the Hammam Principle for building trust."
+      title="The Hammam Principle"
+      for="A Blueprint for Building Community"
+      link="/digital-compass/cultural-design/hammam-principle/"
+      link_text="Design Your Space &rarr;"
+  >}}
+  
+  {{< framework_card
+      img="weaver-promo.jpg"
+      alt="Hands weaving a Berber carpet, symbolizing the Weaver's Prompt for creative AI."
+      title="The Weaver's Prompt"
+      for="A Method for Creative AI Collaboration"
+      link="/rooted-futures/ai-ancestry/weavers-prompt/"
+      link_text="Learn to Weave &rarr;"
+  >}}
 
 </div>
 
 ---
 
-### Your Journey Begins Here
+### Foundational Archives: Digging Deeper
 
-These frameworks are the map. The full story—the journey, the failures, the discoveries—is in my book.
+The ideas above are built upon years of exploration. For those who wish to explore the original texts that shaped this philosophy, here are some of our classic frameworks.
 
-<div class="book-cover-on-compass">
-  {{< figure src="images/algorithmic-sardines-cover.jpg" alt="The book cover for Algorithmic Sardines by Salah Nomad." >}}
-</div>
-
-*Algorithmic Sardines* is my memoir and manifesto. It's the deep dive into how I forged this philosophy and how you can apply it to build a life that is both profoundly free and deeply rooted.
-
-<div class="payhip-cta-container">
-  <a href="/ebook/coming-soon/" class="compass-cta-button">Download Your Compass (Contribute $1+)</a>
+<div class="archive-list-wrapper">
+  <h4>Classic Frameworks & Foundational Ideas</h4>
+  <ul class="classic-framework-list">
+    <li><a href="/resources/nomad-finance/olive-grove-economy/"><strong>The Olive Grove Economy:</strong> A Blueprint for Financial Resilience</a></li>
+    <li><a href="/cultural-bridges/migration/morisco-compass-modern-diasporas/"><strong>The Morisco Compass:</strong> A Guide for Navigating a Hybrid Identity</a></li>
+    <li><a href="/resources/remote-work-zen/thermae-flow-state-deep-work/"><strong>The Thermae Flow State:</strong> An Ancient Ritual for Deep Work</a></li>
+    <li><a href="/resources/seo-alchemy/phoenician-merchant-seo/"><strong>Phoenician Merchant SEO:</strong> Timeless Strategies for Digital Navigation</a></li>
+  </ul>
 </div>
 
 ---
 
-### A Final Note from the Captain
+### The Full Story Behind The Frameworks
 
-Rooted Nomadism is not a destination. It is a way of navigating. This page is your starting point. From here, follow the framework that calls to you most. Every path leads to the same harbor: a life of freedom **with roots, not without them.**
+These frameworks are the map. The full story—the journey, the failures, the discoveries—is told in my memoir, *Algorithmic Sardines*.
+
+{{< book_promo >}}
 
 </div>
