@@ -224,3 +224,93 @@
     transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
+/* ==========================================================================
+   Story Chapters Grid on /about/story/ (Version 5.3 - Aligned Paragraphs)
+   ========================================================================== */
+
+.story-chapters-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .story-chapters-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.chapter-card {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chapter-card h4 {
+  font-family: var(--font-heading);
+  color: var(--color-text-secondary); 
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--sunset-gold, #F4A261);
+  border-radius: var(--border-radius-sm, 4px);
+  text-align: center;
+}
+
+.chapter-card h3 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--color-text-heading); 
+  /* --- AJOUT POUR L'ALIGNEMENT --- */
+  min-height: 4.2em; /* Hauteur minimale pour accommoder 2-3 lignes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-card p {
+  font-size: 1rem;
+  color: var(--color-text-secondary); 
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.chapter-card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--mediterranean-blue, #2A9D8F);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.chapter-card a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--sunset-gold, #F4A261);
+  transition: width 0.3s ease;
+}
+
+.chapter-card a:hover {
+  color: var(--sunset-gold, #F4A261);
+}
+
+.chapter-card a:hover::after {
+  width: 100%;
+}
