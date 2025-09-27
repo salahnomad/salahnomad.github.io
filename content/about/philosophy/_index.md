@@ -61,8 +61,7 @@ Once you have your operating system, explore the central texts that define this 
 *   [**The Rooted Nomadism Manifesto →**](/about/philosophy/salah-philosophy/)  
     *The foundational article that details the core principles of finding freedom through your roots.*
 
-*   [**The Algorithmic Sardine Philosophy →**](/about/philosophy/algorithmic-sardine-philosophy/)  
-    *[NOTE: Lien à créer quand l'article sera écrit]*  
+*   [**The Algorithmic Sardine Philosophy →**](/about/philosophy/algorithmic-sardine-philosophy/)   
     *The deep dive into the art of purposeful movement and becoming a 'value migrant'.*
 
 ---
