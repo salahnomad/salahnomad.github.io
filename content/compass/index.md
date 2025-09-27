@@ -12,7 +12,7 @@ json_ld: |
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "The Compass: Your Guide to the Frameworks of a Rooted Life",
-    "description": "The official guide to the core frameworks of Rooted Nomadism. Start with our foundational 'Operating System,' then explore the specialized tools for a resilient, meaningful, and soulful life.",
+    "description": "The official guide to the core frameworks of Rooted Nomadism. Start with our foundational 'Operating System,' then explore specialized tools for a resilient, meaningful, and soulful life.",
     "url": "https://salahnomad.com/compass/",
     "author": {
       "@type": "Person",
@@ -36,42 +36,42 @@ json_ld: |
           "position": 1,
           "name": "The Zellige Blueprint",
           "url": "https://salahnomad.com/digital-compass/nomad-toolkit/zellige-blueprint/",
-          "description": "The operating system for a composed life, inspired by artisan wisdom."
+          "description": "The foundational operating system for a composed life. This system for soulful productivity is inspired by the precision and intention of ancient Moroccan artisans."
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "The Baker's Code",
           "url": "https://salahnomad.com/malaga-codex/local-rituals/bakers-code/",
-          "description": "A ritual for deep work and creative flow."
+          "description": "A powerful, four-phase ritual for deep work and creative flow, learned from the timeless, distraction-free rhythms of traditional Málaga bakers."
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "The Analog API",
           "url": "https://salahnomad.com/cultural-bridges/tech/analog-api/",
-          "description": "A protocol for ethical digital communication."
+          "description": "A three-protocol system for ethical and effective digital communication, forged in the intentional scarcity of a 1980s shortwave radio."
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "The Souk Algorithm",
           "url": "https://salahnomad.com/resources/seo-alchemy/souk-algorithm/",
-          "description": "A strategy for human-centered value and authentic marketing."
+          "description": "A human-centered strategy for creating authentic value and building trust, inspired by the timeless E-E-A-T principles of ancient spice merchants."
         },
         {
           "@type": "ListItem",
           "position": 5,
           "name": "The Hammam Principle",
           "url": "https://salahnomad.com/digital-compass/cultural-design/hammam-principle/",
-          "description": "A blueprint for building communities of trust."
+          "description": "A three-chamber blueprint for designing digital spaces of vulnerability, trust, and genuine human connection, inspired by Moroccan social architecture."
         },
         {
           "@type": "ListItem",
           "position": 6,
           "name": "The Weaver's Prompt",
           "url": "https://salahnomad.com/rooted-futures/ai-ancestry/weavers-prompt/",
-          "description": "A method for creative and cultural AI collaboration."
+          "description": "A method for creative and cultural AI collaboration that uses the patterned language of Amazigh weavers to generate deep, meaningful results."
         }
       ]
     }
@@ -83,7 +83,7 @@ json_ld: |
 # The Compass: Frameworks for a Rooted Life
 ## Lost in the Digital Sea? Find Your Anchor.
 
-The freedom to work from anywhere promised adventure, but for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map.
+The freedom to work from anywhere promised adventure, but for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map. This curated library presents the core frameworks of the Rooted Nomadism philosophy. Start with the foundational **Zellige Blueprint**—our operating system for intentional living—then explore specialized tools for creativity, communication, and community building. Each framework is a practical guide to turning ancient wisdom into modern resilience.
 
 **You don't have to choose between your roots and your wings.**
 
