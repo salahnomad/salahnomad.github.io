@@ -83,7 +83,7 @@ Before you write a single word or line of code, you must first consecrate your s
 
 ## Living the Baker's Code
 
-This four-phase rhythm has become the spine of my creative process. Where I once battled distraction, I now partner with natural cycles of engagement and rest. This isn't about working harder; it's about working with more soul. It's a core tenet of the [Rooted Nomadism philosophy](/about/philosophy/salah-philosophy/): finding wisdom in the timeless, artisanal crafts that surround us.
+This four-phase rhythm has become the spine of my creative process. Where I once battled distraction, I now partner with natural cycles of engagement and rest. This isn't about working harder; it's about working with more soul. It's a core tenet of the [Rooted Nomadism philosophy](/about/philosophy/rooted-nomadism-philosophy/): finding wisdom in the timeless, artisanal crafts that surround us.
 
 ## Your Turn in the Bakery
 

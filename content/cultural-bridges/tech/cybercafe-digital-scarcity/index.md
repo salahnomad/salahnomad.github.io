@@ -56,7 +56,7 @@ When I finally reached the cybercafé, I treated browser time like rare radio ba
 2. Predicted exact Google keywords
 3. Prepared offline text drafts
 
-> "[Modern SEO was born from necessity]({{< relref "/resources/seo-alchemy/phoenician-merchant-seo" >}}): One search = one precious answer."
+> "Modern SEO was born from necessity: One search = one precious answer. This early focus on user intent, forged in scarcity, later evolved into a complete philosophy of human-centered value, which I call [**The Souk Algorithm**](/resources/seo-alchemy/souk-algorithm/)."
 
 ### Lesson 2: The Zen of Loading Bars
 {{< figure src="images/dial-up-waiting.jpg" alt="Hand hovering over mouse as webpage loads slowly" caption="**Forced mindfulness:** Loading bars became meditation timers" >}}
@@ -83,7 +83,7 @@ With only 2 hours/week online, I became an **offline production machine**:
 ## Part II: The Zellige Philosophy of Digital Scarcity
 {{< figure src="images/zellige-scarcity-metaphor.jpg" alt="Artisan hand placing single zellige tile in geometric pattern" caption="**Scarcity as craft:** Each tile requires perfect intention" >}}
 
-Watching *maâlems* create zellige mosaics in Fès taught me what cybercafés confirmed: **Constraints breed mastery**. This isn't just productivity - it's core to my [Rooted Nomad philosophy]({{< relref "/about/philosophy/salah-philosophy" >}}):
+Watching *maâlems* create zellige mosaics in Fès taught me what cybercafés confirmed: **Constraints breed mastery**. This isn't just productivity - it's core to my [Rooted Nomad philosophy]({{< relref "/about/philosophy/rooted-nomadism-philosophy" >}}):
 
 | **Zellige Principle** | **Digital Application** |
 |------------------------|--------------------------|
@@ -126,12 +126,9 @@ That struggling cybercafé gave me more than any fiber-optic connection ever cou
 > – Salah Nomad
 
 ---
-<!-- NOUVELLE SECTION AJOUTÉE -->
 ### From Scarcity to Stewardship
 
 That struggling cybercafé gave me more than any fiber-optic connection ever could. It taught me the philosophy of scarcity. But how do these lessons apply today, in an age of infinite abundance? I explore this evolution in **[my journey from a Panasonic radio to an iPhone, and the minimalist toolkit it forged]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
-
-<!-- FIN DE LA NOUVELLE SECTION -->
 
 **Your Turn:** What digital 'luxury' could you restrict this week to rediscover focus? Share your #CybercafeRitual.
 
