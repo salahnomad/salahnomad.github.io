@@ -42,7 +42,7 @@ Google's E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) isn
 
 *In the Souk:* Hamid's stall has stood in the same spot since his grandfather's time. The worn wooden counter holds the memory of a million transactions. His authority isn't just claimed; it's **earned through time**.
 
-*The SEO Translation:* **Your "About" page is your most important ranking factor.** It's your digital storefront. I rebuilt mine after realizing my most valuable asset wasn't my technical knowledge—it was the story of my journey from a **[National Panasonic R-441B radio](/cultural-bridges/tech/analog-api/)** to AI ethics. That story is my proof of first-hand experience. People connect with a journey, not a list of services.
+*The SEO Translation:* **Your "About" page is your most important ranking factor.** It's your digital storefront. I rebuilt mine after realizing my most valuable asset wasn't my technical knowledge—it was the story of my journey from a vintage shortwave radio to AI ethics. That story is my proof of first-hand experience, a principle of intentional connection I call [**The Analog API**](/cultural-bridges/tech/analog-api/). People connect with a journey, not a list of services.
 
 **Actionable Insight:** Before writing another blog post, rewrite your "About" page. Tell the story only you can tell. Answer: *Why you? Why this? Why now?*
 
@@ -62,7 +62,7 @@ Google's E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) isn
 
 *In the Souk:* An important negotiation with Hamid doesn't end with a handshake; it begins with a glass of mint tea. The relationship is built before the transaction is ever discussed. Other merchants send their best customers to him, not for a commission, but because they trust his integrity. These are the most valuable "backlinks" in the world.
 
-*The SEO Translation:* **Stop "building links." Start building relationships.** A genuine backlink is a byproduct of trust. When I interview an expert for my blog, I spend the first 20 minutes asking about their journey. The resulting content is richer, and the organic links from them and their network follow naturally because a real connection was made.
+*The SEO Translation:* **Stop "building links." Start building relationships.** A genuine backlink is a byproduct of trust forged in spaces of vulnerability, a concept I explore in [**The Hammam Principle**](/digital-compass/cultural-design/hammam-principle/). When I interview an expert for my blog, I spend the first 20 minutes asking about their journey. The resulting content is richer, and the organic links from them and their network follow naturally because a real connection was made.
 
 **Actionable Insight:** This month, reach out to one person you admire in your industry with zero agenda. Just a short, genuine message of appreciation for their work. That is the digital equivalent of offering a glass of tea.
 
@@ -72,7 +72,7 @@ Google's E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) isn
 
 *In the Souk:* A tourist asks for "saffron." A lesser merchant sells them saffron. Hamid asks, *"Is it for a paella, or a lamb tagine for a special occasion?"* He understands that the customer doesn't just want an ingredient; they want to create a memorable experience. He solves the **deeper, unstated need**.
 
-*The SEO Translation:* This is the very essence of Google's Helpful Content Update. Someone searching "digital nomad productivity tools" isn't really asking for a list of apps. They're asking, *"How do I find calm and focus when my office changes every week?"* My article on **[The Baker's Code](/malaga-codex/local-rituals/bakers-code/)** answers this deeper question, which is why it resonates more than any listicle.
+*The SEO Translation:* This is the very essence of Google's Helpful Content Update. Someone searching "digital nomad productivity tools" isn't really asking for a list of apps. They're asking, *"How do I find calm and focus when my office changes every week?"* My article on **[The Baker's Code](/malaga-codex/local-rituals/bakers-code/)**, which details a ritual for deep work, answers this deeper question, which is why it resonates more than any listicle.
 
 **Actionable Insight:** For your most important keyword, write down the emotional problem *behind* the search query. Does your content solve that problem?
 

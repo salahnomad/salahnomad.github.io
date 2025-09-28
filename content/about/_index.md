@@ -11,7 +11,7 @@ slug: about
 
 Every map has a starting point. Mine lies in the ochre earth of Ksar El-Kébir, Morocco, a city where time is measured in the growth rings of olive trees. Yet, my journey has been a constant navigation across the shimmering screen of the digital world. This section, "Rooted Journeys," is the heart of that map.
 
-It's here that I share the foundational stories, the hard-won philosophy, and the human connections that have transformed a wandering existence into a purposeful path. It is the answer to a question that has guided my life: how can we move freely through the world, not by shedding our roots, but by carrying them as our most trusted compass?
+It's here that I share the foundational stories, the hard-won philosophy, and the human connections that have transformed a wandering existence into a purposeful path. **It is the answer to a question that has guided my life: how can we move freely through the world, not by shedding our roots, but by carrying them as our most trusted compass?**
 
 ---
 
@@ -20,8 +20,8 @@ It's here that I share the foundational stories, the hard-won philosophy, and th
 *   **[My Story: From Olive Groves to Algorithmic Sardines](/about/story/olive-trees-and-algorithms/)**  
     *The foundational crisis that birthed this blog and the philosophy of Rooted Nomadism. This is the "why" behind it all.*
 
-*   **[The Philosophy of Rooted Nomadism](/about/philosophy/salah-philosophy/)**  
-    *A deep dive into the core principles, frameworks, and mental models that guide this journey.*
+*   **[The Philosophy of Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**  
+    *The official starting point. A deep dive into the core principles, frameworks, and mental models that guide this entire journey.*
 
 *   **[The Human Constellation: How Three Strangers Forged My Nomadic Identity](/about/testimonials/the-human-constellation/)**  
     *Discover the key encounters that shaped my path, proving that no nomad is an island.*

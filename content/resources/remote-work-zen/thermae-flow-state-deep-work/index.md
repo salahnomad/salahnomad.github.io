@@ -4,19 +4,17 @@ subtitle: "How Roman baths and Moroccan hammams taught me to reclaim focus in a 
 date: 2025-02-04T10:00:00+02:00
 description: "Discover the 4-chamber ritual that saved my focus. Blend Roman bath wisdom with Moroccan hammam resilience to build your sanctuary for deep work in a chaotic digital age."
 slug: "thermae-flow-state-deep-work"
-
-# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+# --- Taxonomy ---
 categories: ["Resources"]
-subcategory: "Remote Work Zen" # <-- "Remote Work Zen" est maintenant une sous-catégorie
+subcategory: ["Remote Work Zen"]
 tags:
   - "Deep Work"
   - "Flow State"
   - "Digital Minimalism"
   - "Mediterranean Wisdom"
   - "Rooted Nomadism"
-  - "Remote Work Zen" # <-- On peut aussi le garder en tag pour la transversalité
-# -----------------------------------
-
+  - "Remote Work Zen"
+# --- Page Metadata ---
 authors:
   - "Salah Nomad"
 featured_image: "images/digital-thermae-flow.jpg"
@@ -75,7 +73,7 @@ When distractions arise? Capture them on your "Parking Lot" notepad - honoring t
 
 ### 3. Frigidarium: The Shock of Consolidation
 
-> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, much like [The Zellige Blueprint]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) teaches us about [intentional work]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}})."  
+> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, a core tenet of the artisan's mindset I explore in [**The Zellige Blueprint Philosophy**](/about/philosophy/zellige-blueprint-philosophy/)."  
 > *([Algorithmic Sardines, Chapter 7: Clay and Living Waters]({{< relref "/ebook/algorithmic-sardines" >}}))*
 
 Post-deep work, most skip this vital chamber. Don't. Spend 10 minutes:
@@ -99,7 +97,7 @@ After consolidation, 20 minutes of true analog rest:
 - Gaze at olive trees (their fractal patterns calm minds)
 - **Absolutely no screens**
 
-Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism]({{< relref "/about/philosophy/salah-philosophy" >}}) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work]({{< relref "/malaga-codex/local-rituals/espetos-epiphanies" >}}) traditions.
+Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work](/malaga-codex/local-rituals/espetos-epiphanies/) traditions.
 
 ---
 

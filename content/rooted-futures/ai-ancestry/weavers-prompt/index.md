@@ -42,7 +42,7 @@ The Amazigh weavers of the Atlas Mountains don't just create patterns; they enco
 
 *The Weaver's Craft:* The border of a carpet isn't an afterthought; it's the first decision. It defines the **sacred space** where the story will unfold. It sets the rules and constraints.
 
-*The AI Translation:* **Establish Context First.** This is your System Role. Before you make a request, you must build the "world" for the AI. Instead of "write a poem," begin with: *"You are a 12th-century Andalusian poet, blind, exiled in Morocco. Your memory is not of sights, but of scents and sounds. Your tone is one of deep, melancholic wisdom."* This is the foundation of my **[Olive Tree Oracle](/rooted-futures/ai-ancestry/olive-tree-oracle/)** method.
+*The AI Translation:* **Establish Context First.** This is your System Role. Before you make a request, you must build the "world" for the AI. Instead of "write a poem," begin with: *"You are a 12th-century Andalusian poet, blind, exiled in Morocco. Your memory is not of sights, but of scents and sounds. Your tone is one of deep, melancholic wisdom."* This principle of treating the AI as a partner to be guided is the foundation of my **[Olive Tree Oracle protocol for ethical AI interaction](/rooted-futures/ai-ancestry/olive-tree-oracle/)**.
 
 **Why it Works:** The border creates a container for creativity, preventing the AI from defaulting to its vast but generic training data.
 
@@ -82,4 +82,4 @@ The Amazigh weavers of the Atlas Mountains don't just create patterns; they enco
 
 The irony is profound: to create truly innovative digital content, we must turn to an ancient analog craft. The Amazigh weavers understood something we are just rediscovering: **meaning emerges from an elegant structure, not from a blank canvas.**
 
-When we prompt AI with the richness of our cultural patterns, we are doing more than getting better results. We are actively ensuring that our digital future is not a sterile monoculture, but a diverse and beautiful tapestry woven from all our human stories. The next frontier of AI isn't just technical; it's cultural.
+When we prompt AI with the richness of our cultural patterns, we are doing more than getting better results. We are actively ensuring that our digital future is not a sterile monoculture, but a diverse and beautiful tapestry woven from all our human stories. This approach is a core tenet of **[the Rooted Nomadism philosophy](/about/philosophy/rooted-nomadism-philosophy/)**, which seeks to bridge ancestral wisdom with modern challenges. The next frontier of AI isn't just technical; it's cultural.

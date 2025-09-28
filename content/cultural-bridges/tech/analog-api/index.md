@@ -50,7 +50,7 @@ An API—Application Programming Interface—is a set of rules that allows syste
 
 *The Analog Memory:* Every word that survived the journey through cosmic static was precious. Broadcasters spoke with deliberate clarity, choosing each word for maximum impact. There was no room for filler. The "packets" of information were dense with meaning.
 
-*The Digital Translation:* **The Economy of Attention.** Respect your recipient's cognitive bandwidth. Write emails that are scannable yet substantial. An email of three clear, powerful sentences is more valuable than three paragraphs of corporate jargon. This principle of intentional craft is the very soul of **[The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/)**.
+*The Digital Translation:* **The Economy of Attention.** Respect your recipient's cognitive bandwidth. Write emails that are scannable yet substantial. An email of three clear, powerful sentences is more valuable than three paragraphs of corporate jargon. This principle of intentional craft is the very soul of [**The Zellige Blueprint's philosophy of composition**](/about/philosophy/zellige-blueprint-philosophy/).
 
 #### **Protocol 3: The Signal-to-Noise Ratio (Active Filtering)**
 
@@ -58,7 +58,7 @@ An API—Application Programming Interface—is a set of rules that allows syste
 
 *The Analog Memory:* 99% of what came through the R-441B's speaker was noise—crackles, hums, overlapping stations. My job as a listener was to **actively filter** for the 1% of signal. This required intense focus and the discipline to ignore distractions.
 
-*The Digital Translation:* **Cognitive Sovereignty.** In an attention economy, your most valuable skill is filtering. Turn off non-essential notifications. Curate your information sources ruthlessly. Schedule "signal time" for deep work. Just as I learned to distinguish a faint BBC transmission from Cuban radio interference, you must learn to distinguish valuable information from digital clutter. This is the foundation of **[The Thermae Flow State](/resources/remote-work-zen/thermae-flow-state-deep-work/)**.
+*The Digital Translation:* **Cognitive Sovereignty.** In an attention economy, your most valuable skill is filtering. Turn off non-essential notifications. Curate your information sources ruthlessly. Schedule "signal time" for deep work. Just as I learned to distinguish a faint BBC transmission from Cuban radio interference, you must learn to distinguish valuable information from digital clutter. This is the foundation of building your own sanctuary for deep work, a practice I call [**The Thermae Flow State**](/resources/remote-work-zen/thermae-flow-state-deep-work/).
 
 ---
 ### 4. The Analog API in Practice: From Memory to Methodology
@@ -82,6 +82,6 @@ This week, I challenge you to conduct an **"Analog API Audit"**:
 
 Share your experiences in the comments—what signal emerged when you cut through the noise?
 
-These ethical practices are the invisible threads that connect our community of **[Algorithmic Sardines](/about/philosophy/algorithmic-sardine-philosophy/)**—individuals moving with purpose and respect through the digital seas.
+These ethical practices are the invisible threads that connect our community of travelers who, like the subjects of [**The Algorithmic Sardine philosophy**](/about/philosophy/algorithmic-sardine-philosophy/), choose to move with purpose and respect through the digital seas.
 
 *What frequency will you tune into today?*

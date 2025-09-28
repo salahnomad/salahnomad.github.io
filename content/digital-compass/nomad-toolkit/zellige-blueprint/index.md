@@ -37,7 +37,7 @@ We've forgotten what Vitruvius knew 2,000 years ago. A system without *firmitas*
 
 > *"True productivity isn't about managing tasks. It's about composing a life that is strong, useful, and beautiful—one intentional tile at a time."*
 
-The Zellige Blueprint is my answer to this crisis. It’s not an app. It's [a way of seeing](/about/philosophy/salah-philosophy/), a system of organization inspired by the master artisans of Andalusia that infuses our work with the Vitruvian ideals.
+The Zellige Blueprint is my answer to this crisis. It’s not just an app or a method; it's the practical application of a deeper worldview, which I've detailed in [**The Zellige Blueprint: A Philosophy of Soulful Productivity**](/about/philosophy/zellige-blueprint-philosophy/). It is a system of organization inspired by the master artisans of Andalusia that infuses our work with the Vitruvian ideals.
 
 ### 3. The Three Layers of Hispano-Moorish Order
 

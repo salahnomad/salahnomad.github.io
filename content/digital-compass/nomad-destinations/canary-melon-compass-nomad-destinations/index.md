@@ -71,13 +71,13 @@ At Algeciras port, anxiety coiled in my stomach. The Spanish officer circled my 
 
 In that moment, we weren't officer and traveler. We were Mediterranean kin—like Zak in Norwich bonding over Fez's alleys, or olive farmers in Axarquía whose hands mirrored my Jbala ancestors'. This revelation birthed my first principle:
 
-> **True belonging occurs when strangers recognize your roots in foreign soil**
+> **True belonging occurs when strangers recognize your roots in foreign soil.**
 
 ### Chapter 2: The Failure of Sterile Metrics
 
 We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe](/cultural-bridges/collaborations/ghost-of-ritual-hammam/)** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing [cultural resonance](/resources/cultural-compass/art-of-seeing/).
 
-Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy:
+Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy, a critique at the heart of the **[Algorithmic Sardine's philosophy of purposeful movement](/about/philosophy/algorithmic-sardine-philosophy/)**.
 
 > "Nomad List measures internet bandwidth, not **soul-bandwidth**.  
 > It quantifies rent, but not the **cost of cultural starvation**."
@@ -121,7 +121,7 @@ This isn't finding replicas of home. It's discovering where **new landscapes con
 
 ### Epilogue: The Nomad's True North
 
-Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**—their roots my anchor, branches my reach. They taught me what no spreadsheet could:
+Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**—their roots my anchor, branches my reach. They taught me what no spreadsheet could, and their wisdom is a practical application of the core principles I outline in my foundational text on **[the philosophy of Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**.
 
 > "We find home not by searching maps,  
 > but by recognizing landscapes that remember us  
@@ -133,8 +133,3 @@ Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarq
 - **Reflect:** What's your "Ksar El-Kébir melon"? (Mine's wild thyme from Jbala mountains)
 - **Act:** Find one local ritual performed with sacred repetition (like fishermen's *espeto* technique)
 - **Share:** Where has your heritage been recognized unexpectedly? [Join the conversation](#comments)
-
-> *"The olive tree whispered: Your ancestors' tears are my nourishment.  
-> Now I understand—roots aren't anchors,  
-> but living threads weaving through all borders."*  
-> — [The Anchored Nomad Manifesto](/about/philosophy/anchored-nomad-manifesto-part-1/)
