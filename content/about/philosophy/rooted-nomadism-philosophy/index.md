@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "Rooted Nomadism: The Original Philosophy by Salah Nomad for a Meaningful Modern Life"
-date: 2025-09-28
+date: 2025-09-29
 draft: false
 description: "Discover Rooted Nomadism, the original philosophy created by Salah Nomad. This complete system, built on the two laws of Being and Moving, transforms your heritage into a practical compass for a resilient life."
 

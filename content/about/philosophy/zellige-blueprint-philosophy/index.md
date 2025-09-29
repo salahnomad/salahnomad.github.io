@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "The Zellige Blueprint: A Philosophy of Soulful Productivity by Salah Nomad"
-date: 2024-11-18
+date: 2025-09-28
 draft: false
 description: "Discover The Zellige Blueprint, the original productivity philosophy created by Salah Nomad from 1,000-year-old Moroccan craftsmanship. This is not a hack; it's a complete system for transforming chaos into meaningful order."
 
