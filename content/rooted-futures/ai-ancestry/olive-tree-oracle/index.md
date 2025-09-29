@@ -12,6 +12,7 @@ featured_image_alt: "Ancient olive tree with data streams flowing through its ro
 authors: ["Salah Nomad"]
 toc: true
 pillar_content: true
+cta: tool
 ---
 
 ### 1. The Algorithm's Insult: When AI Called My Heritage “Primitive Mud”

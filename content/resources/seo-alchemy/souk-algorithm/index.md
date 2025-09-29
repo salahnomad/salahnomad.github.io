@@ -11,6 +11,7 @@ featured_image: "images/souk-algorithm-hero.jpg"
 featured_image_alt: "A wise, elderly Moroccan spice merchant's hands scooping vibrant saffron from a burlap sack, with the geometric patterns of Google's search results subtly overlaid."
 authors: ["Salah Nomad"]
 toc: false
+cta: tool
 pillar_content: true
 ---
 

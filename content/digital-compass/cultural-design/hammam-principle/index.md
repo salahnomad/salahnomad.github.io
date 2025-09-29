@@ -12,6 +12,7 @@ featured_image_alt: "A single, intense shaft of light pierces the steam in a tra
 authors: ["Salah Nomad"]
 toc: false
 pillar_content: true
+cta: community
 ---
 
 ### The Architecture of Naked Truth

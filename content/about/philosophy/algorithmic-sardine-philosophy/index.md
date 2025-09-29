@@ -12,6 +12,7 @@ featured_image_alt: "A school of silver sardines swimming in a powerful, unified
 authors: ["Salah Nomad"]
 toc: false
 pillar_content: true
+cta: tool
 ---
 
 ### The Taste of Two Shores

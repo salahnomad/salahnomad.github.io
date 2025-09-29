@@ -12,6 +12,7 @@ featured_image_alt: "The hands of an Amazigh woman weaving a complex, symbolic p
 authors: ["Salah Nomad"]
 toc: false
 pillar_content: true
+cta: tool
 ---
 
 ### The Glitch in the Digital Soul

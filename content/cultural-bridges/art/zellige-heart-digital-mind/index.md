@@ -13,6 +13,7 @@ featured_image: "images/zellige-heart-ux-hero.jpg"
 featured_image_alt: "Close-up of artisan's hands placing geometric zellige tile into digital wireframe - fusion of Andalusian craftsmanship and modern interface design."
 authors: ["Salah Nomad"]
 toc: true
+cta: story
 
 resources:
   - src: "images/zellige-heart-ux-hero.jpg"

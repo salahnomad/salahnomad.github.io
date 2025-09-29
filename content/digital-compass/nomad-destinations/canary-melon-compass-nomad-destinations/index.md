@@ -13,6 +13,7 @@ featured_image: "images/canary-melon-compass-hero.jpg"
 featured_image_alt: "Golden Canary melon from Ksar El-Kébir on a ferry, symbolizing a soulful guide for choosing digital nomad destinations"
 authors: ["Salah Nomad"]
 toc: true
+cta: story
 secondary_pillar: true
 resources:
   - src: "images/canary-melon-compass-hero.jpg"

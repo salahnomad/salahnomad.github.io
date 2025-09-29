@@ -11,6 +11,7 @@ featured_image: "images/baker-code-hero.jpg"
 featured_image_alt: "The weathered hands of a traditional baker shaping dough on a flour-dusted wooden table, illuminated by the warm, golden light of dawn in a Málaga bakery."
 authors: ["Salah Nomad"]
 toc: false
+cta: tool
 pillar_content: true
 ---
 
