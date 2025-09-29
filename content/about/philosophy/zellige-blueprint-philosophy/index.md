@@ -1,7 +1,7 @@
 ---
 # --- SEO & Metadata ---
 title: "The Zellige Blueprint: A Philosophy of Soulful Productivity by Salah Nomad"
-date: 2025-09-27
+date: 2024-11-18
 draft: false
 description: "Discover The Zellige Blueprint, the original productivity philosophy created by Salah Nomad from 1,000-year-old Moroccan craftsmanship. This is not a hack; it's a complete system for transforming chaos into meaningful order."
 
@@ -63,7 +63,7 @@ The *musivum* is the final masterpiece on the palace wall. These are the core do
 
 ## The Zellige Blueprint in Daily Practice
 
-This philosophy represents the practical expression of **"The Art of Being"** from my core [Rooted Nomadism Philosophy](/about/philosophy/rooted-nomadism-philosophy/). It's how you build your anchor in a world of constant motion.
+This philosophy represents the practical expression of "The Art of Being," a core law from my **[mother philosophy, Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**. It's how you build your anchor in a world of constant motion.
 
 **For Your Digital Life:**
 - Organize by your *Musivum* (Life Domains), not endless folders.

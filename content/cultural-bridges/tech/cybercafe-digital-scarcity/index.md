@@ -48,7 +48,7 @@ Today, we swim in digital abundance. Yet I owe everything to that **sacred scarc
 ### Lesson 1: The Panasonic Protocol
 {{< figure src="images/panasonic-radio-shortwave.jpg" alt="Vintage National Panasonic radio tuning shortwave frequencies" caption="**Pre-internet lifeline:** My father's radio taught me global curiosity" >}}
 
-Long before cybercafés, my education came from a **National Panasonic RF-1400** shortwave radio. As I recount in [my origin story]({{< relref "/about/story/olive-trees-and-algorithms" >}}), tuning into crackling BBC broadcasts taught me patience - waiting minutes for signals to stabilize across continents.
+Long before cybercafés, my education came from a **National Panasonic RF-1400** shortwave radio. As I recount in [my origin story]({{< relref "/about/story/olive-trees-and-algorithms" >}}), tuning into crackling BBC broadcasts taught me patience - waiting minutes for signals to stabilize across continents. This was the birthplace of the **[inherited digital ethic I call The Analog API](/cultural-bridges/tech/analog-api/)**.
 
 **The Scarcity Principle:**  
 When I finally reached the cybercafé, I treated browser time like rare radio bandwidth. Before going online:
@@ -91,7 +91,7 @@ Watching *maâlems* create zellige mosaics in Fès taught me what cybercafés co
 | Limited tile palette | Curate 3 essential tools |
 | Imperfections tell stories | Embrace "slow tech" errors |
 
-This mindset birthed my [Zellige Blueprint system]({{< relref "/digital-compass/nomad-toolkit/zellige-blueprint" >}}) - where constraints create creative freedom.
+This early mindset, born from necessity, was the seed that would later blossom into the **[evolution towards a structured system I call The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/)**—a complete framework where constraints are not a limitation, but the very source of creative freedom.
 
 ---
 

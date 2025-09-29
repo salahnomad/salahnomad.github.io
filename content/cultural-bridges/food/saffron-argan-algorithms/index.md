@@ -100,7 +100,7 @@ This experience revealed a profound truth. The modern saffron trade in Málaga, 
 
 Technology here is not the enemy of tradition; it is its greatest ally. It acts as a bridge, allowing an ancient craft to thrive in a globalized world.
 
-Similarly, AI can become our **digital terroir manager**. By feeding it with deep context and giving it a role rooted in respect, we can use it to create what I call **[Algorithmic Ancestry](/rooted-futures/ai-ancestry/olive-tree-oracle/)**—a living digital archive where machines help preserve:
+Similarly, AI can become our **digital terroir manager**. By feeding it with deep context and giving it a role rooted in respect, we can use it to create what I call **[Algorithmic Ancestry](/rooted-futures/ai-ancestry/olive-tree-oracle/)**. This is a form of **[cultural preservation](/cultural-bridges/migration/morisco-compass-modern-diasporas/)** where machines help us safeguard:
 - **Gestural Knowledge:** The wrist-flick for saffron.
 - **Seasonal Wisdom:** The best time for the olive harvest.
 - **Cultural Fusion:** The subtle blend of Berber and Andalusian techniques.

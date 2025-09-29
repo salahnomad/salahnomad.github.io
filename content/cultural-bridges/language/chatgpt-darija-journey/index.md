@@ -191,7 +191,7 @@ For us, each anglicism is a tile falling from our zellige identity.
 
 ChatGPT failed spectacularly. Yet in its failure, it gifted me something profound: it became a flawless mirror. Every mistranslation reflected back the exquisite complexity of my heritage. When it reduced "gana" to "desire," I saw the centuries of resilience behind that word. When it butchered "bocadillo," I tasted my grandmother's fish-filled sandwiches by the Loukkos river.
 
-This experiment revealed AI's true purpose: not to replace human understanding, but to highlight what makes it irreplaceable. Our Jbala-Andalusian dialect isn't just communication—it's encrypted history, embodied geography, and a love letter between shores.
+This experiment revealed AI's true purpose: not to replace human understanding, but to highlight what makes it irreplaceable. It's a powerful reminder of the need for an **[ethic of communication](/cultural-bridges/tech/analog-api/)** in our digital interactions. Our Jbala-Andalusian dialect isn't just communication—it's encrypted history, embodied geography, and a love letter between shores.
 
 As I stand again on Ksar El-Kébir's ramparts, I realize: technology hasn't threatened my roots. It's made them visible. In the glitch between "snowfield" and "fridge," I found my people's story.
 

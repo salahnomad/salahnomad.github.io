@@ -34,7 +34,7 @@ Two tons of Atlas Mountain clay changed everything. When British entrepreneur Sa
 
 ## The Nomadism Paradox
 ### Pandemic Anchors
-When COVID-19 locked Morocco’s borders in 2020, I returned to Ksar El-Kébir. My physical product business collapsed, but ancient olive trees whispered: *“Tell stories instead.”* [I launched this blog]({{< relref "/about/story/olive-trees-and-algorithms" >}}), realizing roots grow deepest when storms hit.
+When COVID-19 locked Morocco’s borders in 2020, I returned to Ksar El-Kébir. My physical product business collapsed, but ancient olive trees whispered: *“Tell stories instead.”* I launched this blog, realizing roots grow deepest when storms hit. The full account of this transformation can be found in the **[detailed story of that foundational crisis](/about/story/olive-trees-and-algorithms/)**.
 
 ### Pieter’s Click
 In Arles, 2016, a Dutch photographer captured me mid-reinvention: [zebra-striped shirt]({{< relref "/digital-compass/cultural-design/zebra-shirt-interface" >}}), gaze fixed on horizons. The viral #SalahNomad photo became a manifesto: *Freedom isn’t location—it’s the courage to be seen.*

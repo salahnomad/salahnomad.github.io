@@ -74,7 +74,7 @@ Our current culture often glorifies the **Shark Nomad**: a solitary predator who
 
 The **Algorithmic Sardine** offers a more resilient, sustainable path. They move in schools (community), follow currents of value (purpose), and their passage nourishes the entire ecosystem. The shark may build a fortune. The sardine school sustains a world.
 
-This philosophy is the active expression of **[Rooted Nomadism](/about/philosophy/salah-philosophy/)**. It's how the olive tree learns to swim.
+This philosophy is the active expression of the Art of Moving, one of the two core laws that form the [**foundations of the Rooted Nomadism philosophy**](/about/philosophy/rooted-nomadism-philosophy/). It's how the olive tree learns to swim.
 
 ## Your Invitation to Navigate
 

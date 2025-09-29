@@ -63,7 +63,7 @@ One twilight, between lavender farmers and Off Festival actors, alchemy occurred
 > ACTRESS: "Your Ghassoul clay for our stage makeup remover!"  
 > TECH FOUNDER: "My cousin curates that 14th-century space."
 
-This was no meeting. It was a **21st-century hammam** - steam of ideas, exfoliation of assumptions, the massage of perspectives. As I described in [*Algorithmic Sardines*]({{< relref "/resources/remote-work-zen/thermae-flow-state-deep-work" >}}): *"True innovation needs the [friction of elbow-to-elbow seating](/cultural-bridges/art/zellige-heart-digital-mind/), the scent of spilled Pastis on terracotta tiles."* Lou Mistrau became our [*agora*]({{< relref "/resources/remote-work-zen/digital-agora-mediterranean-blueprint" >}}) - equal parts café, incubator, and confessional.
+This was no meeting. It was a **21st-century hammam**—a space of shared vulnerability and co-creation. The lessons learned here about trust and connection became the foundation for the **[community architecture I call The Hammam Principle](/digital-compass/cultural-design/hammam-principle/)**. As I described in [*Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}): *"True innovation needs the friction of elbow-to-elbow seating, the scent of spilled Pastis on terracotta tiles."* Lou Mistrau became our [*agora*]({{< relref "/resources/remote-work-zen/digital-agora-mediterranean-blueprint" >}}) - equal parts café, incubator, and confessional.
 
 **The Rooted Ritual:**  
 Communities thrive in "third spaces" where hierarchy dissolves. Where's your nomadic hammam? That sacred space where ideas soak until they soften?

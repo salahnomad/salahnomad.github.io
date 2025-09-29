@@ -3,10 +3,9 @@ title: "When My Grandmother's Zellige Tiles Taught ChatGPT Patience: A Nomad's G
 date: 2025-06-13
 draft: false
 description: "Discover how ancestral Moroccan wisdom reshapes AI interactions. Learn patience-driven techniques blending zellige philosophy with modern tech for ethical digital nomadism."
-
-# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+# --- Taxonomy ---
 categories: ["Digital Compass"]
-subcategory: "Future of Nomadism" # Optionnel mais recommandé
+subcategory: ["Future of Nomadism"]
 tags: 
   - "Slow AI"
   - "Cultural Technology"
@@ -14,10 +13,9 @@ tags:
   - "Zellige Philosophy"
   - "Digital Minimalism"
   - "Ethical AI"
-  - "AI Ethics"             # <-- Ancien "category" transformé en tag
-  - "Rooted Productivity"   # <-- Ancien "category" transformé en tag
-# -----------------------------------
-
+  - "AI Ethics"
+  - "Rooted Productivity"
+# --- Metadata ---
 featured_image: "images/zellige-ai-craft.jpg"
 featured_image_alt: "Aged Moroccan artisan hands placing geometric zellige tile with open laptop in background - fusion of ancestral craft and modern technology"
 comments: true
@@ -29,14 +27,14 @@ cta: tool
 ## Prologue: Cedarwood and the Weight of Time
 The cedarwood shelves in my father's Ksar El-Kébir library held more than books—they cradled centuries of wisdom. Between Amazigh poetry collections and H.G. Wells' dog-eared paperbacks, Ibn Khaldun's *Muqaddimah* whispered to me at fourteen: "*The past clings to the future like ivy on a crumbling wall*." Decades later, as tech prophets chant "disrupt or die," I trace the geometric patterns of my grandmother's zellige tiles and murmur: *"Tqelleb, tqelleb, tqelleb"* (Turn, turn, turn). 
 
-This isn't resistance. This is **[Rooted Nomadism](/about/philosophy/salah-philosophy/)**—where algorithms absorb cultural clay rather than erase it. Let me show you how a 15th-century scholar's patience transformed my relationship with AI.
+This isn't resistance. This is **[Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**—where algorithms absorb cultural clay rather than erase it. Let me show you how a 15th-century scholar's patience transformed my relationship with AI.
 
 ---
 
 ## 1. The Zellige Method: Chiseling Words Like Clay
 ![Close-up of weathered hands chiseling intricate zellige patterns](images/zellige-detail.jpg "Tqelleb, tqelleb, tqelleb - the rhythm of patient creation")
 
-The Meknès cybercafé in 2006 smelled of burnt circuitry and adolescent ambition. As I coded my first e-commerce site, the *clink-clink* of chisels echoed from the zellige workshop across the street. "*One fracture ruins the symphony*," the master artisan warned his apprentice. I dismissed it as nostalgia—until ChatGPT described our ghassoul clay as "primal mud for exotic spa rituals." This artisan wisdom is the foundation of my productivity system, **[The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/)**.
+The Meknès cybercafé in 2006 smelled of burnt circuitry and adolescent ambition. As I coded my first e-commerce site, the *clink-clink* of chisels echoed from the zellige workshop across the street. "*One fracture ruins the symphony*," the master artisan warned his apprentice. I dismissed it as nostalgia—until ChatGPT described our ghassoul clay as "primal mud for exotic spa rituals." This artisan wisdom is the very foundation for my system of **[digital organization with The Zellige Blueprint](/digital-compass/nomad-toolkit/zellige-blueprint/)**.
 
 **My [cultural intervention](/rooted-futures/ai-ancestry/olive-tree-oracle/)**:
 1. Fed AI my grandmother's notebook: "*This earth remembers mountain springs and women's laughter*"

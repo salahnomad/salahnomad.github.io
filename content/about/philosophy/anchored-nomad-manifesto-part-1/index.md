@@ -4,10 +4,9 @@ subtitle: "Your Mediterranean Compass for Meaningful Travel"
 date: 2025-01-28T10:00:00+01:00
 description: "Discover why embracing your roots creates deeper freedom. A Mediterranean perspective on nomadic life from Ksar El-Kébir to Málaga."
 slug: "anchored-nomad-manifesto-part-1"
-
-# --- NOUVELLE TAXONOMIE CORRIGÉE ---
+# --- Taxonomy ---
 categories: ["Rooted Journeys"]
-subcategory: "Philosophy" # <-- "Philosophy" est maintenant la sous-catégorie
+subcategory: ["Philosophy"]
 tags:
   - "Anchored Nomadism"
   - "Cultural Identity"
@@ -15,9 +14,8 @@ tags:
   - "Freedom Through Roots"
   - "Zellige Identity"
   - "Practical Freedom"
-  - "Philosophy" # <-- On peut aussi le garder en tag pour la transversalité
-# -----------------------------------
-
+  - "Philosophy"
+# --- Page Metadata ---
 authors:
   - "Salah Nomad"
 featured_image: "images/signature-hands-earth-keyboard.jpg"
@@ -31,7 +29,7 @@ cta: true
 
 ## I. The Scent of Dry Earth at 3 AM
 
-*The Mediterranean doesn't lie. That night in Málaga, watching pixelated olive harvest videos from Ksar El-Kébir, I tasted the bitter truth: my digital nomad dream had become a [gilded cage](/about/story/olive-trees-and-algorithms/). The world was at my fingertips, yet I ached for the specific scent of dry earth after rain in my hometown. Here's how [Mediterranean truths](/about/philosophy/salah-philosophy/) saved my soul from rootless freedom...*
+*The Mediterranean doesn't lie. That night in Málaga, watching pixelated olive harvest videos from Ksar El-Kébir, I tasted the bitter truth: my digital nomad dream had become a [gilded cage](/about/story/olive-trees-and-algorithms/). The world was at my fingertips, yet I ached for the specific scent of dry earth after rain in my hometown. Here's how Mediterranean truths saved my soul from rootless freedom...*
 
 ![Vintage radio with global light waves](images/radio-waves.jpg "Confinement lifeline: where inner energy met cosmic vibrations")
 
@@ -104,7 +102,7 @@ This fluid coherence creates authentic presence - the kind that [builds tribes](
 
 ## V. Your Anchored Freedom Starter Kit
 
-Transform Mediterranean wisdom into daily practice:
+Transform the Mediterranean wisdom of this manifesto into daily practice with the **[complete system of Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**.
 
 **Morning Ritual (5 min):**  
 *Press palms to floor - "What ancestral strength guides me today?"*  

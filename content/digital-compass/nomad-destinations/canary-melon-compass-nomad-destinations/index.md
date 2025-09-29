@@ -36,7 +36,7 @@ json_ld: |
     "image": "https://salahnomad.com/images/canary-melon-compass-hero.jpg",  
     "author": {
       "@type": "Person",
-      "name": "Salah Nomad",
+      "name": " Salah Nomad",
       "url": "https://salahnomad.com/about/story/"
     },
     "publisher": {
@@ -121,7 +121,7 @@ This isn't finding replicas of home. It's discovering where **new landscapes con
 
 ### Epilogue: The Nomad's True North
 
-Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**—their roots my anchor, branches my reach. They taught me what no spreadsheet could, and their wisdom is a practical application of the core principles I outline in my foundational text on **[the philosophy of Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**.
+Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**. They taught me what no spreadsheet could, and their wisdom is a direct result of the **[origin of my philosophy of place, which began during the pandemic crisis](/about/story/olive-trees-and-algorithms/)**.
 
 > "We find home not by searching maps,  
 > but by recognizing landscapes that remember us  

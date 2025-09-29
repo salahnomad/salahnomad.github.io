@@ -4,23 +4,18 @@ title: "Olive Trees & Algorithms: How a Pandemic Crisis Forged My Digital Nomad 
 date: 2025-01-14T08:00:00+01:00
 draft: false
 description: "My wellness business collapsed. Stranded in Morocco, I discovered how ancient olive trees hold the secret to digital resilience. This is the story of my pivot from cosmetic clay to digital wisdom, and the birth of Rooted Nomadism."
-
-# --- Categorization & Taxonomy ---
+# --- Taxonomy ---
 categories: ["Rooted Journeys"]
 subcategory: ["My Story"]
 tags: ["transformation", "resilience", "digital-legacy", "rooted-nomadism", "pandemic-pivot", "entrepreneurship", "wellness-heritage"]
 keywords: ["rooted nomadism story", "digital transformation journey", "Mediterranean entrepreneur", "pandemic business pivot", "finding meaning in adversity", "Salah Nomad story", "cosmetic clay business", "wellness heritage"]
-
-# --- Featured Image & Leaf Bundle Resources ---
+# --- Page Metadata ---
 featured_image: "images/rooted-nomad-crisis-pivot-hero.jpg"
 featured_image_alt: "A Moroccan man's weathered hand on ancient olive bark, his other hand on a glowing laptop keyboard, symbolizing where ancestral resilience meets a digital rebirth in Andalusia."
 authors: ["Salah Nomad"]
 toc: true
 pillar_content: true
 cta: story
-
-resources:
-  # ... (les resources restent les mêmes)
 ---
 
 ### Prologue: The Silence of a World Shut Down
@@ -49,9 +44,9 @@ The world had forced my hand. My business was dead. It was time to return to the
 I retreated to the Jbala mountains, to the olive groves that held my childhood. Here, time is not measured in deadlines, but in the slow ripening of fruit. Here, I remembered:
 - My grandmother singing Amazigh songs while pressing argan oil.
 - My father reading H.G. Wells' *The Time Machine* under a gas lamp.
-- The *click-hiss* of the [shortwave radio](/cultural-bridges/tech/cybercafe-digital-scarcity/) that connected my small world in Meknès to the entire globe, a tool whose philosophy of intentional connection **[still guides my modern tech toolkit]({{< relref "/resources/nomad-tech-toolkit/evolving-nomad-toolkit" >}})**.
+- The *click-hiss* of the shortwave radio that connected my small world in Meknès to the entire globe.
 
-Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [this deep-rooted philosophy]({{< relref "/about/philosophy/salah-philosophy" >}}).
+Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood. This 800-year-old survivor didn't just endure storms and droughts; it had a strategy. It held a timeless wisdom that I could translate for my digital crisis—the seed of [**the philosophy born from this crisis, which I call Rooted Nomadism**](/about/philosophy/rooted-nomadism-philosophy/).
 
 | **Olive Tree Wisdom** | **My Digital Translation** |
 |:----------------------|:-------------------------|
@@ -93,7 +88,7 @@ This was it. This was the legacy my olive tree foresaw: wisdom traveling faster 
 ---
 
 ### V. The Mediterranean Coin: One Face Roots, One Face Waves
-Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The philosophy of [**Rooted Nomadism**]({{< relref "/about/philosophy/salah-philosophy" >}}) is simply the art of holding that coin.
+Today, from my terrace in Málaga, I feel the synthesis. My life is a Mediterranean coin: one side is etched with the deep roots of my heritage, the other with the shimmering waves of digital currents. The art of holding that coin is a practical expression of my **[philosophy of intentional movement](/about/philosophy/algorithmic-sardine-philosophy/)**.
 
 The pandemic proved what the Andalusian exiles knew five centuries ago: **walls can imprison bodies, but they often liberate minds.** Clay expires. Borders close. But a well-told story, rooted in truth, outlasts pandemics and algorithms alike.
 

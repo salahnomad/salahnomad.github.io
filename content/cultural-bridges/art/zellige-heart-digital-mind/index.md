@@ -113,7 +113,7 @@ That Ksar El-Kébir craftsman saved more than tiles - he salvaged my design phil
 
 **Digital craftsmanship isn't about pixels. It's about conscience.**
 
-The same hands that failed in Avignon now create with [ancestral wisdom](/digital-compass/cultural-design/zebra-shirt-interface/) – a philosophy of composing a life through intentional design. Whether you're building interfaces, teams, or your nomadic existence - these principles hold:
+The same hands that failed in Avignon now create with ancestral wisdom, a philosophy that extends beyond interfaces to the very **[design of community spaces](/digital-compass/cultural-design/hammam-principle/)**. Whether you're building apps, teams, or your nomadic existence - these principles hold:
 
 > "Build like the artesano del zellige: With systemic harmony, surgical intention, and uncompromising substance."
 

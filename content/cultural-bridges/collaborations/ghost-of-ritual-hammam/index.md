@@ -16,7 +16,7 @@ featured_image_alt: "A single, beautifully cracked zellige tile, with light shin
 authors: ["Salah Nomad"]
 toc: true
 secondary_pillar: true
-cta: "story"  # <-- La seule ligne ajoutée, sans rien supprimer.
+cta: "story"
 ---
 
 ### The Dream Born Over Rosé
@@ -25,7 +25,7 @@ In the summer of 2012, the air in Avignon was thick with the scent of lavender a
 
 He had the French business acumen, the L'Oréal network, the understanding of European marketing. I had the product, the story, the connection to the source. We toasted our new venture, *Ritual Hammam Europe*, with glasses of chilled Tavel rosé. It felt like the perfect fusion, a business built on family, heritage, and shared ambition.
 
-Two years later, that dream was a ghost, haunting the silence between our transatlantic phone calls. The business didn't crash in a blaze of glory. It faded away, a slow, quiet crumbling born of a thousand tiny fractures. This is the story of those fractures. It's not a story of blame, but a post-mortem on a beautiful dream. It’s the most expensive, and [the most valuable business lesson](/about/story/olive-trees-and-algorithms/) I've ever learned.
+Two years later, that dream was a ghost, haunting the silence between our transatlantic phone calls. The business didn't crash in a blaze of glory. It faded away, a slow, quiet crumbling born of a thousand tiny fractures. This is the story of those fractures. It's not a story of blame, but a post-mortem on a beautiful dream. It’s the most expensive, and the most valuable business lesson I've ever learned.
 
 {{< figure src="images/saad-avignon-dream.jpg" alt="Stylized illustration of two men, representing Salah and Saad, excitedly planning over notes on a café terrace in Avignon." caption="Avignon, 2012. Where a cross-cultural dream was born over a glass of rosé." >}}
 
@@ -87,9 +87,7 @@ This collapse taught me what no MBA ever could:
 
 3.  **Trust is the Only Currency That Crosses Deserts:** Legal documents are nets for minnows. Real partnership is forged in the shared silence of mint tea ceremonies and the willingness to lose time to gain understanding.
 
-A year later, in the Jbala foothills, I pressed my palm against an olive tree older than the Alhambra. Its bark whispered: *"They planted me with tears before their exile. Those tears became my [resilience](/resources/nomad-finance/olive-grove-economy/)."* 
-
-**That's when I understood:** Ritual Hammam Europe didn't fail. It was the desert wind that stripped away illusions, revealing the bedrock of [Rooted Nomadism](/about/philosophy/salah-philosophy/). What grew from its ruins wasn't a business—it was a philosophy written in the language of mountains and memory.
+Ritual Hammam Europe didn't fail. It was the desert wind that stripped away illusions, revealing the bedrock of Rooted Nomadism. What grew from its ruins wasn't a business—it was a philosophy written in the language of mountains and memory, a story of renewal detailed in my account of the **[post-failure pivot that is described here](/about/story/olive-trees-and-algorithms/)**.
 
 {{< figure src="images/phoenix-from-ashes.jpg" alt="A powerful, symbolic image of a young, vibrant olive sapling growing resiliently through dry, cracked earth." caption="From the ashes of a failed dream, a new, more rooted philosophy can grow." >}}
 

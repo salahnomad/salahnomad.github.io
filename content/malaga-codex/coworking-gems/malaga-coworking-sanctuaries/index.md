@@ -61,7 +61,7 @@ Outside, the vibrant heart of Soho pulsed with life. I had achieved geographic f
 ---
 > #### **The Day Zellige Solved My Code**
 >
-> During the 2023 Feria, stuck on an algorithm bug in that glass box, I escaped to **La Aduana**'s courtyard. Tracing a 300-year-old zellige pattern, the solution appeared - the recursive tile logic mirrored my code flaw. **[Functional beauty](/cultural-bridges/art/zellige-heart-digital-mind/) is a timeless algorithm.**
+> During the 2023 Feria, stuck on an algorithm bug in that glass box, I escaped to **La Aduana**'s courtyard. Tracing a 300-year-old zellige pattern, the solution appeared - the recursive tile logic mirrored my code flaw. Functional beauty is a timeless algorithm, a core idea in my [**Zellige work methodology**](/digital-compass/nomad-toolkit/zellige-blueprint/).
 ---
 
 ### 2. The Mediterranean Triad: Your Productivity Compass
@@ -117,13 +117,13 @@ Our framework for transformative workspaces extends the [Canary Melon Compass](/
 
 {{< figure src="images/andalusian-digital-legacy-stone.jpg" alt="Hand tracing code on ancient stone - digital nomad legacy in Andalusia" caption="Your keyboard is your chisel, Andalusia your marble" >}}
 
-Choosing a workspace in Málaga is sculpting your professional life in living heritage. The true sanctuary emerges when space disappears, leaving only the alchemy of Olive-Zellige-Tagine in your flow state - a philosophy deepened through [regenerative journeys](/resources/eco-nomad/jbala-trail-andalusian-legacy/) across Andalusia's landscapes.
+Choosing a workspace in Málaga is more than a logistical decision; it's sculpting your professional life in living heritage. The true sanctuary emerges when the space itself disappears, leaving only the alchemy of Olive-Zellige-Tagine in your flow state. It's a tangible expression of a **[rooted nomadic life philosophy](/about/philosophy/rooted-nomadism-philosophy/)**, where your environment nourishes your work and your soul.
 
 ---
 
 #### **Your Sacred Challenge**
 1.  **Map Your Energy Flow:** Where does your creativity peak? Silence/community/nature?
-2.  **Adopt One Andalusian Ritual:** Try "maritime meditation" or "patio deep work"
+2.  **Adopt One Andalusian Ritual:** Try "maritime meditation" or "patio deep work."
 3.  **Document the Transformation:** How does place reshape your work essence?
 
 > *"Your ultimate desk isn't furniture - it's a fragment of Andalusian soul."*
@@ -132,5 +132,5 @@ Choosing a workspace in Málaga is sculpting your professional life in living he
 
 {{< promptbox title="Continue your Málaga journey" >}}
 - [Málaga's Local Rituals: Espetos & Epiphanies](/malaga-codex/local-rituals/)
-- [The Alcazaba's Secret Code: Moorish Wisdom for Digital Nomads](/malaga-codex/history-reborn/)
+- [The Alcabaza's Secret Code: Moorish Wisdom for Digital Nomads](/malaga-codex/history-reborn/)
 {{< /promptbox >}}

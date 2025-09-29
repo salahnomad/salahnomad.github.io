@@ -104,9 +104,7 @@ The trauma of exile encoded what I call our **diaspora operating system**:
 - Resourcefulness modules developed in borderlands
 
 **This manifested when:**
-- My e-commerce business collapsed during COVID lockdowns (as told in [Chapter 14 of *Algorithmic Sardines*]({{< relref "/ebook/algorithmic-sardines" >}}))
-- Instead of despairing, I launched this blog - transforming physical limitation into digital expansion
-- Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet" >}})**
+My e-commerce business collapsed during COVID lockdowns, a story of **[personal resilience developed](/about/story/olive-trees-and-algorithms/)** in the face of profound uncertainty. Instead of despairing, I launched this blog, transforming physical limitation into digital expansion. Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet" >}})**.
 
 ### 3. **Adaptation as Creative Fusion (Eastern Approach)**
 {{< figure 
@@ -177,7 +175,7 @@ Today when I walk through Málaga's Alcazaba ([The Alcazaba's Secret Code]({{< r
 - **Adaptation**: Blending Amazigh proverbs with AI poetry generators
 - **Contribution**: Teaching ancestral tech ethics to Silicon Valley developers
 
-Those iron keys in Granada's museum don't represent locked doors anymore. They're the first rudders that steered us toward becoming **[citizens of the in-between]({{< relref "/about/philosophy/salah-philosophy" >}})** - the eternal navigators of straits physical and spiritual.
+Those iron keys in Granada's museum don't represent locked doors anymore. They're the first rudders that steered us toward becoming **[citizens of the in-between]({{< relref "/about/philosophy/rooted-nomadism-philosophy" >}})** - the eternal navigators of straits physical and spiritual.
 
 > "Our roots aren't buried in soil, but carried in our marrow. To be uprooted isn't to disappear - it's to become compost for new ways of belonging."
 

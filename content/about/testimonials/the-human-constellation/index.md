@@ -7,7 +7,7 @@ categories: ["Rooted Journeys"]
 subcategory: ["Testimonials"]
 tags: ["human-connection", "rooted-nomadism", "nomadic-identity", "mentorship", "cultural-exchange", "serendipity", "storytelling"]
 keywords: ["building community as a nomad", "authentic travel stories", "cross-cultural friendship", "how human connections shape identity", "Salah Nomad story", "the power of serendipity in travel"]
-# On spécifie le chemin complet DANS le bundle
+# --- Page Metadata ---
 featured_image: "images/human-constellation-hero.jpg"
 featured_image_alt: "A star map showing three key constellations labeled 'Pieter - Mirror', 'Sally - Bridge', and 'Zak - Anchor', against a backdrop of olive trees and digital circuitry."
 authors: ["Salah Nomad"]
@@ -20,7 +20,7 @@ cta: community
 
 There is a persistent image burned into our collective imagination—the lone digital nomad on a mountain in Bali, sunrise at their back, the world at their feet. It's beautiful, yes, but it's a lie. The truth is far more human.
 
-We are not solitary stars adrift in the universe. We are constellations—shaped not by solo journeys, but by the luminous encounters that chart our course. This is the origin story of [**Rooted Nomadism**](/about/philosophy/salah-philosophy/), a philosophy forged not in isolation, but in the **sacred geometry of human connection.** It is the story of three celestial bodies in my personal cosmos: a Dutch photographer who became my mirror, a British entrepreneur who built my bridge, and a Moroccan exile who was my anchor.
+We are not solitary stars adrift in the universe. We are constellations—shaped not by solo journeys, but by the luminous encounters that chart our course. This is the origin story of the **[philosophy forged by these very encounters, which I call Rooted Nomadism](/about/philosophy/rooted-nomadism-philosophy/)**. It is a testament to the sacred geometry of human connection, told through the story of three celestial bodies in my personal cosmos: a Dutch photographer who became my mirror, a British entrepreneur who built my bridge, and a Moroccan exile who was my anchor.
 
 ---
 
