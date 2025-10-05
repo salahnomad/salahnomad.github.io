@@ -416,7 +416,7 @@ enableRobotsTXT = true
     weight = 30
 
 # =============================================================================
-# CONFIGURATIONS TECHNIQUES & DE BUILD (Conservées et Optimisées).
+# CONFIGURATIONS TECHNIQUES & DE BUILD (Conservées et Optimisées)
 # =============================================================================
 [build]
   writeStats = true
@@ -457,8 +457,3 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 timeout = 1800000
-
-# --- Tolerate missing refs for partial deployment ---
-[logs]
-  [logs.RefNotBuilt]
-    level = "warning"
