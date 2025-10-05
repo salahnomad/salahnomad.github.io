@@ -457,3 +457,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 timeout = 1800000
+
+[logs]
+  [logs.RefNotBuilt]
+    level = "warning"
