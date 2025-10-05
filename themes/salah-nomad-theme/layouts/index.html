@@ -2,19 +2,27 @@
 {{ define "main" }}
   {{ $showSidebar := .Site.Params.homepageSidebar | default true }}
 
-  {{/* --- LOGIQUE DE COLLECTE ET DE TRI CORRIGÉE --- */}}
   {{ $mainSectionNames := .Site.Params.mainSections | default (slice "posts") }}
-  
-  {{/* 1. On récupère toutes les pages régulières du site */}}
-  {{ $allRegularPages := .Site.RegularPages }}
+  {{ $collectedPagesFromSections := slice }}
+  {{ range $sectionName := $mainSectionNames }}
+    {{ $section := where site.Sections "Section" $sectionName }}
+    {{ if $section }}
+      {{ $sectionPage := index $section 0 }}
+      {{ if $sectionPage }}
+        {{ $pagesInSection := $sectionPage.RegularPagesRecursive }}
+        {{ $collectedPagesFromSections = $collectedPagesFromSections | append $pagesInSection }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 
-  {{/* 2. On filtre ces pages pour ne garder que celles des 'mainSections' */}}
-  {{ $validPages := where $allRegularPages "Section" "in" $mainSectionNames }}
+  {{ $validPages := slice }}
+  {{ range $page := $collectedPagesFromSections }}
+    {{ if and $page $page.IsPage }}
+      {{ $validPages = $validPages | append $page }}
+    {{ end }}
+  {{ end }}
 
-  {{/* 3. On trie la collection de pages obtenue par date. C'est ici que l'erreur se produisait. */}}
   {{ $sortedPages := $validPages.ByDate.Reverse }}
-  {{/* --- FIN DE LA CORRECTION --- */}}
-
 
   {{/* --- Définition des articles pour le Hero --- */}}
   {{ $featuredArticle := false }}
@@ -40,6 +48,7 @@
         <div class="hero-featured-grid">
           <div class="hero-main-article">
             <a href="{{ $featuredArticle.RelPermalink }}" class="hero-main-article-link">
+              {{/* Pour l'article principal, on s'attend à ce qu'il utilise 'image' ou 'featured_image' */}}
               {{ $heroMainImageCandidate := $featuredArticle.Params.image | default ($featuredArticle.Params.featured_image | default .Site.Params.defaultPlaceholderImage) }}
               {{ partial "responsive-image.html" (dict
                   "src" $heroMainImageCandidate
@@ -88,6 +97,7 @@
                 <a href="{{ $article.RelPermalink }}" class="hero-secondary-image-link-right">
                   <div class="hero-secondary-image-wrap-right">
                     {{ $img := "" }}
+                    {{/* MODIFIÉ ICI pour utiliser $article.Params.featured_image */}}
                     {{ $imgCandidate := $article.Params.featured_image | default ($.Site.Params.defaultPlaceholderImage | default "/images/placeholders/placeholder-1x1.jpg") }}
                     {{ $res := $article.Resources.GetMatch $imgCandidate }}
                     {{ if not $res }}{{ $res = resources.Get $imgCandidate }}{{ end }}
