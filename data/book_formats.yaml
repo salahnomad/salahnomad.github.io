@@ -1,0 +1,10 @@
+- name: Paperback
+  icon: "book"
+- name: Kindle
+  icon: "device-kindle"
+- name: PDF
+  icon: "file-text"
+- name: EPUB
+  icon: "book-2"
+- name: Audiobook
+  icon: "headphones"

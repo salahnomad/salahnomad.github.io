@@ -1,0 +1,19 @@
+{{/* layouts/taxonomy/taxonomy.html */}}
+{{ define "main" }}
+  <div class="container main-content-container">
+    <header class="page-header">
+      <h1 class="page-title">{{ .Title }}</h1> {{/* Ex: "Tags" ou "Categories" */}}
+      {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+    </header>
+    <div class="taxonomy-terms-list">
+       {{ $taxonomy := .Data.Singular }} {{/* Récupère le nom singulier (tag, category) */}}
+       <ul>
+         {{ range .Data.Terms.ByCount }} {{/* Liste les termes par nombre d'articles */}}
+           <li>
+             <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+           </li>
+         {{ end }}
+       </ul>
+    </div>
+  </div>
+{{ end }}

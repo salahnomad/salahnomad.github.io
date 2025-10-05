@@ -1,0 +1,35 @@
+{{/* layouts/partials/breadcrumbs.html - Version Améliorée et Complète */}}
+{{ if .Parent }}
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    {{/* 1. Lien vers la page d'accueil (toujours présent) */}}
+    <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="{{ .Site.Home.RelPermalink }}">
+        <span itemprop="name">{{ .Site.Params.breadcrumbHomeName | default "Home" }}</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+
+    {{/* 2. Boucle sur les ancêtres (les sections parentes) */}}
+    {{- range .Ancestors.Reverse -}}
+      {{- if not .IsHome -}}
+        <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="{{ .RelPermalink }}">
+            <span itemprop="name">{{ .Title }}</span>
+          </a>
+          {{/* La position est calculée dynamiquement */}}
+          <meta itemprop="position" content="{{ .Parent.Weight | add 2 }}" />
+        </li>
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 3. La page actuelle (non cliquable) */}}
+    <li class="breadcrumbs-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+      <span itemprop="name">{{ .Title }}</span>
+      <meta itemprop="position" content="{{ .Parent.Weight | add 2 }}" />
+    </li>
+
+  </ol>
+</nav>
+{{ end }}

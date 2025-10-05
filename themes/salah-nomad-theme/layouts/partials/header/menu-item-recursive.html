@@ -1,0 +1,56 @@
+{{/* layouts/partials/header/menu-item-recursive.html */}}
+{{ $item := .item }}
+{{ $currentPage := .currentPage }}
+{{ $isHomePage := .isHomePage }}
+{{ $menuType := .menuType | default "main" }} {{/* Pour différencier les ID/classes si besoin (main, secondary) */}}
+
+{{ $active := false }}
+{{ $isParent := $item.HasChildren }}
+{{ $isParentNotLink := and $isParent (or (not $item.URL) (eq $item.URL "#")) }}
+{{ $menuID := $item.Identifier | default $item.Name | urlize }}
+{{ $menuItemPage := false }}
+{{ if $item.URL }}{{ $menuItemPage = site.GetPage $item.URL }}{{ end }}
+
+{{/* Logique d'activation (simplifiée pour le partiel, peut être affinée) */}}
+{{ if $menuItemPage }}
+  {{ if $isHomePage }}
+    {{ if eq $menuItemPage.RelPermalink "/" }}{{ $active = true }}{{ end }}
+  {{ else }}
+    {{ if eq $currentPage.RelPermalink $menuItemPage.RelPermalink }}{{ $active = true }}{{ end }}
+    {{ if $isParent | and (not $active) | and ($currentPage.IsDescendant $menuItemPage) }}{{ $active = true }}{{ end }}
+  {{ end }}
+{{ else if $isParent }} {{/* Si l'item parent n'a pas d'URL mais a des enfants actifs */}}
+  {{ range $item.Children }}
+    {{ $childPage := site.GetPage .URL }}
+    {{ if $childPage }}
+      {{ if $isHomePage }}
+        {{/* Un enfant ne peut pas rendre un parent 'home' actif sauf si l'enfant est lui-même 'home' */}}
+      {{ else }}
+        {{ if eq $currentPage.RelPermalink $childPage.RelPermalink }}{{ $active = true }}{{ break }}{{ end }}
+        {{ if $currentPage.IsDescendant $childPage }}{{ $active = true }}{{ break }}{{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+<li class="menu-item {{ if $isParent }}menu-item-has-children{{ end }} {{ if $active }}active{{ end }}">
+  {{ if not $isParentNotLink }}
+    <a href="{{ if $item.URL }}{{ $item.URL | relLangURL }}{{ else }}#{{ end }}" {{ if $isParent }} aria-haspopup="true" aria-expanded="false" aria-controls="submenu-{{ $menuType }}-{{ $menuID }}" {{ end }}>
+      {{ $item.Name }}{{ if $isParent }}<span class="dropdown-arrow" aria-hidden="true">▼</span>{{ end }}
+    </a>
+  {{ else }}
+    <button class="menu-item-no-link" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-{{ $menuType }}-{{ $menuID }}">
+      {{ $item.Name }}<span class="dropdown-arrow" aria-hidden="true">▼</span>
+    </button>
+  {{ end }}
+
+  {{ if $isParent }}
+    <ul class="sub-menu {{ if eq $menuType "main" }}theme-sub-menu{{ else }}util-sub-menu{{ end }}" id="submenu-{{ $menuType }}-{{ $menuID }}">
+      {{ range $item.Children.ByWeight }}
+        {{/* APPEL RÉCURSIF ICI */}}
+        {{ partial "header/menu-item-recursive.html" (dict "item" . "currentPage" $currentPage "isHomePage" $isHomePage "menuType" $menuType) }}
+      {{ end }}
+    </ul>
+  {{ end }}
+</li>

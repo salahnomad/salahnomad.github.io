@@ -1,0 +1,98 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\footer.html */}}
+{{/* --- VERSION MISE À JOUR POUR LE NOUVEAU WIDGET 'quote_cta' --- */}}
+<footer id="colophon" class="site-footer" role="contentinfo">
+
+  {{/* --- Section des Widgets Thématiques du Footer --- */}}
+  {{ if .Site.Params.footerWidgets.enable }}
+  <div class="footer-themed-widgets-wrap">
+    <div class="container">
+      <div class="footer-themed-widgets-grid">
+        
+        {{/* Widget 1: Quote CTA (Nouveau) */}}
+        {{ with .Site.Params.footerWidgets.quote_cta }}
+          {{ if .enable }}
+            <div class="footer-column widget widget_quote_cta">
+              <h3 class="widget-title">{{ .title }}</h3>
+              <div class="textwidget">
+                {{ $quotes := site.Data.widget_quotes }}
+                {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "footer") }}
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+
+        {{/* Widget 2: Quick Compass */}}
+        {{ with .Site.Params.footerWidgets.quickCompass }}
+          {{ if .enable }}
+            {{ partial "footer-widgets/widget-quick-compass.html" (dict "context" $ "config" .) }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Widget 3: Stay Rooted */}}
+        {{ with .Site.Params.footerWidgets.stayRooted }}
+          {{ if .enable }}
+            {{ partial "footer-widgets/widget-stay-rooted.html" (dict "context" $ "config" .) }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Widget 4: From the Souk */}}
+        {{ with .Site.Params.footerWidgets.fromTheSouk }}
+          {{ if .enable }}
+            {{ partial "footer-widgets/widget-from-the-souk.html" (dict "context" $ "config" .) }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Widget 5: Olive Network */}}
+        {{ with .Site.Params.footerWidgets.oliveNetwork }}
+          {{ if .enable }}
+            {{ partial "footer-widgets/widget-olive-network.html" (dict "context" $ "config" .) }}
+          {{ end }}
+        {{ end }}
+      </div><!-- .footer-themed-widgets-grid -->
+    </div><!-- .container -->
+  </div><!-- .footer-themed-widgets-wrap -->
+  {{ end }}
+
+
+  {{/* --- Barre Inférieure du Footer (Copyright, Menu, BackToTop) --- */}}
+  <div id="site-bottom" class="clear">
+    <div class="container footer-bottom-container">
+      <div class="site-info" role="contentinfo">
+        {{ $currentYear := now.Format "2006" }}
+        {{ $siteTitle := .Site.Title }}
+        {{ $copyrightText := .Site.Params.footerBottom.copyrightText | default "All rights reserved." }}
+        <p class="copyright">
+          © {{ $currentYear }} <a href="{{ $.Site.Home.RelPermalink }}">{{ $siteTitle }}</a>. {{ $copyrightText }}
+          {{ with .Site.Params.footerBottom.themeInfo }}
+            {{ if .enable }}
+            <span class="theme-info">
+              | Theme by <a href="{{ .url | default "#" | relURL }}" target="_blank" rel="noopener">{{ .name | default "Developer" }}</a>.
+            </span>
+            {{ end }}
+          {{ end }}
+        </p>
+      </div><!-- .site-info -->
+
+      {{ if .Site.Menus.footer }}
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul id="footer-menu" class="footer-menu" role="list">
+          {{ range .Site.Menus.footer.ByWeight }}
+            <li role="listitem">
+              <a href="{{ .URL | relLangURL }}" class="footer-link">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav><!-- .footer-nav -->
+      {{ end }}
+
+      {{ if .Site.Params.footerBottom.enableBackToTop | default true }}
+        <div class="back-to-top">
+          <a href="#top" class="back-to-top-link" aria-label="Back to top" data-back-to-top>
+            {{ partial "icons/arrow-up.svg" . }}
+          </a>
+        </div>
+      {{ end }}
+    </div><!-- .container -->
+  </div><!-- #site-bottom -->
+
+</footer><!-- #colophon -->

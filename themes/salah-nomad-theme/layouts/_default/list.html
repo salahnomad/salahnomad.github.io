@@ -1,0 +1,143 @@
+{{/* 
+  FICHIER MIS À JOUR : themes/salah-nomad-theme/layouts/_default/list.html
+  -----------------------------------------------------------------------
+  Logique de listing modifiée pour différencier les sections de premier niveau
+  des sous-sections.
+*/}}
+
+{{ define "main" }}
+  <div class="container main-content-container">
+
+    {{ $showSidebar := .Params.sidebar | default (.Site.Params.listPageSidebar | default true) }}
+    <div class="content-loop-wrap {{ cond $showSidebar "has-sidebar" "no-sidebar" }}">
+
+      <div class="post-list content-loop">
+        
+        <header class="page-header list-page-header">
+          <h1 class="page-title list-page-title">{{ .Title }}</h1>
+          {{ with .Content }}
+            <div class="page-description list-page-description taxonomy-description">{{ . }}</div>
+          {{ end }}
+        </header>
+        
+        {{/* --- Image en Vedette de la Section (Code inchangé) --- */}}
+        {{ $sectionImageSrc := "" }}
+        {{ $imagePathInFrontMatter := .Params.featured_image }}
+
+        {{ if $imagePathInFrontMatter }}
+            {{ if strings.HasPrefix $imagePathInFrontMatter "http" }}
+                {{ $sectionImageSrc = $imagePathInFrontMatter }}
+            {{ else }}
+                {{ $imgRes := "" }}
+                {{ $imgRes = .Resources.GetMatch $imagePathInFrontMatter }}
+                {{ if not $imgRes }}{{ $imgRes = resources.Get $imagePathInFrontMatter }}{{ end }}
+
+                {{ if $imgRes }}
+                    {{ $sectionImageSrc = $imgRes }}
+                {{ else }}
+                    {{ if strings.HasPrefix $imagePathInFrontMatter "/" }}
+                        {{ if fileExists (printf "static%s" $imagePathInFrontMatter) }}
+                            {{ $sectionImageSrc = $imagePathInFrontMatter | relURL }}
+                        {{ end }}
+                    {{ else }}
+                        {{ if fileExists (printf "%s%s" .File.Dir $imagePathInFrontMatter) }}
+                            {{ $sectionImageSrc = printf "%s%s" .RelPermalink $imagePathInFrontMatter }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{ if $sectionImageSrc }}
+          <figure class="section-featured-image">
+            {{ partial "responsive-image.html" (dict
+                "src" $sectionImageSrc
+                "alt" (.Params.featured_image_alt | default (printf "Image d'illustration pour la section %s" (.Title | plainify)))
+                "page" .
+                "loading" "lazy"
+                "sizesKey" "singleFeatured" 
+                "class" "section-page-featured-img"
+                "figureClass" "section-page-featured-figure"
+                "caption" .Params.featured_image_caption
+            )}}
+          </figure>
+        {{ end }}
+        {{/* --- Fin Image en Vedette --- */}}
+
+        
+        {{/* ========================================================================= */}}
+        {{/* ======================== MODIFICATION STRATÉGIQUE ======================= */}}
+        {{/* ========================================================================= */}}
+
+        {{ $pagesToList := slice }}
+
+        {{/* --- On vérifie si la page est une sous-section (si elle a un parent dans sa section) --- */}}
+        {{ if .Parent.IsSection }}
+          {{/* 
+            CAS A : C'est une SOUS-SECTION (ex: /about/story/).
+            On ne prend que les pages qui sont directement ses enfants.
+          */}}
+          {{ $pagesToList = where .Pages "Kind" "page" }}
+
+        {{ else }}
+          {{/* 
+            CAS B : C'est une SECTION DE PREMIER NIVEAU (ex: /about/).
+            On garde la logique d'agrégation originale pour afficher tout le contenu.
+          */}}
+          {{ $parentSectionPage := . }}
+          {{ $aggregatedPages := slice }}
+          
+          {{ range where .Site.Pages "Kind" "page" }} 
+            {{ if .IsDescendant $parentSectionPage }}
+              {{ $aggregatedPages = $aggregatedPages | append . }}
+            {{ end }}
+          {{ end }}
+          
+          {{ if gt (len $aggregatedPages) 0 }}
+            {{ $pagesToList = sort ($aggregatedPages | uniq) "Date" "desc" }}
+          {{ end }}
+
+        {{ end }}
+        {{/* ====================== FIN DE LA MODIFICATION ======================= */}}
+        
+
+        {{ $paginator := .Paginate $pagesToList }}
+        
+        {{ if $paginator.Pages }}
+          <div class="posts-list-header">
+            <hr class="separator-above-title">
+            {{ if .Parent.IsSection }}
+              <h2 class="posts-list-title">{{ i18n "articlesInSubSection" | default (printf "Articles in %s" .Title) }}</h2>
+            {{ else }}
+              <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
+            {{ end }}
+            <hr class="separator-below-title">
+          </div>
+
+          <div class="article-grid list-page-grid">
+            {{ range $paginator.Pages }}
+              {{ partial "article-card.html" . }}
+            {{ end }}
+          </div>
+
+          {{ if gt $paginator.TotalPages 1 }}
+            <nav class="navigation pagination" role="navigation" aria-label="{{ i18n "postsNavigation" | default "Posts navigation" }}">
+                {{ template "_internal/pagination.html" . }}
+            </nav>
+          {{ end }}
+
+        {{ else }}
+          {{ if not .Content }} 
+            <p class="no-posts text-center">{{ i18n "noPostsInSection" | default "No posts found in this section or its subsections." }}</p>
+          {{ end }}
+        {{ end }}
+
+      </div><!-- /.post-list.content-loop -->
+
+      {{ if $showSidebar }}
+         {{ partial "sidebar.html" . }}
+      {{ end }}
+
+    </div><!-- /.content-loop-wrap -->
+  </div><!-- /.container.main-content-container -->
+{{ end }}

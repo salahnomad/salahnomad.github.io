@@ -1,0 +1,16 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_lead_magnet">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Free Guide" }}</span></h3>
+  <div class="widget-content lead-magnet-widget-content">
+    <form action="{{ $widgetData.form_action | safeURL }}" method="POST" target="_blank" class="lead-magnet-form">
+      <div class="form-group">
+        <label for="lead-magnet-email" class="sr-only">Email address</label>
+        <input type="email" name="email" id="lead-magnet-email" placeholder="{{ $widgetData.email_placeholder | default "Your email..." }}" required>
+      </div>
+      <button type="submit" class="button button-primary">{{ $widgetData.button_text | default "Get it!" }}</button>
+    </form>
+    {{ if $widgetData.sub_text }}
+      <p class="sub-text">{{ $widgetData.sub_text | $.Page.RenderString }}</p>
+    {{ end }}
+  </div>
+</section>

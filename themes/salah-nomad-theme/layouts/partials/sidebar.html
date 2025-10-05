@@ -1,0 +1,29 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\sidebar.html */}}
+{{/* --- VERSION MISE À JOUR POUR LE NOUVEAU WIDGET 'quote_cta' --- */}}
+{{ $sidebarParams := .Site.Params.sidebar }}
+{{/* Définit l'ordre souhaité pour les widgets, avec le nouveau CTA */}}
+{{/* Mettez "start_here" en deuxième position */}}
+{{ $widgetOrder := slice "weather" "cluster_navigation" "the_compass" "start_here" "newsletter_mediterranean" "quotes" "quote_cta" }}
+
+<aside id="secondary" class="widget-area sidebar">
+  {{ range $widgetOrder }}
+    {{ $widgetKey := . }}
+    {{/* Construction du nom du partial: remplace _ par - */}}
+    {{ $partialName := printf "sidebar/widget-%s.html" (replace $widgetKey "_" "-") }}
+
+    {{/* Vérifie si la configuration du widget existe ET s'il est activé */}}
+    {{ with index $sidebarParams $widgetKey }}
+      {{ if .enable }}
+        {{ if templates.Exists (printf "partials/%s" $partialName) }}
+          {{/* Passe les données spécifiques du widget et les contextes Site/Page */}}
+          {{ partial $partialName (dict "widgetData" . "Page" $.Page "Site" $.Site) }}
+        {{ else }}
+          {{ warnf "Sidebar widget partial not found: %s. Widget key: %s" $partialName $widgetKey }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+       {{/* Optionnel: Avertir si une clé dans $widgetOrder n'est pas trouvée dans [params.sidebar] */}}
+       {{/* warnf "Sidebar widget configuration key not found in params.sidebar: %s" $widgetKey */}}
+    {{ end }}
+  {{ end }}
+</aside><!-- #secondary -->

@@ -1,0 +1,48 @@
+{{/* layouts/section/digital-compass.html */}}
+{{/* Ce template est pour la page /digital-compass/ */}}
+
+{{ define "main" }}
+  {{ $showSidebar := .Params.sidebar | default (.Site.Params.listPageSidebar | default true) }} {{/* <<< Logique harmonisée */}}
+
+  <div class="container main-content-container">
+    <div class="content-loop-wrap {{ if $showSidebar }}has-sidebar{{ else }}no-sidebar{{ end }}"> {{/* Utilisation de if/else */}}
+
+      <div class="post-list content-loop">
+        {{ if or .Title .Content }}
+          <header class="page-header section-header">
+            {{ with .Title }}<h1 class="page-title section-title text-center my-4">{{ . }}</h1>{{ end }}
+            {{ with .Content }}
+              <div class="section-content text-center mb-5">
+                {{ . }}
+              </div>
+            {{ end }}
+          </header>
+        {{ end }}
+
+        {{ $paginator := .Paginate (.RegularPagesRecursive.ByDate.Reverse) }}
+
+        {{ if $paginator.Pages }}
+          <div class="article-grid digital-compass-listing-grid">
+            {{ range $paginator.Pages }}
+              {{ partial "article-card.html" . }}
+            {{ end }}
+          </div>
+
+          {{ if gt $paginator.TotalPages 1 }}
+            {{/* Assurez-vous d'appeler le template de pagination interne ou votre partiel */}}
+            <nav class="navigation pagination" role="navigation" aria-label="{{ i18n "postsNavigation" | default "Posts navigation" }}">
+                {{ template "_internal/pagination.html" . }}
+            </nav>
+          {{ end }}
+        {{ else }}
+          <p class="no-posts text-center">{{ i18n "noArticlesFoundInSection" | default "No articles found in this section yet." }}</p>
+        {{ end }}
+      </div><!-- /.post-list -->
+
+      {{ if $showSidebar }}
+        {{ partial "sidebar.html" . }}
+      {{ end }}
+
+    </div><!-- /.content-loop-wrap -->
+  </div><!-- /.container -->
+{{ end }}

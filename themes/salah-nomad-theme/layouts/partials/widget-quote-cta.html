@@ -1,0 +1,24 @@
+{{/*
+  layouts/partials/widget-quote-cta.html
+  VERSION FINALE - Avec classe de bouton unifiée
+*/}}
+{{ $quotes := .quotes }}
+{{ $firstQuote := "" }}
+{{ if gt (len $quotes) 0 }}{{ $firstQuote = index $quotes 0 }}{{ end }}
+
+<div class="widget-cta-quotes" id="rotator-container-{{ .id_suffix }}">
+  {{ if $firstQuote }}
+    <p class="widget-quote-text" id="rotator-text-{{ .id_suffix }}">{{ $firstQuote.text }}</p>
+  {{ end }}
+
+  <a href="/ebook/" class="footer-widget-button">
+    {{ partial "icons/book-open.svg" . }}
+    <span>Go to The Library</span>
+  </a>
+</div>
+
+{{ if gt (len $quotes) 0 }}
+<script id="rotator-data-{{ .id_suffix }}" type="application/json">
+  {{ $quotes | jsonify }}
+</script>
+{{ end }}

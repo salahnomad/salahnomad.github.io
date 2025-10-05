@@ -1,0 +1,136 @@
+@import 'variables'; // Pour breakpoints et variables
+
+/* ==========================================================================
+   Styles Responsives Globaux
+   ========================================================================== */
+
+// --- Styles pour Tablettes & Mobiles (<= $breakpoint-lg) ---
+@media (max-width: $breakpoint-lg) {
+
+  /* --- Header Responsive --- */
+  #top-bar .main-navigation > .menu { display: none; } // Cache menu desktop
+  .mobile-menu-toggle { display: block; order: 3; }  // Affiche burger
+  .header-right-group { order: 2; gap: $spacing-sm; }
+  .site-start { padding: $spacing-md 0; }
+
+  // --- Styles pour le menu mobile latéral ---
+  // --- DÉBUT DU BLOC CORRIGÉ/RESTAURÉ ---
+  nav.main-navigation {
+      // Styles par défaut quand PAS .toggled-on (caché et hors écran)
+      display: block; // Doit être block pour position:fixed et transition
+      position: fixed;
+      top: 0;
+      left: -100%; // <<< Positionné hors écran à gauche
+      width: 85%; // Largeur du panneau
+      max-width: 300px;
+      height: 100vh; // Toute la hauteur
+      background-color: var(--color-background); // Fond
+      z-index: 2000; // Au-dessus des autres contenus
+      overflow-y: auto; // Permet de scroller si le menu est long
+      transition: left 0.3s ease-in-out; // <<< Animation de coulissement sur la propriété 'left'
+      border-right: 1px solid var(--color-border); // Bordure droite
+      box-shadow: 3px 0 10px rgba(0,0,0,0.1); // Ombre portée
+
+      // Styles quand le menu est actif (.toggled-on ajouté par JS)
+      &.toggled-on {
+          left: 0; // <<< FAIT COULISSER le menu en le ramenant à l'écran
+      }
+
+      // Styles pour la liste UL à l'intérieur du menu mobile
+      .menu {
+         display: block !important; // Important pour s'assurer qu'il s'affiche
+         position: relative; // Reset positionnement
+         width: auto; max-width: none; // Reset largeur
+         margin: $spacing-lg 0 0 0; // Marge en haut
+         background-color: transparent; border: none; box-shadow: none; // Reset style desktop
+         padding: 0; border-radius: 0; max-height: none; overflow-y: visible;
+
+         // Styles des items et liens dans le menu mobile
+         .menu-item {
+            width: 100%; padding-bottom: 0; text-align: left;
+         }
+         .menu-item a,
+         .menu-item .menu-item-no-link {
+           padding: $spacing-md $container-padding; display: block;
+           border-bottom: 1px solid var(--color-border);
+           text-transform: none; font-size: 1rem; font-weight: $font-weight-normal;
+           color: var(--color-text-primary); text-decoration: none;
+           border-left: none; // Pas de bordure gauche comme en desktop
+         }
+         .menu-item a { // Style survol/focus liens
+             &:hover, &:focus { background-color: rgba(0,0,0,0.05); color: var(--color-text-accent); }
+         }
+          .menu-item .menu-item-no-link { // Style pour parent non-cliquable
+              color: var(--color-text-secondary); font-weight: $font-weight-bold;
+              background-color: rgba(0,0,0,0.02); cursor: default;
+          }
+          .menu-item.active > a,
+          .menu-item.active > .menu-item-no-link { // Style actif
+              color: var(--color-text-accent); font-weight: $font-weight-bold;
+          }
+         .menu-item:last-child a {
+            border-bottom: none; // Pas de bordure pour le dernier
+         }
+
+         // Sous-menu en mobile
+         .sub-menu {
+           position: static; display: block; // Affiché normalement, pas en dropdown
+           border: none; box-shadow: none; // Reset style desktop
+           padding: $spacing-xs 0 $spacing-sm ($spacing-lg * 1.5); // Indentation
+           background-color: rgba(0,0,0,0.05); // Léger fond
+           min-width: auto; margin: 0; border-top: 1px solid var(--color-border);
+           border-radius: 0;
+
+           .menu-item a { // Liens enfants
+             font-size: 0.9rem; padding-top: $spacing-sm; padding-bottom: $spacing-sm;
+             border-bottom: none !important; font-weight: $font-weight-normal;
+             color: var(--color-text-primary); border-left: none;
+             &:hover, &:focus { background-color: rgba(0,0,0,0.08); color: var(--color-text-accent); }
+           }
+           .menu-item.active > a { // Enfant actif
+               color: var(--color-text-accent);
+               font-weight: $font-weight-bold;
+           }
+         } // Fin .sub-menu
+
+         .dropdown-toggle { display: none; } // Cacher flèche desktop dans le menu mobile
+
+      } // Fin .menu (dans nav mobile)
+  } // Fin nav.main-navigation (responsive)
+  // --- FIN DU BLOC CORRIGÉ/RESTAURÉ ---
+
+  /* --- Formulaire Recherche Responsive --- */
+  .main-header-search .header-search-form-wrap {
+      left: $container-padding;
+      right: $container-padding;
+      top: calc(100% + 5px);
+  }
+
+  /* --- Footer Responsive --- */
+  .footer-widgets-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+  }
+
+} // Fin @media <= lg
+
+
+// --- Mobiles (<= $breakpoint-md) ---
+@media (max-width: $breakpoint-md) {
+    .site-branding .site-title { font-size: 1.8rem; }
+    .post-list { grid-template-columns: 1fr; }
+    .footer-widgets-columns { grid-template-columns: 1fr; gap: $spacing-xl; }
+    .footer-column { &:not(:last-child) { margin-bottom: $spacing-xl; } }
+    .footer-bottom-container { flex-direction: column; text-align: center; }
+    .site-info, .footer-nav { width: 100%; text-align: center; margin-bottom: $spacing-md; &:last-child { margin-bottom: 0; } }
+    .site-info .theme-info { display: block; margin-left: 0; margin-top: $spacing-xs; }
+    .footer-nav ul { justify-content: center; gap: $spacing-lg; }
+    .back-to-top { bottom: $spacing-sm; right: $spacing-sm; }
+} // Fin @media <= md
+
+
+// --- Très Petits Écrans (<= $breakpoint-sm) ---
+@media (max-width: $breakpoint-sm) {
+  .site-branding .site-title { font-size: 1.6rem; }
+  // Autres ajustements très fins
+}

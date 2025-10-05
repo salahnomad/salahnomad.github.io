@@ -1,0 +1,516 @@
+// H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_single.scss
+// --- VERSION FINALE RÉVISÉE ET NETTOYÉE ---
+@import 'variables';
+
+// --- Conteneur Général ---
+.post-single {
+  padding: 0;
+  margin-bottom: $spacing-xxl;
+}
+
+// --- En-tête de l'Article ---
+.post-header {
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.post-title {
+  font-size: 2.8rem;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  line-height: 1.2;
+  color: var(--color-text-headings);
+  font-weight: $font-weight-bold;
+  font-family: var(--font-heading);
+  transition: color 0.3s ease;
+}
+
+// --- Métadonnées ---
+.post-meta {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: $spacing-sm $spacing-lg;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-top: $spacing-md;
+  transition: color 0.3s ease;
+  span { display: inline-flex; align-items: center; gap: $spacing-xs; }
+  svg { width: 1em; height: 1em; stroke: currentColor; stroke-width: 1.5px; opacity: 0.7; margin-right: $spacing-xs; }
+  a {
+    color: inherit; text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+    transition: color 0.2s, border-color 0.2s;
+    &:hover, &:focus {
+      color: var(--color-link);
+      border-bottom-color: var(--color-link);
+    }
+     &:focus-visible {
+       border-bottom-style: solid;
+       @include a11y-focus;
+    }
+  }
+}
+
+// --- Image Mise en Avant ---
+.post-featured-image {
+  margin: $spacing-xl 0;
+  figure { margin: 0; }
+  img {
+    display: block; width: 100%; height: auto; border-radius: $border-radius-lg;
+    box-shadow: var(--box-shadow-medium);
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+  }
+  figcaption {
+    text-align: center; font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-top: $spacing-sm; font-style: italic;
+    transition: color 0.3s ease;
+  }
+}
+
+// --- Contenu Principal de l'Article / Page ---
+.post-content {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
+
+  h2, h3, h4, h5, h6 {
+    margin: ($spacing-xl * 1.5) 0 $spacing-md 0;
+    font-family: var(--font-heading);
+    font-weight: $font-weight-bold;
+    line-height: 1.3;
+    color: var(--color-text-headings);
+    transition: color 0.3s ease;
+  }
+  h2 {
+    font-size: 1.8rem; padding-bottom: $spacing-sm;
+    border-bottom: 2px solid var(--color-text-accent-secondary);
+    transition: border-color 0.3s ease;
+  }
+  h3 { font-size: 1.5rem; font-weight: $font-weight-semibold; }
+  h4 { font-size: 1.25rem; font-weight: $font-weight-semibold; }
+
+  p { margin-bottom: $spacing-lg; &:last-child { margin-bottom: 0; } }
+  h2 + p, h3 + p, h4 + p, h5 + p, h6 + p { margin-top: $spacing-md; }
+
+  a {
+    color: var(--color-link);
+    text-decoration: underline; text-decoration-skip-ink: auto;
+    transition: color 0.2s ease;
+    &:hover, &:focus {
+      color: var(--color-link-hover);
+      text-decoration: none;
+    }
+     &:focus-visible {
+       @include a11y-focus;
+       text-decoration: none;
+    }
+  }
+
+  ul, ol {
+    margin: 0 0 $spacing-lg 0;
+    padding-left: $spacing-lg;
+    li {
+        margin-bottom: $spacing-sm;
+        &::marker {
+          color: var(--color-text-accent);
+          font-weight: $font-weight-bold;
+        }
+     }
+  }
+  ul { list-style: disc outside; }
+  ol { list-style: decimal outside; }
+  ul ul, ol ol, ul ol, ol ul {
+    margin: $spacing-sm 0 $spacing-sm $spacing-lg;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--color-blockquote-border);
+    padding: $spacing-md $spacing-lg; margin: $spacing-lg 0; font-size: 1.1rem; font-style: italic;
+    color: var(--color-text-blockquote);
+    background-color: var(--color-blockquote-background);
+    border-radius: 0 $border-radius-md $border-radius-md 0;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    p { margin-bottom: 0; }
+    cite {
+       display: block; margin-top: $spacing-sm; font-size: 0.9rem; font-style: normal;
+       color: var(--color-text-secondary);
+       transition: color 0.3s ease;
+       &::before { content: "— "; }
+    }
+  }
+
+  code:not(pre code) {
+    background-color: var(--color-code-background);
+    color: var(--color-code-text);
+    padding: 0.15em 0.4em; font-size: 0.9em; border-radius: $border-radius-sm;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; word-break: break-word;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  pre {
+    background-color: var(--color-pre-background);
+    color: var(--color-pre-text);
+    border: 1px solid var(--color-border);
+    padding: $spacing-md $spacing-lg; margin-bottom: $spacing-lg; overflow-x: auto;
+    border-radius: $border-radius-md; font-size: 0.9em; line-height: 1.5;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    code { background-color: transparent; padding: 0; font-size: inherit; color: inherit; border-radius: 0; font-family: inherit; }
+  }
+
+  img {
+    max-width: 100%; height: auto; margin: $spacing-lg auto; display: block;
+    border-radius: $border-radius-md;
+    box-shadow: var(--box-shadow-light);
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+  }
+  figure {
+    margin: $spacing-lg 0;
+    img { margin: 0 auto; }
+  }
+  figcaption {
+    text-align: center; font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-top: $spacing-sm; font-style: italic;
+    transition: color 0.3s ease;
+  }
+
+  table {
+     width: 100%; margin-bottom: $spacing-lg; border-collapse: collapse; border-spacing: 0;
+     font-size: 0.95rem;
+     th, td {
+       border: 1px solid var(--color-border);
+       padding: $spacing-sm $spacing-md; text-align: left; vertical-align: top;
+       transition: border-color 0.3s ease, background-color 0.3s ease;
+     }
+     th {
+       background-color: var(--color-table-header-background);
+       font-weight: $font-weight-bold;
+       font-family: var(--font-heading);
+     }
+  }
+
+  hr {
+    margin: $spacing-xl 0;
+    border: 0; border-top: 2px solid var(--color-text-accent-secondary);
+    opacity: 0.5;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+// --- Pied de page de l'Article (Tags & Share) ---
+.post-footer {
+  margin-top: $spacing-xl; padding-top: $spacing-lg;
+  border-top: 1px solid var(--color-border);
+  transition: border-color 0.3s ease;
+}
+
+// --- Tags ---
+.post-tags {
+  margin-bottom: $spacing-lg;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+
+  .tags-label {
+    font-weight: $font-weight-bold;
+    display: inline-flex;
+    align-items: center; gap: $spacing-xs;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+    svg { width: 1em; height: 1em; fill: currentColor; opacity: 0.8; }
+  }
+
+  .tags-list {
+    list-style: none; padding: 0; margin: 0; display: inline-flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    li { margin: 0; padding: 0; }
+    a {
+      display: inline-block;
+      background-color: var(--color-text-accent-secondary);
+      color: var(--color-text-on-accent);
+      padding: $spacing-xs $spacing-sm;
+      font-size: 0.7rem; border-radius: $border-radius-sm;
+      text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; font-weight: $font-weight-bold;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+      &:hover, &:focus {
+         filter: brightness(90%);
+         color: var(--color-text-on-accent);
+         text-decoration: none;
+         transform: translateY(-1px);
+      }
+      &:focus-visible {
+          outline: none;
+          box-shadow: 0 0 0 3px var(--color-focus-ring);
+          filter: brightness(90%);
+      }
+    }
+  }
+}
+
+// --- Boutons de Partage ---
+.post-share {
+  margin-top: $spacing-lg;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-sm $spacing-lg;
+  .share-label {
+    font-weight: $font-weight-bold;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    margin-right: $spacing-xs;
+  }
+  .share-icons {
+    list-style: none; padding: 0; margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+    li { margin: 0; padding: 0; }
+    a {
+      display: inline-flex; justify-content: center; align-items: center;
+      color: var(--color-text-accent);
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: transform 0.2s ease-out, color 0.2s ease;
+      border-radius: 50%;
+      padding: $spacing-xs;
+      &:hover, &:focus {
+        color: var(--color-link-hover);
+        transform: scale(1.1);
+      }
+      &:focus-visible {
+         @include a11y-focus;
+         color: var(--color-link-hover);
+       }
+      svg { width: 1em; height: 1em; fill: currentColor; }
+    }
+  }
+}
+
+// --- Shortcode [promptbox] ---
+.prompt-box {
+  background-color: var(--color-blockquote-background);
+  border-left: 4px solid var(--color-text-accent);
+  border-radius: $border-radius-md;
+  padding: $spacing-md $spacing-lg;
+  margin: $spacing-lg 0;
+  .prompt-box-title {
+    font-family: var(--font-heading);
+    font-weight: $font-weight-bold;
+    color: var(--color-text-headings);
+    margin: 0 0 $spacing-md 0;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.1rem;
+    font-style: normal;
+  }
+  .prompt-box-content {
+    font-style: italic;
+    color: var(--color-text-blockquote);
+    p, ul, ol {
+      font-family: var(--font-body);
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: $spacing-sm;
+    }
+    strong { font-style: normal; }
+    ol, ul {
+      padding-left: $spacing-lg;
+      margin-top: $spacing-sm;
+    }
+    *:last-child { margin-bottom: 0; }
+  }
+}
+
+// --- Breadcrumbs ---
+.breadcrumbs {
+  margin: 0 0 $spacing-lg 0;
+  padding-bottom: $spacing-md;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border-light);
+}
+.breadcrumbs-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; align-items: center; gap: $spacing-xs;
+}
+.breadcrumbs-item {
+  display: inline-flex; align-items: center;
+  a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover, &:focus {
+      color: var(--color-link);
+      text-decoration: underline;
+    }
+  }
+  &:not(:last-child)::after {
+    content: '›';
+    margin: 0 ($spacing-sm - $spacing-xs);
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+  }
+  &.active {
+    span {
+      font-weight: $font-weight-semibold;
+      color: var(--color-text-primary);
+    }
+  }
+}
+
+// --- Page "Coming Soon" ---
+.coming-soon-container {
+  max-width: 650px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-background-alt);
+  h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+  p { font-size: 1.1rem; color: var(--color-text-secondary); line-height: 1.7; }
+  h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1.5rem; }
+  .newsletter-form { margin-bottom: 2rem; }
+  .btn-back-to-blog {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+    &:hover, &:focus { color: var(--color-link); }
+  }
+}
+
+/* ==========================================================================
+   Styles pour la Page "The Compass" (Version Finale et Infaillible)
+   ========================================================================== */
+
+.compass-page-wrapper {
+  /* Ce conteneur "blinde" tous nos styles et les isole du reste du site */
+
+  .framework-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2.5rem 0;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .framework-card {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background-alt);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--box-shadow-medium);
+    }
+
+   .framework-icon {
+      width: 80px;  /* J'ai légèrement augmenté la taille pour plus d'impact */
+      height: 80px;
+      margin: 0 auto 1.5rem auto;
+      border-radius: 50%;
+      border: 3px solid var(--color-border-light);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+      overflow: hidden; /* C'est la clé : tout ce qui dépasse du cercle est caché */
+      
+      /* On s'assure que la figure et l'image remplissent parfaitement le conteneur */
+      figure, img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* S'assure que l'image remplit l'espace sans se déformer */
+      }
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--color-text-secondary);
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .framework-description {
+      font-size: 0.95rem;
+      color: var(--color-text-primary);
+      flex-grow: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .framework-link {
+      display: inline-block;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: auto;
+    }
+  }
+
+  .book-cover-on-compass img {
+    max-width: 300px;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-medium);
+  }
+
+  .payhip-cta-container {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+
+  .compass-cta-button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    background-color: var(--color-text-accent);
+    color: var(--color-text-on-accent) !important;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 15px rgba(var(--sunset-gold-rgb, 244, 162, 97), 0.2);
+
+    &:hover, &:focus {
+      transform: translateY(-3px);
+      background-color: #e76f51;
+      box-shadow: 0 6px 20px rgba(231, 111, 81, 0.3);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--color-focus-outline);
+      outline-offset: 3px;
+    }
+  }
+}

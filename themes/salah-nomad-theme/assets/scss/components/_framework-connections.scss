@@ -1,0 +1,78 @@
+// assets/scss/components/_framework-connections.scss
+
+.framework-connections-wrapper {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+
+  .connections-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-heading);
+  }
+
+  .connections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .connection-card {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+    background: var(--color-bg-offset);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(var(--color-shadow-rgb), 0.1);
+      border-color: var(--color-primary);
+    }
+
+    .card-icon {
+      font-size: 1.75rem;
+      margin-right: 1rem;
+      background: rgba(var(--color-primary-rgb), 0.1);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-text {
+      flex: 1;
+      
+      strong {
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        margin-bottom: 0.25rem;
+      }
+
+      span {
+        color: var(--color-heading);
+        font-weight: 500;
+        line-height: 1.4;
+      }
+    }
+
+    .card-arrow {
+      font-size: 1.5rem;
+      color: var(--color-text-offset);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover .card-arrow {
+      transform: translateX(5px);
+      color: var(--color-primary);
+    }
+  }
+}

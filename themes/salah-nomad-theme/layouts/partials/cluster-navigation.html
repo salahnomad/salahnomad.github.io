@@ -1,0 +1,37 @@
+{{/*
+  Partial: cluster-navigation.html
+  ---------------------------------
+  Affiche un "sitemap contextuel" pour la catégorie principale de la page en cours.
+  S'intègre parfaitement comme un widget de sidebar.
+*/}}
+
+{{ $current_page := . }}
+{{ $current_category := "" }}
+
+{{/* On prend la première catégorie de la page comme catégorie de référence */}}
+{{ with .Params.categories }}
+  {{ $current_category = index . 0 }}
+{{ end }}
+
+{{/* On ne continue que si une catégorie est définie */}}
+{{ if $current_category }}
+
+  {{/* On trouve toutes les pages de cette catégorie, sans inclure la page actuelle */}}
+  {{ $pages_in_cluster := where .Site.RegularPages "Params.categories" "intersect" (slice $current_category) }}
+
+  {{ if gt (len $pages_in_cluster) 1 }} {{/* On n'affiche le widget que s'il y a plus d'un article dans le cluster */}}
+  <div class="widget widget-cluster-nav">
+      <h3 class="widget-title">Explore "{{ $current_category }}"</h3>
+      <ul class="cluster-nav-list">
+          {{ range $pages_in_cluster }}
+          <li class="cluster-nav-item">
+            <a href="{{ .RelPermalink }}" {{ if eq .Permalink $current_page.Permalink }}class="is-active"{{ end }}>
+              {{ .Title }}
+            </a>
+          </li>
+          {{ end }}
+      </ul>
+  </div>
+  {{ end }}
+
+{{ end }}

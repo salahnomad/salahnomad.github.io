@@ -1,0 +1,26 @@
+<article class="spoke-card">
+  <a href="{{ .RelPermalink }}" class="card-link-wrapper">
+    {{ with .Params.featured_image }}
+      {{ $image := $.Resources.GetMatch . }}
+      {{ if $image }}
+        {{ $image = $image.Fill "400x225 webp q80" }}
+        <div class="card-image-container">
+          <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="card-image" loading="lazy">
+        </div>
+      {{ end }}
+    {{ end }}
+    
+    <div class="card-content">
+      <h3 class="card-title">{{ .Title }}</h3>
+      
+      {{ with .Description }}
+        <p class="card-description">{{ . | truncate 120 }}</p>
+      {{ end }}
+      
+      <div class="card-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}</time>
+        {{ with .ReadingTime }}<span>• {{ . }} min read</span>{{ end }}
+      </div>
+    </div>
+  </a>
+</article>

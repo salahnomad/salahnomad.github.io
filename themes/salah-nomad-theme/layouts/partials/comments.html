@@ -1,0 +1,40 @@
+{{/* layouts/partials/comments.html */}}
+{{/* --- VERSION CORRIGÉE : Respecte .Params.comments --- */}}
+
+{{/* Condition principale : Ne rien faire si comments est explicitement false dans le front matter */}}
+{{ if ne .Params.comments false }}
+
+  {{/* Ensuite, vérifier si Giscus est activé globalement et configuré */}}
+  {{ if .Site.Params.giscus.enable | default false }}
+    {{ with .Site.Params.giscus }}
+      {{ if and .repo .repoId .category .categoryId }}
+
+        <section class="comments-section">
+          <h2 class="comments-title">{{ i18n "comments" | default "Comments" }}</h2>
+          <div class="giscus"></div> {{/* Conteneur pour Giscus */}}
+          <script src="https://giscus.app/client.js"
+                  data-repo="{{ .repo }}"
+                  data-repo-id="{{ .repoId }}"
+                  data-category="{{ .category }}"
+                  data-category-id="{{ .categoryId }}"
+                  data-mapping="{{ .mapping | default "pathname" }}"
+                  data-strict="{{ .strict | default "0" }}"
+                  data-reactions-enabled="{{ .reactionsEnabled | default "1" }}"
+                  data-emit-metadata="{{ .emitMetadata | default "0" }}"
+                  data-input-position="{{ .inputPosition | default "bottom" }}"
+                  data-theme="{{ .theme | default "preferred_color_scheme" }}"
+                  data-lang="{{ .lang | default $.Site.Language.Lang | default "en" }}"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        </section>
+
+      {{ else }}
+        {{/* Paramètres Giscus manquants dans hugo.toml */}}
+        {{ warnf "[Giscus] Configuration incomplete in hugo.toml (repo, repoId, category, categoryId are required)." }}
+        <p style="color: red; font-weight: bold;">Giscus configuration is incomplete. Please check hugo.toml.</p>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+{{ end }} {{/* Fin de la condition "if ne .Params.comments false" */}}

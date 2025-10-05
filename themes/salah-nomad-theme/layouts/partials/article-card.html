@@ -1,0 +1,135 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\article-card.html */}}
+{{/* --- CORRIGÉ pour gérer les URL externes dans featured_image ET lien "Read More" amélioré --- */}}
+{{ $page := . }}
+
+{{ $categoriesFromParams := $page.Params.categories }}
+<article id="post-{{ $page.File.UniqueID }}" class="hentry article-card{{ with $categoriesFromParams }}{{ range . }} category-{{ . | urlize }}{{ end }}{{ end }}">
+
+  {{ $imageToDisplaySrc := "" }}
+  {{ $isPageBundleImg := false }}
+  {{ $cardImageAlt := $page.Params.featured_image_alt | default ($page.Title | plainify) }}
+
+  {{/* Logique pour trouver l'image de la carte */}}
+  {{ with $page.Params.featured_image | default .Params.image }}
+    {{ $path := . }}
+    {{ if strings.HasPrefix $path "http" }} {{/* 1. URL Externe */}}
+      {{ $imageToDisplaySrc = $path }}
+      {{ $isPageBundleImg = false }}
+    {{ else }}
+      {{/* 2. Essayer comme ressource de page (Leaf Bundle) */}}
+      {{ $imageResource := "" }}
+      {{ if $page.Resources }}
+        {{ $imageResource = $page.Resources.GetMatch $path }}
+      {{ end }}
+
+      {{ if $imageResource }}
+        {{ $imageToDisplaySrc = $imageResource }}
+        {{ $isPageBundleImg = true }}
+      {{ else }}
+        {{/* 3. Essayer comme ressource globale (assets) */}}
+        {{ $assetPath := $path }}
+        {{ if strings.HasPrefix $assetPath "/" }}{{ $assetPath = strings.TrimPrefix "/" $assetPath }}{{ end }}
+        {{ $assetImage := resources.Get $assetPath }}
+        {{ if $assetImage }}
+          {{ $imageToDisplaySrc = $assetImage }}
+          {{ $isPageBundleImg = false }}
+        {{ else }}
+          {{/* 4. Essayer comme fichier static */}}
+          {{ $staticPathToCheck := $path }}
+          {{ if not (strings.HasPrefix $staticPathToCheck "/") }}{{ $staticPathToCheck = printf "/%s" $staticPathToCheck }}{{ end }}
+          {{ if fileExists (printf "static%s" $staticPathToCheck) }}
+            {{ $imageToDisplaySrc = $staticPathToCheck }} {{/* Passage du chemin, responsive-image le gérera */}}
+            {{ $isPageBundleImg = false }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{/* 5. Si .Params.featured_image non défini, chercher featured* ou cover* dans les ressources de page (pour Leaf Bundle) */}}
+    {{ if $page.Resources }}
+      {{ $bundleDefaultImg := $page.Resources.GetMatch "featured*" | default ($page.Resources.GetMatch "cover*") }}
+      {{ if $bundleDefaultImg }}
+        {{ $imageToDisplaySrc = $bundleDefaultImg }}
+        {{ $isPageBundleImg = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* 6. Logique de fallback sur placeholder si aucune image trouvée */}}
+  {{ if not $imageToDisplaySrc }}
+    {{ $defaultPlaceholderPathKey := site.Params.defaultPlaceholderImage | default "/images/placeholders/placeholder-16x9.jpg" }}
+    {{ $placeholderSrc := "" }}
+    {{ if strings.HasPrefix $defaultPlaceholderPathKey "http" }}
+      {{ $placeholderSrc = $defaultPlaceholderPathKey }}
+    {{ else }}
+      {{ $assetPlaceholderPath := $defaultPlaceholderPathKey }}
+      {{ if strings.HasPrefix $assetPlaceholderPath "/" }}{{ $assetPlaceholderPath = strings.TrimPrefix "/" $assetPlaceholderPath }}{{ end }}
+      {{ $placeholderResource := resources.Get $assetPlaceholderPath }}
+      {{ if $placeholderResource }}
+        {{ $placeholderSrc = $placeholderResource }}
+      {{ else if fileExists (printf "static%s" $defaultPlaceholderPathKey) }}
+        {{ $placeholderSrc = $defaultPlaceholderPathKey }}
+      {{ end }}
+    {{ end }}
+    
+    {{ if $placeholderSrc }}
+      {{ $imageToDisplaySrc = $placeholderSrc }}
+      {{ $isPageBundleImg = false }} {{/* Placeholder n'est pas une ressource spécifique de la page bundle */}}
+    {{ else }}
+      {{ warnf "Default placeholder image '%s' not found for page card: %s" $defaultPlaceholderPathKey $page.File.Path }}
+    {{ end }}
+  {{ end }}
+
+  <div class="thumbnail-wrap">
+    {{ if $imageToDisplaySrc }}
+      <a class="thumbnail-link" href="{{ $page.RelPermalink }}" aria-label="Image à la une pour {{ $page.Title | plainify }}">
+        {{ partial "responsive-image.html" (dict
+            "src" $imageToDisplaySrc
+            "alt" $cardImageAlt
+            "page" $page
+            "isPageBundleResource" $isPageBundleImg
+            "loading" "lazy"
+            "sizesKey" "articleCard"
+            "class" "article-card-image"
+            "figureClass" "article-card-figure-thumb"
+        )}}
+      </a>
+    {{ else }}
+      <a class="thumbnail-link placeholder-no-image-fallback" href="{{ $page.RelPermalink }}" aria-label="Image manquante pour {{ $page.Title | plainify }}">
+         <div class="placeholder-content" style="width:100%; height:200px; background-color: #eee; display:flex; align-items:center; justify-content:center; color:#aaa; text-align:center; font-size:0.9em;">
+            <span>{{ $page.Title }}<br><small>(Image à la une indisponible)</small></span>
+         </div>
+      </a>
+    {{ end }}
+
+    {{ $cats := $page.Params.categories }}
+    {{ if and $cats (gt (len $cats) 0) }}
+      {{ $firstCategory := index $cats 0 }}
+      {{ if $firstCategory }}
+        <span class="entry-category category-{{ $firstCategory | urlize }}">
+          <a href="{{ printf `/categories/%s/` ($firstCategory | urlize) | relLangURL }}">{{ $firstCategory }}</a>
+        </span>
+      {{ end }}
+    {{ end }}
+  </div><!-- .thumbnail-wrap -->
+
+  <div class="entry-overview">
+    <h2 class="entry-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+    {{ partial "post-meta.html" . }} 
+    <div class="entry-summary">
+      <p>{{ $page.Summary | plainify | truncate 110 | safeHTML }}</p> 
+    </div>
+    <footer class="entry-footer">
+        {{/* --- DÉBUT DE LA MODIFICATION (version sans i18n actif pour ce lien spécifique) --- */}}
+        <span class="read-more">
+          <a href="{{ $page.RelPermalink }}" aria-label="{{ printf "Read more about %s" $page.Title }}">
+            {{ $readMoreText := "Read More:" }} {{/* Texte par défaut si pas d'i18n ou pour un site principalement en anglais */}}
+            {{ $truncatedTitle := $page.Title | truncate 15 "..." }} {{/* Ajustez la valeur de troncature (35) si besoin */}}
+            {{ printf "%s \"%s\"" $readMoreText $truncatedTitle | safeHTML }}
+          </a>
+        </span>
+        {{/* --- FIN DE LA MODIFICATION --- */}}
+        {{ partial "post-share.html" . }}
+    </footer>
+  </div>
+</article>

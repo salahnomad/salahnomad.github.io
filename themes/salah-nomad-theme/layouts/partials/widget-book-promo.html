@@ -1,0 +1,38 @@
+{{/*
+  Partial: widget-book-promo.html (Version 5.0 - Pure Leaf Bundle)
+  -----------------------------------------------------------------
+  Affiche une promotion pour le livre.
+  Prend le contexte de la page en paramètre via '.'
+  Cherche l'image 'images/algorithmic-sardines-cover.jpg'
+  exclusivement dans le bundle de la page appelante.
+*/}}
+{{ $pageContext := . }}
+{{ $image := "" }}
+
+{{ if $pageContext.Resources }}
+  {{ $image = $pageContext.Resources.GetMatch "images/algorithmic-sardines-cover.jpg" }}
+{{ end }}
+
+<div class="widget-book-promo">
+  <div class="book-cover">
+    <a href="{{ "/ebook/algorithmic-sardines/" | relLangURL }}" title="Discover the book: Algorithmic Sardines">
+      {{ with $image }}
+        {{ $promoImage := .Resize "150x" }}
+        <img src="{{ $promoImage.RelPermalink }}" 
+             width="{{ $promoImage.Width }}" 
+             height="{{ $promoImage.Height }}"
+             alt="Book cover of Algorithmic Sardines by Salah Nomad" 
+             loading="lazy">
+      {{ else }}
+        <p style="color:red; font-weight:bold; font-size:12px; border: 1px solid red; padding: 5px;">
+          ERROR: L'image 'images/algorithmic-sardines-cover.jpg' est introuvable dans ce page bundle.
+        </p>
+      {{ end }}
+    </a>
+  </div>
+  <div class="book-promo-content">
+    <h4>The Full Journey</h4>
+    <p>My memoir and manifesto for finding home in perpetual motion.</p>
+    <a href="{{ "/ebook/algorithmic-sardines/" | relLangURL }}" class="book-promo-link">Discover the Book</a>
+  </div>
+</div>

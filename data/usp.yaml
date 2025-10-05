@@ -1,0 +1,14 @@
+# H:\Salah-Nomad\NewBlog\data\usp.yaml
+items:
+  - icon: "🌞" # Ou chemin vers un SVG : /icons/usp/sun.svg
+    title: "300+ Sunny Days"
+    text: "Enjoy an incredible climate perfect for an active outdoor lifestyle."
+  - icon: "💸" # Ou /icons/usp/money.svg
+    title: "Affordable Living"
+    text: "Experience a high quality of life at a fraction of US city costs."
+  - icon: "📶" # Ou /icons/usp/wifi.svg
+    title: "Fast Fiber Internet"
+    text: "Stay connected with widely available 1Gbps fiber optic internet."
+  - icon: "🤝" # Ou /icons/usp/community.svg
+    title: "Vibrant Expat Hub"
+    text: "Join a large and welcoming international & US nomad community."

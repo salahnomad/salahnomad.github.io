@@ -1,0 +1,556 @@
+/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_sidebar.scss */
+// --- VERSION DÉFINITIVE AVEC STYLE DE BOUTON HARMONISÉ ---
+@import 'variables'; 
+
+.sidebar {
+  background-color: var(--color-background-alt); 
+  padding: $spacing-lg;
+  border-radius: $border-radius-lg;
+  transition: background-color 0.3s ease;
+
+  .widget {
+    background-color: var(--color-sidebar-widget-bg); 
+    color: var(--color-sidebar-widget-text);      
+    padding: $spacing-lg; 
+    border-radius: $border-radius-md; 
+    margin-bottom: $spacing-xl * 1.25;
+    box-shadow: var(--box-shadow-light); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; 
+
+    &:last-child { margin-bottom: 0; }
+
+    .widget-title { 
+      background: var(--sidebar-widget-title-bg);
+      color: var(--sidebar-widget-title-color);
+      padding: 0.75rem $spacing-lg; 
+      margin: (-$spacing-lg) (-$spacing-lg) $spacing-lg (-$spacing-lg); 
+      border-top-left-radius: $border-radius-md; 
+      border-top-right-radius: $border-radius-md; 
+      border-bottom: 1px solid var(--sidebar-widget-title-border);
+      font-family: $font-heading-name; 
+      font-weight: $font-weight-semibold; 
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center; 
+      transition: all 0.3s ease; 
+      span { 
+        background-color: transparent; 
+        color: inherit;              
+        padding: 0;
+        border-radius: 0;
+        display: inline; 
+      }
+    }
+
+    ul:not(.social-icons):not(.usp-list) {
+      list-style: none; padding: 0; margin: 0;
+      li {
+        margin-bottom: $spacing-sm;
+        padding-bottom: $spacing-sm;
+        border-bottom: 1px dotted var(--color-sidebar-widget-border);
+        font-size: 0.9rem;
+        &:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+        a {
+          color: var(--color-sidebar-widget-link); 
+          text-decoration: none;
+          transition: color 0.2s ease;
+          &:hover, &:focus {
+            color: var(--color-sidebar-widget-link-hover);
+            text-decoration: underline;
+          }
+          &:focus-visible {
+             text-decoration: none;
+             @include a11y-focus; 
+          }
+        }
+      }
+    }
+
+    /* --- Styles Widget "Lead Magnet" --- */
+    &.widget_lead_magnet { 
+      text-align: center; 
+      .lead-magnet-form {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-sm;
+
+        input[type="email"] {
+          background: var(--color-sidebar-input-bg); 
+          color: var(--color-sidebar-input-text);       
+          border: 2px solid var(--color-sidebar-widget-border); 
+          width: 100%;
+          padding: $spacing-md;
+          border-radius: $border-radius-sm;
+          font-size: 0.9rem;
+          transition: border-color 0.2s ease, box-shadow 0.2s ease;
+          &::placeholder { 
+            color: rgba($dark-charcoal, 0.6); 
+          }
+          &:focus {
+            outline: none;
+            border-color: var(--color-sunset-gold); 
+            box-shadow: 0 0 0 3px var(--color-focus-ring);
+          }
+        }
+        .button-primary { 
+          font-family: var(--font-heading); 
+          background-color: var(--sidebar-widget-title-bg); 
+          color: var(--sidebar-widget-title-color);       
+          border: 1px solid var(--sidebar-widget-title-border); 
+          padding: $spacing-md $spacing-lg;
+          border-radius: $border-radius-sm; 
+          font-weight: $font-weight-semibold; 
+          cursor: pointer;
+          transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+          text-transform: uppercase;
+          width: 100%; 
+          &:hover, &:focus {
+            background-color: #{rgba($sunset-gold, 0.15)}; 
+            border-color: var(--color-text-accent);      
+            color: var(--color-sidebar-widget-title-color); 
+            transform: translateY(-1px);
+          }
+          &:focus-visible { 
+            @include a11y-focus; 
+            outline-offset: 1px; 
+          }
+        }
+      }
+      .sub-text {
+        color: var(--color-sidebar-widget-text-muted);
+        font-size: 0.8em;
+        margin-top: $spacing-md;
+        a { 
+          color: var(--color-sidebar-widget-link); 
+          font-weight: $font-weight-semibold; 
+          text-decoration: underline; 
+          &:hover { 
+            color: var(--color-sidebar-widget-link-hover); 
+            text-decoration: none; 
+          }
+        }
+      }
+    }
+
+    /* --- Styles Widget "USP" --- */
+    &.widget_usp {
+      .usp-list .usp-item {
+          .usp-icon {
+            color: var(--color-sunset-gold); 
+            svg { fill: currentColor; }
+          }
+          .usp-text-content {
+            h4 { color: var(--color-sidebar-widget-text); } 
+            p { color: var(--color-sidebar-widget-text-muted); }
+          }
+        }
+    }
+
+    /* --- Styles Widget "About (Court)" --- */
+    &.widget_about {
+      .about-widget-image { border-color: var(--color-sunset-gold); } 
+      .about-text { color: var(--color-sidebar-widget-text-muted); }
+      .about-widget-button { 
+        background-color: var(--color-text-accent); 
+        color: var(--color-text-on-accent) !important;
+        &:hover {
+           background-color: darken($sunset-gold, 10%);
+           color: var(--color-text-on-accent) !important;
+        }
+         &:focus-visible { 
+            color: var(--color-text-on-accent) !important;
+            @include a11y-focus;
+         }
+      }
+    }
+
+    /* --- Styles Widget Social (Follow Us) --- */
+    &.widget_social { 
+      .social-icons a {
+          color: var(--color-sidebar-widget-icon); 
+          border-color: var(--color-sidebar-widget-border); 
+          opacity: 0.9; 
+          transition: opacity 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+          &:hover, &:focus {
+            opacity: 1;
+            color: var(--color-sunset-gold); 
+            background-color: rgba($clay-white, 0.05); 
+            border-color: var(--color-sunset-gold); 
+          }
+        }
+    }
+    
+    /* --- Styles Widget Catégories --- */
+    &.widget_categories ul li {
+       border-bottom-color: var(--color-sidebar-widget-border);
+       a { 
+         color: var(--color-sidebar-widget-link); 
+         &:hover, &:focus { color: var(--color-sidebar-widget-link-hover); }
+       }
+       .category-count { 
+         color: var(--color-sidebar-widget-text-muted); 
+         background-color: rgba($dark-charcoal, 0.25); 
+       }
+     }
+
+    /* --- Styles spécifiques Widget Météo --- */
+    &.widget_weather { 
+      .weather-widget-content {
+        padding: $spacing-md; 
+        border-radius: $border-radius-md; 
+        text-align: center;
+      }
+      .weather-loading { color: var(--color-sidebar-widget-text-muted); }
+      .weather-spinner { 
+        border-color: rgba($clay-white, 0.2); 
+        border-top-color: var(--color-sunset-gold); 
+      }
+      .weather-icon-temp {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin-bottom: $spacing-xs;
+        flex-wrap: nowrap; 
+        .weather-icon { 
+          width: 50px; height: 50px; margin-right: $spacing-sm; vertical-align: middle; flex-shrink: 0; 
+        }
+        .weather-temperature { 
+          font-size: 1.8em; font-weight: $font-weight-bold; 
+          color: var(--color-sidebar-widget-text); line-height: 1; 
+          margin-right: $spacing-xs / 2; 
+          flex-shrink: 0; 
+        }
+        .weather-unit-toggle {
+          font-size: 0.9em;  
+          vertical-align: baseline; 
+          line-height: 1;
+          white-space: nowrap; 
+          display: inline-flex; 
+          align-items: baseline; 
+          .unit-button {
+            background: transparent !important; 
+            border: none !important;     
+            color: var(--color-sidebar-widget-text-muted);
+            padding: 0 ($spacing-xs / 2); 
+            cursor: pointer; 
+            font-size: 1em;      
+            line-height: inherit;
+            font-weight: $font-weight-normal;
+            &:hover { color: var(--color-sidebar-widget-link); }
+            &.active { 
+              color: var(--color-sidebar-widget-text); 
+              font-weight: $font-weight-bold; 
+            }
+          }
+        }
+      }
+      .weather-description { 
+        color: var(--color-sidebar-widget-text); 
+        font-size: 0.95em; 
+        margin-bottom: $spacing-md; 
+        text-transform: capitalize; 
+      }
+      .weather-unit-proverb {
+        font-size: 0.8em;
+        font-style: italic;
+        color: var(--color-sidebar-widget-text-muted); 
+        line-height: 1.4;
+        margin-top: 0; 
+        margin-bottom: $spacing-lg; 
+        strong {
+          color: var(--color-sidebar-widget-link); 
+          font-style: normal; 
+          font-weight: $font-weight-semibold;
+        }
+      }
+      .weather-details-link a { 
+        color: var(--color-sidebar-widget-link); 
+        font-weight: $font-weight-semibold;
+        text-decoration: none;
+        &:hover { 
+          color: var(--color-sidebar-widget-link-hover); 
+          text-decoration: underline; 
+        } 
+      } 
+      .weather-error { 
+        background-color: rgba($clay-white, 0.9); 
+        color: #a94442; 
+        border: 1px solid darken(#a94442, 10%);
+        border-radius: $border-radius-sm;
+        padding: $spacing-sm;
+      }
+    }
+    /* --- FIN Styles spécifiques Widget Météo --- */
+
+    /* --- Styles Widget "My Nomadic Compass" --- MODIFIÉ --- */
+    &.widget_map_compass {
+      .current-location {
+        .location-label { color: var(--color-sidebar-widget-text-muted); margin-right: $spacing-xs*0.5; }
+        .location-city { color: var(--color-sidebar-widget-text); }
+      }
+      .destinations-link a { 
+        color: var(--color-sidebar-widget-link); 
+        font-weight: $font-weight-semibold; 
+        text-decoration: none;
+        &:hover, &:focus { 
+          color: var(--color-sidebar-widget-link-hover); 
+          text-decoration: underline;
+        }
+      }
+    }
+
+    /* --- Styles Widget "Roots & Wi-Fi" (Citations) --- */
+    &.widget_quotes {
+      blockquote {
+        background-color: transparent; 
+        border-left: 3px solid var(--color-sidebar-widget-link); 
+        padding-left: $spacing-md; 
+        margin: $spacing-sm 0 0 0; 
+        color: var(--color-sidebar-widget-text); 
+        p, footer { color: var(--color-sidebar-widget-text); }
+      }
+    }
+    
+    /* --- Styles Widget "Nomad Life Live" (CTA vers Linktree) --- */
+    &.widget_social_feed { 
+      .nomad-life-widget-content {
+        margin-top: $spacing-sm; 
+        text-align: center; 
+      }
+      .nomad-cta { 
+        display: inline-flex; 
+        align-items: center;
+        gap: $spacing-xs; 
+        color: var(--color-sidebar-widget-link) !important; 
+        font-family: var(--font-heading);
+        font-weight: $font-weight-semibold; 
+        text-decoration: none;
+        transition: color 0.2s ease; 
+
+        span { 
+          line-height: 1.2; 
+          font-size: 0.95rem; 
+        }
+
+        svg.compass-icon { 
+          width: 1.3em; 
+          height: 1.3em;
+          stroke: currentColor; 
+          fill: none;                         
+          stroke-width: 2;                   
+          vertical-align: middle;             
+        }
+
+        &:hover, &:focus {
+          color: var(--color-sidebar-widget-link-hover) !important; 
+          text-decoration: underline; 
+        }
+        &:focus-visible {
+          @include a11y-focus; 
+          outline-offset: 2px; 
+          text-decoration: none; 
+        }
+      }
+    }
+
+    svg:not(.compass-icon) { 
+      fill: currentColor; 
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+    &:hover svg:not(.compass-icon), 
+    a:hover svg:not(.compass-icon), 
+    button:hover svg:not(.compass-icon) {
+      opacity: 1;
+    }
+  } 
+} 
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*
+==================================================================
+Styles pour le rotateur de citations global "Roots & Wi-Fi"
+==================================================================
+*/
+.widget_quotes blockquote {
+  p, footer {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1; 
+  }
+}
+
+/*
+==================================================================
+Styles pour le bouton CTA dans la sidebar
+==================================================================
+On réplique le style du .footer-widget-button pour une cohérence parfaite.
+*/
+.sidebar .footer-widget-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-footer-widget-button-bg);
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius-md;
+  font-family: var(--font-heading);
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: $spacing-sm;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  // Règle puissante pour la couleur
+  &, span, svg {
+    color: var(--color-footer-widget-button-text) !important;
+  }
+
+  svg {
+    fill: currentColor;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    flex-shrink: 0;
+  }
+
+  &:hover, &:focus {
+    background-color: var(--color-footer-widget-button-hover-bg);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  &:focus-visible { @include a11y-focus; }
+}
+
+/* ==========================================================================
+   Styles Complets pour le Widget "Start Here" (Version Finale Définitive V3)
+   ========================================================================== */
+
+.widget_start_here {
+
+  .pillar-section {
+    margin-bottom: $spacing-lg;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .pillar-section-title {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-sidebar-widget-text); /* Couleur blanc/gris clair - OK */
+    margin-bottom: $spacing-sm;
+    padding-bottom: $spacing-xs;
+    border-bottom: 1px dotted var(--color-sidebar-widget-border);
+  }
+
+  .pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: $spacing-xs;
+      padding: 0;
+      border: none;
+
+      /* SÉLECTEUR PLUS SPÉCIFIQUE POUR GAGNER LA BATAILLE CSS */
+      a {
+        display: flex;
+        align-items: flex-start;
+        gap: $spacing-sm;
+        padding: $spacing-xs;
+        border-radius: $border-radius-sm;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        text-decoration: none;
+        
+        /* CORRECTION DÉFINITIVE : Couleur par défaut */
+        color: var(--color-sidebar-widget-text-muted);
+
+        .pillar-icon {
+          flex-shrink: 0;
+          margin-top: 2px;
+          svg {
+            width: 1em;
+            height: 1em;
+            stroke: currentColor;
+            opacity: 0.8;
+          }
+        }
+
+        .pillar-text {
+          font-size: 0.9em;
+          line-height: 1.4;
+          color: inherit;
+        }
+
+        /* CORRECTION DÉFINITIVE : Couleur au survol */
+        &:hover, &:focus {
+          background-color: rgba(var(--clay-white-rgb, 254, 250, 224), 0.05);
+          color: var(--color-sidebar-widget-link-hover); /* Garde la couleur dorée brillante */
+          text-decoration: underline; /* <<< AJOUTEZ JUSTE CETTE LIGNE */
+          
+          .pillar-icon {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --- Styles pour le Widget "The Compass (Start Here)" --- */
+.widget_the_compass {
+  .widget-content {
+    text-align: center;
+  }
+
+  .compass-widget-description {
+    font-size: 0.9em;
+    color: var(--color-sidebar-widget-text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .compass-widget-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: $border-radius-md;
+    font-family: var(--font-heading);
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    background-color: var(--color-footer-widget-button-bg); // Le magnifique Sunset Gold
+    color: var(--color-footer-widget-button-text) !important;
+
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+      stroke: currentColor;
+    }
+    
+    &:hover, &:focus {
+      background-color: var(--color-footer-widget-button-hover-bg);
+      transform: translateY(-2px);
+    }
+    &:focus-visible {
+      @include a11y-focus;
+    }
+  }
+}

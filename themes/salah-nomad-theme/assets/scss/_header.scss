@@ -1,0 +1,605 @@
+/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_header.scss */
+// --- MODIFIÉ : Styles pour le nouveau bouton de recherche ---
+@import 'variables';
+
+.site-header {
+  box-shadow: var(--box-shadow-light); 
+  position: sticky; top: 0; left: 0; width: 100%;
+  z-index: $zindex-header;
+}
+
+/* ==========================================================================
+   1. Top Main Navigation Bar (MENU PRINCIPAL THÉMATIQUE)
+   ========================================================================== */
+#top-main-nav-bar {
+  background-color: var(--color-header-top-bar-background); 
+  border-bottom: 1px solid var(--color-border-light);
+  padding: $spacing-sm 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  .top-main-nav-container {
+    max-width: $container-width; margin: 0 auto; padding: 0 $container-padding;
+    display: flex; justify-content: flex-start; align-items: center;
+  }
+
+  .main-navigation {
+    width: 100%;
+    @media (max-width: $breakpoint-lg) { display: none !important; }
+
+    .menu.theme-menu {
+      display: flex !important;
+      flex-wrap: wrap;
+      list-style: none !important;
+      gap: $spacing-lg;
+      margin: 0; padding: 0;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .menu-item {
+      position: relative; 
+      > a, > button.menu-item-no-link {
+        display: flex; align-items: center; gap: ($spacing-xs / 2);
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: 1.1rem; 
+        text-transform: uppercase; 
+        letter-spacing: 0.05em; 
+        color: var(--color-text-primary);
+        text-decoration: none;
+        padding: $spacing-xs $spacing-sm;
+        border-radius: $border-radius-sm;
+        transition: color 0.3s ease, background-color 0.2s ease; 
+        background: none; border: none; cursor: pointer; text-align: left;
+        position: relative; 
+        overflow: hidden;   
+
+        &::after { 
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: var(--color-text-accent);
+          transform: scaleX(0);
+          transform-origin: left; 
+          transition: transform 0.3s ease-out;
+        }
+
+        .dropdown-arrow { font-size: 0.7em; margin-left: $spacing-xs; transition: transform 0.2s ease; }
+        
+        &:hover, &:focus, &:focus-visible {
+          color: var(--color-text-accent);
+          outline: none;
+          .dropdown-arrow { transform: rotate(180deg); }
+          &::after { 
+            transform: scaleX(1);
+          }
+        }
+        &:focus-visible { 
+          @include a11y-focus; 
+          &::after { 
+            transform: scaleX(1);
+          }
+        }
+      }
+      &.active {
+        > a, > button.menu-item-no-link {
+          color: var(--color-text-accent) !important;
+          &::after { 
+            transform: scaleX(1) !important;
+            background-color: var(--color-text-accent) !important; 
+          }
+        }
+      }
+      .sub-menu.theme-sub-menu {
+         list-style: none !important; margin: 0 !important; padding: $spacing-sm 0 !important;
+         background-color: var(--color-submenu-background);
+         border: 1px solid var(--color-border);
+         box-shadow: var(--box-shadow-submenu);
+         min-width: 220px;
+         z-index: ($zindex-header + 2);
+         border-radius: 0 0 $border-radius-lg $border-radius-lg;
+         display: block;
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         transform: translateY(10px);
+         transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease-out;
+         li.menu-item {
+            a {
+                font-family: var(--font-body);
+                display: block !important; padding: $spacing-sm $spacing-lg !important; font-weight: $font-weight-normal;
+                color: var(--color-text-secondary); white-space: nowrap;
+                transition: color 0.2s ease, background-color 0.2s ease;
+                font-size: 0.9em; border: none !important; border-radius: 0;
+                &:hover, &:focus, &:focus-visible { background-color: var(--color-background); color: var(--color-text-accent); outline: none; }
+            }
+            &.active {
+                > a {
+                    color: var(--color-text-accent) !important;
+                    font-weight: $font-weight-semibold !important;
+                }
+            }
+         }
+      }
+      &:hover > .sub-menu.theme-sub-menu,
+      & > button:focus-visible + .sub-menu.theme-sub-menu,
+      & > a:focus-visible + .sub-menu.theme-sub-menu,
+      &:focus-within > .sub-menu.theme-sub-menu,
+      & > .sub-menu.theme-sub-menu:hover {
+         opacity: 1; visibility: visible; pointer-events: auto;
+         transform: translateY(0px);
+         transition-delay: 0s;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   2. Branding Bar (Logo + Actions Globales)
+   ========================================================================== */
+.site-branding-bar {
+  background-color: var(--color-header-background); 
+  padding: $spacing-lg $container-padding;
+  transition: background-color 0.3s ease;
+
+  .site-branding-container {
+    max-width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.site-branding {
+  flex-shrink: 0;
+  .site-logo-link {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+  }
+  img.site-logo-img {
+    display: none;
+    max-height: 55px;
+    width: auto;
+  }
+  html:not(.dark-mode) & .logo-light,
+  body:not(.dark-mode) .site-branding .logo-light { display: block !important; }
+  html:not(.dark-mode) & .logo-dark,
+  body:not(.dark-mode) .site-branding .logo-dark { display: none !important;  }
+  html.dark-mode & .logo-light,
+  body.dark-mode .site-branding .logo-light { display: none !important;  }
+  html.dark-mode & .logo-dark,
+  body.dark-mode .site-branding .logo-dark { display: block !important; }
+}
+.header-actions-group {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+}
+.theme-toggle {
+   background: none; border: none; padding: $spacing-sm; margin: 0; cursor: pointer;
+   color: var(--toggle-icon-color); line-height: 0; border-radius: 50%;
+   transition: color 0.2s ease, background-color 0.2s ease;
+   width: 40px; height: 40px;
+   display: inline-flex;
+   justify-content: center; align-items: center;
+   .icon { display: block; width: 20px; height: 20px; stroke-width: 2; stroke: currentColor; }
+   &:hover, &:focus { color: var(--toggle-icon-hover-color); background-color: var(--toggle-bg-hover); outline: none; }
+   &:focus-visible { @include a11y-focus; }
+   .icon-wrap { display: inline-flex; align-items: center; justify-content: center; }
+   .icon-wrap-sun  { display: none !important; }
+   .icon-wrap-moon { display: none !important; }
+   html:not(.dark-mode) & .icon-wrap-sun,
+   body:not(.dark-mode) .theme-toggle .icon-wrap-sun { display: inline-flex !important; }
+   html.dark-mode & .icon-wrap-moon,
+   body.dark-mode .theme-toggle .icon-wrap-moon { display: inline-flex !important; }
+}
+.mobile-menu-toggle {
+  display: none;
+  background-color: transparent !important; border: none; padding: $spacing-sm;
+  color: var(--color-text-primary); cursor: pointer; border-radius: $border-radius-sm;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  z-index: ($zindex-mobile-menu + 1);
+  width: 40px; height: 40px;
+  justify-content: center; align-items: center;
+  svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 2.5; vertical-align: middle;}
+}
+
+/* ==========================================================================
+   3. Bottom Utility Nav Bar (MENU SECONDAIRE UTILITAIRE + RECHERCHE DESKTOP)
+   ========================================================================== */
+#bottom-util-nav-bar {
+  background-color: var(--color-header-bottom-bar-background); 
+  border-top: 1px solid var(--color-border-light);
+  padding: $spacing-xs 0; 
+  min-height: auto; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: none;
+  @media (min-width: $breakpoint-lg) { display: block; }
+  @media (max-width: $breakpoint-lg) { display: none !important; }
+
+  .bottom-util-nav-container {
+    max-width: $container-width; margin: 0 auto; padding: 0 $container-padding;
+    display: flex; justify-content: center; align-items: center; height: 100%;
+    gap: $spacing-lg; 
+  }
+
+  .secondary-navigation {
+     position: relative;
+     .menu.util-menu {
+        display: flex !important;
+        flex-wrap: wrap;
+        list-style: none !important;
+        gap: $spacing-lg; margin: 0; padding: 0;
+        align-items: center; justify-content: center;
+     }
+     .menu-item {
+        position: relative; 
+        &.active { 
+            > a, > button.dropdown-trigger-label { 
+                color: var(--color-text-accent) !important; 
+                &::after { 
+                    transform: scaleX(1) !important;
+                    background-color: var(--color-text-accent) !important;
+                }
+            } 
+        }
+        
+        > a, > button {
+           display: flex; align-items: center;
+           font-family: var(--font-heading);
+           font-weight: 600;
+           font-size: 1.1rem; 
+           text-transform: uppercase; 
+           letter-spacing: 0.05em; 
+           font-style: normal; 
+           color: var(--color-text-secondary); 
+           text-decoration: none; 
+           padding: $spacing-xs $spacing-sm; 
+           border-radius: $border-radius-sm;
+           transition: color 0.3s ease, background-color 0.2s ease;
+           background: none; border: none; cursor: pointer;
+           position: relative; 
+           overflow: hidden;   
+
+           &::after { 
+             content: '';
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             width: 100%;
+             height: 2px;
+             background-color: var(--color-text-accent);
+             transform: scaleX(0);
+             transform-origin: left;
+             transition: transform 0.3s ease-out;
+           }
+
+           svg { 
+             width: 0.8em; 
+             height: 0.8em;
+             stroke: currentColor; 
+             fill: none; 
+             opacity: 0.8;
+             margin-right: $spacing-xs; 
+             transition: opacity 0.2s ease;
+             vertical-align: -0.05em; 
+           }
+           .dropdown-arrow { font-size: 0.7em; margin-left: $spacing-xs; transition: transform 0.2s ease; }
+           // .search-text est géré plus bas pour le bouton de recherche spécifique
+
+           &:hover, &:focus, &:focus-visible { 
+             color: var(--color-text-accent); 
+             outline: none; 
+             svg { opacity: 1; } 
+             .dropdown-arrow { transform: rotate(180deg); } 
+             &::after { 
+                transform: scaleX(1);
+             }
+           }
+           &:focus-visible { 
+             @include a11y-focus; 
+             &::after { 
+                transform: scaleX(1);
+             }
+           }
+        }
+
+        .sub-menu.util-sub-menu {
+          list-style: none !important; margin: 0 !important; padding: $spacing-sm 0 !important;
+          background-color: var(--color-submenu-background);
+          border: 1px solid var(--color-border);
+          box-shadow: var(--box-shadow-submenu);
+          min-width: 180px; 
+          z-index: ($zindex-header + 1);
+          border-radius: 0 0 $border-radius-md $border-radius-md; 
+          display: block; opacity: 0; visibility: hidden; pointer-events: none;
+          position: absolute; top: 100%; left: 50%;
+          transform: translateX(-50%) translateY(10px);
+          transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease-out;
+          li.menu-item {
+            a {
+                display: block !important; padding: $spacing-sm $spacing-lg !important;
+                font-family: var(--font-body); 
+                font-weight: $font-weight-normal; 
+                font-style: normal; 
+                text-transform: none; 
+                color: var(--color-text-secondary); white-space: nowrap;
+                transition: color 0.2s ease, background-color 0.2s ease;
+                font-size: 0.9em; border: none !important;
+                &:hover, &:focus, &:focus-visible { background-color: var(--color-background); color: var(--color-text-accent); outline: none; }
+            }
+            &.active { > a { color: var(--color-text-accent) !important; font-weight: $font-weight-semibold !important; } }
+          }
+        }
+        &:hover > .sub-menu.util-sub-menu,
+        & > button:focus-visible + .sub-menu.util-sub-menu,
+        & > a:focus-visible + .sub-menu.util-sub-menu,
+        &:focus-within > .sub-menu.util-sub-menu,
+        & > .sub-menu.util-sub-menu:hover {
+           opacity: 1; visibility: visible; pointer-events: auto;
+           transform: translateX(-50%) translateY(0px);
+           transition-delay: 0s;
+        }
+     }
+  } 
+
+  .header-search-trigger-desktop {
+    button.desktop-search-trigger {
+      display: flex; align-items: center;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1.1rem; 
+      text-transform: uppercase; 
+      letter-spacing: 0.05em; 
+      font-style: normal;
+      color: var(--color-text-secondary);
+      text-decoration: none; padding: $spacing-xs $spacing-sm;
+      border-radius: $border-radius-sm;
+      transition: color 0.3s ease, background-color 0.2s ease;
+      background: none; border: none; cursor: pointer;
+      position: relative; 
+      overflow: hidden;   
+
+      &::after { 
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-text-accent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-out;
+      }
+
+      svg { // Styles pour la nouvelle icône search-alt.svg (stroke-based)
+        width: 0.8em; 
+        height: 0.8em;
+        stroke: currentColor; // Pour les icônes outline
+        fill: none;         // Assurer pas de remplissage
+        opacity: 0.8;
+        margin-right: $spacing-xs; 
+        transition: opacity 0.2s ease;
+        vertical-align: -0.05em; 
+      } 
+      .search-text { 
+        // Pas besoin de @extend .screen-reader-text; si le texte doit être visible
+      }
+
+      &:hover, &:focus, &:focus-visible { 
+        color: var(--color-text-accent); 
+        outline: none; 
+        svg { opacity: 1; } 
+        &::after { 
+           transform: scaleX(1);
+        }
+      }
+      &:focus-visible { 
+        @include a11y-focus; 
+        &::after { 
+           transform: scaleX(1);
+        }
+      }
+    }
+  } 
+} 
+
+/* ==========================================================================
+   4. Modal de Recherche (#header-search-form-container)
+   ========================================================================== */
+.header-search-form-wrap { 
+  position: fixed;
+  z-index: $zindex-search-modal;
+  opacity: 0;
+  visibility: hidden; 
+  pointer-events: none;
+  display: block; 
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; 
+
+  @media (min-width: ($breakpoint-md + 1)) {
+    background-color: var(--color-card-background);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--box-shadow-medium);
+    padding: $spacing-lg;
+    border-radius: $border-radius-lg;
+    top: 50%;
+    left: 50%;
+    width: clamp(300px, 70vw, 450px);
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: translate(-50%, -50%) scale(0.95);
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease;
+    transform-origin: center center;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible; 
+      pointer-events: auto;
+      transform: translate(-50%, -50%) scale(1);
+      transition-delay: 0s; 
+      transition: opacity 0.3s ease, visibility 0s linear 0s, transform 0.3s ease;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh;
+    border-radius: 0 !important;
+    padding: $spacing-xxl $spacing-lg $spacing-lg !important;
+    background-color: var(--color-card-background);
+    overflow-y: auto; 
+
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(100%) !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0s linear 0.3s !important;
+
+    &.is-active {
+      opacity: 1 !important;
+      visibility: visible !important; 
+      pointer-events: auto;
+      transform: translateY(0) !important; 
+      transition-delay: 0s !important; 
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0s linear 0s !important;
+    }
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(var(--color-background-rgb, 38, 70, 83), 0.85);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none; 
+    }
+    &.is-active::before {
+        opacity: 1;
+    }
+  }
+
+  .search-modal-close {
+    position: absolute;
+    top: $spacing-lg;
+    right: $spacing-lg;
+    background: none;
+    border: none;
+    padding: $spacing-xs;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    z-index: ($zindex-search-modal + 1);
+    svg { width: 24px; height: 24px; display: block; }
+    &:hover, &:focus { color: var(--color-text-accent); }
+    @media (min-width: ($breakpoint-md + 1)) { 
+        top: $spacing-md;
+        right: $spacing-md;
+        svg { width: 20px; height: 20px; }
+    }
+  }
+
+  #pagefind-search-header {
+      /* Styles spécifiques pour PagefindUI si nécessaire */
+  }
+} 
+
+/* Styles pour PagefindUI (Input et Résultats) */
+.pagefind-ui__search-input {
+  font-family: inherit; 
+  font-size: 1rem;    
+  padding: $spacing-sm $spacing-md; 
+  border-radius: $border-radius-sm; 
+  transition: background-color 0.2s ease-out, 
+              border-color 0.2s ease-out, 
+              color 0.2s ease-out, 
+              box-shadow 0.2s ease-out;
+  
+  background-color: var(--color-input-background); 
+  border: 1px solid var(--color-border-input);    
+  color: var(--color-text-primary);              
+
+  &::placeholder {
+      color: var(--color-text-placeholder, #{mix($dark-charcoal, $clay-white, 50%)});
+      opacity: 1;
+  }
+  &:focus, &:focus-visible { 
+     outline: none; 
+     border-color: var(--color-focus-outline); 
+     box-shadow: 0 0 0 3px var(--color-focus-ring);
+  }
+}
+
+html.dark-mode {
+  .pagefind-ui__search-input {
+    background-color: var(--color-input-background) !important; 
+    color: var(--color-text-primary) !important;                
+    border-color: var(--color-border-input) !important;         
+
+    &::placeholder {
+      color: var(--color-text-placeholder, #{mix($clay-white, $dark-charcoal, 50%)}) !important;
+    }
+
+    &:focus, &:focus-visible {
+      border-color: var(--color-focus-outline) !important;
+      box-shadow: 0 0 0 3px var(--color-focus-ring) !important;
+    }
+  }
+
+  .pagefind-ui__result-link, 
+  a.pagefind-ui__result-link { 
+    color: var(--color-link) !important; 
+    &:hover, &:focus { 
+      color: var(--color-link-hover) !important; 
+      text-decoration: underline;
+    }
+  }
+  .pagefind-ui__result-title { 
+    color: var(--color-text-headings) !important; 
+  }
+  .pagefind-ui__result-excerpt {
+    color: var(--color-text-secondary) !important; 
+    mark { 
+      background-color: var(--color-text-accent) !important;
+      color: var(--color-text-on-accent) !important; 
+      padding: 0.1em 0.2em;
+      border-radius: $border-radius-sm;
+    }
+  }
+  .pagefind-ui__message { 
+    color: var(--color-text-secondary) !important;
+  }
+  .pagefind-ui__results-area { 
+    hr.pagefind-ui__divider { 
+        border-top-color: var(--color-border-light) !important;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   5. Styles Mobile Globaux (Affichage Burger, etc.)
+   ========================================================================== */
+@media (max-width: $breakpoint-lg) {
+  #top-main-nav-bar { display: none !important; } 
+  #bottom-util-nav-bar { display: none !important; } 
+  .site-branding-bar .header-actions-group .mobile-menu-toggle {
+    display: inline-flex !important; 
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .site-branding-bar { padding: $spacing-sm $container-padding; }
+  .site-branding img.site-logo-img { max-height: 40px; }
+}

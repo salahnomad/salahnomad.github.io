@@ -1,0 +1,103 @@
+{{/*
+  Shortcode: related-concepts
+  ---------------------------
+  Affiche les concepts liés automatiquement basés sur les paramètres de la page
+  
+  Usage: {{< related-concepts >}}
+*/}}
+
+{{ $currentPage := .Page }}
+{{ $relatedConcepts := .Page.Params.related_concepts }}
+
+{{ if $relatedConcepts }}
+<section class="related-concepts">
+  <h3>Related Concepts</h3>
+  <div class="related-concepts-grid">
+    {{ range $relatedConcepts }}
+      {{ $conceptPath := printf "/glossary/%s/" ( . | urlize ) }}
+      {{ with $.Site.GetPage $conceptPath }}
+        <a href="{{ .RelPermalink }}" class="related-concept-card">
+          <h4>{{ .Title }}</h4>
+          <p>{{ .Description }}</p>
+          <span class="concept-arrow">→</span>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+<style>
+.related-concepts {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.related-concepts h3 {
+  color: #2c5530;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.related-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.related-concept-card {
+  display: block;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.related-concept-card:hover {
+  border-color: #2c5530;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 85, 48, 0.1);
+}
+
+.related-concept-card h4 {
+  color: #2c5530;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.related-concept-card p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.concept-arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #2c5530;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.related-concept-card:hover .concept-arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .related-concepts {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .related-concepts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+{{ end }}

@@ -1,0 +1,135 @@
+{{/* themes/salah-nomad-theme/layouts/partials/responsive-image.html */}}
+{{/* --- CORRIGÉ pour supprimer "hasMethod" et affiner la logique . --- */}}
+{{ $srcInput := .src }}
+{{ $alt := .alt | default "" }}
+{{ $imgClass := .class }}
+{{ $figureClass := .figureClass }}
+{{ $loading := .loading | default "lazy" }}
+{{ $pageContext := .page }}
+{{ $caption := .caption }}
+
+{{ $sizesKeyInput := .sizesKey | default "default" }}
+{{ $sizesKey := lower $sizesKeyInput }}
+
+{{ $allSizesConfigs := site.Params.imageProcessing.sizes }}
+{{ $sizesAttr := "" }}
+
+{{ if $allSizesConfigs }}
+  {{ $sizesAttr = index $allSizesConfigs $sizesKey }}
+{{ end }}
+{{ if not $sizesAttr }}
+  {{ if and $allSizesConfigs (ne $sizesKey "default") }}
+    {{ $sizesAttr = index $allSizesConfigs "default" }}
+  {{ end }}
+{{ end }}
+{{ if not $sizesAttr }}
+  {{ $sizesAttr = "100vw" }}
+{{ end }}
+
+{{ $originalImage := "" }}
+{{ $isHugoResource := false }} {{/* Sera true si c'est une ressource traitable par Hugo */}}
+{{ $errorMsg := "" }}
+
+{{ if not $alt }}
+  {{ $altTextPageTitle := "" }}
+  {{ if $pageContext }}{{ $altTextPageTitle = $pageContext.Title }}{{ end }}
+  {{ $alt = printf "Image pour %s" ($altTextPageTitle | default "la page") }}
+{{ end }}
+
+{{ if $srcInput }}
+  {{ if reflect.IsMap $srcInput }} {{/* $srcInput est déjà un objet ressource Hugo */}}
+    {{ $originalImage = $srcInput }}
+    {{ $isHugoResource = true }}
+  {{ else if strings.HasPrefix (string $srcInput) "http" }} {{/* URL Externe */}}
+    {{ $originalImage = $srcInput }}
+    {{ $isHugoResource = false }}
+  {{ else }} {{/* Chemin local, essayer de le charger comme ressource */}}
+    {{ $res := "" }}
+    {{ if $pageContext }} {{/* Contexte de page disponible, essayer page resource */}}
+      {{ if $pageContext.Resources }}
+        {{ $res = $pageContext.Resources.GetMatch (string $srcInput) }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $res }} {{/* Trouvé comme ressource de page */}}
+      {{ $originalImage = $res }}
+      {{ $isHugoResource = true }}
+    {{ else }} {{/* Pas une ressource de page, essayer ressource globale (assets) */}}
+      {{ $assetPath := string $srcInput }}
+      {{ if strings.HasPrefix $assetPath "/" }}{{ $assetPath = strings.TrimPrefix "/" $assetPath }}{{ end }}
+      {{ $res = resources.Get $assetPath }}
+      {{ if $res }} {{/* Trouvé dans assets */}}
+        {{ $originalImage = $res }}
+        {{ $isHugoResource = true }}
+      {{ else }} {{/* Pas dans assets, essayer static */}}
+        {{ $staticPathToCheck := string $srcInput }}
+        {{ if not (strings.HasPrefix $staticPathToCheck "/") }}{{ $staticPathToCheck = printf "/%s" $staticPathToCheck }}{{ end }}
+        {{ if fileExists (printf "static%s" $staticPathToCheck) }}
+          {{ $originalImage = $staticPathToCheck | relURL }}
+          {{ $isHugoResource = false }} {{/* Image de static n'est pas une "Hugo Resource" pour .Resize etc. */}}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not $originalImage }}
+  {{ $filePathForError := "" }}
+  {{ if $pageContext }}{{ with $pageContext.File }}{{ $filePathForError = .Path }}{{ end }}{{ end }}
+  {{ $errorMsg = printf "Image source NOT FOUND for src: %q in page: %s" (safeHTML $srcInput) ($filePathForError | default "unknown page") }}
+  {{ warnf $errorMsg }}
+  <figure class="responsive-image-figure {{ $figureClass }} image-not-found" style="aspect-ratio: 16 / 9; background: #eee; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div style="padding: 1em; font-size: 0.8em; color: #666;">
+       Image indisponible<br><small>({{ $srcInput | string | truncate 30 }})</small>
+    </div>
+    {{ with $caption }}{{ if $pageContext }}<figcaption style="position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.5); color: white; padding: 0.3em; font-size:0.7em;">{{ . | $pageContext.RenderString }}</figcaption>{{ end }}{{ end }}
+  </figure>
+{{ else }}
+  <figure class="responsive-image-figure {{ $figureClass }}">
+    {{ if $isHugoResource }} {{/* Si c'est une ressource Hugo traitable (de page ou d'assets) */}}
+      {{ $widths := slice 320 480 640 768 960 1280 1600 1920 }}
+      {{ $largestWidth := index $widths (sub (len $widths) 1) }}
+      {{ $imgBase := $originalImage }} {{/* Image de base pour le tag <img> src et fallback */}}
+
+      {{ if gt $originalImage.Width $largestWidth }}
+          {{ $imgBase = $originalImage.Resize (printf "%dx q85" $largestWidth) }}
+      {{ else }}
+          {{ $imgBase = $originalImage.Process "q85" }} {{/* Appliquer la qualité au moins */}}
+      {{ end }}
+
+      {{ $srcsetStringsWebp := slice }}
+      {{ $srcsetStringsFallback := slice }}
+
+      {{ range $widths }}
+        {{ $targetWidth := . }}
+        {{ if le $targetWidth $originalImage.Width }}
+          {{ $imgW := $originalImage.Resize (printf "%dx webp q75" $targetWidth) }}
+          {{ $imgF := $originalImage.Resize (printf "%dx q85" $targetWidth) }}
+          {{ $srcsetStringsWebp = $srcsetStringsWebp | append (printf "%s %dw" $imgW.RelPermalink $targetWidth) }}
+          {{ $srcsetStringsFallback = $srcsetStringsFallback | append (printf "%s %dw" $imgF.RelPermalink $targetWidth) }}
+        {{ end }}
+      {{ end }}
+      {{ $srcsetStringsFallback = $srcsetStringsFallback | append (printf "%s %dw" $imgBase.RelPermalink $imgBase.Width) }}
+
+      <picture>
+        {{ if gt (len $srcsetStringsWebp) 0 }}
+          <source srcset="{{ delimit $srcsetStringsWebp ", " | safeHTMLAttr }}" type="image/webp" sizes="{{ $sizesAttr | safeHTMLAttr }}">
+        {{ end }}
+        {{ if gt (len $srcsetStringsFallback) 0 }}
+          <source srcset="{{ delimit $srcsetStringsFallback ", " | safeHTMLAttr }}" type="{{ $originalImage.MediaType.SubType }}" sizes="{{ $sizesAttr | safeHTMLAttr }}">
+        {{ end }}
+        <img src="{{ $imgBase.RelPermalink }}"
+             alt="{{ $alt | plainify }}"
+             width="{{ $imgBase.Width }}"
+             height="{{ $imgBase.Height }}"
+             loading="{{ $loading }}"
+             decoding="async"
+             class="responsive-image-img {{ $imgClass }}">
+      </picture>
+    {{ else }} 
+      {{/* Cas où $originalImage est une chaîne (URL externe ou chemin static non traité par Hugo Pipes) */}}
+      <img src="{{ $originalImage }}" alt="{{ $alt | plainify }}" loading="{{ $loading }}" decoding="async" class="responsive-image-img {{ $imgClass }}">
+    {{ end }}
+    {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

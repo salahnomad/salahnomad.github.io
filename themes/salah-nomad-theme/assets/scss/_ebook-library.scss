@@ -1,0 +1,355 @@
+/* ==========================================================================
+   Ebook Library & Book Detail Styles
+   ========================================================================== */
+
+/* --- General Library Container --- */
+.ebook-library {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* --- Hero Banner --- */
+.library-hero {
+  height: 60vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: -1rem -1rem 3rem -1rem; /* Adjust to break out of container padding if needed */
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, rgba(38, 70, 83, 0.95), rgba(42, 157, 143, 0.7)); /* Dark Charcoal to Med Blue */
+  width: 100%;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Content Container & Sections --- */
+.content-container {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.ebook-showcase, .upcoming-works, .testimonial-section {
+  margin-bottom: 4rem;
+}
+
+/* --- Featured Ebook Section --- */
+.featured-ebook {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+  background: #FEFAE0; /* Clay White */
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid #e9ecef;
+}
+
+.ebook-cover {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ebook-cover:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.ebook-cover img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.ebook-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.ebook-details h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.ebook-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0.75rem 0;
+  font-style: italic;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.ebook-meta span, .ebook-formats li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ebook-meta svg, .ebook-formats li svg {
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.ebook-formats {
+  margin-top: 1.5rem;
+}
+
+.ebook-formats ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.ebook-formats li {
+  background: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e9ecef;
+}
+
+/* --- Buttons --- */
+.btn-discover {
+  display: inline-block;
+  background-color: #F4A261; /* Sunset Gold */
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(244, 162, 97, 0.3);
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.btn-discover:hover {
+  background-color: #e76f51; /* A slightly deeper orange */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
+}
+
+/* --- Works in Progress Section --- */
+.works-in-progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.work-card {
+  border: 1px solid #e9ecef;
+  padding: 1.8rem;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #2A9D8F; /* Mediterranean Blue */
+  transition: width 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.work-card:hover::before {
+  width: 8px;
+}
+
+.work-card h3 {
+  margin-top: 0;
+  color: #264653; /* Dark Charcoal */
+  font-size: 1.4rem;
+}
+
+.progress-container {
+  background: #e9ecef;
+  border-radius: 10px;
+  margin: 1.5rem 0 1rem;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #2A9D8F; /* Mediterranean Blue */
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.work-meta {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* --- Testimonial Section --- */
+.testimonial-section {
+  background: #FEFAE0; /* Clay White */
+  padding: 3.5rem;
+  border-radius: 16px;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #F4A261, #2A9D8F);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  margin: 0 0 1.5rem;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+}
+
+.testimonial-card blockquote::before {
+  content: "“";
+  position: absolute;
+  left: -0.5rem;
+  top: -1rem;
+  font-size: 5rem;
+  color: #F4A261; /* Sunset Gold */
+  opacity: 0.2;
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-card cite {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  color: #264653; /* Dark Charcoal */
+}
+
+/* --- Back to Library Button (on Book Page) --- */
+.back-to-library {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+  text-align: center;
+}
+
+/* ### MODIFICATION APPORTÉE ICI POUR UNIFIER LES STYLES ### */
+.btn-library {
+  @extend .btn-discover; // Hérite de tous les styles du bouton principal
+  // La couleur du texte sera automatiquement blanche, comme pour .btn-discover
+}
+/* ######################################################## */
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .featured-ebook {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .ebook-cover {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .library-hero {
+    height: 50vh;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
+  .hero-overlay h1 { font-size: 2rem; }
+  .hero-overlay .lead { font-size: 1.1rem; }
+  
+  .testimonial-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .content-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ebook-formats ul {
+    justify-content: flex-start;
+  }
+  
+  .btn-discover {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+}

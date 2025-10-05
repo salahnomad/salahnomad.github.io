@@ -1,0 +1,228 @@
+// --- Fichier : themes/salah-nomad-theme/assets/scss/_variables.scss ---
+// --- MODIFIÉ : Ajout de --color-hr et --color-text-placeholder ---
+
+// --- Variables SCSS de Base (Palette & Fonts) ---
+$color-white: #ffffff;
+$color-black: #000000;
+$sunset-gold: #F4A261; 
+$mediterranean-blue: #2A9D8F;
+$clay-white: #FEFAE0;        
+$dark-charcoal: #264653;     
+$burnt-sienna: #E76F51;
+$olive-grove-night: #1D3C34;   
+
+$sunset-gold-rgb: 244, 162, 97;
+$mediterranean-blue-rgb: 42, 157, 143;
+$clay-white-rgb: 254, 250, 224;
+$dark-charcoal-rgb: 38, 70, 83;
+
+$font-heading-name: 'Poppins', sans-serif;
+$font-body-name: 'Lora', serif;
+
+$accessible-gray-map: (
+  "100": #f8f9fa, "200": #e9ecef, "300": #dee2e6, "400": #ced4da,
+  "500": #adb5bd, "600": #6c757d, "700": #495057, "800": #343a40, "900": #212529
+);
+@function gray($level) { @return map-get($accessible-gray-map, $level); }
+
+// --- Variables SCSS pour Typographie, Layout, etc. ---
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$base-font-size: 16px;
+$base-line-height: 1.65;
+$spacing-base-unit: 1rem;
+$spacing-xs: $spacing-base-unit * 0.25;
+$spacing-sm: $spacing-base-unit * 0.5;
+$spacing-md: $spacing-base-unit;
+$spacing-lg: $spacing-base-unit * 1.5;
+$spacing-xl: $spacing-base-unit * 2;
+$spacing-xxl: $spacing-base-unit * 3;
+$container-width: 1170px;
+$container-padding: $spacing-lg;
+$breakpoint-sm: 576px; $breakpoint-md: 768px; $breakpoint-lg: 992px; $breakpoint-xl: 1200px;
+$border-radius-sm: 3px;
+$border-radius-md: 5px;
+$border-radius-lg: 8px;
+$border-radius-pill: 50px;
+
+$color-tag-fashion: #E55E8D;
+$color-tag-lifestyle: #46A3FF;
+$color-tag-news: #555555;
+$color-tag-sports: #46A3FF;
+$color-tag-technology: #FFA500; 
+$color-tag-travel: #81D742;
+
+// --- Déclaration des Variables CSS Globales pour Theming (Light & Dark) ---
+:root {
+  --font-heading: #{$font-heading-name};
+  --font-body: #{$font-body-name};
+  --color-background: #{$clay-white};
+  --color-background-rgb: #{$clay-white-rgb};
+  --color-background-alt: #{$color-white};
+  --color-text-primary: #{$dark-charcoal};
+  --color-text-secondary: #{mix($dark-charcoal, $clay-white, 65%)};
+  --color-text-headings: #{$dark-charcoal};
+  --color-border: #{mix($dark-charcoal, $clay-white, 20%)};
+  --color-border-light: #{mix($dark-charcoal, $clay-white, 10%)};
+  // --- AJOUT : Variable pour les <hr> et les placeholders ---
+  --color-hr: #{mix($dark-charcoal, $clay-white, 15%)}; 
+  --color-text-placeholder: #{mix($dark-charcoal, $clay-white, 50%)};
+  // --- FIN AJOUT ---
+  --color-text-accent: #{$sunset-gold};
+  --color-text-accent-secondary: #{$mediterranean-blue};
+  --color-text-on-accent: #{$color-white}; 
+  --color-link: var(--color-text-accent-secondary);
+  --color-link-hover: #{darken($mediterranean-blue, 10%)};
+  
+  --color-header-background: var(--color-background-alt);          
+  --color-header-top-bar-background: var(--color-background);      
+  --color-header-bottom-bar-background: #{rgba($sunset-gold, 0.05)}; 
+  
+  --color-footer-bottom-background: var(--color-background-alt);
+  --color-card-background: var(--color-background-alt);
+  --color-blockquote-background: #{rgba($sunset-gold, 0.08)};
+  --color-blockquote-border: var(--color-text-accent);
+  --color-code-text: #{mix($dark-charcoal, $clay-white, 70%)};
+  --color-code-background: #{rgba($mediterranean-blue, 0.08)};
+  --color-pre-text: var(--color-background);
+  --color-pre-background: #{darken($dark-charcoal, 5%)};
+  --color-input-background: var(--color-background-alt);
+  --color-border-input: var(--color-border);
+  --color-submenu-background: var(--color-background-alt);
+  --color-button-cta-background: var(--color-text-accent);
+  --color-button-cta-text: var(--color-text-on-accent);
+  --color-text-footer: var(--color-text-secondary);
+  --color-text-footer-link: var(--color-text-primary);
+  --color-text-footer-heading: var(--color-text-headings);
+  --color-backtotop-bg: #{rgba($dark-charcoal, 0.7)};
+  --box-shadow-light: 0 3px 8px #{rgba(mix($dark-charcoal, $clay-white, 50%), 0.08)};
+  --box-shadow-medium: 0 5px 15px #{rgba(mix($dark-charcoal, $clay-white, 50%), 0.1)};
+  --box-shadow-submenu: var(--box-shadow-medium);
+  --color-focus-outline: var(--color-text-accent-secondary);
+  --color-focus-outline-transparent: #{rgba($mediterranean-blue, 0.3)};
+  --color-focus-ring: var(--color-focus-outline-transparent);
+  --pagination-color: var(--color-link);
+  --pagination-hover-color: var(--color-link-hover);
+  --pagination-hover-bg: #{rgba($mediterranean-blue, 0.1)};
+  --pagination-active-color: var(--color-text-on-accent);
+  --pagination-active-bg: var(--color-link);
+  --pagination-active-border: var(--color-link);
+  --pagination-disabled-color: #{mix($dark-charcoal, $clay-white, 40%)};
+  --pagination-disabled-bg: transparent;
+  --toggle-icon-color: var(--color-text-secondary);
+  --toggle-icon-hover-color: var(--color-link);
+  --toggle-bg-hover: #{rgba($mediterranean-blue, 0.08)};
+
+  --color-sidebar-widget-bg: #{$olive-grove-night};
+  --color-sidebar-widget-text: #{$clay-white};
+  --color-sidebar-widget-text-muted: #{rgba($clay-white, 0.75)};
+  --color-sidebar-widget-link: #{$sunset-gold};
+  --color-sidebar-widget-link-hover: #{lighten($sunset-gold, 10%)}; 
+  --color-sidebar-widget-border: #{rgba($clay-white, 0.2)};
+  --color-sidebar-widget-icon: var(--color-sidebar-widget-text);
+  --color-sidebar-widget-blockquote-bg: #{rgba($clay-white, 0.05)}; 
+  --color-sidebar-input-bg: #{rgba($clay-white, 0.9)}; 
+  --color-sidebar-input-text: #{$dark-charcoal}; 
+  --sidebar-widget-title-bg: #{rgba($sunset-gold, 0.1)}; 
+  --sidebar-widget-title-color: #{$clay-white}; 
+  --sidebar-widget-title-border: #{rgba($sunset-gold, 0.2)}; 
+
+  --color-footer-widget-bg: #{$olive-grove-night};
+  --color-footer-widget-text: #{$clay-white};
+  --color-footer-widget-text-muted: #{rgba($clay-white, 0.75)};
+  --color-footer-widget-link: #{$sunset-gold};
+  --color-footer-widget-link-hover: #{lighten($sunset-gold, 10%)};
+  --color-footer-widget-border: #{rgba($clay-white, 0.2)}; 
+  --color-footer-widget-button-bg: #{$sunset-gold};
+  --color-footer-widget-button-text: #{$dark-charcoal}; 
+  --color-footer-widget-button-hover-bg: #{darken($sunset-gold, 10%)};
+  --footer-widget-title-bg: #{rgba($sunset-gold, 0.1)};
+  --footer-widget-title-color: #{$clay-white};
+  --footer-widget-title-border: #{rgba($sunset-gold, 0.2)};
+}
+
+// --- Dark Theme Overrides ---
+html.dark-mode {
+  --color-background: #{$dark-charcoal};
+  --color-background-rgb: #{$dark-charcoal-rgb}; 
+  --color-background-alt: #{lighten($dark-charcoal, 5%)};
+  --color-text-primary: #{$clay-white};
+  --color-text-secondary: #{mix($clay-white, $dark-charcoal, 65%)};
+  --color-text-headings: var(--color-text-primary);
+  --color-border: #{lighten($dark-charcoal, 15%)};
+  --color-border-light: #{lighten($dark-charcoal, 10%)};
+  // --- AJOUT : Variable pour les <hr> et les placeholders en mode sombre ---
+  --color-hr: #{mix($clay-white, $dark-charcoal, 15%)};
+  --color-text-placeholder: #{mix($clay-white, $dark-charcoal, 50%)};
+  // --- FIN AJOUT ---
+  --color-text-accent: #{$sunset-gold};
+  --color-text-accent-secondary: #{lighten($mediterranean-blue, 15%)};
+  --color-text-on-accent: #{$dark-charcoal}; 
+  --color-link: var(--color-text-accent-secondary);
+  --color-link-hover: #{lighten($mediterranean-blue, 25%)};
+  
+  --color-header-background: var(--color-background-alt);
+  --color-header-top-bar-background: var(--color-background);
+  --color-header-bottom-bar-background: #{rgba($sunset-gold, 0.08)}; 
+
+  --color-footer-bottom-background: #{darken($dark-charcoal, 3%)}; 
+  --color-card-background: var(--color-background-alt);
+  --color-blockquote-background: #{rgba($sunset-gold, 0.1)};
+  --color-blockquote-border: var(--color-text-accent);
+  --color-code-text: #{mix($clay-white, $dark-charcoal, 80%)};
+  --color-code-background: #{rgba($mediterranean-blue, 0.15)};
+  --color-pre-text: var(--color-text-primary);
+  --color-pre-background: #{darken($dark-charcoal, 5%)};
+  --color-input-background: #{lighten($dark-charcoal, 10%)};
+  --color-border-input: var(--color-border);
+  --color-submenu-background: var(--color-background-alt);
+  --color-button-cta-background: var(--color-text-accent);
+  --color-button-cta-text: var(--color-text-on-accent); 
+  --color-text-footer: var(--color-text-secondary);
+  --color-text-footer-link: var(--color-text-primary);
+  --color-text-footer-heading: var(--color-text-accent);
+  --color-backtotop-bg: #{rgba($clay-white, 0.6)};
+  --box-shadow-light: 0 3px 8px #{rgba(gray("900"), 0.2)};
+  --box-shadow-medium: 0 5px 15px #{rgba(gray("900"), 0.3)};
+  --box-shadow-submenu: var(--box-shadow-medium);
+  --color-focus-outline: var(--color-text-accent-secondary);
+  --color-focus-outline-transparent: #{rgba($mediterranean-blue, 0.4)};
+  --color-focus-ring: var(--color-focus-outline-transparent);
+  --pagination-color: var(--color-link);
+  --pagination-hover-color: var(--color-link-hover);
+  --pagination-hover-bg: #{rgba($mediterranean-blue, 0.2)};
+  --pagination-active-color: var(--color-text-on-accent);
+  --pagination-active-bg: var(--color-link);
+  --pagination-active-border: var(--color-link);
+  --pagination-disabled-color: #{mix($clay-white, $dark-charcoal, 40%)};
+  --pagination-disabled-bg: transparent;
+  --toggle-icon-color: var(--color-text-secondary);
+  --toggle-icon-hover-color: var(--color-link);
+  --toggle-bg-hover: #{rgba($clay-white, 0.1)};
+}
+
+// --- Z-Index Management ---
+$zindex-header: 1030;
+$zindex-mobile-menu: 1040;
+$zindex-search-modal: 1050;
+$zindex-back-to-top: 1020;
+
+// --- Mixin pour les états focus ---
+@mixin a11y-focus {
+  outline: 2px solid var(--color-focus-outline);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+// Couleurs des hubs
+$gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$color-border-light: #e1e8ed;
+$color-bg-light: #f8fafc;
+
+// Espacements
+$spacing-hub: 2rem;
+$spacing-card: 1.5rem;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;

@@ -1,0 +1,272 @@
+/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_article-card.scss */
+@import 'variables'; 
+
+.article-card {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border-light);
+  margin-bottom: $spacing-xl * 1; 
+  overflow: hidden; 
+  border-radius: $border-radius-lg;
+  box-shadow: var(--box-shadow-light);
+  transition: transform 0.25s ease-out, 
+              box-shadow 0.25s ease-out,
+              background-color 0.3s ease,
+              border-color 0.3s ease;
+  
+  display: flex;
+  flex-direction: column; 
+
+  .homepage-listing-list & {
+    @media (min-width: $breakpoint-md) { 
+      flex-direction: row; 
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-medium);
+  }
+}
+
+// --- Zone Image ---
+.thumbnail-wrap {
+  position: relative;
+  line-height: 0;
+  flex-shrink: 0;
+
+  a.thumbnail-link { 
+    display: block; 
+    height: 100%; 
+    overflow: hidden;
+  }
+  
+  @media (max-width: ($breakpoint-md - 1px)) {
+    a.thumbnail-link {
+      border-top-left-radius: $border-radius-lg;
+      border-top-right-radius: $border-radius-lg;
+    }
+  }
+  .homepage-listing-list & {
+    @media (min-width: $breakpoint-md) {
+      a.thumbnail-link {
+        border-top-left-radius: $border-radius-lg;
+        border-bottom-left-radius: $border-radius-lg;
+        border-top-right-radius: 0; 
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+  
+  .responsive-image-figure { margin: 0; height: 100%; display: block; } 
+
+  img, 
+  .article-card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--color-border-light);
+    transition: transform 0.35s ease-out; 
+    .article-card:hover & { transform: scale(1.05); }
+  }
+
+  width: 100%; 
+  img, .article-card-image {
+    aspect-ratio: 16 / 9; 
+  }
+
+  .homepage-listing-list & {
+    @media (min-width: $breakpoint-md) { 
+      width: 33%;       
+      max-width: 280px; 
+      min-width: 200px; 
+      img, .article-card-image {
+        aspect-ratio: 16 / 9; 
+      }
+    }
+  }
+}
+
+// --- Tag Catégorie sur l'Image ---
+.entry-category {
+  position: absolute;
+  top: $spacing-xs * 1.8; 
+  left: $spacing-xs * 1.8; 
+  padding: 2px 5px; 
+  border-radius: $border-radius-sm;
+  font-size: 0.58rem; 
+  font-weight: $font-weight-bold;
+  color: $color-white !important; 
+  background-color: rgba($color-black, 0.7); 
+  text-transform: uppercase;
+  letter-spacing: 0.05em; 
+  line-height: 1.25; 
+  z-index: 2;
+
+  a { 
+    color: inherit !important; 
+    text-decoration: none; 
+    &:hover, &:focus { text-decoration: underline; }
+    &:focus-visible { @include a11y-focus; outline-offset: 1px; }
+  }
+}
+
+// --- Zone Contenu Texte ---
+.entry-overview {
+  padding: $spacing-sm ($spacing-md - 0.125rem); 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start; 
+
+  .homepage-listing-list & {
+    @media (min-width: $breakpoint-md) {
+      padding: $spacing-sm ($spacing-md + $spacing-xs / 2); 
+    }
+  }
+}
+
+// --- Metadonnées ---
+.post-meta { 
+  font-size: 0.68rem; 
+  color: var(--color-text-secondary);
+  margin-bottom: $spacing-sm; 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: $spacing-xs ($spacing-sm - 0.125rem); 
+  transition: color 0.3s ease;
+  span, time, a { display: inline-flex; align-items: center; gap: ($spacing-xs / 1.5); } 
+  svg { width: 0.75em; height: 0.75em; opacity: 0.8; flex-shrink: 0; } 
+  a { 
+    color: inherit;
+    transition: color 0.2s ease-out;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: var(--color-text-primary);
+      text-decoration: underline;
+    }
+     &:focus-visible {
+       @include a11y-focus;
+       text-decoration: none;
+    }
+  }
+}
+
+// --- Titre ---
+.entry-title {
+  font-family: var(--font-heading); 
+  font-weight: $font-weight-bold;
+  line-height: 1.2; 
+  margin-top: 0; 
+  margin-bottom: $spacing-xs; 
+
+  font-size: 1.25rem; 
+  .homepage-listing-list & {
+    @media (min-width: $breakpoint-md) { 
+      font-size: 1.0rem; 
+    }
+    @media (max-width: ($breakpoint-md - 1px)) { 
+        font-size: 1.15rem; 
+    }
+  }
+
+  a { 
+    color: var(--color-text-headings);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+    &:hover, &:focus {
+      color: var(--color-text-accent); 
+      text-decoration: none; 
+    }
+    &:focus-visible {
+      @include a11y-focus; 
+      text-decoration: none;
+      color: var(--color-text-accent); 
+    }
+  }
+}
+
+// --- Résumé ---
+.entry-summary {
+  color: var(--color-text-primary);
+  line-height: 1.4; 
+  margin-bottom: $spacing-sm; 
+  transition: color 0.3s ease;
+
+  font-size: 0.82rem; 
+  .homepage-listing-list & {
+     @media (min-width: $breakpoint-md) {
+        font-size: 0.78rem; 
+     }
+     @media (max-width: ($breakpoint-md - 1px)) {
+        font-size: 0.8rem;
+    }
+  }
+
+  p { 
+    margin-bottom: $spacing-xs / 1.5; 
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+// --- Pied de Carte (Lire plus / Partage) ---
+.entry-footer {
+  padding-top: $spacing-sm; 
+  margin-top: auto; 
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.68rem; 
+  transition: border-color 0.3s ease;
+
+  .read-more a { 
+    font-weight: $font-weight-bold;
+    color: var(--color-text-accent-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    display: inline-flex;
+    align-items: center;
+    padding: $spacing-xs $spacing-sm; 
+    margin: (-$spacing-xs) (-$spacing-sm); 
+    border-radius: $border-radius-sm; 
+    &:hover, &:focus {
+      color: var(--color-text-accent);
+      text-decoration: underline;
+      transform: translateX(2px);
+    }
+    &:focus-visible {
+       @include a11y-focus;
+       text-decoration: none;
+    }
+  }
+  .post-share { 
+    margin-left: $spacing-sm; 
+    // MODIFIÉ pour aligner "Share:" et les icônes
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs; // Espace entre "Share:" et les icônes
+
+    .share-icons {
+      list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: ($spacing-xs * 1.2);
+      li { margin: 0; }
+      a {
+        color: var(--color-text-secondary);
+        display: inline-flex; justify-content: center; align-items: center;
+        padding: $spacing-xs / 2; line-height: 1; border-radius: $border-radius-sm;
+        transition: color 0.2s ease-out, background-color 0.2s ease-out, transform 0.2s ease-out;
+        text-decoration: none;
+        &:hover, &:focus { color: var(--color-link); background-color: var(--toggle-bg-hover); transform: scale(1.1); }
+        &:focus-visible { @include a11y-focus; }
+      }
+      svg { width: 0.85rem; height: 0.85rem; fill: currentColor; }
+    }
+    // .share-label { display: none; } // On supprime cette ligne pour afficher "Share:"
+    .share-label {
+        // Vous pouvez ajouter des styles spécifiques ici si besoin, ex:
+        // font-weight: $font-weight-semibold;
+        // color: var(--color-text-secondary);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{{/* layouts/partials/sidebar/widget-newsletter-mediterranean.html */}}
+{{ $widgetData := index .Site.Params.sidebar "newsletter_mediterranean" }}
+{{/* Ajout de l'ID 'sidebar-newsletter-anchor' à la div principale du widget */}}
+<div class="widget widget_newsletter_mediterranean widget_lead_magnet" id="sidebar-newsletter-anchor">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Newsletter" }}</span></h3>
+  <div class="widget-content">
+    <form action="{{ $widgetData.form_action | default "#" | safeURL }}" method="POST" class="lead-magnet-form">
+      <div class="form-group">
+        <label for="sidebar-newsletter-email" class="sr-only">Email address</label>
+        <input type="email" name="email" id="sidebar-newsletter-email" placeholder="{{ $widgetData.placeholder | default "Enter your email" }}" required>
+      </div>
+      <button type="submit" class="button-primary">{{ $widgetData.button_text | default "Subscribe" }}</button>
+    </form>
+    {{ with $widgetData.sub_text }}<p class="sub-text">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</div>

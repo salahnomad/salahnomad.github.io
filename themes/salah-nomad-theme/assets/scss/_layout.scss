@@ -1,0 +1,316 @@
+// _layout.scss
+// Définit la structure générale et la disposition en grille
+// --- MODIFIÉ : Ajout des styles pour .homepage-layout-container ---
+// --- MODIFIÉ : Sidebar visible et empilée sur mobile pour la homepage ---
+
+@import 'variables'; // Importer les variables une seule fois au début
+
+// --- Conteneur Principal ---
+.container {
+  width: 100%;
+  max-width: $container-width; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding; 
+  padding-right: $container-padding;
+}
+
+// --- Structure Contenu Principal + Sidebar (Optionnelle) ---
+// Le wrapper qui contient la liste/contenu et la sidebar.
+// Ces règles s'appliquent aux pages de liste et single.
+.content-loop-wrap,
+.single-page-container {
+  display: grid;
+  gap: $spacing-xl; 
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-lg) {
+    &.has-sidebar {
+      grid-template-columns: 2.5fr 1fr; 
+    }
+  }
+}
+
+// --- NOUVEAU : Structure pour la page d'accueil avec Hero et Sidebar haute ---
+.homepage-layout-container {
+  &.has-sidebar-layout {
+    display: grid;
+    grid-template-columns: 1fr; // Empilé par défaut sur mobile
+    gap: $spacing-xl;           // Espace entre contenu et sidebar si empilé
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 2.5fr 1fr; // Même ratio que les autres pages avec sidebar
+      gap: $spacing-xxl;                // Espace plus grand sur desktop
+    }
+  }
+
+  &.no-sidebar-layout { 
+    .homepage-main-content-area {
+      // Pas de règle spécifique nécessaire ici si la grille parente est bien configurée
+    }
+  }
+}
+
+.homepage-main-content-area {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; 
+}
+// --- FIN NOUVEAU ---
+
+
+// --- Zone de Liste des Articles (Maintenant en Liste Verticale) ---
+.post-list {
+   display: block; 
+}
+
+// --- Sélecteurs pour les zones de contenu spécifiques ---
+.post-list-main, 
+.single-main-content {
+  min-width: 0; 
+}
+
+// --- Zone Sidebar ---
+.sidebar {
+  @media (max-width: ($breakpoint-lg - 1px)) {
+      .content-loop-wrap.has-sidebar &,
+      .single-page-container.has-sidebar &,
+      .homepage-layout-container.has-sidebar-layout & { 
+          /* display: none; */  // MODIFIÉ : Ligne commentée pour afficher la sidebar sous le contenu sur mobile
+      }
+  }
+}
+
+// ==========================================================================
+// Subsection Grid - Le Jardin Japonais (Styles pour les _index.md)
+// ==========================================================================
+
+.subsection-grid {
+  display: grid;
+  // Sur mobile, une seule colonne.
+  grid-template-columns: 1fr;
+  gap: 1.5rem; // Espace entre les cartes
+  margin-top: 2rem;
+  margin-bottom: 3rem; // Espace avant la liste d'articles automatique
+
+  // Sur les tablettes et plus, passer à 2 colonnes.
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Sur les grands écrans, on peut envisager 3 colonnes si beaucoup d'items.
+  // Pour l'instant, 2 colonnes est plus élégant et moins chargé.
+  // @media (min-width: 992px) {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
+}
+
+.subsection-card {
+  display: block; // Pour que le lien remplisse toute la carte
+  text-decoration: none;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius); // Utilise le radius global de ton thème
+  background-color: var(--card-bg);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 100%; // Assure que les cartes sur une même ligne ont la même hauteur
+
+  &:hover {
+    transform: translateY(-5px); // Effet de lévitation subtil
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color); // Utilise la couleur primaire (le bleu-vert) au survol
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); // Titre de la carte avec la couleur d'accent
+    font-size: 1.25rem;
+    font-weight: 600; // Poppins semibold
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--text-color-light); // Couleur de texte légèrement plus claire pour la description
+    font-family: var(--font-family-body); // Assure la police Lora
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+/* ==========================================================================
+   Shortcode: Figure-Link Card
+   ========================================================================== */
+
+// Ce composant est un appel à l'action visuel utilisé pour guider les lecteurs
+// vers des pages ou articles piliers de l'écosystème de contenu.
+
+.figure-link-card {
+  display: block; // Pour que le lien englobe tout le bloc
+  text-decoration: none;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-lg, 12px); // Utilise la variable du thème ou une valeur par défaut
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  // Effet au survol : élévation subtile et mise en évidence
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-text-accent);
+
+    .figure-link-arrow {
+      transform: translateX(5px);
+    }
+  }
+
+  // Conteneur pour l'image
+  .figure-link-image-wrapper {
+    aspect-ratio: 16 / 9; // Ratio cinématique pour la cohérence visuelle
+    background-color: var(--color-background-tertiary); // Couleur de fond pendant le chargement
+    overflow: hidden;
+
+    // Assurer que la <figure> générée par le partial d'image ne casse pas le layout
+    .responsive-image-figure {
+      margin: 0;
+      height: 100%;
+    }
+
+    .figure-link-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // L'image remplit le conteneur sans se déformer
+      transition: transform 0.4s ease-out;
+    }
+  }
+  
+  &:hover .figure-link-image {
+      transform: scale(1.05); // Effet de zoom subtil sur l'image au survol
+  }
+
+  // Section pour la légende (titre et texte)
+  .figure-link-caption {
+    padding: 1.5rem;
+    position: relative; // Pour positionner la flèche
+  }
+
+  .figure-link-title {
+    font-family: var(--font-heading, sans-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-heading);
+  }
+
+  .figure-link-text {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text-secondary); // Couleur légèrement plus douce pour le texte descriptif
+  }
+
+  // La flèche qui indique une action cliquable
+  .figure-link-arrow {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--color-text-accent);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+/* ==========================================================================
+   Story Chapters Grid on /about/story/ (Version 5.3 - Aligned Paragraphs)
+   ========================================================================== */
+
+.story-chapters-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .story-chapters-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.chapter-card {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chapter-card h4 {
+  font-family: var(--font-heading);
+  color: var(--color-text-secondary); 
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--sunset-gold, #F4A261);
+  border-radius: var(--border-radius-sm, 4px);
+  text-align: center;
+}
+
+.chapter-card h3 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--color-text-heading); 
+  /* --- AJOUT POUR L'ALIGNEMENT --- */
+  min-height: 4.2em; /* Hauteur minimale pour accommoder 2-3 lignes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-card p {
+  font-size: 1rem;
+  color: var(--color-text-secondary); 
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.chapter-card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--mediterranean-blue, #2A9D8F);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.chapter-card a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--sunset-gold, #F4A261);
+  transition: width 0.3s ease;
+}
+
+.chapter-card a:hover {
+  color: var(--sunset-gold, #F4A261);
+}
+
+.chapter-card a:hover::after {
+  width: 100%;
+}

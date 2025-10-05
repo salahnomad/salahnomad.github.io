@@ -1,0 +1,26 @@
+<div class="mermaid-container">
+  <div class="mermaid">
+    {{- .Inner | safeHTML -}}
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
+<style>
+  .mermaid-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    overflow-x: auto; /* Ajout pour gérer le débordement sur petits écrans */
+  }
+  .mermaid {
+    width: 100%; /* Force le conteneur du diagramme à prendre toute la largeur */
+    min-width: 500px; /* Assure une largeur minimale même sur grands écrans */
+    text-align: center; /* Centre le contenu du diagramme */
+  }
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

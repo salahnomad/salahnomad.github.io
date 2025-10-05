@@ -1,0 +1,193 @@
+// --- Fichier : themes/salah-nomad-theme/assets/scss/_base.scss ---
+@import 'variables'; 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);     
+  font-weight: $font-weight-normal; 
+  line-height: $base-line-height;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// --- Typographie de Base ---
+p {
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); 
+  font-weight: $font-weight-bold;   
+  line-height: 1.3;
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-md;
+  color: var(--color-text-headings);
+  transition: color 0.3s ease;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease-out, 
+              text-decoration-color 0.2s ease-out, 
+              opacity 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+    text-decoration-color: var(--color-link-hover);
+  }
+
+  &:focus-visible {
+    color: var(--color-link-hover);
+    text-decoration: none;
+    @include a11y-focus;
+  }
+}
+
+// --- Medias ---
+img, svg { 
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  transition: filter 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out; 
+}
+
+// --- Listes ---
+ul, ol {
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-lg; 
+}
+
+// --- Autres ---
+hr {
+  border: 0;
+  border-top: 1px solid var(--color-border, #{mix($dark-charcoal, $clay-white, 15%)});
+  margin: $spacing-xl 0;
+  transition: border-color 0.3s ease;
+}
+
+.screen-reader-text {
+  border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);
+  height: 1px; margin: -1px; overflow: hidden; padding: 0;
+  position: absolute !important; width: 1px; word-wrap: normal !important;
+}
+
+// --- Focus global et transitions pour éléments de formulaire et boutons ---
+button, 
+[role="button"], 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"] {
+  font-family: inherit; 
+  font-size: inherit;   
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, 
+              border-color 0.2s ease-out, 
+              color 0.2s ease-out, 
+              box-shadow 0.2s ease-out,
+              transform 0.15s ease-out;
+
+  &:hover {
+    // transform: translateY(-1px); 
+  }
+  &:active {
+    transform: translateY(1px) scale(0.98); 
+  }
+  &:focus-visible {
+     @include a11y-focus;
+  }
+}
+
+/*
+==================================================================
+Styles pour les boutons CTA désactivés (Version finale avec texte foncé)
+==================================================================
+*/
+a.cta-button.disabled {
+  // Structure et espacement
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  
+  // Style "Fantôme" / "En attente"
+  background-color: transparent !important;
+  border: 2px dashed var(--color-footer-widget-button-bg, #F4A261) !important; // La bordure reste ORANGE
+  
+  // ### MODIFICATION PRINCIPALE ICI ###
+  // Le texte utilise maintenant la couleur des titres pour un meilleur contraste
+  color: var(--color-text-headings, #264653) !important; 
+  
+  // Comportement
+  cursor: not-allowed;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  
+  // Effet de survol subtil
+  &:hover,
+  &:active {
+    background-color: rgba(244, 162, 97, 0.1) !important; // Le fond devient légèrement ORANGE
+    border-style: solid !important;
+    
+    // ### MODIFICATION AUSSI ICI ###
+    // Le texte reste foncé au survol
+    color: var(--color-text-headings, #264653) !important; 
+    
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+// Styles pour les champs de saisie
+input[type="search"], input[type="text"],
+input[type="email"], input[type="url"], input[type="tel"], input[type="number"],
+input[type="date"], input[type="password"], textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-border-input);
+  color: var(--color-text-primary);
+  padding: $spacing-sm $spacing-md; 
+  border-radius: $border-radius-sm; 
+  transition: background-color 0.2s ease-out, 
+              border-color 0.2s ease-out, 
+              color 0.2s ease-out, 
+              box-shadow 0.2s ease-out;
+
+  &::placeholder {
+      color: var(--color-text-placeholder, #{mix($dark-charcoal, $clay-white, 50%)});
+      opacity: 1;
+  }
+  &:focus-visible {
+     @include a11y-focus;
+     border-color: var(--color-focus-outline); 
+  }
+}

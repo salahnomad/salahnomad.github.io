@@ -1,0 +1,29 @@
+{{/* themes/salah-nomad-theme/layouts/partials/sidebar/widget-quotes.html */}}
+{{/* VERSION MISE À JOUR pour le nouveau rotateur JS global */}}
+{{ $widgetConfig := index .Site.Params.sidebar "quotes" }}
+{{ $allQuotes := .Site.Data.quotes }}
+
+{{ if and $widgetConfig.enable $allQuotes (gt (len $allQuotes) 0) }}
+  {{ $firstQuote := index $allQuotes 0 }}
+
+  <div class="widget widget_quotes">
+    {{ if $widgetConfig.title }}
+      <h3 class="widget-title"><span>{{ $widgetConfig.title }}</span></h3>
+    {{ end }}
+    <div class="widget-content quote-widget-content">
+      <blockquote id="rotator-container-roots"> {{/* ID standard */}}
+        <p id="rotator-text-roots">{{ $firstQuote.text | $.Page.RenderString }}</p>
+        {{ if $firstQuote.author }}
+          <footer id="rotator-author-roots">— {{ $firstQuote.author }}</footer>
+        {{ else }}
+          <footer id="rotator-author-roots" style="display: none;"></footer>
+        {{ end }}
+      </blockquote>
+
+      {{/* On injecte les données avec un ID standard */}}
+      <script id="rotator-data-roots" type="application/json">
+        {{ $allQuotes | jsonify }}
+      </script>
+    </div>
+  </div>
+{{ end }}

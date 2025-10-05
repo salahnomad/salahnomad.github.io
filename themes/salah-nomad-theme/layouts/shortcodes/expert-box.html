@@ -1,0 +1,18 @@
+{{/*
+  Shortcode: expert-box (Version finale minimaliste)
+  Usage:
+  {{< expert-box title="Titre de la boîte" >}}
+    Contenu en Markdown ici.
+  {{< /expert-box >}}
+*/}}
+
+<aside class="expert-box">
+  <div class="expert-box-header">
+    <h3 class="expert-box-title">
+      <span>{{ .Get "title" | default "Expert Insights" }}</span>
+    </h3>
+  </div>
+  <div class="expert-box-content">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</aside>

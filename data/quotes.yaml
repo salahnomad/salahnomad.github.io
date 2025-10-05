@@ -1,0 +1,84 @@
+# H:\Salah-Nomad\NewBlog\data\quotes.yaml
+
+- text: "Malaga is not a destination—it is the mirror where my Morisco exile and Andalusian memory finally recognize each other."
+  author: "Salah Nomad"
+
+- text: "Don’t talk to me about art if you haven’t come to Malaga."
+  author: "Pablo Picasso"
+  context: "Expression de son attachement à sa ville natale."
+
+- text: "Our roots are not chains, but moorings that set us free."
+  author: "Salah Nomad"
+
+- text: "Leaving Malaga, following the undulating line of the coast, you enter the empire of light."
+  author: "José Ortega y Gasset"
+  context: "Description lyrique des paysages malaguènes"
+
+- text: "To work under a Málaga sunset is to code with one hand and hold centuries of olive roots with the other."
+  author: "Salah Nomad"
+
+- text: "Malaga’s sunsets are not a goodbye, they’re a promise of a new tomorrow."
+  author: "Popular Quote" # J'ai changé "category" en "author" pour la cohérence, vous pouvez le modifier.
+  # Ou si vous voulez garder "category" comme info supplémentaire :
+  # category: "Anonymous/Popular Quotes"
+
+- text: "Digital nomadism doesn't erase roots, it transposes them."
+  author: "Salah Nomad"
+
+- text: "Málaga, a martini of the sea."
+  author: "Rafael Pérez Estrada"
+  context: "Métaphore poétique évoquant le charme de la ville"
+
+- text: "The Alcazaba’s zellige patterns are algorithms written by ancestors—each tile a pixel in our shared Mediterranean code."
+  author: "Salah Nomad"
+
+- text: "Malaga: Where the Mediterranean kisses Spain, and history whispers in your ear."
+  author: "Popular Quote"
+
+- text: "Resilience isn’t rigidity. Learn from cork oaks: bend in crises."
+  author: "Salah Nomad"
+
+- text: "This place has a divine light, and the climate is one of the best in southern Europe."
+  author: "Ernest Hemingway"
+  context: "Éloge de la lumière et du climat de Malaga"
+
+- text: "A sardine knows more of freedom than the net—it swims where the currents whisper, not where the market shouts."
+  author: "Salah Nomad"
+
+- text: "There are no more beautiful beaches or happier women than in Malaga."
+  author: "Popular Quote"
+
+- text: "The nomad’s compass points not north, but toward the scent of bread baking in unfamiliar ovens."
+  author: "Salah Nomad"
+
+- text: "Málaga for me has been the advance of the paradise that I will not have. I have come to Malaga to say goodbye to life."
+  author: "Antonio Gala"
+  context: "Une relation profonde et mélancolique avec la ville"
+
+- text: "Every email sent is a message in a bottle, tossed into the digital sea with hope as the postage."
+  author: "Salah Nomad"
+
+- text: "The soul of Malaga is painted in the blue of its sky and the depth of its sea."
+  author: "Popular Quote"
+
+- text: "The horizon is not a line but a pulse, beating in time with restless hearts."
+  author: "Salah Nomad"
+
+- text: "No Malaga, no bulls, no nothing!"
+  author: "Pablo Picasso"
+  context: "Phrase soulignant l’importance de Malaga dans son identité et son œuvre"
+
+- text: "Malaga taught me: a nomad’s home isn’t where the Wi-Fi connects, but where the sea’s breath syncs with your heartbeat."
+  author: "Salah Nomad"
+
+- text: "When you go to Malaga, you don’t want to leave."
+  author: "Popular Quote"
+
+- text: "The world is a book, and those who do not travel read only one page."
+  author: "Saint Augustine"
+
+- text: "Every espeto de sardinas here is a lesson: some fires don’t destroy—they transmute, like code refactoring heritage."
+  author: "Salah Nomad"
+
+- text: "Malaga teaches us that life, like its art, is best lived passionately."
+  author: "Popular Quote"

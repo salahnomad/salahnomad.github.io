@@ -1,0 +1,222 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\partials\header.html */}}
+{{/* --- MODIFIÉ : Mise à jour du bouton de recherche desktop --- */}}
+<header id="masthead" class="site-header">
+
+  {{/* --- 1. Barre Supérieure (MENU PRINCIPAL THÉMATIQUE) --- */}}
+  {{ if .Site.Menus.main }}
+  <div id="top-main-nav-bar" class="clear">
+    <div class="container top-main-nav-container">
+      <nav class="main-navigation" id="main-menu-desktop" role="navigation" aria-label="{{ i18n "mainNavigation" | default "Main Navigation" }}">
+        <ul id="primary-menu" class="menu nav-menu theme-menu">
+          {{ $currentPage := . }}
+          {{ $isHomePage := $currentPage.IsHome }}
+
+          {{ range .Site.Menus.main.ByWeight }}
+            {{ $active := false }}
+            {{ $isParent := .HasChildren }}
+            {{ $isParentNotLink := and $isParent (or (not .URL) (eq .URL "#")) }}
+            {{ $menuID := .Identifier | default .Name | urlize }}
+            {{ $menuItemPage := false }}
+            {{ if .URL }}{{ $menuItemPage = site.GetPage .URL }}{{ end }} 
+
+            {{ if $isHomePage }}
+              {{ if $menuItemPage | and (eq $menuItemPage.RelPermalink "/") }}
+                {{ $active = true }}
+              {{ end }}
+            {{ else }} 
+              {{ if $menuItemPage }} 
+                {{ if eq $currentPage.RelPermalink $menuItemPage.RelPermalink }} 
+                  {{ $active = true }}
+                {{ else if $isParent }} 
+                  {{ if $currentPage.IsDescendant $menuItemPage }}
+                    {{ $active = true }}
+                  {{ end }}
+                {{ end }}
+              {{ else if $isParent }} 
+                {{ range .Children }}
+                  {{ $childPage := site.GetPage .URL }}
+                  {{ if $childPage }}
+                    {{ if eq $currentPage.RelPermalink $childPage.RelPermalink }}
+                      {{ $active = true }}
+                    {{ else if $currentPage.IsDescendant $childPage }}
+                      {{ $active = true }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if $active }}{{ break }}{{ end }} 
+                {{ end }}
+              {{ end }}
+            {{ end }}
+
+            <li class="menu-item {{ if $isParent }}menu-item-has-children{{ end }} {{ if $active }}active{{ end }}">
+              {{ if not $isParentNotLink }}
+                <a href="{{ if .URL }}{{ .URL | relLangURL }}{{ else }}#{{ end }}" {{ if $isParent }} aria-haspopup="true" aria-expanded="false" aria-controls="submenu-main-{{ $menuID }}" {{ end }}>
+                  {{ .Name }}{{ if $isParent }}<span class="dropdown-arrow" aria-hidden="true">▼</span>{{ end }}
+                </a>
+              {{ else }}
+                <button class="menu-item-no-link" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-main-{{ $menuID }}">
+                  {{ .Name }}<span class="dropdown-arrow" aria-hidden="true">▼</span>
+                </button>
+              {{ end }}
+              {{ if $isParent }}
+                <ul class="sub-menu theme-sub-menu" id="submenu-main-{{ $menuID }}">
+                  {{ range .Children.ByWeight }}
+                   {{ $childIsActive := false }}
+                   {{ $childItemPage := false }}
+                   {{ if .URL }}{{ $childItemPage = site.GetPage .URL }}{{ end }}
+
+                   {{ if $childItemPage }}
+                     {{ if $isHomePage }}
+                       {{ $childIsActive = false }}
+                     {{ else }}
+                       {{ if eq $currentPage.RelPermalink $childItemPage.RelPermalink }}
+                         {{ $childIsActive = true }}
+                       {{ else if $currentPage.IsDescendant $childItemPage }} 
+                         {{ $childIsActive = true }}
+                       {{ end }}
+                     {{ end }}
+                   {{ end }}
+                    <li class="menu-item {{ if $childIsActive }}active{{ end }}">
+                      <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  {{ end }}
+
+
+  {{/* --- 2. Barre Centrale (Logo + Actions Globales) --- */}}
+  <div class="site-branding-bar clear">
+    <div class="container site-branding-container">
+      <div class="site-branding">
+        {{ $lightLogo := .Site.Params.logo }}
+        {{ $darkLogo := .Site.Params.logo_dark | default .Site.Params.logo }}
+        {{ $logoAlt := printf "%s logo" .Site.Title }}
+        {{ $logoRegularURL := "" }}
+        {{ with resources.Get $lightLogo }}{{ $logoRegularURL = .RelPermalink }}{{ else }}{{ $logoRegularURL = $lightLogo | relURL }}{{ end }}
+        {{ $logoDarkURL := "" }}
+        {{ with resources.Get $darkLogo }}{{ $logoDarkURL = .RelPermalink }}{{ else }}{{ $logoDarkURL = $darkLogo | relURL }}{{ end }}
+
+        {{ if $logoRegularURL }}
+            <a href="{{ .Site.Home.RelPermalink }}" rel="home" class="site-logo-link">
+                <img src="{{ $logoRegularURL }}" alt="{{ $logoAlt }}" class="site-logo-img logo-light" width="150" height="50">
+                {{ if ne $logoRegularURL $darkLogo }}
+                <img src="{{ $logoDarkURL }}" alt="{{ $logoAlt }} Dark" class="site-logo-img logo-dark" width="150" height="50">
+                {{ end }}
+            </a>
+        {{ else }}
+            <p class="site-title"><a href="{{ .Site.Home.RelPermalink }}" rel="home">{{ .Site.Title }}</a></p>
+        {{ end }}
+      </div><!-- .site-branding -->
+
+      <div class="header-actions-group">
+        {{ if .Site.Params.enableThemeToggle | default true }}
+          {{ partial "dark-mode-toggle-button.html" . }}
+        {{ end }}
+        <button class="menu-toggle mobile-menu-toggle" aria-controls="mobile-nav-panel" aria-expanded="false" aria-label="{{ i18n "toggleMenu" | default "Toggle navigation" }}">
+          <span class="screen-reader-text">{{ i18n "menu" | default "Menu" }}</span>
+          {{ partial "icons/burger.svg" . }}
+        </button>
+      </div><!-- .header-actions-group -->
+    </div><!-- .container -->
+  </div><!-- .site-branding-bar -->
+
+
+  {{/* --- 3. Barre Inférieure (MENU SECONDAIRE UTILITAIRE + BOUTON RECHERCHE) --- */}}
+  <div id="bottom-util-nav-bar" class="clear">
+    <div class="container bottom-util-nav-container">
+      {{ if .Site.Menus.secondary }}
+      <nav class="secondary-navigation" aria-label="{{ i18n "secondaryNavigation" | default "Secondary Navigation" }}">
+        <ul id="secondary-menu" class="menu util-menu">
+          {{ $currentPage := . }}
+          {{ $isHomePageForSecondary := $currentPage.IsHome }}
+
+          {{ range .Site.Menus.secondary.ByWeight }}
+            {{ $isDropdown := .Params.dropdown | default false }}
+            {{ $isLang := .Params.is_lang_selector | default false }}
+            {{ $menuID := .Identifier | default .Name | urlize }}
+            {{ $iconName := .Params.icon }}
+
+            {{ $parentActive := false }}
+            {{ if not $isHomePageForSecondary }}
+              {{ if $isDropdown }}
+                {{ range .Children }}
+                  {{ $childPage := site.GetPage .URL }}
+                  {{ if $childPage | and (eq $currentPage.RelPermalink $childPage.RelPermalink) }}
+                    {{ $parentActive = true }}
+                    {{ break }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+
+            <li class="menu-item {{ if $isDropdown }}menu-item-has-children dropdown-trigger{{ end }} {{ if $isLang }}lang-item{{ end }} {{ if $parentActive }}active{{ end }}">
+              {{ if and .URL (ne .URL "#") }}
+                <a href="{{ .URL | relLangURL }}" {{ with .Params.target }}target="{{ . }}" {{ end }}>
+                  {{ if $iconName }}{{ partial (printf "icons/%s.svg" $iconName) . }}{{ end }}
+                  {{ .Name }}
+                  {{ if $isDropdown }}<span class="dropdown-arrow" aria-hidden="true">▼</span>{{ end }}
+                </a>
+              {{ else if $isLang }}
+                 <button class="lang-selector-trigger" aria-label="Select Language">
+                    {{ if $iconName }}{{ partial (printf "icons/%s.svg" $iconName) . }}{{ else }}{{ partial "icons/globe.svg" . }}{{ end }}
+                    <span class="lang-selector-text">{{ .Name }}</span>
+                 </button>
+              {{ else }} 
+                <button class="menu-item-no-link dropdown-trigger-label" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-sec-{{ $menuID }}">
+                  {{ if $iconName }}{{ partial (printf "icons/%s.svg" $iconName) . }}{{ end }}
+                  {{ .Name }}
+                  {{ if $isDropdown }}<span class="dropdown-arrow" aria-hidden="true">▼</span>{{ end }}
+                </button>
+              {{ end }}
+
+              {{ if $isDropdown }}
+                <ul class="sub-menu util-sub-menu" id="submenu-sec-{{ $menuID }}">
+                  {{ range .Children.ByWeight }}
+                   {{ $childIsActive := false }}
+                   {{ $childItemPage := false }}
+                   {{ if .URL }}{{ $childItemPage = site.GetPage .URL }}{{ end }}
+
+                   {{ if $childItemPage }}
+                     {{ if not $isHomePageForSecondary | and (eq $currentPage.RelPermalink $childItemPage.RelPermalink) }}
+                       {{ $childIsActive = true }}
+                     {{ end }}
+                   {{ end }}
+                    <li class="menu-item {{ if $childIsActive }}active{{ end }}">
+                      <a href="{{ .URL | relLangURL }}" {{ with .Params.target }}target="{{ . }}" {{ end }}>{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+      {{ end }} 
+
+      {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+        <div class="header-search-trigger-desktop">
+          <button class="search-toggle desktop-search-trigger" 
+                  aria-label="{{ i18n "searchToggleLabel" | default "Toggle Search" }}" 
+                  title="{{ i18n "searchToggleLabel" | default "Toggle Search" }}" 
+                  aria-controls="header-search-form-container" 
+                  aria-expanded="false">
+            {{/* --- MODIFIÉ : Utilisation de la nouvelle icône et ajout du texte "Search" --- */}}
+            {{ partial "icons/search-alt.svg" . }} 
+            <span class="search-text">{{ i18n "search" | default "Search" }}</span>
+            {{/* --- FIN MODIFIÉ --- */}}
+          </button>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+</header><!-- #masthead -->
+
+{{ partial "mobile-nav-panel.html" . }}

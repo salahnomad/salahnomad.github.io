@@ -1,0 +1,109 @@
+// assets/scss/_print.scss
+
+// S'applique uniquement lors de l'impression
+@media print {
+
+  // Import variables si nécessaire pour les couleurs/polices
+  // @import 'variables';
+
+  *,
+  *::before,
+  *::after {
+    background: transparent !important; // Fond transparent
+    color: #000 !important; // Texte noir (haute priorité)
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt; // Taille lisible sur papier
+    line-height: 1.4;
+    margin: 1cm; // Marges d'impression
+  }
+
+  // Cacher les éléments non pertinents à l'impression
+  .site-header,
+  .site-footer,
+  .sidebar,
+  .pagination,
+  .post-tags,
+  .post-share,
+  .menu-toggle,
+  .back-to-top,
+  .widget_ad,
+  .widget_search, // etc.
+  nav {
+    display: none;
+  }
+
+  // Afficher l'URL des liens
+  a {
+    text-decoration: underline;
+    color: #444 !important; // Couleur sobre pour les liens
+    // Afficher l'URL après le lien (sauf si interne à la page)
+    &[href^="http"]::after,
+    &[href^="//"]::after {
+      content: " (" attr(href) ")";
+      font-size: 9pt;
+      color: #555;
+      word-wrap: break-word;
+    }
+    // Ne pas afficher l'URL pour les liens internes ou les ancres
+    &[href^="/"]::after,
+    &[href^="#"]::after {
+      content: "";
+    }
+  }
+
+  // Style pour les articles
+  article,
+  .post-single {
+    margin-bottom: 1.5cm;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid; // Empêcher saut de page juste après un titre
+  }
+
+  h1 { font-size: 24pt; }
+  h2 { font-size: 18pt; }
+  h3 { font-size: 14pt; }
+
+  img,
+  figure {
+    max-width: 100% !important; // Assurer que les images ne dépassent pas
+    page-break-inside: avoid;
+  }
+
+  blockquote {
+    border-left: 2px solid #ccc;
+    padding: 0.5em 1em;
+    page-break-inside: avoid;
+    color: #333 !important;
+    background: #f9f9f9 !important;
+  }
+
+  pre,
+  code {
+    border: 1px solid #ddd;
+    background-color: #fdfdfd !important;
+    page-break-inside: avoid;
+    word-wrap: break-word;
+    white-space: pre-wrap; // Permettre le retour à la ligne
+    font-size: 10pt;
+  }
+
+  table {
+    page-break-inside: auto;
+    width: 100%;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.3em;
+    }
+  }
+  thead { display: table-header-group; } // Répéter l'en-tête sur chaque page
+  tr { page-break-inside: avoid; page-break-after: auto; }
+
+  ul, ol { margin-bottom: 1em; }
+  li { margin-bottom: 0.3em; }
+}

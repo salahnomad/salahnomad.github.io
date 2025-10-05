@@ -1,0 +1,47 @@
+{{/* layouts/partials/author-bio.html - Version Fiabilisée Finale */}}
+{{ $authorName := .Site.Params.author.name | default "Salah Nomad" }}
+{{ $authorBio := .Site.Params.author.bio | default "Writer, rooted nomad, and explorer of digital and ancestral paths. Salah shares insights from Ksar El-Kébir to Málaga, blending tradition with modern tech." }}
+{{ $authorImage := .Site.Params.author.image }}
+{{ $authorMyStoryLink := .Site.Params.author.myStoryLink | default "/about/story/" }}
+
+{{ if $authorName }}
+<section class="author-bio">
+  <div class="author-bio-avatar">
+    {{ if $authorImage }}
+      {{ $img := "" }}
+      {{/* On vérifie si l'image est une ressource globale dans /assets */}}
+      {{ with resources.Get $authorImage }}
+        {{ $img = . }}
+      {{ else }}
+        {{/* Sinon, on traite le chemin comme une URL relative au site (pour /static ou une page déjà publiée) */}}
+        {{ $img = $authorImage }}
+      {{ end }}
+
+      {{ with $img }}
+        {{ if reflect.IsMap . }}
+          {{/* C'est une ressource Hugo traitable */}}
+          {{ $avatar := .Fill "100x100 Smart" }}
+          <img src="{{ $avatar.RelPermalink }}" alt="Avatar of {{ $authorName }}" width="100" height="100" loading="lazy">
+        {{ else }}
+          {{/* C'est un chemin string, on l'utilise directement */}}
+          <img src="{{ . | relURL }}" alt="Avatar of {{ $authorName }}" width="100" height="100" loading="lazy">
+        {{ end }}
+      {{ else }}
+        {{/* Fallback ultime si l'image n'est pas trouvée */}}
+        <div class="avatar-placeholder" style="width:100px; height:100px; background:#ccc; border-radius:50%;"></div>
+        {{ warnf "Author avatar not found at '%s'. Displaying placeholder." $authorImage }}
+      {{ end }}
+    {{ else }}
+       <div class="avatar-placeholder" style="width:100px; height:100px; background:#ccc; border-radius:50%;"></div>
+    {{ end }}
+  </div>
+  <div class="author-bio-content">
+    <h3 class="author-bio-name">{{ $authorName }}</h3>
+    <p class="author-bio-description">{{ $authorBio | $.Page.RenderString }}
+      {{ if $authorMyStoryLink }}
+        <a href="{{ $authorMyStoryLink | relLangURL }}" class="author-bio-readmore">{{ i18n "readMoreAboutAuthor" | default "Read more..." }}</a>
+      {{ end }}
+    </p>
+  </div>
+</section>
+{{ end }}

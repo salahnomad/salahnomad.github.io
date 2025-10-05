@@ -1,0 +1,19 @@
+{{/*
+Shortcode pour créer un conteneur de colonnes responsives.
+Utilisation:
+{{< columns >}}
+Contenu de la colonne 1...
+<--->
+Contenu de la colonne 2...
+<--->
+Contenu de la colonne 3...
+{{< /columns >}}
+*/}}
+<div class="columns-container">
+    {{ $columns := split .Inner "<--->" }}
+    {{ range $columns }}
+        <div class="column">
+            {{ . | $.Page.RenderString }}
+        </div>
+    {{ end }}
+</div>

@@ -1,0 +1,34 @@
+{{/*
+  Shortcode 'figure' - Version Finale
+  -----------------------------------
+  Ce shortcode est le point d'entrée pour toutes les images du corps du texte.
+  Il trouve la ressource d'image et délègue l'affichage complexe. (responsive, webp )
+  au partial 'responsive-image.html'.
+*/}}
+{{ $src := .Get "src" }}
+{{ $imageResource := "" }}
+
+{{ if .Page.Resources }}
+  {{/* On utilise une recherche avec wildcard pour trouver l'image même si elle est dans un sous-dossier comme /images/ */}}
+  {{ $imageResource = .Page.Resources.GetMatch (printf "**%s" $src) }}
+{{ end }}
+
+{{ if $imageResource }}
+  {{/* 
+    L'image est trouvée ! On passe toutes les infos au partial 'responsive-image.html'
+    pour un rendu cohérent avec le reste du site.
+  */}}
+  {{ partial "responsive-image.html" (dict 
+      "src" $imageResource 
+      "alt" (.Get "alt")
+      "caption" (.Get "caption")
+      "page" .Page 
+      "isPageBundleResource" true
+      "loading" "lazy" 
+      "sizesKey" "default"
+      "class" (.Get "class")
+      "figureClass" (printf "shortcode-figure %s" (.Get "class"))
+  )}}
+{{ else }}
+  <p style="color: red; font-weight: bold;">[Image not found: {{ $src }}]</p>
+{{ end }}

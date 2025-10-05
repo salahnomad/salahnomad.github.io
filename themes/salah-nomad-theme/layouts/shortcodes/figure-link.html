@@ -1,0 +1,66 @@
+{{/*
+  Shortcode: figure-link
+  ----------------------
+  Crée un bloc cliquable contenant une image responsive et une légende.
+  Parfait pour les appels à l'action visuels (ex: guider vers des frameworks).
+
+  Usage:
+  {{< figure-link
+      href="/path/to/page/"
+      img_src="path/to/image.jpg"
+      img_alt="Description de l'image"
+      caption_title="Titre de la Légende"
+      caption_text="Texte descriptif de la légende."
+  >}}
+*/}}
+
+{{/* Récupération des paramètres */}}
+{{ $href := .Get "href" | default "#" }}
+{{ $img_src := .Get "img_src" }}
+{{ $img_alt := .Get "img_alt" | default "" }}
+{{ $caption_title := .Get "caption_title" | default "" }}
+{{ $caption_text := .Get "caption_text" | default "" }}
+{{ $page := .Page }}
+
+{{/* Variable pour stocker la ressource d'image */}}
+{{ $imageResource := "" }}
+
+{{/* Recherche de l'image dans les ressources de la page (Leaf Bundle) */}}
+{{ if $page.Resources }}
+  {{ $imageResource = $page.Resources.GetMatch (printf "**%s" $img_src) }}
+{{ end }}
+
+{{/* Début de la structure HTML */}}
+<a href="{{ $href | relLangURL }}" class="figure-link-card">
+  <div class="figure-link-image-wrapper">
+    {{ if $imageResource }}
+      {{/* Si l'image est trouvée, on utilise le partial responsive-image pour la cohérence */}}
+      {{ partial "responsive-image.html" (dict
+          "src" $imageResource
+          "alt" $img_alt
+          "page" $page
+          "isPageBundleResource" true
+          "loading" "lazy"
+          "sizesKey" "default"
+          "class" "figure-link-image"
+      )}}
+    {{ else }}
+      {{/* Message d'erreur si l'image n'est pas trouvée */}}
+      <div style="aspect-ratio: 16/9; background-color: #f0f0f0; display:flex; align-items:center; justify-content:center; color: red; font-weight: bold;">
+        [Image not found: {{ $img_src }}]
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if or $caption_title $caption_text }}
+  <div class="figure-link-caption">
+    {{ with $caption_title }}
+      <h4 class="figure-link-title">{{ . | markdownify }}</h4>
+    {{ end }}
+    {{ with $caption_text }}
+      <p class="figure-link-text">{{ . | markdownify }}</p>
+    {{ end }}
+    <span class="figure-link-arrow">&rarr;</span>
+  </div>
+  {{ end }}
+</a>

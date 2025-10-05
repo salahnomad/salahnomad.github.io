@@ -1,0 +1,38 @@
+{{/* layouts/partials/footer-widgets/widget-wisdom.html */}}
+{{/* --- MODIFIÉ : Simplification du titre pour le nouveau style SCSS --- */}}
+{{ $config := .config }}
+{{ $contextPage := .context.Page }}
+{{ $allSiteQuotes := site.Data.quotes }}
+
+<div class="footer-column widget widget_wisdom">
+  {{ if $config.title }}
+    {{/* --- MODIFIÉ : Titre simplifié, la classe est sur le H3 --- */}}
+    <h3 class="widget-title">{{ $config.title }}</h3>
+  {{ end }}
+  <div class="textwidget">
+    {{ if $allSiteQuotes }}
+      {{ $firstQuote := "" }}
+      {{ if gt (len $allSiteQuotes) 0 }}{{ $firstQuote = index $allSiteQuotes 0 }}{{ end }}
+
+      <blockquote id="footer-quote-container">
+        {{ if $firstQuote }}
+          <p id="footer-quote-text">{{ $firstQuote.text | $contextPage.RenderString }}</p>
+          {{ if $firstQuote.author }}
+            <footer id="footer-quote-author">— {{ $firstQuote.author }}</footer>
+          {{ else }}
+            <footer id="footer-quote-author" style="display: none;"></footer>
+          {{ end }}
+        {{ else }}
+          <p id="footer-quote-text">Seeking wisdom...</p>
+          <footer id="footer-quote-author" style="display: none;"></footer>
+        {{ end }}
+      </blockquote>
+
+      <script id="footer-quotes-data" type="application/json">
+        {{ $allSiteQuotes | jsonify (dict "indent" "  ") }}
+      </script>
+    {{ else }}
+      <p><small>No wisdom to share at the moment (data/quotes.yaml might be missing or empty).</small></p>
+    {{ end }}
+  </div>
+</div>

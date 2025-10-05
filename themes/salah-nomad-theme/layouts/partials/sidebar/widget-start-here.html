@@ -1,0 +1,51 @@
+{{/* layouts/partials/sidebar/widget-start-here.html */}}
+{{ $widgetData := index .Site.Params.sidebar "start_here" }}
+
+{{ if $widgetData.enable }}
+  {{/* On récupère les articles piliers primaires et secondaires */}}
+  {{ $primaryPillars := where site.RegularPages ".Params.pillar_content" true }}
+  {{ $secondaryPillars := where site.RegularPages ".Params.secondary_pillar" true }}
+
+  {{ if or $primaryPillars $secondaryPillars }}
+  <div class="widget widget_start_here">
+    <h3 class="widget-title"><span>{{ $widgetData.title | default "Start Here" }}</span></h3>
+    <div class="widget-content">
+
+      {{/* Section pour les Piliers Primaires */}}
+      {{ with $primaryPillars }}
+        <div class="pillar-section">
+          <h4 class="pillar-section-title">{{ $widgetData.primary_title | default "The Foundations" }}</h4>
+          <ul class="pillar-list">
+            {{ range . | first $widgetData.primary_limit }}
+              <li>
+                <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+                  <span class="pillar-icon">{{ partial "icons/compass.svg" $ }}</span>
+                  <span class="pillar-text">{{ .Title }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{/* Section pour les Piliers Secondaires */}}
+      {{ with $secondaryPillars }}
+        <div class="pillar-section">
+          <h4 class="pillar-section-title">{{ $widgetData.secondary_title | default "In Practice" }}</h4>
+          <ul class="pillar-list">
+            {{ range . | first $widgetData.secondary_limit }}
+              <li>
+                <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+                  <span class="pillar-icon">{{ partial "icons/feather.svg" $ }}</span>
+                  <span class="pillar-text">{{ .Title }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

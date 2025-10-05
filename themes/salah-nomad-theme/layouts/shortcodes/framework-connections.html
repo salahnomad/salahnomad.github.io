@@ -1,0 +1,58 @@
+{{ $currentPage := .Page }}
+{{ $frameworks := .Site.Data.frameworks }} {{/* Optionnel, pour des données centralisées */}}
+
+{{/* --- Récupérer les métadonnées du framework de la page actuelle --- */}}
+{{ $currentCategory := $currentPage.Params.frameworks.category }}
+{{ $relatedFrameworks := $currentPage.Params.frameworks.related }}
+{{ $crossTopicFrameworks := $currentPage.Params.frameworks.cross_topic }}
+
+{{/* --- Trouver les pages correspondantes --- */}}
+{{ $relatedPages := where .Site.Pages "Params.frameworks.primary" "in" $relatedFrameworks }}
+{{ $crossTopicPages := where .Site.Pages "Params.frameworks.primary" "in" $crossTopicFrameworks }}
+
+{{ if or $relatedPages $crossTopicPages }}
+<div class="framework-connections-wrapper">
+  <h3 class="connections-title">Connect to the Wider Ecosystem</h3>
+  <div class="connections-grid">
+
+    {{/* --- Affiche les frameworks de la même catégorie --- */}}
+    {{ with $relatedPages }}
+      {{ range first 2 . }}
+        <a href="{{ .RelPermalink }}" class="connection-card">
+          <div class="card-icon">🧩</div>
+          <div class="card-text">
+            <strong>Continue in {{ .Params.frameworks.category | humanize }}</strong>
+            <span>{{ .Title }}</span>
+          </div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      {{ end }}
+    {{ end }}
+
+    {{/* --- Affiche les frameworks des autres catégories --- */}}
+    {{ with $crossTopicPages }}
+      {{ range first 2 . }}
+         <a href="{{ .RelPermalink }}" class="connection-card cross-topic">
+          <div class="card-icon">🌿</div>
+          <div class="card-text">
+            <strong>Explore in {{ .Params.frameworks.category | humanize }}</strong>
+            <span>{{ .Title }}</span>
+          </div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      {{ end }}
+    {{ end }}
+    
+    {{/* --- Lien de secours vers la page Compass --- */}}
+    <a href="{{ "/compass/" | relLangURL }}" class="connection-card fallback">
+      <div class="card-icon">🧭</div>
+      <div class="card-text">
+        <strong>Discover All Frameworks</strong>
+        <span>Visit The Compass</span>
+      </div>
+      <div class="card-arrow">&rarr;</div>
+    </a>
+
+  </div>
+</div>
+{{ end }}

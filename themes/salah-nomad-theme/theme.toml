@@ -1,0 +1,63 @@
+# -- theme.toml --
+
+# Display name for theme (must match folder name)
+name = "Salah Nomad Theme"
+
+# Link to theme homepage/demo
+homepage = "https://salahnomad.com/"
+
+# Theme tags
+tags = [
+  "blog", 
+  "responsive", 
+  "minimal", 
+  "dark-mode", 
+  "digital-nomad", 
+  "search", 
+  "comments", 
+  "modern-design",
+  "performance",
+  "usa-audience",
+  "content-creators"
+]
+
+# Key features
+features = [
+  "auto-dark-mode",
+  "related-content", 
+  "pagefind-search", 
+  "giscus-comments", 
+  "mobile-first", 
+  "syntax-highlighting", 
+  "hugo-pipes", 
+  "scss-modules",
+  "custom-branding",
+  "seo-optimized"
+]
+
+# Minimum Hugo version
+min_version = "0.147.0"
+
+# Theme author information
+[author]
+name = "Salah Nomad"
+homepage = "https://salahnomad.com/"
+
+# Detailed description
+description = """
+A modern Hugo theme crafted for digital nomads and content creators. 
+Key highlights:
+✔️ Performance-driven architecture
+✔️ Smart auto-dark mode
+✔️ Blazing-fast Pagefind search
+✔️ Privacy-focused Giscus comments
+✔️ Mobile-first responsive design
+✔️ SEO-optimized structure
+✔️ Custom branding system
+
+Developed exclusively by Salah Nomad using Hugo Pipes and modular SCSS.
+Perfect for personal branding and professional blogging."""
+
+# Custom license
+license = "Salah Nomad License"
+licenseLink = "https://salahnomad.com/terms"

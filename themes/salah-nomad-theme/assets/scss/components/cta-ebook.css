@@ -1,0 +1,101 @@
+/* assets/css/components/cta-ebook.css */
+
+.cta-ebook-block {
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-background-offset);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.cta-ebook-icon {
+  color: var(--color-text-accent);
+  margin-bottom: 1rem;
+}
+.cta-ebook-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+.cta-ebook-text {
+  font-size: 1.1rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+.cta-ebook-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--color-button-background, var(--color-text-accent));
+  color: var(--color-button-text, var(--color-text-on-accent));
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.cta-ebook-button:hover {
+  background-color: var(--color-button-hover-background, var(--color-link-hover));
+  transform: translateY(-2px);
+}
+
+
+/*
+==================================================================
+RÈGLES D'HARMONISATION POUR L'INTÉGRATION DANS UN WIDGET
+(VERSION "ULTIME" AVEC HAUTE SPÉCIFICITÉ ET !IMPORTANT)
+==================================================================
+*/
+.widget .cta-ebook-block {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.widget .cta-ebook-content {
+  text-align: left !important;
+}
+
+/* --- RÈGLE DE FORCE POUR MASQUER LES ÉLÉMENTS --- */
+.widget .cta-ebook-icon,
+.widget .cta-ebook-title {
+  display: none !important;
+}
+
+.widget .cta-ebook-text {
+  font-size: 1rem !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.widget .cta-ebook-action {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.widget .cta-ebook-button {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0.7rem 1rem !important;
+}
+
+/*
+Styles spécifiques et puissants pour le widget dans le footer.
+*/
+.footer-themed-widgets-grid .widget .cta-ebook-block,
+.footer-themed-widgets-grid .widget .cta-ebook-content {
+  text-align: center !important;
+  align-items: center !important;
+}

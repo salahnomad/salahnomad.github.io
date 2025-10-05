@@ -1,0 +1,36 @@
+{{/*
+  Partial: sidebar/widget-cluster-navigation.html
+  -----------------------------------------------
+  Affiche un "sitemap contextuel" pour la catégorie principale de la page en cours.
+*/}}
+
+{{ $pageContext := .Page }}
+{{ $widgetData := .widgetData }}
+
+{{ if $pageContext.IsPage }}
+
+  {{ $current_category := "" }}
+  {{ with $pageContext.Params.categories }}
+    {{ $current_category = index . 0 }}
+  {{ end }}
+
+  {{ if $current_category }}
+    {{ $pages_in_cluster := where $pageContext.Site.RegularPages "Params.categories" "intersect" (slice $current_category) }}
+
+    {{ if gt (len $pages_in_cluster) 1 }}
+    <div class="widget widget-cluster-nav">
+        {{ with $widgetData.title }}<h3 class="widget-title">{{ . | replace "{category}" $current_category }}</h3>{{ end }}
+        <ul class="cluster-nav-list">
+            {{ range $pages_in_cluster }}
+            <li class="cluster-nav-item">
+              <a href="{{ .RelPermalink }}" {{ if eq .Permalink $pageContext.Permalink }}class="is-active"{{ end }}>
+                {{ .Title }}
+              </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+  {{ end }}
+
+{{ end }}

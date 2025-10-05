@@ -1,0 +1,104 @@
+{{ define "main" }}
+<article class="ebook-library">
+  {{/* On récupère l'image de la bannière depuis les ressources de la page */}}
+  {{ $heroImage := .Resources.GetMatch "library-hero-banner" }}
+
+  <header class="library-hero" {{ with $heroImage }} style="background-image: url('{{ .RelPermalink }}');" {{ end }}>
+    <div class="hero-overlay">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+
+  <div class="content-container">
+    <section class="library-intro">
+      {{ .Content }}
+    </section>
+
+    <section class="ebook-showcase">
+      <h2>Featured Volume</h2>
+      {{/* On récupère la page du livre vedette définie dans le front matter */}}
+      {{ with .Site.GetPage .Params.featured_book }}
+        <div class="featured-ebook">
+          <div class="ebook-cover">
+            <a href="{{ .RelPermalink }}" title="Discover more about {{ .Title }}">
+              
+              <!-- ### MODIFICATION APPORTÉE ICI ### -->
+              <!-- Au lieu de chercher un nom fixe, on cherche le nom défini dans le Front Matter du livre -->
+              {{ $coverImage := .Resources.GetMatch .Params.featured_image }}
+              <!-- ############################## -->
+
+              {{ with $coverImage }}
+                <img src="{{ .RelPermalink }}" alt="Cover of the book {{ $.Title }}" loading="lazy">
+              {{ end }}
+            </a>
+          </div>
+          <div class="ebook-details">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="ebook-meta">
+              <span class="release-date">{{ partial "icons/calendar.svg" . }} Released: {{ .Date.Format "January 2, 2006" }}</span>
+              {{/* On affiche le nombre de pages seulement s'il est défini */}}
+              {{ with .Params.page_count }}
+                <span class="page-count">{{ partial "icons/book-open.svg" . }} {{ . }} pages</span>
+              {{ end }}
+            </div>
+            <p>{{ .Description }}</p>
+            <div class="ebook-formats">
+              <span>Available in:</span>
+              <ul>
+                {{/* On boucle sur les données de `data/book_formats.yaml` */}}
+                {{ range site.Data.book_formats }}
+                  <li>{{ partial (printf "icons/%s.svg" .icon) . }} {{ .name }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            <a href="{{ .RelPermalink }}" class="btn-discover">Discover the Journey</a>
+          </div>
+        </div>
+      {{ else }}
+        <p class="no-featured"><em>Expert Note: No featured book selected. Please set the 'featured_book' parameter in your library's front matter.</em></p>
+      {{ end }}
+    </section>
+
+    {{/* On affiche la section des travaux en cours seulement si elle est définie */}}
+    {{ if .Params.works_in_progress }}
+    <section class="upcoming-works">
+      <h2>The Writer's Atelier</h2>
+      <div class="works-in-progress">
+        {{ range .Params.works_in_progress }}
+        <div class="work-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: {{ .completion }}%;"></div>
+            <span>{{ .completion }}% complete</span>
+          </div>
+          <div class="work-meta">
+            <span>Projected Release: {{ .release_date }}</span>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    <section class="testimonial-section">
+      <h2>What Readers Are Saying</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <blockquote>"Salah's writing changed how I see my own nomadic journey. He gives words to a feeling I couldn't name: the need for roots even in movement."</blockquote>
+          <cite>— Anna V., Digital Creator, Lisbon</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"The Zellige Blueprint isn't just a productivity hack; it's a way to bring soul back into your work. It's been transformative for me."</blockquote>
+          <cite>— David L., Software Engineer, Austin</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Algorithmic Sardines is the book I wish I had when I started my digital nomad journey. It balances practical wisdom with profound insights."</blockquote>
+          <cite>— Mei C., Travel Writer, Taipei</cite>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>
+{{ end }}

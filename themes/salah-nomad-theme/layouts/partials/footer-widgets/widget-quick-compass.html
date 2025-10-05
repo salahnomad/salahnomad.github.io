@@ -1,0 +1,33 @@
+{{/* layouts/partials/footer-widgets/widget-quick-compass.html */}}
+{{/* --- MODIFIÉ : Simplification du titre --- */}}
+{{ $config := .config }}
+{{ $contextPage := .context.Page }}
+<div class="footer-column widget widget_quick_compass">
+  {{ if $config.title }}
+    {{/* --- MODIFIÉ : Titre simplifié, la classe est sur le H3 --- */}}
+    <h3 class="widget-title">{{ $config.title }}</h3>
+  {{ end }}
+  
+  {{ if eq $config.type "recent_posts" }}
+    {{ $numPosts := $config.count | default 3 }}
+    {{ $mainSections := site.Params.mainSections | default (slice "posts") }}
+    {{ $pages := where site.RegularPages "Type" "in" $mainSections | first $numPosts }}
+    {{ if $pages }}
+      <ul>
+        {{ range $pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title | $contextPage.RenderString }}</a></li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p><small>No recent posts to display.</small></p>
+    {{ end }}
+  {{ else if $config.links }} {{/* type "custom_links" */}}
+    <ul>
+      {{ range $config.links }}
+        <li><a href="{{ .url | relLangURL }}">{{ .name | $contextPage.RenderString }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p><small>No links configured for Quick Compass.</small></p>
+  {{ end }}
+</div>

@@ -1,0 +1,27 @@
+{{ $page := .Page }}
+<header class="ia-optimized-header">
+  
+  {{ with $page.Params.structured_data }}
+  <div class="framework-badge-container">
+    {{ with .cultural_origin }}<span class="framework-badge origin">{{ . }}</span>{{ end }}
+    {{ with .framework_type }}<span class="framework-badge type">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+  
+  <h1>{{ $page.Title }}</h1>
+  
+  {{ with $page.Params.us_optimization.usp_angle }}
+    <p class="usp-angle">{{ . }}</p>
+  {{ end }}
+  
+  {{ with $page.Params.us_optimization.ia_short_answer }}
+    <div class="ia-short-answer-card">
+      <div class="ia-icon">🤖</div>
+      <div class="ia-content">
+        <strong>In a nutshell:</strong>
+        {{ . }}
+      </div>
+    </div>
+  {{ end }}
+
+</header>

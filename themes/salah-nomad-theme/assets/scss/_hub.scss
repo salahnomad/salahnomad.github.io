@@ -1,0 +1,221 @@
+// =============================================================================
+// Hub Page Styles
+// Styles for collection hub pages with IA optimization
+// =============================================================================
+
+// Importer les variables de couleur du thème
+@import 'variables'; 
+
+// Variables spécifiques aux hubs
+$hub-max-width: 1200px;
+$hub-padding: 2rem 1rem;
+$hub-featured-image-height: 400px;
+$hub-card-min-width: 300px;
+$hub-grid-gap: 2rem;
+
+// Hub Page Container
+.hub-page {
+  max-width: $hub-max-width;
+  margin: 0 auto;
+  padding: $hub-padding;
+
+  .hub-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .hub-featured-image {
+      width: 100%;
+      max-height: $hub-featured-image-height;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .hub-ia-card {
+    background: var(--color-primary); // Utilise la couleur primaire du thème
+    color: var(--color-bg); // Couleur de fond pour le texte (contraste)
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    text-align: left;
+
+    .ia-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      float: left;
+    }
+
+    .ia-content {
+      overflow: hidden;
+    }
+  }
+
+  .hub-content {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: var(--color-text); // Couleur de texte par défaut du thème
+
+    h2, h3, h4 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-heading); // Couleur des titres par défaut
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Spokes Grid Section
+.hub-spokes-section {
+  margin-top: 4rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--color-heading);
+  }
+
+  .spokes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($hub-card-min-width, 1fr));
+    gap: $hub-grid-gap;
+    margin-top: 2rem;
+  }
+}
+
+// Hub Context Navigation
+.hub-context-nav {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--color-bg-offset); // Fond légèrement différent
+  border-radius: 12px;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-heading);
+  }
+
+  .hub-nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .hub-nav-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    background: var(--color-bg);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(var(--color-shadow-rgb), 0.1);
+      border-color: var(--color-primary);
+    }
+    
+    .nav-arrow {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+
+    .nav-label {
+      font-size: 0.875rem;
+      color: var(--color-text-offset);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    strong {
+      display: block;
+      color: var(--color-heading);
+    }
+    
+    &.next-hub {
+      text-align: right;
+    }
+  }
+}
+
+// No Content Message
+.no-content-message {
+  text-align: center;
+  padding: 3rem;
+  background: var(--color-bg-offset);
+  border-radius: 8px;
+  color: var(--color-text-offset);
+
+  p { margin: 0; font-size: 1.1rem; }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+
+// Fallback card styles (si partials/card.html n'est pas utilisé)
+.spoke-card-fallback {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--color-bg);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(var(--color-shadow-rgb), 0.1);
+  }
+  
+  h3 a {
+    text-decoration: none;
+    color: var(--color-heading);
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  .card-meta {
+    font-size: 0.875rem;
+    color: var(--color-text-offset);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+}
+
+// =============================================================================
+// Responsive Design
+// =============================================================================
+
+@media (max-width: 768px) {
+  .hub-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .spokes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-nav-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hub-context-nav .hub-nav-card.next-hub {
+    text-align: left;
+  }
+}

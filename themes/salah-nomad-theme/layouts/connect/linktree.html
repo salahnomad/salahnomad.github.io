@@ -1,0 +1,153 @@
+{{/* layouts/connect/linktree.html */}}
+{{ define "main" }}
+  <div class="linktree-page-wrapper">
+    {{- $headerImage := "" -}}
+    {{- with .Params.header_image -}}
+      {{- with $.Resources.GetMatch . -}}
+        {{- $headerImage = (.Resize "1920x webp q85").RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $headerImage -}}
+      {{- $headerImage = ("/images/malaga-rooftop.jpg" | relURL) -}}
+    {{- end -}}
+    <section class="linktree-header" style="background-image: url('{{ $headerImage }}');">
+      <div class="header-content">
+        <h1>🌿 {{ .Site.Title }}</h1>
+        {{ with .Site.Params.description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </section>
+
+    {{/* --- SECTION D'INTRODUCTION --- */}}
+    <div class="linktree-intro">
+      <div class="container">
+        <h2>Welcome to the Crossroads</h2>
+        <p>You've arrived at the digital harbor of Salah Nomad and the philosophy of <strong>Rooted Nomadism</strong>. This isn't just a list of links; it's a map to a different way of living and working—one that blends ancient Mediterranean wisdom with modern digital life. I believe true freedom isn't about escaping our roots, but learning to carry them as our most trusted compass. Below, you'll find the tools, stories, and frameworks to begin your own journey. Welcome to the caravan.</p>
+      </div>
+    </div>
+
+    <div class="linktree-container">
+      <div class="linktree-grid">
+
+        {{/* --- COLONNE DE GAUCHE : Le Parcours d'Intégration --- */}}
+        <div class="link-group">
+          <h2><span>🧭</span> Your Compass (Start Here)</h2>
+          
+          <a href="{{ "/compass/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span>
+            <div class="link-card-text">
+                <strong>The Compass (Frameworks)</strong>
+                <small>Discover the core philosophy & tools.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+        
+          <a href="{{ "/stories-wisdom/olive-trees-and-algorithms/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
+            <div class="link-card-text">
+                <strong>My Story: From Clay to Code</strong>
+                <small>The journey that forged this philosophy.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+          
+          <a href="{{ "/work-productivity/zellige-blueprint/" | relLangURL }}" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></span>
+            <div class="link-card-text">
+                <strong>The Zellige Blueprint</strong>
+                <small>A system for soulful productivity.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+          
+          <a href="#footer-newsletter" class="link-card">
+            <span class="link-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+            <div class="link-card-text">
+                <strong>Join "Mediterranean Insights"</strong>
+                <small>My weekly letter on wisdom & work.</small>
+            </div>
+            <span class="link-card-arrow">→</span>
+          </a>
+        </div>
+
+        {{/* --- COLONNE DE DROITE : Widget "Journey Deeper" --- */}}
+        <div class="link-group">
+          <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></span> Journey Deeper</h2>
+          <div class="linktree-widget-content">
+            {{ $quotes := site.Data.widget_quotes }}
+            {{ partial "widget-quote-cta.html" (dict "quotes" $quotes "id_suffix" "linktree") }}
+          </div>
+          
+          {{ partial "widget-book-promo.html" . }}
+        </div>
+      </div> 
+
+      {{/* --- LIENS SOCIAUX en pleine largeur --- */}}
+      {{ $socialLinks := slice }}
+      {{ range .Site.Params.social_links }}
+        {{ if .subtitle }}{{ $socialLinks = $socialLinks | append . }}{{ end }}
+      {{ end }}
+
+      {{ if gt (len $socialLinks) 0 }}
+        <div class="link-group link-group-fullwidth">
+          <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></span> {{ i18n "linktreeConnect" | default "Connect" }}</h2>
+          <div class="social-links-grid">
+            {{ range $socialLinks }}
+              <a href="{{ .url | safeURL }}" class="link-card social-link-card" target="_blank" rel="noopener noreferrer">
+                <span class="link-card-icon">{{ with partial .iconPartial . }}{{ . }}{{ else }}{{ .name }}{{ end }}</span>
+                <div class="link-card-text">
+                  <strong>{{ .name }}</strong>
+                  <small>{{ .subtitle }}</small>
+                </div>
+                <span class="link-card-arrow">→</span>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div> 
+
+    {{/* --- NEWSLETTER DANS LE FOOTER --- */}}
+    <footer class="linktree-footer">
+      <div class="footer-newsletter-section">
+        <h3>Become a Rooted Insider</h3>
+        <p>Join the "Mediterranean Insights" newsletter for exclusive stories and frameworks not found on the blog.</p>
+        {{ partial "newsletter-form.html" . }}
+      </div>
+      <div class="footer-bottom-text">
+        {{ with .Site.Params.linktreeFooterText | default "« Want more rooted nomad insights? [Start here](/start-here/) »" }}
+          <p>{{ . | $.Page.RenderString }}</p>
+        {{ end }}
+        {{ with .Site.Params.linktreeAffiliateDisclaimer | default "Some links may be affiliates, gently nourishing this caravan – thanks for your support!" }}
+          <small>{{ . }}</small>
+        {{ end }}
+      </div>
+    </footer>
+  </div> 
+
+  {{/* --- SCRIPT SCHEMA PLACÉ ICI, À L'INTÉRIEUR DU BLOC "MAIN" --- */}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Salah Nomad",
+      "alternateName": "SalahNomad",
+      "url": "{{ .Site.BaseURL | absURL }}",
+      "image": "{{ "/images/salah-author-portrait.png" | absURL }}",
+      "description": "Founder of the Rooted Nomadism philosophy, author, and digital strategist exploring the intersection of Mediterranean wisdom and modern technology.",
+      "sameAs": [
+        {{- range $index, $url := .Site.Params.author.sameAs -}}
+          "{{ $url }}"{{ if ne $index (sub (len $.Site.Params.author.sameAs) 1) }},{{ end }}
+        {{- end -}}
+      ]
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Rooted Nomadism",
+      "description": "A philosophy for thriving in a modern world by blending ancestral wisdom with a digital life, turning roots into a source of freedom."
+    }
+  }
+  </script>
+{{ end }} 
+{{ define "sidebar" }}{{ end }}

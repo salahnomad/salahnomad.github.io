@@ -1,0 +1,15 @@
+{{/* layouts/partials/footer-widgets/widget-stay-rooted.html */}}
+{{ $config := .config }}
+<div class="footer-column widget widget_stay_rooted">
+  {{ if $config.title }}
+    <h3 class="widget-title">{{ $config.title }}</h3>
+  {{ end }}
+  <div class="textwidget">
+    {{ if $config.text }}
+      <p>{{ $config.text | $.context.Page.RenderString }}</p>
+    {{ end }}
+    {{ if and $config.link_text $config.link_url }}
+      <p><a href="{{ $config.link_url | relLangURL }}" class="footer-widget-button">{{ $config.link_text | $.context.Page.RenderString }}</a></p>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,138 @@
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\single.html */}}
+{{/* --- VERSION FINALE ET COMPLÈTE AVEC BREADCRUMBS ET AUTHOR BIO --- */}}
+{{ define "main" }}
+  {{/* --- Début de la logique de la page --- */}}
+  {{ $showSidebarOnThisPage := .Site.Params.singlePageSidebar | default true }}
+  {{ if isset .Params "sidebar" }}
+    {{ $showSidebarOnThisPage = .Params.sidebar }}
+  {{ end }}
+
+  {{/* --- Début du conteneur principal de la page --- */}}
+  <div class="container single-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+
+    {{/* --- Début de la colonne de contenu --- */}}
+    <div class="single-main-content">
+
+      {{/* --- AJOUT N°1 : FIL D'ARIANE --- */}}
+      {{/* Placé ici pour s'afficher correctement en haut du contenu. */}}
+      {{ partial "breadcrumbs.html" . }}
+
+      {{/* --- Début de l'article --- */}}
+      <article class="post-single hentry" data-pagefind-body>
+        
+        {{/* En-tête de l'article (Titre, Métadonnées) */}}
+        <header class="post-header">
+          <h1 class="post-title p-name">{{ .Title }}</h1>
+          {{ partial "post-meta.html" . }}
+        </header>
+
+        {{/* --- Début de la logique complexe pour trouver l'image en vedette --- */}}
+        {{/* Cette section est longue et cruciale, elle est conservée à l'identique. */}}
+        {{ $featuredImageSrc := "" }}
+        {{ $isPageBundleResource := false }}
+        {{ $altText := .Params.featured_image_alt | default (.Title | plainify) }}
+        {{ $caption := .Params.featured_image_caption }}
+
+        {{ $isLeafBundle := and (eq .Kind "page") (eq .File.BaseFileName "index") }}
+
+        {{ if .Params.featured_image }}
+          {{ $path := .Params.featured_image }}
+          {{ if $isLeafBundle }}
+            {{ $imgInBundle := $.Resources.GetMatch $path }}
+            {{ if $imgInBundle }}
+              {{ $featuredImageSrc = $imgInBundle }}
+              {{ $isPageBundleResource = true }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if and (not $featuredImageSrc) $isLeafBundle }}
+          {{ $commonImage := $.Resources.GetMatch "featured*" | default ($.Resources.GetMatch "cover*") }}
+          {{ if $commonImage }}
+            {{ $featuredImageSrc = $commonImage }}
+            {{ $isPageBundleResource = true }}
+          {{ end }}
+        {{ end }}
+
+        {{ if not $featuredImageSrc }}
+          {{ with .Params.featured_image }}
+            {{ $path := . }}
+            {{ if strings.HasPrefix $path "http" }}
+              {{ $featuredImageSrc = $path }}
+              {{ $isPageBundleResource = false }}
+            {{ else }}
+              {{ $assetImage := "" }}
+              {{ if not (strings.HasPrefix $path "/") }}
+                {{ $assetImage = resources.Get $path }}
+              {{ end }}
+
+              {{ if $assetImage }}
+                {{ $featuredImageSrc = $assetImage }}
+                {{ $isPageBundleResource = false }}
+              {{ else }}
+                {{ $staticPath := $path }}
+                {{ if not (strings.HasPrefix $path "/") }}{{ $staticPath = printf "/%s" $path }}{{ end }}
+                {{ if fileExists (printf "static%s" $staticPath) }}
+                  {{ $featuredImageSrc = $staticPath | relURL }}
+                  {{ $isPageBundleResource = false }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{/* --- Fin de la logique complexe pour trouver l'image en vedette --- */}}
+        
+        {{/* Affichage de l'image si elle a été trouvée */}}
+        {{ if $featuredImageSrc }}
+          <figure class="post-featured-image">
+            {{ partial "responsive-image.html" (dict 
+                "src" $featuredImageSrc 
+                "alt" $altText
+                "page" . 
+                "isPageBundleResource" $isPageBundleResource
+                "loading" "eager" 
+                "sizesKey" "singleFeatured" 
+                "caption" $caption
+                "class" "single-featured-image-img"
+                "figureClass" "single-featured-figure"
+            )}}
+          </figure>
+        {{ end }}
+
+        {{/* Corps du contenu de l'article */}}
+        <div class="post-content e-content">
+          {{ .Content }}
+        </div>
+        
+        {{/* Appel au partial CTA Ebook (si le paramètre 'cta' est présent) */}}
+        {{ if .Params.cta }}
+          {{ partial "cta-ebook.html" (dict "cta" .Params.cta "Page" .) }}
+        {{ end }}
+
+        {{/* Pied de page de l'article (Tags, Partage) */}}
+        <footer class="post-footer">
+          {{ partial "post-tags.html" . }}
+          {{ partial "post-share.html" . }}
+        </footer>
+      </article>
+      {{/* --- Fin de l'article --- */}}
+
+      {{/* --- AJOUT N°2 : BIO DE L'AUTEUR --- */}}
+      {{/* Placée ici pour renforcer l'E-E-A-T après la lecture de l'article. */}}
+      {{ partial "author-bio.html" . }}
+
+      {{/* Sections complémentaires (Articles similaires, Commentaires) */}}
+      {{ partial "related-posts.html" . }}
+      {{ partial "comments.html" . }}
+
+    </div><!-- /.single-main-content -->
+    {{/* --- Fin de la colonne de contenu --- */}}
+
+    {{/* --- Affichage de la Sidebar (si activée) --- */}}
+    {{ if $showSidebarOnThisPage }}
+       {{ partial "sidebar.html" . }}
+    {{ end }}
+
+  </div><!-- /.container -->
+  {{/* --- Fin du conteneur principal de la page --- */}}
+{{ end }}

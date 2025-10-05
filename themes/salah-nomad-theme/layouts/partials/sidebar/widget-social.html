@@ -1,0 +1,19 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+{{ if $.Site.Params.social_links }}
+<section class="widget widget_social">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Follow Us" }}</span></h3>
+  {{ if gt (len $.Site.Params.social_links) 0 }}
+  <ul class="social-icons">
+      {{ range $.Site.Params.social_links }}
+        {{ if .url }}
+          <li>
+            <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="{{ .name }}">
+              {{ with .iconPartial }}{{ partial . $ }}{{ else }}{{/* Fallback si iconPartial n'est pas défini */}}{{ .name }}{{ end }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+  </ul>
+  {{ end }}
+</section>
+{{ end }}

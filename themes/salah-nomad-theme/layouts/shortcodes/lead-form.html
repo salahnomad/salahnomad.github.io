@@ -1,0 +1,149 @@
+{{/*
+  Shortcode: lead-form
+  --------------------
+  Formulaire de capture de leads pour le lead magnet
+  
+  Usage: {{< lead-form >}}
+*/}}
+
+<div class="lead-form-container">
+  <form action="https://app.convertkit.com/forms/your-form-id/subscribe" method="post" class="lead-form">
+    <div class="form-group">
+      <input type="email" name="email_address" placeholder="Your best email address..." required class="form-input">
+    </div>
+    
+    <button type="submit" class="form-submit">
+      <span class="submit-text">Get Your Free Kit</span>
+      <span class="loading-text">Sending...</span>
+    </button>
+    
+    <p class="form-disclaimer">
+      🔒 Respect de votre vie privée. Désabonnez-vous à tout moment.
+    </p>
+  </form>
+</div>
+
+<style>
+.lead-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2c5530;
+  box-shadow: 0 0 0 3px rgba(44, 85, 48, 0.1);
+}
+
+.form-input::placeholder {
+  color: #6c757d;
+}
+
+.form-submit {
+  padding: 1rem 2rem;
+  background: #2c5530;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-submit:hover {
+  background: #4a7c59;
+  transform: translateY(-2px);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+}
+
+.loading-text {
+  display: none;
+}
+
+.form-submit.loading .submit-text {
+  display: none;
+}
+
+.form-submit.loading .loading-text {
+  display: inline;
+}
+
+.form-disclaimer {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+}
+
+/* Animation de chargement */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-submit.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .lead-form-container {
+    max-width: 100%;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const forms = document.querySelectorAll('.lead-form');
+  
+  forms.forEach(form => {
+    form.addEventListener('submit', function(e) {
+      const submitBtn = this.querySelector('.form-submit');
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+      
+      // Réactiver après 3s maximum en cas d'erreur
+      setTimeout(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+      }, 3000);
+    });
+  });
+});
+</script>

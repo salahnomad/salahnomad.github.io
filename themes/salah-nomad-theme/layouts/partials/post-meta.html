@@ -1,0 +1,74 @@
+{{/* layouts/partials/post-meta.html */}}
+{{/* --- MIS À JOUR pour gérer authors (liste) du Front Matter --- */}}
+{{ $page := . }}
+
+<!-- DEBUG Post Meta for: {{ $page.File.Path }} -->
+<!-- Params.showMeta: {{ $page.Params.showMeta }} -->
+<!-- Params.showDate: {{ $page.Params.showDate }} -->
+<!-- Page Date: {{ $page.Date }} -->
+<!-- Page Date IsZero: {{ $page.Date.IsZero }} -->
+<!-- Params.showReadingTime: {{ $page.Params.showReadingTime }} -->
+<!-- Site.Params.readingTime: {{ site.Params.readingTime }} -->
+<!-- Page ReadingTime: {{ $page.ReadingTime }} -->
+<!-- Condition gt .ReadingTime 0: {{ gt $page.ReadingTime 0 }} -->
+<!-- Params.showAuthor: {{ $page.Params.showAuthor }} -->
+<!-- Page Authors (list): {{ $page.Params.authors }} -->
+<!-- Page Author (singular): {{ $page.Params.author }} -->
+<!-- Site Author (params): {{ site.Params.author.name }} -->
+<!-- Params.showCategories: {{ $page.Params.showCategories }} -->
+<!-- Page Categories: {{ $page.Params.categories }} -->
+
+{{ if ne $page.Params.showMeta false }}
+<div class="post-meta">
+  {{ if ne $page.Params.showDate false }}
+    {{ if not $page.Date.IsZero }}
+    <span class="post-date">
+      {{ partial "icons/calendar.svg" . }}
+      <time datetime="{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-published">
+        {{ $page.Date.Format (site.Params.dateFormat | default "January 2, 2006") }}
+      </time>
+    </span>
+    {{ end }}
+  {{ end }}
+
+  {{ if and (ne $page.Params.showReadingTime false) (site.Params.readingTime | default true) }}
+    {{ if gt $page.ReadingTime 0 }}
+      <span class="post-reading-time">
+        · {{ partial "icons/clock.svg" . }}
+        {{ i18n "readingTime" $page.ReadingTime | default (printf "%d min read" $page.ReadingTime) }}
+      </span>
+    {{ end }}
+  {{ end }}
+
+  {{ if ne $page.Params.showAuthor false }}
+    {{/* Logique améliorée pour récupérer le nom de l'auteur */}}
+    {{ $authorDisplayName := "" }}
+    {{ if $page.Params.authors }}
+      {{ $authorDisplayName = index $page.Params.authors 0 }} {{/* Prend le premier auteur de la liste */}}
+    {{ else if $page.Params.author }}
+      {{ $authorDisplayName = $page.Params.author }} {{/* Fallback sur auteur singulier du Front Matter */}}
+    {{ else if site.Params.author.name }}
+      {{ $authorDisplayName = site.Params.author.name }} {{/* Fallback sur l'auteur global du site */}}
+    {{ end }}
+
+    {{ with $authorDisplayName }}
+      <span class="post-author p-author h-card">
+        · {{ partial "icons/user.svg" . }}
+        {{ i18n "by" | default "By" }}
+        <span class="p-name">{{ . }}</span>
+      </span>
+    {{ end }}
+  {{ end }}
+
+  {{ $categories := $page.Params.categories }}
+  {{ if and (ne $page.Params.showCategories false) $categories }}
+    <span class="post-categories">
+      · {{ partial "icons/folder.svg" . }}
+      {{ i18n "in" | default "In" }}
+      {{ range $i, $cat := $categories }}
+        {{ if gt $i 0 }}, {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="p-category">{{ . }}</a>
+      {{ end }}
+    </span>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,7 @@
+{{/* layouts/shortcodes/social-icon.html */}}
+{{/*
+  Ce shortcode prend un seul paramètre : le chemin du partial de l'icône.
+  Exemple d'utilisation : {{< social-icon "icons/social/logo-twitter.svg" >}}
+*/}}
+{{ $iconPath := .Get 0 }}
+{{ partial $iconPath . }}

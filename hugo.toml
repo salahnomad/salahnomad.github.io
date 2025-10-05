@@ -1,0 +1,459 @@
+# =============================================================================
+# HUGO CONFIGURATION FILE - SALAHNOMAD.COM
+# VERSION DÉFINITIVE FUSIONNÉE - 01/10/2025
+# MISE À JOUR AVEC STRATÉGIE "RELATED CONTENT" & NAVIGATION GLOSSAIRE - 04/10/2025
+# =============================================================================
+
+baseURL = 'https://salahnomad.com/'
+languageCode = 'en-us'
+title = 'Salah Nomad: Where Roots & Wi-Fi Meet' # Titre SEO optimisé conservé
+theme = "salah-nomad-theme"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 6
+
+###############################################################################
+# Paramètres du Thème et du Site
+###############################################################################
+[params]
+  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons." # Description SEO conservée
+  logo = "/images/Salah-Nomad-Logo.png"
+  logo_dark = "/images/Salah-Nomad-Logo-Dark.png"
+  dateFormat = "January 2, 2006"
+  # --- MODIFIÉ ---
+  mainSections = ["ai-future", "money-freedom", "place-belonging", "stories-wisdom", "work-productivity"] # <-- NOUVELLES SECTIONS PRINCIPALES
+  readingTime = true
+  enableSearch = true
+  enableThemeToggle = true
+  relatedPostsLimit = 3
+  favicon = "/images/favicons/favicon.ico"
+  defaultPlaceholderImage = "/images/placeholders/placeholder-16x9.jpg"
+  linktree_url = "/connect/hub/"
+
+  [params.organization]
+    name = "Salah Nomad"
+    logo = "/images/Salah-Nomad-Logo.png" 
+    url = "https://salahnomad.com/" 
+
+  [params.author]
+    name = "Salah Nomad" 
+    bio = "Writer and cultural translator. Salah Nomad shares actionable wisdom from his journey—from Mediterranean olive groves to Málaga's tech scene—to help you build a more resilient, meaningful, and rooted life in a world of constant movement."
+    image = "/images/salah-author-portrait.png" # --- MODIFIÉ --- Chemin corrigé et simplifié
+    # --- MODIFIÉ ---
+    myStoryLink = "/stories-wisdom/olive-trees-and-algorithms/" # <-- NOUVELLE URL
+    url = "https://salahnomad.com/stories-wisdom/olive-trees-and-algorithms/" # <-- NOUVELLE URL
+    sameAs = [
+      "https://www.linkedin.com/in/salahnomad/",
+      "https://x.com/Salah_Nomad",
+      "https://www.instagram.com/salahnomad/",
+      "https://www.youtube.com/@SalahNomad",
+      "https://medium.com/@SalahNomad",
+      "https://www.facebook.com/salahnomad",
+      "https://www.quora.com/profile/SalahNomad",
+      "https://www.tiktok.com/@salahnomad",
+      "https://www.pinterest.com/salahnomad/",
+      "https://www.reddit.com/user/salahnomad/",
+      "https://github.com/salahnomad"
+    ]
+    twitter_handle = "@Salah_Nomad"
+
+  # --- Paramètres de Design (Conservés) ---
+  sunset_gold = "#F4A261"
+  mediterranean_blue = "#2A9D8F"
+  clay_white = "#FEFAE0"
+  dark_charcoal = "#264653"
+  brick_red = "#842E1B"
+  font_heading_name = "Poppins"
+  font_body_name = "Lora"
+
+  # --- Liens sociaux avec microcopies (Conservés et complétés) ---
+  [[params.social_links]]
+    name = "Twitter/X"
+    subtitle = "Daily nomadic snippets"
+    iconPartial = "icons/social/logo-twitter.svg"
+    url = "https://x.com/Salah_Nomad"
+  [[params.social_links]]
+    name = "LinkedIn"
+    subtitle = "SEO meets Phoenician trade routes"
+    iconPartial = "icons/social/logo-linkedin.svg"
+    url = "https://www.linkedin.com/in/salahnomad/"
+  [[params.social_links]]
+    name = "Instagram"
+    subtitle = "Málaga sun & workflow"
+    iconPartial = "icons/social/logo-instagram.svg"
+    url = "https://www.instagram.com/salahnomad/"
+  [[params.social_links]]
+    name = "YouTube"
+    subtitle = "Video diaries & tutorials"
+    iconPartial = "icons/social/logo-youtube.svg"
+    url = "https://www.youtube.com/@SalahNomad"
+  [[params.social_links]]
+    name = "TikTok"
+    subtitle = "60-sec nomad hacks"
+    iconPartial = "icons/social/logo-tiktok.svg"
+    url = "https://www.tiktok.com/@salahnomad"
+  [[params.social_links]]
+    name = "Medium"
+    subtitle = "Long-form nomadic wisdom"
+    iconPartial = "icons/social/logo-medium.svg"
+    url = "https://medium.com/@SalahNomad"
+  [[params.social_links]]
+    name = "Reddit"
+    subtitle = "Community Q&A"
+    iconPartial = "icons/social/logo-reddit.svg"
+    url = "https://www.reddit.com/user/salahnomad/"
+  [[params.social_links]]
+    name = "Quora"
+    subtitle = "Expert insights"
+    iconPartial = "icons/social/logo-quora.svg"
+    url = "https://www.quora.com/profile/SalahNomad"
+  [[params.social_links]]
+    name = "Facebook"
+    subtitle = "Nomad community hub"
+    iconPartial = "icons/social/logo-facebook.svg"
+    url = "https://www.facebook.com/salahnomad"
+  [[params.social_links]]
+    name = "Pinterest"
+    subtitle = "Visual inspiration"
+    iconPartial = "icons/social/logo-pinterest.svg"
+    url = "https://www.pinterest.com/salahnomad/"
+  [[params.social_links]]
+    name = "GitHub"
+    subtitle = "The code behind the caravan"
+    iconPartial = "icons/social/logo-github.svg" 
+    url = "https://github.com/salahnomad"
+  [[params.social_links]]
+    name = "RSS"
+    subtitle = "Stay updated"
+    iconPartial = "icons/social/logo-rss.svg"
+    url = "/index.xml"
+
+  # --- Visibilité et Configuration de la Sidebar (Conservés et mis à jour) ---
+  homepageSidebar = true
+  listPageSidebar = true
+  singlePageSidebar = true
+
+  [params.sidebar]
+    [params.sidebar.weather]
+      enable = true
+      title = "Málaga Weather Now"
+      apiKey = "ee89e54157df1c3f5b131f3160a4ce51"
+      cityId = "2514256"
+      lang = "en"
+      unitProverb = "Every Mediterranean breeze speaks two languages: °C | °F"
+    [params.sidebar.cluster_navigation]
+      enable = true
+      title = "Explore '{category}'" # Le titre dynamique !
+	[params.sidebar.newsletter_mediterranean]
+      enable = true
+      title = "Mediterranean Insights"
+      form_action = "https://formspree.io/f/mzzrrwrz"
+      placeholder = "Your email for wisdom..."
+      button_text = "Join the Caravan"
+      sub_text = "Wisdom from Olive Groves to Algorithms. By subscribing, you agree to our [privacy policy](/privacy/)."
+    # --- MODIFIÉ --- Suppression des widgets sidebar obsolètes et conservation des bons
+    [params.sidebar.quotes]
+      enable = true
+      title = "Roots & Wi-Fi"
+    [params.sidebar.quote_cta]
+      enable = true
+      title = "From the Author's Desk"
+  
+  # --- Widgets du Footer (Conservés et mis à jour) ---
+  [params.footerWidgets]
+    enable = true
+    columns = 5
+    [params.footerWidgets.quote_cta]
+      enable = true
+      title = "The Full Journey"
+    [params.footerWidgets.quickCompass]
+      enable = true
+      title = "Quick Compass"
+      type = "custom_links"
+      links = [
+        { name = "My Story", url = "/stories-wisdom/olive-trees-and-algorithms/" },
+        { name = "The Frameworks", url = "/compass/" },
+        { name = "The Glossary", url = "/glossary/" }, # <-- MODIFICATION ICI
+        { name = "Málaga Codex", url = "/malaga-codex/" },
+        { name = "All My Links", url = "/connect/hub/" }
+      ]
+    [params.footerWidgets.stayRooted]
+      enable = true
+      title = "Stay Rooted"
+      text = "Exploring the world with deep roots in timeless wisdom. Discover the philosophy that guides this journey."
+      link_text = "My Philosophy →"
+      # --- MODIFIÉ ---
+      link_url = "/stories-wisdom/rooted-nomadism-philosophy/"
+    [params.footerWidgets.fromTheSouk]
+      enable = true
+      title = "From the Souk"
+      type = "custom_links"
+      links = [
+        # --- MODIFIÉ ---
+        { name = "Productivity Toolkit", url = "/work-productivity/zellige-blueprint/" },
+        { name = "Visa & Legal", url = "/stories-wisdom/tale-of-two-visas/" },
+        { name = "SEO Alchemy", url = "/work-productivity/phoenician-merchant-seo/" },
+        { name = "Partner Offers", url = "/partners/" }
+      ]
+    [params.footerWidgets.oliveNetwork]
+      enable = true
+      title = "Olive Network"
+      intro_text = "Join the caravan across the digital Mediterranean."
+
+  # --- Bas du Footer (Conservé) ---
+  [params.footerBottom]
+    themeInfo_enable = true
+    themeInfo_name = "Salah Nomad"
+    themeInfo_url = "https://salahnomad.com/"
+    copyrightText = "All rights reserved."
+    enableBackToTop = true
+
+  # --- Reste des paramètres (Conservés) ---
+  [params.contact]
+    formspree_action = "https://formspree.io/f/mzzrrwrz"
+  [params.giscus]
+    enable = true
+    repo = "salahnomad/blog-comments"
+    repoId = "R_kgDOOkD2tw"
+    category = "Comments"
+    categoryId = "DIC_kwDOOkD2t84CpvyU"
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "en"
+  [params.pagefind]
+    enable = true
+  contentColumnWidth = "720"
+  [params.imageProcessing.sizes]
+    singleFeatured = "(max-width: 767px) 90vw, 720px"
+    articleCard = "(max-width: 575px) 90vw, (max-width: 991px) 45vw, 30vw"
+    heroMain = "(max-width: 767px) 100vw, 750px"
+    heroSecondary = "(max-width: 575px) 90vw, (max-width: 991px) 45vw, 200px"
+    default = "100vw"
+
+# =============================================================================
+# DÉFINITION DES MENUS - NOUVELLE ARCHITECTURE STRATÉGIQUE (MODIFIÉ)
+# =============================================================================
+[menu]
+  # ---------------------------------------------------------------------------
+  # MENU PRINCIPAL (MAIN MENU) - Le Parcours de Découverte
+  # ---------------------------------------------------------------------------
+  [[menu.main]]
+    identifier = "start_here"
+    name = "Start Here"
+    url = "/start-here/"
+    weight = 10
+  [[menu.main]]
+    identifier = "the_philosophy"
+    name = "Philosophy"
+    url = "/stories-wisdom/rooted-nomadism-philosophy/"
+    weight = 20
+  [[menu.main]]
+    identifier = "the_frameworks"
+    name = "Frameworks"
+    url = "/compass/"
+    weight = 30
+  [[menu.main]]
+    identifier = "my_story"
+    name = "My Story"
+    url = "/stories-wisdom/salah-story/"
+    weight = 40
+  [[menu.main]]
+    identifier = "malaga_codex"
+    name = "Málaga Codex"
+    url = "/malaga-codex/"
+    weight = 50
+  [[menu.main]]
+    identifier = "the_book"
+    name = "The Book"
+    url = "/ebook/algorithmic-sardines/"
+    weight = 60
+
+  # ---------------------------------------------------------------------------
+  # MENU SECONDAIRE (SECONDARY MENU) - La Boîte à Outils
+  # ---------------------------------------------------------------------------
+  [[menu.secondary]]
+    identifier = "all_topics"
+    name = "All Topics"
+    weight = 10
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "compass"
+  [[menu.secondary]]
+    name = "Work & Productivity"
+    url = "/work-productivity/"
+    parent = "all_topics"
+    weight = 11
+  [[menu.secondary]]
+    name = "Stories & Wisdom"
+    url = "/stories-wisdom/"
+    parent = "all_topics"
+    weight = 12
+  [[menu.secondary]]
+    name = "Money & Freedom"
+    url = "/money-freedom/"
+    parent = "all_topics"
+    weight = 13
+  [[menu.secondary]]
+    name = "Place & Belonging"
+    url = "/place-belonging/"
+    parent = "all_topics"
+    weight = 14
+  [[menu.secondary]]
+    name = "AI & The Future"
+    url = "/ai-future/"
+    parent = "all_topics"
+    weight = 15
+  
+  [[menu.secondary]]
+    identifier = "tools"
+    name = "Tools"
+    weight = 20
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "folder"
+  [[menu.secondary]]
+    name = "Productivity Toolkit"
+    url = "/work-productivity/zellige-blueprint/"
+    parent = "tools"
+    weight = 21
+  [[menu.secondary]]
+    name = "SEO Alchemy"
+    url = "/work-productivity/phoenician-merchant-seo/"
+    parent = "tools"
+    weight = 22
+  [[menu.secondary]]
+    name = "Nomad Finance"
+    url = "/money-freedom/olive-grove-economy/"
+    parent = "tools"
+    weight = 23
+  [[menu.secondary]]
+    name = "Visa Hacks"
+    url = "/stories-wisdom/tale-of-two-visas/"
+    parent = "tools"
+    weight = 24
+  
+  [[menu.secondary]]
+    identifier = "read"
+    name = "Read"
+    weight = 30
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "book"
+  [[menu.secondary]]
+    name = "The Library"
+    url = "/ebook/"
+    parent = "read"
+    weight = 31
+  # --- MODIFICATION ICI ---
+  [[menu.secondary]]
+    name = "Glossary of Concepts"
+    url = "/glossary/"
+    parent = "read"
+    weight = 32
+  [[menu.secondary]]
+    name = "Popular Posts"
+    url = "/popular/"
+    parent = "read"
+    weight = 33
+  [[menu.secondary]]
+    name = "Archives"
+    url = "/archives/"
+    parent = "read"
+    weight = 34
+
+  [[menu.secondary]]
+    identifier = "connect"
+    name = "Connect"
+    weight = 40
+    url = "#"
+    [menu.secondary.params]
+      dropdown = true
+      icon = "anchor"
+  [[menu.secondary]]
+    name = "Contact Me"
+    url = "/contact/"
+    parent = "connect"
+    weight = 41
+  [[menu.secondary]]
+    name = "Join Newsletter"
+    url = "#sidebar-newsletter-anchor"
+    parent = "connect"
+    weight = 42
+  [[menu.secondary]]
+    name = "All My Links"
+    url = "/connect/hub/"
+    parent = "connect"
+    weight = 43
+
+  # --- MENU FOOTER (MODIFIÉ) ---
+  [[menu.footer]]
+    name = "My Story"
+    url = "/stories-wisdom/salah-story/"
+    weight = 5
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.footer]]
+    name = "The Library"
+    url = "/ebook/"
+    weight = 15
+  [[menu.footer]]
+    name = "Legal Notice"
+    url = "/terms/"
+    weight = 20
+  [[menu.footer]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 30
+
+# =============================================================================
+# CONFIGURATIONS TECHNIQUES & DE BUILD (Conservées et Optimisées)
+# =============================================================================
+[build]
+  writeStats = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+   style = "github"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "categories"
+    weight = 200 # <-- On donne un poids énorme aux catégories pour renforcer les clusters
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 80
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+timeout = 1800000

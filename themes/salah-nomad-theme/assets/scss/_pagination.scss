@@ -1,0 +1,88 @@
+// --- Fichier : assets/scss/_pagination.scss ---
+@import 'variables'; // Accès aux variables
+
+.navigation.pagination {
+  margin-top: $spacing-xl * 1.5; // Plus d'espace au-dessus
+  margin-bottom: $spacing-xl;
+  // Utiliser flex pour centrer et gérer l'espacement
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Style de base pour la liste générée par Hugo
+  ul.pagination {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: inline-flex; // Aligner les li horizontalement
+    flex-wrap: wrap; // Permettre le retour à la ligne sur petit écran si beaucoup de pages
+    gap: $spacing-xs; // Espacement entre les boutons de pagination
+  }
+}
+
+// Style pour chaque élément de la liste (li)
+.page-item {
+  // Pas de style spécifique nécessaire sur le li lui-même
+}
+
+// Style pour les liens (a) et les spans (page active, liens désactivés)
+.page-link {
+  display: block; // Pour que le padding fonctionne bien
+  padding: $spacing-sm $spacing-md;
+  min-width: 40px; // Largeur minimale pour les numéros
+  text-align: center;
+  color: var(--color-text-primary); // Couleur texte par défaut
+  background-color: var(--color-background); // Fond blanc par défaut
+  border: 1px solid var(--color-border-light); // Bordure claire par défaut
+  border-radius: $border-radius-sm; // Arrondi cohérent
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.1s ease-out;
+
+  // Styles au survol pour les liens cliquables (non actifs, non désactivés)
+  &:hover {
+    background-color: var(--color-background-alt); // Léger fond gris
+    border-color: var(--color-border); // Bordure légèrement plus visible
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  // Style au focus pour l'accessibilité (non actifs, non désactivés)
+  &:focus-visible {
+     outline: none;
+     border-color: var(--color-focus-outline); // Bordure orange
+     box-shadow: 0 0 0 2px var(--color-focus-outline-transparent); // Halo orange
+     z-index: 1; // Assurer la visibilité du halo
+  }
+}
+
+// Style pour l'élément actif (page courante)
+.page-item.active .page-link {
+  background-color: var(--color-text-accent); // Fond orange
+  border-color: var(--color-text-accent); // Bordure orange
+  color: var(--color-text-on-accent); // Texte blanc
+  cursor: default; // Indique non cliquable
+
+  // Empêcher les styles hover/focus sur l'élément actif
+  &:hover, &:focus-visible {
+      background-color: var(--color-text-accent);
+      border-color: var(--color-text-accent);
+      color: var(--color-text-on-accent);
+      box-shadow: none; // Pas de halo focus sur l'élément déjà actif
+  }
+}
+
+// Style pour les éléments désactivés (Précédent/Suivant sur première/dernière page)
+.page-item.disabled .page-link {
+  color: var(--color-text-secondary); // Texte grisé
+  background-color: var(--color-background-alt); // Fond gris clair
+  border-color: var(--color-border-light); // Bordure claire
+  cursor: default; // Indique non cliquable
+
+  // Empêcher les styles hover/focus sur l'élément désactivé
+  &:hover, &:focus-visible {
+      color: var(--color-text-secondary);
+      background-color: var(--color-background-alt);
+      border-color: var(--color-border-light);
+      box-shadow: none; // Pas de halo focus
+  }
+}

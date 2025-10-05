@@ -1,0 +1,288 @@
+/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\_footer.scss */
+// --- VERSION DÉFINITIVE AVEC CORRECTION FINALE DES BOUTONS ---
+@import 'variables';
+
+.site-footer {
+  margin-top: $spacing-xxl;
+  background-color: var(--color-background-alt); 
+  color: var(--color-text-secondary); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  a {
+    color: var(--color-text-accent-secondary); 
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover, &:focus {
+      color: var(--color-text-accent); 
+      text-decoration: underline;
+    }
+  }
+}
+
+/* --- Section : Widgets Thématiques du Footer --- */
+.footer-themed-widgets-wrap {
+  padding: $spacing-xxl $container-padding;
+  border-bottom: 1px solid var(--color-border-light); 
+  margin-bottom: $spacing-xl;
+
+  html.dark-mode & { 
+    border-bottom-color: var(--color-border); 
+  }
+}
+
+.footer-themed-widgets-grid {
+  display: grid;
+  gap: $spacing-xl $spacing-lg;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  }
+  @media (min-width: $breakpoint-xl) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.footer-themed-widgets-grid .widget {
+  margin-bottom: 0;
+  background-color: var(--color-footer-widget-bg);
+  color: var(--color-footer-widget-text);
+  padding: $spacing-lg;
+  border-radius: $border-radius-lg; 
+  box-shadow: var(--box-shadow-light); 
+
+  .widget-title { 
+    background: var(--footer-widget-title-bg);
+    color: var(--color-footer-widget-title-color);
+    padding: 0.75rem $spacing-lg; 
+    margin: (-$spacing-lg) (-$spacing-lg) $spacing-lg (-$spacing-lg); 
+    border-top-left-radius: $border-radius-lg; 
+    border-top-right-radius: $border-radius-lg;
+    border-bottom: 1px solid var(--footer-widget-title-border);
+    font-family: var(--font-heading);
+    font-size: 0.95rem; 
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+    text-align: center;
+    display: flex;        
+    align-items: center;
+    justify-content: center;
+    min-height: 4rem;      
+    box-sizing: border-box; 
+  }
+
+  .textwidget > p:first-child, 
+  > p:first-child, 
+  .intro-text { 
+    margin-top: 0; 
+  }
+
+  ul:not(.social-icons) { 
+    list-style: none; padding: 0; margin: 0;
+    li {
+      margin-bottom: $spacing-sm;
+      padding-bottom: $spacing-sm; 
+      border-bottom: 1px dotted var(--color-footer-widget-border); 
+      font-size: 0.85rem; 
+      &:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+    
+      a {
+        color: var(--color-footer-widget-link); 
+        display: inline-block;
+        transition: color 0.2s ease, padding-left 0.2s ease;
+        text-decoration: none;
+        &:hover, &:focus {
+          color: var(--color-footer-widget-link-hover); 
+          padding-left: $spacing-xs; 
+          text-decoration: underline; 
+        }
+        &:focus-visible { @include a11y-focus; text-decoration: none; }
+      }
+    }
+  }
+
+  &.widget_wisdom blockquote {
+    border-left: 3px solid var(--color-footer-widget-link); 
+    padding-left: $spacing-md;
+    margin: $spacing-sm 0 0 0;
+    font-style: italic;
+    font-size: 0.9em;
+    color: var(--color-footer-widget-text); 
+    p { margin-bottom: $spacing-xs * 0.5; }
+    footer { 
+      font-style: normal; 
+      font-size: 0.85em; 
+      opacity: 1; 
+      color: var(--color-footer-widget-text-muted); 
+      text-align: right; 
+    }
+  }
+
+  &.widget_stay_rooted {
+    .textwidget p { 
+      line-height: 1.6; 
+      margin-bottom: $spacing-md; 
+      color: var(--color-footer-widget-text-muted); 
+      &:last-of-type { 
+        margin-bottom: 0; 
+      }
+    }
+  }
+  
+  /* --- MODIFICATION : Remplacement du style du bouton par la version originale, stable et globale --- */
+  .footer-widget-button {
+    display: inline-flex; // flexbox pour un meilleur contrôle
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-footer-widget-button-bg); 
+    color: var(--color-footer-widget-button-text) !important; 
+    padding: $spacing-sm $spacing-lg;
+    border-radius: $border-radius-md;
+    font-family: var(--font-heading);
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: $spacing-sm; 
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    svg {
+      fill: currentColor;
+      width: 1.5em !important;
+      height: 1.5em !important;
+      flex-shrink: 0;
+    }
+    
+    &:hover, &:focus {
+      background-color: var(--color-footer-widget-button-hover-bg); 
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    &:focus-visible { @include a11y-focus; }
+  }
+  
+  &.widget_olive_network {
+    .intro-text { 
+      margin-bottom: $spacing-md; 
+      font-size: 0.9em;
+      line-height: 1.5;
+      color: var(--color-footer-widget-text-muted); 
+    }
+    .social-icons.footer-social-icons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $spacing-sm;
+      list-style: none; padding: 0; margin: 0;
+      
+      li { 
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      a {
+        font-size: 1.6rem;
+        color: var(--color-footer-widget-text-muted); 
+        padding: $spacing-xs;
+        transition: color 0.2s ease, transform 0.2s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, &:focus {
+          color: var(--color-footer-widget-link); 
+          transform: scale(1.1);
+        }
+        svg { width: 1em; height: 1em; fill: currentColor; }
+      }
+    }
+  }
+}
+
+/* --- Barre Inférieure (Copyright, menu footer, back to top) --- */
+#site-bottom {
+  color: var(--color-text-secondary);
+  padding: $spacing-lg $container-padding; 
+  font-size: 0.85em;
+  background-color: var(--color-footer-bottom-background); 
+}
+.footer-bottom-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: $spacing-md; 
+}
+.site-info {
+  p.copyright { margin: 0; line-height: 1.5;}
+  a {
+    color: var(--color-text-footer-link); 
+    text-decoration: underline; 
+    transition: color 0.2s ease;
+    &:hover, &:focus {
+      color: var(--color-text-accent);
+      text-decoration: none;
+    }
+    &:focus-visible { @include a11y-focus; }
+  }
+  .theme-info { margin-left: $spacing-sm; display: inline-block;}
+}
+.footer-nav {
+  ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: $spacing-md; }
+  a {
+    color: var(--color-text-footer); 
+    transition: color 0.2s ease;
+    text-decoration: none;
+    &:hover, &:focus { 
+      color: var(--color-text-accent); 
+      text-decoration: underline;
+    }
+    &:focus-visible { @include a11y-focus; text-decoration: underline;}
+  }
+}
+
+/* --- Bouton BackToTop --- */
+.back-to-top {
+   position: fixed; bottom: $spacing-lg; right: $spacing-lg;
+   z-index: $zindex-back-to-top;
+   opacity: 0; visibility: hidden; pointer-events: none;
+   transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease;
+   transform: translateY(10px);
+
+   &.visible {
+      opacity: 1; visibility: visible; pointer-events: auto;
+      transition-delay: 0s;
+      transform: translateY(0);
+   }
+
+   a.back-to-top-link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-backtotop-bg); 
+      color: var(--color-backtotop-text, var(--color-text-on-accent)); 
+      padding: $spacing-sm; border-radius: $border-radius-sm; text-decoration: none; line-height: 1;
+      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+      width: 40px;
+      height: 40px;
+      box-shadow: var(--box-shadow-medium);
+
+      &:hover {
+         background-color: var(--color-text-accent);
+         color: var(--color-text-on-accent);
+         transform: translateY(-2px);
+      }
+      &:focus-visible {
+         background-color: var(--color-text-accent);
+         color: var(--color-text-on-accent);
+         outline: none;
+         box-shadow: 0 0 0 3px var(--color-focus-ring);
+      }
+      svg { width: 1.2em; height: 1.2em; stroke: currentColor; }
+   }
+}

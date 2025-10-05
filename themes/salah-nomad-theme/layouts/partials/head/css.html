@@ -1,0 +1,43 @@
+{{/* themes/salah-nomad-theme/layouts/partials/head/css.html */}}
+
+{{/* --- CSS Critique (Inline) --- */}}
+{{ $criticalOptions := (dict "outputStyle" "compressed") }}
+{{ $criticalCSS := resources.Get "scss/critical.scss" | toCSS $criticalOptions }}
+{{ with $criticalCSS }}
+  <style>{{ .Content | safeCSS }}</style>
+{{ else }}
+  {{ warnf "Fichier 'assets/scss/critical.scss' non trouvé." }}
+{{ end }}
+
+{{/* --- Google Fonts --- */}}
+{{/* Vous pouvez choisir de les précharger si elles sont essentielles au LCP */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+{{/* --- CSS Principal (Standard/Fingerprinted) --- */}}
+{{ $mainOptions := (dict "targetPath" "css/style.css" "outputStyle" "compressed") }}
+{{ $mainCSS := resources.Get "scss/main.scss" | toCSS $mainOptions | fingerprint }}
+{{ with $mainCSS }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{ else }}
+  {{ warnf "Fichier 'assets/scss/main.scss' non trouvé." }}
+{{ end }}
+
+{{/* --- Pagefind UI CSS --- */}}
+{{/* Conditionné par le même paramètre que l'activation de Pagefind JS */}}
+{{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+  {{/* Assurez-vous que le fichier themes/salah-nomad-theme/static/pagefind/pagefind-ui.css existe */}}
+  <link href="{{ "/pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+{{ end }}
+
+{{/* --- CSS d'Impression (Optionnel) --- */}}
+{{/*
+{{ $printOptions := (dict "outputStyle" "compressed" "mediaType" "print") }}
+{{ $printCSS := resources.Get "scss/print.scss" | toCSS $printOptions | fingerprint }}
+{{ if $printCSS }}
+  <link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" integrity="{{ $printCSS.Data.Integrity }}" media="print">
+{{ else }}
+  {{ warnf "Fichier 'assets/scss/print.scss' non trouvé pour l'impression." }}
+{{ end }}
+*/}}

@@ -1,0 +1,13 @@
+{{/*
+  Shortcode Universel v4 (LA VERSION FINALE ET CORRECTE)
+  Utilise .Page.RenderString, la méthode la plus robuste pour
+  interpréter le Markdown simple (gras, listes, etc.) à l'intérieur du shortcode.
+*/}}
+<div class="prompt-box">
+  {{ with .Get "title" }}
+    <div class="prompt-box-title">{{ . }}</div>
+  {{ end }}
+  <div class="prompt-box-content">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</div>

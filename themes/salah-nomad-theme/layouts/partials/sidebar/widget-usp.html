@@ -1,0 +1,24 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+{{ $uspData := .Site.Data.usp }}
+{{ if $uspData.items }}
+<section class="widget widget_usp">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Why Choose Us?" }}</span></h3>
+  <div class="widget-content usp-widget-content">
+    <ul class="usp-list">
+      {{ range $uspData.items }}
+      <li class="usp-item">
+        {{ if findRE `\.svg$` .icon }} {{/* Check if icon is an SVG path */}}
+          <span class="usp-icon svg-icon">{{ partial .icon . }}</span>
+        {{ else }}
+          <span class="usp-icon emoji-icon">{{ .icon }}</span>
+        {{ end }}
+        <div class="usp-text-content">
+          <h4>{{ .title }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

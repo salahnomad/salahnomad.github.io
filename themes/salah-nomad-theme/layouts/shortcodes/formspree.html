@@ -1,0 +1,69 @@
+{{/* layouts/shortcodes/formspree.html */}}
+{{/* Remplace YOUR_FORMSPREE_ENDPOINT par ton URL Formspree unique */}}
+{{ $formspreeEndpoint := "https://formspree.io/f/mzzrrwrz" }} {{/* <<< TON URL EST ICI */}}
+
+{{ if ne $formspreeEndpoint "YOUR_FORMSPREE_ENDPOINT" }} {{/* Cette condition est maintenant vraie */}}
+<form id="contact-form" action="{{ $formspreeEndpoint }}" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+  </div>
+  {{/* Champ Honeypot caché pour les spambots */}}
+  <input type="text" name="_gotcha" style="display:none !important">
+  {{/* Optionnel: Page de remerciement (crée une page /thanks/ dans content/) */}}
+  {{/* <input type="hidden" name="_next" value="{{ "/thanks/" | relLangURL }}"> */}}
+  <div class="form-submit">
+    <button type="submit">Send Message</button>
+  </div>
+</form>
+{{ else }}
+  {{/* Ce message d'erreur ne devrait plus s'afficher */}}
+  <p style="color: red; font-weight: bold;">Formspree shortcode error: Please configure your Formspree endpoint URL in <code>layouts/shortcodes/formspree.html</code>.</p>
+{{ end }}
+
+{{/* Styles pour le formulaire de contact */}}
+<style>
+  .contact-form .form-group { margin-bottom: 1rem; }
+  .contact-form label { display: block; margin-bottom: 0.3rem; font-weight: bold; }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border-input);
+    background-color: var(--color-input-background);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    border-color: var(--color-focus-outline);
+    box-shadow: 0 0 0 3px var(--color-focus-ring);
+    outline: none;
+  }
+  .contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-button-background, var(--color-text-accent));
+    color: var(--color-button-text, var(--color-text-on-accent));
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  .contact-form button:hover {
+     background-color: var(--color-button-hover-background, var(--color-link-hover));
+  }
+  .contact-form button:active {
+     transform: translateY(1px);
+  }
+</style>

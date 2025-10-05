@@ -1,0 +1,31 @@
+{{/* layouts/partials/post-navigation.html */}}
+{{ $next := .NextInSection }}
+{{ $prev := .PrevInSection }}
+
+{{ if or $next $prev }}
+<nav class="post-navigation" aria-label="{{ i18n "postNavigation" | default "Post Navigation" }}">
+  <ul class="post-navigation-list">
+    {{ if $prev }}
+    <li class="post-navigation-item prev">
+      <a href="{{ $prev.RelPermalink }}" rel="prev" class="post-navigation-link">
+        <span class="post-navigation-label">{{ partial "icons/arrow-left.svg" . }} {{ i18n "previousPost" | default "Previous Post" }}</span>
+        <span class="post-navigation-title">{{ $prev.Title }}</span>
+      </a>
+    </li>
+    {{ else }}
+    <li class="post-navigation-item prev-empty" aria-hidden="true"></li> {{/* Placeholder pour l'alignement CSS */}}
+    {{ end }}
+
+    {{ if $next }}
+    <li class="post-navigation-item next">
+      <a href="{{ $next.RelPermalink }}" rel="next" class="post-navigation-link">
+        <span class="post-navigation-label">{{ i18n "nextPost" | default "Next Post" }} {{ partial "icons/arrow-right.svg" . }}</span>
+        <span class="post-navigation-title">{{ $next.Title }}</span>
+      </a>
+    </li>
+    {{ else }}
+    <li class="post-navigation-item next-empty" aria-hidden="true"></li> {{/* Placeholder pour l'alignement CSS */}}
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

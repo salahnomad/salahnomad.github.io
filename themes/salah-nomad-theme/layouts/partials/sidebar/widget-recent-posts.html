@@ -1,0 +1,17 @@
+{{ $widgetData := (index .sidebarParams .widgetKey) }}
+<section class="widget widget_recent_entries">
+  <h3 class="widget-title"><span>{{ $widgetData.title | default "Recent Posts" }}</span></h3>
+  {{ $postLimit := $widgetData.count | default 5 }}
+  {{ $mainSections := $.Site.Params.mainSections | default (slice "posts") }}
+  {{ $pages := collections.Sort (where $.Site.RegularPages "Type" "in" $mainSections) "PublishDate" "desc" }}
+  {{ $recentSidebarPosts := first $postLimit $pages }}
+  {{ if gt (len $recentSidebarPosts) 0 }}
+  <ul>
+    {{ range $recentSidebarPosts }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  {{ else }}
+    <p><small>{{ i18n "noRecentPosts" | default "No recent posts found." }}</small></p>
+  {{ end }}
+</section>

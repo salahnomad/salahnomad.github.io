@@ -1,0 +1,33 @@
+{{/*
+  Shortcode: framework_card (Version 2.0 - Corrigé)
+  ----------------------------------------------------
+  Génère une carte de présentation pour un framework, avec une gestion
+  correcte du contexte pour les paramètres.
+*/}}
+
+{{/* Étape 1: Sauvegarder tous les paramètres dans des variables */}}
+{{ $img_path := .Get "img" }}
+{{ $alt_text := .Get "alt" }}
+{{ $title := .Get "title" }}
+{{ $for_text := .Get "for" }}
+{{ $link_url := .Get "link" }}
+{{ $link_text := .Get "link_text" | default "Learn More &rarr;" }}
+{{ $page := .Page }}
+
+<div class="framework-card">
+  <div class="framework-card-image">
+    {{/* Étape 2: Utiliser la variable $img_path pour trouver l'image */}}
+    {{ with $page.Resources.GetMatch (printf "images/%s" $img_path) }}
+      {{ $img := .Fill "400x225 Center" }}
+      {{/* Étape 3: Utiliser la variable $alt_text pour le alt */}}
+      <img src="{{ $img.RelPermalink }}" alt="{{ $alt_text }}" loading="lazy">
+    {{ else }}
+      <div style="aspect-ratio: 16/9; background-color:#f0f0f0; display:flex; align-items:center; justify-content:center; color:red;">
+        [Img not found: {{ $img_path }}]
+      </div>
+    {{ end }}
+  </div>
+  <h4>{{ $title }}</h4>
+  <p><strong>For:</strong> {{ $for_text }}</p>
+  <a href="{{ $link_url | relLangURL }}" class="framework-link">{{ $link_text }}</a>
+</div>

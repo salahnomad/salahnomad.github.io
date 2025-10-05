@@ -1,0 +1,24 @@
+{{/* --- Fichier : layouts/partials/head/favicons.html --- */}}
+{{/* Adapté aux fichiers présents dans static/images/favicons/ */}}
+
+{{/* Chemin pour l'icône Apple Touch */}}
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png"> {{/* Taille 180x180 est standard, même si le fichier ne le précise pas */}}
+
+{{/* Icônes PNG standard - RFG donne souvent 32x32 et 16x16. Tu as 96x96. On peut utiliser le SVG ou le 96x96 comme fallback. */}}
+{{/* Option 1: Prioriser le SVG (moderne) */}}
+<link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg">
+{{/* Option 2: Utiliser le 96x96 comme icône principale si le SVG n'est pas idéal partout */}}
+{{/* <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png"> */}}
+{{/* Option 3: Ajouter aussi 32x32 et 16x16 si tu les génères plus tard */}}
+{{/* <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png"> */}}
+{{/* <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png"> */}}
+
+{{/* Manifest pour les PWA / Android */}}
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+
+{{/* Icône pour anciens navigateurs / Windows */}}
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+
+{{/* Couleurs pour navigateurs / OS */}}
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#FFA500">

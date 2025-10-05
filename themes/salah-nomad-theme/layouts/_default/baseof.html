@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html */}}
+<html lang="{{ .Site.Language.Lang | default "en" }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  {{ partial "head/seo.html" . }}
+  {{ partial "head/favicons.html" . }}
+  {{ partial "head/css.html" . }}
+  {{- /* Le CSS, y compris celui de Pagefind, est géré via le partial head/css.html ci-dessus */ -}}
+
+  {{ with .OutputFormats.Get "html" }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+  {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end -}}
+  {{ hugo.Generator }}
+</head>
+<body class="{{ delimit (slice "page" .Kind .Type .Layout (cond .IsHome "is-home" "") (cond .IsSection "is-section" "") (cond .IsNode "is-node" "")) " " }}">
+
+  {{ partial "header.html" . }}
+
+  <div id="content" class="site-content">
+    <main id="main-content" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div><!-- #content -->
+
+  {{ partial "footer.html" . }}
+
+  {{/* --- MODAL DE RECHERCHE APPELÉ ICI (avant la fin du body) --- */}}
+  {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+    {{ partial "search-modal.html" . }}
+  {{ end }}
+
+  {{/* --- Script JS Principal --- */}}
+  {{ $jsOpts := dict "minify" true "target" "es2016" "module" true }}
+  {{ $mainJS := resources.Get "js/main.js" }}
+  {{ if $mainJS }}
+    {{ $js := $mainJS | js.Build $jsOpts | fingerprint }}
+    <script defer type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{ else }}
+    {{ warnf "'assets/js/main.js' not found." }}
+  {{ end }}
+
+  {{/* --- Pagefind UI JS et Logique du Modal --- */}}
+  {{ if .Site.Params.pagefind.enable | default (.Site.Params.enableSearch | default false) }}
+    {{/* Le CSS de Pagefind est maintenant dans head/css.html */}}
+    <script src="{{ "/pagefind/pagefind-ui.js" | relURL }}" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const searchToggleButtons = document.querySelectorAll('.search-toggle, .mobile-search-trigger');
+        const searchModal = document.getElementById('header-search-form-container');
+        let searchInput = null; // Initialisé à null, sera peuplé par Pagefind
+        const searchModalCloseButton = searchModal ? searchModal.querySelector('.search-modal-close') : null;
+
+        function updateAllToggleButtonsState(isActive) {
+          searchToggleButtons.forEach(btn => {
+            btn.setAttribute('aria-expanded', isActive.toString());
+          });
+        }
+
+        function closeSearchModal() {
+          if (searchModal && searchModal.classList.contains('is-active')) {
+            searchModal.classList.remove('is-active');
+            searchModal.setAttribute('hidden', 'true'); // Cacher visuellement et pour a11y
+            searchModal.setAttribute('aria-hidden', 'true');
+            updateAllToggleButtonsState(false);
+          }
+        }
+
+        function showSearchModal() {
+            if (searchModal) {
+                window.scrollTo(0, 0);
+                searchModal.classList.add('is-active');
+                searchModal.removeAttribute('hidden'); // Rendre visible
+                searchModal.setAttribute('aria-hidden', 'false');
+                updateAllToggleButtonsState(true);
+
+                // Essayer de mettre le focus sur l'input après un court délai
+                // searchInput est maintenant défini après l'initialisation de PagefindUI
+                setTimeout(() => {
+                    const currentSearchInput = searchModal.querySelector('.pagefind-ui__search-input');
+                    if (currentSearchInput) {
+                        try {
+                            currentSearchInput.focus();
+                            console.log("Focus set on Pagefind search input.");
+                        } catch (e) { console.error("Error setting focus on Pagefind input:", e); }
+                    } else {
+                        console.warn("Pagefind search input element not found for focus in showSearchModal.");
+                    }
+                }, 100);
+            }
+        }
+
+        function handleSearchToggle(clickedButton, eventFromListener) {
+          console.log("DEBUG: handleSearchToggle triggered by:", clickedButton);
+          eventFromListener.preventDefault();
+          eventFromListener.stopPropagation();
+
+          if (searchModal.classList.contains('is-active')) {
+            closeSearchModal();
+            return;
+          }
+
+          const mobileNavPanel = document.getElementById('mobile-nav-panel');
+          const isMobileSearchTrigger = clickedButton && clickedButton.classList.contains('mobile-search-trigger');
+
+          if (isMobileSearchTrigger && mobileNavPanel && mobileNavPanel.classList.contains('is-visible')) {
+            const mobileMenuCloseButtonJS = mobileNavPanel.querySelector('.mobile-menu-close');
+             if (mobileMenuCloseButtonJS && typeof mobileMenuCloseButtonJS.click === 'function') {
+                 mobileMenuCloseButtonJS.click();
+             } else {
+                 mobileNavPanel.classList.remove('is-visible');
+                 document.body.classList.remove('mobile-menu-active');
+                 const burgerButton = document.querySelector('.mobile-menu-toggle');
+                 if(burgerButton) burgerButton.setAttribute('aria-expanded', 'false');
+             }
+
+            setTimeout(() => {
+              showSearchModal();
+            }, 400); // Délai pour permettre la fermeture du menu mobile
+          } else {
+            showSearchModal();
+          }
+        }
+
+        // Vérifier si PagefindUI est défini avant de l'utiliser
+        if (typeof PagefindUI !== 'undefined') {
+            if (searchModal) {
+                const pagefindUIElement = document.getElementById("pagefind-search-header");
+                if (pagefindUIElement) {
+                    try {
+                        // Correction: Ajout de bundlePath
+                        const pagefindInstance = new PagefindUI({
+                            element: pagefindUIElement,
+                            showSubResults: true,
+                            bundlePath: "{{ "/_pagefind/" | relURL }}" // Indique où trouver pagefind.js et l'index
+                        });
+                        
+                        // Pagefind injecte son propre input, donc on le référence après l'init.
+                        // Il n'est plus nécessaire de le chercher au début du script.
+                        // searchInput sera utilisé par showSearchModal s'il est trouvé.
+                        console.log("PagefindUI initialized.");
+
+                    } catch (e) {
+                        console.error("PagefindUI init error:", e);
+                    }
+                } else {
+                    console.warn("Pagefind UI target #pagefind-search-header not found in search modal.");
+                }
+
+                // Attacher les écouteurs d'événements
+                if (searchToggleButtons.length > 0) {
+                    searchToggleButtons.forEach(button => {
+                        button.addEventListener('click', function(e) { handleSearchToggle(this, e); });
+                    });
+                }
+                if (searchModalCloseButton) {
+                    searchModalCloseButton.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        closeSearchModal();
+                    });
+                }
+
+                document.addEventListener('click', function(e) {
+                    let clickedOnAToggle = false;
+                    searchToggleButtons.forEach(btn => { if (btn.contains(e.target)) clickedOnAToggle = true; });
+                    
+                    if (searchModal.classList.contains('is-active') && !searchModal.contains(e.target) && !clickedOnAToggle) {
+                        closeSearchModal();
+                    }
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === "Escape" && searchModal.classList.contains('is-active')) {
+                        closeSearchModal();
+                    }
+                });
+            } else {
+                console.error("Search modal element (#header-search-form-container) not found.");
+            }
+        } else {
+            console.error("PagefindUI is not defined. Check if pagefind-ui.js loaded correctly and without errors.");
+        }
+      });
+      //]]>
+    </script>
+  {{ end }}
+
+</body>
+</html>
