@@ -123,7 +123,11 @@ enableRobotsTXT = true
     subtitle = "The code behind the caravan"
     iconPartial = "icons/social/logo-github.svg" 
     url = "https://github.com/salahnomad"
-  
+  [[params.social_links]]
+    name = "RSS"
+    subtitle = "Stay updated"
+    iconPartial = "icons/social/logo-rss.svg"
+    url = "/index.xml"
 
   # --- Visibilité et Configuration de la Sidebar (Conservés et mis à jour) ---
   homepageSidebar = true
