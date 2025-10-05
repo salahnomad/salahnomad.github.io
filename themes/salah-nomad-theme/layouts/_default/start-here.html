@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="start-here-page">
+  <div class="container narrow">
+    <header class="start-here-header">
+      
+      {{/* --- NOUVELLE LOGIQUE POUR L'IMAGE --- */}}
+      {{ with .Params.featured_image }}
+        {{ $image := $.Resources.GetMatch . }}
+        {{ if $image }}
+          {{ $image = $image.Resize "800x webp q80" }}
+          <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="start-here-featured-image" loading="eager">
+        {{ end }}
+      {{ end }}
+      {{/* --- FIN DE LA NOUVELLE LOGIQUE --- */}}
+
+      <h1>{{ .Title }}</h1>
+    </header>
+    
+    <div class="start-here-content">
+      {{ .Content }}
+    </div>
+
+  </div>
+</article>
+{{ end }}
