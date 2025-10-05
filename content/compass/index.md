@@ -1,12 +1,12 @@
 ---
-title: "The Compass: Your Guide to the Frameworks of a Rooted Life"
+title: "Rooted Nomadism Frameworks: Complete Guide to Intentional Living"
 date: 2025-09-19
 draft: false
-description: "Your official guide to the core frameworks of Rooted Nomadism. Start with our foundational 'Operating System,' then explore the specialized tools for a resilient, meaningful, and soulful life."
+description: "Master 7 battle-tested Rooted Nomadism frameworks for digital freedom. From Zellige productivity to Olive Grove finances - get the complete system for meaningful work and travel."
 featured_image: "images/compass-frameworks-hero.jpg"
-featured_image_alt: "An antique brass compass open on a large, hand-drawn map of the Mediterranean, with key concepts like 'Zellige' and 'Olive Grove' sketched as constellations, symbolizing a guide to philosophical frameworks."
-layout: single
-slug: compass
+featured_image_alt: "Complete visual guide to Rooted Nomadism frameworks including Zellige Blueprint, Olive Grove Economy, and Algorithmic Sardine philosophy for intentional living"
+layout: "compass"
+schema_type: "ItemList"
 json_ld: |
   {
     "@context": "https://schema.org",
@@ -78,89 +78,89 @@ json_ld: |
   }
 ---
 
-<div class="compass-page-wrapper">
-
-# The Compass: Frameworks for a Rooted Life
-## Lost in the Digital Sea? Find Your Anchor.
-
-The freedom to work from anywhere promised adventure, but for many, it delivered a quiet, digital loneliness—a feeling of being adrift, without a map. This curated library presents the core frameworks of the Rooted Nomadism philosophy. Start with the foundational **Zellige Blueprint**—our operating system for intentional living—then explore specialized tools for creativity, communication, and community building. Each framework is a practical guide to turning ancient wisdom into modern resilience.
-
-**You don't have to choose between your roots and your wings.**
-
-This page is your official guide to the philosophy of **Rooted Nomadism**. It's a library of practical, battle-tested frameworks designed to help you build a life of freedom, meaning, and resilience. Each framework was forged in my own twenty-year journey, from the olive groves of Morocco to the tech hubs of Spain. They are now yours to explore.
-
----
-
-### Start Here: Your Foundational Operating System
+## 🧭 Start Here: Your Foundational Operating System
 
 Every meaningful journey needs an operating system. Before exploring specialized tools, master the foundation. It's the meta-framework that organizes all the others.
 
-{{< figure-link
-  href="/work-productivity/zellige-blueprint/"
-  img_src="images/zellige-blueprint-promo.jpg"
-  img_alt="A modern productivity interface with geometric Moroccan tile patterns"
-  caption_title="The Zellige Blueprint"
-  caption_text="The art of composing a life with intention. This is your core system for soulful productivity, inspired by 1,000-year-old artisan wisdom."
+{{< compass-card
+    title="The Zellige Blueprint"
+    description="The art of composing a life with intention. Your core system for soulful productivity, inspired by 1,000-year-old Moroccan artisan wisdom."
+    link="/work-productivity/zellige-blueprint/"
+    image="images/zellige-blueprint-promo.jpg"
+    cta="Learn the System →"
+    category="Productivity"
+    level="Foundational"
+    reading_time="12"
 >}}
 
 ---
 
-### The Core Frameworks: Specialized Tools for Your Journey
+## ⚙️ The Core Frameworks: Specialized Tools for Your Journey
 
 Once you have your foundation, explore these five pillars that apply the philosophy to the core challenges of a modern, independent life.
 
 <div class="framework-grid">
   
-  {{< framework_card
-      img="baker-code-promo.jpg"
-      alt="Hands of a baker dusting flour, symbolizing the Baker's Code for deep work."
+  {{< compass-card
       title="The Baker's Code"
-      for="A Ritual for Deep Work & Creative Flow"
+      description="A powerful ritual for deep work and creative flow, learned from the timeless rhythms of traditional Málaga bakers."
       link="/work-productivity/bakers-code/"
-      link_text="Learn the Code &rarr;"
+      image="images/baker-code-promo.jpg"
+      cta="Learn the Code →"
+      category="Deep Work"
+      level="Beginner"
+      reading_time="8"
   >}}
 
-  {{< framework_card
-      img="api-promo.jpg"
-      alt="A vintage radio glowing, symbolizing the Analog API for digital ethics."
+  {{< compass-card
       title="The Analog API"
-      for="A Protocol for Ethical Communication"
+      description="A protocol for ethical communication, forged in the intentional scarcity of a 1980s shortwave radio."
       link="/work-productivity/analog-api-communication/"
-      link_text="Discover the Protocol &rarr;"
+      image="images/api-promo.jpg"
+      cta="Discover the Protocol →"
+      category="Communication"
+      level="Intermediate"
+      reading_time="10"
   >}}
 
-  {{< framework_card
-      img="souk-promo.jpg"
-      alt="A spice merchant's hand offering saffron, symbolizing the Souk Algorithm for authentic value."
+  {{< compass-card
       title="The Souk Algorithm"
-      for="A Strategy for Human-Centered Value"
+      description="A strategy for creating authentic value and building trust, inspired by ancient spice merchants."
       link="/work-productivity/souk-algorithm/"
-      link_text="Master the Algorithm &rarr;"
+      image="images/souk-promo.jpg"
+      cta="Master the Algorithm →"
+      category="Business"
+      level="Intermediate"
+      reading_time="9"
   >}}
 
-  {{< framework_card
-      img="hammam-promo.jpg"
-      alt="Light streaming into a steamy hammam, symbolizing the Hammam Principle for building trust."
+  {{< compass-card
       title="The Hammam Principle"
-      for="A Blueprint for Building Community"
+      description="A blueprint for building digital spaces of vulnerability, trust, and genuine human connection."
       link="/work-productivity/hammam-principle-community/"
-      link_text="Design Your Space &rarr;"
+      image="images/hammam-promo.jpg"
+      cta="Design Your Space →"
+      category="Community"
+      level="Advanced"
+      reading_time="11"
   >}}
   
-  {{< framework_card
-      img="weaver-promo.jpg"
-      alt="Hands weaving a Berber carpet, symbolizing the Weaver's Prompt for creative AI."
+  {{< compass-card
       title="The Weaver's Prompt"
-      for="A Method for Creative AI Collaboration"
+      description="A method for creative AI collaboration using the patterned language of Amazigh weavers."
       link="/ai-future/weavers-prompt/"
-      link_text="Learn to Weave &rarr;"
+      image="images/weaver-promo.jpg"
+      cta="Learn to Weave →"
+      category="AI Collaboration"
+      level="Intermediate"
+      reading_time="7"
   >}}
 
 </div>
 
 ---
 
-### Foundational Archives: Digging Deeper
+## 📚 Classic Frameworks & Foundational Ideas
 
 The ideas above are built upon years of exploration. For those who wish to explore the original texts that shaped this philosophy, here are some of our classic frameworks.
 
@@ -176,10 +176,8 @@ The ideas above are built upon years of exploration. For those who wish to explo
 
 ---
 
-### The Full Story Behind The Frameworks
+## 📖 The Full Story Behind The Frameworks
 
-These frameworks are the map. The full story—the journey, the failures, the discoveries—is told in my memoir, *Algorithmic Sardines*.
+These frameworks are the map. The full story—the journey, the failures, the discoveries—is told in my memoir.
 
 {{< book_promo >}}
-
-</div>

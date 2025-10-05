@@ -1,0 +1,127 @@
+{{ define "main" }}
+<div class="compass-page-wrapper">
+  <article class="compass-page">
+    <div class="container">
+      
+      {{/* Hero Section - OPTIMISÉ POUR LEAF BUNDLE */}}
+      <header class="compass-hero">
+        <h1>{{ .Title }}</h1>
+        <p class="compass-subtitle">{{ .Description }}</p>
+        
+        {{/* Gestion de l'image featured depuis le Leaf Bundle */}}
+        {{- $featuredImage := "" -}}
+        {{- with .Params.featured_image -}}
+          {{- with $.Resources.GetMatch . -}}
+            {{- $featuredImage = (.Resize "1200x webp q85").RelPermalink -}}
+          {{- end -}}
+        {{- end -}}
+        
+        {{- if $featuredImage -}}
+          <div class="compass-featured-image">
+            <img src="{{ $featuredImage }}" alt="{{ $.Params.featured_image_alt | default "Rooted Nomadism Frameworks Guide" }}" loading="lazy">
+          </div>
+        {{- end -}}
+      </header>
+
+      {{/* Introduction */}}
+      <div class="compass-intro">
+        <div class="intro-content">
+          <h2>Find Your Framework for Intentional Living</h2>
+          <p>Feeling digitally adrift? You're not alone. Most productivity systems fail because they ignore our deepest human needs for meaning and connection.</p>
+          <p><strong>Rooted Nomadism offers a different path</strong> - practical frameworks that blend Mediterranean wisdom with modern digital life. These aren't theoretical concepts; they're battle-tested systems forged through 20 years of cross-cultural entrepreneurship.</p>
+        </div>
+      </div>
+
+      {{/* Main Content */}}
+      <div class="compass-content">
+        {{ .Content }}
+      </div>
+
+    </div>
+  </article>
+</div>
+
+{{/* Schema.org JSON-LD */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Rooted Nomadism Frameworks Collection",
+  "description": "Complete guide to intentional living frameworks for digital nomads and creators",
+  "url": "{{ .Permalink }}",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Zellige Blueprint",
+        "description": "Soulful productivity system inspired by Moroccan artisan wisdom",
+        "url": "{{ .Site.BaseURL }}work-productivity/zellige-blueprint/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Baker's Code",
+        "description": "Deep work ritual learned from traditional bakers' rhythms",
+        "url": "{{ .Site.BaseURL }}work-productivity/bakers-code/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Olive Grove Economy",
+        "description": "Financial resilience framework for sustainable wealth building",
+        "url": "{{ .Site.BaseURL }}money-freedom/olive-grove-economy/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Olive Tree Oracle",
+        "description": "Ethical AI protocol for culturally-aware technology use",
+        "url": "{{ .Site.BaseURL }}ai-future/olive-tree-oracle/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Hammam Principle",
+        "description": "Community building framework for digital spaces",
+        "url": "{{ .Site.BaseURL }}work-productivity/hammam-principle-community/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Algorithmic Sardine",
+        "description": "Philosophy of purposeful movement and value migration",
+        "url": "{{ .Site.BaseURL }}stories-wisdom/algorithmic-sardine-philosophy/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "CreativeWork",
+        "name": "The Morisco Compass",
+        "description": "Framework for navigating hybrid identity and cultural roots",
+        "url": "{{ .Site.BaseURL }}stories-wisdom/morisco-compass/"
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
