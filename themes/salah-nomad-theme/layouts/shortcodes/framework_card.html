@@ -1,8 +1,8 @@
 {{/*
-  Shortcode: framework_card (Version 2.0 - Corrigé)
+  Shortcode: framework_card (Version 2.1 - Corrigé avec safeHTML)
   ----------------------------------------------------
   Génère une carte de présentation pour un framework, avec une gestion
-  correcte du contexte pour les paramètres.
+  correcte du contexte pour les paramètres et l'affichage des entités HTML.
 */}}
 
 {{/* Étape 1: Sauvegarder tous les paramètres dans des variables */}}
@@ -29,5 +29,10 @@
   </div>
   <h4>{{ $title }}</h4>
   <p><strong>For:</strong> {{ $for_text }}</p>
-  <a href="{{ $link_url | relLangURL }}" class="framework-link">{{ $link_text }}</a>
+  {{/* 
+    CORRECTION APPLIQUÉE ICI : Ajout de "| safeHTML"
+    Ceci indique à Hugo de ne pas "échapper" les caractères HTML comme '&rarr;',
+    permettant au navigateur de l'interpréter correctement comme une flèche →.
+  */}}
+  <a href="{{ $link_url | relLangURL }}" class="framework-link">{{ $link_text | safeHTML }}</a>
 </div>
