@@ -6,6 +6,9 @@ description: "Discover soulful productivity frameworks blending Moroccan artisan
 featured_image: "images/work-productivity-hero.jpg"
 featured_image_alt: "A conceptual image for 'Work & Productivity': the weathered hands of an artisan carving a zellige tile that seamlessly transforms into a perfectly organized digital interface."
 layout: "hub" # Utilise un layout spécial "hub.html" pour une mise en page riche
+authors: ["Salah Nomad"]
+toc: true
+sidebar: true
 # --- OPTIMISATION IA & US MARKET POUR LE HUB ---
 us_optimization:
   primary_keyword: "mediterranean productivity systems"

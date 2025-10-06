@@ -11,6 +11,7 @@ featured_image: "images/olive-grove-vs-fire-hero.jpg"
 featured_image_alt: "A split image: on one side, a stark spreadsheet with financial figures; on the other, a sun-drenched, resilient olive grove with deep roots, symbolizing the two philosophies."
 authors: ["Salah Nomad"]
 toc: true
+sidebar: true
 # --- OPTIMISATION IA & US MARKET ---
 us_optimization:
   primary_keyword: "fire movement alternative"

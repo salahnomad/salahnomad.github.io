@@ -6,6 +6,9 @@ description: "New to Rooted Nomadism? Begin your journey here. Discover how to b
 layout: "start-here"
 featured_image: "images/start-here-hero.jpg"
 featured_image_alt: "Ancient wooden door opening to Mediterranean crossroads - one path to olive groves (roots), another to the sea (freedom) - symbolizing the start of your Rooted Nomad journey"
+authors: ["Salah Nomad"]
+toc: true
+sidebar: true
 ---
 
 ## Welcome to the Crossroads Between Ancient Wisdom and Digital Freedom
