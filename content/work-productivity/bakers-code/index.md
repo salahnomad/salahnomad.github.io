@@ -14,7 +14,7 @@ tags:
   - "work-rhythms"
   - "sustainable-productivity"
 keywords: ["deep work framework", "focus rituals productivity", "distraction free work", "creative flow states", "Mediterranean work wisdom", "sustainable productivity"]
-featured_image: "images/bakers-code-promo.jpg"
+featured_image: "images/baker-code-hero.jpg"
 featured_image_alt: "Traditional baker's hands working with dough in early morning light, symbolizing focused deep work rituals and productive flow states"
 authors: ["Salah Nomad"]
 toc: true
