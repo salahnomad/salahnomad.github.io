@@ -1,0 +1,117 @@
+// assets/scss/pages/_glossary.scss
+
+// Conteneur principal avec gestion de la sidebar
+.glossary-page-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &.has-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    @media (min-width: 992px) {
+      grid-template-columns: minmax(0, 1fr) 300px;
+    }
+  }
+}
+
+// Header de la page
+.glossary-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--color-text-offset);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// Contenu Markdown
+.glossary-content {
+  margin-bottom: 3rem;
+  // Styles pour les catégories listées dans le markdown
+  h3 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--color-heading);
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+// Grille automatique des termes
+.glossary-grid-auto {
+  margin-top: 4rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .term-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .term-card {
+    background: var(--color-bg-offset);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(var(--color-shadow-rgb), 0.08);
+      border-color: var(--color-primary);
+    }
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+      a {
+        text-decoration: none;
+        color: var(--color-heading);
+      }
+    }
+    
+    p {
+      color: var(--color-text-offset);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 1rem;
+    }
+
+    .term-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      background: rgba(var(--color-primary-rgb), 0.1);
+      color: var(--color-primary);
+      border-radius: 20px;
+      margin-top: auto;
+    }
+  }
+}

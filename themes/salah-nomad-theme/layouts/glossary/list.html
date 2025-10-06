@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+{{ define "head" }}
     {{ partial "head.html" . }}
     
     <!-- Schema.org for CollectionPage -->
@@ -8,63 +6,96 @@
     {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "{{ .Title }}",
-        "description": "{{ .Description }}",
+        "name": "{{ .Title | safeJS }}",
+        "description": "{{ .Description | safeJS }}",
+        "url": "{{ .Permalink }}",
         "mainEntity": {
             "@type": "ItemList",
             "numberOfItems": {{ len .Pages }},
             "itemListElement": [
-                {{ range $index, $page := .Pages }}
+                {{ range $index, $page := .Pages.ByTitle }}
                 {
                     "@type": "ListItem",
                     "position": {{ add $index 1 }},
                     "item": {
                         "@type": "DefinedTerm",
-                        "name": "{{ $page.Title }}",
-                        "description": "{{ $page.Description }}",
+                        "name": "{{ $page.Title | safeJS }}",
+                        "description": "{{ $page.Description | safeJS }}",
                         "url": "{{ $page.Permalink }}"
                     }
                 }{{ if ne (add $index 1) (len $.Pages) }},{{ end }}
                 {{ end }}
             ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ .Site.Params.organization.name }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.organization.logo | absURL }}"
+          }
         }
     }
     </script>
-</head>
-<body>
-    {{ partial "header.html" . }}
-    
-    <main class="glossary-page">
-        <article class="container">
-            {{ partial "breadcrumbs.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{/* --- FORCER L'AFFICHAGE DE LA SIDEBAR --- */}}
+  {{ $showSidebarOnThisPage := true }}
+
+  <main class="glossary-page-main">
+    <div class="container glossary-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+      
+      <div class="glossary-main-content">
+        <article>
+          {{ partial "breadcrumbs.html" . }}
+          
+          <header class="glossary-header">
+            {{/* --- AJOUT DE LA FEATURED IMAGE --- */}}
+            {{ with .Params.featured_image }}
+              {{ $image := $.Resources.GetMatch . }}
+              {{ if $image }}
+                {{ $image = $image.Resize "800x webp q80" }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="glossary-featured-image" loading="eager">
+              {{ else }}
+                {{ $imagePath := . }}
+                <img src="{{ $imagePath | relURL }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="glossary-featured-image" loading="eager">
+              {{ end }}
+            {{ end }}
             
-            <header class="glossary-header">
-                <h1>{{ .Title }}</h1>
-                <p class="lead">{{ .Description }}</p>
-            </header>
+            <h1>{{ .Title }}</h1>
+            {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+          </header>
 
-            <div class="glossary-content">
-                {{ .Content }}
+          {{ with .Content }}
+          <div class="glossary-content">
+            {{ . }}
+          </div>
+          {{ end }}
+
+          <section class="glossary-grid-auto">
+            <h2>All Glossary Terms</h2>
+            <div class="term-grid">
+              {{ range .Pages.ByTitle }}
+              <div class="term-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+                {{ with .Params.glossary_category }}
+                <span class="term-category">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
             </div>
-
-            <!-- Grid automatique des termes -->
-            <section class="glossary-grid-auto">
-                <h2>All Glossary Terms</h2>
-                <div class="term-grid">
-                    {{ range .Pages }}
-                    <div class="term-card">
-                        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                        <p>{{ .Description }}</p>
-                        {{ with .Params.glossary_category }}
-                        <span class="term-category">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                    {{ end }}
-                </div>
-            </section>
+          </section>
         </article>
-    </main>
+      </div>
 
-    {{ partial "footer.html" . }}
-</body>
-</html>
+      {{ if $showSidebarOnThisPage }}
+        <aside class="sidebar">
+          {{ partial "sidebar.html" . }}
+        </aside>
+      {{ end }}
+
+    </div>
+  </main>
+{{ end }}
