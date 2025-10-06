@@ -119,7 +119,7 @@ I track this with a weekly alignment check, using this table as my guide:
 | Fresco (*Musivum*) | Emblem | Alignment Question | Historical Anchor |
 |---|---|---|---|
 | **Sapientia** (Wisdom) | 🦉 | Did my work create more than it consumed? | The great libraries of Italica & Alexandria |
-| **Opulentia** (Wealth) | ⚖️ | Did I build value, or just trade time? | The olive oil trade routes of ancient Baetica |
+| **Opulentia** (Wealth) | ⚖️ | Did I build value, or just trade time? See [The Olive Grove Economy](/money-freedom/olive-grove-economy/). | The olive oil trade routes of ancient Baetica |
 | **Communitas** (Community) | 🤝 | Whom did I nourish and connect with? | The communal life in the courtyards of Medina Azahara |
 | **Ars** (Craft) | ✋ | What skill did I deliberately hone? | The master artisan looms of Al-Andalus |
 | **Radices** (Roots) | 🌳 | Where did I plant meaning and connect to my heritage?| The millennial olive groves dotting the Spanish landscape |
@@ -131,7 +131,7 @@ I track this with a weekly alignment check, using this table as my guide:
 Adopting an artisan's mindset is a practice, not a quick fix. When your mosaic cracks, do not despair. A master restorer knows how to mend.
 
 *   **Problem: "A tessera avalanche! My desk is covered in broken tiles (too many chaotic notes)."**
-    *   **The Artisan's Solution: The *Ars Tria* (The Art of Three).** Don't try to shape them all. Once a week, quickly sort your raw notes into three piles: **Gold** (high-potential ideas to be shaped immediately), **Clay** (useful but not urgent material to be archived), and **Dust** (trivial noise to be discarded without guilt). A master knows not every stone is a gem.
+    *   **The Artisan's Solution: The *Ars Tria* (The Art of Three).** Don't try to shape them all. Once a week, quickly sort your raw notes into three piles: **Gold** (high-potential ideas to be shaped immediately), **Clay** (useful but not urgent material to be archived), and **Dust** (trivial noise to be discarded without guilt). A master knows not every stone is a gem. This requires a certain [ethical approach to your workflow](/ai-future/olive-tree-oracle/).
 
 *   **Problem: "Acta tyranny! All my tiles are red (everything is an urgent action)."**
     *   **The Artisan's Solution: The *Lex Cordubensis* (The Law of Córdoba).** Impose a daily quota. Your mind is not a legionary outpost. Mandate a balance: a maximum of 5 *Acta* (🔴), but a minimum of 3 *Cogitationes* (🔵) and 2 *Radices* (🟢). This forces you to rebalance your day away from pure reaction and toward [deep, creative work](/work-productivity/thermae-flow-state-deep-work/).
@@ -146,7 +146,7 @@ This system lives not in an app, but in practice. It comes to life through simpl
 {{< figure src="images/artisan-productivity-morning-ritual.jpg" alt="A calm desk scene for an artisan's morning productivity ritual, with coffee, a notebook, and a single zellige tile." caption="The Morning Ritual: where the day's intentions are carved with care." >}}
 
 #### **Matutinum: Tessera Sectio (Morning Tile Cutting)**
-Before any screen is touched, I sit at my cypress wood desk with a strong *café solo* in a terra cotta cup. This is my 7-minute window of pure clarity, a practice aligned with the body's natural ultradian rhythms for peak focus. I review the raw fragments from the day before, as if on a wax tablet, and shape them into clean *tesserae* in my notebook. I ask one guiding question: *"Quam tessellam hodie percutiam?"* (Which tile shall I strike today?)
+Before any screen is touched, I sit at my cypress wood desk with a strong *café solo* in a terra cotta cup. This is my 7-minute window of pure clarity, a practice aligned with the daily rituals of focus found in [The Baker's Code](/work-productivity/bakers-code/). I review the raw fragments from the day before, as if on a wax tablet, and shape them into clean *tesserae* in my notebook. I ask one guiding question: *"Quam tessellam hodie percutiam?"* (Which tile shall I strike today?)
 
 #### **Solis Die: Constitutio Siderum (Sunday Star Assembly)**
 This is my weekly *curia* (assembly) with myself. With the scent of Andalusian olive wood burning in a brazier, like a Roman offering, I lay out my five project "stellae" (as index cards) on a *tabula rasa* (a blank corkboard). I use colored threads to physically connect them to the five *musivum* cards. This tactile exercise makes any misalignment painfully obvious. A project is retired if its threads don't hold.
@@ -160,7 +160,7 @@ This isn't just theory. When building my "Phoenician Blockchain" article:
 
 ### 7. Becoming a Digital Magister Operis
 
-The Zellige Blueprint is more than a productivity system; it's a shift in identity. It transforms the dreary act of data management into the noble craft of building a legacy. When you shape a *tessera* with care, you are honoring the discipline of Seneca. When you align a *stella* with intention, you are continuing the work of Strabo, mapping your world with purpose.
+The Zellige Blueprint is more than a productivity system; it's a shift in identity, rooted in a [core philosophy foundation](/stories-wisdom/rooted-nomadism-philosophy/). It transforms the dreary act of data management into the noble craft of building a legacy. When you shape a *tessera* with care, you are honoring the discipline of Seneca. When you align a *stella* with intention, you are continuing the work of Strabo, mapping your world with purpose.
 
 You are not a slave to the blank page. You are a mosaic master, patiently composing the fragmented moments of your life into an *opus aeternum*—a timeless work.
 

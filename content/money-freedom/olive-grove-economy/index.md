@@ -79,7 +79,7 @@ March 16, 2020. Tangier's port lay unnaturally still. The scent of Rif mountain 
 
 I drove to Ksar El-Kébir through villages frozen mid-breath. At our family olive grove, I pressed my forehead against an ancestor-planted tree. Its bark felt like cooled lava, etched with centuries of droughts and invasions. *"How do you survive?"* I whispered. The wind answered through silver leaves: *"You measure wealth in roots, not fruits."*
 
-> That epiphany birthed this truth: **Digital nomads obsess over cash flow (fruits). True freedom grows from assets (roots).** This is the heart of the **[Olive Grove Economy](/glossary/olive-grove-economy/)**.
+> That epiphany birthed this truth: **Digital nomads obsess over cash flow (fruits). True freedom grows from assets (roots).** This is the heart of the **[Olive Grove Economy](/glossary/olive-grove-economy/)**, a powerful [alternative to the FIRE movement](/money-freedom/olive-grove-economy-vs-fire/).
 
 > For the complete philosophical foundation, explore the [**Olive Grove Economy glossary entry**](/glossary/olive-grove-economy/) with detailed definitions and principles.
 
@@ -108,7 +108,7 @@ Most freelancers operate as **human search engines**:
   - Repurpose 1 client project into foundational content (e.g., "7 SEO Lessons from Phoenician Merchants")
   - Build your **"Trust Reservoir"**: 3 authentic testimonials > 100 vague LinkedIn endorsements
 
-> 🏺 **My Pandemic Pivot:** With warehouses locked, I wrote "[The Zellige Blueprint](/glossary/zellige-blueprint/)". It became my port.
+> 🏺 **My Pandemic Pivot:** With warehouses locked, I wrote "[The Zellige Blueprint](/work-productivity/zellige-blueprint/)". It became my port.
 
 ---
 
