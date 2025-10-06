@@ -1,7 +1,7 @@
 ---
 title: "The Olive Grove Economy: A Mediterranean Answer to the FIRE Movement"
-date: 2025-11-20
-lastmod: 2025-11-20
+date: 2025-10-05
+lastmod: 2025-10-05
 draft: false
 description: "Is the FIRE movement's extreme saving leading to burnout? Discover the Olive Grove Economy, a Mediterranean philosophy for financial independence that prioritizes sustainable wealth, resilience, and a rich life *before* retirement."
 categories: ["Money & Freedom"]
