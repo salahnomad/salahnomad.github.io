@@ -1,25 +1,37 @@
 {{ define "main" }}
-<article class="start-here-page">
-  <div class="container narrow">
-    <header class="start-here-header">
-      
-      {{/* --- NOUVELLE LOGIQUE POUR L'IMAGE --- */}}
-      {{ with .Params.featured_image }}
-        {{ $image := $.Resources.GetMatch . }}
-        {{ if $image }}
-          {{ $image = $image.Resize "800x webp q80" }}
-          <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="start-here-featured-image" loading="eager">
-        {{ end }}
-      {{ end }}
-      {{/* --- FIN DE LA NOUVELLE LOGIQUE --- */}}
+  {{/* --- Logique pour déterminer si la sidebar doit être affichée --- */}}
+  {{ $showSidebarOnThisPage := .Site.Params.singlePageSidebar | default true }}
+  {{ if isset .Params "sidebar" }}
+    {{ $showSidebarOnThisPage = .Params.sidebar }}
+  {{ end }}
 
-      <h1>{{ .Title }}</h1>
-    </header>
-    
-    <div class="start-here-content">
-      {{ .Content }}
+  {{/* --- Conteneur principal qui s'adapte avec ou sans sidebar --- */}}
+  <div class="container start-here-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+
+    {{/* --- Colonne de contenu principale --- */}}
+    <div class="start-here-main-content">
+      <article class="start-here-page">
+        <header class="start-here-header">
+          {{ with .Params.featured_image }}
+            {{ $image := $.Resources.GetMatch . }}
+            {{ if $image }}
+              {{ $image = $image.Resize "800x webp q80" }}
+              <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="start-here-featured-image" loading="eager">
+            {{ end }}
+          {{ end }}
+          <h1>{{ .Title }}</h1>
+        </header>
+        
+        <div class="start-here-content">
+          {{ .Content }}
+        </div>
+      </article>
     </div>
 
+    {{/* --- Affichage de la sidebar si elle est activée --- */}}
+    {{ if $showSidebarOnThisPage }}
+       {{ partial "sidebar.html" . }}
+    {{ end }}
+
   </div>
-</article>
 {{ end }}

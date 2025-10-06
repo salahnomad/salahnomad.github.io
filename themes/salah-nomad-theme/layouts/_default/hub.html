@@ -1,151 +1,165 @@
 {{ define "main" }}
-<article class="hub-page">
-  <div class="container">
-    {{/* --- En-tête de la Page Hub --- */}}
-    <header class="hub-header">
-      {{ with .Params.featured_image }}
-        {{ $image := $.Resources.GetMatch . }}
-        {{ if $image }}
-          {{ $image = $image.Resize "1200x webp q85" }}
-          <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-featured-image" loading="lazy">
-        {{ end }}
-      {{ end }}
-      
-      {{ partial "breadcrumbs.html" . }}
-      
-      <h1>{{ .Title }}</h1>
-      
-      {{ with .Description }}
-        <p class="lead">{{ . }}</p>
-      {{ end }}
-      
-      {{ with .Params.us_optimization.ia_short_answer }}
-        <div class="ia-short-answer-card hub-ia-card">
-          <div class="ia-icon">🤖</div>
-          <div class="ia-content">
-            <strong>In a nutshell:</strong>
-            {{ . }}
-          </div>
-        </div>
-      {{ end }}
-    </header>
+  {{/* --- Logique pour déterminer si la sidebar doit être affichée --- */}}
+  {{ $showSidebarOnThisPage := .Site.Params.listPageSidebar | default true }}
+  {{ if isset .Params "sidebar" }}
+    {{ $showSidebarOnThisPage = .Params.sidebar }}
+  {{ end }}
 
-    {{/* --- Contenu Principal du Hub (Markdown de _index.md) --- */}}
-    <div class="hub-content">
-      {{ .Content }}
-    </div>
+  <div class="container hub-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
 
-    {{/* --- Grille des Articles de la Section ("Spokes") --- */}}
-    <section class="hub-spokes-section">
-      <h2>Deep Dive into {{ .Title }}</h2>
-      
-      {{ if .Pages }}
-      <div class="spokes-grid">
-        {{ $pages := .Pages.ByDate.Reverse }}
-        {{ range $pages }}
-          {{/* Utilise le rendu de carte si disponible, sinon un fallback */}}
-          {{ if templates.Exists "partials/card.html" }}
-            {{ .Render "card" }}
-          {{ else }}
-            <article class="spoke-card-fallback">
-              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-              {{ with .Description }}<p>{{ . }}</p>{{ end }}
-              <div class="card-meta">
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-                {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+    {{/* --- Colonne de contenu principale --- */}}
+    <div class="hub-main-content">
+      <article class="hub-page">
+        {{/* --- En-tête de la Page Hub --- */}}
+        <header class="hub-header">
+          {{ with .Params.featured_image }}
+            {{ $image := $.Resources.GetMatch . }}
+            {{ if $image }}
+              {{ $image = $image.Resize "1200x webp q85" }}
+              <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-featured-image" loading="lazy">
+            {{ end }}
+          {{ end }}
+          
+          {{ partial "breadcrumbs.html" . }}
+          
+          <h1>{{ .Title }}</h1>
+          
+          {{ with .Description }}
+            <p class="lead">{{ . }}</p>
+          {{ end }}
+          
+          {{ with .Params.us_optimization.ia_short_answer }}
+            <div class="ia-short-answer-card hub-ia-card">
+              <div class="ia-icon">🤖</div>
+              <div class="ia-content">
+                <strong>In a nutshell:</strong>
+                {{ . }}
               </div>
-            </article>
+            </div>
+          {{ end }}
+        </header>
+
+        {{/* --- Contenu Principal du Hub (Markdown de _index.md) --- */}}
+        <div class="hub-content">
+          {{ .Content }}
+        </div>
+
+        {{/* --- Grille des Articles de la Section ("Spokes") --- */}}
+        <section class="hub-spokes-section">
+          <h2>Deep Dive into {{ .Title }}</h2>
+          
+          {{ if .Pages }}
+          <div class="spokes-grid">
+            {{ $pages := .Pages.ByDate.Reverse }}
+            {{ range $pages }}
+              {{ if templates.Exists "partials/card.html" }}
+                {{ .Render "card" }}
+              {{ else }}
+                <article class="spoke-card-fallback">
+                  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                  <div class="card-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                    {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+                  </div>
+                </article>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ else }}
+          <div class="no-content-message">
+            <p>Articles for this collection are being crafted. In the meantime, explore our <a href="/compass/">core frameworks</a>.</p>
+          </div>
+          {{ end }}
+        </section>
+
+        {{/* --- Navigation Contextuelle vers Hubs Frères --- */}}
+        {{ $currentSection := .Section }}
+        {{ $sections := where (where .Site.Sections "Section" "!=" "") ".Params.headless" "ne" true }}
+        {{ $prev := "" }}{{ $next := "" }}
+        {{ range $i, $s := $sections }}
+          {{ if eq $s.Section $currentSection }}
+            {{ if gt $i 0 }}{{ $prev = index $sections (sub $i 1) }}{{ end }}
+            {{ if lt (add $i 1) (len $sections) }}{{ $next = index $sections (add $i 1) }}{{ end }}
           {{ end }}
         {{ end }}
-      </div>
-      {{ else }}
-      <div class="no-content-message">
-        <p>Articles for this collection are being crafted. In the meantime, explore our <a href="/compass/">core frameworks</a>.</p>
-      </div>
-      {{ end }}
-    </section>
 
-    {{/* --- NOUVEAU : Navigation Contextuelle vers Hubs Frères --- */}}
-    {{ $currentSection := .Section }}
-    {{ $sections := where .Site.Sections "Section" "!=" "" }}
-    {{ $prev := "" }}{{ $next := "" }}
-    {{ range $i, $s := $sections }}
-      {{ if eq $s.Section $currentSection }}
-        {{ if gt $i 0 }}{{ $prev = index $sections (sub $i 1) }}{{ end }}
-        {{ if lt (add $i 1) (len $sections) }}{{ $next = index $sections (add $i 1) }}{{ end }}
-      {{ end }}
-    {{ end }}
+        {{ if or $prev $next }}
+        <nav class="hub-context-nav">
+          <h3>Explore Related Hubs</h3>
+          <div class="hub-nav-grid">
+            {{ with $prev }}
+            <a href="{{ .RelPermalink }}" class="hub-nav-card prev-hub">
+              <span class="nav-arrow">&larr;</span>
+              <div>
+                <span class="nav-label">Previous Hub</span>
+                <strong>{{ .Title }}</strong>
+              </div>
+            </a>
+            {{ else }}
+             <div></div>
+            {{ end }}
+            
+            {{ with $next }}
+            <a href="{{ .RelPermalink }}" class="hub-nav-card next-hub">
+              <div>
+                <span class="nav-label">Next Hub</span>
+                <strong>{{ .Title }}</strong>
+              </div>
+              <span class="nav-arrow">&rarr;</span>
+            </a>
+            {{ end }}
+          </div>
+        </nav>
+        {{ end }}
+      </article>
+    </div>
 
-    {{ if or $prev $next }}
-    <nav class="hub-context-nav">
-      <h3>Explore Related Hubs</h3>
-      <div class="hub-nav-grid">
-        {{ with $prev }}
-        <a href="{{ .RelPermalink }}" class="hub-nav-card prev-hub">
-          <span class="nav-arrow">&larr;</span>
-          <div>
-            <span class="nav-label">Previous Hub</span>
-            <strong>{{ .Title }}</strong>
-          </div>
-        </a>
-        {{ else }}
-         <div></div> {{/* Espace vide pour garder la grille alignée */}}
-        {{ end }}
-        
-        {{ with $next }}
-        <a href="{{ .RelPermalink }}" class="hub-nav-card next-hub">
-          <div>
-            <span class="nav-label">Next Hub</span>
-            <strong>{{ .Title }}</strong>
-          </div>
-          <span class="nav-arrow">&rarr;</span>
-        </a>
-        {{ end }}
-      </div>
-    </nav>
+    {{/* --- Affichage de la Sidebar si elle est activée --- */}}
+    {{ if $showSidebarOnThisPage }}
+       {{ partial "sidebar.html" . }}
     {{ end }}
 
   </div>
-</article>
 
-{{/* --- NOUVEAU : Données Structurées JSON-LD Améliorées --- */}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "{{ .Title }}",
-  "description": "{{ .Description }}",
-  "url": "{{ .Permalink }}",
-  {{ with .Params.us_optimization.ia_short_answer }}
-  "abstract": "{{ . | safeJS }}",
-  {{ end }}
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": {{ len .Pages }},
-    "itemListElement": [
-      {{ range $index, $page := .Pages }}
-      {
-        "@type": "ListItem",
-        "position": {{ add $index 1 }},
-        "item": {
-          "@type": "Article",
-          "url": "{{ $page.Permalink }}",
-          "name": "{{ $page.Title }}",
-          "description": "{{ $page.Description | safeJS }}",
-          "datePublished": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}"
-        }
-      }{{ if ne (add $index 1) (len $.Pages) }},{{ end }}
-      {{ end }}
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ .Site.Params.organization.name }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ .Site.Params.organization.logo | absURL }}"
+  {{/* --- Données Structurées JSON-LD Améliorées --- */}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    "url": "{{ .Permalink }}",
+    {{ with .Params.us_optimization.ia_short_answer }}
+    "abstract": "{{ . | safeJS }}",
+    {{ end }}
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": {{ len .Pages }},
+      "itemListElement": [
+        {{ range $index, $page := .Pages }}
+        {
+          "@type": "ListItem",
+          "position": {{ add $index 1 }},
+          "item": {
+            "@type": "Article",
+            "url": "{{ $page.Permalink }}",
+            "name": "{{ $page.Title }}",
+            "description": "{{ $page.Description | safeJS }}",
+            "datePublished": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}"
+          }
+        }{{ if ne (add $index 1) (len $.Pages) }},{{ end }}
+        {{ end }}
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.organization.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.organization.logo | absURL }}"
+      }
     }
   }
-}
-</script>
+  </script>
 {{ end }}

@@ -26,6 +26,30 @@
   }
 }
 
+// Dans assets/scss/pages/_start-here.scss
+
+.start-here-page-container.has-sidebar {
+  display: grid;
+  grid-template-columns: 1fr; // Par défaut, une seule colonne sur mobile
+  gap: 2rem;
+
+  @media (min-width: 992px) { // Le point de rupture où la sidebar apparaît sur le côté
+    // La grille aura 2 colonnes : le contenu principal et la sidebar.
+    // `minmax(0, 1fr)` est une technique pour éviter les débordements de contenu.
+    // `300px` est une largeur fixe pour la sidebar.
+    grid-template-columns: minmax(0, 1fr) 300px; 
+  }
+
+  .start-here-main-content {
+    // Le contenu principal prend la première colonne
+  }
+
+  // La sidebar (qui est appelée par le partial) prendra la deuxième colonne
+  .sidebar {
+    // Styles spécifiques à la sidebar si nécessaire
+  }
+}
+
 .start-here-paths {
   display: grid;
   grid-template-columns: 1fr;
