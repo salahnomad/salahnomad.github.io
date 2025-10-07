@@ -23,24 +23,24 @@ resources:
 
 ### The Village That Whispers Resilience in the Jbala Tongue
 
-I still feel the first drops of **Anezzar**—the life-giving rain—on my face as we hurried back from Tattofte's Tuesday souk. Just 15km from Ksar El-Kébir, this village where the Jbala mountains begin speaks [**resilience**](/stories-wisdom/morisco-compass/) in its own language. Not through complex theories, but through the daily poetry of:
+I still feel the first drops of **Anezzar**—the life-giving rain—on my face as we hurried back from Tattofte's Tuesday souk. Just 15km from Ksar El-Kébir, this village where the Jbala mountains begin speaks [**resilience**]({{< relref "/stories-wisdom/morisco-compass/" >}}) in its own language. Not through complex theories, but through the daily poetry of:
 
 - **Anezzar** (the rain) that nourishes the cork oaks.
 - **Tagra** (the clay cooking pot) simmering in every home.
 - **Aberoo** (the rooster) announcing each dawn.
 - **Asallas** (the mountain darkness) that cradles restoration.
 
-These weren't just childhood memories; they were [**living wisdom keepers**](/place-belonging/art-of-seeing/). When I later faced business collapse and pandemic isolation, I understood how they held secrets no MBA could teach.
+These weren't just childhood memories; they were [**living wisdom keepers**]({{< relref "/place-belonging/art-of-seeing/" >}}). When I later faced business collapse and pandemic isolation, I understood how they held secrets no MBA could teach.
 
 ---
 
 ### Rain, Pot, Rooster, Darkness: The Jbala Resilience Quartet
 
 #### 1. Anezzar: Channeling Uncertainty
-I learned resilience watching Jbala farmers welcome **Anezzar**—the sudden mountain rain that could flood fields or bless crops. They didn't resist its unpredictability; they channeled it through meticulously built [**terraces**](/place-belonging/jbala-trail-guide/) and irrigation ditches. #AnezzarWisdom
+I learned resilience watching Jbala farmers welcome **Anezzar**—the sudden mountain rain that could flood fields or bless crops. They didn't resist its unpredictability; they channeled it through meticulously built [**terraces**]({{< relref "/place-belonging/jbala-trail-guide/" >}}) and irrigation ditches. #AnezzarWisdom
 
 *Nomad Translation:*
-Like Anezzar, market shifts are inevitable. Build "terraces"—diversified income streams, a solid emergency fund—to channel the energy of uncertainty into nourishment rather than disaster. This practical application is a core tenet of the [**Olive Grove Economy**](/money-freedom/olive-grove-economy/).
+Like Anezzar, market shifts are inevitable. Build "terraces"—diversified income streams, a solid emergency fund—to channel the energy of uncertainty into nourishment rather than disaster. This practical application is a core tenet of the [**Olive Grove Economy**]({{< relref "/money-freedom/olive-grove-economy/" >}}).
 
 {{< figure src="images/anezzar-rain-terraces-tattofte.jpg" alt="Rain falling on ancient, carefully constructed agricultural terraces in the Jbala mountains near Tattofte, Morocco." caption="Terraces sculpted by generations: where Anezzar's chaos becomes nourishment." >}}
 
@@ -48,7 +48,7 @@ Like Anezzar, market shifts are inevitable. Build "terraces"—diversified incom
 Every Jbala home had its **Tagra**, the conical clay pot where humble ingredients transformed through hours of patient simmering. "Rush the Tagra, ruin the feast," my grandmother would say. #TagraWisdom
 
 *Nomad Translation:*
-Your creative energy is the Tagra. Maintain a steady, low heat—through [focused deep work balanced with rest](/work-productivity/thermae-flow-state-deep-work/)—rather than boiling over with the frantic heat of "hustle." True creation requires patient containment.
+Your creative energy is the Tagra. Maintain a steady, low heat—through [focused deep work balanced with rest]({{< relref "/work-productivity/thermae-flow-state-deep-work/" >}})—rather than boiling over with the frantic heat of "hustle." True creation requires patient containment.
 
 {{< figure src="images/tagra-clay-pot-jbala-wisdom.jpg" alt="A traditional, rustic Jbala tagra, a conical clay cooking pot, simmering gently over a charcoal fire." caption="Tagra wisdom: True nourishment requires patient containment." >}}
 
@@ -113,4 +113,4 @@ When Google's algorithms shift or a client vanishes, I don't reach for business 
 #### **Your Roots, Your Resilience**
 - **Reflect:** Which of the four Jbala teachers—Anezzar, Tagra, Aberoo, or Asallas—speaks most directly to you today?
 - **Act:** Choose just one of these elements to consciously implement this week. Share your commitment in the comments below.
-- **Deeper Journey:** [Walk the terraced paths of Tattofte in my Jbala Trail Guide](/place-belonging/jbala-trail-guide/)
+- **Deeper Journey:** [Walk the terraced paths of Tattofte in my Jbala Trail Guide]({{< relref "/place-belonging/jbala-trail-guide/" >}})

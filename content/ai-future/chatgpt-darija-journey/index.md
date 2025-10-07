@@ -30,7 +30,7 @@ resources:
 
 Standing on the weathered ramparts of Ksar El-Kébir, my gaze drifts north across the Strait of Gibraltar. On certain mornings, the sea mist is so thick it erases the 15-kilometer frontier, and the sun-bleached hills of Andalusia seem to merge with the green mountains of Jbala. Below me, the Loukkos River winds its way to the Atlantic, the same waterway that carried Phoenician traders bearing olive oil amphorae two millennia ago. In that ephemeral bridge of fog, I hear the true sound of my mother tongue—a dialect not defined by modern borders, but shaped by the constant ebb and flow of this very strait.
 
-My grandmother Fatima's voice carried the salt of Larache's Atlantic sardines and the honeyed vowels of Málaga's vineyards. [Her language](/stories-wisdom/saffron-argan-algorithms/) was a living archive, a *darija* forged in the collision of Arabic, the indigenous Amazigh of the Rif, and the Castilian Spanish of a land just across the water. It's where "simana" (week) from Spanish *semana* dances with "azul" (hello in Amazigh), and where the guttural "gh" of our *qaf* echoes the ancient Arabic of Al-Andalus. This dialect isn't merely spoken; it's performed—each rolled "r" a nod to flamenco rhythms, each borrowed word a fossil of history.
+My grandmother Fatima's voice carried the salt of Larache's Atlantic sardines and the honeyed vowels of Málaga's vineyards. [Her language]({{< relref "/stories-wisdom/saffron-argan-algorithms/" >}}) was a living archive, a *darija* forged in the collision of Arabic, the indigenous Amazigh of the Rif, and the Castilian Spanish of a land just across the water. It's where "simana" (week) from Spanish *semana* dances with "azul" (hello in Amazigh), and where the guttural "gh" of our *qaf* echoes the ancient Arabic of Al-Andalus. This dialect isn't merely spoken; it's performed—each rolled "r" a nod to flamenco rhythms, each borrowed word a fossil of history.
 
 Today, I bring this archive to a machine born of a different coast, in Silicon Valley. I ask ChatGPT to understand the soul of a language where *"nevera"* (fridge) and *"bocadillo"* (sandwich) nestle beside Berber verbs like lovers reunited after 500 years of separation. This is not just a technical experiment. It's a pilgrimage to the heart of Rooted Nomadism—where identity lives in the untranslatable spaces between cultures, and where technology reveals not what it knows, but what only the human soul can carry.
 
@@ -69,7 +69,7 @@ Our vocabulary is a bustling marketplace where currencies from three civilizatio
 | **Alma**      | Sp. *alma*      | "Soul"          | The Andalusian echo in our breath |
 {{< /promptbox >}}
 
-#### 3. Grammatical Geometry: The [Zellige Pattern](/work-productivity/zellige-ux-philosophy/)
+#### 3. Grammatical Geometry: The [Zellige Pattern]({{< relref "/work-productivity/zellige-blueprint/" >}})
 Even our sentence structure bends to Jbala rhythms:
 - The prefix "Ka-" (indicating present continuous) softens to "Ra-": *"Rakoul"* (You eat) vs. Casablanca's *"Katakoul"*.
 - Word order shifts to emphasize community over individuality: *"L-ghorba darha f l-hanout"* (Exile lives in the shop) instead of standard *"Dar l-ghorba f l-hanout"*.
@@ -125,7 +125,7 @@ A catastrophic flattening. "Gana" isn't motivation; it's the spark ignited when 
 - The Arabic *غنى* (ghina - richness)
 - The Amazigh concept of *tamghra* (collective will)
 
-When we say "Kay 3tih l'gana," we speak of transferring [ancestral resolve](/money-freedom/jbala-resilience-quartet/)—something no LLM trained on individualistic cultures can grasp.
+When we say "Kay 3tih l'gana," we speak of transferring [ancestral resolve]({{< relref "/money-freedom/jbala-resilience-quartet/" >}})—something no LLM trained on individualistic cultures can grasp.
 
 #### Test 4: The Historical Echo Chamber (Philosophical Failure)
 **Prompt:**  
@@ -139,7 +139,7 @@ My longing ends, but exile remains."`
 
 **The Revelation:**  
 The AI missed the layered pain:
-- "Ma tghiyyash nunca": The Spanish "nunca" (never) intensifies the Arabic negation, embodying [dual identity](/stories-wisdom/morisco-compass/)
+- "Ma tghiyyash nunca": The Spanish "nunca" (never) intensifies the Arabic negation, embodying [dual identity]({{< relref "/stories-wisdom/morisco-compass/" >}})
 - "Hanina": Not just longing, but the specific ache for Granada's Alhambra
 - "Ghorba": Exile as a spiritual condition, not geographical
 
@@ -151,7 +151,7 @@ Our dialect carries historical trauma in its syntax—a dimension beyond AI's re
 
 {{< figure src="images/morisco-exile-linguistic-legacy-strait.jpg" alt="Une illustration poétique montrant des silhouettes de réfugiés Morisques traversant le détroit de Gibraltar, leurs ombres projetant des mots en arabe et en espagnol sur les vagues, représentant l'héritage linguistique du déplacement." caption="The linguistic legacy of displacement across the Mediterranean" class="left" >}}
 
-These tests revealed AI's core limitations—not as bugs, but as [philosophical chasms](/ai-future/olive-tree-oracle/):
+These tests revealed AI's core limitations—not as bugs, but as [philosophical chasms]({{< relref "/ai-future/olive-tree-oracle/" >}}):
 
 #### 1. Embodied Memory Gap
 An algorithm knows "rueda" means "wheel." It cannot feel:
@@ -191,7 +191,7 @@ For us, each anglicism is a tile falling from our zellige identity.
 
 ChatGPT failed spectacularly. Yet in its failure, it gifted me something profound: it became a flawless mirror. Every mistranslation reflected back the exquisite complexity of my heritage. When it reduced "gana" to "desire," I saw the centuries of resilience behind that word. When it butchered "bocadillo," I tasted my grandmother's fish-filled sandwiches by the Loukkos river.
 
-This experiment revealed AI's true purpose: not to replace human understanding, but to highlight what makes it irreplaceable. It's a powerful reminder of the need for an **[ethic of communication](/work-productivity/analog-api-communication/)** in our digital interactions. Our Jbala-Andalusian dialect isn't just communication—it's encrypted history, embodied geography, and a love letter between shores.
+This experiment revealed AI's true purpose: not to replace human understanding, but to highlight what makes it irreplaceable. It's a powerful reminder of the need for an **[ethic of communication]({{< relref "/work-productivity/analog-api-communication/" >}})** in our digital interactions. Our Jbala-Andalusian dialect isn't just communication—it's encrypted history, embodied geography, and a love letter between shores.
 
 As I stand again on Ksar El-Kébir's ramparts, I realize: technology hasn't threatened my roots. It's made them visible. In the glitch between "snowfield" and "fridge," I found my people's story.
 
