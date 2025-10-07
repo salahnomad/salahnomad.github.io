@@ -16,6 +16,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/resources/cultural-compass/art-of-seeing/"
+  - "/resources/cultural-compass/"
 cta: tool
 pillar_content: true
 ---

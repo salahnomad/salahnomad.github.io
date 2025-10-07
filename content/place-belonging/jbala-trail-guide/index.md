@@ -14,6 +14,7 @@ slug: "jbala-trail-guide"
 toc: true
 aliases:
   - "/resources/eco-nomad/jbala-trail-andalusian-legacy/"
+  - "/resources/eco-nomad/"
 resources:
   - src: "images/jbala-andalusian-mirror-trail.jpg"
     title: "The Jbala-Andalusian mirror: two lands, one soul."

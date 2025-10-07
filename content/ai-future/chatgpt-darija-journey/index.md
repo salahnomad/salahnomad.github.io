@@ -14,6 +14,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/cultural-bridges/language/chatgpt-darija-journey/"
+  - "/cultural-bridges/language/"
 cta: story
 resources:
   - src: "images/jbala-andalusian-language-ai-bridge.jpg"

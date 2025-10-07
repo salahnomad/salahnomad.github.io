@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/cultural-bridges/trade/phoenician-blockchain/"
+  - "/cultural-bridges/trade/"
 ---
 
 ### 1. A Sea of Ghosts and Data Streams

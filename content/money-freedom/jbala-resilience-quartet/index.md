@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/"
+  - "/rooted-futures/sustainable-nomadism/"
 cta: tool
 secondary_pillar: true
 resources:

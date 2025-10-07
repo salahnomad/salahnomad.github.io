@@ -13,6 +13,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/resources/wellness-on-the-move/ancestral-nomad-wellness-kit/"
+  - "/resources/wellness-on-the-move/"
 resources:
   - src: "images/ghassoul-clay-ritual-preparation.jpg"
     title: "The summer alchemy: Where my mother's hands taught raw earth the poetry of herbs."

@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/rooted-futures/post-digital-detox/olive-grove-rituals-salah-nomad/"
+  - "/rooted-futures/post-digital-detox/"
 ---
 
 ### Digital Ghosts in Mediterranean Paradise: The Nomad's Dilemma

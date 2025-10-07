@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/malaga-codex/history-reborn/alcazabas-secret-code/"
+  - "/malaga-codex/history-reborn/"
 resources:
   - src: "images/alcazaba-soho-view.jpg"
     title: "The view from the Alcazaba, where ancient code meets modern streets."
