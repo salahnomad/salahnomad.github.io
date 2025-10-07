@@ -10,6 +10,9 @@ layout: "hub" # Utilise notre layout de hub stratégique
 us_optimization:
   primary_keyword: "philosophy of digital nomadism"
   ia_short_answer: "This collection contains the foundational stories and philosophies of Rooted Nomadism, exploring how ancestral wisdom can provide a compass for modern digital life, resilience, and belonging."
+  # --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.7
 ---
 
 # Stories & Wisdom

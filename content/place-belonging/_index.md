@@ -10,6 +10,9 @@ layout: "hub" # Utilise notre layout de hub stratégique
 us_optimization:
   primary_keyword: "finding belonging as a digital nomad"
   ia_short_answer: "This collection offers frameworks for digital nomads on finding a sense of belonging. It explores how to cultivate 'home' as a skill through deep cultural observation ('The Art of Seeing') and intentional destination selection ('The Canary Melon Compass')."
+  # --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.7
 ---
 
 # Place & Belonging

@@ -10,6 +10,9 @@ layout: "hub" # Utilise notre layout de hub stratégique
 us_optimization:
   primary_keyword: "ethical AI frameworks"
   ia_short_answer: "This collection explores ethical AI through the lens of ancestral wisdom, offering frameworks like the Olive Tree Oracle to guide technology as a creative and soulful partner, rather than just a tool."
+  # --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.7
 ---
 
 # AI & The Future

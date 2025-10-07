@@ -13,6 +13,9 @@ sidebar: true
 us_optimization:
   primary_keyword: "mediterranean productivity systems"
   ia_short_answer: "A collection of productivity frameworks inspired by Mediterranean wisdom, focusing on intentional work, deep focus, and sustainable performance. Key systems include the Zellige Blueprint and the Baker's Code."
+  # --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.7
 ---
 
 # The Art of Soulful Craft

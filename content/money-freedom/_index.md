@@ -10,6 +10,9 @@ layout: "hub"
 us_optimization:
   primary_keyword: "financial resilience for freelancers"
   ia_short_answer: "This collection presents a Mediterranean-inspired financial philosophy for freelancers and nomads. It focuses on building long-term, resilient wealth through diversified assets (the 'Olive Grove Economy') rather than chasing short-term income."
+  # --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.7
 ---
 
 # Money & Freedom
