@@ -68,7 +68,7 @@ When distractions arise? Capture them on your "Parking Lot" notepad - honoring t
 
 ### 3. Frigidarium: The Shock of Consolidation
 
-> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, a core tenet of the artisan's mindset I explore in [**The Zellige Blueprint Philosophy**](/work-productivity/zellige-blueprint-philosophy/)."  
+> "After Barbotan-les-Thermes' thermal baths, the cold plunge shocked my system into clarity. Similarly, rushing project endings leaves **hollow regret**. True consolidation requires honoring completion, a core tenet of the artisan's mindset I explore in [**The Zellige Blueprint Philosophy**]({{< relref "/work-productivity/zellige-blueprint-philosophy/" >}})."  
 > *([Algorithmic Sardines, Chapter 7: Clay and Living Waters]({{< relref "/ebook/algorithmic-sardines/" >}}))*
 
 Post-deep work, most skip this vital chamber. Don't. Spend 10 minutes:
@@ -92,7 +92,7 @@ After consolidation, 20 minutes of true analog rest:
 - Gaze at olive trees (their fractal patterns calm minds)
 - **Absolutely no screens**
 
-Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism](/stories-wisdom/rooted-nomadism-philosophy/) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work](/work-productivity/espetos-epiphanies/) traditions.
+Neuroscience confirms these DMN-activating pauses aren't idle - they're when your brain connects ideas across distant neural networks, much like the [Rooted Nomadism]({{< relref "/stories-wisdom/rooted-nomadism-philosophy/" >}}) philosophy connects ancient wisdom with modern digital life. This restorative rhythm complements Mediterranean [slow work]({{< relref "/work-productivity/espetos-epiphanies/" >}}) traditions.
 
 ---
 

@@ -62,9 +62,9 @@ Rooted Nomadism emerged from 20+ years of lived experience spanning:
 ## Practical Applications
 
 ### For Digital Nomads
-- Building financial resilience through the [Olive Grove Economy](/glossary/olive-grove-economy/)
-- Creating soulful productivity systems with the [Zellige Blueprint](/glossary/zellige-blueprint/)
-- Navigating cultural complexity using the [Morisco Compass](/stories-wisdom/morisco-compass/)
+- Building financial resilience through the [Olive Grove Economy]({{< relref "/glossary/olive-grove-economy/" >}})
+- Creating soulful productivity systems with the [Zellige Blueprint]({{< relref "/glossary/zellige-blueprint/" >}})
+- Navigating cultural complexity using the [Morisco Compass]({{< relref "/stories-wisdom/morisco-compass/" >}})
 
 ### For Modern Professionals  
 - Finding purpose beyond hustle culture
@@ -77,9 +77,9 @@ Rooted Nomadism emerged from 20+ years of lived experience spanning:
 
 ## Further Reading
 
-- **[The Complete Rooted Nomadism Philosophy](/stories-wisdom/rooted-nomadism-philosophy/)**
-- [From Olive Trees to Algorithms: My Origin Story](/stories-wisdom/olive-trees-and-algorithms/)
-- [The Human Constellation: How Community Shapes Identity](/stories-wisdom/human-constellation/)
+- **[The Complete Rooted Nomadism Philosophy]({{< relref "/stories-wisdom/rooted-nomadism-philosophy/" >}})**
+- [From Olive Trees to Algorithms: My Origin Story]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}})
+- [The Human Constellation: How Community Shapes Identity]({{< relref "/stories-wisdom/human-constellation/" >}})
 
 ---
 
