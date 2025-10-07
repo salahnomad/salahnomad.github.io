@@ -10,6 +10,8 @@ featured_image: "images/grandmother-cookbook-ai-preservation.jpg"
 featured_image_alt: "A hand holding an old, worn handwritten recipe book placed next to a modern laptop displaying an artificial intelligence interface, symbolizing family heritage preservation through technology."
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/cultural-bridges/food/saffron-argan-algorithms/"
 resources:
   - src: "images/grandmother-cookbook-ai-preservation.jpg"
     title: "Bridging generations: from a handwritten past to a digital future."

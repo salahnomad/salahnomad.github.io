@@ -13,6 +13,8 @@ featured_image: "images/avignon-festival-stage-hero.jpg"
 featured_image_alt: "Medieval courtyard in Avignon transformed into contemporary festival stage at dusk - stone arches framing vibrant lighting"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/cultural-bridges/festivals/avignon-community-building-lessons/"
 cta: story
 
 resources:

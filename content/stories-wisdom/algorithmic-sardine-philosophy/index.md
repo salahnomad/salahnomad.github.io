@@ -11,6 +11,8 @@ featured_image: "images/algorithmic-sardine-hero.jpg"
 featured_image_alt: "A school of silver sardines swimming in a powerful, unified current between the abstracted coastlines of Spain and Morocco, symbolizing purposeful movement."
 authors: ["Salah Nomad"]
 toc: false
+aliases:
+  - "/about/philosophy/algorithmic-sardine-philosophy/"
 pillar_content: true
 cta: tool
 # --- AJOUTS STRATÉGIQUES ---

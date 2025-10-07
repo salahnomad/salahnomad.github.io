@@ -18,6 +18,10 @@ featured_image: "images/rooted-nomadism-concept.jpg"
 featured_image_alt: "Symbolic art of ancient olive tree roots transforming into a glowing digital network, representing the core concept of Rooted Nomadism philosophy"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/about/philosophy/anchored-nomad-manifesto-part-1/"
+  - "/about/philosophy/rooted-nomadism-philosophy/"
+  - "/about/philosophy/salah-philosophy/"
 pillar_content: true
 cta: philosophy
 

@@ -13,6 +13,8 @@ featured_image_alt: "A single, beautifully cracked zellige tile, with light shin
 
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/cultural-bridges/collaborations/ghost-of-ritual-hammam/"
 secondary_pillar: true
 cta: "story"
 ---

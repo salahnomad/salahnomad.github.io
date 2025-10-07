@@ -10,6 +10,8 @@ featured_image: "images/rooted-nomad-visa-alchemy-hero.jpg"
 featured_image_alt: "Ancient Moroccan compass with UK approved and France refused visa stamps embedded in zellige mosaic pattern surrounded by olive branches - Rooted Nomad visa alchemy"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/resources/visa-hacks/a-tale-of-two-visas/"
 cta: story
 
 resources:

@@ -11,6 +11,8 @@ featured_image: "images/human-constellation-hero.jpg"
 featured_image_alt: "A star map showing three key constellations labeled 'Pieter - Mirror', 'Sally - Bridge', and 'Zak - Anchor', against a backdrop of olive trees and digital circuitry."
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/about/testimonials/the-human-constellation/"
 pillar_content: true
 cta: community
 ---
