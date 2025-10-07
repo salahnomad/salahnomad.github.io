@@ -18,6 +18,8 @@ featured_image: "images/olive-grove-financial-resilience.jpg"
 featured_image_alt: "Ancient olive tree roots intertwined with glowing digital financial growth circuits representing resilient economic ecosystem"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/resources/nomad-finance/olive-grove-economy/"
 toc_heading: "Cultivate Your Financial Grove"
 pillar_content: true
 cta: finance

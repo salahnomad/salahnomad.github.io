@@ -10,6 +10,8 @@ featured_image: "images/jbala-resilience-quartet-tattofte.jpg"
 featured_image_alt: "Jbala Resilience Quartet: Rain terraces (Anezzar) | Clay tagine (Tagra) | Rooster at dawn (Aberoo) | Mountain night (Asallas) near Tattofte, Morocco"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/rooted-futures/sustainable-nomadism/the-jbala-resilience-quartet/"
 cta: tool
 secondary_pillar: true
 resources:
