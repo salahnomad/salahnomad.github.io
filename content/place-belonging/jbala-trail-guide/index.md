@@ -12,6 +12,8 @@ featured_image_alt: "Artistic montage of Alpujarra mountains in Andalusia mergin
 authors: ["Salah Nomad"]
 slug: "jbala-trail-guide"
 toc: true
+aliases:
+  - "/resources/eco-nomad/jbala-trail-andalusian-legacy/"
 resources:
   - src: "images/jbala-andalusian-mirror-trail.jpg"
     title: "The Jbala-Andalusian mirror: two lands, one soul."

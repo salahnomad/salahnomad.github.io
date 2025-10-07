@@ -10,6 +10,8 @@ featured_image: "images/alcazaba-soho-view.jpg"
 featured_image_alt: "A stunning view from the top of Málaga's Alcazaba, looking down at the modern, graffiti-adorned Soho district, symbolizing the dialogue between ancient soul and digital future."
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/malaga-codex/history-reborn/alcazabas-secret-code/"
 resources:
   - src: "images/alcazaba-soho-view.jpg"
     title: "The view from the Alcazaba, where ancient code meets modern streets."

@@ -14,6 +14,8 @@ featured_image_alt: "An antique brass compass resting on a vibrant, detailed cul
 
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/resources/cultural-compass/art-of-seeing/"
 cta: tool
 pillar_content: true
 ---

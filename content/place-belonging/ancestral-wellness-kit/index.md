@@ -11,6 +11,8 @@ featured_image: "images/ancestral-wellness-kit-hero.jpg"
 featured_image_alt: "A minimalist flat lay of an ancestral wellness kit: raw Ghassoul clay, Argan nuts, and dried herbs on a traditional, hand-woven Amazigh textile."
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/resources/wellness-on-the-move/ancestral-nomad-wellness-kit/"
 resources:
   - src: "images/ghassoul-clay-ritual-preparation.jpg"
     title: "The summer alchemy: Where my mother's hands taught raw earth the poetry of herbs."

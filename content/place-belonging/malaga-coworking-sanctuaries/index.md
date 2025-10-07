@@ -24,6 +24,8 @@ featured_image: "images/malaga-coworking-sanctuaries-hero.jpg"
 featured_image_alt: "Andalusian patio coworking space in Málaga with laptop and plants - ideal rooted nomad workspace"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/"
 
 # Image Resources for Hugo
 resources:
