@@ -8,6 +8,10 @@ comments: false
 featured_image: "images/contact-placeholder.jpg"
 featured_image_alt: "A digital tablet displaying a keyboard, set amidst a vibrant Moroccan souk scene with colorful spices and traditional goods, symbolizing modern contact in a traditional setting."
 description: "Connect with Salah Nomad. For collaborations, inquiries, or shared stories, this is the harbor for your message. Let's build bridges from the Mediterranean shores to the digital world."
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.2
+canonical: "/contact/"
 ---
 
 *"A message, like a sardine, travels best when guided by a trusted current. Let this be our channel."*

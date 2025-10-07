@@ -7,6 +7,10 @@ slug: terms # Assure l'URL /terms/
 comments: false
 featured_image: "images/terms-placeholder.jpg"
 featured_image_alt: "Scales of justice adorned with olive branches, alongside legal books and a gavel, symbolizing the balance of rights and responsibilities for Salah Nomad's website terms."
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.2
+canonical: "/terms/"
 ---
 
 *Where Digital Paths Meet Mediterranean Shores*

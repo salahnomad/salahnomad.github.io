@@ -9,6 +9,10 @@ comments: false
 # NOUVELLES LIGNES CI-DESSOUS :
 featured_image: "images/privacy-placeholder.jpg" # Chemin relatif à la racine du bundle
 featured_image_alt: "A wooden shield with a secure padlock, emerging from the roots of a sturdy tree with lush leaves, symbolizing data privacy and protection." # <<< VOTRE TEXTE ALT ICI
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.2
+canonical: "/privacy/"
 ---
 
 *Where Data Flows Like the Loukkos River*

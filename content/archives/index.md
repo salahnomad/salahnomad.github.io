@@ -8,6 +8,10 @@ featured_image_alt: "A historic clock tower amidst a fusion of ancient ledgers, 
 layout: single
 comments: false
 slug: archives
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.2
+canonical: "/archives/"
 ---
 
 Every story has a beginning, and every journey leaves a trail. This archive is the complete chronicle of the Rooted Nomad path, a library where you can travel back through time to trace the evolution of the ideas that shape this space.
