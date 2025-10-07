@@ -20,6 +20,8 @@ featured_image_alt: "Aged Moroccan artisan hands placing geometric zellige tile 
 comments: true
 schema_type: "Article"
 reading_time: 9
+aliases:
+  - "/digital-compass/future-of-nomadism/how-to-use-ai-like-a-scholar/"
 cta: tool
 ---
 

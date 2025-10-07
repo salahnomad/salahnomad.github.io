@@ -10,6 +10,8 @@ featured_image: "images/weaver-prompt-hero.jpg"
 featured_image_alt: "The hands of an Amazigh woman weaving a complex, symbolic pattern on a traditional loom, with glowing digital data streams emerging from the threads."
 authors: ["Salah Nomad"]
 toc: false
+aliases:
+  - "/rooted-futures/ai-ancestry/weavers-prompt/"
 pillar_content: true
 cta: tool
 ---

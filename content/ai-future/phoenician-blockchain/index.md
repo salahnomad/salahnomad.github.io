@@ -10,6 +10,8 @@ featured_image: "images/phoenician-ship-blockchain-sea.jpg"
 featured_image_alt: "Phoenician ship sailing on digital blockchain nodes, fusing ancient trade and modern tech"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/cultural-bridges/trade/phoenician-blockchain/"
 ---
 
 ### 1. A Sea of Ghosts and Data Streams

@@ -18,6 +18,8 @@ featured_image: "images/olive-tree-ai-oracle.jpg"
 featured_image_alt: "Ancient olive tree with data streams flowing through roots and branches at twilight, symbolizing fusion of nature and ethical technology"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/rooted-futures/ai-ancestry/olive-tree-oracle/"
 pillar_content: true
 cta: tool
 

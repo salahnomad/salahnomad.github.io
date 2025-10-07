@@ -10,6 +10,8 @@ featured_image: "images/olive-grove-detox-hero.jpg"
 featured_image_alt: "Abandoned smartphone under ancient olive tree - digital detox metaphor (Salah Nomad ritual)"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/rooted-futures/post-digital-detox/olive-grove-rituals-salah-nomad/"
 ---
 
 ### Digital Ghosts in Mediterranean Paradise: The Nomad's Dilemma

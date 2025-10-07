@@ -12,6 +12,8 @@ featured_image: "images/jbala-andalusian-language-ai-bridge.jpg"
 featured_image_alt: "Une mosaïque de zellige complexe où des mots en calligraphie arabe et des lettres espagnoles s'entremêlent, avec un câble USB lumineux tissé à travers le motif, symbolisant la connexion entre l'héritage linguistique Jbala-Andalou et l'intelligence artificielle."
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/cultural-bridges/language/chatgpt-darija-journey/"
 cta: story
 resources:
   - src: "images/jbala-andalusian-language-ai-bridge.jpg"
