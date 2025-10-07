@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/cultural-bridges/migration/morisco-compass-modern-diasporas/"
+  - "/cultural-bridges/migration/"
 pillar_content: true
 cta: story
 resources:

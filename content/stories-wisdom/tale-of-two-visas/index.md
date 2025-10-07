@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/resources/visa-hacks/a-tale-of-two-visas/"
+  - "/resources/visa-hacks/"
 cta: story
 
 resources:

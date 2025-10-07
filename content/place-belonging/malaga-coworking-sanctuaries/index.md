@@ -26,6 +26,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/malaga-codex/coworking-gems/malaga-coworking-sanctuaries/"
+  - "/malaga-codex/coworking-gems/"
 
 # Image Resources for Hugo
 resources:

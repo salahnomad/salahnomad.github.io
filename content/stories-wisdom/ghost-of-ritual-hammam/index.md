@@ -15,6 +15,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/cultural-bridges/collaborations/ghost-of-ritual-hammam/"
+  - "/cultural-bridges/collaborations/"
 secondary_pillar: true
 cta: "story"
 ---

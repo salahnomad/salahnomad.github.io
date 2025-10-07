@@ -12,6 +12,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/resources/nomad-tech-toolkit/evolving-nomad-toolkit/"
+  - "/resources/nomad-tech-toolkit/"
 resources:
   - src: "images/radio-to-iphone-zellige-map.jpg"
     title: "Radio to iPhone evolution through Moroccan zellige data pattern"

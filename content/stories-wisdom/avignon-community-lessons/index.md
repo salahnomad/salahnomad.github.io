@@ -15,6 +15,7 @@ authors: ["Salah Nomad"]
 toc: true
 aliases:
   - "/cultural-bridges/festivals/avignon-community-building-lessons/"
+  - "/cultural-bridges/festivals/"
 cta: story
 
 resources:
