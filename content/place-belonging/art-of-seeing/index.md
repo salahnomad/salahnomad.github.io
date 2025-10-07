@@ -19,6 +19,12 @@ aliases:
   - "/resources/cultural-compass/"
 cta: tool
 pillar_content: true
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Place & Belonging › Cultural Navigation"
+json_ld: true
+canonical: "/place-belonging/art-of-seeing/"
 ---
 
 ### The Ghost of London

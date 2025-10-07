@@ -451,9 +451,15 @@ enableRobotsTXT = true
   resampleFilter = "Lanczos"
   quality = 80
 
+# Dans votre fichier hugo.toml
+
 [sitemap]
   changefreq = "weekly"
-  priority = 0.5
+  priority = 0.5 # Priorité par défaut pour les pages sans spécification
   filename = "sitemap.xml"
+  
+  # --- LIGNES CRUCIALES À AJOUTER/MODIFIER ---
+  disable_taxonomies = true
+  disable_kinds = ["page"] # "page" ici fait référence aux pages de pagination comme /page/2/
 
 timeout = 1800000

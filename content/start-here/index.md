@@ -9,6 +9,11 @@ featured_image_alt: "Ancient wooden door opening to Mediterranean crossroads - o
 authors: ["Salah Nomad"]
 toc: true
 sidebar: true
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Home › Start Here"
+canonical: "/start-here/"
 ---
 
 ## Welcome to the Crossroads Between Ancient Wisdom and Digital Freedom

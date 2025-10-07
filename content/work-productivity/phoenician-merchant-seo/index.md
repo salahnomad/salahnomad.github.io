@@ -14,6 +14,12 @@ aliases:
   - "/resources/seo-alchemy/phoenician-merchant-seo/"
 cta: tool
 pillar_content: true
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Work & Productivity › SEO Strategy"
+json_ld: true
+canonical: "/work-productivity/phoenician-merchant-seo/"
 resources:
   - src: "images/phoenician-ship-digital-sea.jpg"
     title: "The Phoenician Merchant navigating the digital Mediterranean."

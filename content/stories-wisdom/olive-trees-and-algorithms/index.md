@@ -17,6 +17,12 @@ aliases:
   - "/about/story/olive-trees-and-algorithms/"
 pillar_content: true
 cta: story
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 1.0
+breadcrumb: "Stories & Wisdom › My Story"
+json_ld: true
+canonical: "/stories-wisdom/olive-trees-and-algorithms/"
 ---
 
 ### Prologue: The Silence of a World Shut Down
