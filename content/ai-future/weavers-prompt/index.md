@@ -14,6 +14,12 @@ aliases:
   - "/rooted-futures/ai-ancestry/weavers-prompt/"
 pillar_content: true
 cta: tool
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+breadcrumb: "AI & The Future › Creative AI"
+json_ld: true
+canonical: "/ai-future/weavers-prompt/"
 ---
 
 ### The Glitch in the Digital Soul

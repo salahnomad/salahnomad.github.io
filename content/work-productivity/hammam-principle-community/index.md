@@ -14,6 +14,12 @@ aliases:
   - "/digital-compass/cultural-design/hammam-principle/"
 pillar_content: true
 cta: community
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+breadcrumb: "Work & Productivity › Community Building"
+json_ld: true
+canonical: "/work-productivity/hammam-principle-community/"
 ---
 
 ### The Architecture of Naked Truth

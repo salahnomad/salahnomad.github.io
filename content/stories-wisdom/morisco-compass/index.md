@@ -15,6 +15,12 @@ aliases:
   - "/cultural-bridges/migration/"
 pillar_content: true
 cta: story
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+breadcrumb: "Stories & Wisdom › Identity"
+json_ld: true
+canonical: "/stories-wisdom/morisco-compass/"
 resources:
   - src: "images/morisco-compass-hero.jpg"
     title: "The Morisco Compass: Navigating identity across centuries"

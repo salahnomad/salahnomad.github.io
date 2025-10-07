@@ -14,6 +14,12 @@ cta: tool
 aliases:
   - "/resources/seo-alchemy/souk-algorithm/"
 pillar_content: true
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+breadcrumb: "Work & Productivity › Marketing"
+json_ld: true
+canonical: "/work-productivity/souk-algorithm/"
 ---
 
 ### The Stillness in the Chaos
