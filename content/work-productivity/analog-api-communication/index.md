@@ -10,6 +10,8 @@ featured_image: "images/analog-api-hero.jpg"
 featured_image_alt: "A vintage National Panasonic R-441B shortwave radio on a wooden desk, with ethereal light beams emanating from its speaker, symbolizing the birth of a digital ethic from analog scarcity."
 authors: ["Salah Nomad"]
 toc: false
+aliases:
+  - "/cultural-bridges/tech/analog-api/"
 pillar_content: true
 ---
 

@@ -13,6 +13,8 @@ featured_image_alt: "Freshly grilled espeto de sardinas on a skewer, silhouetted
 
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/malaga-codex/local-rituals/espetos-epiphanies/"
 secondary_pillar: true
 ---
 

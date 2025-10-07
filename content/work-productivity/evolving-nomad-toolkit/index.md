@@ -10,6 +10,8 @@ featured_image: "images/radio-to-iphone-zellige-map.jpg"
 featured_image_alt: "Rooted nomad tech evolution: vintage radio to iPhone connected by Moroccan zellige pattern over Mediterranean sea map"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/resources/nomad-tech-toolkit/evolving-nomad-toolkit/"
 resources:
   - src: "images/radio-to-iphone-zellige-map.jpg"
     title: "Radio to iPhone evolution through Moroccan zellige data pattern"

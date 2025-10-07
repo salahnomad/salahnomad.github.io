@@ -16,6 +16,8 @@ keywords: ["Zellige Blueprint", "Salah Nomad philosophy", "soulful productivity 
 
 # --- Author & Page Type ---
 authors: ["Salah Nomad"]
+aliases:
+  - "/about/philosophy/zellige-blueprint-philosophy/"
 pillar_content: true
 ---
 

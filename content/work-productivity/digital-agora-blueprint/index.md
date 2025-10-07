@@ -9,6 +9,8 @@ authors: ["Salah Nomad"]
 featured_image: "images/hero-digital-agora.jpg"
 featured_image_alt: "A closed MacBook on a café table at Place du Forum, Arles, with steaming mint tea and handwritten notes under golden hour lighting."
 toc: true
+aliases:
+  - "/resources/remote-work-zen/digital-agora-mediterranean-blueprint/"
 draft: false
 cta: community
 ---

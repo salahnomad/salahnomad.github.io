@@ -10,6 +10,8 @@ featured_image: "images/hammam-principle-hero.jpg"
 featured_image_alt: "A single, intense shaft of light pierces the steam in a traditional, ornate Moroccan hammam, illuminating the texture of ancient tiles and creating a sanctuary-like atmosphere."
 authors: ["Salah Nomad"]
 toc: false
+aliases:
+  - "/digital-compass/cultural-design/hammam-principle/"
 pillar_content: true
 cta: community
 ---

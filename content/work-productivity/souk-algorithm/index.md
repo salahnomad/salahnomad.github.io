@@ -11,6 +11,8 @@ featured_image_alt: "A wise, elderly Moroccan spice merchant's hands scooping vi
 authors: ["Salah Nomad"]
 toc: false
 cta: tool
+aliases:
+  - "/resources/seo-alchemy/souk-algorithm/"
 pillar_content: true
 ---
 

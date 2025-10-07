@@ -17,6 +17,8 @@ authors:
 featured_image: "images/digital-thermae-flow.jpg"
 featured_image_alt: "Laptop beside mint tea under Roman columns with zellige patterns - ancient serenity meets digital focus"
 toc: true
+aliases:
+  - "/resources/remote-work-zen/thermae-flow-state-deep-work/"
 pillar_content: true
 draft: false
 cta: tool

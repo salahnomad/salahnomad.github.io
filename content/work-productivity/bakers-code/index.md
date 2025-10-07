@@ -18,6 +18,8 @@ featured_image: "images/baker-code-hero.jpg"
 featured_image_alt: "Traditional baker's hands working with dough in early morning light, symbolizing focused deep work rituals and productive flow states"
 authors: ["Salah Nomad"]
 toc: true
+aliases:
+  - "/malaga-codex/local-rituals/bakers-code/"
 pillar_content: true
 cta: tool
 
