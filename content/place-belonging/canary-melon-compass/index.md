@@ -75,9 +75,9 @@ In that moment, we weren't officer and traveler. We were Mediterranean kin—lik
 
 ### Chapter 2: The Failure of Sterile Metrics
 
-We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe](/stories-wisdom/ghost-of-ritual-hammam/)** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing [cultural resonance](/place-belonging/art-of-seeing/).
+We nomads obsess over spreadsheets: cost indices, Wi-Fi speeds, visa scores. I worshipped these false idols—until **[Ritual Hammam Europe]({{< relref "/stories-wisdom/ghost-of-ritual-hammam/" >}})** collapsed in Arles' shadow. "Perfect" logistics couldn't compensate for missing [cultural resonance]({{< relref "/place-belonging/art-of-seeing/" >}}).
 
-Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy, a critique at the heart of the **[Algorithmic Sardine's philosophy of purposeful movement](/stories-wisdom/algorithmic-sardine-philosophy/)**.
+Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure. We went where earth whispered truth through mineral strata. This exposes conventional metrics' bankruptcy, a critique at the heart of the **[Algorithmic Sardine's philosophy of purposeful movement]({{< relref "/stories-wisdom/algorithmic-sardine-philosophy/" >}})**.
 
 > "Nomad List measures internet bandwidth, not **soul-bandwidth**.  
 > It quantifies rent, but not the **cost of cultural starvation**."
@@ -87,14 +87,14 @@ Remember Sally's clay expedition? We didn't choose the Atlas for infrastructure.
 #### 1. The Sweetness Test: Terroir Over Terrain
 > *What unique flavor nourishes your soul?*
 
-In Málaga, it's woodsmoke from **[espetos](/work-productivity/espetos-epiphanies/)** on Playa La Malagueta—the exact scent from Larache's sardine nets. Not tourism, but living ritual since Phoenician times.
+In Málaga, it's woodsmoke from **[espetos]({{< relref "/work-productivity/espetos-epiphanies/" >}})** on Playa La Malagueta—the exact scent from Larache's sardine nets. Not tourism, but living ritual since Phoenician times.
 
 *Action:* Find where locals gather at dusk. What aromas dominate? If no essence calls you, you're a ghost passing through.
 
 #### 2. The Rind Test: Cultural Resilience
 > *Does this place protect its core from globalization's erosion?*
 
-Like [Jbala's cork oaks](/place-belonging/jbala-trail-guide/) regenerating after stripping, resilient cultures maintain integrity. In Málaga, I found it in:
+Like [Jbala's cork oaks]({{< relref "/place-belonging/jbala-trail-guide/" >}}) regenerating after stripping, resilient cultures maintain integrity. In Málaga, I found it in:
 - Fishermen teaching sons the **exact angle** to skewer sardines
 - The raw *duende* in hidden flamenco *tablaos*, not staged shows
 
@@ -103,7 +103,7 @@ Like [Jbala's cork oaks](/place-belonging/jbala-trail-guide/) regenerating after
 #### 3. The Recognition Test: Ancestral Echoes
 > *Where does your history vibrate in this landscape?*
 
-When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmother's house in Ksar El-Kébir—proof my [Morisco ancestors](/stories-wisdom/morisco-compass/) carried home in muscle memory after the 1492 exile.
+When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmother's house in Ksar El-Kébir—proof my [Morisco ancestors]({{< relref "/stories-wisdom/morisco-compass/" >}}) carried home in muscle memory after the 1492 exile.
 
 {{< figure src="images/canary-melon-compass-framework.jpg" alt="Infographic of Canary Melon Compass framework: Sweetness (Terroir), Rind (Resilience), Recognition (Echoes)" caption="The melon compass for soulful destination choice" >}}
 
@@ -113,7 +113,7 @@ When I first saw Alhambra's zellige, tears fell. The patterns matched my grandmo
 |---------------|------------------------------------------|------------------------------------|
 | **Sweetness** | *Espetos* ritual at sunset               | Woodsmoke from Larache's sardine nets |
 | **Rind**      | Malagueños' fierce dialect protection    | Jbala tribes preserving traditions |
-| **Recognition**| [Alcazaba's Moorish arches](/place-belonging/malaga-alcazaba-code/) | Grandmother's courtyard in Ksar El-Kébir |
+| **Recognition**| [Alcazaba's Moorish arches]({{< relref "/place-belonging/malaga-alcazaba-code/" >}}) | Grandmother's courtyard in Ksar El-Kébir |
 
 This isn't finding replicas of home. It's discovering where **new landscapes converse with your inner topography**—like Pieter seeing the nomad in my Arles stillness.
 
@@ -121,7 +121,7 @@ This isn't finding replicas of home. It's discovering where **new landscapes con
 
 ### Epilogue: The Nomad's True North
 
-Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**. They taught me what no spreadsheet could, and their wisdom is a direct result of the **[origin of my philosophy of place, which began during the pandemic crisis](/stories-wisdom/olive-trees-and-algorithms/)**.
+Those twenty **melons from Ksar El-Kébir** now live in my philosophy like Axarquía's **millennial olive trees**. They taught me what no spreadsheet could, and their wisdom is a direct result of the **[origin of my philosophy of place, which began during the pandemic crisis]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}})**.
 
 > "We find home not by searching maps,  
 > but by recognizing landscapes that remember us  

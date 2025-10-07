@@ -47,7 +47,7 @@ Today, we swim in digital abundance. Yet I owe everything to that **sacred scarc
 ### Lesson 1: The Panasonic Protocol
 {{< figure src="images/panasonic-radio-shortwave.jpg" alt="Vintage National Panasonic radio tuning shortwave frequencies" caption="**Pre-internet lifeline:** My father's radio taught me global curiosity" >}}
 
-Long before cybercafés, my education came from a **National Panasonic RF-1400** shortwave radio. As I recount in [my origin story]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}}), tuning into crackling BBC broadcasts taught me patience - waiting minutes for signals to stabilize across continents. This was the birthplace of the **[inherited digital ethic I call The Analog API](/work-productivity/analog-api-communication/)**.
+Long before cybercafés, my education came from a **National Panasonic RF-1400** shortwave radio. As I recount in [my origin story]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}}), tuning into crackling BBC broadcasts taught me patience - waiting minutes for signals to stabilize across continents. This was the birthplace of the **[inherited digital ethic I call The Analog API]({{< relref "/work-productivity/analog-api-communication/" >}})**.
 
 **The Scarcity Principle:**  
 When I finally reached the cybercafé, I treated browser time like rare radio bandwidth. Before going online:
@@ -55,7 +55,7 @@ When I finally reached the cybercafé, I treated browser time like rare radio ba
 2. Predicted exact Google keywords
 3. Prepared offline text drafts
 
-> "Modern SEO was born from necessity: One search = one precious answer. This early focus on user intent, forged in scarcity, later evolved into a complete philosophy of human-centered value, which I call [**The Souk Algorithm**](/work-productivity/souk-algorithm/)."
+> "Modern SEO was born from necessity: One search = one precious answer. This early focus on user intent, forged in scarcity, later evolved into a complete philosophy of human-centered value, which I call [**The Souk Algorithm**]({{< relref "/work-productivity/souk-algorithm/" >}})."
 
 ### Lesson 2: The Zen of Loading Bars
 {{< figure src="images/dial-up-waiting.jpg" alt="Hand hovering over mouse as webpage loads slowly" caption="**Forced mindfulness:** Loading bars became meditation timers" >}}
@@ -90,7 +90,7 @@ Watching *maâlems* create zellige mosaics in Fès taught me what cybercafés co
 | Limited tile palette | Curate 3 essential tools |
 | Imperfections tell stories | Embrace "slow tech" errors |
 
-This early mindset, born from necessity, was the seed that would later blossom into the **[structured system I call The Zellige Blueprint](/work-productivity/zellige-blueprint/)**—a complete framework where constraints are not a limitation, but the very source of creative freedom.
+This early mindset, born from necessity, was the seed that would later blossom into the **[structured system I call The Zellige Blueprint]({{< relref "/work-productivity/zellige-blueprint/" >}})**—a complete framework where constraints are not a limitation, but the very source of creative freedom.
 
 ---
 

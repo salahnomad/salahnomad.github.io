@@ -92,7 +92,7 @@ The trauma of exile encoded what I call our **diaspora operating system**:
 - Resourcefulness modules developed in borderlands
 
 **This manifested when:**
-My e-commerce business collapsed during COVID lockdowns, a story of **[personal resilience developed](/stories-wisdom/olive-trees-and-algorithms/)** in the face of profound uncertainty. Instead of despairing, I launched this blog, transforming physical limitation into digital expansion. Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/money-freedom/jbala-resilience-quartet/" >}})**.
+My e-commerce business collapsed during COVID lockdowns, a story of **[personal resilience developed]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}})** in the face of profound uncertainty. Instead of despairing, I launched this blog, transforming physical limitation into digital expansion. Just as ancestors turned keys into plowshares, I turned failed ventures into philosophical frameworks of **[resilience]({{< relref "/money-freedom/jbala-resilience-quartet/" >}})**.
 
 ### 3. **Adaptation as Creative Fusion (Eastern Approach)**
 {{< figure 
