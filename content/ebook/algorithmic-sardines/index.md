@@ -7,6 +7,11 @@ description: "The full story of Rooted Nomadism. A memoir and manifesto for find
 layout: "single"
 authors: ["Salah Nomad"]
 toc: false
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "The Library › Algorithmic Sardines"
+canonical: "/ebook/algorithmic-sardines/"
 
 featured_image: "images/algorithmic-sardines-hero-4x3.jpg"
 featured_image_alt: "A copy of the book 'Algorithmic Sardines' held on a ferry, with the sea wake in the background, symbolizing a journey between worlds."

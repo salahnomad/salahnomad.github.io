@@ -3,6 +3,12 @@ title: "The Rooted Nomad's Library"
 description: "Dive deeper into the philosophy of Rooted Nomadism with my books. Each volume expands on the journey from ancestral wisdom to digital horizons."
 date: "2025-09-12T23:00:00+01:00"
 layout: "ebook-library"
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Home › The Library"
+json_ld: true
+canonical: "/ebook/"
 resources:
   - src: "images/library-banner.jpg"
     name: "library-hero-banner"
