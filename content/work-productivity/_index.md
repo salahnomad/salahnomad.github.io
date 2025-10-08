@@ -16,6 +16,7 @@ us_optimization:
   # --- SEO STRATÉGIQUE ---
 sitemap:
   priority: 0.7
+json_ld: true
 ---
 
 # The Art of Soulful Craft
