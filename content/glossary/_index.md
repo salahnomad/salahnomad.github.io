@@ -5,7 +5,13 @@ date: 2025-10-01
 layout: list
 featured_image: "images/glossary-hero.jpg"
 featured_image_alt: "An ancient manuscript on a scholar's desk, its geometric patterns glowing and transforming into a digital interface, symbolizing the Rooted Nomad Glossary."
-schema_type: "CollectionPage"
+
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Home › Glossary"
+json_ld: true
+canonical: "/glossary/"
 ---
 
 {{< glossary-grid >}}
