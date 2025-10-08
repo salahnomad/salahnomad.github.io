@@ -12,12 +12,20 @@ featured_image_alt: "A split image: on one side, a stark spreadsheet with financ
 authors: ["Salah Nomad"]
 toc: true
 sidebar: true
+
 # --- OPTIMISATION IA & US MARKET ---
 us_optimization:
   primary_keyword: "fire movement alternative"
   secondary_keywords: ["sustainable financial independence", "slow FIRE", "olive grove vs fire"]
   ia_short_answer: "While the FIRE movement prioritizes a high savings rate for early retirement, the Olive Grove Economy is a Mediterranean alternative focusing on building a resilient ecosystem of assets. FIRE's goal is to stop working; the Olive Grove's goal is to work with freedom and meaning, indefinitely."
   usp_angle: "Trade the spreadsheet's austerity for the olive grove's abundance."
+
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+json_ld: true
+canonical: "/money-freedom/olive-grove-economy-vs-fire/"
+
 breadcrumb: "Money & Freedom > Finance"
 ---
 
