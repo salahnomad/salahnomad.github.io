@@ -7,6 +7,13 @@ description: "Málaga is more than a city; it's a living codex where Phoenician 
 layout: list
 aliases:
   - "/categories/málaga-codex/"
+
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.8
+breadcrumb: "Home › Málaga Codex"
+json_ld: true
+canonical: "/malaga-codex/"
 ---
 
 Welcome to the Málaga Codex. This is not a travel guide. It is a key—a way of seeing my chosen anchor city not as a collection of sights, but as a living text rich with encoded wisdom. For the Rooted Nomad, Málaga is the perfect synthesis: a place where my Moroccan roots find their Andalusian echo, and where ancient rhythms provide the blueprint for a modern, digital life.
