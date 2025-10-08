@@ -6,6 +6,8 @@ description: "This is the heart of the caravan. The logbook of a voyage from anc
 featured_image: "images/stories-wisdom-hero.jpg"
 featured_image_alt: "An open, ancient leather-bound book on a wooden table. From its pages, a glowing, intricate root system grows outwards, symbolizing how personal narratives are the living source of the Rooted Nomadism philosophy."
 layout: "hub" # Utilise notre layout de hub stratégique
+aliases:
+  - "/categories/rooted-journeys/"
 # --- OPTIMISATION IA & US MARKET POUR LE HUB ---
 us_optimization:
   primary_keyword: "philosophy of digital nomadism"

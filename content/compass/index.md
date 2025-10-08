@@ -7,6 +7,9 @@ featured_image: "images/compass-frameworks-hero.jpg"
 featured_image_alt: "An antique brass compass open on a large, hand-drawn map of the Mediterranean, with key concepts like 'Zellige' and 'Olive Grove' sketched as constellations, symbolizing a guide to philosophical frameworks."
 layout: single
 slug: compass
+aliases:
+  - "/categories/digital-compass/"
+  - "/categories/resources/"
 # --- SEO STRATÉGIQUE ---
 sitemap:
   priority: 0.9

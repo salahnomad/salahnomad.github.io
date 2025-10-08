@@ -6,6 +6,8 @@ description: "Explore the hybrid alliance between artificial intelligence and ti
 featured_image: "images/ai-future-hero.jpg"
 featured_image_alt: "A symbolic image for the 'AI & The Future' section, where an ancient olive tree's gnarled roots seamlessly merge into glowing digital circuit patterns, visualizing the core philosophy of a hybrid alliance."
 layout: "hub" # Utilise notre layout de hub stratégique
+aliases:
+  - "/categories/rooted-futures/"
 # --- OPTIMISATION IA & US MARKET POUR LE HUB ---
 us_optimization:
   primary_keyword: "ethical AI frameworks"

@@ -6,6 +6,8 @@ description: "For the modern nomad, home is not a place you find, but a skill yo
 featured_image: "images/place-belonging-hero.jpg"
 featured_image_alt: "A traveler's hand holds an antique compass over a map. The needle points not north, but to a glowing, miniature, rooted tree at its center, symbolizing that true direction and belonging are found within."
 layout: "hub" # Utilise notre layout de hub stratégique
+aliases:
+  - "/categories/cultural-bridges/"
 # --- OPTIMISATION IA & US MARKET POUR LE HUB ---
 us_optimization:
   primary_keyword: "finding belonging as a digital nomad"

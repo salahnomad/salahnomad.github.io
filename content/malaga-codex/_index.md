@@ -5,6 +5,8 @@ draft: false
 featured_image: "images/malaga-codex.jpg"
 description: "Málaga is more than a city; it's a living codex where Phoenician trade routes and Moorish wisdom inform a vibrant digital renaissance. This is your key to deciphering it."
 layout: list
+aliases:
+  - "/categories/málaga-codex/"
 ---
 
 Welcome to the Málaga Codex. This is not a travel guide. It is a key—a way of seeing my chosen anchor city not as a collection of sights, but as a living text rich with encoded wisdom. For the Rooted Nomad, Málaga is the perfect synthesis: a place where my Moroccan roots find their Andalusian echo, and where ancient rhythms provide the blueprint for a modern, digital life.
