@@ -6,6 +6,14 @@ description: "The short version: how a Moroccan-born digital strategist forged a
 layout: single
 featured_image: "images/salah-author-portrait.jpg"
 featured_image_alt: "A professional and authentic portrait of Salah Nomad, founder of Rooted Nomadism. The photo, taken in Arles, captures his identity as a thoughtful bridge between traditional roots and the modern digital world, reflecting the core themes of his work."
+
+# --- SEO STRATÉGIQUE ---
+sitemap:
+  priority: 0.9
+breadcrumb: "Stories & Wisdom › My Story (Short)"
+json_ld: true
+canonical: "/stories-wisdom/salah-story/"
+
 aliases:
   - "/about/story/salah-story/"
 ---
