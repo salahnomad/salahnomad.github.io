@@ -1,7 +1,7 @@
 ---
 title: "Zellige Blueprint vs. GTD: Why Artisan Craft Beats Corporate Efficiency"
 date: 2025-10-02T10:00:00-05:00
-lastmod: 2025-11-10T10:00:00-05:00
+lastmod: 2025-10-02T10:00:00-05:00
 draft: false
 description: "Feeling trapped by your GTD inbox? Discover the Zellige Blueprint, a Mediterranean productivity system that trades corporate efficiency for artisan craftsmanship and soulful work. An alternative for creatives, entrepreneurs, and anyone seeking meaning, not just management."
 categories: ["Work & Productivity"]
