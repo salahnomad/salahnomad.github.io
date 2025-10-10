@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+    {{ partial "head.html" . }}
+    
+    <!-- Styles complets restaurés -->
+    {{ $styles := resources.Get "scss/pages/start-here-v2.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+</head>
+
+<body class="start-here-v2-page">
+    {{ partial "header.html" . }}
+
+    <!-- DEBUG: Container principal -->
+    <div class="start-here-v2-main-container" style="border: 2px solid blue; padding: 10px;">
+        <div class="start-here-v2-content-sidebar-wrapper" style="border: 2px solid green; padding: 10px;">
+            
+            <!-- Contenu principal -->
+            <main class="start-here-v2-content-with-sidebar" style="border: 2px solid orange; padding: 10px;">
+                <article class="start-here-v2-article">
+                    <header class="start-here-v2-header">
+                        <!-- Gestion image -->
+                        {{ with .Resources.GetMatch "start-here-hero.jpg" }}
+                            <div class="start-here-v2-featured-image">
+                                {{ $resized := .Fill "1200x630 q85 Center" }}
+                                <img src="{{ $resized.RelPermalink }}" 
+                                     alt="{{ $.Params.featured_image_alt | default "Start your Rooted Nomad journey" }}" 
+                                     class="start-here-v2-img" />
+                            </div>
+                        {{ else }}
+                            <div class="start-here-v2-featured-image start-here-v2-featured-fallback">
+                                <div class="start-here-v2-fallback-content">
+                                    <span class="start-here-v2-fallback-text">🚀 Start Your Rooted Nomad Journey</span>
+                                    <p style="margin-top: 1rem; opacity: 0.8;">DEBUG: Image fallback active</p>
+                                </div>
+                            </div>
+                        {{ end }}
+                        
+                        <h1 class="start-here-v2-title">{{ .Title }}</h1>
+                    </header>
+
+                    <div class="start-here-v2-content">
+                        {{ .Content }}
+                    </div>
+                </article>
+            </main>
+
+            <!-- SIDEBAR FORCÉE À APPARAÎTRE -->
+            <aside class="start-here-v2-sidebar" style="border: 2px solid red; background: yellow; padding: 20px; min-height: 300px;">
+                <div style="color: black; font-weight: bold; font-size: 1.5rem;">
+                    🔧 SIDEBAR DEBUG - SHOULD BE VISIBLE
+                </div>
+                
+                <!-- Test de la sidebar existante -->
+                {{ if templates.Exists "partials/sidebar.html" }}
+                    <div style="color: green; margin: 10px 0;">
+                        ✅ Partial sidebar.html EXISTS
+                    </div>
+                    {{ partial "sidebar.html" . }}
+                {{ else }}
+                    <div style="color: red; margin: 10px 0;">
+                        ❌ Partial sidebar.html NOT FOUND
+                    </div>
+                    <!-- Fallback manuel -->
+                    <div class="sidebar-fallback-test">
+                        <h3>🧭 Navigation de test</h3>
+                        <ul>
+                            <li><a href="/compass/">All Frameworks</a></li>
+                            <li><a href="/stories-wisdom/">Philosophy</a></li>
+                            <li><a href="/glossary/">Concepts</a></li>
+                        </ul>
+                    </div>
+                {{ end }}
+            </aside>
+
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+    <!-- JavaScript -->
+    {{ $js := resources.Get "js/start-here-v2.js" | js.Build (dict "minify" true) | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

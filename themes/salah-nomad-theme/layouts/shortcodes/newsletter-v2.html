@@ -1,0 +1,64 @@
+{{ $formspreeEndpoint := .Site.Params.sidebar.newsletter_mediterranean.form_action | default "https://formspree.io/f/mzzrrwrz" }}
+
+<div class="start-here-v2-newsletter" data-track="newsletter_section">
+    <div class="start-here-v2-newsletter-header">
+        <h2>Join 2,000+ Rooted Nomads Getting Weekly Wisdom</h2>
+    </div>
+    
+    <div class="start-here-v2-newsletter-content">
+        <ul class="start-here-v2-newsletter-benefits">
+            <li class="start-here-v2-benefit-item">
+                <span class="start-here-v2-benefit-icon">🎯</span>
+                <span class="start-here-v2-benefit-text"><strong>1 actionable insight</strong> from Mediterranean wisdom traditions</span>
+            </li>
+            <li class="start-here-v2-benefit-item">
+                <span class="start-here-v2-benefit-icon">📚</span>
+                <span class="start-here-v2-benefit-text"><strong>1 curated resource</strong> you won't find elsewhere</span>
+            </li>
+            <li class="start-here-v2-benefit-item">
+                <span class="start-here-v2-benefit-icon">💭</span>
+                <span class="start-here-v2-benefit-text"><strong>1 personal reflection</strong> from my own rooted nomad journey</span>
+            </li>
+        </ul>
+
+        {{ if $formspreeEndpoint }}
+        <form class="start-here-v2-newsletter-form" action="{{ $formspreeEndpoint }}" method="POST" target="_blank" novalidate>
+            <div class="start-here-v2-form-group">
+                <input type="text" 
+                       name="first_name" 
+                       placeholder="Your first name" 
+                       required 
+                       class="start-here-v2-form-input"
+                       aria-label="Your first name">
+            </div>
+            
+            <div class="start-here-v2-form-group">
+                <input type="email" 
+                       name="email" 
+                       placeholder="Your email address" 
+                       required 
+                       class="start-here-v2-form-input"
+                       aria-label="Your email address">
+            </div>
+            
+            <button type="submit" class="start-here-v2-btn-primary start-here-v2-newsletter-submit" data-track="newsletter_submit">
+                <span class="start-here-v2-btn-text">Join the Caravan →</span>
+                <span class="start-here-v2-btn-loading" aria-hidden="true"></span>
+            </button>
+            
+            <p class="start-here-v2-privacy-note">
+                <small>No spam, ever. Unsubscribe anytime. We respect your privacy.</small>
+            </p>
+            
+            <!-- Champs cachés Formspree -->
+            <input type="text" name="_gotcha" style="display:none !important">
+            <input type="hidden" name="_subject" value="New 'Mediterranean Insights' Subscriber from Start Here V2!">
+            <input type="hidden" name="source" value="start-here-page-v2">
+        </form>
+        {{ else }}
+          <p style="color: red; font-weight: bold; text-align: center;">
+            Newsletter configuration error: Please set Formspree endpoint in site parameters.
+          </p>
+        {{ end }}
+    </div>
+</div>

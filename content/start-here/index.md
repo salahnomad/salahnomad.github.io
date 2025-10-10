@@ -2,52 +2,73 @@
 title: "Start Here: Your Compass to Rooted Nomadism"
 date: 2025-10-02
 draft: false
-description: "New to Rooted Nomadism? Begin your journey here. Discover how to blend ancestral wisdom with modern freedom by choosing the path that resonates most with you."
-layout: "start-here"
+description: "Begin your journey to meaningful work and life. Choose your path: practical frameworks for immediate challenges or deep philosophy for lasting transformation."
+layout: "start-here-v2"
 featured_image: "images/start-here-hero.jpg"
 featured_image_alt: "Ancient wooden door opening to Mediterranean crossroads - one path to olive groves (roots), another to the sea (freedom) - symbolizing the start of your Rooted Nomad journey"
 authors: ["Salah Nomad"]
-toc: true
+toc: false
 sidebar: true
-# --- SEO STRATÉGIQUE ---
 sitemap:
   priority: 0.9
 breadcrumb: "Home › Start Here"
 canonical: "/start-here/"
+keywords: ["rooted nomadism", "digital nomad philosophy", "Mediterranean wisdom", "work-life balance", "financial resilience", "productive freedom", "ancestral wisdom"]
+topics: ["personal development", "digital nomad", "philosophy", "productivity", "financial independence"]
+search_intent: ["beginner guide", "philosophy introduction", "practical frameworks", "life transformation"]
+content_type: "comprehensive_guide"
+audience: ["digital nomads", "remote workers", "personal development seekers", "philosophy enthusiasts"]
 ---
 
-## Welcome to the Crossroads Between Ancient Wisdom and Digital Freedom
+## Tired of Choosing Between Roots and Wings?
 
-For twenty years, I've navigated the space between my Moroccan roots and life as a digital entrepreneur in Europe. I discovered a profound truth: **true freedom isn't found by escaping your past, but by learning to carry it as your most trusted compass.**
+For 20 years, I've solved the modern nomad's dilemma: **how to build wealth and freedom without losing your soul in the process.**
 
-This is Rooted Nomadism—a philosophy and practical system for building a resilient, meaningful life in our hyper-mobile world. Whether you're seeking deeper purpose, financial independence, or authentic community, you've come to the right place.
+The secret isn't in Silicon Valley's latest hack. It's in a 2,000-year-old Mediterranean principle: **true freedom comes from deeper roots, not just wider travels.**
 
-## Begin Your Journey: Choose Your Starting Point
+This is Rooted Nomadism—where ancient wisdom meets modern ambition.
 
-Every traveler begins somewhere different. Where would you like to start?
+## Begin Your Journey: What's Your Primary Quest Right Now?
 
-{{< start-here-paths >}}
+{{< start-here-paths-v2 >}}
 
----
+## Already Using Popular Systems? Here's Your Upgrade.
 
-## Coming from Popular US Frameworks?
+{{< comparison-grid-v2 >}}
 
-Our Mediterranean philosophy offers a soulful alternative to many popular American systems. See how our approach compares:
+## 🤔 Frequently Asked Questions
 
-- **For Productivity:** If you're familiar with GTD and seeking a more creative way to work, discover the artisan's path.
-  **[Read the Comparison: Zellige Blueprint vs. GTD](/work-productivity/zellige-blueprint-vs-gtd/)**
+### **1. What exactly is Rooted Nomadism?**
+**Answer:** Rooted Nomadism is my philosophy for thriving in our hyper-mobile world. It's the art of carrying your cultural heritage not as baggage, but as a compass. Instead of choosing between roots and wings, we learn to let our ancestral wisdom guide our digital journeys.
 
-- **For Financial Independence:** If you follow the FIRE movement, explore a path focused on resilience and a rich life *before* retirement.
-  **[Read the Comparison: Olive Grove Economy vs. FIRE](/money-freedom/olive-grove-economy-vs-fire/)**
----
+**→ [Deep Dive into the Philosophy](/stories-wisdom/rooted-nomadism-philosophy/)**
 
-## Join Our Caravan of Intentional Travelers
+### **2. How is your "Olive Grove Economy" different from the FIRE movement?**
+**Answer:** While FIRE focuses on aggressive saving to escape work, the Olive Grove Economy focuses on cultivating a resilient ecosystem of assets so you can do more meaningful work. FIRE is a sprint to retirement; the Olive Grove is a lifelong cultivation.
 
-The deepest insights often happen around the campfire, not on the main trail. Join "Mediterranean Insights"—my weekly letter where I share exclusive stories, early frameworks, and personal reflections you won't find anywhere else.
+**→ [Compare the Approaches](/money-freedom/olive-grove-economy-vs-fire/)**
 
-{{< newsletter >}}
+### **3. How can ancient Mediterranean wisdom help my modern productivity?**
+**Answer:** Modern productivity often means doing more faster. Mediterranean wisdom teaches us to do less, but better. My "Zellige Blueprint" draws from Moroccan tile artisans who understood that true beauty comes from intentional composition.
 
----
+**→ [Discover Zellige Blueprint](/work-productivity/zellige-blueprint/)**
 
-**Quick Navigation:**  
-[About Me](/stories-wisdom/olive-trees-and-algorithms/) • [All Articles](/archives/) • [Contact](/contact/)
+### **4. What's the biggest mistake digital nomads make?**
+**Answer:** Chasing geographic freedom while carrying mental captivity. We obsess over Wi-Fi speeds and cost of living, but forget to ask: "Does this place nourish my soul?"
+
+**→ [Find Better Destinations](/place-belonging/canary-melon-compass/)**
+
+### **5. How do I start applying Rooted Nomadism to my life?**
+**Answer:** Begin with one simple ritual: ask "What would the olive tree do?" When faced with a decision, consider the tree's wisdom—grow deep roots, be patient through seasons.
+
+**→ [Continue Your Journey Here](/start-here/)**
+
+## Join 2,000+ Rooted Nomads Getting Weekly Wisdom
+
+{{< newsletter-v2 >}}
+
+<div class="start-here-v2-quick-nav">
+  <a href="/stories-wisdom/olive-trees-and-algorithms/">My Origin Story</a> • 
+  <a href="/compass/">All Frameworks</a> • 
+  <a href="/contact/">Contact</a>
+</div>
