@@ -369,47 +369,69 @@ enableRobotsTXT = true
     parent = "read"
     weight = 34
 
-  [[menu.secondary]]
-    identifier = "connect"
-    name = "Connect"
-    weight = 40
-    url = "#"
-    [menu.secondary.params]
-      dropdown = true
-      icon = "anchor"
-  [[menu.secondary]]
-    name = "Contact Me"
-    url = "/contact/"
-    parent = "connect"
-    weight = 41
-  [[menu.secondary]]
-    name = "Join Newsletter"
-    url = "#sidebar-newsletter-anchor"
-    parent = "connect"
-    weight = 42
-  [[menu.secondary]]
-    name = "All My Links"
-    url = "/connect/hub/"
-    parent = "connect"
-    weight = 43
+# ---------------------------------------------------------------------------
+# MENU SECONDAIRE (SECONDARY MENU) - La Boîte à Outils
+# ---------------------------------------------------------------------------
+[[menu.secondary]]
+  identifier = "connect"
+  name = "Connect"
+  weight = 40
+  url = "#"
+  [menu.secondary.params]
+    dropdown = true
+    icon = "anchor"
+
+# --- AJOUT DE LA FAQ EN PREMIER DANS CONNECT ---
+[[menu.secondary]]
+  name = "FAQ 🤔"  # L'emoji ajoute de la personnalité
+  url = "/faq/"
+  parent = "connect"
+  weight = 41
+
+[[menu.secondary]]
+  name = "Contact Me"
+  url = "/contact/"
+  parent = "connect"
+  weight = 42
+
+[[menu.secondary]]
+  name = "Join Newsletter"
+  url = "#sidebar-newsletter-anchor"
+  parent = "connect"
+  weight = 43
+
+[[menu.secondary]]
+  name = "All My Links"
+  url = "/connect/hub/"
+  parent = "connect"
+  weight = 44
 
   # --- MENU FOOTER (MODIFIÉ) ---
   [[menu.footer]]
     name = "My Story"
     url = "/stories-wisdom/salah-story/"
     weight = 5
+
+  [[menu.footer]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 7
+
   [[menu.footer]]
     name = "Contact"
     url = "/contact/"
     weight = 10
+
   [[menu.footer]]
     name = "The Library"
     url = "/ebook/"
     weight = 15
+
   [[menu.footer]]
     name = "Legal Notice"
     url = "/terms/"
     weight = 20
+
   [[menu.footer]]
     name = "Privacy"
     url = "/privacy/"

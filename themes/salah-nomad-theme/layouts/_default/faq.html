@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+    {{ partial "head.html" . }}
+    
+    <!-- FAQ Structured Data -->
+    {{ partial "faq-complete-structured-data.html" . }}
+    
+    <!-- FAQ Styles -->
+    {{ $faqStyles := resources.Get "scss/pages/faq.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $faqStyles.RelPermalink }}" integrity="{{ $faqStyles.Data.Integrity }}">
+</head>
+
+<body class="faq-page">
+    {{ partial "header.html" . }}
+
+    <div class="container single-page-container has-sidebar">
+        <div class="single-main-content">
+            
+            {{ partial "breadcrumbs.html" . }}
+
+            <article class="post-single hentry">
+                <header class="post-header">
+                    <h1 class="post-title p-name">{{ .Title }}</h1>
+                    <p class="post-description">{{ .Description }}</p>
+                    
+                    <!-- Gestion robuste de l'image featured -->
+                    {{ $featuredImage := .Resources.GetMatch "images/faq-hero.jpg" | default (.Resources.GetMatch "faq-hero.jpg") }}
+                    {{ with $featuredImage }}
+                        <figure class="post-featured-image">
+                            {{ $resized := .Fill "1200x400 q85 Center" }}
+                            <img src="{{ $resized.RelPermalink }}" 
+                                 alt="{{ $.Params.featured_image_alt | default "Rooted Nomadism FAQ" }}" 
+                                 class="single-featured-image-img" />
+                            {{ with $.Params.featured_image_caption }}
+                                <figcaption>{{ . }}</figcaption>
+                            {{ end }}
+                        </figure>
+                    {{ else }}
+                        <!-- Fallback avec le même style que les autres pages -->
+                        <div class="post-featured-image featured-image-fallback">
+                            <div class="fallback-content">
+                                <span class="fallback-text">🤔 Complete FAQ</span>
+                                <p>All Your Rooted Nomadism Questions Answered</p>
+                            </div>
+                        </div>
+                    {{ end }}
+                </header>
+
+                <div class="post-content e-content faq-content">
+                    {{ .Content }}
+                </div>
+
+                <footer class="post-footer">
+                    {{ partial "post-share.html" . }}
+                </footer>
+            </article>
+
+        </div><!-- /.single-main-content -->
+
+        {{ partial "sidebar.html" . }}
+
+    </div><!-- /.container -->
+
+    {{ partial "footer.html" . }}
+
+    <!-- CHARGEMENT DU JAVASCRIPT GÉNÉRAL DU THÈME -->
+    {{ if templates.Exists "partials/js.html" }}
+        {{ partial "js.html" . }}
+    {{ else }}
+        <!-- Fallback: Chargement manuel des scripts principaux -->
+        {{ $mainJs := resources.Get "js/main.js" | default (resources.Get "js/theme.js") }}
+        {{ if $mainJs }}
+            {{ $mainJs = $mainJs | js.Build (dict "minify" true) | fingerprint }}
+            <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
+        {{ end }}
+    {{ end }}
+
+    <!-- FAQ JavaScript -->
+    {{ $faqJs := resources.Get "js/faq.js" | js.Build (dict "minify" true) | fingerprint }}
+    <script src="{{ $faqJs.RelPermalink }}" integrity="{{ $faqJs.Data.Integrity }}" defer></script>
+
+    <!-- SCRIPT DE SECOURS POUR LE MENU MOBILE ET DARK MODE -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('🔧 Initialisation des fonctionnalités générales de la FAQ...');
+        
+        // Dark Mode Toggle - Fallback
+        const darkModeToggle = document.querySelector('.dark-mode-toggle, [data-dark-mode-toggle]');
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function() {
+                console.log('🌙 Toggle Dark Mode cliqué');
+                document.body.classList.toggle('dark-mode');
+                // Sauvegarder la préférence
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('darkMode', isDark);
+            });
+        }
+
+        // Menu Mobile Toggle - Fallback
+        const menuToggle = document.querySelector('.menu-toggle, [data-menu-toggle]');
+        const mobileMenu = document.querySelector('.mobile-menu, [data-mobile-menu]');
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', function() {
+                console.log('📱 Toggle Menu Mobile cliqué');
+                mobileMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        }
+
+        // Application du dark mode au chargement
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    });
+    </script>
+</body>
+</html>
