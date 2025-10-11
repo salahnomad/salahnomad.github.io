@@ -481,7 +481,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
   
   # --- LIGNES CRUCIALES À AJOUTER/MODIFIER ---
-  disable_taxonomies = true
+  disable_taxonomies = false
   disable_kinds = ["page"] # "page" ici fait référence aux pages de pagination comme /page/2/
 
 timeout = 1800000

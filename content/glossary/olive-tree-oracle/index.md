@@ -9,7 +9,7 @@ tags: ["ai", "ethics", "technology", "olive-tree-oracle"]
 featured_image: "images/olive-tree-oracle-concept.jpg"
 featured_image_alt: "A majestic, ancient olive tree at twilight with glowing data streams flowing through its roots and branches, representing the Olive Tree Oracle protocol for ethical AI."
 glossary_term: true
-glossary_category: "Ethical Technology"
+glossary_category: "Ethical Technology" # <-- LIGNE AJOUTÉE
 related_concepts:
   - "Weaver's Prompt"
   - "Rooted Nomadism"

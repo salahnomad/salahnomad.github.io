@@ -9,7 +9,7 @@ tags: ["philosophy", "purposeful-travel", "algorithmic-sardine"]
 featured_image: "images/algorithmic-sardine-concept.jpg"
 featured_image_alt: "A school of silver sardines swimming in unison, forming a powerful arrow shape, symbolizing the Algorithmic Sardine philosophy of purposeful movement."
 glossary_term: true
-glossary_category: "Foundational Philosophy"
+glossary_category: "Foundational Philosophy" # <-- LIGNE AJOUTÉE
 related_concepts: 
   - "Rooted Nomadism"
   - "Olive Grove Economy"

@@ -1,0 +1,14 @@
+# data/glossary_categories.yaml
+# Fichier de configuration pour les catégories du glossaire
+
+- name: "Foundational Philosophy"
+  emoji: "🧭"
+- name: "Productivity Systems"
+  emoji: "⚙️"
+- name: "Financial Resilience"
+  emoji: "💰"
+- name: "Ethical Technology"
+  emoji: "🤖"
+- name: "Travel & Belonging"
+  emoji: "🌍"
+# Ajoutez d'autres catégories ici si nécessaire

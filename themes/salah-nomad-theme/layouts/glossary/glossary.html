@@ -1,0 +1,129 @@
+{{ define "head" }}
+    {{ partial "head.html" . }}
+    
+    <!-- Schema.org for CollectionPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "{{ .Title | safeJS }}",
+        "description": "{{ .Description | safeJS }}",
+        "url": "{{ .Permalink }}",
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": {{ len .Pages }},
+            "itemListElement": [
+                {{ range $index, $page := .Pages.ByTitle }}
+                {
+                    "@type": "ListItem",
+                    "position": {{ add $index 1 }},
+                    "item": {
+                        "@type": "DefinedTerm",
+                        "name": "{{ $page.Title | safeJS }}",
+                        "description": "{{ $page.Description | safeJS }}",
+                        "url": "{{ $page.Permalink }}"
+                    }
+                }{{ if ne (add $index 1) (len $.Pages) }},{{ end }}
+                {{ end }}
+            ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ .Site.Params.organization.name }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.organization.logo | absURL }}"
+          }
+        }
+    }
+    </script>
+{{ end }}
+
+{{ define "main" }}
+  {{ $showSidebarOnThisPage := true }}
+
+  <div class="container main-content-container">
+    <div class="content-loop-wrap {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+      
+      <div class="post-list content-loop">
+        <article class="glossary-page-article">
+          {{ partial "breadcrumbs.html" . }}
+          
+          <header class="page-header list-page-header">
+            {{ with .Resources.GetMatch (.Params.featured_image | default "images/glossary-hero.jpg") }}
+              {{ $image := .Fill "800x450 webp q85 Center" }}
+              <figure class="section-featured-image">
+                <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="section-page-featured-img" loading="eager">
+              </figure>
+            {{ end }}
+
+            <h1 class="page-title list-page-title">{{ .Title }}</h1>
+            {{ with .Description }}
+              <div class="page-description list-page-description taxonomy-description">{{ . }}</div>
+            {{ end }}
+          </header>
+
+          <div class="glossary-intro-content">
+            {{ .Content }}
+          </div>
+
+          {{/* --- GRILLE DE CATÉGORIES AVEC EMOJIS --- */}}
+          {{ $pages := .Pages }}
+          {{ $categories := $pages.GroupByParam "glossary_category" }}
+          {{ $category_data := site.Data.glossary_categories }}
+          
+          <section class="glossary-featured-categories">
+            {{ range sort $categories ".Key" }}
+              {{ $current_key := .Key }}
+              {{ $cat_info := where $category_data "name" $current_key | first 1 }}
+              {{ $emoji := "" }}
+              {{ with $cat_info }}{{ $emoji = index . 0 "emoji" }}{{ end }}
+
+              <div class="category-group">
+                <h2 class="category-title">{{ with $emoji }}{{ . }} {{ end }}{{ .Key }}</h2>
+                <div class="category-terms-grid">
+                  {{ range .Pages.ByTitle }}
+                    <a href="{{ .RelPermalink }}" class="category-term-link">
+                      <strong>{{ .Title }}</strong>
+                      <span>{{ .Description }}</span>
+                    </a>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </section>
+
+          <hr class="glossary-separator">
+
+          {{/* --- GRILLE DE CARTES POUR "ALL TERMS" --- */}}
+          <section class="glossary-all-terms">
+            <h2 class="all-terms-title">All Glossary Terms</h2>
+            <div class="article-grid list-page-grid">
+              {{ range $pages.ByTitle }}
+                <div class="article-card term-card-item">
+                  <div class="card-content">
+                    <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Description }}</p>
+                    <div class="card-footer">
+                      {{ $current_key := .Params.glossary_category }}
+                      {{ $cat_info := where $category_data "name" $current_key | first 1 }}
+                      {{ $emoji := "" }}
+                      {{ with $cat_info }}{{ $emoji = index . 0 "emoji" }}{{ end }}
+                      
+                      <span class="term-category-tag">{{ with $emoji }}{{ . }} {{ end }}{{ .Params.glossary_category }}</span>
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </section>
+        </article>
+      </div>
+
+      {{ if $showSidebarOnThisPage }}
+         {{ partial "sidebar.html" . }}
+      {{ end }}
+
+    </div>
+  </div>
+{{ end }}

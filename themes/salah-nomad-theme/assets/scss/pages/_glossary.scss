@@ -1,6 +1,7 @@
 // assets/scss/pages/_glossary.scss
+// Version 3.3 - Fichier complet avec grille de termes, fond corrigé, emojis et titres colorés.
+// Conçu pour s'intégrer parfaitement au thème existant en utilisant ses variables de couleur.
 
-// Conteneur principal avec gestion de la sidebar
 .glossary-page-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -16,7 +17,21 @@
   }
 }
 
-// Header de la page
+.glossary-page-article {
+  .page-header {
+    margin-bottom: 2rem;
+  }
+  .section-featured-image {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
 .glossary-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -33,77 +48,139 @@
   }
 }
 
-// Contenu Markdown
-.glossary-content {
+.glossary-intro-content {
+  font-size: 1.1rem;
   margin-bottom: 3rem;
-  // Styles pour les catégories listées dans le markdown
-  h3 {
-    margin-top: 2.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--color-primary);
-    display: inline-block;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+// Section des catégories "Featured"
+.glossary-featured-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+
+  @media(min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    li a {
-      text-decoration: none;
-      font-weight: 500;
+
+  .category-group {
+    h2.category-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-primary);
+      display: inline-block;
+    }
+  }
+
+  .category-terms-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .category-term-link {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--color-bg-offset);
+    border: 1px solid var(--color-border);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(var(--color-shadow-rgb), 0.07);
+      border-color: var(--color-primary);
+    }
+
+    strong {
+      display: block;
       color: var(--color-heading);
-      &:hover {
-        color: var(--color-primary);
-      }
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    span {
+      font-size: 0.9rem;
+      color: var(--color-text-offset);
     }
   }
 }
 
-// Grille automatique des termes
-.glossary-grid-auto {
-  margin-top: 4rem;
+.glossary-separator {
+  margin: 3rem auto 4rem auto;
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background: var(--color-border);
+}
 
-  h2 {
+// Grille de cartes pour "All Glossary Terms"
+.glossary-all-terms {
+  .all-terms-title {
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
   }
 
-  .term-grid {
+  .article-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 1.5rem; // Assurez-vous que cet espacement correspond au reste de votre site
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  .term-card {
-    background: var(--color-bg-offset);
+  .term-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    // Correction de la couleur de fond pour correspondre au thème
+    background-color: var(--color-bg-offset);
+    
+    // Assurez-vous que les styles de carte de base sont hérités ou appliqués
     border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 1.5rem;
     transition: all 0.2s ease;
-    display: flex;
-    flex-direction: column;
 
     &:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 25px rgba(var(--color-shadow-rgb), 0.08);
-      border-color: var(--color-primary);
     }
 
-    h3 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.2rem;
-      a {
-        text-decoration: none;
-        color: var(--color-heading);
+    .card-title a {
+      // Application de la couleur orange/sunset-gold pour les titres
+      color: var(--sunset-gold, #F4A261);
+
+      &:hover {
+        // Retour à la couleur primaire au survol pour la cohérence
+        color: var(--color-primary);
       }
     }
+
+    .card-excerpt {
+        color: var(--color-text-offset);
+        font-size: 0.95rem;
+        flex-grow: 1;
+        margin-bottom: 1rem;
+    }
     
-    p {
-      color: var(--color-text-offset);
-      font-size: 0.95rem;
-      flex-grow: 1;
-      margin-bottom: 1rem;
+    .card-footer {
+      margin-top: auto; // Pousse le footer en bas de la carte
     }
 
-    .term-category {
+    .term-category-tag {
       display: inline-block;
       font-size: 0.75rem;
       font-weight: 600;
@@ -111,7 +188,6 @@
       background: rgba(var(--color-primary-rgb), 0.1);
       color: var(--color-primary);
       border-radius: 20px;
-      margin-top: auto;
     }
   }
 }

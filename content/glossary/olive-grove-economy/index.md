@@ -9,7 +9,7 @@ tags: ["finance", "resilience", "olive-grove-economy"]
 featured_image: "images/olive-grove-economy-concept.jpg"
 featured_image_alt: "The deep, resilient roots of an ancient olive tree intertwined with glowing digital financial charts, symbolizing the stable, asset-based Olive Grove Economy."
 glossary_term: true
-glossary_category: "Financial Resilience"
+glossary_category: "Financial Resilience" # <-- LIGNE AJOUTÉE
 related_concepts: 
   - "Rooted Nomadism"
   - "Zellige Blueprint"

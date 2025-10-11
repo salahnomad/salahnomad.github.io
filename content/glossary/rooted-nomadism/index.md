@@ -9,7 +9,7 @@ tags: ["philosophy", "rooted-nomadism", "core-concepts"]
 featured_image: "images/rooted-nomadism-concept.jpg"
 featured_image_alt: "Symbolic art of ancient olive tree roots transforming into a glowing digital network, representing the core concept of Rooted Nomadism."
 glossary_term: true
-glossary_category: "Foundational Philosophy"
+glossary_category: "Foundational Philosophy" # <-- LIGNE AJOUTÉE
 related_concepts: 
   - "Zellige Blueprint"
   - "Olive Grove Economy" 

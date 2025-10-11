@@ -9,7 +9,7 @@ tags: ["productivity", "systems", "zellige-blueprint"]
 featured_image: "images/zellige-blueprint-concept.jpg"
 featured_image_alt: "A master artisan's hand placing a glowing zellige tile that transforms into a modern digital interface, symbolizing the Zellige Blueprint for soulful productivity."
 glossary_term: true
-glossary_category: "Productivity Systems"
+glossary_category: "Productivity Systems" # <-- LIGNE AJOUTÉE
 related_concepts:
   - "Rooted Nomadism"
   - "Olive Grove Economy"
