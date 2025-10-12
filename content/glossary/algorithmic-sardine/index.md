@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Sardine: A Philosophy for Purposeful Movement"
-description: "The Algorithmic Sardine is a philosophy for navigating the world with intention, inspired by the migratory patterns of sardines between the Atlantic and Mediterranean."
+description: "Are you wandering or navigating? The Algorithmic Sardine is a philosophy for intentional travel and work, inspired by the purposeful migration of sardines across the Mediterranean."
 date: 2025-10-01
 schema_type: "DefinedTerm"
 breadcrumb: ["Glossary", "Philosophy"]
@@ -9,37 +9,25 @@ tags: ["philosophy", "purposeful-travel", "algorithmic-sardine"]
 featured_image: "images/algorithmic-sardine-concept.jpg"
 featured_image_alt: "A school of silver sardines swimming in unison, forming a powerful arrow shape, symbolizing the Algorithmic Sardine philosophy of purposeful movement."
 glossary_term: true
-glossary_category: "Foundational Philosophy" # <-- LIGNE AJOUTÉE
+glossary_category: "Foundational Philosophy"
 related_concepts: 
   - "Rooted Nomadism"
-  - "Olive Grove Economy"
-  - "Morisco Compass"
+  - "Canary Melon Compass"
 ---
 
-## Definition
+### The Core Idea
+Location independence has led to a crisis of "rootless drift." True freedom isn't the ability to go anywhere, but the wisdom to know *why* you are moving from one place to the next.
 
-The **Algorithmic Sardine** is a philosophy of movement that rejects aimless wandering in favor of purposeful navigation. It proposes that modern nomads should move through the world like sardines migrating through the Strait of Gibraltar: following invisible currents of value, transporting nutrients between ecosystems, and enriching both their origin and destination.
+### Definition
+The **Algorithmic Sardine** is a philosophy of movement that rejects aimless wandering in favor of purposeful navigation. It proposes that modern nomads should move through the world like sardines migrating through the Strait of Gibraltar: following invisible currents of value, transporting knowledge between ecosystems, and enriching both their origin and destination.
 
-### Core Principles
+### The Three Principles of Navigation
+1.  **Follow Nutrient Currents (Seek Value, Not Vanity):** Choose your destinations and projects based on their potential for deep growth, not just superficial appeal.
+2.  **Transport the Plankton (Be a Bridge, Not a Consumer):** Act as a "value migrant," carrying your unique skills and perspectives to create new connections and opportunities.
+3.  **Enrich Both Shores (Leave a Positive Wake):** Measure the success of your journey by the positive impact you leave on the communities you engage with.
 
-1.  **Follow Nutrient Currents (Value over Vanity):** Choose destinations and projects based on their potential for personal and professional growth, not just superficial metrics.
-2.  **Transport the Plankton (Be a Bridge, Not a Consumer):** Act as a "value migrant," carrying unique skills, knowledge, and perspectives between different communities and cultures.
-3.  **Enrich Both Shores (Leave a Positive Wake):** Measure the success of a journey by the positive impact left behind, moving beyond "leave no trace" to a philosophy of active contribution.
+### Why It Matters for a Modern Nomad
+This is the practical navigation system for the **[Rooted Nomadism](/glossary/rooted-nomadism/)** philosophy. It provides a clear framework for making intentional decisions, ensuring your movement leads to a meaningful life, not just a full passport.
 
-## Context
-
-This concept is the practical application of "The Art of Moving," the second fundamental law of **[Rooted Nomadism](/glossary/rooted-nomadism/)**. It provides a mental model for making intentional decisions about travel, career moves, and personal projects.
-
-## Practical Applications
-- Choosing a new city to live in based on its "nutrient currents" for your specific craft.
-- Structuring projects to transfer knowledge from one industry or culture to another.
-- Building a personal brand around the unique "plankton" you carry.
-
-## Related Concepts
-
-{{< related-concepts >}}
-
-## Further Reading
-
+### Further Reading
 - **[The Algorithmic Sardine: The Full Philosophy Article](/stories-wisdom/algorithmic-sardine-philosophy/)**
-- [The Canary Melon Compass: A Guide to Choosing Destinations](/place-belonging/canary-melon-compass/)

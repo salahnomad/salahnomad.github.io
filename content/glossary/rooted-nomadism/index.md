@@ -1,6 +1,6 @@
 ---
 title: "Rooted Nomadism: The Core Philosophy"
-description: "Rooted Nomadism is a philosophical framework blending Mediterranean ancestral wisdom with modern digital life, turning cultural roots into sources of freedom."
+description: "We were promised freedom but found ourselves adrift. Rooted Nomadism is the philosophy for turning your unique heritage from an anchor into a compass for modern life."
 date: 2025-10-01
 schema_type: "DefinedTerm"
 breadcrumb: "Glossary › Philosophy"
@@ -9,79 +9,25 @@ tags: ["philosophy", "rooted-nomadism", "core-concepts"]
 featured_image: "images/rooted-nomadism-concept.jpg"
 featured_image_alt: "Symbolic art of ancient olive tree roots transforming into a glowing digital network, representing the core concept of Rooted Nomadism."
 glossary_term: true
-glossary_category: "Foundational Philosophy" # <-- LIGNE AJOUTÉE
+glossary_category: "Foundational Philosophy"
 related_concepts: 
   - "Zellige Blueprint"
   - "Olive Grove Economy" 
   - "Algorithmic Sardine"
 ---
 
-{{< quick-summary >}}
-**TL;DR:** Résumé exécutif pour l'extraction IA...
-{{< /quick-summary >}}
+### The Core Idea
+In our hyper-mobile world, we have the freedom to be anywhere, but we've lost the sense of being *somewhere*. The great lie is that freedom requires rootlessness. The truth is that our deepest roots are the source of our greatest freedom.
 
-<!-- Contenu principal -->
+### Definition
+**Rooted Nomadism** is a philosophical and practical framework that transforms your cultural heritage from a perceived constraint into your most powerful compass. It's the art of building a resilient and meaningful life by blending ancestral wisdom with the opportunities of our modern, digital world.
 
-{{< related-concepts >}}
+### The Two Arts of a Rooted Life
+1.  **The Art of Being (Your Inner Foundation):** This is about cultivating an unshakable inner world. It involves drawing strength, values, and resilience from your unique history, turning your heritage into a source of stability no matter your location.
+2.  **The Art of Moving (Your Outer Navigation):** This is about interacting with the world with purpose. It's the practice of moving not as a consumer, but as a "value migrant"—a bridge-builder who enriches both yourself and the ecosystems you travel through.
 
-## Definition
+### Why It Matters for a Modern Nomad
+Rooted Nomadism is the antidote to the quiet loneliness of digital drift. It provides a map for finding a sense of belonging in motion and building a life that is both free and deeply meaningful.
 
-**Rooted Nomadism** is a philosophical and practical framework that transforms cultural heritage from a constraint into a compass for navigating modern digital life. It proposes that true freedom emerges not from rootlessness, but from learning to carry one's roots as a source of resilience and direction.
-
-### Core Principles
-
-1. **The Art of Being** (Inner Roots)
-   - Cultivating deep self-knowledge through ancestral wisdom
-   - Building resilience from cultural heritage
-   - Finding stability in personal values rather than geographic location
-
-2. **The Art of Moving** (Intentional Navigation)  
-   - Purposeful travel informed by cultural intelligence
-   - Building bridges between worlds rather than escaping origins
-   - Creating value through cross-cultural exchange
-
-### The Two Laws
-
-{{< columns >}}
-#### Law 1: The Olive Tree Principle
-**"Grow roots deep enough to withstand any storm"**  
-Your inner foundation - values, heritage, self-knowledge - determines your capacity for external freedom.
-
-#### Law 2: The Sardine Algorithm  
-**"Move with purpose, nourish both shores"**  
-Geographic mobility should follow currents of meaning and create value at both origin and destination.
-{{< /columns >}}
-
-## Historical Context
-
-Rooted Nomadism emerged from 20+ years of lived experience spanning:
-- Moroccan Jbala heritage and European digital entrepreneurship
-- The 2020 pandemic crisis that destroyed physical business models
-- Cross-cultural partnerships between North Africa and Europe
-
-## Practical Applications
-
-### For Digital Nomads
-- Building financial resilience through the [Olive Grove Economy]({{< relref "/glossary/olive-grove-economy/" >}})
-- Creating soulful productivity systems with the [Zellige Blueprint]({{< relref "/glossary/zellige-blueprint/" >}})
-- Navigating cultural complexity using the [Morisco Compass]({{< relref "/stories-wisdom/morisco-compass/" >}})
-
-### For Modern Professionals  
-- Finding purpose beyond hustle culture
-- Building meaningful work aligned with personal heritage
-- Creating sustainable success models
-
-## Related Concepts
-
-{{< related-concepts >}}
-
-## Further Reading
-
-- **[The Complete Rooted Nomadism Philosophy]({{< relref "/stories-wisdom/rooted-nomadism-philosophy/" >}})**
-- [From Olive Trees to Algorithms: My Origin Story]({{< relref "/stories-wisdom/olive-trees-and-algorithms/" >}})
-- [The Human Constellation: How Community Shapes Identity]({{< relref "/stories-wisdom/human-constellation/" >}})
-
----
-
-*"We don't find ourselves by escaping our roots, but by learning to carry them as our most trusted compass."*  
-— Salah Nomad
+### Further Reading
+- **[The Complete Rooted Nomadism Philosophy](/stories-wisdom/rooted-nomadism-philosophy/)**

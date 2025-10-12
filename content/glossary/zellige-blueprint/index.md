@@ -1,6 +1,6 @@
 ---
 title: "The Zellige Blueprint: A System for Soulful Productivity"
-description: "The Zellige Blueprint is a productivity and life-organization system inspired by the precision, patience, and harmony of ancient Moroccan zellige mosaic artisans."
+description: "Tired of the tyranny of the to-do list? The Zellige Blueprint is a productivity system inspired by the harmony of Moroccan artisans, designed to compose a life, not just manage tasks."
 date: 2025-10-01
 schema_type: "DefinedTerm"
 breadcrumb: ["Glossary", "Productivity Systems"]
@@ -9,37 +9,25 @@ tags: ["productivity", "systems", "zellige-blueprint"]
 featured_image: "images/zellige-blueprint-concept.jpg"
 featured_image_alt: "A master artisan's hand placing a glowing zellige tile that transforms into a modern digital interface, symbolizing the Zellige Blueprint for soulful productivity."
 glossary_term: true
-glossary_category: "Productivity Systems" # <-- LIGNE AJOUTÉE
+glossary_category: "Productivity Systems"
 related_concepts:
   - "Rooted Nomadism"
-  - "Olive Grove Economy"
-  - "Thermae Flow State"
+  - "Baker's Code"
 ---
 
-## Definition
+### The Core Idea
+Modern productivity tools promised control but delivered chaos. The solution isn't another app; it's a return to the artisan's mindset of intentional composition. We don't need to manage fragments; we need to create a masterpiece.
 
-The **Zellige Blueprint** is a philosophical and practical system for composing a life of meaning from fragmented tasks, ideas, and commitments. It rejects the chaotic "inbox-first" approach of modern productivity in favor of an artisan's model of intentional composition.
+### Definition
+The **Zellige Blueprint** is a philosophical and practical system for organizing your life and work. Inspired by the master artisans who create intricate *zellige* mosaics, it rejects the "inbox-first" approach in favor of a layered system that builds clarity from the smallest task to your life's grandest vision.
 
-### The Three Layers of Order
+### The Three Layers of a Composed Life
+1.  **The *Tesserae* (Your Atomic Units):** The practice of shaping every raw input (a task, an idea) into a clear, well-defined "tile" before it enters your system.
+2.  **The *Stellae* (Your Focused Projects):** The art of assembling these tiles into finite, purposeful projects ("stars") with clear boundaries, limiting work-in-progress.
+3.  **The *Musivum* (Your Life's Mosaic):** The discipline of ensuring every project aligns with the grand design of your core life domains (e.g., Craft, Wisdom, Community).
 
-1.  **The *Tesserae* (Atomic Units of Meaning):** The practice of shaping every raw input (task, note, idea) into a clear, well-defined "tile" before it enters your system.
-2.  **The *Stellae* (Living Constellations):** The art of assembling these tiles into finite, purposeful projects ("stars") with clear boundaries, limiting work-in-progress to maintain focus.
-3.  **The *Musivum* (Life's Great Mosaic):** The discipline of ensuring every project aligns with the grand design of your core life domains (e.g., Craft, Wisdom, Community).
+### Why It Matters for a Modern Nomad
+This is the operating system for **[Rooted Nomadism](/glossary/rooted-nomadism/)**. It provides the structure to build an unshakable inner world of order and purpose, allowing you to thrive amidst the external chaos of constant movement.
 
-## Context
-
-This system is the practical expression of "The Art of Being," the first fundamental law of **[Rooted Nomadism](/glossary/rooted-nomadism/)**. It provides the structure for building an unshakable inner world amidst external chaos.
-
-## Practical Applications
-- Organizing digital tools like Notion or Obsidian around life domains instead of chaotic project lists.
-- A decision-making filter for saying "no" to projects that, while appealing, do not fit the larger mosaic.
-- A method for transforming overwhelming goals into a series of small, precise, and manageable actions.
-
-## Related Concepts
-
-{{< related-concepts >}}
-
-## Further Reading
-
+### Further Reading
 - **[The Zellige Blueprint: The Full System Guide](/work-productivity/zellige-blueprint/)**
-- [The Baker's Code: A Ritual for Deep Work](/work-productivity/bakers-code/)
