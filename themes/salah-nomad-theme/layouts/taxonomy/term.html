@@ -1,78 +1,42 @@
 {{/* layouts/taxonomy/term.html */}}
-{{/* Utilisé pour afficher les articles d'un tag ou d'une catégorie spécifique */}}
-
 {{ define "main" }}
   {{ $showSidebar := .Params.sidebar | default (.Site.Params.listPageSidebar | default true) }}
-
   <div class="container main-content-container">
-
     <div class="content-loop-wrap {{ if $showSidebar }}has-sidebar{{ else }}no-sidebar{{ end }}">
-      
-      <div class="post-list content-loop"> {{/* Colonne de contenu principale */}}
+      <div class="post-list content-loop">
+        {{ partial "breadcrumbs.html" . }}
+        <header class="page-header list-page-header">
 
-        <header class="page-header term-page-header">
-          <h1 class="page-title term-page-title">{{ .Title }}</h1>
-           {{ with .Content }} {{/* .Content vient du _index.md du terme, si un tel fichier existe */}}
-             <div class="page-description term-page-description">{{ . }}</div>
+          {{/* --- LOGIQUE FINALE POUR SOUS-DOSSIER "images/" --- */}}
+          {{ with .Params.featured_image }}
+            {{/* On cherche l'image comme une ressource de la page (Branch Bundle) */}}
+            {{ $image := $.Resources.GetMatch . }}
+            {{ with $image }}
+              {{ $resized := .Fill "800x350 webp q85 Center" }}
+              <figure class="section-featured-image">
+                  <img src="{{ $resized.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default (printf "Image d'illustration pour %s" ($.Title | plainify)) }}" class="section-page-featured-img" loading="lazy">
+              </figure>
+            {{ end }}
+          {{ end }}
+
+          <h1 class="page-title list-page-title">{{ .Title }}</h1>
+           {{ with .Content }}
+             <div class="page-description list-page-description taxonomy-description">{{ . }}</div>
            {{ end }}
         </header>
 
-        {{/* Logique pour une image en vedette du terme */}}
-        {{ $termImageSrc := "" }}
-        {{ $termImageRes := "" }}
-        {{/* Cherche featured_image dans le front matter du fichier _index.md du terme (ex: content/tags/mon-tag/_index.md) */}}
-        {{ with .Params.featured_image }} 
-            {{ $termImageRes = $.Resources.GetMatch . }}
-        {{ end }}
-        {{ if not $termImageRes }}
-            {{ with .Params.featured_image }}
-                {{ $termImageRes = resources.Get . }}
-            {{ end }}
-        {{ end }}
-        
-        {{ if $termImageRes }}
-            {{ $termImageSrc = $termImageRes }}
-        {{ else if .Params.featured_image }}
-            {{ $path := .Params.featured_image }}
-            {{ $staticPath := "" }}
-            {{ if $path }}
-              {{ if strings.HasPrefix $path "/" }}
-                {{ $staticPath = printf "static%s" $path }}
-              {{ else }}
-                {{ $staticPath = printf "static/%s" $path }}
-              {{ end }}
-              {{ if fileExists $staticPath }}
-                  {{ $termImageSrc = $path | relURL }}
-              {{ else if strings.HasPrefix $path "http" }}
-                  {{ $termImageSrc = $path }}
-              {{ end }}
-            {{ end }}
-        {{ end }}
-
-        {{ if $termImageSrc }}
-          <figure class="term-featured-image section-featured-image"> {{/* Réutilisation des classes de style de l'image de section */}}
-            {{ partial "responsive-image.html" (dict
-                "src" $termImageSrc
-                "alt" (printf "Image d'illustration pour %s" (.Title | plainify))
-                "page" .
-                "loading" "lazy"
-                "sizesKey" "singleFeatured" 
-                "class" "term-page-featured-img section-page-featured-img"
-                "figureClass" "term-page-featured-figure section-page-featured-figure"
-                "caption" .Params.featured_image_caption
-            )}}
-          </figure>
-        {{ end }}
-
         {{ $paginator := .Paginator }} 
-        
         {{ if $paginator.Pages }}
-          <div class="article-grid term-page-grid">
+          <div class="posts-list-header">
+              <hr class="separator-above-title">
+              <h2 class="posts-list-title">Articles in this Collection</h2>
+              <hr class="separator-below-title">
+          </div>
+          <div class="article-grid list-page-grid">
             {{ range $paginator.Pages }}
               {{ partial "article-card.html" . }}
             {{ end }}
           </div>
-
           {{ if gt $paginator.TotalPages 1 }}
             <nav class="navigation pagination" role="navigation" aria-label="{{ i18n "postsNavigation" | default "Posts navigation" }}">
                 {{ template "_internal/pagination.html" . }}
@@ -83,12 +47,10 @@
             <p class="no-posts text-center">{{ i18n "noArticlesFoundForTerm" | default "No articles found for this term." }}</p>
           {{ end }}
         {{ end }}
-      </div><!-- /.post-list -->
-
+      </div>
       {{ if $showSidebar }}
         {{ partial "sidebar.html" . }}
       {{ end }}
-
-    </div><!-- /.content-loop-wrap -->
-  </div><!-- /.container -->
+    </div>
+  </div>
 {{ end }}

@@ -1,19 +1,38 @@
 {{/* layouts/taxonomy/taxonomy.html */}}
 {{ define "main" }}
   <div class="container main-content-container">
-    <header class="page-header">
-      <h1 class="page-title">{{ .Title }}</h1> {{/* Ex: "Tags" ou "Categories" */}}
-      {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
-    </header>
-    <div class="taxonomy-terms-list">
-       {{ $taxonomy := .Data.Singular }} {{/* Récupère le nom singulier (tag, category) */}}
-       <ul>
-         {{ range .Data.Terms.ByCount }} {{/* Liste les termes par nombre d'articles */}}
-           <li>
-             <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-           </li>
-         {{ end }}
-       </ul>
+    <div class="content-loop-wrap no-sidebar">
+      <div class="post-list content-loop">
+        {{ partial "breadcrumbs.html" . }}
+        <header class="page-header list-page-header">
+          
+          {{/* --- LOGIQUE FINALE POUR SOUS-DOSSIER "images/" --- */}}
+          {{ with .Params.featured_image }}
+            {{/* On cherche l'image comme une ressource de la page (Branch Bundle) */}}
+            {{ $image := $.Resources.GetMatch . }}
+            {{ with $image }}
+              {{ $resized := .Fill "800x350 webp q85 Center" }}
+              <figure class="section-featured-image">
+                <img src="{{ $resized.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="section-page-featured-img">
+              </figure>
+            {{ end }}
+          {{ end }}
+          
+          <h1 class="page-title list-page-title">{{ .Title }}</h1>
+          {{ with .Content }}
+            <div class="page-description list-page-description taxonomy-description">{{ . }}</div>
+          {{ end }}
+        </header>
+        <div class="taxonomy-terms-grid">
+           {{ range .Data.Terms.ByCount }}
+             <a href="{{ .Page.RelPermalink }}" class="term-card">
+               <h2 class="term-title">{{ .Page.Title }}</h2>
+               {{ $plural := "Article" }}{{ if gt .Count 1 }}{{ $plural = "Articles" }}{{ end }}
+               <span class="term-count">{{ .Count }} {{ $plural }}</span>
+             </a>
+           {{ end }}
+        </div>
+      </div>
     </div>
   </div>
 {{ end }}
