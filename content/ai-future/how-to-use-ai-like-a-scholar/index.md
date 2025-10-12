@@ -4,7 +4,7 @@ date: 2025-06-13
 draft: false
 description: "Discover how ancestral Moroccan wisdom reshapes AI interactions. Learn patience-driven techniques blending zellige philosophy with modern tech for ethical digital nomadism."
 # --- Taxonomy ---
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: 
   - "Slow AI"
   - "Cultural Technology"

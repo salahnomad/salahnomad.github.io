@@ -1,5 +1,5 @@
 ---
-title: "Work & Productivity: Mediterranean Systems for Meaningful Work"
+title: "Work and Productivity: Mediterranean Systems for Meaningful Work"
 date: 2025-10-01
 draft: false
 description: "Discover soulful productivity frameworks blending Moroccan artisan wisdom with modern digital work. Start with the Zellige Blueprint for intentional, sustainable work systems."

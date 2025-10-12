@@ -285,27 +285,27 @@ enableRobotsTXT = true
       dropdown = true
       icon = "compass"
   [[menu.secondary]]
-    name = "Work & Productivity"
+    name = "Work and Productivity"
     url = "/work-productivity/"
     parent = "all_topics"
     weight = 11
   [[menu.secondary]]
-    name = "Stories & Wisdom"
+    name = "Stories and Wisdom"
     url = "/stories-wisdom/"
     parent = "all_topics"
     weight = 12
   [[menu.secondary]]
-    name = "Money & Freedom"
+    name = "Money and Freedom"
     url = "/money-freedom/"
     parent = "all_topics"
     weight = 13
   [[menu.secondary]]
-    name = "Place & Belonging"
+    name = "Place and Belonging"
     url = "/place-belonging/"
     parent = "all_topics"
     weight = 14
   [[menu.secondary]]
-    name = "AI & The Future"
+    name = "AI and The Future"
     url = "/ai-future/"
     parent = "all_topics"
     weight = 15
@@ -473,15 +473,19 @@ enableRobotsTXT = true
   resampleFilter = "Lanczos"
   quality = 80
 
-# Dans votre fichier hugo.toml
 
 [sitemap]
   changefreq = "weekly"
-  priority = 0.5 # Priorité par défaut pour les pages sans spécification
+  priority = 0.5 # Priorité par défaut pour les pages standards (ex: /contact/, /privacy/)
   filename = "sitemap.xml"
   
-  # --- LIGNES CRUCIALES À AJOUTER/MODIFIER ---
-  disable_taxonomies = false
-  disable_kinds = ["page"] # "page" ici fait référence aux pages de pagination comme /page/2/
+  # La configuration ci-dessous ajuste la priorité pour des "kinds" de pages spécifiques.
+  # La hiérarchie est la suivante, de la moins importante à la plus importante :
+  # Page de liste générale -> Page de terme spécifique -> Page de section/hub
+  # (Les pages piliers ont leur propre priorité définie dans leur front matter, ex: 1.0)
+[sitemap.kinds]
+  taxonomy = 0.6  # Moins important : pages de liste générales comme /tags/ et /categories/
+  term = 0.7      # Plus important : pages de termes spécifiques comme /tags/resilience/
+  section = 0.8   # Encore plus important : les hubs de section comme /work-and-productivity/
 
 timeout = 1800000

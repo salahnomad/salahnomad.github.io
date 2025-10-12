@@ -5,7 +5,7 @@ subtitle: "A Jbala-born nomad's deep-dive into AI's limits when faced with a lan
 date: 2025-06-24T23:00:00+02:00
 draft: false
 description: "I put my Jbala-Andalusian dialect to the ChatGPT test. The result? A hilarious and profound journey into the soul of a language that algorithms can't flatten, and a lesson on what technology can never truly translate."
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: ["ai-and-language", "cultural-nuance", "darija", "jbala-culture", "andalusian-heritage", "digital-humanities", "linguistic-preservation"]
 keywords: ["ChatGPT translation challenges", "Jbala-Andalusian dialect", "Northern Moroccan Darija", "AI and cultural preservation", "linguistic heritage", "philosophy of language"]
 featured_image: "images/jbala-andalusian-language-ai-bridge.jpg"

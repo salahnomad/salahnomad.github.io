@@ -1,5 +1,5 @@
 ---
-title: "Money & Freedom: A Mediterranean Approach to Financial Resilience"
+title: "Money and Freedom: A Mediterranean Approach to Financial Resilience"
 date: 2025-10-01
 draft: false
 description: "Redefine your relationship with wealth. Discover timeless strategies for financial freedom inspired by the wisdom of ancient olive groves that outlive empires and market crashes."

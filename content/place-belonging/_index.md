@@ -1,5 +1,5 @@
 ---
-title: "Place & Belonging: Finding Home in a World of Motion"
+title: "Place and Belonging: Finding Home in a World of Motion"
 date: 2025-10-01
 draft: false
 description: "For the modern nomad, home is not a place you find, but a skill you cultivate. Discover frameworks for navigating new cultures with depth and finding belonging between worlds."

@@ -1,5 +1,5 @@
 ---
-title: "Stories & Wisdom: The Captain's Logbook"
+title: "Stories and Wisdom: The Captain's Logbook"
 date: 2025-10-01
 draft: false
 description: "This is the heart of the caravan. The logbook of a voyage from ancestral wisdom to digital horizons. Discover the foundational philosophies and personal stories that forged Rooted Nomadism."
