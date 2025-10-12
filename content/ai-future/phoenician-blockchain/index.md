@@ -3,7 +3,7 @@ title: "The Phoenician Blockchain: How Ancient Mediterranean Commerce Blueprints
 date: 2025-06-06T22:00:00+02:00
 draft: false
 description: "Stop building your digital life on centralized platforms. Discover how ancient Phoenician traders invented blockchain principles 3,000 years before Bitcoin."
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: ["blockchain-philosophy", "decentralized-trust", "phoenician-history", "web3", "rooted-nomadism"]
 keywords: ["history of blockchain", "decentralized systems", "Phoenician trade", "Web3 lessons", "digital trust"]
 featured_image: "images/phoenician-ship-blockchain-sea.jpg"

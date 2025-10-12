@@ -3,7 +3,7 @@ title: "The Olive Grove Economy: A Nomad's Blueprint for Financial Resilience"
 date: 2025-03-18T09:00:00+02:00
 draft: false
 description: "Stop living invoice to invoice. Build true financial resilience with the Olive Grove Economy, a system inspired by ancient Mediterranean wisdom to cultivate diversified assets and withstand any market storm."
-categories: ["Money & Freedom"]
+categories: ["Money and Freedom"]
 tags: 
   - "financial-resilience"
   - "digital-nomad-finance"

@@ -3,7 +3,7 @@ title: "The Human Constellation: How Three Strangers Forged My Nomadic Identity"
 date: 2025-05-13T09:00:00+02:00
 draft: false
 description: "The myth of the solitary nomad is a lie. Discover how a Dutch photographer, a British entrepreneur, and a Moroccan exile became the stars that guided my journey from wandering to rootedness."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["human-connection", "rooted-nomadism", "nomadic-identity", "mentorship", "cultural-exchange", "serendipity", "storytelling"]
 keywords: ["building community as a nomad", "authentic travel stories", "cross-cultural friendship", "how human connections shape identity", "Salah Nomad story", "the power of serendipity in travel"]
 # --- Page Metadata ---

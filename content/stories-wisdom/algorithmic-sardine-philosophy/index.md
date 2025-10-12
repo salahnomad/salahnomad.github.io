@@ -4,7 +4,7 @@ title: "The Algorithmic Sardine: A Philosophy for Purposeful Movement"
 date: 2025-09-27
 draft: false
 description: "Stop wandering, start navigating. The Algorithmic Sardine is a philosophy of intentional travel and work, teaching you to follow value currents and enrich the ecosystems you move between."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["purposeful-travel", "slow-nomadism", "value-migration", "rooted-nomadism", "philosophy-of-movement", "algorithmic-sardine"]
 keywords: ["meaningful travel", "digital nomad purpose", "how to travel with intention", "Salah Nomad Algorithmic Sardine", "value migration", "purposeful movement"]
 featured_image: "images/algorithmic-sardine-hero.jpg"

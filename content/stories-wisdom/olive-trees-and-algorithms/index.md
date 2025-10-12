@@ -5,7 +5,7 @@ date: 2025-01-14T08:00:00+01:00
 draft: false
 description: "My wellness business collapsed. Stranded in Morocco, I discovered how ancient olive trees hold the secret to digital resilience. This is the story of my pivot from cosmetic clay to digital wisdom, and the birth of Rooted Nomadism."
 # --- Taxonomy ---
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["transformation", "resilience", "digital-legacy", "rooted-nomadism", "pandemic-pivot", "entrepreneurship", "wellness-heritage"]
 keywords: ["rooted nomadism story", "digital transformation journey", "Mediterranean entrepreneur", "pandemic business pivot", "finding meaning in adversity", "Salah Nomad story", "cosmetic clay business", "wellness heritage"]
 # --- Page Metadata ---

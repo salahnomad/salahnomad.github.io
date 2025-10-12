@@ -4,7 +4,7 @@ date: 2025-10-05
 lastmod: 2025-10-05
 draft: false
 description: "Is the FIRE movement's extreme saving leading to burnout? Discover the Olive Grove Economy, a Mediterranean philosophy for financial independence that prioritizes sustainable wealth, resilience, and a rich life *before* retirement."
-categories: ["Money & Freedom"]
+categories: ["Money and Freedom"]
 tags: ["fire-movement-alternative", "financial-independence", "sustainable-wealth", "slow-fire", "mediterranean-finance", "olive-grove-economy"]
 keywords: ["FIRE movement alternative", "problems with FIRE", "sustainable financial independence", "slow FIRE", "Olive Grove Economy vs FIRE"]
 featured_image: "images/olive-grove-vs-fire-hero.jpg"

@@ -3,7 +3,7 @@ title: "The Weaver's Prompt: How to Code AI with Amazigh Carpet Patterns"
 date: 2025-09-23
 draft: false
 description: "AI gives us generic content because we feed it generic instructions. To get truly meaningful results, we must learn the patterned language of North Africa's indigenous Amazigh weavers."
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: ["ai-creativity", "prompt-engineering", "cultural-ai", "amazigh-culture", "rooted-nomadism", "digital-craft"]
 keywords: ["creative AI prompts", "cultural AI", "how to get better AI results", "Amazigh art", "Salah Nomad Weaver's Prompt", "ethical AI prompting"]
 featured_image: "images/weaver-prompt-hero.jpg"

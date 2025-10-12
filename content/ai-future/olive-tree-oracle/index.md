@@ -3,7 +3,7 @@ title: "The Olive Tree Oracle: An Ethical Protocol for Wiser AI"
 date: 2025-06-10T13:00:00+02:00
 draft: false
 description: "AI often lacks cultural wisdom. The Olive Tree Oracle is a 3-step protocol (Nourish, Sculpt, Guide) to transform AI from a simple data tool into a nuanced, ethical partner for creative work."
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: 
   - "ethical-ai-framework"
   - "cultural-ai"

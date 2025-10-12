@@ -3,7 +3,7 @@ title: "Exile Isn't Erasure: How My Morisco Ancestors Forged a Compass for Moder
 date: 2025-05-06T11:22:00+02:00
 draft: false
 description: "Discover the Morisco Compass - a 500-year-old navigation tool born from ancestral exile that transforms displacement into resilience. Learn how my journey from Ksar El-Kébir to Málaga echoes modern diaspora experiences."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["diaspora-identity", "cultural-memory", "morisco-history", "resilience", "rooted-nomadism", "philosophy-of-belonging"]
 keywords: ["Morisco diaspora", "diaspora identity", "cultural resilience", "exile transformation", "ancestral wisdom", "modern nomadism", "Strait of Gibraltar", "Ksar El-Kébir", "Salah Nomad philosophy"]
 featured_image: "images/morisco-compass-hero.jpg"

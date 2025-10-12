@@ -3,7 +3,7 @@ title: "Rooted Nomadism: The Complete Philosophy for Modern Digital Life"
 date: 2025-10-01
 draft: false
 description: "Discover the complete Rooted Nomadism philosophy blending Mediterranean ancestral wisdom with modern digital life. Transform cultural roots into sources of freedom, resilience, and meaningful work in a hyper-mobile world."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: 
   - "digital-nomad-philosophy"
   - "cultural-wisdom"

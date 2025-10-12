@@ -4,7 +4,7 @@ title: "My First Steps in a Cybercafé: How Digital Scarcity Forged My Rooted No
 date: 2025-07-08T11:02:00+02:00
 draft: false
 description: "In 2002 Morocco, I paid by the hour for agonizingly slow internet. That cybercafé scarcity became my greatest gift. Discover how constraints birthed my digital nomad journey."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["digital-minimalism", "philosophy-of-technology", "seo-origins", "slow-tech", "rooted-nomadism"]
 keywords: ["digital scarcity Morocco", "learning SEO from scratch", "cybercafé internet history", "slow web philosophy", "intentional technology", "Moroccan digital pioneers"]
 featured_image: "images/cybercafe-hero-scarcity.jpg"

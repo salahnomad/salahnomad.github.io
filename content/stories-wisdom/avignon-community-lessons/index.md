@@ -5,7 +5,7 @@ draft: false
 description: "How a Moroccan nomad's textile rebellion in Avignon revealed the ancient algorithm for authentic digital tribes. A journey from zebra patterns to Byzantine frescoes."
 slug: "avignon-community-lessons"
 
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["community-building", "avignon-festival", "rooted-nomadism", "digital-alchemy"]
 keywords: ["authentic community building", "avignon festival lessons", "Salah Nomad zebra shirt", "digital nomad community", "cultural storytelling", "experiential marketing"]
 

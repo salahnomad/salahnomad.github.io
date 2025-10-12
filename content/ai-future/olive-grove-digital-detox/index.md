@@ -3,7 +3,7 @@ title: "Olive Grove Digital Detox: 3 Ancestral Rituals to Reset Your Nervous Sys
 date: 2025-04-15T00:00:00+01:00
 draft: false
 description: "Salah Nomad reveals 3 olive tree rituals from Morocco & Spain to reset your nervous system. Grounding, bark communion & analog tea ceremony for digital overload. #RootedNomadism"
-categories: ["AI & The Future"]
+categories: ["AI and The Future"]
 tags: ["digital detox", "rooted nomadism", "mediterranean mindfulness", "nervous system reset", "ancestral wisdom"]
 keywords: ["olive tree meditation", "Salah Nomad techniques", "digital detox rituals", "grounding techniques for anxiety", "tree communion benefits"]
 featured_image: "images/olive-grove-detox-hero.jpg"

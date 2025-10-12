@@ -4,7 +4,7 @@ date: 2025-05-20T11:00:00+02:00
 draft: false
 description: "My most ambitious project failed spectacularly. It was the most valuable lesson of my life. Here is the honest post-mortem and the hard-won wisdom that no business school can teach you."
 
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["business-failure", "resilience", "cross-cultural-communication", "entrepreneurship", "rooted-nomadism", "lessons-learned", "ghassoul"]
 keywords: ["cross-cultural business failure", "lessons from a failed startup", "entrepreneurial failure stories", "why international ventures fail", "Franco-Moroccan partnership", "Ghassoul clay", "Atlas Mountains"]
 
