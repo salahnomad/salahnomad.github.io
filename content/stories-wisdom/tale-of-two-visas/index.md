@@ -3,7 +3,7 @@ title: "A Tale of Two Visas: The Rooted Nomad's Alchemy for Turning Borders into
 date: 2025-02-25T20:00:00+02:00
 draft: false
 description: "UK visa approved. France visa refused. The difference? How I channeled my ancestors' exile into bureaucratic resilience. A nomad's guide to transforming 'REFUSÉ' stamps into roots."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["visa-resilience", "bureaucracy-alchemy", "cross-border-wisdom", "ancestral-strategy", "rooted-nomad"]
 keywords: ["digital nomad visa denied", "Schengen visa success", "overcoming immigration refusal", "cultural intelligence for visas", "Salah Nomad visa wisdom"]
 featured_image: "images/rooted-nomad-visa-alchemy-hero.jpg"

@@ -10,7 +10,7 @@ featured_image: "images/zellige-blueprint-philosophy-hero.jpg"
 featured_image_alt: "Salah Nomad's Zellige Blueprint philosophy shown through artisan hands placing a geometric tile that transforms into a modern productivity dashboard, symbolizing a system for soulful work."
 
 # --- Taxonomy ---
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["zellige-blueprint", "salah-nomad-philosophy", "soulful-productivity", "moroccan-craftsmanship", "digital-organization", "work-philosophy", "rooted-nomadism"]
 keywords: ["Zellige Blueprint", "Salah Nomad philosophy", "soulful productivity system", "Moroccan craftsmanship philosophy", "how to organize digital life", "meaningful work system", "Zellige Blueprint definition", "Salah Nomad creator"]
 

@@ -3,6 +3,7 @@ title: "Salah Nomad: Between Olive Groves and Algorithms"
 date: 2025-09-05
 draft: false
 description: "The short version: how a Moroccan-born digital strategist forged a new philosophy for meaningful work and belonging in our hyper-mobile world."
+categories: ["Stories and Wisdom"]
 layout: single
 featured_image: "images/salah-author-portrait.jpg"
 featured_image_alt: "A professional and authentic portrait of Salah Nomad, founder of Rooted Nomadism. The photo, taken in Arles, captures his identity as a thoughtful bridge between traditional roots and the modern digital world, reflecting the core themes of his work."

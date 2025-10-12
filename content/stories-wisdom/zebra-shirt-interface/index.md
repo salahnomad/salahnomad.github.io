@@ -3,7 +3,7 @@ title: "The Zebra Shirt Interface: A Personal Mosaic"
 date: 2025-06-27T08:00:00+01:00
 draft: false
 description: "Salah Nomad reveals how a zebra shirt & Moroccan zellige inspire a unique UX philosophy: design with cultural roots, precision, and intentional pauses."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["zellige-philosophy", "ux-design", "rooted-nomadism", "intentional-paused-ui", "algorithmic-sardines"]
 keywords: ["zellige design principles", "cultural UX design", "Rooted Nomadism in design", "how Moroccan mosaics inspire digital design"]
 featured_image: "images/zebra-shirt-mosaic-fusion.jpg"

@@ -4,7 +4,7 @@ subtitle: "How Roman baths and Moroccan hammams taught me to reclaim focus in a 
 date: 2025-02-04T10:00:00+02:00
 description: "Discover the 4-chamber ritual that saved my focus. Blend Roman bath wisdom with Moroccan hammam resilience to build your sanctuary for deep work in a chaotic digital age."
 slug: "thermae-flow-state-deep-work"
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags:
   - "Deep Work"
   - "Flow State"

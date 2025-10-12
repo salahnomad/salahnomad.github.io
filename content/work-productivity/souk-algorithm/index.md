@@ -3,7 +3,7 @@ title: "The Souk Algorithm: What a 1,000-Year-Old Market Taught Me About SEO"
 date: 2025-09-26
 draft: false
 description: "Stop chasing Google's updates. I spent 20 years mastering SEO, but my best strategy came from a spice merchant in Meknès. Here are his four timeless laws for ranking in the age of AI."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["seo-strategy", "content-marketing", "human-centered-marketing", "e-e-a-t", "rooted-nomadism", "storytelling"]
 keywords: ["human-centered SEO", "SEO strategy for AI", "how to improve E-E-A-T", "content marketing that works", "Salah Nomad Souk Algorithm", "building online trust"]
 featured_image: "images/souk-algorithm-hero.jpg"

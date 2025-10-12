@@ -3,7 +3,7 @@ title: "The Hammam Principle: A Blueprint for Digital Spaces of Vulnerability an
 date: 2025-09-22
 draft: false
 description: "Social media promised community and delivered isolation. The secret to real connection isn't a new app. It's a 1,000-year-old social technology hidden in Moroccan bathhouses."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["community-building", "digital-culture", "vulnerability", "trust", "rooted-nomadism", "social-architecture"]
 keywords: ["how to build online community", "digital trust", "vulnerability in leadership", "designing for connection", "Salah Nomad Hammam Principle", "social architecture"]
 featured_image: "images/hammam-principle-hero.jpg"

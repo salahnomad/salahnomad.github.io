@@ -3,7 +3,7 @@ title: "SEO Like a Phoenician Merchant: Ancient Strategies to Conquer Google's S
 date: 2025-03-04T09:00:00+02:00
 draft: false
 description: "Stop chasing algorithms and start building a digital empire. Discover how ancient Phoenician trade secrets can revolutionize your SEO strategy for the AI era."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["advanced-seo", "content-strategy", "cultural-seo", "evergreen-content", "phoenician-wisdom", "ai-seo"]
 keywords: ["advanced SEO strategy 2025", "how ancient trade routes inform modern SEO", "cultural SEO", "ranking in Google's AI-driven SERPs", "building online authority", "timeless SEO principles"]
 featured_image: "images/phoenician-ship-digital-sea.jpg"

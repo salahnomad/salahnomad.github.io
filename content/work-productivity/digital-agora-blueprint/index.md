@@ -3,7 +3,7 @@ title: "The Digital Agora: A Mediterranean Blueprint for Real Connection"
 date: 2025-02-18T10:00:00+02:00
 description: "Transform digital loneliness into authentic connection. Discover how ancient Roman forums and Andalusian patios inspire a new paradigm for building a thriving online community."
 slug: "digital-agora-blueprint"
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["Digital Community", "Rooted Nomadism", "Virtual Forum", "Mediterranean Wisdom", "Authenticity", "Community Building for Remote Workers", "Digital Agora"]
 authors: ["Salah Nomad"]
 featured_image: "images/hero-digital-agora.jpg"

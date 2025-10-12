@@ -3,7 +3,7 @@ title: "The Analog API: How My Father's Radio Forged My Digital Ethics"
 date: 2025-09-24
 draft: false
 description: "Before the internet, I learned the three protocols of connection from a world of static. They are more relevant today than ever. Here's how a vintage radio can fix our broken digital communication."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["digital-ethics", "communication", "slow-tech", "digital-minimalism", "rooted-nomadism", "philosophy-of-technology"]
 keywords: ["ethical communication", "digital communication skills", "how to write better emails", "deep work focus", "Salah Nomad Analog API", "vintage radio wisdom"]
 featured_image: "images/analog-api-hero.jpg"

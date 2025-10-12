@@ -3,7 +3,7 @@ title: "The Baker's Code: Ancient Rituals for Modern Deep Work"
 date: 2025-06-13
 draft: false
 description: "Discover the Baker's Code deep work framework inspired by traditional bakers' rhythms. Master distraction-free focus, creative flow states, and sustainable productivity through time-tested Mediterranean work rituals."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: 
   - "deep-work"
   - "focus-rituals"

@@ -4,7 +4,7 @@ date: 2025-04-08T18:00:00+02:00
 draft: false
 description: "Go beyond tapas. Discover how a simple, ancient beachside ritual in Málaga holds the secret to defeating burnout and mastering the art of soulful, focused work."
 
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["espetos", "malaga", "slow-work", "mindfulness", "rooted-nomadism", "culinary-wisdom", "andalusian-culture"]
 keywords: ["Málaga local rituals", "slow work philosophy", "espetos de sardinas", "work-life balance", "what to do in Málaga", "chiringuitos"]
 

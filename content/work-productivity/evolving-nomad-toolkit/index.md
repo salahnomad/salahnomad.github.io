@@ -3,7 +3,7 @@ title: "From a Panasonic Radio to an iPhone: A Nomad's Evolving Tech Toolkit"
 date: 2025-07-15T11:00:00+02:00
 draft: false
 description: "Discover how technology shapes the nomadic soul through a journey from crackling shortwaves to silent screens, guided by Mediterranean wisdom."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["tech-philosophy", "digital-minimalism", "rooted-nomadism", "slow-tech", "nomad-toolkit", "intentional-living"]
 keywords: ["digital nomad tech kit", "slow technology", "philosophy of technology", "minimalist tech", "Salah Nomad toolkit", "mindful technology use"]
 featured_image: "images/radio-to-iphone-zellige-map.jpg"

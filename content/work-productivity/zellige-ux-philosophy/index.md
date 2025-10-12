@@ -4,7 +4,7 @@ date: 2025-07-01T01:00:00+02:00
 draft: false
 description: "After my €50k Franco-Moroccan startup collapsed, I discovered salvation in my hometown's workshops. Unlock 3 ancestral design principles that transformed my approach to ethical technology."
 
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: ["ethical-ux", "zellige-design", "andalusian-craft", "business-failure", "cross-cultural-design"]
 keywords: ["Andalusian design principles", "ethical UX case study", "zellige philosophy tech", "Moroccan craftsmanship digital", "Ritual Hammam failure lessons"]
 

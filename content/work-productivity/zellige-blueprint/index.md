@@ -3,7 +3,7 @@ title: "The Zellige Blueprint: A Mediterranean System for Soulful Productivity"
 date: 2025-03-18T09:00:00+02:00
 draft: false
 description: "Transform your work with a productivity system inspired by ancient Mediterranean artisans. Organize tasks, projects, and life domains with artisan precision for meaningful digital work."
-categories: ["Work & Productivity"]
+categories: ["Work and Productivity"]
 tags: 
   - "mediterranean-productivity"
   - "cultural-workflow"

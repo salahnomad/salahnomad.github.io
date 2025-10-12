@@ -3,7 +3,7 @@ title: "Saffron, Olive Oil & Algorithms: Preserving the Soul of Jbala-Andalusian
 date: 2025-06-17T09:00:00+02:00
 draft: false
 description: "How I taught AI to translate my grandmother's vanishing recipes, bridging ancestral wisdom from Jbala mountains to Andalusian saffron fields through digital stewardship."
-categories: ["Stories & Wisdom"]
+categories: ["Stories and Wisdom"]
 tags: ["ai-in-culture", "culinary-heritage", "saffron-history", "olive-oil-traditions", "digital-preservation", "rooted-nomadism"]
 keywords: ["AI cultural translation", "Jbala-Andalusian recipes", "preserve family cookbook", "saffron cultivation Málaga", "Loukkos Valley olive oil", "Salah Nomad story"]
 featured_image: "images/grandmother-cookbook-ai-preservation.jpg"
