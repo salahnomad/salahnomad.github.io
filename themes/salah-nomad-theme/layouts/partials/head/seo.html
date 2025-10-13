@@ -1,137 +1,133 @@
-{{/* 
-  FICHIER MIS À JOUR : /themes/salah-nomad-theme/layouts/partials/head/seo.html
-  -------------------------------------------------------------------------
-  Intégration du bloc SEO stratégique pour la gestion de l'indexation et des URL canoniques.
-*/}}
+{{/* layouts/partials/head/seo.html - Version Professionnelle 2025 */}}
 
-{{/* ======================================================================== */}}
-{{/* ======================== BLOC SEO STRATÉGIQUE ======================== */}}
-{{/* ======================================================================== */}}
+{{- $page := . -}}
+{{- $site := .Site -}}
+{{- $isHomePage := .IsHome -}}
+{{- $isPage := .IsPage -}}
+{{- $isTerm := eq .Kind "term" -}}
+{{- $isTaxonomy := eq .Kind "taxonomy" -}}
 
-{{/* --- 1. Gestion de l'Indexation des Taxonomies (Tags) --- */}}
-{{/* Objectif : Dire à Google de ne pas indexer les pages de tags pour concentrer l'autorité du site. */}}
-{{ if and (eq .Kind "taxonomy") (eq .Type "tags") }}
-  <meta name="robots" content="noindex, follow">
-{{ end }}
+{{- /* --- Variables SEO de base --- */}}
+{{- $title := .Title -}}
+{{- if $isHomePage }}{{ $title = $site.Title }}{{ end -}}
+{{- $description := .Description | default (.Summary | plainify | truncate 160) | default $site.Params.description -}}
+{{- $permalink := .Permalink -}}
 
-{{/* --- 2. Déclaration de l'URL Canonique --- */}}
-{{/* Objectif : Prévenir les problèmes de contenu dupliqué en déclarant une URL unique et officielle pour chaque page. */}}
-{{ if .IsHome }}
-  <link rel="canonical" href="{{ .Site.BaseURL }}" />
-{{ else }}
-  <link rel="canonical" href="{{ .Permalink }}" />
-{{ end }}
+{{- /* --- Variables Open Graph & Twitter --- */}}
+{{- $ogType := cond $isPage "article" "website" -}}
+{{- $ogImage := "" -}}
+{{- $ogImageAlt := .Params.featured_image_alt | default $title -}}
 
-{{/* ====================== FIN DU BLOC SEO STRATÉGIQUE ===================== */}}
-
-
-{{/* --- DÉBUT DE VOTRE CODE SEO EXISTANT (INCHANGÉ) --- */}}
-{{- $siteTitle := .Site.Title -}}
-{{- $pageTitle := .Title -}}
-{{- $pagePermalink := .Permalink -}}
-{{- $pageDescription := "" -}}
-{{- $ogType := "website" -}}
-{{- $ogImageURL := "" -}}
-{{- $ogImageAlt := "" -}}
-{{- $twitterCardType := "summary_large_image" -}}
-{{- $twitterSiteHandle := .Site.Params.author.twitter_handle | default "" -}}
-{{- $twitterCreatorHandle := .Params.author_twitter_handle | default (.Site.Params.author.twitter_handle | default $twitterSiteHandle) -}}
-
-{{/* --- Description de la page --- */}}
-{{- if .Description -}}
-  {{- $pageDescription = .Description -}}
-{{- else if .Summary -}}
-  {{- $pageDescription = .Summary | plainify | truncate 160 "..." -}}
-{{- else -}}
-  {{- $pageDescription = .Site.Params.description -}}
-{{- end -}}
-<meta name="description" content="{{ $pageDescription }}">
-
-{{- $sharingPageTitle := $pageTitle -}}
-{{- if .IsHome -}}
-  {{- $sharingPageTitle = $siteTitle -}}
-{{- end -}}
-
-{{/* --- Open Graph --- */}}
-<meta property="og:title" content="{{ $sharingPageTitle }}">
-{{- if eq .Kind "page" -}} {{/* Utiliser .Kind "page" pour les articles/pages standard */}}
-  {{- $ogType = "article" -}}
-  {{- with .PublishDate -}}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{- end -}}
-  {{- with .Lastmod -}}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{- end -}}
-  {{- range .Params.tags -}}<meta property="article:tag" content="{{ . }}">{{- end -}}
-  {{- with .Params.categories -}}
-    {{- if gt (len .) 0 -}}
-      <meta property="article:section" content="{{ index . 0 }}">
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-<meta property="og:description" content="{{ $pageDescription }}">
-<meta property="og:type" content="{{ $ogType }}">
-<meta property="og:url" content="{{ $pagePermalink }}">
-<meta property="og:site_name" content="{{ $siteTitle }}">
-{{- with .Site.Language.Lang -}}<meta property="og:locale" content="{{ replace . "-" "_" }}">{{- end -}}
-
-{{/* --- Logique pour l'image OG/Twitter --- */}}
-{{- $ogImageAlt = $.Params.featured_image_alt | default $sharingPageTitle -}}
-
-{{- if $.Params.featured_image -}}
-  {{- $imgPath := $.Params.featured_image -}}
-  {{- if strings.HasPrefix $imgPath "http" -}} {{/* URL Externe */}}
-    {{- $ogImageURL = $imgPath -}}
-  {{- else -}}
+{{- with .Params.featured_image -}}
     {{- $imgRes := "" -}}
-    {{- if eq $.Kind "page" -}}{{- $imgRes = $.Resources.GetMatch $imgPath -}}{{- end -}}
-    {{- if not $imgRes -}}
-        {{- $assetPath := $imgPath -}}
-        {{- if strings.HasPrefix $assetPath "/" -}}{{- $assetPath = strings.TrimPrefix "/" $assetPath -}}{{- end -}}
-        {{- $imgRes = resources.Get $assetPath -}}
-    {{- end -}}
-
+    {{- /* Cherche l'image dans les ressources de la page (Bundles) */ -}}
+    {{- $imgRes = $page.Resources.GetMatch . -}}
+    {{- /* Si non trouvée, cherche dans /assets */ -}}
+    {{- if not $imgRes }}{{ $imgRes = resources.Get . }}{{ end -}}
     {{- if $imgRes -}}
-      {{- $processedOgImage := $imgRes.Fill "1200x630 q85 Center" -}}
-      {{- $ogImageURL = $processedOgImage.Permalink -}}
-    {{- else if fileExists (printf "static%s" (cond (strings.HasPrefix $imgPath "/") $imgPath (printf "/%s" $imgPath))) -}}
-      {{- $ogImageURL = (cond (strings.HasPrefix $imgPath "/") $imgPath (printf "/%s" $imgPath)) | absURL -}}
+        {{- $ogImage = ($imgRes.Fill "1200x630 q85 Center").Permalink -}}
+    {{- else if (fileExists (printf "static%s" .)) -}}
+        {{- /* Fallback pour les images dans /static */ -}}
+        {{- $ogImage = (. | absURL) -}}
     {{- end -}}
-  {{- end -}}
 {{- end -}}
-
-{{- if not $ogImageURL -}}
-  {{- with $.Site.Params.organization.logo | default $.Site.Params.logo -}}
-    {{- $logoPath := . -}}
-    {{- if strings.HasPrefix $logoPath "http" -}}
-      {{- $ogImageURL = $logoPath -}}
-    {{- else -}}
-      {{- $logoRes := "" -}}
-      {{- $assetLogoPath := $logoPath -}}
-      {{- if strings.HasPrefix $assetLogoPath "/" -}}{{- $assetLogoPath = strings.TrimPrefix "/" $assetLogoPath -}}{{- end -}}
-      {{- $logoRes = resources.Get $assetLogoPath -}}
-      {{- if $logoRes -}}
-        {{- $processedLogo := $logoRes.Fit "1200x630 q85" -}}
-        {{- $ogImageURL = $processedLogo.Permalink -}}
-      {{- else if fileExists (printf "static%s" $logoPath) -}}
-        {{- $ogImageURL = $logoPath | absURL -}}
-      {{- end -}}
+{{- if not $ogImage -}}
+    {{- /* Image de secours : logo du site */ -}}
+    {{- with $site.Params.logo -}}
+        {{- $logoRes := resources.Get . -}}
+        {{- with $logoRes -}}
+            {{- $ogImage = ($logoRes.Fit "1200x630 q85").Permalink -}}
+            {{- $ogImageAlt = printf "%s Logo" $site.Title -}}
+        {{- end -}}
     {{- end -}}
-    {{- if not ($.Params.featured_image_alt) -}}{{- $ogImageAlt = printf "%s Logo" $siteTitle -}}{{- end -}} {{/* Modifié pour ne pas écraser l'alt si déjà défini */}}
-  {{- end -}}
 {{- end -}}
 
-{{- if $ogImageURL -}}
-  <meta property="og:image" content="{{ $ogImageURL }}">
-  <meta property="og:image:alt" content="{{ $ogImageAlt | plainify }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="{{ $ogImageURL }}">
-  <meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">
+{{- /* ======================================================================= */ -}}
+{{- /* =================== DÉBUT DES BALISES META GÉNÉRÉES =================== */ -}}
+{{- /* ======================================================================= */ -}}
+
+<!-- Méta-description -->
+<meta name="description" content="{{ $description }}">
+
+<!-- URL Canonique (Stratégie conservée, elle est correcte) -->
+<link rel="canonical" href="{{ $permalink }}" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $permalink }}">
+<meta property="og:site_name" content="{{ $site.Title }}">
+<meta property="og:type" content="{{ $ogType }}">
+{{- if $ogImage }}
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $ogImageAlt | plainify }}">
+{{- end }}
+{{- if $isPage }}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end -}}
+{{- end }}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with $site.Params.author.twitter_handle }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+{{- if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">{{ end }}
+
+{{- /* ======================================================================= */ -}}
+{{- /* ======================== GESTION DU JSON-LD ========================= */ -}}
+{{- /* ======================================================================= */ -}}
+{{- $schema := "" -}}
+{{- if .Params.json_ld -}}
+    {{- /* CAS 1: Un schéma personnalisé est fourni dans le front matter (doit être une chaîne de caractères) */ -}}
+    {{- if eq (printf "%T" .Params.json_ld) "string" -}}
+        {{- $schema = .Params.json_ld | safeJS -}}
+    {{- end -}}
+{{- else -}}
+    {{- /* CAS 2: Pas de schéma personnalisé, on génère automatiquement */ -}}
+    {{- $data := dict "@context" "https://schema.org" -}}
+    {{- $publisher := dict "@type" "Organization" "name" $site.Title "logo" (dict "@type" "ImageObject" "url" (absURL $site.Params.logo)) -}}
+    {{- $author := dict "@type" "Person" "name" $site.Params.author.name "url" (absURL "/") -}}
+    
+    {{- if $isPage -}}
+        {{- $data = merge $data (dict
+            "@type" "Article"
+            "mainEntityOfPage" (dict "@type" "WebPage" "@id" $permalink)
+            "headline" $title
+            "description" $description
+            "image" $ogImage
+            "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+            "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+            "author" $author
+            "publisher" $publisher
+        ) -}}
+    {{- else if $isTerm -}}
+        {{- $data = merge $data (dict
+            "@type" "CollectionPage"
+            "name" $title
+            "description" $description
+            "url" $permalink
+        ) -}}
+    {{- else if $isHomePage -}}
+        {{- $data = merge $data (dict
+            "@type" "WebSite"
+            "name" $site.Title
+            "description" $description
+            "url" $permalink
+            "publisher" $publisher
+        ) -}}
+    {{- end -}}
+    
+    {{- if gt (len $data) 1 -}}
+        {{- $schema = $data | jsonify -}}
+    {{- end -}}
 {{- end -}}
 
-{{/* --- Twitter Cards --- */}}
-<meta name="twitter:card" content="{{ $twitterCardType }}">
-<meta name="twitter:title" content="{{ $sharingPageTitle }}">
-<meta name="twitter:description" content="{{ $pageDescription }}">
-{{- with $twitterSiteHandle -}}<meta name="twitter:site" content="{{ . }}">{{- end -}}
-{{- with $twitterCreatorHandle -}}<meta name="twitter:creator" content="{{ . }}">{{- end -}}
-
-{{/* --- JSON-LD Schema (appel au partial dédié) --- */}}
-{{- partialCached "schema.html" (dict "context" . "pageDescription" $pageDescription "ogImageURL" $ogImageURL "ogImageAlt" $ogImageAlt) .RelPermalink -}}
+{{- with $schema -}}
+<script type="application/ld+json">
+{{ . }}
+</script>
+{{- end -}}
