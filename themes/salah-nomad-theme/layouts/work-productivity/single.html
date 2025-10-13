@@ -1,0 +1,128 @@
+{{ define "main" }}
+{{ $showSidebarOnThisPage := .Site.Params.singlePageSidebar | default true }}
+{{ if isset .Params "sidebar" }}
+  {{ $showSidebarOnThisPage = .Params.sidebar }}
+{{ end }}
+
+<div class="container single-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }} {{ if .Params.us_optimization }}blueprint-special-layout{{ else }}default-single-layout{{ end }}">
+
+  <div class="single-main-content">
+    
+    {{ partial "breadcrumbs.html" . }}
+
+    <article class="post-single hentry {{ if .Params.us_optimization }}blueprint-article{{ end }}" data-pagefind-body>
+      
+      <!-- Conditional Header -->
+      <header class="post-header {{ if .Params.us_optimization }}blueprint-header{{ end }}">
+        {{ if .Params.us_optimization }}
+          <!-- IA-optimized header only if parameters exist -->
+          {{ with .Params.structured_data }}
+          <div class="framework-badge-container">
+            {{ with .cultural_origin }}<span class="framework-badge origin">{{ . }}</span>{{ end }}
+            {{ with .framework_type }}<span class="framework-badge type">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          
+          <h1 class="{{ if .Params.us_optimization }}blueprint-main-title{{ else }}post-title p-name{{ end }}">{{ .Title }}</h1>
+          
+          {{ with .Params.us_optimization.usp_angle }}
+            <p class="usp-angle blueprint-usp">{{ . }}</p>
+          {{ end }}
+          
+          {{ with .Params.us_optimization.ia_short_answer }}
+            <div class="ia-short-answer-card blueprint-short-answer">
+              <div class="ia-icon">🧠</div>
+              <div class="ia-content">
+                <strong>In a nutshell:</strong>
+                {{ . }}
+              </div>
+            </div>
+          {{ end }}
+        {{ else }}
+          <!-- Normal header for other pages -->
+          <h1 class="post-title p-name">{{ .Title }}</h1>
+          {{ partial "post-meta.html" . }}
+        {{ end }}
+      </header>
+
+      <!-- Featured Image -->
+      {{ if .Params.featured_image }}
+      <figure class="post-featured-image {{ if .Params.us_optimization }}blueprint-featured-image{{ end }}">
+        {{ partial "responsive-image.html" (dict 
+            "src" .Params.featured_image 
+            "alt" .Params.featured_image_alt
+            "page" . 
+            "loading" "eager"
+            "sizesKey" "singleFeatured" 
+            "caption" .Params.featured_image_caption
+            "class" "blueprint-hero-image"
+        )}}
+        {{ if .Params.us_optimization }}<div class="image-overlay-pattern"></div>{{ end }}
+      </figure>
+      {{ end }}
+
+      <!-- Main Content -->
+      <div class="post-content e-content {{ if .Params.us_optimization }}blueprint-content{{ end }}">
+        
+        {{ if .Params.us_optimization }}
+        <!-- Special content for blueprint pages -->
+        <div class="blueprint-intro">
+          {{ .Content }}
+        </div>
+
+        <!-- Special blueprint sections -->
+        <section class="blueprint-principles">
+          <div class="principle-grid">
+            <div class="principle-card" data-principle="firmitas">
+              <div class="principle-icon">🏛️</div>
+              <h3>Firmitas</h3>
+              <p>Strength and resilience - A system that doesn't collapse under pressure</p>
+            </div>
+            <div class="principle-card" data-principle="utilitas">
+              <div class="principle-icon">⚙️</div>
+              <h3>Utilitas</h3>
+              <p>Practical utility - Every element serves a clear purpose</p>
+            </div>
+            <div class="principle-card" data-principle="venustas">
+              <div class="principle-icon">🎨</div>
+              <h3>Venustas</h3>
+              <p>Beauty and delight - A system that nourishes soul and spirit</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="blueprint-cta">
+          <h3>Start Your Mosaic</h3>
+          <p>Join the community of digital artisans and transform your productivity</p>
+          <a href="#challenge" class="btn btn-mediterranean">Accept the Tessera Challenge</a>
+        </div>
+
+        {{ else }}
+        <!-- Normal content for other pages -->
+        {{ .Content }}
+        {{ end }}
+
+      </div>
+      
+      {{ if .Params.cta }}
+        {{ partial "cta-ebook.html" (dict "cta" .Params.cta "Page" .) }}
+      {{ end }}
+
+      <footer class="post-footer {{ if .Params.us_optimization }}blueprint-footer{{ end }}">
+        {{ partial "post-tags.html" . }}
+        {{ partial "post-share.html" . }}
+      </footer>
+    </article>
+
+    {{ partial "author-bio.html" . }}
+    {{ partial "related-posts.html" . }}
+    {{ partial "comments.html" . }}
+
+  </div>
+
+  {{ if $showSidebarOnThisPage }}
+    {{ partial "sidebar.html" . }}
+  {{ end }}
+
+</div>
+{{ end }}

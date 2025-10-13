@@ -1,18 +1,20 @@
+{{ $page := . }}
 <header class="ia-optimized-header blueprint-ia-header">
-  {{ with .Page.Params.structured_data }}
+  
+  {{ with $page.Params.structured_data }}
   <div class="framework-badge-container">
     {{ with .cultural_origin }}<span class="framework-badge origin">{{ . }}</span>{{ end }}
     {{ with .framework_type }}<span class="framework-badge type">{{ . }}</span>{{ end }}
   </div>
   {{ end }}
   
-  <h1 class="blueprint-main-title">{{ .Page.Title }}</h1>
+  <h1 class="blueprint-main-title">{{ $page.Title }}</h1>
   
-  {{ with .Page.Params.us_optimization.usp_angle }}
+  {{ with $page.Params.us_optimization.usp_angle }}
     <p class="usp-angle blueprint-usp">{{ . }}</p>
   {{ end }}
   
-  {{ with .Page.Params.us_optimization.ia_short_answer }}
+  {{ with $page.Params.us_optimization.ia_short_answer }}
     <div class="ia-short-answer-card blueprint-short-answer">
       <div class="ia-icon">🧠</div>
       <div class="ia-content">
@@ -21,4 +23,5 @@
       </div>
     </div>
   {{ end }}
+
 </header>

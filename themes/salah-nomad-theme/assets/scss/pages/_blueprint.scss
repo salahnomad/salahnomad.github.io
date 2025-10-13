@@ -1,0 +1,565 @@
+// ==========================================================================
+// Specialized styles for Zellige Blueprint page
+// ==========================================================================
+
+.blueprint-special-layout {
+  // IA-optimized header
+  .blueprint-header {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+    padding: $spacing-xl 0;
+    background: linear-gradient(135deg, 
+      rgba($clay-white, 0.8) 0%, 
+      rgba($mediterranean-blue, 0.05) 50%, 
+      rgba($sunset-gold, 0.05) 100%);
+    border-radius: $border-radius-lg;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba($sunset-gold, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba($mediterranean-blue, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    .ia-optimized-header {
+      position: relative;
+      z-index: 2;
+      
+      .framework-badge-container {
+        display: flex;
+        justify-content: center;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-lg;
+        
+        .framework-badge {
+          background: linear-gradient(135deg, $mediterranean-blue, darken($mediterranean-blue, 10%));
+          color: $color-white;
+          padding: $spacing-xs $spacing-md;
+          border-radius: $border-radius-pill;
+          font-size: 0.75rem;
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          box-shadow: 0 2px 8px rgba($mediterranean-blue, 0.3);
+          
+          &.origin {
+            background: linear-gradient(135deg, $sunset-gold, darken($sunset-gold, 10%));
+            box-shadow: 0 2px 8px rgba($sunset-gold, 0.3);
+          }
+        }
+      }
+      
+      h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-bottom: $spacing-md;
+        background: linear-gradient(135deg, $dark-charcoal 0%, $mediterranean-blue 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: $font-weight-bold;
+        text-shadow: 0 2px 4px rgba($dark-charcoal, 0.1);
+        
+        @media (max-width: $breakpoint-md) {
+          font-size: 2.2rem;
+        }
+      }
+      
+      .usp-angle {
+        font-size: 1.3rem;
+        font-style: italic;
+        color: var(--color-text-secondary);
+        margin-bottom: $spacing-lg;
+        border-left: 3px solid $sunset-gold;
+        padding-left: $spacing-md;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+        
+        @media (max-width: $breakpoint-md) {
+          font-size: 1.1rem;
+          padding: 0 $spacing-md;
+          border-left: none;
+          border-top: 3px solid $sunset-gold;
+          padding-top: $spacing-md;
+        }
+      }
+      
+      .ia-short-answer-card {
+        background: var(--color-background-alt);
+        border: 1px solid var(--color-border-light);
+        border-radius: $border-radius-lg;
+        padding: $spacing-lg;
+        margin: $spacing-xl auto;
+        max-width: 800px;
+        box-shadow: var(--box-shadow-light);
+        border-left: 4px solid $mediterranean-blue;
+        
+        .ia-icon {
+          font-size: 1.5rem;
+          margin-bottom: $spacing-sm;
+          text-align: center;
+        }
+        
+        .ia-content {
+          strong {
+            color: $mediterranean-blue;
+            display: block;
+            margin-bottom: $spacing-xs;
+            font-family: var(--font-heading);
+          }
+          
+          font-size: 1.05rem;
+          line-height: 1.6;
+          color: var(--color-text-primary);
+        }
+      }
+    }
+  }
+  
+  // Featured image with overlay
+  .blueprint-featured-image {
+    position: relative;
+    margin: $spacing-xxl 0;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    
+    .image-overlay-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(45deg, transparent 48%, rgba($sunset-gold, 0.03) 50%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba($mediterranean-blue, 0.03) 50%, transparent 52%);
+      background-size: 30px 30px;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+    
+    .blueprint-hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover .blueprint-hero-image {
+      transform: scale(1.02);
+    }
+  }
+  
+  // Main content
+  .blueprint-content {
+    .blueprint-intro {
+      // Style for important quotes
+      blockquote {
+        border-left: 4px solid $sunset-gold;
+        background: linear-gradient(135deg, rgba($sunset-gold, 0.05), rgba($mediterranean-blue, 0.05));
+        font-size: 1.2rem;
+        padding: $spacing-xl;
+        margin: $spacing-xxl 0;
+        border-radius: 0 $border-radius-lg $border-radius-lg 0;
+        position: relative;
+        
+        &::before {
+          content: "🧩";
+          font-size: 2rem;
+          position: absolute;
+          left: $spacing-md;
+          top: $spacing-md;
+        }
+        
+        p {
+          margin-left: $spacing-xxl;
+          margin-bottom: 0;
+          font-style: italic;
+          line-height: 1.7;
+        }
+        
+        @media (max-width: $breakpoint-md) {
+          padding: $spacing-lg;
+          
+          &::before {
+            position: relative;
+            left: 0;
+            top: 0;
+            display: block;
+            margin-bottom: $spacing-sm;
+          }
+          
+          p {
+            margin-left: 0;
+          }
+        }
+      }
+      
+      // Style for content sections
+      h2 {
+        position: relative;
+        padding-left: $spacing-lg;
+        
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 60%;
+          background: linear-gradient(to bottom, $sunset-gold, $mediterranean-blue);
+          border-radius: $border-radius-pill;
+        }
+      }
+    }
+  }
+  
+  // Principles section
+  .blueprint-principles {
+    margin: $spacing-xxl 0;
+    padding: $spacing-xl 0;
+    background: linear-gradient(135deg, var(--color-background-alt), var(--color-background));
+    border-radius: $border-radius-lg;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, $sunset-gold, $mediterranean-blue, $sunset-gold);
+      border-radius: $border-radius-pill;
+    }
+    
+    .principle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: $spacing-lg;
+      padding: 0 $spacing-lg;
+      
+      .principle-card {
+        background: var(--color-background-alt);
+        padding: $spacing-xl;
+        border-radius: $border-radius-lg;
+        text-align: center;
+        box-shadow: var(--box-shadow-light);
+        transition: all 0.3s ease;
+        border: 1px solid var(--color-border-light);
+        position: relative;
+        overflow: hidden;
+        
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: $dark-charcoal;
+          transition: height 0.3s ease;
+        }
+        
+        &:hover {
+          transform: translateY(-8px);
+          box-shadow: var(--box-shadow-medium);
+          
+          &::before {
+            height: 6px;
+          }
+        }
+        
+        .principle-icon {
+          font-size: 3rem;
+          margin-bottom: $spacing-md;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+        
+        &:hover .principle-icon {
+          transform: scale(1.1);
+        }
+        
+        h3 {
+          color: $mediterranean-blue;
+          margin-bottom: $spacing-sm;
+          font-family: var(--font-heading);
+          font-weight: $font-weight-bold;
+        }
+        
+        p {
+          color: var(--color-text-secondary);
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+        
+        &[data-principle="firmitas"]::before {
+          background: $dark-charcoal;
+        }
+        
+        &[data-principle="utilitas"]::before {
+          background: $mediterranean-blue;
+        }
+        
+        &[data-principle="venustas"]::before {
+          background: $sunset-gold;
+        }
+      }
+    }
+  }
+  
+  // Call to action
+  .blueprint-cta {
+    text-align: center;
+    background: linear-gradient(135deg, $mediterranean-blue, darken($mediterranean-blue, 15%));
+    color: $color-white;
+    padding: $spacing-xxl;
+    border-radius: $border-radius-lg;
+    margin: $spacing-xxl 0;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: 
+        radial-gradient(circle at 30% 30%, rgba($sunset-gold, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba($color-white, 0.05) 0%, transparent 50%);
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    h3 {
+      color: $color-white;
+      font-size: 2rem;
+      margin-bottom: $spacing-md;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 4px rgba($dark-charcoal, 0.3);
+      
+      @media (max-width: $breakpoint-md) {
+        font-size: 1.6rem;
+      }
+    }
+    
+    p {
+      font-size: 1.1rem;
+      margin-bottom: $spacing-lg;
+      opacity: 0.9;
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .btn-mediterranean {
+      background: $sunset-gold;
+      color: $dark-charcoal;
+      padding: $spacing-md $spacing-xl;
+      border-radius: $border-radius-pill;
+      text-decoration: none;
+      font-weight: $font-weight-bold;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-heading);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      
+      &:hover {
+        background: lighten($sunset-gold, 10%);
+        transform: translateY(-3px);
+        box-shadow: 
+          0 10px 25px rgba($sunset-gold, 0.3),
+          0 0 0 3px rgba($sunset-gold, 0.2);
+      }
+      
+      &:focus-visible {
+        @include a11y-focus;
+        background: lighten($sunset-gold, 5%);
+      }
+    }
+  }
+  
+  // Special footer
+  .blueprint-footer {
+    border-top: 2px solid var(--color-border-light);
+    padding-top: $spacing-xl;
+    margin-top: $spacing-xxl;
+    
+    .post-tags {
+      justify-content: center;
+      
+      .tags-list a {
+        background: linear-gradient(135deg, $mediterranean-blue, $dark-charcoal);
+        
+        &:hover {
+          background: linear-gradient(135deg, lighten($mediterranean-blue, 10%), lighten($dark-charcoal, 10%));
+        }
+      }
+    }
+  }
+}
+
+// Floating animation for CTA
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+// Dark mode
+html.dark-mode {
+  .blueprint-special-layout {
+    .blueprint-header {
+      background: linear-gradient(135deg, 
+        rgba(lighten($dark-charcoal, 5%), 0.8) 0%, 
+        rgba($mediterranean-blue, 0.1) 50%, 
+        rgba($sunset-gold, 0.1) 100%);
+    }
+    
+    .blueprint-principles {
+      background: linear-gradient(135deg, 
+        var(--color-background-alt), 
+        lighten($dark-charcoal, 3%));
+    }
+    
+    .ia-short-answer-card {
+      background: lighten($dark-charcoal, 5%);
+      border-color: lighten($dark-charcoal, 15%);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: $breakpoint-md) {
+  .blueprint-special-layout {
+    .blueprint-header {
+      padding: $spacing-lg $spacing-md;
+      
+      .ia-optimized-header h1 {
+        font-size: 2rem;
+      }
+    }
+    
+    .blueprint-principles .principle-grid {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+      padding: 0 $spacing-md;
+    }
+    
+    .blueprint-cta {
+      padding: $spacing-xl $spacing-lg;
+      
+      h3 {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .blueprint-special-layout {
+    .blueprint-header .framework-badge-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .principle-card {
+      padding: $spacing-lg !important;
+    }
+  }
+}
+
+
+// FAQ Section Styles
+.faq-item {
+  background: var(--color-background-alt);
+  border: 1px solid var(--color-border-light);
+  border-radius: $border-radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-md;
+  box-shadow: var(--box-shadow-light);
+  
+  .faq-question {
+    color: $mediterranean-blue;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin: 0 0 $spacing-sm 0;
+    padding: 0;
+    border: none;
+    
+    &::before {
+      content: "❓";
+      margin-right: $spacing-sm;
+    }
+  }
+  
+  .faq-answer {
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    
+    p:first-child {
+      margin-top: 0;
+    }
+    
+    p:last-child {
+      margin-bottom: 0;
+    }
+    
+    strong {
+      color: $sunset-gold;
+    }
+    
+    a {
+      color: $mediterranean-blue;
+      text-decoration: underline;
+      
+      &:hover {
+        color: darken($mediterranean-blue, 10%);
+      }
+    }
+  }
+  
+  &:hover {
+    border-color: $mediterranean-blue;
+    box-shadow: 0 4px 12px rgba($mediterranean-blue, 0.1);
+  }
+}
+
+// Dark mode support
+html.dark-mode {
+  .faq-item {
+    background: lighten($dark-charcoal, 5%);
+    border-color: lighten($dark-charcoal, 15%);
+    
+    .faq-question {
+      color: lighten($mediterranean-blue, 15%);
+    }
+  }
+}
