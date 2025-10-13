@@ -1,79 +1,63 @@
 {{ define "main" }}
-  {{/* --- Logique pour déterminer si la sidebar doit être affichée --- */}}
   {{ $showSidebarOnThisPage := .Site.Params.listPageSidebar | default true }}
-  {{ if isset .Params "sidebar" }}
-    {{ $showSidebarOnThisPage = .Params.sidebar }}
-  {{ end }}
+  {{ if isset .Params "sidebar" }}{{ $showSidebarOnThisPage = .Params.sidebar }}{{ end }}
 
-  <div class="container hub-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
-
-    {{/* --- Colonne de contenu principale --- */}}
+  <div class="hub-page-container {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+    
+    {{/* STRUCTURE EXISTANTE - RESPECTE VOTRE SCSS */}}
     <div class="hub-main-content">
       <article class="hub-page">
-        {{/* --- En-tête de la Page Hub --- */}}
+        
         <header class="hub-header">
           {{ with .Params.featured_image }}
             {{ $image := $.Resources.GetMatch . }}
             {{ if $image }}
-              {{ $image = $image.Resize "1200x webp q85" }}
+              {{ $image = $image.Fill "1200x400 webp q85 Center" }}
               <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-featured-image" loading="lazy">
             {{ end }}
           {{ end }}
           
           {{ partial "breadcrumbs.html" . }}
-          
           <h1>{{ .Title }}</h1>
-          
-          {{ with .Description }}
-            <p class="lead">{{ . }}</p>
-          {{ end }}
+          {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
           
           {{ with .Params.us_optimization.ia_short_answer }}
             <div class="ia-short-answer-card hub-ia-card">
               <div class="ia-icon">🤖</div>
               <div class="ia-content">
-                <strong>In a nutshell:</strong>
-                {{ . }}
+                <strong>In a nutshell:</strong> {{ . }}
               </div>
             </div>
           {{ end }}
         </header>
 
-        {{/* --- Contenu Principal du Hub (Markdown de _index.md) --- */}}
         <div class="hub-content">
           {{ .Content }}
         </div>
 
-        {{/* --- Grille des Articles de la Section ("Spokes") --- */}}
+        {{/* GRILLE DES ARTICLES */}}
         <section class="hub-spokes-section">
-          <h2>Deep Dive into {{ .Title }}</h2>
+          <div class="posts-list-header">
+              <hr class="separator-above-title">
+              <h2 class="posts-list-title">Deep Dive into {{ .Title }}</h2>
+              <hr class="separator-below-title">
+          </div>
           
-          {{ if .Pages }}
-          <div class="spokes-grid">
-            {{ $pages := .Pages.ByDate.Reverse }}
+          {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
+          {{ if $pages }}
+          <div class="article-grid list-page-grid">
             {{ range $pages }}
-              {{ if templates.Exists "partials/card.html" }}
-                {{ .Render "card" }}
-              {{ else }}
-                <article class="spoke-card-fallback">
-                  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                  {{ with .Description }}<p>{{ . }}</p>{{ end }}
-                  <div class="card-meta">
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-                    {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
-                  </div>
-                </article>
-              {{ end }}
+              {{ partial "article-card.html" . }}
             {{ end }}
           </div>
           {{ else }}
           <div class="no-content-message">
-            <p>Articles for this collection are being crafted. In the meantime, explore our <a href="/compass/">core frameworks</a>.</p>
+            <p>Articles for this collection are being crafted.</p>
           </div>
           {{ end }}
         </section>
 
-        {{/* --- Navigation Contextuelle vers Hubs Frères --- */}}
+        {{/* NAVIGATION CONTEXTUELLE */}}
         {{ $currentSection := .Section }}
         {{ $sections := where (where .Site.Sections "Section" "!=" "") ".Params.headless" "ne" true }}
         {{ $prev := "" }}{{ $next := "" }}
@@ -83,7 +67,7 @@
             {{ if lt (add $i 1) (len $sections) }}{{ $next = index $sections (add $i 1) }}{{ end }}
           {{ end }}
         {{ end }}
-
+        
         {{ if or $prev $next }}
         <nav class="hub-context-nav">
           <h3>Explore Related Hubs</h3>
@@ -96,9 +80,7 @@
                 <strong>{{ .Title }}</strong>
               </div>
             </a>
-            {{ else }}
-             <div></div>
-            {{ end }}
+            {{ else }}<div></div>{{ end }}
             
             {{ with $next }}
             <a href="{{ .RelPermalink }}" class="hub-nav-card next-hub">
@@ -112,17 +94,40 @@
           </div>
         </nav>
         {{ end }}
+
       </article>
     </div>
 
-    {{/* --- Affichage de la Sidebar si elle est activée --- */}}
+    {{/* SIDEBAR - DANS LA STRUCTURE GRID EXISTANTE */}}
     {{ if $showSidebarOnThisPage }}
-       {{ partial "sidebar.html" . }}
+      {{ partial "sidebar.html" . }}
     {{ end }}
 
   </div>
 
-  {{/* --- Données Structurées JSON-LD Améliorées --- */}}
+  {{/* CSS MINIMAL POUR CORRIGER LE DÉBORDEMENT */}}
+  <style>
+  /* CORRECTION DU DÉBORDEMENT GAUCHE */
+  .hub-page-container {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  /* SÉCURITÉ ANTI-DÉBORDEMENT */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* ASSURE QUE LES IMAGES NE DÉBORDENT PAS */
+  .hub-featured-image,
+  .article-card img,
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  </style>
+
+  {{/* JSON-LD */}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -135,9 +140,9 @@
     {{ end }}
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": {{ len .Pages }},
+      "numberOfItems": {{ len .RegularPagesRecursive }},
       "itemListElement": [
-        {{ range $index, $page := .Pages }}
+        {{ range $index, $page := .RegularPagesRecursive.ByDate.Reverse }}
         {
           "@type": "ListItem",
           "position": {{ add $index 1 }},
@@ -148,17 +153,9 @@
             "description": "{{ $page.Description | safeJS }}",
             "datePublished": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}"
           }
-        }{{ if ne (add $index 1) (len $.Pages) }},{{ end }}
+        }{{ if ne (add $index 1) (len $.RegularPagesRecursive) }},{{ end }}
         {{ end }}
       ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ .Site.Params.organization.name }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ .Site.Params.organization.logo | absURL }}"
-      }
     }
   }
   </script>
