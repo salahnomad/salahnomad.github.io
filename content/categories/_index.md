@@ -3,7 +3,7 @@ title: "Explore Topics: Your Compass to the Archipelago of Ideas"
 date: 2025-05-11T09:10:00+02:00
 draft: false
 description: "Navigate the diverse themes of Rooted Nomadism. Each category is an island of knowledge in a vast sea of ideas, waiting to be explored on your own journey."
-featured_image: "/images/categories.jpg" # Chemin depuis /static ou /assets
+featured_image: "/images/categories.jpg"
 featured_image_alt: "An ancient, hand-drawn map of a mythical archipelago, where each island is named after a blog category, symbolizing thematic exploration."
 layout: "taxonomy" # Force l'utilisation du layout que nous allons améliorer
 sitemap:
