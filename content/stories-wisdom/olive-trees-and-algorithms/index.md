@@ -106,7 +106,7 @@ canonical: "/stories-wisdom/olive-trees-and-algorithms/"
 ---
 
 {{< quick-summary >}}
-**TL;DR:** When COVID destroyed my wellness business, ancient olive trees taught me three resilience principles: 1. **Deep roots drink first** (mine your heritage before chasing trends). 2. **Crisis updates your software** (collapse contains your next evolution). 3. **Legacy flows** (true wealth moves, doesn't store). This birthed Rooted Nomadism.
+**TL;DR:** When COVID destroyed my wellness business, ancient olive trees taught me three resilience principles: 1. **Deep roots drink first** (mine your heritage before chasing trends). 2. **Crisis updates your software** (collapse contains your next evolution). 3. **Legacy flows** (true wealth moves, doesn't store). This birthed {{< glossary-link "Rooted Nomadism" >}}.
 {{< /quick-summary >}}
 
 ## How Can 800-Year-Old Olive Trees Solve Modern Business Collapse?
@@ -115,7 +115,7 @@ canonical: "/stories-wisdom/olive-trees-and-algorithms/"
 
 In my pocket, my phone was a cold, dead weight, its silence more damning than any notification. Days earlier, it had buzzed with cancellation emails—the death knell for my wellness business. In Ksar El-Kébir, my warehouse sat paralyzed. At the port of Tangier, two tons of precious Atlas Ghassoul clay—the mineral memory of Berber hammams, destined for luxury European spas—were held hostage by a world in lockdown.
 
-**My thriving business, built on the tangible heritage of my homeland, had turned to dust in 72 hours.** I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire a new model for financial resilience, the [**Olive Grove Economy framework**](/glossary/olive-grove-economy/).
+**My thriving business, built on the tangible heritage of my homeland, had turned to dust in 72 hours.** I had nowhere to ship, nothing to sell. I was stranded, watching a fifteen-year legacy evaporate. This collapse would later inspire a new model for financial resilience, the [**{{< glossary-link "Olive Grove Economy" >}}**](/glossary/olive-grove-economy/).
 
 ## What Happens When Your "Recession-Proof" Business Meets a Pandemic?
 
@@ -135,7 +135,7 @@ The world had forced my hand. My business was dead. **It was time to return to t
 
 **I retreated to the Jbala mountains, to the olive groves that held my childhood memories of grandmother singing Amazigh songs while pressing argan oil, and my father reading H.G. Wells under a gas lamp.**
 
-Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood what my corporate mentors had missed. **This 800-year-old survivor didn't just endure storms and droughts; it had a strategy developed over centuries.** It held timeless wisdom that I could translate for my digital crisis—the seed of [**Rooted Nomadism**](/stories-wisdom/rooted-nomadism-philosophy/).
+Beneath The Witness Tree, as cicadas orchestrated my reckoning, I finally understood what my corporate mentors had missed. **This 800-year-old survivor didn't just endure storms and droughts; it had a strategy developed over centuries.** It held timeless wisdom that I could translate for my digital crisis—the seed of [**{{< glossary-link "Rooted Nomadism" >}}**](/stories-wisdom/rooted-nomadism-philosophy/).
 
 | **Olive Tree Wisdom** | **My Digital Translation** |
 |:----------------------|:-------------------------|
@@ -154,7 +154,7 @@ It was then I remembered what my ancestors knew when they were expelled from And
 **By June 2020, `salahnomad.com` was born—not as a consolation prize, but as a consecration of everything the olive trees had taught me.** My pivot from physical products to digital wisdom mirrored the very clay-purification rituals I had once sold:
 
 1.  **Washing the Raw Material:** I took oral histories of spice routes and washed them clean into essays
-2.  **Kneading the Wisdom:** I transformed mountain resilience into the [**Jbala Resilience Quartet**](/money-freedom/jbala-resilience-quartet/)
+2.  **Kneading the Wisdom:** I transformed mountain resilience into the [**{{< glossary-link "Jbala Resilience Quartet" >}}**](/money-freedom/jbala-resilience-quartet/)
 3.  **Firing the Legacy:** I turned 20 years of cross-border commerce into [**SEO strategies inspired by Phoenician traders**](/work-productivity/phoenician-merchant-seo/)
 
 **The miracle? Within nine months, organic search traffic to my blog surpassed my peak e-commerce revenue.** Google had become my new Loukkos River—carrying cargo no customs officer could ever seize.
@@ -165,8 +165,12 @@ It was then I remembered what my ancestors knew when they were expelled from And
 
 **The ultimate confirmation came not from a sales report, but from an email from Nova Scotia, Canada:**
 
-> *"Salah – your post on Ghassoul clay rituals inspired my 'Boreal Hammam' skincare line, which blends ancient Mi'kmaq botanicals with Moroccan wellness philosophy. You turned your crisis into a transatlantic bridge of inspiration."*
-> **– Nadia, artisan formulator**
+{{< testimonial-card 
+    author="Nadia Tremblay" 
+    role="Artisan Formulator & Cultural Entrepreneur" 
+    source="Boreal Hammam Skincare, Nova Scotia" >}}
+Salah – your post on Ghassoul clay rituals inspired my 'Boreal Hammam' skincare line, which blends ancient Mi'kmaq botanicals with Moroccan wellness philosophy. You turned your crisis into a transatlantic bridge of inspiration. The principles of {{< glossary-link "Rooted Nomadism" >}} helped me see my own heritage as a source of innovation rather than limitation.
+{{< /testimonial-card >}}
 
 **This was the legacy my olive tree foresaw: wisdom traveling faster than pathogens, sprouting hybrid ideas no supply chain could deliver.** My business had collapsed, but my impact had multiplied exponentially.
 
@@ -177,7 +181,7 @@ It was then I remembered what my ancestors knew when they were expelled from And
 **Today, from my terrace in Málaga, I feel the synthesis my olive tree initiated.** My life has become a Mediterranean coin: one side etched with deep roots of heritage, the other with shimmering waves of digital currents. This balancing act is the practical expression of my complete philosophy:
 
 - **The Art of Being** (cultivated in those olive groves) 
-- **The Art of Moving** (expressed through the [**Algorithmic Sardine**](/stories-wisdom/algorithmic-sardine-philosophy/))
+- **The Art of Moving** (expressed through the [**{{< glossary-link "Algorithmic Sardine" >}}**](/stories-wisdom/algorithmic-sardine-philosophy/))
 - **The synthesis that creates Rooted Nomadism**
 
 The pandemic proved what Andalusian exiles knew five centuries ago: **walls can imprison bodies, but they often liberate minds.** Clay expires. Borders close. But a well-told story, rooted in truth, outlasts pandemics and algorithms alike.

@@ -71,7 +71,7 @@ faq:
   - question: "How is this different from the FIRE (Financial Independence, Retire Early) movement?"
     answer: "**FIRE focuses on extreme savings to escape work; the Olive Grove Economy focuses on building systems that make work meaningful and resilient.** We're not trying to retire—we're building ecosystems where we can do our best work without financial anxiety. I've written a detailed comparison in [Olive Grove Economy vs. FIRE](/money-freedom/olive-grove-economy-vs-fire/)."
   - question: "What if I don't have any 'digital products' to sell?"
-    answer: "**Your knowledge is your first grove.** Every freelancer has valuable insights. That client project you just finished? Repurpose it into a '7 Lessons' PDF. The system you built to manage your workflow? Turn it into a Notion template. I started with a simple productivity framework that became [The Zellige Blueprint](/work-productivity/zellige-blueprint/)—your first 'olive tree' is closer than you think."
+    answer: "**Your knowledge is your first grove.** Every freelancer has valuable insights. That client project you just finished? Repurpose it into a '7 Lessons' PDF. The system you built to manage your workflow? Turn it into a Notion template. I started with a simple productivity framework that became The Zellige Blueprint—your first 'olive tree' is closer than you think."
   - question: "How long until I see real financial security with this approach?"
     answer: "**Most people feel a significant reduction in financial anxiety within 3 months**, with substantial resilience building within a year. The goal isn't overnight wealth—it's progressive freedom. My own journey took from 98% client-dependent to 45% asset-based income in about 18 months, but the peace of mind came much sooner."
   - question: "Can this work for someone with a traditional 9-5 job?"
@@ -107,14 +107,14 @@ canonical: "/money-freedom/olive-grove-economy/"
 ---
 
 {{< quick-summary >}}
-**TL;DR:** The Olive Grove Economy transforms financial stress through 4 Mediterranean principles: 1. **Nourish Your Soil** (build foundational platforms). 2. **Plant Patient Trees** (create long-term assets). 3. **Diversify Your Harvest** (multiple income streams). 4. **Dig Resilience Wells** (strategic reserves). Shift from chasing income to cultivating wealth.
+**TL;DR:** The {{< glossary-link "Olive Grove Economy" >}} transforms financial stress through 4 Mediterranean principles: 1. **Nourish Your Soil** (build foundational platforms). 2. **Plant Patient Trees** (create long-term assets). 3. **Diversify Your Harvest** (multiple income streams). 4. **Dig Resilience Wells** (strategic reserves). Shift from chasing income to cultivating wealth.
 {{< /quick-summary >}}
 
 ## How Can Ancient Olive Trees Solve Modern Financial Anxiety?
 
 **March 16, 2020. Tangier's port lay unnaturally still as I pressed my forehead against an ancestor-planted olive tree in Ksar El-Kébir, my physical product business vaporized by 37 cancellation emails and locked shipping containers—and discovered the ancient wisdom that would transform my financial future forever.**
 
-The scent of Rif mountain clay—the earthy perfume of my livelihood—hung trapped in those containers. My entire business, built on tangible heritage, had collapsed in 48 hours. **In that moment of crisis, the wind whispered through silver leaves: 'You measure wealth in roots, not fruits.'**
+The scent of Atlas mountain clay—the earthy perfume of my livelihood—hung trapped in those containers. My entire business, built on tangible heritage, had collapsed in 48 hours. **In that moment of crisis, the wind whispered through silver leaves: 'You measure wealth in roots, not fruits.'**
 
 That epiphany birthed a fundamental truth: **Digital nomads and freelancers obsess over cash flow (fruits), but true financial freedom grows from assets (roots).** This is the heart of the Olive Grove Economy, a system inspired by centuries of Mediterranean resilience.
 
@@ -154,7 +154,7 @@ The traditional approach creates what I call the **Digital Forager Trap**:
 - **Repurpose one client project** into foundational content (e.g., "7 SEO Lessons from Phoenician Merchants")
 - **Build your Trust Reservoir**: 3 authentic testimonials > 100 vague LinkedIn endorsements
 
-> 🏺 **My Pandemic Pivot:** With warehouses locked and business collapsing, I wrote "[The Zellige Blueprint](/work-productivity/zellige-blueprint/)". This became my new "port"—attracting opportunities I never could have hunted directly.
+> 🏺 **My Pandemic Pivot:** With warehouses locked and business collapsing, I wrote "[The {{< glossary-link "Zellige Blueprint" >}}](/work-productivity/zellige-blueprint/)". This became my new "port"—attracting opportunities I never could have hunted directly.
 
 ### 🌳 **Pillar 2: Plant Patient Trees (Create Long-Term Assets)**
 
@@ -202,7 +202,7 @@ The traditional approach creates what I call the **Digital Forager Trap**:
 - Saying no to toxic $200/hr clients
 - Funding 3-month "asset sprints" to build new income streams  
 - Sleeping through market crashes without panic
-- Inspired by the [ancient resilience principles of the Jbala people](/money-freedom/jbala-resilience-quartet/)
+- Inspired by the [ancient resilience principles of the {{< glossary-link "Jbala Resilience Quartet" >}}](/money-freedom/jbala-resilience-quartet/)
 
 **Build It Mediterranean-Style:**
 {{< mermaid >}}
@@ -244,6 +244,13 @@ journey
         Multiple automated income streams: 5
 {{< /mermaid >}}
 
+{{< testimonial-card 
+    author="Lena Kowalski" 
+    role="Freelance UX Designer & Digital Nomad" 
+    source="Remote Work Journey, Bali & Lisbon" >}}
+The {{< glossary-link "Olive Grove Economy" >}} completely transformed my financial reality. I went from constant invoice chasing to having 8 months of runway and 42% of my income coming from digital products. Starting with a simple $27 Figma template, I now have 5 digital assets generating recurring revenue. The framework gave me the courage to say no to draining clients and focus on work that actually matters. My Root Depth Ratio went from 0.05 to 0.42 in 14 months.
+{{< /testimonial-card >}}
+
 ## How Can You Start Building Your Olive Grove This Week?
 
 **Begin with the 7-Day Gardener Challenge—small, actionable steps that immediately start transforming your financial foundation from fragile to resilient.**
@@ -273,17 +280,17 @@ The Olive Grove Economy works because it's not about radical overnight changes�
 
 ## How Does the Olive Grove Economy Connect to Complete Rooted Nomadism?
 
-**The Olive Grove Economy represents the financial implementation of Rooted Nomadism—creating the economic stability that enables purposeful work, meaningful travel, and authentic freedom.**
+**The Olive Grove Economy represents the financial implementation of {{< glossary-link "Rooted Nomadism" >}}—creating the economic stability that enables purposeful work, meaningful travel, and authentic freedom.**
 
 This framework connects deeply to your complete philosophy:
 
-- **Rooted Nomadism Philosophy:** The Olive Grove embodies the **Art of Being**—building stable foundations
-- **[Algorithmic Sardine](/stories-wisdom/algorithmic-sardine-philosophy/):** Financial resilience enables **purposeful movement** between opportunities
-- **[Zellige Blueprint](/work-productivity/zellige-blueprint/):** Organized systems support **consistent asset creation**
-- **[Baker's Code](/work-productivity/bakers-code/):** Deep work rituals fuel **meaningful asset development**
+- **{{< glossary-link "Rooted Nomadism" >}} Philosophy:** The Olive Grove embodies the **Art of Being**—building stable foundations
+- **[{{< glossary-link "Algorithmic Sardine" >}}](/stories-wisdom/algorithmic-sardine-philosophy/):** Financial resilience enables **purposeful movement** between opportunities
+- **[{{< glossary-link "Zellige Blueprint" >}}](/work-productivity/zellige-blueprint/):** Organized systems support **consistent asset creation**
+- **[{{< glossary-link "Baker's Code" >}}](/work-productivity/bakers-code/):** Deep work rituals fuel **meaningful asset development**
 
 **Together, these frameworks create a complete ecosystem for building a life of purpose, freedom, and impact**—one that honors both stability and exploration, depth and movement.
 
 > **Master the complete system:** **[Explore the full Olive Grove Economy framework definition and principles →](/glossary/olive-grove-economy/)**
 
-> **Continue your financial journey:** Discover [how ancient resilience principles can transform your modern life →](/money-freedom/jbala-resilience-quartet/) and [the art of creating value across cultures →](/work-productivity/souk-algorithm/)
+> **Continue your financial journey:** Discover [how ancient resilience principles can transform your modern life →](/money-freedom/jbala-resilience-quartet/) and [the art of creating value across cultures →](/work-productivity/{{< glossary-link "Souk Algorithm" >}}/)

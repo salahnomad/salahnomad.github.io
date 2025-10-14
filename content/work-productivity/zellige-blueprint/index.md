@@ -101,7 +101,7 @@ canonical: "/work-productivity/zellige-blueprint/"
 ---
 
 {{< quick-summary >}}
-**TL;DR:** The Zellige Blueprint transforms digital overwhelm through 3 Mediterranean layers: 1. **Tesserae** (atomic tasks shaped with intention). 2. **Stellae** (projects as meaningful constellations). 3. **Musivum** (life domains for alignment). It's the artisan approach to modern productivity.
+**TL;DR:** The {{< glossary-link "Zellige Blueprint" >}} transforms digital overwhelm through 3 Mediterranean layers: 1. **Tesserae** (atomic tasks shaped with intention). 2. **Stellae** (projects as meaningful constellations). 3. **Musivum** (life domains for alignment). It's the artisan approach to modern productivity.
 {{< /quick-summary >}}
 
 ## How Can 800-Year-Old Mediterranean Artisans Solve Modern Digital Overwhelm?
@@ -126,7 +126,7 @@ We've forgotten what Vitruvius knew 2,000 years ago. **A system without *firmita
 
 > **"True productivity isn't about managing tasks. It's about composing a life that is strong, useful, and beautiful—one intentional tile at a time."**
 
-The **[Zellige Blueprint](/glossary/zellige-blueprint/)** is my answer to this crisis. It's the practical application of the deeper [**Rooted Nomadism philosophy**](/stories-wisdom/rooted-nomadism-philosophy/)—transforming how we work by reconnecting with artisan wisdom.
+The **[{{< glossary-link "Zellige Blueprint" >}}](/glossary/zellige-blueprint/)** is my answer to this crisis. It's the practical application of the deeper [**{{< glossary-link "Rooted Nomadism" >}}**](/stories-wisdom/rooted-nomadism-philosophy/)—transforming how we work by reconnecting with artisan wisdom.
 
 ## How Does the 3-Layer Zellige System Transform Chaos into Composition?
 
@@ -167,7 +167,7 @@ I track this with a weekly alignment check:
 | Life Domain (*Musivum*) | Emblem | Alignment Question |
 |---|---|---|
 | **Sapientia** (Wisdom) | 🦉 | Did my work create more than it consumed? |
-| **Opulentia** (Wealth) | ⚖️ | Did I build value, or just trade time? [Learn more](/money-freedom/olive-grove-economy/) |
+| **Opulentia** (Wealth) | ⚖️ | Did I build value, or just trade time? [Learn more about the {{< glossary-link "Olive Grove Economy" >}}](/money-freedom/olive-grove-economy/) |
 | **Communitas** (Community) | 🤝 | Whom did I nourish and connect with? |
 | **Ars** (Craft) | ✋ | What skill did I deliberately hone? |
 | **Radices** (Roots) | 🌳 | Where did I plant meaning and connect to heritage? |
@@ -184,7 +184,7 @@ Adopting an artisan mindset is a practice, not a quick fix. **When your mosaic c
     *   **Solution: The *Ars Tria* (Art of Three).** Weekly, sort notes into: **Gold** (high-potential, shape immediately), **Clay** (useful but not urgent, archive), **Dust** (trivial noise, discard). **A master knows not every stone is a gem.**
 
 *   **Problem: "Acta tyranny! Everything feels urgent and reactive."**
-    *   **Solution: The *Lex Cordubensis* (Law of Córdoba).** Impose daily quotas: max 5 *Acta* (🔴), but minimum 3 *Cogitationes* (🔵) and 2 *Radices* (🟢). **This forces rebalancing from reaction toward [deep, creative work](/work-productivity/thermae-flow-state-deep-work/).**
+    *   **Solution: The *Lex Cordubensis* (Law of Córdoba).** Impose daily quotas: max 5 *Acta* (🔴), but minimum 3 *Cogitationes* (🔵) and 2 *Radices* (🟢). **This forces rebalancing from reaction toward [deep, creative work with {{< glossary-link "Thermae Flow State" >}}](/work-productivity/thermae-flow-state-deep-work/).**
 
 *   **Problem: "Stella obesity! My projects become overwhelming piles."**
     *   **Solution: The *Principium Italicense* (Italic Principle).** Fragment monolithic projects into focused *stellae*. "Redesign Website" becomes "Refine Homepage Narrative," "Optimize Pillar Content," and "Streamline Contact Flow."
@@ -198,7 +198,7 @@ This system lives not in apps, but in practices that reconnect us with the physi
 {{< figure src="images/artisan-productivity-morning-ritual.jpg" alt="Calm desk scene with coffee, notebook, and single zellige tile for morning ritual" caption="The Morning Ritual: where daily intentions are carved with care before digital chaos begins." >}}
 
 ### **Matutinum: Tessera Sectio (Morning Tile Cutting)**
-**Before any screen is touched, I sit with strong *café solo* for 7 minutes of pure clarity.** I review raw fragments from yesterday and shape them into clean *tesserae* in my notebook, asking: *"Quam tessellam hodie percutiam?"* (Which tile shall I strike today?) This practice aligns with the focused rituals of [The Baker's Code](/work-productivity/bakers-code/).
+**Before any screen is touched, I sit with strong *café solo* for 7 minutes of pure clarity.** I review raw fragments from yesterday and shape them into clean *tesserae* in my notebook, asking: *"Quam tessellam hodie percutiam?"* (Which tile shall I strike today?) This practice aligns with the focused rituals of [The {{< glossary-link "Baker's Code" >}}](/work-productivity/bakers-code/).
 
 ### **Solis Die: Constitutio Siderum (Sunday Star Assembly)**
 **My weekly *curia* (assembly) with myself involves laying out project 'stellae' as index cards and connecting them to *musivum* cards with colored threads.** The tactile exercise makes misalignment obvious. Any project without strong connections to life domains gets retired.
@@ -207,20 +207,22 @@ This system lives not in apps, but in practices that reconnect us with the physi
 
 **Paradoxically, Zellige's constraints boosted my creativity by forcing distillation of chaotic ideas into focused patterns—reducing research time from 2 weeks to 3 days in actual projects.**
 
-This isn't theoretical. **When building my 'Phoenician Blockchain' article:**
-- **Before:** My Notion was a chaotic graveyard of 62 links and half-formed thoughts
-- **Zellige Applied:** I distilled chaos into 21 polished *tesserae*, forming one focused *stella*: "Contrast Roman Aqueducts with Phoenician Networks"
-- **Result:** The article was researched and written in 3 days instead of 2 weeks
+{{< testimonial-card 
+    author="Salah Nomad" 
+    role="Digital Artisan & Mediterranean Wisdom Guide" 
+    source="Rooted Nomad Blog Development" >}}
+When building my 'Phoenician Blockchain' article, the {{< glossary-link "Zellige Blueprint" >}} transformed my process. My Notion was a chaotic graveyard of 62 links and half-formed thoughts. Applying Zellige, I distilled this chaos into 21 polished *tesserae*, forming one focused *stella*: "Contrast Roman Aqueducts with Phoenician Networks." The result? The article was researched and written in 3 days instead of 2 weeks. The constraints didn't limit me—they liberated me from decision fatigue and endless research loops.
+{{< /testimonial-card >}}
 
-**The constraints didn't limit me—they liberated me from decision fatigue and endless research loops.** This is the power of working like an artisan: knowing what to include because you're clear about what to exclude.
+**This is the power of working like an artisan: knowing what to include because you're clear about what to exclude.** The system transforms overwhelming complexity into manageable, meaningful composition.
 
 ## How Does Zellige Connect to the Complete Rooted Nomadism Philosophy?
 
-**The Zellige Blueprint is the practical implementation of the Art of Being from [Rooted Nomadism](/stories-wisdom/rooted-nomadism-philosophy/)—creating the stable foundation that enables purposeful movement through the world.**
+**The Zellige Blueprint is the practical implementation of the Art of Being from [{{< glossary-link "Rooted Nomadism" >}}](/stories-wisdom/rooted-nomadism-philosophy/)—creating the stable foundation that enables purposeful movement through the world.**
 
 This system represents one essential half of the complete philosophy:
 - **Zellige Blueprint** = The Art of Being (stability, composition, inner foundation)
-- **[Algorithmic Sardine](/stories-wisdom/algorithmic-sardine-philosophy/)** = The Art of Moving (purposeful navigation, value migration)
+- **[{{< glossary-link "Algorithmic Sardine" >}}](/stories-wisdom/algorithmic-sardine-philosophy/)** = The Art of Moving (purposeful navigation, value migration)
 
 **Together, they form the complete practice of Rooted Nomadism:** building an unshakable inner world while navigating the outer world with purpose.
 
