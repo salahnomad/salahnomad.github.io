@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Shortcode: Testimonial Cards - Version Simplifiée
+   ========================================================================== */
+
+.testimonial-card {
+  background-color: var(--color-background-offset);
+  border-left: 4px solid var(--color-text-accent-secondary);
+  border-radius: 8px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card-content {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+}
+
+.testimonial-card-footer {
+  text-align: right;
+  font-family: var(--font-heading);
+}
+
+.testimonial-card-author {
+  font-weight: 600;
+  color: var(--color-text-headings);
+  font-size: 0.95rem;
+}
+
+.testimonial-card-source {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
+
+/* Mode sombre */
+[data-theme="dark"] .testimonial-card {
+  background-color: var(--color-background-alt);
+  border-left-color: var(--color-text-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+}

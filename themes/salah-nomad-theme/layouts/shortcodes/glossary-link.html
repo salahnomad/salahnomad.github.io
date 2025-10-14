@@ -1,0 +1,21 @@
+{{/* ==========================================================================
+   Shortcode: Glossary Link
+   Purpose: Create semantic links to glossary terms with hover effects
+   Usage: {{< glossary-link "Rooted Nomadism" >}} or {{< glossary-link term="Rooted Nomadism" >}}
+   ========================================================================== */}}
+
+{{ $term_name := .Get "term" | default (.Get 0) }}
+{{ $term_slug := $term_name | urlize }}
+{{ with site.GetPage (printf "/glossary/%s" $term_slug) }}
+<a href="{{ .RelPermalink }}" 
+   class="glossary-term-link" 
+   title="Definition: {{ .Description | plainify | truncate 150 }}"
+   itemprop="definition" 
+   itemscope 
+   itemtype="https://schema.org/DefinedTerm">
+  <span itemprop="name">{{ $term_name }}</span>
+</a>
+{{ else }}
+{{ warnf "Glossary term not found: %s in page %s" $term_name $.Page.Path }}
+<span class="glossary-term-missing">{{ $term_name }}</span>
+{{ end }}

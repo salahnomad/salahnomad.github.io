@@ -15,7 +15,10 @@
 @import 'layout/mobile-menu';
 @import 'layout/taxonomies';
 @import "components/cta-ebook.css";
-@import 'components/framework-connections'; 
+@import 'components/framework-connections';
+// Import des composants shortcodes du Sprint 3
+@import 'components/glossary-links';
+@import 'components/testimonial-cards';
 // ... autres composants ...
 
 // AJOUTEZ CETTE LIGNE ICI

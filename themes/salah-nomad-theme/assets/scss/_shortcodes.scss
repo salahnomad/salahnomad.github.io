@@ -1,3 +1,17 @@
+@import 'variables'; // Assure que les variables sont disponibles
+
+/* ==========================================================================
+   Import des composants shortcodes spécialisés (Sprint 3 - Authority Building)
+   ========================================================================== */
+@import 'components/glossary-links';
+@import 'components/testimonial-cards';
+
+/* ==========================================================================
+   Shortcodes existants ci-dessous...
+   ========================================================================== */
+
+// Vos shortcodes existants restent inchangés ici...
+
 /* ==========================================================================
    Expert Box Shortcode (Version finale minimaliste)
    ========================================================================== */

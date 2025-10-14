@@ -54,16 +54,16 @@ cta_description: "Join our community of 2,500+ modern pioneers building meaningf
 cta_button: "Explore the Full Compass"
 cta_link: "/compass/"
 
-# --- FAQ UNIVERSELLE ---
+# --- FAQ UNIVERSELLE --- CORRECTION APPLIQUÉE ICI
 faq:
   - question: "I don't have strong cultural roots or an interesting heritage. Can this still work for me?"
-    answer: "**Absolutely.** Rooted Nomadism isn't about having exotic ancestry—it's about recognizing that your unique background contains wisdom generic advice misses. Your 'roots' are simply the collection of experiences and values that make you who you are."
+    answer: "**Absolutely.** {{< glossary-link \"Rooted Nomadism\" >}} isn't about having exotic ancestry—it's about recognizing that your unique background contains wisdom generic advice misses. Your 'roots' are simply the collection of experiences and values that make you who you are."
   - question: "How does this work with demanding American career expectations?"
-    answer: "**Better than you might think.** Frameworks like the [Olive Grove Economy](/glossary/olive-grove-economy/) and [Zellige Blueprint](/glossary/zellige-blueprint/) create sustainable success by building financial resilience and preventing burnout while maintaining high performance."
+    answer: "**Better than you might think.** Frameworks like the [{{< glossary-link \"Olive Grove Economy\" >}}](/glossary/olive-grove-economy/) and [{{< glossary-link \"Zellige Blueprint\" >}}](/glossary/zellige-blueprint/) create sustainable success by building financial resilience and preventing burnout while maintaining high performance."
   - question: "Is this compatible with ambition and rapid growth?"
     answer: "**It redefines them.** We believe in building systems that grow stronger under stress rather than optimizing for speed at the cost of resilience. You'll build something that withstands market shifts and personal challenges."
   - question: "How is this different from minimalism or the FIRE movement?"
-    answer: "**We're building cathedrals, not just camping.** Minimalism focuses on having less. FIRE focuses on financial independence. Rooted Nomadism is about building something meaningful and lasting—whether that's a business, a body of work, or a life rich with connection."
+    answer: "**We're building cathedrals, not just camping.** Minimalism focuses on having less. FIRE focuses on financial independence. {{< glossary-link \"Rooted Nomadism\" >}} is about building something meaningful and lasting—whether that's a business, a body of work, or a life rich with connection."
   - question: "I'm already established in my career. How do I start?"
     answer: "**Start small.** You don't need to quit your job. Begin with the two questions at the end of this article, or pick one framework from the toolkit that addresses your biggest pain point. The journey begins with a single rooted step."
 
@@ -98,26 +98,26 @@ canonical: "/stories-wisdom/rooted-nomadism-philosophy/"
 ---
 
 {{< quick-summary >}}
-**TL;DR:** Rooted Nomadism transforms your cultural heritage from baggage to compass through two core laws: **The Art of Being** (cultivating inner resilience from ancestral wisdom) and **The Art of Moving** (purposeful navigation creating value across cultures). It's the antidote to feeling lost in a hyper-mobile world.
+**TL;DR:** {{< glossary-link "Rooted Nomadism" >}} transforms your cultural heritage from baggage to compass through two core laws: **The Art of Being** (cultivating inner resilience from ancestral wisdom) and **The Art of Moving** (purposeful navigation creating value across cultures). It's the antidote to feeling lost in a hyper-mobile world.
 {{< /quick-summary >}}
 
 ## What is Rooted Nomadism and How Does It Solve Modern Disconnection?
 
-**Rooted Nomadism is a complete philosophy that transforms cultural heritage from constraint to compass for meaningful modern digital life.** I discovered this not in a library, but in the crucible of my own journey—between Moroccan olive groves and European tech hubs, through the ashes of a failed business and the rediscovery of ancestral wisdom.
+**{{< glossary-link "Rooted Nomadism" >}} is a complete philosophy that transforms cultural heritage from constraint to compass for meaningful modern digital life.** I discovered this not in a library, but in the crucible of my own journey—between Moroccan olive groves and European tech hubs, through the ashes of a failed business and the rediscovery of ancestral wisdom.
 
 I was living the digital nomad dream in Málaga. Fast Wi-Fi, beautiful scenery, complete freedom. And I'd never felt more lost. My inbox was full, but my soul was empty. I had the whole world at my fingertips, but I belonged nowhere. This is the great paradox of modern freedom: we've gained the ability to be anywhere, but we've lost the sense of being *somewhere*.
 
-This is the lie we've been sold: that true freedom means leaving everything behind. Rooted Nomadism is the antidote, built on one foundational truth:
+This is the lie we've been sold: that true freedom means leaving everything behind. {{< glossary-link "Rooted Nomadism" >}} is the antidote, built on one foundational truth:
 
 > **"Our roots aren't anchors holding us back—they're the compass that guides us forward."**
 
 ## How Does Rooted Nomadism Compare to Traditional American Pioneer Spirit?
 
-**If you're familiar with the American pioneer ethos, you already understand Rooted Nomadism—but this philosophy updates it for our interconnected digital age.** The restless drive to explore new frontiers while carrying core values remains, but we're pioneering different territories.
+**If you're familiar with the American pioneer ethos, you already understand {{< glossary-link "Rooted Nomadism" >}}—but this philosophy updates it for our interconnected digital age.** The restless drive to explore new frontiers while carrying core values remains, but we're pioneering different territories.
 
 This isn't about conquering uncharted lands or the individualistic "go it alone" mentality. **We're becoming a new kind of pioneer: cultivating meaningful connections across multiple landscapes, building resilience through diverse networks, and measuring success by depth of impact rather than speed of expansion.**
 
-**This philosophy stands in direct contrast to today's "hustle culture" and the glorification of burnout.** We're not here to optimize every minute for maximum output or chase endless growth. Instead, Rooted Nomadism offers a sustainable path to success—one that values purposeful movement over frantic activity, and intentional being over constant doing.
+**This philosophy stands in direct contrast to today's "hustle culture" and the glorification of burnout.** We're not here to optimize every minute for maximum output or chase endless growth. Instead, {{< glossary-link "Rooted Nomadism" >}} offers a sustainable path to success—one that values purposeful movement over frantic activity, and intentional being over constant doing.
 
 ## What Are the Two Fundamental Laws of a Rooted Life?
 
@@ -139,7 +139,14 @@ But the olive tree's true secret isn't just depth—it's symbiosis. Their roots 
 
 Standing on Málaga's shore, watching sardines move as one organism between continents, I understood: they're not following a leader. **They're responding to invisible signals—currents, temperature, predator patterns. Their intelligence is distributed, not centralized.**
 
-The tourist asks "What can this place give me?" The Value Migrant asks "What can we create together?" **This shift from extraction to co-creation changes everything.** [Learn how to choose destinations that resonate with your roots using the Canary Melon Compass](/place-belonging/canary-melon-compass/)—a framework for soulful location choices beyond sterile spreadsheets.
+The tourist asks "What can this place give me?" The Value Migrant asks "What can we create together?" **This shift from extraction to co-creation changes everything.** [Learn how to choose destinations that resonate with your roots using the {{< glossary-link "Canary Melon Compass" >}}](/place-belonging/canary-melon-compass/)—a framework for soulful location choices beyond sterile spreadsheets.
+
+{{< testimonial-card 
+    author="Sarah" 
+    role="Cultural Strategist" 
+    source="New York & Marrakech" >}}
+As someone navigating American corporate culture and Moroccan family expectations, {{< glossary-link "Rooted Nomadism" >}} gave me the language to transform my "divided identity" into my greatest strategic advantage. The Art of Being helped me articulate my unique value, while the Art of Moving showed me how to bridge cultures authentically in business negotiations.
+{{< /testimonial-card >}}
 
 ## How Can the Zellige Principle Transform Your Daily Life?
 
@@ -149,7 +156,7 @@ I once watched a master in Fès work for three days on a single square meter. "W
 
 This is a profound metaphor for identity. We are all mosaics of our past, heritage, ambitions, and contradictions. **The beauty lies not in uniformity, but in the harmony you create from your unique, fragmented pieces.**
 
-> **In Practice:** To apply this vision, I developed a complete methodology for organizing your digital and physical life. **[Discover the philosophy and system of The Zellige Blueprint here &rarr;](/glossary/zellige-blueprint/)**
+> **In Practice:** To apply this vision, I developed a complete methodology for organizing your digital and physical life. **[Discover the philosophy and system of The {{< glossary-link "Zellige Blueprint" >}} here &rarr;](/glossary/zellige-blueprint/)**
 
 ## What Does the Phoenician Principle Teach Us About Modern Resilience?
 
@@ -205,7 +212,7 @@ Similarly, the Rooted Nomad builds resilience through distributed connections ra
 
 ## What's Your First Step on the Rooted Nomadism Path?
 
-**Rooted Nomadism transformed my life from rootless wandering to purposeful navigation.** It can do the same for you.
+**{{< glossary-link "Rooted Nomadism" >}} transformed my life from rootless wandering to purposeful navigation.** It can do the same for you.
 
 Your journey begins not with a grand voyage, but with a simple act of reflection. This week, ask yourself these two fundamental questions:
 

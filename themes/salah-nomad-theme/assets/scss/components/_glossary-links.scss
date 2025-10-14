@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Shortcode: Glossary Term Links (Sprint 3 - Authority Building)
+   Version harmonisée avec le design system Salah Nomad
+   ========================================================================== */
+
+// Variables spécifiques au composant
+$glossary-term-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$glossary-term-hover-lift: translateY(-1px);
+
+a.glossary-term-link {
+  // Structure de base alignée avec vos boutons CTA
+  border-bottom: 2px dotted var(--color-text-accent-secondary);
+  text-decoration: none;
+  font-weight: $font-weight-semibold;
+  color: var(--color-text-primary);
+  transition: $glossary-term-transition;
+  position: relative;
+  padding: 0.1em 0.2em;
+  margin: 0 0.1em;
+  line-height: 1.4;
+  cursor: pointer;
+  
+  // Micro-interaction inspirée de .expert-box-title
+  &::after {
+    content: '?';
+    font-size: 0.7em;
+    margin-left: 2px;
+    opacity: 0.7;
+    vertical-align: super;
+    transition: opacity 0.2s ease;
+    font-weight: $font-weight-bold;
+  }
+
+  // États interactifs - cohérent avec vos liens
+  &:hover {
+    border-bottom-style: solid;
+    background-color: rgba(var(--mediterranean-blue-rgb), 0.08);
+    color: var(--color-text-accent-secondary);
+    transform: $glossary-term-hover-lift;
+    text-decoration: none;
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+    transition-duration: 0.1s;
+  }
+
+  // Focus accessible comme dans _base.scss
+  &:focus-visible {
+    @include a11y-focus;
+    border-bottom-style: solid;
+    background-color: rgba(var(--mediterranean-blue-rgb), 0.12);
+    text-decoration: none;
+  }
+
+  // Style pour les écrans très réduits
+  @media (max-width: $breakpoint-sm) {
+    padding: 0.15em 0.25em;
+    margin: 0 0.05em;
+    
+    &::after {
+      font-size: 0.65em;
+      margin-left: 1px;
+    }
+  }
+}
+
+// Style pour les termes non trouvés (debug)
+.glossary-term-missing {
+  border-bottom: 2px dotted #ff6b6b;
+  color: var(--color-text-secondary);
+  opacity: 0.7;
+  font-style: italic;
+  
+  &::after {
+    content: ' (not found)';
+    font-size: 0.7em;
+    opacity: 0.5;
+  }
+}
+
+// Mode sombre harmonisé
+[data-theme="dark"] a.glossary-term-link {
+  border-bottom-color: var(--color-text-accent);
+  color: var(--color-text-primary);
+  
+  &:hover {
+    background-color: rgba(var(--sunset-gold-rgb), 0.1);
+    color: var(--color-text-accent);
+    border-bottom-color: var(--color-text-accent);
+  }
+  
+  &:focus-visible {
+    background-color: rgba(var(--sunset-gold-rgb), 0.15);
+    border-bottom-color: var(--color-text-accent);
+  }
+}
+
+[data-theme="dark"] .glossary-term-missing {
+  border-bottom-color: #ff8787;
+  color: var(--color-text-secondary);
+}
+
+// Support pour les préférences de réduction de mouvement
+@media (prefers-reduced-motion: reduce) {
+  a.glossary-term-link {
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+// Styles d'impression
+@media print {
+  a.glossary-term-link {
+    border-bottom: 1px solid #000;
+    color: #000 !important;
+    text-decoration: none;
+    
+    &::after {
+      content: ' [glossary]';
+      opacity: 0.7;
+    }
+    
+    // Masquer les liens en impression sauf si explicitement demandé
+    &[href]::after {
+      content: '';
+    }
+  }
+}
