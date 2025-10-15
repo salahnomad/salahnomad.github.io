@@ -1,4 +1,4 @@
-{{/* layouts/partials/head/seo.html - Version CORRIGÉE */}}
+{{/* layouts/partials/head/seo.html - Version Optimisée Gestion Hybride */}}
 
 {{- $page := . -}}
 {{- $site := .Site -}}
@@ -67,44 +67,106 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
-{{- with $site.Params.author.twitter_handle }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+{{- with $site.Params.social.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
+{{- with $site.Params.author.twitter }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
 {{- if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">{{ end }}
 
 {{- /* ======================================================================= */ -}}
-{{- /* ==================== JSON-LD SIMPLE ET FONCTIONNEL ==================== */ -}}
+{{- /* ==================== GESTION HYBRIDE JSON-LD ======================== */ -}}
 {{- /* ======================================================================= */ -}}
 
-{{- if $isPage -}}
+{{- $schema := "" -}}
+
+{{- /* --- CAS 1: Schéma personnalisé fourni dans le front matter --- */ -}}
+{{- if .Params.json_ld -}}
+    {{- /* Sous-cas 1A: json_ld est "true" → Génération automatique forcée */ -}}
+    {{- if eq .Params.json_ld true -}}
+        {{- /* On génère automatiquement */ -}}
+        {{- $schema = dict "@context" "https://schema.org" -}}
+        {{- if $isPage -}}
+            {{- $schema = merge $schema (dict
+                "@type" "Article"
+                "headline" $title
+                "description" $description
+                "image" $ogImage
+                "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+                "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+                "author" (dict "@type" "Person" "name" $site.Params.author.name)
+                "publisher" (dict "@type" "Organization" "name" $site.Title "logo" (dict "@type" "ImageObject" "url" (absURL $site.Params.logo)))
+                "mainEntityOfPage" (dict "@type" "WebPage" "@id" $permalink)
+            ) -}}
+        {{- end -}}
+    
+    {{- /* Sous-cas 1B: json_ld est une string JSON → Conversion en objet */ -}}
+    {{- else if eq (printf "%T" .Params.json_ld) "string" -}}
+        {{- $schema = .Params.json_ld | transform.Unmarshal -}}
+    
+    {{- /* Sous-cas 1C: json_ld est déjà un objet → Utilisation directe */ -}}
+    {{- else -}}
+        {{- $schema = .Params.json_ld -}}
+    {{- end -}}
+
+{{- /* --- CAS 2: Génération automatique si pas de schéma personnalisé --- */ -}}
+{{- else -}}
+    {{- $data := dict "@context" "https://schema.org" -}}
+    
+    {{- if $isPage -}}
+        {{- /* Schéma Article de base */ -}}
+        {{- $data = merge $data (dict
+            "@type" "Article"
+            "headline" $title
+            "description" $description
+            "image" $ogImage
+            "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+            "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+            "author" (dict "@type" "Person" "name" $site.Params.author.name)
+            "publisher" (dict 
+                "@type" "Organization" 
+                "name" $site.Title 
+                "logo" (dict "@type" "ImageObject" "url" (absURL $site.Params.logo))
+            )
+            "mainEntityOfPage" (dict "@type" "WebPage" "@id" $permalink)
+        ) -}}
+        
+    {{- else if $isTerm -}}
+        {{- $data = merge $data (dict
+            "@type" "CollectionPage"
+            "name" $title
+            "description" $description
+            "url" $permalink
+        ) -}}
+        
+    {{- else if $isHomePage -}}
+        {{- $data = merge $data (dict
+            "@type" "WebSite"
+            "name" $site.Title
+            "description" $description
+            "url" $permalink
+            "publisher" (dict 
+                "@type" "Organization" 
+                "name" $site.Title 
+                "logo" (dict "@type" "ImageObject" "url" (absURL $site.Params.logo))
+            )
+        ) -}}
+    {{- end -}}
+    
+    {{- $schema = $data -}}
+{{- end -}}
+
+{{- /* ======================================================================= */ -}}
+{{- /* ==================== AFFICHAGE SÉCURISÉ ============================== */ -}}
+{{- /* ======================================================================= */ -}}
+
+{{- with $schema -}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ $title }}",
-  "description": "{{ $description }}",
-  "image": "{{ $ogImage }}",
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ $site.Params.author.name }}"
-  },
-  "publisher": {
-    "@type": "Organization", 
-    "name": "{{ $site.Title }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ absURL $site.Params.logo }}"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ $permalink }}"
-  }
-}
+{{ . | jsonify }}
 </script>
 {{- end -}}
 
-<!-- Graphe de site -->
+{{- /* ======================================================================= */ -}}
+{{- /* ==================== GRAPHE DE SITE UNIVERSEL ======================== */ -}}
+{{- /* ======================================================================= */ -}}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,10 +176,18 @@
       "@id": "{{ $site.BaseURL }}#website",
       "url": "{{ $site.BaseURL }}",
       "name": "{{ $site.Title }}",
-      "description": "{{ $site.Params.description }}"
+      "description": "{{ $site.Params.description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ $site.Title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ absURL $site.Params.logo }}"
+        }
+      }
     },
     {
-      "@type": "WebPage",
+      "@type": "WebPage", 
       "@id": "{{ $permalink }}#webpage",
       "url": "{{ $permalink }}",
       "name": "{{ $title }}",
