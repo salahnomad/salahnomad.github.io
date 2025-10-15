@@ -80,7 +80,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "AI and The Future › Decentralized Systems"
-json_ld: true
 canonical: "/ai-future/phoenician-blockchain/"
 ---
 

@@ -77,7 +77,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "AI and The Future › Digital Wellness"
-json_ld: true
 canonical: "/ai-future/olive-grove-digital-detox/"
 ---
 

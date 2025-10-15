@@ -84,7 +84,6 @@ frameworks:
 sitemap:
   priority: 0.9
 breadcrumb: "AI and The Future › Language and Culture"
-json_ld: true
 canonical: "/ai-future/chatgpt-darija-journey/"
 ---
 
