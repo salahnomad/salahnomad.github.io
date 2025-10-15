@@ -1,4 +1,4 @@
-{{/* layouts/partials/head/seo.html - Version CORRIGÉE */}}
+{{/* layouts/partials/head/seo.html - Version FINALE sans erreur */}}
 
 {{- $page := . -}}
 {{- $site := .Site -}}
@@ -67,12 +67,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
-{{- with $site.Params.author.twitter_handle }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+{{- with $site.Params.social.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
+{{- with $site.Params.author.twitter }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
 {{- if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">{{ end }}
 
 {{- /* ======================================================================= */ -}}
-{{- /* ==================== JSON-LD SIMPLE ET FONCTIONNEL ==================== */ -}}
+{{- /* ==================== JSON-LD SIMPLE ET GARANTI ======================= */ -}}
 {{- /* ======================================================================= */ -}}
+
+{{- /* IGNORER COMPLÈTEMENT LES SCHÉMAS PERSONNALISÉS POUR L'INSTANT */ -}}
+{{- /* Nous allons utiliser UNIQUEMENT la génération automatique */ -}}
 
 {{- if $isPage -}}
 <script type="application/ld+json">
