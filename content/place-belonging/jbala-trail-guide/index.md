@@ -2,6 +2,7 @@
 title: "The Jbala Trail: A Regenerative Nomad's Guide to an Andalusian Legacy in Morocco"
 subtitle: "How the story of my ancestors, exiled from Spain, reveals a timeless path for ethical travel"
 date: 2025-05-27T01:00:00+02:00
+lastmod: 2025-10-13
 draft: false
 description: "Discover regenerative travel through the 400-year-old wisdom of Morisco exiles. Learn how to walk the Jbala Trail where cultural humility, artisan exchange and ecological contribution transform tourism."
 categories: ["Place & Belonging"]

@@ -1,15 +1,31 @@
 {{/*
   Shortcode: quick-summary
   ------------------------
-  Version finale avec les couleurs du thème (clay_white / dark_charcoal)
+  Version corrigée qui gère les shortcodes imbriqués
 */}}
 
-<div class="quick-summary">
-  <div class="quick-summary-icon">⚡</div>
-  <div class="quick-summary-content">
-    {{ .Inner | .Page.RenderString }}
+{{ $content := .Inner }}
+
+{{/* Si le contenu contient des shortcodes glossary-link, on les traite d'abord */}}
+{{ $hasGlossaryLinks := findRE `{{</* glossary-link[^>]*/>}}` $content }}
+{{ if $hasGlossaryLinks }}
+  {{/* On rend le contenu avec les shortcodes */}}
+  {{ $renderedContent := $content | .Page.RenderString }}
+  <div class="quick-summary">
+    <div class="quick-summary-icon">⚡</div>
+    <div class="quick-summary-content">
+      {{ $renderedContent | safeHTML }}
+    </div>
   </div>
-</div>
+{{ else }}
+  {{/* Méthode normale pour le contenu sans shortcodes */}}
+  <div class="quick-summary">
+    <div class="quick-summary-icon">⚡</div>
+    <div class="quick-summary-content">
+      {{ $content | .Page.RenderString }}
+    </div>
+  </div>
+{{ end }}
 
 <style>
 /* 
@@ -18,9 +34,9 @@ STYLE POUR LE MODE CLAIR (LIGHT MODE)
 ==============================================
 */
 .quick-summary {
-  background-color: var(--color-clay-white, #FEFAE0); /* Utilise la variable CSS, avec un fallback */
-  color: var(--color-dark-charcoal, #264653); /* Texte sombre sur fond clair */
-  border-left: 4px solid var(--color-sunset-gold, #F4A261); /* Bordure dorée */
+  background-color: var(--color-clay-white, #FEFAE0);
+  color: var(--color-dark-charcoal, #264653);
+  border-left: 4px solid var(--color-sunset-gold, #F4A261);
   padding: 1.5rem;
   margin: 2rem 0;
   border-radius: 0 8px 8px 0;
@@ -33,18 +49,30 @@ STYLE POUR LE MODE CLAIR (LIGHT MODE)
   font-size: 1.5rem;
   line-height: 1.2;
   flex-shrink: 0;
-  color: var(--color-sunset-gold, #F4A261); /* Icône dorée pour la cohérence */
+  color: var(--color-sunset-gold, #F4A261);
 }
 
 .quick-summary-content {
   flex: 1;
 }
 
-/* Le texte en gras hérite de la couleur principale, pas besoin de le redéfinir ici */
 .quick-summary-content strong {
-    color: inherit; 
+  color: inherit;
 }
 
+/* Styles pour les liens glossary à l'intérieur du quick-summary */
+.quick-summary-content .glossary-term-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-sunset-gold, #F4A261);
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.quick-summary-content .glossary-term-link:hover {
+  color: var(--color-sunset-gold, #F4A261);
+  background-color: rgba(244, 162, 97, 0.1);
+}
 
 @media (max-width: 768px) {
   .quick-summary {
@@ -60,15 +88,17 @@ STYLE POUR LE MODE SOMBRE (DARK MODE)
 */
 @media (prefers-color-scheme: dark) {
   html[data-theme='dark'] .quick-summary {
-    background-color: var(--color-dark-charcoal, #264653); /* Fond gris-bleu foncé */
-    color: var(--color-clay-white, #FEFAE0); /* Texte clair sur fond sombre */
-    /* La bordure reste dorée, pas besoin de la redéfinir si elle est déjà correcte */
+    background-color: var(--color-dark-charcoal, #264653);
+    color: var(--color-clay-white, #FEFAE0);
   }
 
-  /* L'icône et le texte en gras hériteront automatiquement de la couleur claire, 
-     mais nous pouvons forcer l'icône à rester dorée si on le souhaite */
   html[data-theme='dark'] .quick-summary-icon {
      color: var(--color-sunset-gold, #F4A261);
+  }
+
+  html[data-theme='dark'] .quick-summary-content .glossary-term-link:hover {
+    color: var(--color-sunset-gold, #F4A261);
+    background-color: rgba(244, 162, 97, 0.2);
   }
 }
 </style>
