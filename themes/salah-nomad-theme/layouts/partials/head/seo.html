@@ -1,4 +1,4 @@
-{{/* layouts/partials/head/seo.html - Version Professionnelle 2025 */}}
+{{/* layouts/partials/head/seo.html - Version CORRIGÉE */}}
 
 {{- $page := . -}}
 {{- $site := .Site -}}
@@ -20,19 +20,15 @@
 
 {{- with .Params.featured_image -}}
     {{- $imgRes := "" -}}
-    {{- /* Cherche l'image dans les ressources de la page (Bundles) */ -}}
     {{- $imgRes = $page.Resources.GetMatch . -}}
-    {{- /* Si non trouvée, cherche dans /assets */ -}}
     {{- if not $imgRes }}{{ $imgRes = resources.Get . }}{{ end -}}
     {{- if $imgRes -}}
         {{- $ogImage = ($imgRes.Fill "1200x630 q85 Center").Permalink -}}
     {{- else if (fileExists (printf "static%s" .)) -}}
-        {{- /* Fallback pour les images dans /static */ -}}
         {{- $ogImage = (. | absURL) -}}
     {{- end -}}
 {{- end -}}
 {{- if not $ogImage -}}
-    {{- /* Image de secours : logo du site */ -}}
     {{- with $site.Params.logo -}}
         {{- $logoRes := resources.Get . -}}
         {{- with $logoRes -}}
@@ -43,13 +39,10 @@
 {{- end -}}
 
 {{- /* ======================================================================= */ -}}
-{{- /* =================== DÉBUT DES BALISES META GÉNÉRÉES =================== */ -}}
+{{- /* =================== BALISES META STANDARD =================== */ -}}
 {{- /* ======================================================================= */ -}}
 
-<!-- Méta-description -->
 <meta name="description" content="{{ $description }}">
-
-<!-- URL Canonique (Stratégie conservée, elle est correcte) -->
 <link rel="canonical" href="{{ $permalink }}" />
 
 <!-- Open Graph -->
@@ -78,56 +71,61 @@
 {{- if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">{{ end }}
 
 {{- /* ======================================================================= */ -}}
-{{- /* ======================== GESTION DU JSON-LD ========================= */ -}}
+{{- /* ==================== JSON-LD SIMPLE ET FONCTIONNEL ==================== */ -}}
 {{- /* ======================================================================= */ -}}
-{{- $schema := "" -}}
-{{- if .Params.json_ld -}}
-    {{- /* CAS 1: Un schéma personnalisé est fourni dans le front matter (doit être une chaîne de caractères) */ -}}
-    {{- if eq (printf "%T" .Params.json_ld) "string" -}}
-        {{- $schema = .Params.json_ld | safeJS -}}
-    {{- end -}}
-{{- else -}}
-    {{- /* CAS 2: Pas de schéma personnalisé, on génère automatiquement */ -}}
-    {{- $data := dict "@context" "https://schema.org" -}}
-    {{- $publisher := dict "@type" "Organization" "name" $site.Title "logo" (dict "@type" "ImageObject" "url" (absURL $site.Params.logo)) -}}
-    {{- $author := dict "@type" "Person" "name" $site.Params.author.name "url" (absURL "/") -}}
-    
-    {{- if $isPage -}}
-        {{- $data = merge $data (dict
-            "@type" "Article"
-            "mainEntityOfPage" (dict "@type" "WebPage" "@id" $permalink)
-            "headline" $title
-            "description" $description
-            "image" $ogImage
-            "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
-            "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
-            "author" $author
-            "publisher" $publisher
-        ) -}}
-    {{- else if $isTerm -}}
-        {{- $data = merge $data (dict
-            "@type" "CollectionPage"
-            "name" $title
-            "description" $description
-            "url" $permalink
-        ) -}}
-    {{- else if $isHomePage -}}
-        {{- $data = merge $data (dict
-            "@type" "WebSite"
-            "name" $site.Title
-            "description" $description
-            "url" $permalink
-            "publisher" $publisher
-        ) -}}
-    {{- end -}}
-    
-    {{- if gt (len $data) 1 -}}
-        {{- $schema = $data | jsonify -}}
-    {{- end -}}
-{{- end -}}
 
-{{- with $schema -}}
+{{- if $isPage -}}
 <script type="application/ld+json">
-{{ . }}
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ $title }}",
+  "description": "{{ $description }}",
+  "image": "{{ $ogImage }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ $site.Params.author.name }}"
+  },
+  "publisher": {
+    "@type": "Organization", 
+    "name": "{{ $site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ absURL $site.Params.logo }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ $permalink }}"
+  }
+}
 </script>
 {{- end -}}
+
+<!-- Graphe de site -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ $site.BaseURL }}#website",
+      "url": "{{ $site.BaseURL }}",
+      "name": "{{ $site.Title }}",
+      "description": "{{ $site.Params.description }}"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ $permalink }}#webpage",
+      "url": "{{ $permalink }}",
+      "name": "{{ $title }}",
+      "isPartOf": {"@id": "{{ $site.BaseURL }}#website"},
+      "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+      "description": "{{ $description }}"
+    }
+  ]
+}
+</script>
