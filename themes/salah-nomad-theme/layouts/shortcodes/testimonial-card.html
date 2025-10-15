@@ -1,10 +1,5 @@
 {{/* ==========================================================================
-   Shortcode: Testimonial Card
-   Purpose: Display social proof testimonials with elegant styling
-   Usage: 
-     {{< testimonial-card author="Name" role="Role" source="Source" >}}
-     Your testimonial content here...
-     {{< /testimonial-card >}}
+   Shortcode: Testimonial Card - CORRIGÉ pour Google Rich Results
    ========================================================================== */}}
 
 {{ $author := .Get "author" }}
@@ -16,31 +11,22 @@
             id="{{ $testimonial_id }}"
             data-author="{{ $author }}"
             data-role="{{ $role }}"
-            data-source="{{ $source }}"
-            itemscope 
-            itemtype="https://schema.org/Review">
+            data-source="{{ $source }}">
   
-  <div class="testimonial-card-content" itemprop="reviewBody">
+  <div class="testimonial-card-content">
     {{ .Inner | .Page.RenderString }}
   </div>
   
   <footer class="testimonial-card-footer">
-    <div class="testimonial-card-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-      <span itemprop="name">{{ $author }}</span>
-      {{ with $role }}<span class="testimonial-card-role" itemprop="jobTitle">{{ . }}</span>{{ end }}
+    <div class="testimonial-card-author">
+      <strong>{{ $author }}</strong>
+      {{ with $role }}<span class="testimonial-card-role">, {{ . }}</span>{{ end }}
     </div>
     
     {{ with $source }}
-    <div class="testimonial-card-source" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-      <span itemprop="name">{{ . }}</span>
+    <div class="testimonial-card-source">
+      {{ . }}
     </div>
     {{ end }}
-    
-    <!-- Microdata for rating (optional) -->
-    <div class="testimonial-card-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="display: none;">
-      <meta itemprop="worstRating" content="1">
-      <meta itemprop="bestRating" content="5">
-      <span itemprop="ratingValue">5</span>
-    </div>
   </footer>
 </blockquote>
