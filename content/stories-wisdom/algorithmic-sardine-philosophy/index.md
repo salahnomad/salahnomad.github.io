@@ -95,7 +95,6 @@ frameworks:
 sitemap:
   priority: 0.9
 breadcrumb: "Stories & Wisdom › Philosophy"
-json_ld: true
 canonical: "/stories-wisdom/algorithmic-sardine-philosophy/"
 ---
 

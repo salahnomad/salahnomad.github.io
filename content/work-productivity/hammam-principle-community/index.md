@@ -18,7 +18,6 @@ cta: community
 sitemap:
   priority: 0.8
 breadcrumb: "Work & Productivity › Community Building"
-json_ld: true
 canonical: "/work-productivity/hammam-principle-community/"
 ---
 

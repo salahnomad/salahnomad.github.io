@@ -99,7 +99,6 @@ frameworks:
 sitemap:
   priority: 0.9
 breadcrumb: "Work & Productivity › SEO Strategy"
-json_ld: true
 canonical: "/work-productivity/phoenician-merchant-seo/"
 ---
 

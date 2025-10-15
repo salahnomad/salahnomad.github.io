@@ -93,7 +93,6 @@ frameworks:
 sitemap:
   priority: 1.0
 breadcrumb: "Stories & Wisdom › Philosophy"
-json_ld: true
 canonical: "/stories-wisdom/rooted-nomadism-philosophy/"
 ---
 

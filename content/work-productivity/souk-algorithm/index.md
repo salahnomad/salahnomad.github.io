@@ -19,7 +19,6 @@ pillar_content: true
 sitemap:
   priority: 0.8
 breadcrumb: "Work & Productivity › Marketing"
-json_ld: true
 canonical: "/work-productivity/souk-algorithm/"
 ---
 

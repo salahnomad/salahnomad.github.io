@@ -12,7 +12,6 @@ featured_image_alt: "A professional and authentic portrait of Salah Nomad, found
 sitemap:
   priority: 0.9
 breadcrumb: "Stories & Wisdom › My Story (Short)"
-json_ld: true
 canonical: "/stories-wisdom/salah-story/"
 
 aliases:

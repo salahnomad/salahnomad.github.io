@@ -101,7 +101,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "Stories & Wisdom › Identity"
-json_ld: true
 canonical: "/stories-wisdom/morisco-compass/"
 ---
 

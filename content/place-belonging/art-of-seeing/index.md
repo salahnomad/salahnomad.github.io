@@ -24,7 +24,6 @@ pillar_content: true
 sitemap:
   priority: 0.9
 breadcrumb: "Place & Belonging › Cultural Navigation"
-json_ld: true
 canonical: "/place-belonging/art-of-seeing/"
 ---
 

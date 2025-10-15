@@ -101,7 +101,6 @@ frameworks:
 sitemap:
   priority: 1.0
 breadcrumb: "Stories & Wisdom › Origin Story"
-json_ld: true
 canonical: "/stories-wisdom/olive-trees-and-algorithms/"
 ---
 

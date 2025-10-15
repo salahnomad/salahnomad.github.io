@@ -27,7 +27,6 @@ cta: tool
 sitemap:
   priority: 0.8
 breadcrumb: "Work & Productivity › Deep Work"
-json_ld: true
 canonical: "/work-productivity/thermae-flow-state-deep-work/"
 ---
 

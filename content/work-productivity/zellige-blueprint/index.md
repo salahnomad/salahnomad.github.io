@@ -96,7 +96,6 @@ frameworks:
 sitemap:
   priority: 1.0
 breadcrumb: "Work & Productivity › Productivity Systems"
-json_ld: true
 canonical: "/work-productivity/zellige-blueprint/"
 ---
 

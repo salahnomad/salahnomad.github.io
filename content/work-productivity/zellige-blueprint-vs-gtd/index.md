@@ -96,7 +96,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "Work & Productivity › System Comparisons"
-json_ld: true
 canonical: "/work-productivity/zellige-blueprint-vs-gtd/"
 ---
 

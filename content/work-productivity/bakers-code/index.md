@@ -101,7 +101,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "Work & Productivity › Focus Systems"
-json_ld: true
 canonical: "/work-productivity/bakers-code/"
 ---
 
