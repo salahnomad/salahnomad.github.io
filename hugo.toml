@@ -58,6 +58,12 @@ enableRobotsTXT = true
     ]
     twitter_handle = "@Salah_Nomad"
 
+# Pour aller plus loin (optionnel)
+  [params.schema]
+    enable_FAQ = true
+    enable_HowTo = true
+    enable_Video = true
+
   # --- Paramètres de Design (Conservés) ---
   sunset_gold = "#F4A261"
   mediterranean_blue = "#2A9D8F"
