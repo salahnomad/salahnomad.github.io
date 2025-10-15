@@ -95,7 +95,6 @@ frameworks:
 # --- SEO STRATÉGIQUE ---
 sitemap:
   priority: 0.8
-json_ld: true
 canonical: "/money-freedom/olive-grove-economy-vs-fire/"
 
 breadcrumb: "Money & Freedom › Finance"

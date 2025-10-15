@@ -89,7 +89,6 @@ frameworks:
 sitemap:
   priority: 0.9
 breadcrumb: "AI & The Future › Ethics"
-json_ld: true
 canonical: "/ai-future/olive-tree-oracle/"
 ---
 

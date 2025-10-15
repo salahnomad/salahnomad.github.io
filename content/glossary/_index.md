@@ -10,7 +10,6 @@ featured_image_alt: "An ancient manuscript on a scholar's desk, its geometric pa
 sitemap:
   priority: 0.9
 breadcrumb: "Home › Glossary"
-json_ld: true
 canonical: "/glossary/"
 ---
 

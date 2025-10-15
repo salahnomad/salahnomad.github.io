@@ -81,7 +81,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "AI & The Future › Creative AI"
-json_ld: true
 canonical: "/ai-future/weavers-prompt/"
 ---
 

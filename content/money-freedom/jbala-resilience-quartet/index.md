@@ -83,7 +83,6 @@ frameworks:
 sitemap:
   priority: 0.8
 breadcrumb: "Money & Freedom › Resilience"
-json_ld: true
 canonical: "/money-freedom/jbala-resilience-quartet/"
 ---
 

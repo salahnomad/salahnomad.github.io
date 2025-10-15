@@ -102,7 +102,6 @@ frameworks:
 sitemap:
   priority: 0.9
 breadcrumb: "Money & Freedom › Finance"
-json_ld: true
 canonical: "/money-freedom/olive-grove-economy/"
 ---
 

@@ -12,7 +12,6 @@ aliases:
 sitemap:
   priority: 0.8
 breadcrumb: "Home › Málaga Codex"
-json_ld: true
 canonical: "/malaga-codex/"
 ---
 
