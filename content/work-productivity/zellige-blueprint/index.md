@@ -1,7 +1,7 @@
 ---
 title: "🧩 What If Ancient Mediterranean Artisans Held the Secret to Modern Productivity?"
-date: 2025-10-18T00:00:00+02:00
-lastmod: 2025-10-18T00:00:00+02:00
+date: 2025-10-18T00:00:00+04:00
+lastmod: 2025-10-18T00:00:00+04:00
 draft: false
 description: "Discover how 1,000-year-old Moroccan zellige craftsmanship reveals a 3-layer productivity system that transforms digital chaos into meaningful work through artisan precision and Mediterranean wisdom."
 categories: ["Work & Productivity"]
