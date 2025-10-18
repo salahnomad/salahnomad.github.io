@@ -2,7 +2,8 @@
 # --- SEO & Metadata ---
 title: "🧩 When Algorithms Meet Al-Andalus: Can ChatGPT Truly Understand a Language Shaped by Mediterranean Whispers?"
 subtitle: "A Jbala-born nomad's deep-dive into AI's limits when faced with a language shaped by olive groves, Spanish tides, and a millennium of Mediterranean whispers."
-date: 2025-06-24T23:00:00+02:00
+date: 2025-10-18T18:00:00+04:00
+lastmod: 2025-10-18T18:00:00+04:00
 draft: false
 description: "I tested ChatGPT with my Jbala-Andalusian dialect and discovered why AI fails with languages carrying centuries of cultural memory. The hilarious failures reveal what technology can never translate about human identity."
 categories: ["AI & The Future"]
