@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html */}}
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html - VERSION FINALE CORRIGÉE */}}
 <html lang="{{ .Site.Language.Lang | default "en" }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  
+  {{/* 
+  =======================================================================
+  CORRECTION CRITIQUE : Les balises <title> et <link rel="canonical"> 
+  ont été supprimées d'ici. Elles sont maintenant gérées EXCLUSIVEMENT 
+  par le partial "head/seo.html" pour éviter toute duplication.
+  =======================================================================
+  */}}
 
+  {{/* Appel du partial qui gère TOUT le SEO : title, description, canonical, OG, Twitter, JSON-LD */}}
   {{ partial "head/seo.html" . }}
+
+  {{/* Appel des autres partials du head */}}
   {{ partial "head/favicons.html" . }}
   {{ partial "head/css.html" . }}
-  {{- /* Le CSS, y compris celui de Pagefind, est géré via le partial head/css.html ci-dessus */ -}}
-
-  {{ with .OutputFormats.Get "html" }}
-    <link rel="canonical" href="{{ .Permalink }}">
-  {{ end }}
+  
+  {{/* Génération des liens pour les formats alternatifs (ex: RSS) */}}
   {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end -}}
+
+  {{/* Générateur Hugo (bonne pratique) */}}
   {{ hugo.Generator }}
 </head>
 <body class="{{ delimit (slice "page" .Kind .Type .Layout (cond .IsHome "is-home" "") (cond .IsSection "is-section" "") (cond .IsNode "is-node" "")) " " }}">
