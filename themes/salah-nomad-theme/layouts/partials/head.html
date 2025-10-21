@@ -1,11 +1,15 @@
 {{/* ... (début du head) ... */}}
-  {{ partial "head/favicons.html" . }}
-  {{ partial "head/css.html" . }}
-  
-  {{/* --- On appelle UN SEUL partial qui gère tout le SEO --- */}}
-  {{ partial "head/seo.html" . }}
 
-  {{ with .OutputFormats.Get "RSS" }}
-    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
-  {{ end }}
+<!-- Payhip Embed Script -->
+<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+{{ partial "head/favicons.html" . }}
+{{ partial "head/css.html" . }}
+
+{{/* --- On appelle UN SEUL partial qui gère tout le SEO --- */}}
+{{ partial "head/seo.html" . }}
+
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+{{ end }}
 </head>

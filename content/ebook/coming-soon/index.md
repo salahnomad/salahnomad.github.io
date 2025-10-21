@@ -24,6 +24,12 @@ It holds the complete map for a more rooted and meaningful life in a world of co
 
 ---
 
+## Get Your Copy Now
+
+{{< payhip-embed "K91va" "Download Your Copy (Pay What You Want)" "blue" >}}
+
+---
+
 ## Be the First to Set Sail
 
 To receive your personal invitation the moment we raise the anchor, join the "Mediterranean Insights" caravan. You will be the first to know, and the first to receive your copy.

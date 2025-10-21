@@ -34,7 +34,7 @@ json_ld: |
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/PreOrder"
+      "availability": "https://schema.org/InStock"
     }
   }
 ---
@@ -42,12 +42,10 @@ json_ld: |
 <!-- SECTION HÉROS -->
 _How ancient wisdom, migratory sardines, and the ghost of a failed startup forged a new map for belonging in a world without borders._
 
-<!-- BOUTON DÉSACTIVÉ DE PRÉ-LANCEMENT STYLISÉ -->
-<a href="#" class="cta-button disabled footer-widget-button" aria-disabled="true">
-  <span>Launching Soon... (Join the Caravan Below)</span>
-</a>
+<!-- BOUTON PAYHIP ACTIF - VERSION CORRIGÉE -->
+{{< payhip-embed "K91va" "Download Your Copy (Pay What You Want)" "green" >}}
 
-> **A Note from Salah:** To celebrate our shared journey, this book will launch as a gift to my community. You will choose its value. Join "Mediterranean Insights" to be the first to receive your copy.
+> **A Note from Salah:** To celebrate our shared journey, this book is available as a gift to my community. You choose its value.
 
 ---
 
@@ -76,7 +74,7 @@ Born in Morocco's oldest city, my path was forged in smoky cybercafés and shape
 
 <!-- CTA PRINCIPAL : NEWSLETTER -->
 ## Join the Caravan
-Be the first to know when the journey begins. Join "Mediterranean Insights" for launch notifications, exclusive excerpts, and subscriber-only discounts.
+Be the first to know about new releases and exclusive content. Join "Mediterranean Insights" for launch notifications, exclusive excerpts, and subscriber-only discounts.
 
 {{< newsletter >}}
 
