@@ -3,7 +3,7 @@ title: "Algorithmic Sardines: A Rooted Nomad's Journey"
 subtitle: "Your Compass for the Journey Between Worlds."
 date: 2025-07-13T10:00:00+01:00
 draft: false
-description: "The full story of Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion. Join the caravan to be notified of the launch."
+description: "The full story of Rooted Nomadism. A memoir and manifesto for finding home in perpetual motion."
 layout: "single"
 authors: ["Salah Nomad"]
 toc: false
@@ -42,11 +42,10 @@ json_ld: |
 <!-- SECTION HÉROS -->
 _How ancient wisdom, migratory sardines, and the ghost of a failed startup forged a new map for belonging in a world without borders._
 
-<!-- BOUTON PAYHIP ACTIF - VERSION CORRIGÉE -->
-{{< payhip-embed "K91va" "Download Your Copy (Pay What You Want)" "green" >}}
+<!-- BOUTON PAYHIP AVEC NOUVEAU FORMAT -->
+{{< payhip-embed "Download Your Copy (Pay What You Want)" "green" >}}
 
 > **A Note from Salah:** To celebrate our shared journey, this book is available as a gift to my community. You choose its value.
-
 ---
 
 <!-- SECTION PROMESSE -->

@@ -227,3 +227,113 @@ html.dark-mode {
     }
   }
 }
+
+// =============================================
+// ANCIEN STYLE (conserver pour référence)
+// =============================================
+
+// [Votre contenu SCSS existant reste ici...]
+// Styles pour l'intégration Payhip originale
+// =============================================
+
+.payhip-embed-container {
+  // ... vos styles existants ...
+}
+
+// =============================================
+// NOUVEAU STYLE - BOUTON 100% PERSONNALISÉ
+// =============================================
+
+// Styles pour le bouton 100% personnalisé
+.payhip-custom-container {
+  text-align: center;
+  margin: $spacing-xl 0;
+  
+  .payhip-custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-md $spacing-xl;
+    font-family: $font-heading-name;
+    font-weight: $font-weight-semibold;
+    font-size: 1.1rem;
+    border-radius: $border-radius-lg;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-height: 54px;
+    line-height: 1.4;
+    border: none;
+    cursor: pointer;
+    
+    // Thème vert (défaut)
+    &-green {
+      background: linear-gradient(135deg, $mediterranean-blue 0%, darken($mediterranean-blue, 10%) 100%);
+      color: $color-white;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba($mediterranean-blue, 0.3);
+        color: $color-white;
+      }
+    }
+    
+    // Thème bleu
+    &-blue {
+      background: linear-gradient(135deg, $mediterranean-blue 0%, darken($mediterranean-blue, 15%) 100%);
+      color: $color-white;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba($mediterranean-blue, 0.4);
+        color: $color-white;
+      }
+    }
+    
+    // Thème sunset
+    &-sunset {
+      background: linear-gradient(135deg, $sunset-gold 0%, darken($sunset-gold, 10%) 100%);
+      color: $dark-charcoal;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba($sunset-gold, 0.3);
+        color: $dark-charcoal;
+      }
+    }
+    
+    &:focus {
+      @include a11y-focus;
+    }
+  }
+  
+  .payhip-custom-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
+    font-size: 0.9rem;
+    color: var(--color-text-placeholder);
+    margin-top: $spacing-md;
+    font-style: normal;
+    
+    svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: $breakpoint-md) {
+  .payhip-custom-container {
+    margin: $spacing-lg 0;
+    
+    .payhip-custom-button {
+      padding: $spacing-sm $spacing-lg;
+      min-height: 48px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
