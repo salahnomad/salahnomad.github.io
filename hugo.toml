@@ -448,6 +448,7 @@ enableRobotsTXT = true
 # =============================================================================
 [build]
   writeStats = true
+  useResourceCacheWhen = "fallback"  # 🆕 AJOUT pour performance CI/CD
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -478,6 +479,7 @@ enableRobotsTXT = true
 [imaging]
   resampleFilter = "Lanczos"
   quality = 80
+  anchor = "Smart"  # 🆕 AJOUT pour cropping intelligent
 
 
 [sitemap]
@@ -495,3 +497,37 @@ enableRobotsTXT = true
   section = 0.8   # Encore plus important : les hubs de section comme /work-and-productivity/
 
 timeout = 1800000
+
+# =============================================================================
+# 🆕 CONFIGURATION BREADCRUMBS & SEO (NOUVEAU - À AJOUTER)
+# =============================================================================
+[params.breadcrumbs]
+  enabled = true
+  homeName = "Home"
+  maxDepth = 4
+  excludeKinds = ["taxonomy", "term", "search"]
+  truncateLength = 50
+  showCurrentPage = true
+
+[params.seo]
+  # Tags considérés comme piliers (indexables)
+  indexableTags = [
+    "ethical-ai", "rooted-nomadism", "mediterranean-wisdom",
+    "slow-ai", "olive-grove-economy", "zellige-blueprint",
+    "cultural-intelligence", "digital-nomad", "ancestral-wisdom"
+  ]
+  
+  # Configuration US Market
+  us_optimization = true
+  primary_language = "en-US"
+
+# =============================================================================
+# 🆕 CONFIGURATION TAXONOMIES SÉCURISÉE (NOUVEAU - À AJOUTER)
+# =============================================================================
+# ⚠️ IMPORTANT : Désactivation SÉLECTIVE uniquement
+disableKinds = ["taxonomyTerm"]  # ✅ Garde les pages /tags/tag-name/, supprime seulement les listes
+
+# Vos taxonomies existantes sont préservées :
+[taxonomies]
+  tag = "tags"
+  # category = "categories" # Commenté si non utilisé
