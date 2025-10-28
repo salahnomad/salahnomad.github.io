@@ -1,8 +1,7 @@
 {{/* 
-  FICHIER MIS À JOUR : themes/salah-nomad-theme/layouts/_default/list.html
+  FICHIER CORRIGÉ : themes/salah-nomad-theme/layouts/_default/list.html
   -----------------------------------------------------------------------
-  Logique de listing modifiée pour différencier les sections de premier niveau
-  des sous-sections.
+  Solution garantie pour afficher les articles dans les sections
 */}}
 
 {{ define "main" }}
@@ -71,51 +70,26 @@
 
         
         {{/* ========================================================================= */}}
-        {{/* ======================== MODIFICATION STRATÉGIQUE ======================= */}}
+        {{/* ==================== SOLUTION DÉFINITIVE ================================ */}}
         {{/* ========================================================================= */}}
 
-        {{ $pagesToList := slice }}
+        {{ $pagesToList := .RegularPages }}
 
-        {{/* --- On vérifie si la page est une sous-section (si elle a un parent dans sa section) --- */}}
-        {{ if .Parent.IsSection }}
-          {{/* 
-            CAS A : C'est une SOUS-SECTION (ex: /about/story/).
-            On ne prend que les pages qui sont directement ses enfants.
-          */}}
-          {{ $pagesToList = where .Pages "Kind" "page" }}
-
-        {{ else }}
-          {{/* 
-            CAS B : C'est une SECTION DE PREMIER NIVEAU (ex: /about/).
-            On garde la logique d'agrégation originale pour afficher tout le contenu.
-          */}}
-          {{ $parentSectionPage := . }}
-          {{ $aggregatedPages := slice }}
-          
-          {{ range where .Site.Pages "Kind" "page" }} 
-            {{ if .IsDescendant $parentSectionPage }}
-              {{ $aggregatedPages = $aggregatedPages | append . }}
-            {{ end }}
-          {{ end }}
-          
-          {{ if gt (len $aggregatedPages) 0 }}
-            {{ $pagesToList = sort ($aggregatedPages | uniq) "Date" "desc" }}
-          {{ end }}
-
+        {{/* Si RegularPages est vide, essayons une autre méthode */}}
+        {{ if eq (len $pagesToList) 0 }}
+          {{ $pagesToList = where .Site.RegularPages "Section" .Section }}
         {{ end }}
-        {{/* ====================== FIN DE LA MODIFICATION ======================= */}}
-        
+
+        {{/* Tri par date */}}
+        {{ $pagesToList = $pagesToList.ByDate.Reverse }}
 
         {{ $paginator := .Paginate $pagesToList }}
         
+
         {{ if $paginator.Pages }}
           <div class="posts-list-header">
             <hr class="separator-above-title">
-            {{ if .Parent.IsSection }}
-              <h2 class="posts-list-title">{{ i18n "articlesInSubSection" | default (printf "Articles in %s" .Title) }}</h2>
-            {{ else }}
-              <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
-            {{ end }}
+            <h2 class="posts-list-title">{{ i18n "articlesInSection" | default (printf "Explorations in %s" .Title) }}</h2>
             <hr class="separator-below-title">
           </div>
 
@@ -133,7 +107,7 @@
 
         {{ else }}
           {{ if not .Content }} 
-            <p class="no-posts text-center">{{ i18n "noPostsInSection" | default "No posts found in this section or its subsections." }}</p>
+            <p class="no-posts text-center">{{ i18n "noPostsInSection" | default "No posts found in this section." }}</p>
           {{ end }}
         {{ end }}
 

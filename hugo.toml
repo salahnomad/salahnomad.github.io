@@ -444,11 +444,11 @@ enableRobotsTXT = true
     weight = 30
 
 # =============================================================================
-# CONFIGURATIONS TECHNIQUES & DE BUILD (Conservées et Optimisées)
+# CONFIGURATIONS TECHNIQUES & DE BUILD
 # =============================================================================
 [build]
   writeStats = true
-  useResourceCacheWhen = "fallback"  # 🆕 AJOUT pour performance CI/CD
+  useResourceCacheWhen = "fallback"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -468,7 +468,7 @@ enableRobotsTXT = true
   toLower = true
   [[related.indices]]
     name = "categories"
-    weight = 200 # <-- On donne un poids énorme aux catégories pour renforcer les clusters
+    weight = 200
   [[related.indices]]
     name = "tags"
     weight = 100
@@ -479,27 +479,35 @@ enableRobotsTXT = true
 [imaging]
   resampleFilter = "Lanczos"
   quality = 80
-  anchor = "Smart"  # 🆕 AJOUT pour cropping intelligent
-
+  anchor = "Smart"
 
 [sitemap]
   changefreq = "weekly"
-  priority = 0.5 # Priorité par défaut pour les pages standards (ex: /contact/, /privacy/)
+  priority = 0.5
   filename = "sitemap.xml"
   
-  # La configuration ci-dessous ajuste la priorité pour des "kinds" de pages spécifiques.
-  # La hiérarchie est la suivante, de la moins importante à la plus importante :
-  # Page de liste générale -> Page de terme spécifique -> Page de section/hub
-  # (Les pages piliers ont leur propre priorité définie dans leur front matter, ex: 1.0)
 [sitemap.kinds]
-  taxonomy = 0.6  # Moins important : pages de liste générales comme /tags/ et /categories/
-  term = 0.7      # Plus important : pages de termes spécifiques comme /tags/resilience/
-  section = 0.8   # Encore plus important : les hubs de section comme /work-and-productivity/
+  taxonomy = 0.6
+  term = 0.7
+  section = 0.8
 
 timeout = 1800000
 
 # =============================================================================
-# 🆕 CONFIGURATION BREADCRUMBS & SEO (NOUVEAU - À AJOUTER)
+# CONFIGURATION TAXONOMIES & PERMALIENS SÉCURISÉE (VERSION CORRIGÉE)
+# =============================================================================
+[taxonomies]
+  category = "categories"  # ✅ DÉCOMMENTÉ - CRITIQUE
+  tag = "tags"
+
+disableKinds = ["taxonomy"] # ✅ CORRIGÉ "taxonomyTerm" → "taxonomy"
+
+[permalinks]
+  categories = "/categories/:slug/"
+  tags = "/tags/:slug/"
+
+# =============================================================================
+# CONFIGURATION BREADCRUMBS & SEO
 # =============================================================================
 [params.breadcrumbs]
   enabled = true
@@ -510,24 +518,10 @@ timeout = 1800000
   showCurrentPage = true
 
 [params.seo]
-  # Tags considérés comme piliers (indexables)
   indexableTags = [
     "ethical-ai", "rooted-nomadism", "mediterranean-wisdom",
-    "slow-ai", "olive-grove-economy", "zellige-blueprint",
+    "slow-ai", "olive-grove-economy", "zellige-blueprint", 
     "cultural-intelligence", "digital-nomad", "ancestral-wisdom"
   ]
-  
-  # Configuration US Market
   us_optimization = true
   primary_language = "en-US"
-
-# =============================================================================
-# 🆕 CONFIGURATION TAXONOMIES SÉCURISÉE (NOUVEAU - À AJOUTER)
-# =============================================================================
-# ⚠️ IMPORTANT : Désactivation SÉLECTIVE uniquement
-disableKinds = ["taxonomyTerm"]  # ✅ Garde les pages /tags/tag-name/, supprime seulement les listes
-
-# Vos taxonomies existantes sont préservées :
-[taxonomies]
-  tag = "tags"
-  # category = "categories" # Commenté si non utilisé

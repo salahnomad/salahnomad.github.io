@@ -6,7 +6,7 @@ date: 2025-10-18T18:00:00+04:00
 lastmod: 2025-10-18T18:00:00+04:00
 draft: false
 description: "I tested ChatGPT with my Jbala-Andalusian dialect and discovered why AI fails with languages carrying centuries of cultural memory. The hilarious failures reveal what technology can never translate about human identity."
-categories: ["AI & The Future"]
+categories: ["ai-future"]
 tags: ["ai-and-language", "cultural-nuance", "darija", "jbala-culture", "andalusian-heritage", "digital-humanities", "linguistic-preservation", "mediterranean-wisdom", "cultural-intelligence"]
 keywords: ["ChatGPT translation challenges", "Jbala-Andalusian dialect", "Northern Moroccan Darija", "AI and cultural preservation", "linguistic heritage", "philosophy of language", "AI limitations cultural context", "machine learning language understanding"]
 featured_image: "images/jbala-andalusian-language-ai-bridge.jpg"

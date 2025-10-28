@@ -6,7 +6,7 @@ date: 2025-06-13T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Blending ancestral zellige tile philosophy with artificial intelligence reveals why patience and cultural context create more meaningful technology. Learn practical slow AI techniques for digital wellbeing."
-categories: ["AI & The Future"]
+categories: ["ai-future"]
 tags: 
   - "slow-ai"
   - "cultural-technology"

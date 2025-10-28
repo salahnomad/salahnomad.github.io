@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Silicon Valley didn't invent decentralized trust. Discover how ancient Phoenician traders built a 3,000-year resilient network using blockchain principles for modern digital sovereignty."
-categories: ["AI & The Future"]
+categories: ["ai-future"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

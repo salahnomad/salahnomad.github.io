@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "When AI dismissed Moroccan heritage as 'primitive mud,' a new protocol emerged. Discover the 3-phase Olive Tree Oracle framework to transform AI from data tool to cultural partner using Mediterranean wisdom."
-categories: ["AI & The Future"]
+categories: ["ai-future"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"
