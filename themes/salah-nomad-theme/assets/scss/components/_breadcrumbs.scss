@@ -1,0 +1,172 @@
+// =============================================
+// COMPOSANT BREADCRUMBS - DESIGN SYSTEM COMPLET
+// =============================================
+
+.breadcrumbs {
+  // Variables locales avec fallback
+  --breadcrumb-color: #4a5568;
+  --breadcrumb-color-active: #2d3748;
+  --breadcrumb-color-hover: #3182ce;
+  --breadcrumb-separator: #a0aec0;
+  --breadcrumb-bg: #f7fafc;
+  --border-radius: 8px;
+
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--breadcrumb-bg);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border: 1px solid var(--border-color, #e2e8f0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  .breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+
+    .breadcrumbs-item {
+      display: flex;
+      align-items: center;
+
+      .breadcrumbs-link {
+        color: var(--breadcrumb-color);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        font-weight: 500;
+
+        &:hover {
+          color: var(--breadcrumb-color-hover);
+          text-decoration: underline;
+        }
+      }
+
+      &.active span {
+        color: var(--breadcrumb-color-active);
+        font-weight: 600;
+      }
+    }
+
+    .breadcrumbs-separator {
+      color: var(--breadcrumb-separator);
+      user-select: none;
+      font-weight: 300;
+      margin: 0 0.25rem;
+    }
+  }
+
+  // =============================================
+  // RESPONSIVE DESIGN - MOBILE FIRST
+  // =============================================
+  @media (max-width: 768px) {
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: calc(var(--border-radius) * 0.75);
+
+    .breadcrumbs-list {
+      gap: 0.35rem;
+
+      // Gestion des breadcrumbs profonds sur mobile
+      &[data-breadcrumb-depth="4"] .breadcrumbs-item:nth-child(2),
+      &[data-breadcrumb-depth="5"] .breadcrumbs-item:nth-child(-n+2) {
+        display: none;
+      }
+
+      // Indicateur de contenu masqué
+      &[data-breadcrumb-depth="4"]::before,
+      &[data-breadcrumb-depth="5"]::before {
+        content: "...";
+        color: var(--breadcrumb-separator);
+        margin-right: 0.35rem;
+      }
+    }
+  }
+
+  // =============================================
+  // DARK MODE - SUPPORT COMPLET
+  // =============================================
+  @media (prefers-color-scheme: dark) {
+    --breadcrumb-color: #cbd5e0;
+    --breadcrumb-color-active: #f7fafc;
+    --breadcrumb-color-hover: #63b3ed;
+    --breadcrumb-separator: #718096;
+    --breadcrumb-bg: #2d3748;
+
+    background: var(--breadcrumb-bg);
+    border-color: var(--border-color-dark, #4a5568);
+
+    .breadcrumbs-list {
+      .breadcrumbs-item .breadcrumbs-link {
+        color: var(--breadcrumb-color);
+        
+        &:hover {
+          color: var(--breadcrumb-color-hover);
+        }
+      }
+
+      .breadcrumbs-item.active span {
+        color: var(--breadcrumb-color-active);
+      }
+
+      .breadcrumbs-separator {
+        color: var(--breadcrumb-separator);
+      }
+    }
+  }
+
+  // =============================================
+  // ACCESSIBILITÉ AVANCÉE
+  // =============================================
+  @media (prefers-reduced-motion: reduce) {
+    .breadcrumbs-link {
+      transition: none;
+    }
+  }
+
+  // Amélioration du focus pour navigation au clavier
+  .breadcrumbs-link:focus {
+    outline: 2px solid var(--focus-color, #3182ce);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  // =============================================
+  // IMPRESSION
+  // =============================================
+  @media print {
+    background: transparent;
+    border: 1px solid #000;
+    margin: 0.5rem 0;
+    
+    .breadcrumbs-link {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+// =============================================
+// VARIABLES CSS POUR LA PERSONNALISATION
+// =============================================
+:root {
+  --breadcrumb-color: #4a5568;
+  --breadcrumb-color-active: #2d3748;
+  --breadcrumb-color-hover: #3182ce;
+  --breadcrumb-separator: #a0aec0;
+  --breadcrumb-bg: #f7fafc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --breadcrumb-color: #cbd5e0;
+    --breadcrumb-color-active: #f7fafc;
+    --breadcrumb-color-hover: #63b3ed;
+    --breadcrumb-separator: #718096;
+    --breadcrumb-bg: #2d3748;
+  }
+}

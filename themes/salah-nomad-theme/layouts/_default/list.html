@@ -13,6 +13,11 @@
 
       <div class="post-list content-loop">
         
+        {{/* 🆕 AJOUT BREADCRUMBS POUR LES HUBS */}}
+        {{ if and (not .IsHome) (ne .Kind "taxonomy") }}
+          {{ partial "breadcrumbs.html" . }}
+        {{ end }}
+        
         <header class="page-header list-page-header">
           <h1 class="page-title list-page-title">{{ .Title }}</h1>
           {{ with .Content }}
