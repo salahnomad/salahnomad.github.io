@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Digital burnout meets Mediterranean ancestral wisdom. Discover 3 olive tree rituals from Morocco & Spain that reset your nervous system with grounding, bark communion, and analog tea ceremonies for lasting calm."
-categories: ["AI & The Future"]
+categories: ["ai-future"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"
