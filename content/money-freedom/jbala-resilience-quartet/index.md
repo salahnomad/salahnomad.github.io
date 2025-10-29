@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Facing digital burnout and constant uncertainty? Discover how rain, clay pots, rooster calls, and mountain darkness from a Moroccan village reveal timeless resilience secrets for modern life."
-categories: ["Money & Freedom"]
+categories: ["money-freedom"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

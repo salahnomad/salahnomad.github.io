@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Tired of living invoice to invoice? Discover how Mediterranean olive groves hold the secret to building unshakeable financial resilience through asset diversification and sustainable income streams."
-categories: ["Money & Freedom"]
+categories: ["money-freedom"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Is extreme frugality burning you out? Discover the Mediterranean alternative to FIRE that prioritizes sustainable wealth, meaningful work, and living richly while building financial resilience."
-categories: ["Money & Freedom"]
+categories: ["money-freedom"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"
