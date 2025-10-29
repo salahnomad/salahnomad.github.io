@@ -3,9 +3,25 @@
   {{ $showSidebar := .Site.Params.homepageSidebar | default true }}
 
   {{ $mainSectionNames := .Site.Params.mainSections | default (slice "posts") }}
-  
-  {{/* ✅ CORRECTION : Remplacer tout le bloc problématique */}}
-  {{ $validPages := where (where site.RegularPages "Section" "in" $mainSectionNames) "IsPage" true }}
+  {{ $collectedPagesFromSections := slice }}
+  {{ range $sectionName := $mainSectionNames }}
+    {{ $section := where site.Sections "Section" $sectionName }}
+    {{ if $section }}
+      {{ $sectionPage := index $section 0 }}
+      {{ if $sectionPage }}
+        {{ $pagesInSection := $sectionPage.RegularPagesRecursive }}
+        {{ $collectedPagesFromSections = $collectedPagesFromSections | append $pagesInSection }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $validPages := slice }}
+  {{ range $page := $collectedPagesFromSections }}
+    {{ if and $page $page.IsPage }}
+      {{ $validPages = $validPages | append $page }}
+    {{ end }}
+  {{ end }}
+
   {{ $sortedPages := $validPages.ByDate.Reverse }}
 
   {{/* --- Définition des articles pour le Hero --- */}}
