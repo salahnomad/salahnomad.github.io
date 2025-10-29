@@ -98,14 +98,14 @@ Modern software is locked in an endless cycle of updates. Interfaces change, fea
 
 GoldWave hasn't fundamentally changed in years. It lives in my "muscle memory." I don't think about *how* to normalize a track or apply a fade-out; my fingers simply do it. The tool disappears. This is the state every artisan craves: a perfect, frictionless union between intention and execution.
 
-{{< figure src="images/cassette-to-digital.jpg" alt="Cassette se transformant en waveform numérique, métaphore visuelle de la conversion analogique vers numérique" caption="L'alchimie de la préservation : de la bande magnétique au fichier immortel." >}}
+{{< figure src="images/cassette-to-digital.jpg" alt="Une cassette audio s'insérant dans une interface informatique et se transformant en une forme d'onde numérique propre, illustrant la préservation de la mémoire analogique" caption="L'alchimie de la préservation : de la bande magnétique au fichier immortel." >}}
 
 **The Lesson:** Mastery of a simple tool is more powerful than surface-level knowledge of a complex one. The goal isn't more features; it's less friction.
 
 ### 2. Nomadic Resilience: The Power of Lightweight Freedom
 Modern software often feels like a digital empire. It demands powerful hardware, constant internet access, and recurring payments. It wants to colonize your workflow and hold your data hostage in its cloud.
 
-GoldWave is a nomad's toolkit. It's a single executable file that can run off a USB stick. It's lightweight, offline, and makes no demands. It embodies digital sovereignty. In a world where our "freedom" is often leased from tech giants, GoldWave is a declaration of independence.
+GoldWave is a nomad's toolkit. It's a single executable file that can run off a USB stick. It's lightweight, offline, and makes no demands. It embodies **[digital sovereignty](/ai-future/phoenician-blockchain/)**, the same principle that guided ancient Phoenician traders in building resilient, decentralized networks. In a world where our "freedom" is often leased from tech giants, GoldWave is a declaration of independence.
 
 **The Lesson:** The most resilient tools are the ones you own, the ones that work anywhere, anytime, without asking for permission. This is the heart of **[Slow Tech](/glossary/slow-ai/)**.
 
@@ -116,7 +116,7 @@ GoldWave is a master craftsman. It edits audio. That's it. This singular focus c
 
 **The Lesson:** Great tools, like great artisans, have a clear and singular purpose. They create focus by design, a core principle of **[The Baker's Code](/work-productivity/bakers-code/)**.
 
-{{< figure src="images/artisan-vs-tool.jpg" alt="Mains d'artisan expérimenté tenant un outil simple, symbolisant la primauté du savoir-faire sur la technologie" caption="L'âme réside dans les mains de l'artisan, pas dans la sophistication de l'outil." >}}
+{{< figure src="images/artisan-vs-tool.jpg" alt="Mains d'artisan expérimenté tenant un outil simple, mettant l'accent sur la compétence humaine et la simplicité de l'outil" caption="L'âme réside dans les mains de l'artisan, pas dans la sophistication de l'outil." >}}
 
 > **Validation Expert:** *Prof. Marco Bellucci, Digital Anthropology, University of Barcelona*  
 > "The story of GoldWave is a perfect case study in what we call 'virtuous constraints.' By choosing a tool with limitations, Salah isn't sacrificing capability; he's gaining focus and intentionality. Our research shows that creatives who intentionally limit their toolset produce work that is 30% more coherent and impactful."
