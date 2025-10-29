@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how a zebra shirt and Moroccan zellige mosaics inspired a transformative UX philosophy blending cultural roots, precision craftsmanship, and intentional pauses for more human digital experiences."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: 
   - "cultural-ux-design"
   - "zellige-philosophy"

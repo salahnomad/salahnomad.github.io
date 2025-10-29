@@ -4,7 +4,7 @@ date: 2025-10-18T20:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how channeling ancestral resilience transformed UK visa approval and French refusal into a powerful framework for navigating bureaucracy with cultural intelligence and strategic storytelling."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: 
   - "visa-resilience"
   - "bureaucracy-alchemy"

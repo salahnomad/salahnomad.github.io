@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When digital abundance creates overwhelm, 2002 Moroccan cybercafé scarcity offers a 3-part framework for intentional technology: forced mindfulness, offline incubation, and constraint-based creativity."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["digital-minimalism", "philosophy-of-technology", "seo-origins", "slow-tech", "rooted-nomadism", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["digital scarcity solutions", "intentional technology", "slow web philosophy", "cybercafé learning", "digital mindfulness", "constraint-based creativity"]
 featured_image: "images/cybercafe-hero-scarcity.jpg"

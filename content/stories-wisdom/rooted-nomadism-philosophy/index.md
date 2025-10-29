@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how Mediterranean ancestral wisdom transforms cultural roots from burdens into compasses for authentic freedom, resilience, and meaningful work in our hyper-mobile digital age."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: 
   - "digital-nomad-philosophy"
   - "cultural-wisdom"

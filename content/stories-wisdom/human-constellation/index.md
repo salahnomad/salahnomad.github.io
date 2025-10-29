@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When digital nomadism creates isolation, three chance encounters offer a framework for meaningful connection: the mirror that reveals identity, the bridge that enables sharing, and the anchor that provides belonging."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["human-connection", "rooted-nomadism", "nomadic-identity", "mentorship", "cultural-exchange", "serendipity", "storytelling", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["digital nomad community", "meaningful travel connections", "cross-cultural friendship", "human constellation framework", "solving digital loneliness"]
 featured_image: "images/human-constellation-hero.jpg"

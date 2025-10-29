@@ -4,7 +4,7 @@ date: 2025-10-18T09:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how a Moroccan-born digital strategist forged a new philosophy for meaningful work and belonging by bridging ancestral olive grove wisdom with modern algorithms."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: 
   - "founder-story"
   - "digital-nomad-journey"

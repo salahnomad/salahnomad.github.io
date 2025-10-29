@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When digital nomadism creates rootless drift, ancient sardine migration patterns offer a 3-part framework for purposeful movement: follow nutrient currents, transport value, and enrich both shores."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["purposeful-travel", "slow-nomadism", "value-migration", "rooted-nomadism", "philosophy-of-movement", "algorithmic-sardine", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["meaningful travel", "digital nomad purpose", "intentional movement", "value migration framework", "sardine migration wisdom", "purposeful navigation"]
 featured_image: "images/algorithmic-sardine-hero.jpg"

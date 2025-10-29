@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When my Franco-Moroccan wellness venture failed, I discovered three fracture patterns that destroy cross-cultural businesses—and the wisdom that transforms failure into resilient entrepreneurship."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["business-failure", "resilience", "cross-cultural-communication", "entrepreneurship", "rooted-nomadism", "lessons-learned", "ghassoul", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["cross-cultural business failure", "entrepreneurial resilience", "Franco-Moroccan partnership lessons", "business failure wisdom", "cultural translation in business"]
 featured_image: "images/ghost-of-ritual-hammam-hero.jpg"

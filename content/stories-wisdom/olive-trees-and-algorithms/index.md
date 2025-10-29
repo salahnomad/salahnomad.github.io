@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When my wellness business collapsed during the pandemic, 800-year-old olive tree wisdom revealed a 3-part framework for digital resilience: deep rooting, seasonal adaptation, and cross-pollination between heritage and innovation."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["transformation", "resilience", "digital-legacy", "rooted-nomadism", "pandemic-pivot", "entrepreneurship", "wellness-heritage", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["digital resilience framework", "business pivot strategies", "ancestral wisdom modern challenges", "olive tree lessons", "post-pandemic entrepreneurship"]
 featured_image: "images/rooted-nomad-crisis-pivot-hero.jpg"

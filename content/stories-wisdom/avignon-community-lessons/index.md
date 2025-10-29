@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When digital communities feel empty, ancient Avignon festival wisdom offers a 3-part framework for authentic connection: visible authenticity, shared vulnerability spaces, and timeless ritual patterns."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["community-building", "avignon-festival", "rooted-nomadism", "digital-alchemy", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["authentic community building", "digital tribe creation", "community rituals", "cultural storytelling", "rooted nomadism framework"]
 featured_image: "images/avignon-festival-stage-hero.jpg"

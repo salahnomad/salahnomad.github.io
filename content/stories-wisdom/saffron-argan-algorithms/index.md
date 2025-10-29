@@ -4,7 +4,7 @@ date: 2025-10-18T09:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how teaching AI to translate my grandmother's fading cookbook became a journey of cultural preservation, bridging Jbala mountain wisdom with Andalusian saffron fields through digital stewardship."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: 
   - "ai-cultural-preservation"
   - "culinary-heritage"

@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When modern life creates identity fragmentation, 500-year-old Morisco exile wisdom offers a four-point compass for navigating belonging: memory rituals, resilience algorithms, adaptation fusion, and contribution anchoring."
-categories: ["Stories & Wisdom"]
+categories: ["stories-wisdom"]
 tags: ["diaspora-identity", "cultural-memory", "morisco-history", "resilience", "rooted-nomadism", "philosophy-of-belonging", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["identity crisis solutions", "cultural resilience framework", "ancestral wisdom modern life", "diaspora navigation", "belonging compass"]
 featured_image: "images/morisco-compass-hero.jpg"
