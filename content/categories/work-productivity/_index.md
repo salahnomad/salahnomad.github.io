@@ -6,7 +6,7 @@ featured_image: "images/work-productivity-hero.jpg"
 featured_image_alt: "A conceptual image for 'Work and Productivity': the weathered hands of an artisan carving a zellige tile that seamlessly transforms into a perfectly organized digital interface."
 layout: "term"
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 You have arrived at the artisan's workshop. This is the definitive archive for every framework on **Work and Productivity** inspired by the timeless wisdom of Mediterranean craft.

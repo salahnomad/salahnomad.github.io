@@ -6,7 +6,7 @@ featured_image: "images/money-freedom-hero.jpg"
 featured_image_alt: "A conceptual image for 'Money and Freedom': a thriving, ancient olive tree whose deep, intricate roots are intertwined with antique and modern coins, symbolizing deep, resilient, and diversified wealth."
 layout: "term"
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 Welcome to the complete library for **Money and Freedom**. This collection challenges the conventional wisdom of modern finance by offering a more resilient and soulful path, inspired by the enduring wisdom of the Mediterranean.

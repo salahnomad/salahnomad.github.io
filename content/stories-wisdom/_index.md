@@ -14,7 +14,7 @@ us_optimization:
   ia_short_answer: "This collection contains the foundational stories and philosophies of Rooted Nomadism, exploring how ancestral wisdom can provide a compass for modern digital life, resilience, and belonging."
   # --- SEO STRATÉGIQUE ---
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 # Stories & Wisdom

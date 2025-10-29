@@ -6,7 +6,7 @@ featured_image: "images/stories-wisdom-hero.jpg"
 featured_image_alt: "An open, ancient leather-bound book on a wooden table. From its pages, a glowing, intricate root system grows outwards, symbolizing how personal narratives are the living source of the Rooted Nomadism philosophy."
 layout: "term"
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 Welcome to the heart of the caravan—the complete logbook of the Rooted Nomad journey. The articles in this collection are the source code of this entire philosophy, chronicling a voyage from ancestral wisdom to digital futures.

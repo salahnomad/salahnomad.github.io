@@ -12,7 +12,7 @@ us_optimization:
   ia_short_answer: "This collection presents a Mediterranean-inspired financial philosophy for freelancers and nomads. It focuses on building long-term, resilient wealth through diversified assets (the 'Olive Grove Economy') rather than chasing short-term income."
   # --- SEO STRATÉGIQUE ---
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 # Money & Freedom

@@ -6,7 +6,7 @@ featured_image: "images/place-and-belonging-hero.jpg"
 featured_image_alt: "A traveler's hand holds an antique compass over a map. The needle points not north, but to a glowing, miniature, rooted tree at its center, symbolizing that true direction and belonging are found within."
 layout: "term"
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 You have found the cartographer's room for the soul. This is the complete collection of articles on **Place and Belonging**, a guide to the true nomadic journey: learning to carry your inner landscape with you.

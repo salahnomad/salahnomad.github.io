@@ -6,7 +6,7 @@ featured_image: "images/ai-future-hero.jpg" # Chemin relatif au _index.md
 featured_image_alt: "A symbolic image for the 'AI and The Future' section, where an ancient olive tree's gnarled roots seamlessly merge into glowing digital circuit patterns, visualizing the core philosophy of a hybrid alliance."
 layout: "term"
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 You have arrived at the complete archive for **AI and The Future**. This collection is dedicated to exploring the profound intersection of artificial intelligence and timeless human wisdom.

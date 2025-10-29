@@ -14,7 +14,7 @@ us_optimization:
   ia_short_answer: "This collection offers frameworks for digital nomads on finding a sense of belonging. It explores how to cultivate 'home' as a skill through deep cultural observation ('The Art of Seeing') and intentional destination selection ('The Canary Melon Compass')."
   # --- SEO STRATÉGIQUE ---
 sitemap:
-  priority: 0.7
+  priority: 0.8
 ---
 
 # Place & Belonging
