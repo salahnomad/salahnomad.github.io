@@ -4,7 +4,7 @@ date: 2025-10-18T00:00:00+02:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "Social media promised community but delivered isolation. Discover how Moroccan hammam wisdom reveals three ancient principles to transform digital spaces into sanctuaries of genuine human connection."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "community-building", "digital-culture", "vulnerability"]
 keywords: ["building online community", "digital trust building", "vulnerability in leadership", "social architecture design", "authentic connection"]
 featured_image: "images/hammam-principle-hero.jpg"

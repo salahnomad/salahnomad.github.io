@@ -4,7 +4,7 @@ date: 2025-10-18T10:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how ancient Roman forums and Andalusian patios inspire a 3-pillar framework to transform digital isolation into authentic connection, building thriving online communities with Mediterranean wisdom."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: 
   - "digital-community"
   - "virtual-forum"

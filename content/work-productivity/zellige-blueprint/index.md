@@ -4,7 +4,7 @@ date: 2025-10-18T00:00:00+04:00
 lastmod: 2025-10-18T00:00:00+04:00
 draft: false
 description: "Discover how 1,000-year-old Moroccan zellige craftsmanship reveals a 3-layer productivity system that transforms digital chaos into meaningful work through artisan precision and Mediterranean wisdom."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "soulful-productivity", "digital-organization", "artisan-mindset"]
 keywords: ["artisan productivity system", "mediterranean work wisdom", "digital task management", "meaningful work organization", "cultural productivity framework"]
 featured_image: "images/zellige-blueprint-productivity-dashboard.jpg"

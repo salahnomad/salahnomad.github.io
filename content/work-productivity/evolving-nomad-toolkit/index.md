@@ -4,7 +4,7 @@ date: 2025-10-18T11:00:00+02:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "From Moroccan shortwave radios to iPhones—discover how Mediterranean wisdom transforms technology from distraction to sacred connection in our hyper-digital age."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "digital-minimalism", "slow-tech", "rooted-nomadism"]
 keywords: ["mindful technology use", "digital minimalism", "slow technology movement", "intentional tech", "ancestral wisdom digital age"]
 featured_image: "images/radio-to-iphone-zellige-map.jpg"

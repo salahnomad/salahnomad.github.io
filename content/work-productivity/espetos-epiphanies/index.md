@@ -5,7 +5,7 @@ lastmod: 2025-10-18
 draft: false
 description: "From Málaga's beaches to your laptop—discover how my grandfather's wisdom and 200-year-old sardine rituals hold the secret to defeating digital overload."
 
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "slow-work", "rooted-nomadism"]
 keywords: ["burnout recovery", "deep work rituals", "slow productivity", "digital minimalism"]
 

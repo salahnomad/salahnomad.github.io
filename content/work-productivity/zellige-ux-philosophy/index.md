@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When my €50k Franco-Moroccan startup collapsed, ancient zellige craftsmanship revealed 3 ethical design principles that transform digital products from addictive interfaces to meaningful human experiences."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "ethical-ux", "digital-ethics", "rooted-nomadism"]
 keywords: ["ethical UX design principles", "Mediterranean digital design", "sustainable technology", "human-centered design", "digital craftsmanship"]
 featured_image: "images/zellige-heart-ux-hero.jpg"

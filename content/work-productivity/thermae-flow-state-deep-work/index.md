@@ -5,7 +5,7 @@ date: 2025-10-18T00:00:00+02:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "Discover the 4-chamber ritual that saved my focus from digital overwhelm. Blend Roman bath engineering with Moroccan hammam wisdom to build your cognitive sanctuary for deep work and creative flow."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "deep-work", "flow-state", "digital-minimalism"]
 keywords: ["deep work rituals", "flow state activation", "digital distraction cure", "mediterranean productivity", "cognitive focus techniques"]
 featured_image: "images/digital-thermae-flow.jpg"

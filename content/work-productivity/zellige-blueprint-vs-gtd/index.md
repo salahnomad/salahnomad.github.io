@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When GTD's corporate efficiency leaves your creative work feeling hollow, discover how Mediterranean artisan wisdom offers a soulful alternative for meaningful productivity through intention, composition, and beauty."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "sustainable-productivity", "work-philosophy", "rooted-nomadism"]
 keywords: ["GTD alternative productivity", "David Allen vs artisan system", "creative task management", "soulful work philosophy", "Mediterranean productivity method"]
 featured_image: "images/zellige-vs-gtd-comparison.jpg"

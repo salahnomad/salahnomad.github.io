@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how a vintage shortwave radio from 1980s Morocco taught three communication protocols that solve modern digital overwhelm—transforming how we connect in an age of infinite bandwidth but impoverished attention."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: 
   - "digital-ethics"
   - "communication-protocols"

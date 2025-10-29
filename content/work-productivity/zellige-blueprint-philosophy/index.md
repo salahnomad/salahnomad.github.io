@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "Discover The Zellige Blueprint—a productivity philosophy born from Mediterranean craftsmanship spanning Morocco to Andalusia. Transform chaotic tasks into meaningful work mosaics through precision, composition, and integrity."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "soulful-productivity", "work-philosophy", "rooted-nomadism"]
 keywords: ["mediterranean productivity philosophy", "andalusian craftsmanship wisdom", "moroccan zellige productivity", "soulful work system", "cultural productivity framework"]
 featured_image: "images/zellige-blueprint-philosophy-hero.jpg"

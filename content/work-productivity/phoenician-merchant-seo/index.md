@@ -4,7 +4,7 @@ date: 2025-10-18T09:00:00+02:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "Stop chasing algorithms and start building digital empires. Discover how 3,000-year-old Phoenician trade secrets reveal the four pillars of unstoppable SEO strategy for the AI-driven search landscape."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "advanced-seo", "content-strategy", "ai-seo"]
 keywords: ["AI-proof SEO strategy", "evergreen content creation", "building online authority", "ethical SEO practices", "cultural intelligence marketing"]
 featured_image: "images/phoenician-ship-digital-sea.jpg"

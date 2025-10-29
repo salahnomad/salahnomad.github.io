@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how traditional baker's rhythms from Málaga create a 4-phase deep work framework for mastering distraction-free focus, creative flow states, and sustainable productivity in our hyper-connected world."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: 
   - "deep-work"
   - "focus-rituals"

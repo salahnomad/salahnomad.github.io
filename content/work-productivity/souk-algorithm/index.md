@@ -4,7 +4,7 @@ date: 2025-10-18T00:00:00+02:00
 lastmod: 2025-10-18T00:00:00+02:00
 draft: false
 description: "After 20 years mastering SEO, I discovered the ultimate strategy in a Meknès spice market. Discover how four ancient souk laws reveal how to build unshakeable authority in the age of AI-generated content."
-categories: ["Work & Productivity"]
+categories: ["work-productivity"]
 tags: ["mediterranean-wisdom", "cultural-intelligence", "practical-philosophy", "seo-strategy", "human-centered-marketing", "e-e-a-t"]
 keywords: ["AI-proof SEO strategy", "building online trust", "human-centered marketing", "E-E-A-T optimization", "authentic content creation"]
 featured_image: "images/souk-algorithm-hero.jpg"
