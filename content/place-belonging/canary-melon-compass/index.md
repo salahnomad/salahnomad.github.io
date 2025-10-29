@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Tired of sterile spreadsheets for choosing nomad destinations? Discover the 3-step Canary Melon Compass framework that uses cultural flavor, resilience, and ancestral echoes to find places where you truly belong."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

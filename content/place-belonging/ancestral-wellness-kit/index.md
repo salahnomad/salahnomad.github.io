@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Ditch the generic wellness apps. Discover how Ghassoul clay, Argan oil, and mint tea rituals from Morocco offer powerful antidotes to digital burnout and nomad rootlessness through ancestral wisdom."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

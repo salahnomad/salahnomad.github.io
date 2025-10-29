@@ -4,7 +4,7 @@ date: 2025-10-17T08:00:00-04:00
 lastmod: 2025-10-17
 draft: false
 description: "Tired of surface-level travel? Discover a 3-step framework from Mediterranean artisans and storytellers that transforms how you experience cultures, build connection, and find meaning in every journey."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags:
   - "mediterranean-wisdom"
   - "cultural-intelligence"

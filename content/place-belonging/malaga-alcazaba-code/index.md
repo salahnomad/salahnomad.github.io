@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "When Silicon Valley's 'move fast and break things' leads to broken teams, ancient Moorish architecture offers a blueprint for sustainable innovation through networked patios, water channel logic, and layered integration."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags: ["malaga-history", "moorish-architecture", "digital-nomad-malaga", "innovation-ecosystem", "cultural-design", "rooted-nomadism", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["Málaga historical sites", "Moorish influence Andalusia", "digital innovation Málaga", "sustainable innovation principles", "tech burnout solutions", "ancient wisdom modern tech"]
 featured_image: "images/alcazaba-soho-view.jpg"

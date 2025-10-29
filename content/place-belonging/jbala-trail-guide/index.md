@@ -5,7 +5,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover regenerative travel through 400-year-old Morisco wisdom. Learn cultural humility, artisan exchange and ecological contribution principles that transform tourism in Morocco's Jbala mountains."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags: ["regenerative-travel", "jbala", "morisco", "andalusian-heritage", "cultural-integration", "pillar-content", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["regenerative travel guide", "ethical travel Morocco", "jbala mountains resilience", "cultural integration travel", "sustainable tourism principles"]
 featured_image: "images/jbala-andalusian-mirror-trail.jpg"

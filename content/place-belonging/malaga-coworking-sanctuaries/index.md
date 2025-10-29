@@ -4,7 +4,7 @@ date: 2025-10-18T08:00:00-04:00
 lastmod: 2025-10-18
 draft: false
 description: "Discover how Málaga's ancient architectural wisdom solves remote work isolation through three sanctuary archetypes. Data-driven comparison of workspaces blending Andalusian soul with digital productivity."
-categories: ["Place & Belonging"]
+categories: ["place-belonging"]
 tags: ["malaga", "coworking", "digital-nomad", "rooted-nomadism", "andalusian-culture", "productivity-rituals", "mediterranean-wisdom", "cultural-intelligence", "practical-philosophy"]
 keywords: ["best coworking malaga", "remote work solutions", "digital nomad community", "workspace design psychology", "andalusian productivity methods"]
 featured_image: "images/malaga-coworking-sanctuaries-hero.jpg"
