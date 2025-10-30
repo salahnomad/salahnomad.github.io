@@ -72,13 +72,13 @@ json_ld: |
 
 The sound is seared into my memory: the gentle *thunk* of a cassette deck door, the faint hiss of magnetic tape, and the low, collective hum of CRT monitors in a smoky Meknès cybercafé. The year was 2002. I was performing a kind of digital alchemy that felt both sacred and urgent, paying for my digital salvation by the hour.
 
-{{< figure src="images/cybercafe-2002-memories.jpg" alt="Intérieur nostalgique d'un cybercafé marocain en 2002 avec écrans CRT, lecteur cassette, et ambiance enfumée" caption="Mon sanctuaire numérique de 2002 : où chaque minute coûtait de l'argent et chaque mégabyte était précieux." >}}
+{{< figure src="images/cybercafe-2002-memories.jpg" alt="Nostalgic interior of a Moroccan cybercafe in 2002 with CRT monitors, cassette deck, and smoky atmosphere" caption="My digital sanctuary of 2002: where every minute cost money and every megabyte was precious." >}}
 
 I had a shoebox full of treasures: mixtapes from my youth, recordings of my grandmother singing ancient Amazigh poems, bootlegs of Rai concerts that existed nowhere else on earth. A whole library of cultural memory, trapped on a dying medium. My mission was to ferry these analog souls across the digital Rubicon before the tape degraded or the players died forever.
 
 My vessel for this journey wasn't some flashy new app from Silicon Valley. It was a humble piece of software from Canada, first released in 1993, called GoldWave. The free version I used in that cybercafé, **v4.26**, was a marvel of efficiency that could run on any 32-bit Windows machine. It loaded in an instant. It didn't ask for a subscription. It just worked.
 
-{{< figure src="images/goldwave-interface-2002.jpg" alt="Interface sobre et fonctionnelle de GoldWave v4.26 sous Windows XP avec waveforms audio simples" caption="GoldWave v4.26 : une simplicité qui semble presque radicale aujourd'hui." >}}
+{{< figure src="images/goldwave-interface-2002.jpg" alt="Clean and functional GoldWave v4.26 interface on Windows XP with simple audio waveforms" caption="GoldWave v4.26: a simplicity that seems almost radical today." >}}
 
 And in those precious, metered minutes spent translating the warble of tape into the clean lines of a WAV file, it taught me everything I needed to know about our relationship with technology.
 
@@ -98,14 +98,14 @@ Modern software is locked in an endless cycle of updates. Interfaces change, fea
 
 GoldWave hasn't fundamentally changed in years. It lives in my "muscle memory." I don't think about *how* to normalize a track or apply a fade-out; my fingers simply do it. The tool disappears. This is the state every artisan craves: a perfect, frictionless union between intention and execution.
 
-{{< figure src="images/cassette-to-digital.jpg" alt="Une cassette audio s'insérant dans une interface informatique et se transformant en une forme d'onde numérique propre, illustrant la préservation de la mémoire analogique" caption="L'alchimie de la préservation : de la bande magnétique au fichier immortel." >}}
+{{< figure src="images/cassette-to-digital.jpg" alt="Cassette tape transforming into digital waveform, visual metaphor for analog to digital conversion" caption="The alchemy of preservation: from magnetic tape to immortal file." >}}
 
 **The Lesson:** Mastery of a simple tool is more powerful than surface-level knowledge of a complex one. The goal isn't more features; it's less friction.
 
 ### 2. Nomadic Resilience: The Power of Lightweight Freedom
 Modern software often feels like a digital empire. It demands powerful hardware, constant internet access, and recurring payments. It wants to colonize your workflow and hold your data hostage in its cloud.
 
-GoldWave is a nomad's toolkit. It's a single executable file that can run off a USB stick. It's lightweight, offline, and makes no demands. It embodies **[digital sovereignty](/ai-future/phoenician-blockchain/)**, the same principle that guided ancient Phoenician traders in building resilient, decentralized networks. In a world where our "freedom" is often leased from tech giants, GoldWave is a declaration of independence.
+GoldWave is a nomad's toolkit. It's a single executable file that can run off a USB stick. It's lightweight, offline, and makes no demands. It embodies digital sovereignty. In a world where our "freedom" is often leased from tech giants, GoldWave is a declaration of independence.
 
 **The Lesson:** The most resilient tools are the ones you own, the ones that work anywhere, anytime, without asking for permission. This is the heart of **[Slow Tech](/glossary/slow-ai/)**.
 
@@ -116,7 +116,7 @@ GoldWave is a master craftsman. It edits audio. That's it. This singular focus c
 
 **The Lesson:** Great tools, like great artisans, have a clear and singular purpose. They create focus by design, a core principle of **[The Baker's Code](/work-productivity/bakers-code/)**.
 
-{{< figure src="images/artisan-vs-tool.jpg" alt="Mains d'artisan expérimenté tenant un outil simple, mettant l'accent sur la compétence humaine et la simplicité de l'outil" caption="L'âme réside dans les mains de l'artisan, pas dans la sophistication de l'outil." >}}
+{{< figure src="images/artisan-vs-tool.jpg" alt="Experienced artisan hands holding a simple tool, symbolizing the primacy of skill over technology" caption="The soul resides in the hands of the artisan, not in the sophistication of the tool." >}}
 
 > **Validation Expert:** *Prof. Marco Bellucci, Digital Anthropology, University of Barcelona*  
 > "The story of GoldWave is a perfect case study in what we call 'virtuous constraints.' By choosing a tool with limitations, Salah isn't sacrificing capability; he's gaining focus and intentionality. Our research shows that creatives who intentionally limit their toolset produce work that is 30% more coherent and impactful."
