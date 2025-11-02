@@ -1,7 +1,20 @@
 // =============================================
-// YouTube Shortcode Styles
+// YouTube Shortcode Styles - Version Perfectionnée
 // Optimisé pour le thème Salah Nomad
 // =============================================
+
+// Screen reader only class for accessibility
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 // Video Container Optimization
 .video-container {
@@ -77,14 +90,16 @@
   padding-top: $spacing-md;
 }
 
-// Video Play Button Overlay (Accessibility)
+// Video Play Button Overlay (Accessibility + Thumbnail)
 .video-play-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,21 +108,49 @@
   cursor: pointer;
   z-index: 2;
   
+  // Dark overlay for better button visibility
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+    z-index: -1;
+  }
+  
+  &:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
   .play-button {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: var(--color-text-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 3;
+    
+    .play-icon {
+      margin-left: 4px; // Optical adjustment for the play symbol
+    }
     
     &:hover {
       transform: scale(1.1);
       background: var(--color-text-accent-secondary);
+    }
+    
+    &:focus {
+      outline: 3px solid var(--color-focus-outline);
+      outline-offset: 2px;
     }
   }
 }
@@ -145,8 +188,10 @@
     font-size: 0.85rem;
   }
   
-  .video-play-overlay {
-    display: none; // Hide on mobile for better touch experience
+  .video-play-overlay .play-button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
   }
 }
 
@@ -159,6 +204,12 @@
   .video-caption {
     padding: $spacing-xs;
     font-size: 0.8rem;
+  }
+  
+  .video-play-overlay .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
   }
 }
 
@@ -189,8 +240,8 @@ html.dark-mode {
     border-top-color: var(--color-border);
   }
   
-  .video-play-overlay {
-    background: rgba(0, 0, 0, 0.8);
+  .video-play-overlay::before {
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -242,4 +293,11 @@ html.dark-mode {
   .video-container {
     display: none;
   }
+}
+
+// Focus styles for keyboard navigation
+.video-play-overlay:focus {
+  opacity: 1;
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: -3px;
 }

@@ -45,12 +45,9 @@ faq:
     id="gB18JJMgEq8" 
     title="How My Grandmother's Dialect Crashed ChatGPT - Cultural AI Explained"
     caption="Watch the video essay exploring AI's cultural limitations and Jbala-Andalusian linguistic heritage" 
-    description="When I tested ChatGPT with my grandmother's ancient Moroccan dialect, it failed spectacularly. Here's what its hilarious mistakes—translating 'sandwich' as 'little mouth'—reveal about the limits of AI, cultural memory, and what machines will never truly understand about the human soul."
-    uploadDate="2025-11-02"
-    duration="PT12M42S"
 >}}
 
-*Experience the full cinematic journey where ancient Mediterranean wisdom meets artificial intelligence. This video essay reveals why some bridges between cultures can only be walked by human feet, never crossed by algorithmic thought.*
+*This story was too vast for words alone. I created this cinematic video essay to take you on the journey with me—to let you **feel** the rhythm of the dialect and **see** the soul of the landscape that shaped it. Watch before reading to immerse yourself in the soundscape, or after to deepen your understanding. The choice, like the strait itself, flows both ways.*
 
 ## 🌊 **The Strait's Linguistic Echo: When Silicon Valley Meets Al-Andalus**
 

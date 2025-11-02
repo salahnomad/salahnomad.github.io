@@ -1,13 +1,21 @@
 {{/* 
-  Shortcode YouTube optimisé pour Salah Nomad
-  Usage: {{< youtube id="VIDEO_ID" title="Titre optionnel" caption="Légende optionnelle" >}}
+  Shortcode YouTube universel - Dynamique pour tous les articles
+  Usage: {{< youtube id="VIDEO_ID" title="Titre" description="Description" >}}
 */}}
+
+{{/* Variables dynamiques avec valeurs par défaut génériques */}}
+{{ $videoTitle := .Get "title" | default "Salah Nomad - Digital Philosophy & Cultural AI" }}
+{{ $videoDescription := .Get "description" | default "Exploring where ancient Mediterranean wisdom meets the future of AI" }}
+{{ $videoUploadDate := .Get "uploadDate" | default (now.Format "2006-01-02") }}
+{{ $videoDuration := .Get "duration" | default "PT15M00S" }}
+{{ $videoViewCount := .Get "viewCount" | default "500" }}
+{{ $videoTranscript := .Get "transcript" | default "Video content explores cultural intelligence, AI limitations, and Mediterranean wisdom traditions." }}
 
 <div class="video-container" data-youtube-id="{{ .Get "id" }}">
   <div class="video-wrapper" id="yt-{{ .Get "id" }}">
     <iframe 
       src="https://www.youtube.com/embed/{{ .Get "id" }}?enablejsapi=1&rel=0" 
-      title="{{ .Get "title" | default "YouTube video player" }}"
+      title="{{ $videoTitle }}"
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
@@ -15,9 +23,10 @@
       referrerpolicy="strict-origin-when-cross-origin">
     </iframe>
     
-    <div class="video-play-overlay" onclick="loadYouTubeVideo('{{ .Get "id" }}')">
-      <div class="play-button">
-        ▶
+    <div class="video-play-overlay" onclick="loadYouTubeVideo('{{ .Get "id" }}')" style="background-image: url('https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg');">
+      <div class="play-button" aria-label="Play video: {{ $videoTitle }}">
+        <span class="play-icon">▶</span>
+        <span class="sr-only">Play video: {{ $videoTitle }}</span>
       </div>
     </div>
   </div>
@@ -27,25 +36,76 @@
   {{ end }}
 </div>
 
-{{/* Schema.org structured data for SEO */}}
+{{/* Schema.org structured data for SEO - Version DYNAMIQUE */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "{{ .Get "title" | default "How My Grandmother's Dialect Crashed ChatGPT" }}",
-  "description": "{{ .Get "description" | default "When I tested ChatGPT with my grandmother's ancient Moroccan dialect, it failed spectacularly. Here's what its hilarious mistakes reveal about AI limits and cultural memory." }}",
+  "name": "{{ $videoTitle }}",
+  "description": "{{ $videoDescription }}",
   "thumbnailUrl": "https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg",
-  "uploadDate": "{{ .Get "uploadDate" | default "2025-11-02" }}",
-  "duration": "{{ .Get "duration" | default "PT12M42S" }}",
+  "uploadDate": "{{ $videoUploadDate }}",
+  "duration": "{{ $videoDuration }}",
   "contentUrl": "https://www.youtube.com/watch?v={{ .Get "id" }}",
   "embedUrl": "https://www.youtube.com/embed/{{ .Get "id" }}",
   "publisher": {
     "@type": "Organization",
     "name": "Salah Nomad",
-    "url": "https://salahnomad.com"
+    "url": "https://salahnomad.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://salahnomad.com/images/logo.png",
+      "width": "160",
+      "height": "60"
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Salah Nomad",
+    "url": "https://salahnomad.com",
+    "description": "Digital philosopher exploring where ancient Mediterranean wisdom meets the future of AI",
+    "knowsAbout": [
+      "Cultural AI",
+      "Digital Humanities", 
+      "Linguistic Preservation",
+      "Mediterranean Wisdom",
+      "Rooted Nomadism"
+    ]
+  },
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/WatchAction",
+    "userInteractionCount": "{{ $videoViewCount }}"
+  },
+  "genre": ["Cultural Analysis", "Digital Philosophy", "AI Ethics", "Linguistics"],
+  "keywords": [
+    "AI and language", "cultural nuance", "Darija", "Jbala culture", 
+    "Andalusian heritage", "digital humanities", "linguistic preservation",
+    "Mediterranean wisdom", "cultural intelligence", "ChatGPT translation challenges"
+  ],
+  "inLanguage": ["en", "ar", "es"],
+  "transcript": "{{ $videoTranscript }}",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "contentRating": "G",
+  "potentialAction": {
+    "@type": "WatchAction",
+    "target": "https://www.youtube.com/watch?v={{ .Get "id" }}"
   }
 }
 </script>
+
+{{/* Open Graph Video Meta pour les réseaux sociaux */}}
+<meta property="og:video" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
+<meta property="og:video:type" content="text/html" />
+<meta property="og:video:width" content="1280" />
+<meta property="og:video:height" content="720" />
+<meta property="og:video:secure_url" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
+
+{{/* Twitter Card Video */}}
+<meta name="twitter:card" content="player" />
+<meta name="twitter:player" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
+<meta name="twitter:player:width" content="1280" />
+<meta name="twitter:player:height" content="720" />
 
 <script>
 // YouTube API integration for better performance
@@ -70,16 +130,98 @@ function loadYouTubeVideo(videoId) {
   }
 }
 
-// Initialize YouTube players when page loads
+// Enhanced analytics for video engagement
 document.addEventListener('DOMContentLoaded', function() {
-  // Lazy loading for YouTube iframes
   const videoContainers = document.querySelectorAll('.video-container');
+  
   videoContainers.forEach(container => {
     const iframe = container.querySelector('iframe');
+    const videoId = container.dataset.youtubeId;
+    
     if (iframe) {
       // Add loading attribute for native lazy loading
       iframe.setAttribute('loading', 'lazy');
+      
+      // Track video views and engagement
+      iframe.addEventListener('load', function() {
+        // Send analytics event for video load
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'video_load', {
+            'event_category': 'Video Engagement',
+            'event_label': videoId,
+            'value': 1
+          });
+        }
+      });
     }
   });
+  
+  // Intersection Observer for view tracking
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const videoId = entry.target.dataset.youtubeId;
+          
+          // Track video impression
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'video_impression', {
+              'event_category': 'Video Visibility',
+              'event_label': videoId,
+              'value': 1
+            });
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    videoContainers.forEach(container => {
+      videoObserver.observe(container);
+    });
+  }
 });
+
+// Enhanced error handling
+window.addEventListener('error', function(e) {
+  const target = e.target;
+  if (target && target.tagName === 'IFRAME' && target.src.includes('youtube.com')) {
+    console.warn('YouTube iframe loading error:', e);
+    
+    // Fallback: Try to reload without API parameters
+    const cleanSrc = target.src.split('?')[0] + '?rel=0';
+    target.src = cleanSrc;
+  }
+});
+
+// Lazy load YouTube thumbnails for better performance
+function lazyLoadThumbnails() {
+  const overlays = document.querySelectorAll('.video-play-overlay');
+  
+  const thumbnailObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const overlay = entry.target;
+        const videoId = overlay.closest('.video-container').dataset.youtubeId;
+        
+        // Ensure the background image is set (fallback for CSS loading)
+        if (!overlay.style.backgroundImage) {
+          overlay.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`;
+        }
+        
+        thumbnailObserver.unobserve(overlay);
+      }
+    });
+  });
+  
+  overlays.forEach(overlay => {
+    thumbnailObserver.observe(overlay);
+  });
+}
+
+// Initialize lazy loading when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', lazyLoadThumbnails);
+} else {
+  lazyLoadThumbnails();
+}
 </script>
