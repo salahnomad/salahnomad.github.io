@@ -1,0 +1,85 @@
+{{/* 
+  Shortcode YouTube optimisé pour Salah Nomad
+  Usage: {{< youtube id="VIDEO_ID" title="Titre optionnel" caption="Légende optionnelle" >}}
+*/}}
+
+<div class="video-container" data-youtube-id="{{ .Get "id" }}">
+  <div class="video-wrapper" id="yt-{{ .Get "id" }}">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ .Get "id" }}?enablejsapi=1&rel=0" 
+      title="{{ .Get "title" | default "YouTube video player" }}"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+    
+    <div class="video-play-overlay" onclick="loadYouTubeVideo('{{ .Get "id" }}')">
+      <div class="play-button">
+        ▶
+      </div>
+    </div>
+  </div>
+  
+  {{ with .Get "caption" }}
+  <div class="video-caption">{{ . | markdownify }}</div>
+  {{ end }}
+</div>
+
+{{/* Schema.org structured data for SEO */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ .Get "title" | default "How My Grandmother's Dialect Crashed ChatGPT" }}",
+  "description": "{{ .Get "description" | default "When I tested ChatGPT with my grandmother's ancient Moroccan dialect, it failed spectacularly. Here's what its hilarious mistakes reveal about AI limits and cultural memory." }}",
+  "thumbnailUrl": "https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg",
+  "uploadDate": "{{ .Get "uploadDate" | default "2025-11-02" }}",
+  "duration": "{{ .Get "duration" | default "PT12M42S" }}",
+  "contentUrl": "https://www.youtube.com/watch?v={{ .Get "id" }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ .Get "id" }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salah Nomad",
+    "url": "https://salahnomad.com"
+  }
+}
+</script>
+
+<script>
+// YouTube API integration for better performance
+function loadYouTubeVideo(videoId) {
+  const iframe = document.querySelector(`#yt-${videoId} iframe`);
+  const wrapper = document.querySelector(`#yt-${videoId}`);
+  const overlay = document.querySelector(`[data-youtube-id="${videoId}"] .video-play-overlay`);
+  
+  if (iframe && wrapper) {
+    // Show loading state
+    wrapper.classList.add('loading');
+    
+    // Load the video with autoplay
+    const src = iframe.src + '&autoplay=1';
+    iframe.src = src;
+    
+    // Hide overlay after a short delay
+    setTimeout(() => {
+      if (overlay) overlay.style.display = 'none';
+      wrapper.classList.remove('loading');
+    }, 1000);
+  }
+}
+
+// Initialize YouTube players when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Lazy loading for YouTube iframes
+  const videoContainers = document.querySelectorAll('.video-container');
+  videoContainers.forEach(container => {
+    const iframe = container.querySelector('iframe');
+    if (iframe) {
+      // Add loading attribute for native lazy loading
+      iframe.setAttribute('loading', 'lazy');
+    }
+  });
+});
+</script>

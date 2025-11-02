@@ -39,6 +39,19 @@ faq:
 **TL;DR:** ChatGPT fails spectacularly with Northern Moroccan dialects because AI treats language as data while human language carries centuries of cultural memory, embodied experience, and historical trauma in its very syntax—revealing why some aspects of human identity will always defy algorithmic translation.
 {{< /quick-summary >}}
 
+## 🎬 **The Cinematic Exploration**
+
+{{< youtube 
+    id="gB18JJMgEq8" 
+    title="How My Grandmother's Dialect Crashed ChatGPT - Cultural AI Explained"
+    caption="Watch the video essay exploring AI's cultural limitations and Jbala-Andalusian linguistic heritage" 
+    description="When I tested ChatGPT with my grandmother's ancient Moroccan dialect, it failed spectacularly. Here's what its hilarious mistakes—translating 'sandwich' as 'little mouth'—reveal about the limits of AI, cultural memory, and what machines will never truly understand about the human soul."
+    uploadDate="2025-11-02"
+    duration="PT12M42S"
+>}}
+
+*Experience the full cinematic journey where ancient Mediterranean wisdom meets artificial intelligence. This video essay reveals why some bridges between cultures can only be walked by human feet, never crossed by algorithmic thought.*
+
 ## 🌊 **The Strait's Linguistic Echo: When Silicon Valley Meets Al-Andalus**
 
 **_When ChatGPT translated my grandmother's dialect as "little mouth" instead of "sandwich," I discovered why algorithms fail where human understanding thrives._**

@@ -23,8 +23,8 @@
 @import 'components/payhip-embed'; // <-- Nouveau fichier
 // ... autres composants ...
 
-// AJOUTEZ CETTE LIGNE ICI
-@import 'components/framework-connections'; 
+// AJOUTEZ CETTE LIGNE ICI - Import YouTube
+@import 'components/youtube'; // <-- NOUVEAU FICHIER YouTube
 
 @import 'article-card';
 @import 'single';
