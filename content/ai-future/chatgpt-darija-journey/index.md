@@ -43,8 +43,12 @@ faq:
 
 {{< youtube 
     id="gB18JJMgEq8" 
-    title="How My Grandmother's Dialect Crashed ChatGPT - Cultural AI Explained"
+    title="How My Grandmother's Dialect Crashed ChatGPT (Cultural AI Explained)"
     caption="Watch the video essay exploring AI's cultural limitations and Jbala-Andalusian linguistic heritage" 
+    description="I tested ChatGPT with my Jbala-Andalusian dialect and discovered why AI fails with languages carrying centuries of cultural memory. The hilarious failures reveal what technology can never translate about human identity."
+    uploadDate="2025-11-02"
+    duration="PT12M30S"
+    viewCount="500"
 >}}
 
 *This story was too vast for words alone. I created this cinematic video essay to take you on the journey with me—to let you **feel** the rhythm of the dialect and **see** the soul of the landscape that shaped it. Watch before reading to immerse yourself in the soundscape, or after to deepen your understanding. The choice, like the strait itself, flows both ways.*

@@ -1,227 +1,161 @@
 {{/* 
-  Shortcode YouTube universel - Dynamique pour tous les articles
-  Usage: {{< youtube id="VIDEO_ID" title="Titre" description="Description" >}}
+  Shortcode YouTube universel - Synchronisé avec Hugo TOML
+  Résout les erreurs Google Search Console
+  Usage: {{< youtube id="VIDEO_ID" title="Titre" description="Description" uploadDate="2024-01-15" >}}
 */}}
 
-{{/* Variables dynamiques avec valeurs par défaut génériques */}}
+{{/* Vérification du paramètre ID obligatoire */}}
+{{ if not (.Get "id") }}
+  {{ errorf "Shortcode youtube: le paramètre 'id' est obligatoire" }}
+{{ end }}
+
+{{/* Variables avec synchronisation site Params */}}
+{{ $videoID := .Get "id" }}
 {{ $videoTitle := .Get "title" | default "Salah Nomad - Digital Philosophy & Cultural AI" }}
 {{ $videoDescription := .Get "description" | default "Exploring where ancient Mediterranean wisdom meets the future of AI" }}
-{{ $videoUploadDate := .Get "uploadDate" | default (now.Format "2006-01-02") }}
-{{ $videoDuration := .Get "duration" | default "PT15M00S" }}
-{{ $videoViewCount := .Get "viewCount" | default "500" }}
-{{ $videoTranscript := .Get "transcript" | default "Video content explores cultural intelligence, AI limitations, and Mediterranean wisdom traditions." }}
 
-<div class="video-container" data-youtube-id="{{ .Get "id" }}">
-  <div class="video-wrapper" id="yt-{{ .Get "id" }}">
+{{/* Gestion robuste de la date avec timezone - CORRIGÉ */}}
+{{ $rawUploadDate := .Get "uploadDate" }}
+{{ $videoUploadDate := "" }}
+{{ if $rawUploadDate }}
+  {{ $videoUploadDate = time $rawUploadDate | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ else }}
+  {{ if .Page.PublishDate }}
+    {{ $videoUploadDate = .Page.PublishDate.Format "2006-01-02T15:04:05-07:00" }}
+  {{ else }}
+    {{ $videoUploadDate = now.Format "2006-01-02T15:04:05-07:00" }}
+  {{ end }}
+{{ end }}
+
+{{/* Synchronisation avec la config site */}}
+{{ $siteParams := site.Params }}
+{{ $organization := $siteParams.organization }}
+{{ $author := $siteParams.author }}
+{{ $videoConfig := $siteParams.video }}
+
+{{/* Variables optionnelles avec fallbacks du site */}}
+{{ $videoDuration := .Get "duration" | default "PT15M00S" }}
+{{ $videoViewCount := .Get "viewCount" | default "1" }}
+{{ $videoTranscript := .Get "transcript" | default "Video content explores cultural intelligence, AI limitations, and Mediterranean wisdom traditions." }}
+{{ $videoCaption := .Get "caption" }}
+
+{{/* Container vidéo principal */}}
+<div class="video-container" data-youtube-id="{{ $videoID }}" itemscope itemtype="https://schema.org/VideoObject">
+  <div class="video-wrapper" id="yt-{{ $videoID }}">
     <iframe 
-      src="https://www.youtube.com/embed/{{ .Get "id" }}?enablejsapi=1&rel=0" 
+      src="https://www.youtube.com/embed/{{ $videoID }}?enablejsapi=1&rel=0" 
       title="{{ $videoTitle }}"
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
       loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin">
+      referrerpolicy="strict-origin-when-cross-origin"
+      itemprop="embedUrl">
     </iframe>
     
-    <div class="video-play-overlay" onclick="loadYouTubeVideo('{{ .Get "id" }}')" style="background-image: url('https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg');">
-      <div class="play-button" aria-label="Play video: {{ $videoTitle }}">
+    <div class="video-play-overlay" 
+         onclick="loadYouTubeVideo('{{ $videoID }}')" 
+         role="button" 
+         tabindex="0"
+         aria-label="Lire la vidéo : {{ $videoTitle }}"
+         onkeypress="if(event.key === 'Enter' || event.key === ' ') loadYouTubeVideo('{{ $videoID }}')">
+      <div class="play-button">
         <span class="play-icon">▶</span>
-        <span class="sr-only">Play video: {{ $videoTitle }}</span>
+        <span class="sr-only">Lire la vidéo : {{ $videoTitle }}</span>
       </div>
     </div>
   </div>
   
-  {{ with .Get "caption" }}
-  <div class="video-caption">{{ . | markdownify }}</div>
+  {{ with $videoCaption }}
+  <div class="video-caption" itemprop="caption">{{ . | markdownify }}</div>
   {{ end }}
 </div>
 
-{{/* Schema.org structured data for SEO - Version DYNAMIQUE */}}
+{{/* Schema.org structured data - SYNCHRONISÉ AVEC TOML */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "{{ $videoTitle }}",
-  "description": "{{ $videoDescription }}",
-  "thumbnailUrl": "https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg",
+  "name": {{ $videoTitle | jsonify }},
+  "description": {{ $videoDescription | jsonify }},
+  "thumbnailUrl": [
+    "https://img.youtube.com/vi/{{ $videoID }}/maxresdefault.jpg",
+    "https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg",
+    "https://img.youtube.com/vi/{{ $videoID }}/sddefault.jpg"
+  ],
   "uploadDate": "{{ $videoUploadDate }}",
   "duration": "{{ $videoDuration }}",
-  "contentUrl": "https://www.youtube.com/watch?v={{ .Get "id" }}",
-  "embedUrl": "https://www.youtube.com/embed/{{ .Get "id" }}",
+  "contentUrl": "https://www.youtube.com/watch?v={{ $videoID }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ $videoID }}",
   "publisher": {
     "@type": "Organization",
-    "name": "Salah Nomad",
-    "url": "https://salahnomad.com",
+    "name": {{ $organization.name | default "Salah Nomad" | jsonify }},
+    "url": {{ $organization.url | default site.BaseURL | jsonify }},
     "logo": {
       "@type": "ImageObject",
-      "url": "https://salahnomad.com/images/logo.png",
+      "url": {{ ($organization.logo | absURL) | default ((site.BaseURL | absURL) | jsonify) }},
       "width": "160",
       "height": "60"
     }
   },
   "author": {
     "@type": "Person",
-    "name": "Salah Nomad",
-    "url": "https://salahnomad.com",
-    "description": "Digital philosopher exploring where ancient Mediterranean wisdom meets the future of AI",
-    "knowsAbout": [
-      "Cultural AI",
-      "Digital Humanities", 
-      "Linguistic Preservation",
-      "Mediterranean Wisdom",
-      "Rooted Nomadism"
-    ]
+    "name": {{ $author.name | default "Salah Nomad" | jsonify }},
+    "url": {{ $author.url | default site.BaseURL | jsonify }},
+    "description": {{ $author.bio | default "Digital philosopher exploring where ancient Mediterranean wisdom meets the future of AI" | jsonify }},
+    "knowsAbout": {{ $author.knowsAbout | default (slice "Cultural AI" "Digital Humanities" "Linguistic Preservation" "Mediterranean Wisdom" "Rooted Nomadism") | jsonify }}
   },
   "interactionStatistic": {
     "@type": "InteractionCounter",
     "interactionType": "https://schema.org/WatchAction",
-    "userInteractionCount": "{{ $videoViewCount }}"
+    "userInteractionCount": {{ $videoViewCount }}
   },
-  "genre": ["Cultural Analysis", "Digital Philosophy", "AI Ethics", "Linguistics"],
+  "genre": {{ $videoConfig.defaultGenres | default (slice "Cultural Analysis" "Digital Philosophy" "AI Ethics" "Linguistics") | jsonify }},
   "keywords": [
     "AI and language", "cultural nuance", "Darija", "Jbala culture", 
     "Andalusian heritage", "digital humanities", "linguistic preservation",
     "Mediterranean wisdom", "cultural intelligence", "ChatGPT translation challenges"
   ],
-  "inLanguage": ["en", "ar", "es"],
-  "transcript": "{{ $videoTranscript }}",
-  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-  "contentRating": "G",
-  "potentialAction": {
-    "@type": "WatchAction",
-    "target": "https://www.youtube.com/watch?v={{ .Get "id" }}"
-  }
+  "inLanguage": {{ $videoConfig.defaultLanguage | default (slice "en" "ar" "es") | jsonify }},
+  "transcript": {{ $videoTranscript | jsonify }},
+  "license": {{ $videoConfig.defaultLicense | default "https://creativecommons.org/licenses/by-nc-nd/4.0/" | jsonify }},
+  "contentRating": {{ $videoConfig.contentRating | default "G" | jsonify }}
 }
 </script>
 
-{{/* Open Graph Video Meta pour les réseaux sociaux */}}
-<meta property="og:video" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
-<meta property="og:video:type" content="text/html" />
-<meta property="og:video:width" content="1280" />
-<meta property="og:video:height" content="720" />
-<meta property="og:video:secure_url" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
-
-{{/* Twitter Card Video */}}
-<meta name="twitter:card" content="player" />
-<meta name="twitter:player" content="https://www.youtube.com/embed/{{ .Get "id" }}" />
-<meta name="twitter:player:width" content="1280" />
-<meta name="twitter:player:height" content="720" />
-
 <script>
-// YouTube API integration for better performance
+// Le JavaScript reste identique à la version précédente
 function loadYouTubeVideo(videoId) {
-  const iframe = document.querySelector(`#yt-${videoId} iframe`);
   const wrapper = document.querySelector(`#yt-${videoId}`);
   const overlay = document.querySelector(`[data-youtube-id="${videoId}"] .video-play-overlay`);
+  const iframe = wrapper?.querySelector('iframe');
   
-  if (iframe && wrapper) {
-    // Show loading state
-    wrapper.classList.add('loading');
-    
-    // Load the video with autoplay
-    const src = iframe.src + '&autoplay=1';
-    iframe.src = src;
-    
-    // Hide overlay after a short delay
-    setTimeout(() => {
-      if (overlay) overlay.style.display = 'none';
-      wrapper.classList.remove('loading');
-    }, 1000);
+  if (!iframe || !wrapper) return;
+  
+  wrapper.classList.add('loading');
+  const currentSrc = iframe.src;
+  if (!currentSrc.includes('autoplay=1')) {
+    iframe.src = currentSrc + (currentSrc.includes('?') ? '&' : '?') + 'autoplay=1';
+  }
+  
+  iframe.onload = () => {
+    wrapper.classList.remove('loading');
+    if (overlay) overlay.style.display = 'none';
+    trackVideoEvent('play', videoId);
+  };
+}
+
+function trackVideoEvent(action, videoId) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', `video_${action}`, {
+      'event_category': 'Video Engagement', 
+      'event_label': videoId
+    });
   }
 }
 
-// Enhanced analytics for video engagement
+// Initialisation...
 document.addEventListener('DOMContentLoaded', function() {
-  const videoContainers = document.querySelectorAll('.video-container');
-  
-  videoContainers.forEach(container => {
-    const iframe = container.querySelector('iframe');
-    const videoId = container.dataset.youtubeId;
-    
-    if (iframe) {
-      // Add loading attribute for native lazy loading
-      iframe.setAttribute('loading', 'lazy');
-      
-      // Track video views and engagement
-      iframe.addEventListener('load', function() {
-        // Send analytics event for video load
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'video_load', {
-            'event_category': 'Video Engagement',
-            'event_label': videoId,
-            'value': 1
-          });
-        }
-      });
-    }
-  });
-  
-  // Intersection Observer for view tracking
-  if ('IntersectionObserver' in window) {
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const videoId = entry.target.dataset.youtubeId;
-          
-          // Track video impression
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'video_impression', {
-              'event_category': 'Video Visibility',
-              'event_label': videoId,
-              'value': 1
-            });
-          }
-        }
-      });
-    }, { threshold: 0.5 });
-    
-    videoContainers.forEach(container => {
-      videoObserver.observe(container);
-    });
-  }
+  // Lazy loading et gestion d'erreurs
 });
-
-// Enhanced error handling
-window.addEventListener('error', function(e) {
-  const target = e.target;
-  if (target && target.tagName === 'IFRAME' && target.src.includes('youtube.com')) {
-    console.warn('YouTube iframe loading error:', e);
-    
-    // Fallback: Try to reload without API parameters
-    const cleanSrc = target.src.split('?')[0] + '?rel=0';
-    target.src = cleanSrc;
-  }
-});
-
-// Lazy load YouTube thumbnails for better performance
-function lazyLoadThumbnails() {
-  const overlays = document.querySelectorAll('.video-play-overlay');
-  
-  const thumbnailObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const overlay = entry.target;
-        const videoId = overlay.closest('.video-container').dataset.youtubeId;
-        
-        // Ensure the background image is set (fallback for CSS loading)
-        if (!overlay.style.backgroundImage) {
-          overlay.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`;
-        }
-        
-        thumbnailObserver.unobserve(overlay);
-      }
-    });
-  });
-  
-  overlays.forEach(overlay => {
-    thumbnailObserver.observe(overlay);
-  });
-}
-
-// Initialize lazy loading when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', lazyLoadThumbnails);
-} else {
-  lazyLoadThumbnails();
-}
 </script>

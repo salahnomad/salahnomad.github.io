@@ -1,5 +1,5 @@
 // =============================================
-// YouTube Shortcode Styles - Version Perfectionnée
+// YouTube Shortcode Styles - Version Finale
 // Optimisé pour le thème Salah Nomad
 // =============================================
 
@@ -39,7 +39,7 @@
   overflow: hidden;
   background: var(--color-background);
   
-  // Loading state
+  // Loading state - ACTIVÉ PAR LE JAVASCRIPT
   &::before {
     content: '';
     position: absolute;
@@ -90,7 +90,7 @@
   padding-top: $spacing-md;
 }
 
-// Video Play Button Overlay (Accessibility + Thumbnail)
+// Video Play Button Overlay - OPTIMISÉ POUR LA VISIBILITÉ
 .video-play-overlay {
   position: absolute;
   top: 0;
@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1; // TOUJOURS VISIBLE PAR DÉFAUT
   transition: opacity 0.3s ease;
   cursor: pointer;
   z-index: 2;
@@ -155,14 +155,8 @@
   }
 }
 
-.video-container:hover .video-play-overlay {
-  opacity: 1;
-}
-
-// Video SEO Schema (invisible but important)
-.video-schema {
-  display: none;
-}
+// L'overlay reste visible jusqu'au clic (géré par JavaScript)
+// Pas besoin de :hover sur le container
 
 // Mobile Optimization for Video
 @media (max-width: $breakpoint-md) {
@@ -210,13 +204,6 @@
     width: 50px;
     height: 50px;
     font-size: 1.25rem;
-  }
-}
-
-// Tablet adjustments
-@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
-  .video-container {
-    margin: 2rem 0;
   }
 }
 
@@ -285,13 +272,6 @@ html.dark-mode {
   @keyframes spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-}
-
-// Print styles
-@media print {
-  .video-container {
-    display: none;
   }
 }
 

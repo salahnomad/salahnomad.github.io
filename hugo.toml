@@ -1,14 +1,24 @@
 # =============================================================================
 # HUGO CONFIGURATION FILE - SALAHNOMAD.COM
-# VERSION DÉFINITIVE FUSIONNÉE - 01/10/2025
-# MISE À JOUR AVEC STRATÉGIE "RELATED CONTENT" & NAVIGATION GLOSSAIRE - 04/10/2025
+# VERSION SYNCHRONISÉE AVEC SHORTCODE YOUTUBE
 # =============================================================================
 
 baseURL = 'https://salahnomad.com/'
 languageCode = 'en-us'
-title = 'Salah Nomad: Where Roots & Wi-Fi Meet' # Titre SEO optimisé conservé
+title = 'Salah Nomad: Where Roots & Wi-Fi Meet'
 theme = "salah-nomad-theme"
 enableRobotsTXT = true
+
+# === NOUVEAUX PARAMÈTRES POUR VIDÉOS YOUTUBE ===
+[params.video]
+  enableSchema = true
+  defaultPublisher = "Salah Nomad"
+  defaultLicense = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  contentRating = "G"
+  # --- AJOUT ---
+  youtubeChannel = "https://www.youtube.com/@SalahNomad"
+  defaultLanguage = ["en", "ar", "es"]
+  defaultGenres = ["Cultural Analysis", "Digital Philosophy", "AI Ethics", "Linguistics"]
 
 [pagination]
   pagerSize = 6
@@ -17,12 +27,11 @@ enableRobotsTXT = true
 # Paramètres du Thème et du Site
 ###############################################################################
 [params]
-  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons." # Description SEO conservée
+  description = "Ancient wisdom for modern nomads. A journey between Mediterranean shores and digital horizons."
   logo = "/images/Salah-Nomad-Logo.png"
   logo_dark = "/images/Salah-Nomad-Logo-Dark.png"
   dateFormat = "January 2, 2006"
-  # --- MODIFIÉ ---
-  mainSections = ["ai-future", "money-freedom", "place-belonging", "stories-wisdom", "work-productivity"] # <-- NOUVELLES SECTIONS PRINCIPALES
+  mainSections = ["ai-future", "money-freedom", "place-belonging", "stories-wisdom", "work-productivity"]
   readingTime = true
   enableSearch = true
   enableThemeToggle = true
@@ -31,18 +40,43 @@ enableRobotsTXT = true
   defaultPlaceholderImage = "/images/placeholders/placeholder-16x9.jpg"
   linktree_url = "/connect/hub/"
 
+  # === ORGANISATION SCHEMA - AMÉLIORÉ POUR VIDÉOS ===
   [params.organization]
     name = "Salah Nomad"
     logo = "/images/Salah-Nomad-Logo.png" 
-    url = "https://salahnomad.com/" 
+    url = "https://salahnomad.com/"
+    # --- AJOUT ---
+    legalName = "Salah Nomad"
+    description = "Digital philosophy platform exploring Mediterranean wisdom and AI futures"
+    foundingDate = "2024"
+    sameAs = [
+      "https://www.youtube.com/@SalahNomad",
+      "https://x.com/Salah_Nomad",
+      "https://www.linkedin.com/in/salahnomad/",
+      "https://www.instagram.com/salahnomad/"
+    ]
 
+  # === AUTHOR SCHEMA - SYNCHRONISÉ AVEC LE SHORTCODE ===
   [params.author]
     name = "Salah Nomad" 
     bio = "Writer and cultural translator. Salah Nomad shares actionable wisdom from his journey—from Mediterranean olive groves to Málaga's tech scene—to help you build a more resilient, meaningful, and rooted life in a world of constant movement."
-    image = "/images/salah-author-portrait.png" # --- MODIFIÉ --- Chemin corrigé et simplifié
-    # --- MODIFIÉ ---
-    myStoryLink = "/stories-wisdom/olive-trees-and-algorithms/" # <-- NOUVELLE URL
-    url = "https://salahnomad.com/stories-wisdom/olive-trees-and-algorithms/" # <-- NOUVELLE URL
+    image = "/images/salah-author-portrait.png"
+    myStoryLink = "/stories-wisdom/olive-trees-and-algorithms/"
+    url = "https://salahnomad.com/stories-wisdom/olive-trees-and-algorithms/"
+    # --- AJOUT POUR SCHEMA VIDÉO ---
+    knowsAbout = [
+      "Cultural AI",
+      "Digital Humanities", 
+      "Linguistic Preservation",
+      "Mediterranean Wisdom",
+      "Rooted Nomadism",
+      "AI Ethics",
+      "Intercultural Communication"
+    ]
+    # --- AJOUT ---
+    alumniOf = ["University of Life", "Mediterranean Cultural Traditions"]
+    knowsLanguage = ["en", "ar", "es", "fr"]
+    
     sameAs = [
       "https://www.linkedin.com/in/salahnomad/",
       "https://x.com/Salah_Nomad",
@@ -58,13 +92,17 @@ enableRobotsTXT = true
     ]
     twitter_handle = "@Salah_Nomad"
 
-# Pour aller plus loin (optionnel)
+  # === SCHEMA CONFIGURATION - ACTIVATION VIDÉO ===
   [params.schema]
     enable_FAQ = true
     enable_HowTo = true
     enable_Video = true
+    # --- AJOUT ---
+    enable_Organization = true
+    enable_Person = true
+    enable_Website = true
 
-  # --- Paramètres de Design (Conservés) ---
+  # === PARAMÈTRES DE DESIGN - CONSERVÉS ===
   sunset_gold = "#F4A261"
   mediterranean_blue = "#2A9D8F"
   clay_white = "#FEFAE0"
@@ -73,7 +111,14 @@ enableRobotsTXT = true
   font_heading_name = "Poppins"
   font_body_name = "Lora"
 
-  # --- Liens sociaux avec microcopies (Conservés et complétés) ---
+  # === LIENS SOCIAUX - AVEC YOUTUBE EN PREMIER POUR LES VIDÉOS ===
+  [[params.social_links]]
+    name = "YouTube"
+    subtitle = "Video diaries & tutorials"
+    iconPartial = "icons/social/logo-youtube.svg"
+    url = "https://www.youtube.com/@SalahNomad"
+    # --- AJOUT ---
+    schema_type = "VideoChannel"
   [[params.social_links]]
     name = "Twitter/X"
     subtitle = "Daily nomadic snippets"
@@ -89,11 +134,6 @@ enableRobotsTXT = true
     subtitle = "Málaga sun & workflow"
     iconPartial = "icons/social/logo-instagram.svg"
     url = "https://www.instagram.com/salahnomad/"
-  [[params.social_links]]
-    name = "YouTube"
-    subtitle = "Video diaries & tutorials"
-    iconPartial = "icons/social/logo-youtube.svg"
-    url = "https://www.youtube.com/@SalahNomad"
   [[params.social_links]]
     name = "TikTok"
     subtitle = "60-sec nomad hacks"
@@ -135,10 +175,12 @@ enableRobotsTXT = true
     iconPartial = "icons/social/logo-rss.svg"
     url = "/index.xml"
 
-  # --- Visibilité et Configuration de la Sidebar (Conservés et mis à jour) ---
+  # === VISIBILITÉ SIDEBAR - CONSERVÉ ===
   homepageSidebar = true
   listPageSidebar = true
   singlePageSidebar = true
+
+
 
   [params.sidebar]
     [params.sidebar.weather]
