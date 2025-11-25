@@ -46,8 +46,8 @@ faq:
 
 {{< youtube 
     id="bT6lOjn3JVI" 
-    title="Olive Tree Oracle: Ancient Wisdom for Modern AI Ethics"
-    caption="Discover how Mediterranean olive cultivation principles can transform artificial intelligence from cultural liability to wisdom partner" 
+    title="Olive Tree Oracle: Ancient Wisdom for Modern AI Ethics."
+    caption="Discover how Mediterranean olive cultivation principles can transform artificial intelligence from cultural liability to wisdom partner." 
     description="When AI dismissed Moroccan heritage as 'primitive mud,' a new protocol emerged. This video explores the 3-phase Olive Tree Oracle framework that transforms AI interactions using ancient wisdom traditions."
     uploadDate="2025-11-20"
     duration="PT15M00S"
