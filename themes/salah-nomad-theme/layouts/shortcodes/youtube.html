@@ -70,13 +70,13 @@
   "description": {{ $videoDescription | plainify | jsonify }},
   "thumbnailUrl": {{ $thumbnailUrls | jsonify }},
   "uploadDate": "{{ $uploadDate }}",
-  "duration": "{{ .Get "duration" | default "PT15M00S" }}",
+  "duration": {{ .Get "duration" | default "PT15M00S" | jsonify }},
   "contentUrl": "https://www.youtube.com/watch?v={{ $videoID }}",
   "embedUrl": "https://www.youtube.com/embed/{{ $videoID }}",
   "interactionStatistic": {
     "@type": "InteractionCounter",
     "interactionType": "https://schema.org/WatchAction",
-    "userInteractionCount": {{ .Get "viewCount" | default "500" | int }}
+    "userInteractionCount": {{ .Get "viewCount" | default "500" }}
   },
   "publisher": {
     "@type": "Organization",
