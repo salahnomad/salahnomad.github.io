@@ -1,46 +1,39 @@
 {{/* 
-  Shortcode YouTube universel - Synchronisé avec Hugo TOML
-  Résout les erreurs Google Search Console
-  Usage: {{< youtube id="VIDEO_ID" title="Titre" description="Description" uploadDate="2024-01-15" >}}
+  YOUTUBE SHORTCODE - GOLDEN MASTER (Salah Nomad)
+  Objectif : Zéro Erreur GSC, SEO Dynamique, Fallbacks Robustes.
+  Intégration : Compatible SCSS existant & JS Léger.
 */}}
 
-{{/* Vérification du paramètre ID obligatoire */}}
-{{ if not (.Get "id") }}
-  {{ errorf "Shortcode youtube: le paramètre 'id' est obligatoire" }}
-{{ end }}
-
-{{/* Variables avec synchronisation site Params */}}
+{{/* --- 1. SÉCURITÉ & LOGIQUE --- */}}
 {{ $videoID := .Get "id" }}
-{{ $videoTitle := .Get "title" | default "Salah Nomad - Digital Philosophy & Cultural AI" }}
-{{ $videoDescription := .Get "description" | default "Exploring where ancient Mediterranean wisdom meets the future of AI" }}
-
-{{/* Gestion robuste de la date avec timezone - CORRIGÉ */}}
-{{ $rawUploadDate := .Get "uploadDate" }}
-{{ $videoUploadDate := "" }}
-{{ if $rawUploadDate }}
-  {{ $videoUploadDate = time $rawUploadDate | time.Format "2006-01-02T15:04:05-07:00" }}
-{{ else }}
-  {{ if .Page.PublishDate }}
-    {{ $videoUploadDate = .Page.PublishDate.Format "2006-01-02T15:04:05-07:00" }}
-  {{ else }}
-    {{ $videoUploadDate = now.Format "2006-01-02T15:04:05-07:00" }}
-  {{ end }}
+{{ if not $videoID }}
+  {{ errorf "❌ YouTube Shortcode: ID manquante sur la page %s" .Page.Title }}
 {{ end }}
 
-{{/* Synchronisation avec la config site */}}
-{{ $siteParams := site.Params }}
-{{ $organization := $siteParams.organization }}
-{{ $author := $siteParams.author }}
-{{ $videoConfig := $siteParams.video }}
+{{/* TITRE : Priorité au paramètre, sinon titre de la page (SEO Unique garanti) */}}
+{{ $videoTitle := .Get "title" | default .Page.Title }}
 
-{{/* Variables optionnelles avec fallbacks du site */}}
-{{ $videoDuration := .Get "duration" | default "PT15M00S" }}
-{{ $videoViewCount := .Get "viewCount" | default "1" }}
-{{ $videoTranscript := .Get "transcript" | default "Video content explores cultural intelligence, AI limitations, and Mediterranean wisdom traditions." }}
-{{ $videoCaption := .Get "caption" }}
+{{/* DESCRIPTION : Priorité paramètre, sinon description page, sinon titre */}}
+{{ $videoDescription := .Get "description" | default .Page.Description | default $videoTitle }}
 
-{{/* Container vidéo principal */}}
-<div class="video-container" data-youtube-id="{{ $videoID }}" itemscope itemtype="https://schema.org/VideoObject">
+{{/* DATE : Format ISO 8601 strict requis par Google (-07:00 ou Z) */}}
+{{ $uploadDate := "" }}
+{{ if .Get "uploadDate" }}
+  {{ $uploadDate = time (.Get "uploadDate") | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ else }}
+  {{/* Fallback sur la date de l'article si pas de date vidéo */}}
+  {{ $uploadDate = .Page.Date.Format "2006-01-02T15:04:05-07:00" }}
+{{ end }}
+
+{{/* MINIATURES : Liste de secours (Array) pour éviter les erreurs 404 GSC */}}
+{{ $thumbnailUrls := slice 
+  (printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $videoID)
+  (printf "https://img.youtube.com/vi/%s/hqdefault.jpg" $videoID)
+  (printf "https://img.youtube.com/vi/%s/sddefault.jpg" $videoID)
+}}
+
+{{/* --- 2. HTML (Visuel) --- */}}
+<div class="video-container" data-youtube-id="{{ $videoID }}">
   <div class="video-wrapper" id="yt-{{ $videoID }}">
     <iframe 
       src="https://www.youtube.com/embed/{{ $videoID }}?enablejsapi=1&rel=0" 
@@ -49,113 +42,49 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
       loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
       itemprop="embedUrl">
     </iframe>
     
+    {{/* Overlay Click-to-Play optimisé - Appelle le JS namespace "salahNomadYouTube" */}}
     <div class="video-play-overlay" 
-         onclick="loadYouTubeVideo('{{ $videoID }}')" 
+         onclick="salahNomadYouTube.loadVideo('{{ $videoID }}')" 
          role="button" 
          tabindex="0"
          aria-label="Lire la vidéo : {{ $videoTitle }}"
-         onkeypress="if(event.key === 'Enter' || event.key === ' ') loadYouTubeVideo('{{ $videoID }}')">
-      <div class="play-button">
-        <span class="play-icon">▶</span>
-        <span class="sr-only">Lire la vidéo : {{ $videoTitle }}</span>
-      </div>
+         onkeydown="salahNomadYouTube.handleKeyPress(event, '{{ $videoID }}')">
+      <div class="play-button"><span class="play-icon">▶</span></div>
     </div>
   </div>
   
-  {{ with $videoCaption }}
-  <div class="video-caption" itemprop="caption">{{ . | markdownify }}</div>
+  {{ with .Get "caption" }}
+  <div class="video-caption">{{ . | markdownify }}</div>
   {{ end }}
 </div>
 
-{{/* Schema.org structured data - SYNCHRONISÉ AVEC TOML */}}
+{{/* --- 3. JSON-LD (Données Structurées Google) --- */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": {{ $videoTitle | jsonify }},
-  "description": {{ $videoDescription | jsonify }},
-  "thumbnailUrl": [
-    "https://img.youtube.com/vi/{{ $videoID }}/maxresdefault.jpg",
-    "https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg",
-    "https://img.youtube.com/vi/{{ $videoID }}/sddefault.jpg"
-  ],
-  "uploadDate": "{{ $videoUploadDate }}",
-  "duration": "{{ $videoDuration }}",
+  "name": {{ $videoTitle | plainify | jsonify }},
+  "description": {{ $videoDescription | plainify | jsonify }},
+  "thumbnailUrl": {{ $thumbnailUrls | jsonify }},
+  "uploadDate": "{{ $uploadDate }}",
+  "duration": "{{ .Get "duration" | default "PT15M00S" }}",
   "contentUrl": "https://www.youtube.com/watch?v={{ $videoID }}",
   "embedUrl": "https://www.youtube.com/embed/{{ $videoID }}",
-  "publisher": {
-    "@type": "Organization",
-    "name": {{ $organization.name | default "Salah Nomad" | jsonify }},
-    "url": {{ $organization.url | default site.BaseURL | jsonify }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ ($organization.logo | absURL) | default ((site.BaseURL | absURL) | jsonify) }},
-      "width": "160",
-      "height": "60"
-    }
-  },
-  "author": {
-    "@type": "Person",
-    "name": {{ $author.name | default "Salah Nomad" | jsonify }},
-    "url": {{ $author.url | default site.BaseURL | jsonify }},
-    "description": {{ $author.bio | default "Digital philosopher exploring where ancient Mediterranean wisdom meets the future of AI" | jsonify }},
-    "knowsAbout": {{ $author.knowsAbout | default (slice "Cultural AI" "Digital Humanities" "Linguistic Preservation" "Mediterranean Wisdom" "Rooted Nomadism") | jsonify }}
-  },
   "interactionStatistic": {
     "@type": "InteractionCounter",
     "interactionType": "https://schema.org/WatchAction",
-    "userInteractionCount": {{ $videoViewCount }}
+    "userInteractionCount": {{ .Get "viewCount" | default "500" | int }}
   },
-  "genre": {{ $videoConfig.defaultGenres | default (slice "Cultural Analysis" "Digital Philosophy" "AI Ethics" "Linguistics") | jsonify }},
-  "keywords": [
-    "AI and language", "cultural nuance", "Darija", "Jbala culture", 
-    "Andalusian heritage", "digital humanities", "linguistic preservation",
-    "Mediterranean wisdom", "cultural intelligence", "ChatGPT translation challenges"
-  ],
-  "inLanguage": {{ $videoConfig.defaultLanguage | default (slice "en" "ar" "es") | jsonify }},
-  "transcript": {{ $videoTranscript | jsonify }},
-  "license": {{ $videoConfig.defaultLicense | default "https://creativecommons.org/licenses/by-nc-nd/4.0/" | jsonify }},
-  "contentRating": {{ $videoConfig.contentRating | default "G" | jsonify }}
-}
-</script>
-
-<script>
-// Le JavaScript reste identique à la version précédente
-function loadYouTubeVideo(videoId) {
-  const wrapper = document.querySelector(`#yt-${videoId}`);
-  const overlay = document.querySelector(`[data-youtube-id="${videoId}"] .video-play-overlay`);
-  const iframe = wrapper?.querySelector('iframe');
-  
-  if (!iframe || !wrapper) return;
-  
-  wrapper.classList.add('loading');
-  const currentSrc = iframe.src;
-  if (!currentSrc.includes('autoplay=1')) {
-    iframe.src = currentSrc + (currentSrc.includes('?') ? '&' : '?') + 'autoplay=1';
-  }
-  
-  iframe.onload = () => {
-    wrapper.classList.remove('loading');
-    if (overlay) overlay.style.display = 'none';
-    trackVideoEvent('play', videoId);
-  };
-}
-
-function trackVideoEvent(action, videoId) {
-  if (typeof gtag !== 'undefined') {
-    gtag('event', `video_${action}`, {
-      'event_category': 'Video Engagement', 
-      'event_label': videoId
-    });
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salah Nomad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://salahnomad.com/images/Salah-Nomad-Logo.png"
+    }
   }
 }
-
-// Initialisation...
-document.addEventListener('DOMContentLoaded', function() {
-  // Lazy loading et gestion d'erreurs
-});
 </script>

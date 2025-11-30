@@ -281,3 +281,36 @@ html.dark-mode {
   outline: 3px solid var(--color-focus-outline);
   outline-offset: -3px;
 }
+
+// =============================================
+// AJOUTS POUR SHORTCODE GOLDEN MASTER
+// =============================================
+
+// Quand le JS ajoute la classe .playing, on cache l'image de couverture
+.video-wrapper.playing .video-play-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+// État de chargement (optionnel mais recommandé)
+.video-wrapper.loading {
+  &::before {
+    opacity: 1 !important; // Affiche le spinner défini plus haut dans votre CSS
+  }
+  .video-play-overlay {
+    opacity: 0.7; // Feedback visuel
+    cursor: wait;
+  }
+}
+
+// Accessibilité clavier (Focus visible)
+.video-play-overlay:focus-visible {
+  outline: 3px solid var(--color-sunset-gold); // Utilise vos variables
+  outline-offset: -3px;
+  
+  .play-button {
+    transform: scale(1.1);
+    background: var(--color-text-accent-secondary);
+  }
+}

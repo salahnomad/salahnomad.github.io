@@ -1,7 +1,7 @@
 ---
 title: "🫒 Can Ancient Olive Trees Teach AI Cultural Intelligence?"
 date: 2025-10-17T08:00:00-04:00
-lastmod: 2025-10-17
+lastmod: 2025-11-29
 draft: false
 description: "When AI dismissed Moroccan heritage as 'primitive mud,' a new protocol emerged. Discover the 3-phase Olive Tree Oracle framework to transform AI from data tool to cultural partner using Mediterranean wisdom."
 categories: ["ai-future"]
@@ -46,12 +46,11 @@ faq:
 
 {{< youtube 
     id="bT6lOjn3JVI" 
-    title="Olive Tree Oracle: Ancient Wisdom for Modern AI Ethics."
-    caption="Discover how Mediterranean olive cultivation principles can transform artificial intelligence from cultural liability to wisdom partner." 
-    description="When AI dismissed Moroccan heritage as 'primitive mud,' a new protocol emerged. This video explores the 3-phase Olive Tree Oracle framework that transforms AI interactions using ancient wisdom traditions."
+    title="Olive Tree Oracle: Ancient Wisdom for Modern AI Ethics"
+    description="When AI dismissed Moroccan heritage as 'primitive mud,' a new protocol emerged. Discover the 3-phase Olive Tree Oracle framework."
     uploadDate="2025-11-20"
     duration="PT15M00S"
-    viewCount="750"
+    caption="Discover how Mediterranean olive cultivation principles can transform artificial intelligence from cultural liability to wisdom partner."
 >}}
 
 *This framework emerged from the soil itself—from watching olive trees that remember Roman legions and Moorish scholars. The video shows the protocol in action, transforming AI from efficient tool to cultural partner. Watch to experience the shift from extraction to stewardship.*

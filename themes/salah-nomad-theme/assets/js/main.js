@@ -36,3 +36,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log("Main JS Initialisé - v5.0 (Final Global Rotator System)");
 });
+
+/**
+ * Salah Nomad YouTube Handler - Golden Master
+ * Léger, sans dépendances, compatible GSC.
+ */
+
+const salahNomadYouTube = {
+  
+  // Fonction principale : Lance la vidéo
+  loadVideo(videoId) {
+    const wrapper = document.getElementById(`yt-${videoId}`);
+    if (!wrapper) return;
+    
+    const iframe = wrapper.querySelector('iframe');
+    const overlay = wrapper.querySelector('.video-play-overlay');
+    
+    if (!iframe || !overlay) return;
+
+    // Ajoute classe loading pour le feedback CSS
+    wrapper.classList.add('loading');
+    
+    // Force l'autoplay dans l'URL
+    const currentSrc = iframe.getAttribute('src');
+    if (!currentSrc.includes('autoplay=1')) {
+      const separator = currentSrc.includes('?') ? '&' : '?';
+      // mute=0 est important pour certaines politiques de navigateur
+      iframe.setAttribute('src', `${currentSrc}${separator}autoplay=1`);
+    }
+
+    // Une fois l'iframe chargée (ou petit délai), on affiche
+    iframe.onload = () => {
+      wrapper.classList.remove('loading');
+      wrapper.classList.add('playing');
+    };
+    
+    // Fallback de sécurité si onload ne déclenche pas
+    setTimeout(() => {
+        wrapper.classList.remove('loading');
+        wrapper.classList.add('playing');
+    }, 1000);
+  },
+  
+  // Accessibilité : Support Entrée/Espace
+  handleKeyPress(event, videoId) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.loadVideo(videoId);
+    }
+  }
+};
+
+// Rend l'objet disponible globalement pour le shortcode HTML
+window.salahNomadYouTube = salahNomadYouTube;
