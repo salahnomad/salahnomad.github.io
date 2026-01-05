@@ -1,7 +1,7 @@
 ---
 title: "🧵 Can Ancient Amazigh Weaving Patterns Solve AI's Creativity Crisis?"
 date: 2025-10-17T08:00:00-04:00
-lastmod: 2025-10-17
+lastmod: 2026-01-05
 draft: false
 description: "AI generates generic content because we use generic instructions. Discover how North Africa's Amazigh weavers perfected a 4-part communication protocol that transforms AI from tool to creative partner."
 categories: ["ai-future"]
