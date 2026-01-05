@@ -42,6 +42,19 @@ faq:
 **TL;DR:** Transform AI from generic content generator to creative partner using a 4-part framework from Amazigh weaving: Define borders (context), state medallion (core intent), add motifs (nuance), and include intentional flaws (humanity).
 {{< /quick-summary >}}
 
+## 🎬 **The Cinematic Exploration**
+
+{{< youtube
+    id="Q77i-4_e5ZA"
+    title="AI Content is Generic. This 4-Part Weaving Method Fixes It."
+    description="When AI showed me a generic desert instead of my real Moroccan hometown, I discovered the solution in my grandmother's weaving. Here's how centuries-old Amazigh communication patterns can transform your AI from cliché generator to creative partner."
+    uploadDate="2025-12-25"
+    duration="PT14M18S"
+    caption="Watch the cinematic exploration of the Weaver's Prompt framework, bridging ancestral Amazigh craft and modern AI creativity"
+>}}
+
+*This story was too vast for words alone. I created this cinematic video essay to take you on the journey with me—to let you **see** the weaving patterns and **understand** the transformative framework they encode. Watch before reading to visualize the principles, or after to deepen your philosophical understanding. The choice, like the weave itself, creates the final pattern.*
+
 ## 🤖 When AI Erases Your Hometown—What Ancient Craft Offers Rescue?
 
 **_I asked AI to show me my hometown, Ksar El-Kébir—and received a digital postcard from a country that doesn't exist: generic desert, camels, orange dunes. The AI didn't fail technically; it failed culturally, giving me stereotypes instead of story._**
