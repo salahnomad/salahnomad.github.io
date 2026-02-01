@@ -1,0 +1,28 @@
+// Fichier : themes/salah-nomad-theme/assets/scss/components/_challenge-box.scss
+
+.challenge-box {
+  border-left: 4px solid var(--color-accent, #f59e0b); // Utilise votre variable d'accent
+  background-color: var(--color-background-secondary, #fffbeb);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  color: var(--color-text);
+
+  &-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--color-accent-dark, #92400e);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &-content {
+    // Les styles de texte sont hérités de .challenge-box
+    // Ajoutez ici des styles spécifiques au contenu si nécessaire
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="challenge-box">
+  <div class="challenge-box-title">
+    🏆 {{ .Get "title" }}
+  </div>
+  <div class="challenge-box-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
