@@ -14,6 +14,7 @@ tags:
   - "personal-essay"
   - "rooted-nomadism"
 keywords: ["productivity system failure", "burnout confession", "Zellige Blueprint critique", "toxic productivity", "human vs algorithm"]
+# Dans Leaf Bundle: chemin relatif depuis le dossier de la page
 featured_image: "images/cracked-zellige-tile.jpg"
 featured_image_alt: "A single, beautifully geometric Moroccan zellige tile with a jagged, unfixable crack running through the center."
 authors: ["Salah Nomad"]
@@ -65,7 +66,7 @@ I closed the laptop. I walked into my kitchen. And I unraveled.
 
 For 48 hours, I ceased to be a "Rooted Nomad." I was just a scared man in a rented apartment.
 
-![A bowl of poorly cooked Moroccan harira soup with uneven lentils, on a messy kitchen counter.](images/harira-failed-soup.jpg)
+![A bowl of poorly cooked Moroccan harira soup with uneven lentils, on a messy kitchen counter.](images/harira-failed-soup.jpg "The failed harira – mediocrity as anesthesia")
 
 *The failed harira – mediocrity as anesthesia*
 
@@ -109,7 +110,7 @@ I want to give you a takeaway. My writer's instinct is screaming at me to wrap t
 
 But I can't.
 
-![A laptop screen showing a Notion dashboard with red alerts and overdue tasks, on a messy desk.](images/notion-dashboard-chaos.jpg)
+![A laptop screen showing a Notion dashboard with red alerts and overdue tasks, on a messy desk.](images/notion-dashboard-chaos.jpg "The red alerts remain")
 
 *The red alerts remain*
 
