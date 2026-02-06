@@ -207,6 +207,10 @@ I do not blame the officials who knocked. They were following protocol, executin
 
 But I notice what the protocol cannot contain.
 
+**Ksar el Kebir is older than its own names.** Romans called it Oppidum Novum. Before them, Phoenicians traded here, drawn by this same Loukkos. Carthaginians, Greeks, Vandals, Byzantines — each passed through, left marks, moved on. The city remained, adapting, absorbing, continuing.
+
+This is not a place that began once. **It is a place that has never stopped beginning.**
+
 A city nearly a thousand years old floats in administrative in-between. Not destroyed enough for catastrophe status. Not untouched enough for peace. It exists in grey zone — between prevention and recognition.
 
 The law asks: Is damage severe enough? Are losses sufficient? Is evidence conclusive?
@@ -217,7 +221,7 @@ The earth does not ask these questions.
 
 Biological truth precedes bureaucratic truth.
 
-Ksar el Kebir is not merely infrastructure to protect. It is the smell of cumin in the souk at 6 AM. It is the sound of the call to prayer bouncing off walls built before America existed. It is historical being — and historical beings don't file paperwork.
+Ksar el Kebir is not merely infrastructure to protect. It is the smell of cumin in the souk at dawn. It is the sound of voices echoing off walls built before America existed. It is historical being — and historical beings don't file paperwork.
 
 So an uncomfortable question remains: **Must a city be sufficiently broken before its suffering is acknowledged?**
 
@@ -251,7 +255,7 @@ This is **strait consciousness:** everything connects. A Morocco flood modifies 
 
 ## The Philosophy of Water From Within It
 
-In my Sufi tradition, water is the most humble and most powerful element. It flows downward, takes lowest paths, doesn't fight the slope. Yet it shapes mountains, carves canyons, wears down stone.
+Water is the most humble and most powerful element. It flows downward, takes lowest paths, doesn't fight the slope. Yet it shapes mountains, carves canyons, wears down stone.
 
 **The flood is a lesson in humility.** It reminds us that our plans, projects, ambitions are written in sand at water's edge. One day, tide rises, and everything is taken.
 
@@ -272,24 +276,11 @@ In a few days, the waters will recede. Mud will remain. Everywhere. In houses, s
 
 Will we rebuild exactly as before, same place, same certainties? Or will we listen to what the oued whispered?
 
-Our ancestors built with nature, not against it. They knew cycles, respected limits. We have forgotten this language. Perhaps this flood is a wake-up call. **Not divine punishment, but memory returning.**
+Our ancestors built with nature, not against it. They knew cycles, respected limits. We have forgotten this language. Perhaps this flood is a wake-up call. **Not punishment, but memory returning.**
 
 I am with 54,000 people learning resilience as craft in real time. It is practiced in sharing blankets, worked in waiting for news, learned in camp mud, in communal tea taste, in stories told to pass hours.
 
 **Morocco has long history with this craftsmanship.** We know rebuilding after earthquake, greening after drought. This knowledge is in our bones, even when we forget.
-
-## A Secular Prayer From Larache
-
-I do not pray often in conventional ways. But tonight, from this rented apartment, I make a secular prayer:
-
-*May the water recede gently.*  
-*May the mud dry under sun.*  
-*May each return home be return to self.*  
-*May each reconstruction be reconciliation.*  
-*May olive tree memory be listened to.*  
-*May sardine message be heard.*  
-
-And above all: *May this memory of water not evaporate too quickly.*
 
 ## **Still Here, Still Waiting**
 
