@@ -26,6 +26,7 @@ reading_time: 12
 toc: true
 pillar_content: true
 cta: minimal
+lang: "en"
 
 images:
   - url: "images/ksar-el-kebir-floods-2026.jpg"
@@ -82,9 +83,9 @@ For two months, we had lived in the subjunctive: "If the river rises...", "When 
 
 **The knock changed the grammar.** Indicative. Present tense. Active voice.
 
-I looked at my parents — seventies, forty years in this house. My father glanced at his olive trees through the window. My mother packed photo albums before clothes.
+I stood in the house where my parents lived for forty years. Where they raised me. Where they died, sixteen years ago, within months of each other, as if the second could not bear the silence of the first. **I glanced at the olive trees they planted through the window.** I packed their photo albums before my clothes — the same albums they had packed when they fled their own storms, decades ago.
 
-**This is what 54,000 evacuations look like at human scale:** One family. One decision about what to carry. One last look around.
+**This is what 54,000 evacuations look like at human scale:** One family. One decision about what to carry. One last look around rooms that hold more absence than furniture.
 
 The officials were professional, even kind. But their presence made abstract numbers concrete. **Risk assessment became risk management.** Probability became necessity.
 
@@ -148,6 +149,24 @@ Not physically — 14 kilometers of salt and current remained. But atmospherical
 ![Satellite view showing Storm Leonardo over both Morocco and Spain.](images/storm-leonardo-strait.jpg "The storm that ignored borders - one sky over two shores")
 
 *The storm that ignored borders - one sky over two shores*
+
+**But Leonardo did not stop at the southern edge of Spain.**
+
+In Andalusia, it released torrents that pushed the **Guadalhorce** beyond its limits, along with other rivers surrounding Málaga. The soil had already absorbed too much. When the rain returned, there was nowhere left for it to go.
+
+The Guadalhorce rose to unusually high levels, triggering red alerts across its valley. Several rivers in the province approached overflow; some had already crossed it. Water spread into places usually protected by distance and habit, reminding Málaga that rivers are not decorative lines — they are patient forces.
+
+In the city itself, flooding reached the streets near **La Rosaleda Stadium**, carried by the Guadalmedina, connected to upstream reservoirs now under pressure. Thousands were evacuated across Andalusia. Roads closed. Trains stopped. Entire neighborhoods found themselves isolated, suspended between water and waiting.
+
+The rain was not brief. In some areas, the sky released what usually falls over months — hundreds of millimeters in little more than a day. Wind followed, persistent rather than violent, extending the disturbance even as forecasts promised improvement.
+
+Authorities spoke of vigilance, of low-lying zones, of saturated ground. But beneath those terms was a simpler reality: **the land had reached its limit.**
+
+From the Loukkos valley to the Guadalhorce basin, the same lesson unfolded on both shores. Different rivers, different languages — the same saturation point. When earth can no longer absorb, memory resurfaces. Cities remember where water once flowed. Valleys recall their original shape.
+
+**Málaga, like Ksar el Kebir, was not facing chaos — but reminder.**
+
+That rivers are older than our planning. That thresholds exist, whether legal or geological. And that when they are crossed, the land speaks first — long before reports are written.
 
 The storm moved by older logics — atmospheric, geographic, elemental.
 
@@ -283,7 +302,7 @@ I met one of those old fishermen who has watched this river for sixty years. He 
 
 I asked him if he was worried about his nets, his catch. He laughed. *"The sardines carry their knowledge in their bodies. We carry ours in waiting. When they come back, we'll know it's time."*
 
-This morning, my father called from another shelter. He had returned briefly to our street — water has receded from the house, but mud reaches halfway up the walls. My mother asked about her photo albums. I told her they were safe. **What she really asked was: Will the story continue?**
+This morning, my uncle called from another shelter. He had returned briefly to our street — water has receded from the house, but mud reaches halfway up the walls. He asked about the photo albums I had packed. I told him they were safe. **What he really asked was: Will the story continue?**
 
 I don't know when I will return to Ksar el Kebir. The officials say "soon." The river says "when I am ready." The olive trees say nothing — they simply record.
 
@@ -291,11 +310,11 @@ I don't know when I will return to Ksar el Kebir. The officials say "soon." The 
 
 The knock at the door was an ending. But also a beginning.
 
-When I return to clean the mud from my parents' house, I will not just be cleaning walls. **I will be reading the first pages of a new chapter** — one that could tell how a city learned to dance with its river, rather than turning its back on it.
+When I return to clean the mud from my parents' house — the house they built, the house where they died, the house that still holds their silence like a held breath — I will not just be cleaning walls. **I will be reading the first pages of a new chapter** — one that could tell how a city learned to dance with its river, rather than turning its back on it.
 
-Until then, I wait. With the sardines. With the memory of water. With the 54,000.
+Until then, I wait. With the sardines. With the memory of water. With the 54,000. With the absence that has become my longest companion.
 
-**The olive trees have known this rhythm for centuries. We are relearning it now, together.**
+**The olive trees my parents planted have known this rhythm for centuries. We are relearning it now, together.**
 
 ---
 
@@ -315,7 +334,7 @@ When we return to our homes, when we clean the mud, remember: we are not only cl
 
 *P.S.* — This article was written in real-time from Larache, February 4-5, 2026. A companion piece, "Returning to the Mud," will document the physical work of return — because resilience is not just philosophy, it is also buckets and shovels and neighbors helping each other carry sofas. [Subscribe to Rooted Nomadism](/newsletter/) for meditations on resilience, not just news.
 
-*Dedicated to the centenary olive trees of the Loukkos valley I harvested weeks ago, the messenger sardines of Larache, and the 54,000 souls in movement, including my own family. May our collective memory be as deep as roots, as mobile as fish, as enduring as water itself.*
+*Dedicated to the centenary olive trees of the Loukkos valley I harvested weeks ago, the messenger sardines of Larache, the 54,000 souls in movement, and to my parents — who taught me that absence can be a form of presence, and that memory is the strongest foundation.*
 
 ---
 
