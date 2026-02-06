@@ -26,7 +26,6 @@ reading_time: 12
 toc: true
 pillar_content: true
 cta: minimal
-lang: "en"
 
 images:
   - url: "images/ksar-el-kebir-floods-2026.jpg"
