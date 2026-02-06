@@ -2,9 +2,9 @@
 title: "Water and Clay: When Ksar el Kebir Reminds Humans of Their Fragility"
 subtitle: "A meditation on the 2026 floods, between surrender and resilience"
 date: 2026-02-04T19:00:00+01:00
-lastmod: 2026-02-04T19:00:00+01:00
+lastmod: 2026-02-06T19:00:00+01:00
 draft: false
-description: "From inside the evacuation: As the Oued Loukkos overflows and 54,000 souls leave Ksar el Kebir, a first-hand reflection on what waters take away and what they reveal."
+description: "From inside the evacuation: As the Oued Loukkos overflows and 150,000 souls leave Ksar el Kebir, a first-hand reflection on what waters take away and what they reveal."
 categories: ["stories-wisdom"]
 tags: 
   - "resilience"
@@ -54,7 +54,7 @@ I left Málaga and came down to northern Morocco, to my grandparents' village ne
 
 **The rains began and did not stop** — a deluge depositing over 300mm in 72 hours, more than three times the monthly average for February. For nearly two months, the sky remained open, as if the season had forgotten how to close.
 
-**Then, at midday on Tuesday, February 3rd, there was a knock at the door of my parents' house in Ksar el Kebir.** Officials stood there, calm but firm, requesting immediate evacuation. The water level was rising fast, triggering what would become the evacuation of 54,000 people — over 70% of this city of 78,000 souls.
+**Then, at midday on Tuesday, February 3rd, there was a knock at the door of my parents' house in Ksar el Kebir.** Officials stood there, calm but firm, requesting immediate evacuation. The water level was rising fast, triggering what would become the evacuation of 150,000 people — the largest displacement in this city of more than two thousand years of continuous history.
 
 **In that moment, the story was no longer historical, symbolic, or philosophical. The river had entered the present tense.**
 
@@ -84,7 +84,7 @@ For two months, we had lived in the subjunctive: "If the river rises...", "When 
 
 I stood in the house where my parents lived for forty years. Where they raised me. Where they died, sixteen years ago, within months of each other, as if the second could not bear the silence of the first. **I glanced at the olive trees they planted through the window.** I packed their photo albums before my clothes — the same albums they had packed when they fled their own storms, decades ago.
 
-**This is what 54,000 evacuations look like at human scale:** One family. One decision about what to carry. One last look around rooms that hold more absence than furniture.
+**This is what 150,000 evacuations look like at human scale:** One family. One decision about what to carry. One last look around rooms that hold more absence than furniture.
 
 The officials were professional, even kind. But their presence made abstract numbers concrete. **Risk assessment became risk management.** Probability became necessity.
 
@@ -189,9 +189,9 @@ These trees teach through presence. Today's lesson: **resilience is what happens
 
 ## The Evacuation: From Abstract to Intimate
 
-**I am one of the 54,000.** Not a statistic. A person who packed while officials waited.
+**I am one of the 150,000.** Not a statistic. A person who packed while officials waited.
 
-In the shelter, I see the mother with family photos. The old man with his prayer rug. The child asking about pets. These aren't archetypes. They're my neighbors. People whose families have known mine for generations.
+In the shelter, I see the mother with family photos. The old man with his **hand-woven djellaba**, carefully folded. The child asking about pets. These aren't archetypes. They're my neighbors. People whose families have known mine for generations.
 
 The "Moroccan solidarity" I've written about is no longer conceptual. It's the woman sharing blankets. The man giving his cot to an elder. The volunteer making tea through the night.
 
@@ -211,7 +211,7 @@ But I notice what the protocol cannot contain.
 
 This is not a place that began once. **It is a place that has never stopped beginning.**
 
-A city nearly a thousand years old floats in administrative in-between. Not destroyed enough for catastrophe status. Not untouched enough for peace. It exists in grey zone — between prevention and recognition.
+A city of more than two thousand years floats in administrative in-between. Not destroyed enough for catastrophe status. Not untouched enough for peace. It exists in grey zone — between prevention and recognition.
 
 The law asks: Is damage severe enough? Are losses sufficient? Is evidence conclusive?
 
@@ -278,7 +278,7 @@ Will we rebuild exactly as before, same place, same certainties? Or will we list
 
 Our ancestors built with nature, not against it. They knew cycles, respected limits. We have forgotten this language. Perhaps this flood is a wake-up call. **Not punishment, but memory returning.**
 
-I am with 54,000 people learning resilience as craft in real time. It is practiced in sharing blankets, worked in waiting for news, learned in camp mud, in communal tea taste, in stories told to pass hours.
+I am with 150,000 people learning resilience as craft in real time. It is practiced in sharing blankets, worked in waiting for news, learned in camp mud, in communal tea taste, in stories told to pass hours.
 
 **Morocco has long history with this craftsmanship.** We know rebuilding after earthquake, greening after drought. This knowledge is in our bones, even when we forget.
 
@@ -302,7 +302,7 @@ The knock at the door was an ending. But also a beginning.
 
 When I return to clean the mud from my parents' house — the house they built, the house where they died, the house that still holds their silence like a held breath — I will not just be cleaning walls. **I will be reading the first pages of a new chapter** — one that could tell how a city learned to dance with its river, rather than turning its back on it.
 
-Until then, I wait. With the sardines. With the memory of water. With the 54,000. With the absence that has become my longest companion.
+Until then, I wait. With the sardines. With the memory of water. With the 150,000. With the absence that has become my longest companion.
 
 **The olive trees my parents planted have known this rhythm for centuries. We are relearning it now, together.**
 
@@ -324,7 +324,7 @@ When we return to our homes, when we clean the mud, remember: we are not only cl
 
 *P.S.* — This article was written in real-time from Larache, February 4-5, 2026. A companion piece, "Returning to the Mud," will document the physical work of return — because resilience is not just philosophy, it is also buckets and shovels and neighbors helping each other carry sofas. [Subscribe to Rooted Nomadism](/newsletter/) for meditations on resilience, not just news.
 
-*Dedicated to the centenary olive trees of the Loukkos valley I harvested weeks ago, the messenger sardines of Larache, the 54,000 souls in movement, and to my parents — who taught me that absence can be a form of presence, and that memory is the strongest foundation.*
+*Dedicated to the centenary olive trees of the Loukkos valley I harvested weeks ago, the messenger sardines of Larache, the 150,000 souls in movement, and to my parents — who taught me that absence can be a form of presence, and that memory is the strongest foundation.*
 
 ---
 
