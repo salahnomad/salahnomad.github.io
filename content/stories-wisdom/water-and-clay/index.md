@@ -46,6 +46,8 @@ twitter:
 **Note on this writing:**  
 *This is an unusual hybrid — born from the urgency of real evacuation. It attempts to capture simultaneously: (1) the immediate testimony of an ongoing disaster, (2) the historical reflection on memory layers it reveals, (3) the philosophical meditation on our relationship with elements. It does not claim to be exhaustive reporting, but an attempt to make sense of raw experience, in the tradition of philosophical travel journals. You will find as much mud as metaphor here.*
 
+**This is the first article in the series ["The Strait Remembers"](/series/the-strait-remembers/), documenting the 2026 floods and their resonance across the Mediterranean.**
+
 ---
 
 **Since November, I have been in Ksar el Kebir.**
@@ -66,9 +68,7 @@ For weeks, we worked between showers. The same olive trees I write about as "sil
 
 The pressing mill ran day and night. Fresh olive oil's scent mixed with wet earth. We celebrated abundance even as the skies warned of excess.
 
-![Olive harvest in Loukkos valley just before the floods, with baskets of fresh olives.](images/olive-harvest-before-flood.jpg "The last harvest before the flood - abundance meets excess")
-
-*The last harvest before the flood - abundance meets excess*
+{{< figure src="images/olive-harvest-before-flood.jpg" alt="Olive harvest in Loukkos valley just before the floods, with baskets of fresh olives" caption="The last harvest before the flood - abundance meets excess" >}}
 
 Then the rhythm changed. Conversations shifted from "How many kilos per tree?" to "How many centimeters has the river risen?" Extra virgin oil sat in clay pantries while outside, the water kept coming.
 
@@ -96,9 +96,7 @@ I drove toward **Larache**, where the Loukkos meets the Atlantic. The thirty-kil
 
 The water had expanded beyond its usual boundaries — the Loukkos, normally 50 meters wide here, had swollen to over 500 meters, submerging 2,000 hectares of agricultural land. **It wasn't raging. It was simply occupying.** Reminding us who shapes the land.
 
-![The road from Ksar el Kebir to Larache, following the swollen Oued Loukkos.](images/road-ksar-larache-flood.jpg "The Roman road rediscovered - water reclaims its ancient path")
-
-*The Roman road rediscovered - water reclaims its ancient path*
+{{< figure src="images/road-ksar-larache-flood.jpg" alt="The road from Ksar el Kebir to Larache, following the swollen Oued Loukkos" caption="The Roman road rediscovered - water reclaims its ancient path" >}}
 
 The Romans built this road knowing what we've forgotten: **rivers determine geography, not the reverse.** They followed the Loukkos not from poetry, but practical necessity. Water flows downhill. Roads follow water. Cities grow where roads meet water.
 
@@ -122,9 +120,7 @@ But stepping outside, an unfamiliar sensation rose — not fear, not urgency, bu
 
 Driving north toward Larache — ancient **Lixus** — another feeling surfaced, deeper than my own story. A memory not mine alone.
 
-![Ancient Roman road near Larache, symbolizing historical continuity and displacement.](images/roman-road-ancestral-echo.jpg "The road remembers - layers of departure and return")
-
-*The road remembers - layers of departure and return*
+{{< figure src="images/roman-road-ancestral-echo.jpg" alt="Ancient Roman road near Larache, symbolizing historical continuity and displacement" caption="The road remembers - layers of departure and return" >}}
 
 I thought of my Morisco ancestors, forced from Andalusia centuries ago, crossing these same waters. What for them was exile, for me had been return. And now, temporarily, I was asked to leave again.
 
@@ -145,9 +141,7 @@ I stood in my parents' courtyard, watching our sky, and realized: **the Strait h
 
 Not physically — 14 kilometers of salt and current remained. But atmospherically, climatically, the border had dissolved. Málaga and Ksar el Kebir breathed same humidity, endured same cloud weight, watched same rain fall without horizon.
 
-![Satellite view showing Storm Leonardo over both Morocco and Spain.](images/storm-leonardo-strait.jpg "The storm that ignored borders - one sky over two shores")
-
-*The storm that ignored borders - one sky over two shores*
+{{< figure src="images/storm-leonardo-strait.jpg" alt="Satellite view showing Storm Leonardo over both Morocco and Spain" caption="The storm that ignored borders - one sky over two shores" >}}
 
 **But Leonardo did not stop at the southern edge of Spain.**
 
@@ -195,9 +189,7 @@ In the shelter, I see the mother with family photos. The old man with his **hand
 
 The "Moroccan solidarity" I've written about is no longer conceptual. It's the woman sharing blankets. The man giving his cot to an elder. The volunteer making tea through the night.
 
-![View from evacuation shelter showing temporary arrangements and community support.](images/evacuation-shelter-community.jpg "Suspended breath - community in temporary space")
-
-*Suspended breath - community in temporary space*
+{{< figure src="images/evacuation-shelter-community.jpg" alt="View from evacuation shelter showing temporary arrangements and community support" caption="Suspended breath - community in temporary space" >}}
 
 **But look at our empty streets on the news.** Ksar el Kebir, called "ghost town." From inside, it doesn't feel ghostly. It feels **suspended.** Like a breath held.
 
@@ -235,9 +227,7 @@ The language we choose for suffering determines the respect we grant what suffer
 
 And perhaps the forgotten wisdom: facing certain trials, the first response is not to categorize, but to be present. Not to label, but to witness.
 
-![An aerial view of Ksar el Kebir showing flooded areas next to historical neighborhoods.](images/ksar-aerial-flood-bureaucracy.jpg "The city's duality - ancient history meets modern administrative reality")
-
-*The city's duality - ancient history meets modern administrative reality*
+{{< figure src="images/ksar-aerial-flood-bureaucracy.jpg" alt="An aerial view of Ksar el Kebir showing flooded areas next to historical neighborhoods" caption="The city's duality - ancient history meets modern administrative reality" >}}
 
 ## The Messenger Sardines Will Know First
 
@@ -247,9 +237,7 @@ These small fish, **"biological algorithms"** I've theorized, will soon migrate 
 
 When they reach Andalusian shores, when fishermen from Huelva or Cádix — or old men who have watched this river for sixty years — catch them, they won't know they hold postal messages. **"The Loukkos has overflowed,"** whisper sardines in their silent language. **"Ksar el Kebir has trembled."**
 
-![Sardines swimming at mouth of Loukkos river near Larache, silver reflections in water.](images/sardine-messengers-loukkos.jpg "The biological algorithms carry their messages across the strait")
-
-*The biological algorithms carry their messages across the strait*
+{{< figure src="images/sardine-messengers-loukkos.jpg" alt="Sardines swimming at mouth of Loukkos river near Larache, silver reflections in water" caption="The biological algorithms carry their messages across the strait" >}}
 
 This is **strait consciousness:** everything connects. A Morocco flood modifies coastal water composition, influences fish migrations, affects Spanish fisheries. **Ksar el Kebir's pain travels, transforms, becomes nourishment elsewhere.**
 
@@ -322,7 +310,7 @@ When we return to our homes, when we clean the mud, remember: we are not only cl
 
 ---
 
-*P.S.* — This article was written in real-time from Larache, February 4-5, 2026. A companion piece, "Returning to the Mud," will document the physical work of return — because resilience is not just philosophy, it is also buckets and shovels and neighbors helping each other carry sofas. [Subscribe to Rooted Nomadism](/newsletter/) for meditations on resilience, not just news.
+*P.S.* — This article was written in real-time from Larache, February 4-5, 2026. The second part of this series, ["The Phantom City That Still Breathes"](/stories-wisdom/ksar-el-kebir-phantom-city/), continues the story from waiting. [Subscribe to Rooted Nomadism](/newsletter/) for meditations on resilience, not just news.
 
 *Dedicated to the centenary olive trees of the Loukkos valley I harvested weeks ago, the messenger sardines of Larache, the 150,000 souls in movement, and to my parents — who taught me that absence can be a form of presence, and that memory is the strongest foundation.*
 
@@ -331,10 +319,10 @@ When we return to our homes, when we clean the mud, remember: we are not only cl
 ## How to Support Ksar el Kebir
 
 **Immediate Relief:**
-- [Moroccan Red Crescent](https://www.croissant-rouge.ma) — On-ground emergency response
+- [Moroccan Red Crescent](https://www.croissant-rouge.ma ) — On-ground emergency response
 
 **Follow the Story:**
-This article will update as waters recede. [Subscribe](/newsletter/) for meditations on resilience, not just news.
+This article is part of the series ["The Strait Remembers"](/series/the-strait-remembers/). [Subscribe](/newsletter/) for meditations on resilience, not just news.
 
 *Are you in Ksar el Kebir? Evacuated? Witnessing this?*  
 [Share your story →](/contact/) Your testimony becomes part of the olive tree memory.
