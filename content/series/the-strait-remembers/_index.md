@@ -7,32 +7,20 @@ date: 2026-02-01T00:00:00+01:00
 lastmod: 2026-02-09T00:00:00+01:00
 draft: false
 
-# Type et layout pour votre thème
+# ESSENTIEL : utiliser le même layout que money-freedom
+layout: "hub"
+
 type: series
-layout: series-list
 
-# Catégorisation
 categories: ["series"]
-tags: ["strait-remembers", "floods-2026", "mediterranean", "resilience", "ksar-el-kebir", "malaga"]
+tags: ["strait-remembers", "floods-2026", "mediterranean", "resilience"]
 
-# Featured image (Leaf Bundle) — affichée automatiquement par le thème
 featured_image: "images/strait-remembers-hero.jpg"
 featured_image_alt: "Storm clouds over the Strait of Gibraltar connecting Morocco and Spain"
 
-# Auteur
 authors: ["Salah Nomad"]
-
-# SEO
-keywords: ["Morocco floods 2026", "Strait of Gibraltar", "Mediterranean floods", "Ksar el Kebir", "Malaga", "climate disaster", "resilience series"]
-
-# Métadonnées série
-series_name: "The Strait Remembers"
-series_count: 3
-series_status: "in-progress"
-
-# Configuration TOC
-toc: true
 reading_time: 5
+toc: true
 ---
 
 # **The Strait Remembers**
