@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "head.html" . }}
+    
+    <!-- Newsletter specific styles -->
+    <style>
+        .newsletter-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .newsletter-card {
+            background: var(--color-background-alt);
+            border-radius: 20px;
+            box-shadow: var(--box-shadow-medium);
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        
+        /* Image du leaf bundle avec traitement Hugo */
+        {{ with .Resources.GetMatch "images/newsletter-hero.jpg" }}
+            {{ $image := . }}
+            {{ $resized := $image.Fill "1200x400 Center q85" }}
+            .newsletter-hero {
+                background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ $resized.RelPermalink }}');
+            }
+        {{ else }}
+            /* Fallback si l'image n'est pas trouvée */
+            .newsletter-hero {
+                background: linear-gradient(135deg, var(--color-text-headings) 0%, var(--color-text-accent-secondary) 100%);
+            }
+        {{ end }}
+    </style>
+</head>
+<body class="newsletter-page-template">
+    {{ partial "header.html" . }}
+    
+    <main class="main-content">
+        <div class="newsletter-container">
+            <div class="newsletter-card">
+                <!-- Hero Section avec l'image du leaf bundle -->
+                <div class="newsletter-hero">
+                    <div class="hero-content">
+                        <h1>{{ .Title }}</h1>
+                        {{ with .Params.subtitle }}
+                        <div class="subtitle">{{ . }}</div>
+                        {{ end }}
+                    </div>
+                </div>
+                
+                <!-- Contenu principal -->
+                <article class="newsletter-page">
+                    {{ with .Params.description }}
+                    <div class="newsletter-description">
+                        {{ . }}
+                    </div>
+                    {{ end }}
+                    
+                    <!-- Stats -->
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2,400+</span>
+                            <span class="stat-label">Readers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">No Spam</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">52</span>
+                            <span class="stat-label">Issues/Year</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu Markdown - IMPORTANT: safeHTML pour interpréter le HTML -->
+                    <div class="newsletter-content">
+                        {{ .Content | safeHTML }}
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="newsletter-footer">
+                        <p>
+                            <i class="fas fa-envelope"></i> Questions? <a href="{{ "contact/" | relLangURL }}">Contact me →</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <i class="fas fa-rss"></i> Prefer RSS? <a href="{{ "index.xml" | relLangURL }}">Feed available →</a>
+                        </p>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--color-text-secondary);">
+                            &copy; {{ now.Format "2006" }} Salah Nomad. All rights reserved.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    
+    {{ partial "footer.html" . }}
+    
+    <!-- Newsletter specific scripts -->
+    <script>
+        // Animation pour les éléments avec délai progressif
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll(
+                '.newsletter-section, .philosophy-section, .newsletter-form, .testimonials, .stats'
+            );
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Délai progressif pour un effet d'apparition en cascade
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100); // 100ms d'écart entre chaque élément
+                    }
+                });
+            }, { 
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px' // Déclenche un peu plus tôt
+            });
+            
+            animatedElements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+            
+            // Effet de parallaxe pour l'image hero (uniquement sur desktop)
+            const hero = document.querySelector('.newsletter-hero');
+            if (hero && window.innerWidth > 768) {
+                let ticking = false;
+                
+                window.addEventListener('scroll', function() {
+                    if (!ticking) {
+                        window.requestAnimationFrame(function() {
+                            const scrolled = window.pageYOffset;
+                            // Réduction progressive de l'effet parallaxe
+                            const maxScroll = 500;
+                            const rate = Math.min(scrolled * 0.3, maxScroll);
+                            hero.style.transform = `translate3d(0, ${rate}px, 0)`;
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+            }
+            
+            // Validation améliorée du formulaire
+            const form = document.querySelector('.newsletter-form form');
+            if (form) {
+                const emailInput = document.getElementById('newsletter-email');
+                
+                // Validation en temps réel
+                emailInput.addEventListener('input', function() {
+                    if (this.validity.valid) {
+                        this.style.borderColor = 'var(--color-text-accent-secondary)';
+                    } else {
+                        this.style.borderColor = 'var(--color-text-accent)';
+                    }
+                });
+                
+                // Validation à la soumission
+                form.addEventListener('submit', function(e) {
+                    if (!emailInput.value.trim() || !emailInput.validity.valid) {
+                        e.preventDefault();
+                        emailInput.style.borderColor = 'var(--color-text-accent)';
+                        emailInput.focus();
+                        
+                        // Animation de secousse
+                        emailInput.style.animation = 'none';
+                        setTimeout(() => {
+                            emailInput.style.animation = 'shake 0.5s ease-in-out';
+                        }, 10);
+                    }
+                });
+            }
+            
+            // Ajout de l'animation shake si elle n'existe pas
+            if (!document.querySelector('#shake-animation')) {
+                const style = document.createElement('style');
+                style.id = 'shake-animation';
+                style.textContent = `
+                    @keyframes shake {
+                        0%, 100% { transform: translateX(0); }
+                        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                        20%, 40%, 60%, 80% { transform: translateX(5px); }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
+    </script>
+</body>
+</html>

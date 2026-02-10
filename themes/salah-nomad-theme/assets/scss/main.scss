@@ -1,4 +1,4 @@
-/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\assets\scss\main.scss */
+/* Z:\home\salah\Blog\themes\salah-nomad-theme\assets\scss\main.scss */
 
 @import 'variables';
 @import 'dark-mode';
@@ -26,6 +26,9 @@
 @import 'components/challenge-box';
 // AJOUTEZ CETTE LIGNE ICI - Import YouTube
 @import 'components/youtube'; // <-- NOUVEAU FICHIER YouTube
+
+// AJOUTEZ CETTE LIGNE POUR LA NEWSLETTER
+@import 'components/newsletter'; // <-- NOUVEAU COMPOSANT NEWSLETTER
 
 @import 'article-card';
 @import 'single';
