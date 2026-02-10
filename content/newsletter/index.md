@@ -100,15 +100,15 @@ Not news. Not trends. Just **thoughtful reflection** on:
   
   <ul class="dispatch-list">
     <li class="dispatch-item">
-      <a href="#">The Olive Tree Economy — Financial resilience through depth, not diversification</a>
+      <a href="/stories-wisdom/olive-trees-and-algorithms/">The Olive Tree Economy — Financial resilience through depth, not diversification</a>
       <span class="dispatch-date">Feb 7, 2026</span>
     </li>
     <li class="dispatch-item">
-      <a href="#">The Sardine Messenger — How small things carry big messages across distances</a>
+      <a href="/stories-wisdom/algorithmic-sardine-philosophy/">The Sardine Messenger — How small things carry big messages across distances</a>
       <span class="dispatch-date">Jan 31, 2026</span>
     </li>
     <li class="dispatch-item">
-      <a href="#">The Zellige Blueprint — Constraint-based creativity from Moroccan mosaics</a>
+      <a href="/work-productivity/zellige-blueprint-philosophy/">The Zellige Blueprint — Constraint-based creativity from Moroccan mosaics</a>
       <span class="dispatch-date">Jan 24, 2026</span>
     </li>
     <li class="dispatch-item">
@@ -142,6 +142,51 @@ Not news. Not trends. Just **thoughtful reflection** on:
   </form>
   
   <p class="sub-text">No spam. Unsubscribe anytime. Your email stays private.</p>
+</div>
+
+---
+
+## **Connect & Explore**
+
+<div class="newsletter-section">
+  <h2 class="newsletter-section-title">
+    <i class="fas fa-compass"></i> More from Salah Nomad
+  </h2>
+  
+  <div class="explore-links">
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 0.8rem;">
+        <i class="fas fa-book" style="color: var(--color-text-accent); margin-right: 0.5rem;"></i>
+        <a href="/start-here/" style="text-decoration: none; color: var(--color-text-primary);">
+          <strong>Start Here</strong> — Your guide to Mediterranean wisdom
+        </a>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <i class="fas fa-project-diagram" style="color: var(--color-text-accent); margin-right: 0.5rem;"></i>
+        <a href="/compass/" style="text-decoration: none; color: var(--color-text-primary);">
+          <strong>Compass</strong> — Interactive framework map
+        </a>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <i class="fas fa-book-open" style="color: var(--color-text-accent); margin-right: 0.5rem;"></i>
+        <a href="/glossary/" style="text-decoration: none; color: var(--color-text-primary);">
+          <strong>Glossary</strong> — Key concepts explained
+        </a>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <i class="fas fa-question-circle" style="color: var(--color-text-accent); margin-right: 0.5rem;"></i>
+        <a href="/faq/" style="text-decoration: none; color: var(--color-text-primary);">
+          <strong>FAQ</strong> — Common questions answered
+        </a>
+      </li>
+      <li style="margin-bottom: 0.8rem;">
+        <i class="fas fa-map-marker-alt" style="color: var(--color-text-accent); margin-right: 0.5rem;"></i>
+        <a href="/malaga-codex/" style="text-decoration: none; color: var(--color-text-primary);">
+          <strong>Malaga Codex</strong> — Digital nomad guide to Málaga
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 ---
