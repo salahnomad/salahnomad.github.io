@@ -30,6 +30,9 @@
 // AJOUTEZ CETTE LIGNE POUR LA NEWSLETTER
 @import 'components/newsletter'; // <-- NOUVEAU COMPOSANT NEWSLETTER
 
+// NOUVEAU : Research Notes
+@import 'components/research-notes';
+
 @import 'article-card';
 @import 'single';
 @import 'pagination';

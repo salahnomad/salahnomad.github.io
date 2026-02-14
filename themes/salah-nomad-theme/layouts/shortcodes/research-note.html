@@ -1,0 +1,21 @@
+{{/* layouts/shortcodes/research-note.html */}}
+{{- $type := .Get "type" | default "study" -}}
+{{- $source := .Get "source" | default "" -}}
+{{- $inner := .Inner | .Page.RenderString -}}
+
+{{- $icon := "🔬" -}}
+{{- if eq $type "history" -}}
+  {{- $icon = "📜" -}}
+{{- else if eq $type "empirical" -}}
+  {{- $icon = "🌿" -}}
+{{- end -}}
+
+<div class="research-note research-{{ $type }}">
+  <div class="research-icon">{{ $icon }}</div>
+  <div class="research-content">
+    {{ $inner }}
+    {{- with $source -}}
+      <a href="{{ . }}" class="research-source" target="_blank" rel="noopener noreferrer">Verify the source →</a>
+    {{- end -}}
+  </div>
+</div>

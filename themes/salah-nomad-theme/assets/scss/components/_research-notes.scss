@@ -1,0 +1,65 @@
+// assets/scss/components/_research-notes.scss
+
+.research-note {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+  box-shadow: var(--box-shadow-light);
+  background-color: rgba(0, 0, 0, 0.02);
+
+  // Variantes de couleurs (les variables sont définies dans _variables.scss)
+  &.research-study {
+    border-color: $mediterranean-blue;
+    .research-source {
+      color: $mediterranean-blue;
+    }
+  }
+  &.research-history {
+    border-color: $burnt-sienna;
+    .research-source {
+      color: $burnt-sienna;
+    }
+  }
+  &.research-empirical {
+    border-color: #606C38; // ou utilisez une variable olive si définie
+    .research-source {
+      color: #606C38;
+    }
+  }
+
+  .research-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .research-content {
+    flex: 1;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .research-source {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Support du mode sombre (si le thème l'utilise)
+html.dark-mode {
+  .research-note {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: var(--box-shadow-dark);
+  }
+}
