@@ -4,12 +4,10 @@ subtitle: "When Water Reunites What Politics Divides"
 description: "A documentary series on the 2026 floods across the Mediterranean — from Ksar el Kebir to Málaga, through water, exile, and return."
 
 date: 2026-02-01T00:00:00+01:00
-lastmod: 2026-02-09T00:00:00+01:00
+lastmod: 2026-02-16T00:00:00+01:00
 draft: false
 
-# ESSENTIEL : utiliser le même layout que money-freedom
 layout: "hub"
-
 type: series
 
 categories: ["series"]
@@ -58,12 +56,12 @@ Watching Ksar el Kebir empty through a screen while Málaga celebrates Carnival.
 ---
 
 ### **3. Returning to the Mud**
-*Coming February 2026*
+*February 16, 2026 | Ksar el Kebir, returned*
 
 The physical work of return — buckets, shovels, neighbors carrying sofas. Because resilience is not just philosophy. It is also what you do when the water recedes.
 
-**Status:** In progress  
-*Subscribe to be notified*
+**Status:** Published  
+[Read "Returning to the Mud" →](/stories-wisdom/returning-to-the-mud/)
 
 ---
 
@@ -100,6 +98,14 @@ The Strait has long been a metaphor in my work — the eight-mile gap between Af
 
 ---
 
-*For meditations on resilience, not just news: [Subscribe to Rooted Nomadism](/newsletter/)*
+{{< figure src="images/strait-remembers-trilogy.jpg" alt="Three olive trees in row showing flood water lines at different heights, symbolizing three articles of series" caption="Three dispatches, three rings of memory" >}}
+
+## **Series Complete**
+
+Three dispatches. Twelve days. One return.
+
+The water has receded. The mud remains. The memory is now in the olive rings, the sardine bodies, and these pages.
+
+*For what comes after the remembering — the rebuilding, the rhythm, the return to work: [Subscribe to Rooted Nomadism](/newsletter/)*
 
 *Have you lived through these floods? Witnessed from either shore? [Share your story →](/contact/)*
