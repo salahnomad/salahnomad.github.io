@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html - VERSION FINALE CORRIGÉE ! */}}
+{{/* H:\Salah-Nomad\NewBlog\themes\salah-nomad-theme\layouts\_default\baseof.html - VERSION FINALE CORRIGÉE */}}
 <html lang="{{ .Site.Language.Lang | default "en" }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
 <head>
   <meta charset="utf-8">
@@ -144,11 +144,11 @@
                 const pagefindUIElement = document.getElementById("pagefind-search-header");
                 if (pagefindUIElement) {
                     try {
-                        // Correction: Ajout de bundlePath
+                        // CORRECTION CRITIQUE : bundlePath corrigé de "/_pagefind/" à "/pagefind/"
                         const pagefindInstance = new PagefindUI({
                             element: pagefindUIElement,
                             showSubResults: true,
-                            bundlePath: "{{ "/_pagefind/" | relURL }}" // Indique où trouver pagefind.js et l'index
+                            bundlePath: "{{ "/pagefind/" | relURL }}" // ← CORRIGÉ : sans underscore
                         });
                         
                         // Pagefind injecte son propre input, donc on le référence après l'init.
