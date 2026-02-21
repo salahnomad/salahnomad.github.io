@@ -1,39 +1,32 @@
 # Fichier : .github/workflows/hugo.yml
+# Workflow pour déployer un site Hugo avec Pagefind sur GitHub Pages
 
 name: Deploy Hugo site to Pages
 
 on:
-  # Se déclenche à chaque push sur la branche `main`
   push:
     branches:
       - main
-
-  # Permet de lancer ce workflow manuellement depuis l'onglet Actions
   workflow_dispatch:
 
-# Autorisations pour que l'action puisse déployer sur GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# N'autoriser qu'un seul déploiement à la fois
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
-# Variables d'environnement par défaut
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Tâche de construction
   build:
     runs-on: ubuntu-latest
     env:
-      # --- VERSION CORRIGÉE ---
-      HUGO_VERSION: 0.150.0 
+      HUGO_VERSION: 0.150.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -51,18 +44,29 @@ jobs:
 
       - name: Build with Hugo
         env:
-          # Pour le déploiement sur GitHub Pages pour un dépôt <user>.github.io
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" || true
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      # --- AJOUT POUR PAGEFIND ---
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Pagefind
+        run: npm install -g pagefind
+
+      - name: Create Pagefind index
+        run: pagefind --source public
+      # --- FIN DE L'AJOUT ---
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
-  # Tâche de déploiement
   deploy:
     environment:
       name: github-pages
