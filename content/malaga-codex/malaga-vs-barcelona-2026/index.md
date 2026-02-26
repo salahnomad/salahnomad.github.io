@@ -3,7 +3,7 @@ title: "🇪🇸 Barcelona vs. Málaga 2026: Which Spanish City Wins for Digital
 subtitle: "I lived in Barcelona in 2019, Málaga since 2021. Here's my honest comparison with February 2026 data: costs, community, quality of life, and the invisible taxes you won't find in spreadsheets."
 date: 2026-02-24T08:00:00+01:00
 lastmod: 2026-02-24
-draft: false
+draft: true
 description: "I lived in Barcelona in 2019, Málaga since 2021. Here's my honest comparison with February 2026 data: costs, community, quality of life, and the invisible taxes you won't find in spreadsheets."
 categories: 
   - "malaga-codex"
