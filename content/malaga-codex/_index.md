@@ -1,7 +1,7 @@
 ---
 title: "The Málaga Codex: A Rooted Nomad's Guide to Andalusia's Soul"
 date: 2025-05-11T09:00:00+02:00
-draft: false
+draft: tue
 featured_image: "images/malaga-codex.jpg"
 description: "Málaga is more than a city; it's a living codex where Phoenician trade routes and Moorish wisdom inform a vibrant digital renaissance. This is your key to deciphering it."
 layout: list
