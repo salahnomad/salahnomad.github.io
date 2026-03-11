@@ -1,9 +1,12 @@
 ---
 title: "Avoid My €2,000 Mistakes: The Definitive Málaga Relocation Checklist (2026 Edition)"
-description: "Stop searching Idealista. Stop guessing the Visa rules. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified data for February 2026."
+subtitle: "The logistical blueprint to anchor your life in Málaga in 7 days without the Nomad Tax."
+description: "Stop searching Idealista. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified data for February 2026: Digital Nomad Visa thresholds (€2,850/mo), real rents, and vetted contacts."
 date: 2026-02-27
+lastmod: 2026-03-10
 draft: false
 layout: "single"
+aliases: ["/checklist"]
 ---
 
 {{< figure src="images/salah-pedregalejo-2021.jpg" alt="Salah Nomad in Pedregalejo, 2021" caption="Rooted since 2021. This is my 4-year field journal, not a weekend guide." >}}
