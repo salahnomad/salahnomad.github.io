@@ -3,8 +3,8 @@
 title: "🫒 The Olive Tree and the Algorithm: 5 Lessons on Belonging from a Rooted Nomad"
 subtitle: "How ancient Mediterranean roots provide the trusted compass for navigating the digital sea."
 description: "Discover the 5 transformative lessons of Rooted Nomadism. Learn how to bridge ancestral Jbala wisdom with modern algorithms to find home in perpetual motion."
-date: 2026-03-18T08:00:00+01:00
-lastmod: 2026-03-18
+date: 2026-03-17T08:00:00+01:00
+lastmod: 2026-03-17
 draft: false
 
 # --- CLASSIFICATION STRATÉGIQUE ---
