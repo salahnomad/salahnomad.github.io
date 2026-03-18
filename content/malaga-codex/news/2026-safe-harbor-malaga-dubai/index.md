@@ -120,17 +120,21 @@ The checklist is **$17**. That's less than a meal in Pedregalejo, and it include
 
 ## Frequently Asked Questions
 
-**Is this really updated for March 2026?**
-Yes. I verified every number in the last seven days. The DNV threshold, the rent averages, the lawyer contacts. If something changes, I update the document quarterly and notify all buyers.
+{{< short-faq question="Is this really updated for March 2026?" >}}
+**Yes.** I verified every number in the last seven days. The DNV threshold, the rent averages, the lawyer contacts. If something changes, I update the document quarterly and notify all buyers.
+{{< /short-faq >}}
 
-**I'm still in Dubai. Can this help me plan before leaving?**
-Absolutely. The checklist includes pre‑arrival steps—apostille, banking, visa documents—that you should start *today*, not after you land.
+{{< short-faq question="I'm still in Dubai. Can this help me plan before leaving?" >}}
+**Absolutely.** The checklist includes pre‑arrival steps—apostille, banking, visa documents—that you should start *today*, not after you land.
+{{< /short-faq >}}
 
-**What if I already have a lawyer?**
-Then use the checklist to audit their advice. Attorneys handle the law, but they don't always know the day‑to‑day reality of finding a coworking space that actually has community, or a landlord who won't charge you the "nomad premium."
+{{< short-faq question="What if I already have a lawyer?" >}}
+**Then use the checklist to audit their advice.** Attorneys handle the law, but they don't always know the day‑to‑day reality of finding a coworking space that actually has community, or a landlord who won't charge you the "nomad premium."
+{{< /short-faq >}}
 
-**What if it doesn't save me money?**
-The 30‑day guarantee is real. Email me, and I'll refund you instantly. No questions, no hard feelings.
+{{< short-faq question="What if it doesn't save me money?" >}}
+**The 30‑day guarantee is real.** Email me, and I'll refund you instantly. No questions, no hard feelings.
+{{< /short-faq >}}
 
 ---
 
@@ -150,4 +154,4 @@ If that's you, download the checklist. Read the bureaucracy section first. Call 
 
 ---
 
-**P.S.** Not ready to buy? Start with the [free neighborhood guide](/malaga-codex/where-to-live-malaga-2026/). The door stays open.
+**P.S.** Not ready to buy? Start with the [free neighborhood guide](/malaga-codex/malaga-neighborhood-guide-2026/). The door stays open.
