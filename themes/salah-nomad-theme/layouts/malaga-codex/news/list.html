@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="hub-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="hub-grid">
+    <main class="hub-main">
+      <header class="hub-header">
+        {{ with .Resources.GetMatch .Params.featured_image }}
+          {{ $hero := .Fill "1200x500 webp q85 Center" }}
+          <img src="{{ $hero.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-hero-img" loading="eager">
+        {{ end }}
+        <div class="hub-title-area">
+          <h1 class="hub-main-title">{{ .Title }}</h1>
+          {{ with .Description }}<p class="hub-subtitle">{{ . }}</p>{{ end }}
+        </div>
+      </header>
+
+      <section class="hub-proof-section">
+        <div class="container">
+          {{ .Content }}
+        </div>
+      </section>
+
+      <section class="dispatches-grid">
+        <div class="container">
+          <h2 class="section-label">Latest Dispatches</h2>
+          <div class="grid-layout">
+            {{ range .Pages.ByDate.Reverse }}
+              {{ $thumb := "" }}
+              {{ with .Resources.GetMatch .Params.featured_image }}
+                {{ $thumb = .Fill "600x400 webp q85 Center" }}
+              {{ end }}
+              <div class="archipelago-card dispatch-card">
+                <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
+                <a href="{{ .RelPermalink }}" class="dispatch-thumbnail-link">
+                  {{ if $thumb }}
+                    <div class="dispatch-thumbnail">
+                      <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+                    </div>
+                  {{ end }}
+                </a>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description | default .Summary | truncate 120 }}</p>
+                <a href="{{ .RelPermalink }}" class="hub-btn secondary">Read more →</a>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <footer class="hub-footer-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h3>Stay informed. Stay rooted.</h3>
+            <p>Subscribe to get new dispatches straight to your inbox.</p>
+            {{ partial "newsletter-form.html" . }}
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <aside class="hub-sidebar">
+      {{ partial "sidebar.html" . }}
+    </aside>
+  </div>
+</div>
+{{ end }}

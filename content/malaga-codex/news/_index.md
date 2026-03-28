@@ -4,7 +4,8 @@ description: "When laws shift or geopolitical storms hit, you need a safe harbor
 date: 2026-03-12
 draft: false
 featured_image: "images/news-featured.jpg"
-layout: list
+featured_image_alt: "A dramatic sunset over the Málaga port with storm clouds gathering – symbolizing urgent updates and time-sensitive intelligence for digital nomads."
+layout: "malaga-codex/news/list"
 aliases:
   - "/malaga-codex/updates/"
 ---
