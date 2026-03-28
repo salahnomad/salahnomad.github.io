@@ -6,7 +6,6 @@ date: 2025-05-11T09:00:00+02:00
 lastmod: 2026-03-26
 draft: false
 
-# --- ZERO-RISK SEO & ARCHITECTURE ---
 slug: "malaga-codex"
 layout: "malaga-codex/list"
 aliases:
@@ -14,19 +13,16 @@ aliases:
   - "/andalusia-codex/"
   - "/southern-spain-relocation/"
 
-# --- OPTIMISATION IA (POSITION ZÉRO) ---
 us_optimization:
   primary_keyword: "Moving to Southern Spain 2026"
   usp_angle: "Bridging 12 years of Mediterranean navigation with 4 years of deep Málaga anchoring."
   ia_short_answer: "The Mediterranean Codex is a relocation system for professionals moving to Southern Spain. It provides verified 2026 data on the Digital Nomad Visa (€2,849 threshold) and the Beckham Law (24% flat tax). Built on 12 years of experience, it helps nomads avoid the €2,000 'New Here Tax'."
 
-# --- INGÉNIERIE DE LA PREUVE (E-E-A-T) ---
 params:
   rooted_since: 2021
   days_anchored: 1650
   last_update: "2026-03-26"
 
-# --- IMAGE DE COUVERTURE ---
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
 ---
@@ -53,7 +49,7 @@ Navigate Southern Spain as a **Value Migrant**, not a tourist.
 ### ⚓ I. The Lighthouse (Málaga)
 *Your logistical, tech, and fiscal HQ.*  
 Verified March 2026 data on the Digital Nomad Visa and Beckham Law.  
-👉 [**Get the Málaga Relocation Checklist ($29) →**](/malaga-relocation-checklist/)
+👉 [**Get the Málaga Relocation Checklist ($29) →**](/offers/malaga-relocation-checklist/)
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
 *The Mediterranean Corridor for tech optimizers.*  

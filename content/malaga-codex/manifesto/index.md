@@ -169,7 +169,7 @@ The Mediterranean Codex exists because I believe that freedom without roots is j
 
 Start with the logistics:
 
-👉 **[Get the Málaga Relocation Checklist ($17)](/offers/malaga-relocation-checklist/)** – the mosaic that saves you the €2,000 “new here” tax.
+👉 **[Get the Málaga Relocation Checklist ($29)](/offers/malaga-relocation-checklist/)** – the mosaic that saves you the €2,000 “new here” tax.
 
 Then find your soil:
 

@@ -55,7 +55,7 @@ No, but the arbitrage is ending. The financial gap between Barcelona and Málaga
 ## 🗺️ Next Step: Get the Relocation Roadmap
 Don't waste €2,000 on the same mistakes I made. I've compiled the exact 2026 bureaucracy steps and vetted local contacts in one document.
 
-<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; border-radius: 2px; width: 100%; text-align: center;">👉 Download the 2026 Relocation Checklist — $17</a>
+<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; border-radius: 2px; width: 100%; text-align: center;">👉 Download the 2026 Relocation Checklist — $29</a>
 
 {{< promptbox title="Your Neighborhood Mission" >}}
 **Active:** Walk your target neighborhood at 8 AM, 2 PM, and 10 PM. If you still love it at all three times, you've found your soil. 

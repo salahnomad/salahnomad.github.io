@@ -6,7 +6,10 @@ date: 2026-02-27
 lastmod: 2026-03-10
 draft: false
 layout: "single"
-aliases: ["/checklist"]
+aliases:
+  - "/checklist"
+  - "/malaga-codex/malaga-relocation-checklist/"
+  - "/malaga-relocation-checklist/"
 ---
 
 {{< figure src="images/salah-pedregalejo-2021.jpg" alt="Salah Nomad in Pedregalejo, 2021" caption="Rooted since 2021. This is my 4-year field journal, not a weekend guide." >}}
@@ -15,7 +18,7 @@ aliases: ["/checklist"]
 **TL;DR:** Moving to Málaga in 2026 is complex. Rents have hit €1,139 and Visa income requirements are now €2,850/mo. This 23-page checklist gives you the exact sequence to settle in 7 days without paying the "Nomad Tax."
 {{< /quick-summary >}}
 
-<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 2px; letter-spacing: 0.5px; width: 100%; text-align: center;">📥 Get the Checklist — $17</a>
+<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 2px; letter-spacing: 0.5px; width: 100%; text-align: center;">📥 Get the Checklist — $29</a>
 
 ### 4 Pillars of Your Move:
 *   **The Bureaucracy Filter:** Exactly how to meet the new €2,850/mo requirement for the Digital Nomad Visa without a headache.
@@ -42,7 +45,7 @@ Yes. All rent averages, SMI thresholds for visas (€2,850/mo), and legal contac
 Absolutely. Attorneys handle the law, not the life. This guide saves you from "Nomad Premiums" on rent and helps you pick the right coworking archetype for your work mode.
 {{< /short-faq >}}
 
-<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 2px; letter-spacing: 0.5px; width: 100%; text-align: center;">👉 Get the Checklist — $17</a>
+<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" class="btn-library" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.1rem 2.5rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 2px; letter-spacing: 0.5px; width: 100%; text-align: center;">👉 Get the Checklist — $29</a>
 
 *Join the 0 nomads already rooted • Counter updated manually*
 

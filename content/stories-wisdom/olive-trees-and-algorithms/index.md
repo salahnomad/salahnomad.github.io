@@ -106,7 +106,7 @@ In the Beni Yssef highlands of Morocco, this essence is known as **[Assal](/glos
 <div style="background-color: #fef3c7; border-left: 4px solid #d97706; padding: 1.5rem; margin: 2rem 0; border-radius: 4px;">
   <h4 style="margin-top:0; color: #92400e;">🛂 The Practical Mooring: Securing Your Base</h4>
   <p style="color: #92400e; margin-bottom: 1rem;">Don't let a €200 error ruin your visa application. Most blogs still quote outdated 2024 income thresholds. As of March 2026, the Spanish Digital Nomad Visa requirement jumped to <strong>€2,849/month</strong>. My checklist contains the exact order of operations and the mandatory document list verified this week.</p>
-  <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 2px;">👉 Get the 2026 Relocation Blueprint — $17</a>
+  <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 2px;">👉 Get the 2026 Relocation Blueprint — $29</a>
 </div>
 
 ---
@@ -160,7 +160,7 @@ This shared Mediterranean culture serves as a "cultural password." I recall the 
 <div style="background-color: #fef3c7; border-left: 4px solid #d97706; padding: 1.5rem; margin: 2rem 0; border-radius: 4px;">
   <h4 style="margin-top:0; color: #92400e;">📇 Unlock the Insider Network</h4>
   <p style="color: #92400e; margin-bottom: 1rem;">My personal "Black Book" is now open. After 4 years, I've filtered out the agencies that charge "Nomad Premiums." I’ve included the direct emails of the <strong>3 lawyers I trust</strong> for the Beckham Law (24% flat tax) and the relocation agents who actually check fiber speeds before you sign.</p>
-  <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 2px;">👉 Access the Verified Contacts — $17</a>
+  <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: bold; border-radius: 2px;">👉 Access the Verified Contacts — $29</a>
 </div>
 
 ---
@@ -214,7 +214,7 @@ To read the full manifesto that birthed these frameworks, grab the book that sta
 
 **For the Execution (The Logistics):**
 If your chosen soil is Southern Spain, do not repeat the mistakes that cost me thousands of euros and months of stress. Get the exact, verified roadmap:
-<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: block; background: #2c5530; color: #fff; padding: 1rem; text-align: center; text-decoration: none; font-weight: bold; border-radius: 2px; margin: 1rem 0;">🗺️ Get the Málaga Relocation Checklist ($17)</a>
+<a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" style="display: block; background: #2c5530; color: #fff; padding: 1rem; text-align: center; text-decoration: none; font-weight: bold; border-radius: 2px; margin: 1rem 0;">🗺️ Get the Málaga Relocation Checklist ($29)</a>
 
 *“May you find your soil sooner than I did.”*
 {{< /promptbox >}}

@@ -50,7 +50,7 @@ My current monthly budget runs around €1,970–2,120 for a comfortable life in
 
 ## What nobody tells you about relocating
 
-I've moved five times in four years. I've paid €900 for a studio in Centro that was so noisy I couldn't work past 8 PM. I've lost deposits, wasted weeks on bad advice, and spent €2,000 learning lessons I could have learned from a $17 PDF.
+I've moved five times in four years. I've paid €900 for a studio in Centro that was so noisy I couldn't work past 8 PM. I've lost deposits, wasted weeks on bad advice, and spent €2,000 learning lessons I could have learned from a $29 PDF.
 
 The truth is, relocating to Spain isn't complicated—it's just **full of traps**.
 
@@ -94,7 +94,7 @@ You can verify them yourself—I've included the sources in the document. But th
 
 ## What this costs
 
-The checklist is **$17**. That's less than a meal in Pedregalejo, and it includes:
+The checklist is **$29**. That's less than a meal in Pedregalejo, and it includes:
 
 - Instant PDF download
 - 30‑day "Rooted" guarantee (doesn't save you 10× the price? Full refund, no questions)
@@ -105,7 +105,7 @@ The checklist is **$17**. That's less than a meal in Pedregalejo, and it include
 <div style="text-align: center; margin: 2.5rem 0;">
   <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" target="_blank" 
      style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.2rem 2.5rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; border-radius: 4px; letter-spacing: 0.5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    📥 Download the Blueprint — $17
+    📥 Download the Blueprint — $29
   </a>
   <p style="font-size: 0.85rem; color: #666; margin-top: 0.75rem;">
     Instant PDF download • 30‑day "Rooted" guarantee
