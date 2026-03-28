@@ -1,0 +1,78 @@
+{{ define "main" }}
+<div class="hub-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="hub-grid">
+    <!-- Contenu principal -->
+    <main class="hub-main">
+      <header class="hub-header">
+        {{ with .Resources.GetMatch "images/hero*" }}
+          {{ $hero := .Fill "1200x500 webp q85 Center" }}
+          <img src="{{ $hero.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-hero-img" loading="eager">
+        {{ end }}
+        <div class="hub-title-area">
+          <h1 class="hub-main-title">{{ .Title }}</h1>
+          <p class="hub-subtitle">{{ .Params.subtitle }}</p>
+          <div class="rooted-badge">
+            <span class="badge-icon">🌿</span>
+            <span class="badge-text">Rooted in Málaga since 2021 • 1,600+ days anchored</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="hub-proof-section">
+        <div class="container">
+          {{ .Content }}
+        </div>
+      </section>
+
+      <section class="archipelago-grid">
+        <div class="container">
+          <h2 class="section-label">Explore the Archipelago</h2>
+          <div class="grid-layout">
+            <div class="archipelago-card primary">
+              <div class="card-tag">Tier 1 • Available</div>
+              <h3>⚓ The Lighthouse (Málaga)</h3>
+              <p>Your logistical and fiscal HQ. Verified March 2026 data on Visas and the Beckham Law.</p>
+              <a href="{{ "/malaga-codex/malaga-relocation-checklist/" | relLangURL }}" class="hub-btn">Get the Checklist →</a>
+            </div>
+            <div class="archipelago-card">
+              <div class="card-tag">Waitlist</div>
+              <h3>🌊 The Migratory Route (Valencia & BCN)</h3>
+              <p>12 years of Mediterranean navigation applied to the Levant's tech hubs.</p>
+              <a href="{{ "/malaga-codex/valencia-waitlist/" | relLangURL }}" class="hub-btn secondary">Join Valencia Waitlist →</a>
+            </div>
+            <div class="archipelago-card">
+              <div class="card-tag">Waitlist</div>
+              <h3>🌿 The Ancestral Cloud (Seville & Granada)</h3>
+              <p>Deep cultural anchoring under the memory‑clouds of centennial olive trees.</p>
+              <a href="{{ "/malaga-codex/seville-waitlist/" | relLangURL }}" class="hub-btn secondary">Join Seville Waitlist →</a>
+            </div>
+            <div class="archipelago-card">
+              <div class="card-tag">Coming Soon</div>
+              <h3>🛰️ The Satellites (Marbella & Coast)</h3>
+              <p>Niche guides for conscious luxury, families, and active retirement.</p>
+              <a href="{{ "/malaga-codex/satellite-waitlist/" | relLangURL }}" class="hub-btn secondary">Notify Me →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="hub-footer-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h3>You have the map. Now get the soul.</h3>
+            <p>Discover the journey that forged this system in <em>Algorithmic Sardines</em>.</p>
+            {{ partial "widget-book-promo.html" . }}
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="hub-sidebar">
+      {{ partial "sidebar.html" . }}
+    </aside>
+  </div>
+</div>
+{{ end }}

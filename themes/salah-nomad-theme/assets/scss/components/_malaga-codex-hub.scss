@@ -1,0 +1,239 @@
+// --- Mediterranean Codex Hub Styles ---
+
+.hub-container {
+  background-color: var(--color-background);
+  width: 100%;
+
+  // Correction du fil d'Ariane
+  .breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    @media (max-width: 768px) {
+      white-space: normal;
+      word-break: break-word;
+      padding: 0 0.75rem;
+    }
+  }
+
+  // Grille principale avec sidebar
+  .hub-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hub-main {
+    flex: 3;
+    min-width: 0;
+  }
+
+  .hub-sidebar {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .hub-header {
+    position: relative;
+    text-align: center;
+    padding-bottom: 4rem;
+
+    .hub-hero-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+    .hub-title-area {
+      margin-top: -100px;
+      position: relative;
+      z-index: 2;
+      padding: 0 1.5rem;
+
+      @media (max-width: 768px) {
+        margin-top: -50px;
+      }
+    }
+
+    .hub-main-title {
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      word-break: break-word;
+      margin-bottom: 0.5rem;
+    }
+
+    .hub-subtitle {
+      font-size: 1.2rem;
+      color: var(--color-text-secondary);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .rooted-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-background-alt);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      border: 1px solid var(--color-text-accent);
+      margin-top: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+  }
+
+  .hub-proof-section {
+    padding: 4rem 0;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .archipelago-grid {
+    padding: 4rem 0;
+    background-color: var(--color-background-alt);
+
+    .section-label {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      color: var(--color-text-accent);
+      margin-bottom: 2rem;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .archipelago-card {
+      background: var(--color-background);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-color: var(--color-text-accent);
+      }
+
+      h3 {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+      }
+
+      p {
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+      }
+
+      .card-tag {
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--color-text-secondary);
+        opacity: 0.7;
+      }
+
+      &.primary {
+        border: 2px solid var(--color-text-accent);
+        background: linear-gradient(135deg, var(--color-background) 0%, rgba(245, 158, 11, 0.05) 100%);
+      }
+    }
+  }
+
+  .hub-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-text-headings);
+    color: white !important;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+
+    &.secondary {
+      background-color: transparent;
+      border: 1px solid var(--color-text-headings);
+      color: var(--color-text-headings) !important;
+
+      &:hover {
+        background-color: var(--color-text-headings);
+        color: white !important;
+      }
+    }
+
+    &:not(.secondary):hover {
+      background-color: var(--color-text-accent);
+    }
+  }
+
+  .hub-footer-cta {
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--color-background);
+
+    .cta-content {
+      max-width: 600px;
+      margin: 0 auto;
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hub-grid {
+      flex-direction: column;
+    }
+    .hub-main,
+    .hub-sidebar {
+      flex: auto;
+      width: 100%;
+    }
+    .hub-header {
+      .hub-title-area {
+        margin-top: -50px;
+      }
+      .hub-subtitle {
+        font-size: 1rem;
+      }
+    }
+    .archipelago-grid {
+      .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .archipelago-card {
+        padding: 1.5rem;
+      }
+    }
+    .hub-footer-cta {
+      padding: 2rem 0;
+    }
+  }
+}

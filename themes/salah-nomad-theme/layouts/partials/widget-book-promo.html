@@ -1,17 +1,11 @@
-{{/*
-  Partial: widget-book-promo.html (Version 5.0 - Pure Leaf Bundle)
-  -----------------------------------------------------------------
-  Affiche une promotion pour le livre.
-  Prend le contexte de la page en paramètre via '.'
-  Cherche l'image 'images/algorithmic-sardines-cover.jpg'
-  exclusivement dans le bundle de la page appelante.
-*/}}
 {{ $pageContext := . }}
 {{ $image := "" }}
 
 {{ if $pageContext.Resources }}
   {{ $image = $pageContext.Resources.GetMatch "images/algorithmic-sardines-cover.jpg" }}
 {{ end }}
+
+{{ $fallbackImage := "/ebook/algorithmic-sardines/images/algorithmic-sardines-hero-4x3.jpg" }}
 
 <div class="widget-book-promo">
   <div class="book-cover">
@@ -24,9 +18,11 @@
              alt="Book cover of Algorithmic Sardines by Salah Nomad" 
              loading="lazy">
       {{ else }}
-        <p style="color:red; font-weight:bold; font-size:12px; border: 1px solid red; padding: 5px;">
-          ERROR: L'image 'images/algorithmic-sardines-cover.jpg' est introuvable dans ce page bundle.
-        </p>
+        <img src="{{ $fallbackImage }}" 
+             width="150" 
+             height="auto"
+             alt="Book cover of Algorithmic Sardines by Salah Nomad" 
+             loading="lazy">
       {{ end }}
     </a>
   </div>
