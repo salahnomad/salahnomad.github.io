@@ -1,7 +1,7 @@
 {{/* themes/salah-nomad-theme/layouts/partials/sidebar/widget-quotes.html */}}
 {{/* VERSION MISE À JOUR pour le nouveau rotateur JS global */}}
 {{ $widgetConfig := index .Site.Params.sidebar "quotes" }}
-{{ $allQuotes := .Site.Data.quotes }}  ← v0.150.0 compatible
+{{ $allQuotes := .Site.Data.quotes }}
 
 {{ if and $widgetConfig.enable $allQuotes (gt (len $allQuotes) 0) }}
   {{ $firstQuote := index $allQuotes 0 }}
