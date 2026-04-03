@@ -1,5 +1,6 @@
 {{ $currentPage := .Page }}
-{{ $frameworks := .Site.Data.frameworks }} {{/* Optionnel, pour des données centralisées */}}
+<!-- NOUVEAU -->
+{{ $frameworks := hugo.Data.frameworks }} {{/* Optionnel, pour des données centralisées */}}
 
 {{/* --- Récupérer les métadonnées du framework de la page actuelle --- */}}
 {{ $currentCategory := $currentPage.Params.frameworks.category }}
