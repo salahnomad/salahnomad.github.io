@@ -3,7 +3,7 @@ title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
 description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified March 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-03-26
+lastmod: 2026-04-03
 draft: false
 
 slug: "malaga-codex"
