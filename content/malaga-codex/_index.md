@@ -3,7 +3,7 @@ title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
 description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified March 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-04-03
+lastmod: 2026-04-12
 draft: false
 
 slug: "malaga-codex"
@@ -21,7 +21,7 @@ us_optimization:
 params:
   rooted_since: 2021
   days_anchored: 1650
-  last_update: "2026-03-26"
+  last_update: "2026-04-12"
 
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
@@ -52,8 +52,8 @@ Verified March 2026 data on the Digital Nomad Visa and Beckham Law.
 👉 [**Get the Málaga Relocation Checklist ($29) →**](/offers/malaga-relocation-checklist/)
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
-*The Mediterranean Corridor for tech optimizers.*  
-👉 [**Join Valencia Waitlist →**](/malaga-codex/valencia-waitlist/)  
+*The Mediterranean Corridor for tech optimizers and resilient pioneers.*  
+👉 [**Get the Valencia Relocation Checklist ($29) →**](/offers/valencia-relocation-checklist/) *(NEW: April 2026 Edition)*  
 👉 [**Join Barcelona Waitlist →**](/malaga-codex/barcelona-waitlist/)
 
 ### 🌿 III. The Ancestral Cloud (Seville & Granada)
@@ -70,11 +70,21 @@ Verified March 2026 data on the Digital Nomad Visa and Beckham Law.
 ## 🧭 Your Path to Belonging
 
 ### 1. The Logistics (The Map)
-{{< cta-basic >}}
-**Málaga Relocation Checklist (March 2026 Edition)**  
-23 pages of field intelligence including the "Black Book" of vetted contacts.  
-👉 [Get the Checklist for $29](https://books.salahnomad.com/b/malaga-relocation-checklist)
-{{< /cta-basic >}}
+
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; margin: 1.5rem 0;">
+  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #1A3A3A;">
+    <strong>🇪🇸 Málaga Relocation Checklist (March 2026 Edition)</strong><br>
+    23 pages of field intelligence including the "Black Book" of vetted contacts.<br>
+    <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" style="display: inline-block; margin-top: 0.8rem; background: #1A3A3A; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist for $29</a>
+  </div>
+  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+    <strong>🇪🇸 Valencia Relocation Checklist (April 2026 Edition)</strong><br>
+    DANA flood map, 12 verified Black Book contacts, DNV €2,849 threshold.<br>
+    <a href="https://books.salahnomad.com/b/valencia-relocation-checklist-2026" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist for $29</a>
+  </div>
+</div>
+
+*Bundle available: Add both for $49 ($15 savings).*
 
 ### 2. The Philosophy (The Soul)
 Discover how to ground your digital life in the wisdom of the earth.  
@@ -82,4 +92,4 @@ Discover how to ground your digital life in the wisdom of the earth.
 
 *“Málaga is my port. The Mediterranean is my story. Welcome to the Codex.”*  
 **— Salah Nomad**  
-*Last updated: 26 March 2026*
+*Last updated: 12 April 2026*
