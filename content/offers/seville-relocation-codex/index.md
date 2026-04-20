@@ -3,7 +3,7 @@ title: "The Seville Relocation Codex (2026) – Thermal Map, Black Book & DNV Th
 subtitle: "Field‑tested. Verified. Rooted."
 description: "Stop guessing. Get the complete 2026 Seville relocation blueprint: exclusive Thermal & Acoustic Sanctuary Map, verified Black Book contacts, DNV income threshold, and anchoring rituals – all inside the PDF."
 date: 2026-04-14
-lastmod: 2026-04-14
+lastmod: 2026-04-21
 draft: false
 layout: "single"
 aliases:
