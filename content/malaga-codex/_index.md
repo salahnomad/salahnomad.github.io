@@ -1,9 +1,9 @@
 ---
 title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
-description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified March 2026 data on visas, rents, and the Beckham Law."
+description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified April 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-04-21
+lastmod: 2026-04-22
 draft: false
 
 slug: "malaga-codex"
@@ -21,7 +21,7 @@ us_optimization:
 params:
   rooted_since: 2021
   days_anchored: 1650
-  last_update: "2026-04-21"
+  last_update: "2026-04-22"
 
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
@@ -48,7 +48,7 @@ Navigate Southern Spain as a **Value Migrant**, not a tourist.
 
 ### ⚓ I. The Lighthouse (Málaga)
 *Your logistical, tech, and fiscal HQ.*  
-Verified March 2026 data on the Digital Nomad Visa and Beckham Law.  
+Verified April 2026 data on the Digital Nomad Visa and Beckham Law.  
 👉 [**Get the Málaga Relocation Checklist ($29) →**](/offers/malaga-relocation-checklist/)
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
@@ -59,7 +59,7 @@ Verified March 2026 data on the Digital Nomad Visa and Beckham Law.
 ### 🌿 III. The Ancestral Cloud (Seville & Granada)
 *Sanctuaries for the soul and cultural depth.*  
 👉 [**Get the Seville Relocation Codex ($29) →**](/offers/seville-relocation-codex/) *(NEW: April 2026 Edition)*  
-👉 [**Join Granada Waitlist →**](/malaga-codex/granada-waitlist/)
+👉 [**Get the Granada Relocation Codex ($29) →**](/offers/granada-relocation-codex/) *(NEW: April 2026 Edition)*
 
 ### 🛰️ IV. The Satellites (Marbella, Tarifa, Fuengirola)
 *Niche guides for families, luxury, and active lifestyle.*  
@@ -87,6 +87,11 @@ Verified March 2026 data on the Digital Nomad Visa and Beckham Law.
     Thermal & acoustic sanctuary matrix, Feria/Semana Santa survival, 30+ pages.<br>
     <a href="https://books.salahnomad.com/b/seville-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex for $29</a>
   </div>
+  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+    <strong>🇪🇸 Granada Relocation Codex (April 2026 Edition)</strong><br>
+    Altitude & thermal sanctuary matrix, winter heating reality, 27+ pages.<br>
+    <a href="https://books.salahnomad.com/b/granada-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex for $29</a>
+  </div>
 </div>
 
 *Bundle available: Add both for $49 ($15 savings).*
@@ -97,4 +102,4 @@ Discover how to ground your digital life in the wisdom of the earth.
 
 *“Málaga is my port. The Mediterranean is my story. Welcome to the Codex.”*  
 **— Salah Nomad**  
-*Last updated: 21 April 2026*
+*Last updated: 22 April 2026*
