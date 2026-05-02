@@ -1,9 +1,9 @@
 ---
 title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
-description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified April 2026 data on visas, rents, and the Beckham Law."
+description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-04-22
+lastmod: 2026-05-02
 draft: false
 
 slug: "malaga-codex"
@@ -21,7 +21,7 @@ us_optimization:
 params:
   rooted_since: 2021
   days_anchored: 1650
-  last_update: "2026-04-22"
+  last_update: "2026-05-02"
 
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
@@ -48,18 +48,18 @@ Navigate Southern Spain as a **Value Migrant**, not a tourist.
 
 ### ⚓ I. The Lighthouse (Málaga)
 *Your logistical, tech, and fiscal HQ.*  
-Verified April 2026 data on the Digital Nomad Visa and Beckham Law.  
+Verified May 2026 data on the Digital Nomad Visa and Beckham Law.  
 👉 [**Get the Málaga Relocation Checklist ($29) →**](/offers/malaga-relocation-checklist/)
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
 *The Mediterranean Corridor for tech optimizers and resilient pioneers.*  
-👉 [**Get the Valencia Relocation Checklist ($29) →**](/offers/valencia-relocation-checklist/) *(NEW: April 2026 Edition)*  
-👉 [**Join Barcelona Waitlist →**](/malaga-codex/barcelona-waitlist/)
+👉 [**Get the Valencia Relocation Checklist ($29) →**](/offers/valencia-relocation-checklist/) *(April 2026 Edition)*  
+👉 [**Get the Barcelona Relocation Codex ($39) →**](/offers/barcelona-relocation-codex/) *(April 2026 Edition)*
 
 ### 🌿 III. The Ancestral Cloud (Seville & Granada)
 *Sanctuaries for the soul and cultural depth.*  
-👉 [**Get the Seville Relocation Codex ($29) →**](/offers/seville-relocation-codex/) *(NEW: April 2026 Edition)*  
-👉 [**Get the Granada Relocation Codex ($29) →**](/offers/granada-relocation-codex/) *(NEW: April 2026 Edition)*
+👉 [**Get the Seville Relocation Codex ($29) →**](/offers/seville-relocation-codex/) *(April 2026 Edition)*  
+👉 [**Get the Granada Relocation Codex ($29) →**](/offers/granada-relocation-codex/) *(April 2026 Edition)*
 
 ### 🛰️ IV. The Satellites (Marbella, Tarifa, Fuengirola)
 *Niche guides for families, luxury, and active lifestyle.*  
@@ -72,29 +72,49 @@ Verified April 2026 data on the Digital Nomad Visa and Beckham Law.
 ### 1. The Logistics (The Map)
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; margin: 1.5rem 0;">
+
+  <!-- Málaga -->
   <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #1A3A3A;">
-    <strong>🇪🇸 Málaga Relocation Checklist (March 2026 Edition)</strong><br>
+    <strong>🇪🇸 Málaga Relocation Checklist</strong><br>
     23 pages of field intelligence including the "Black Book" of vetted contacts.<br>
-    <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" style="display: inline-block; margin-top: 0.8rem; background: #1A3A3A; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist for $29</a>
+    <a href="https://books.salahnomad.com/b/malaga-relocation-checklist" style="display: inline-block; margin-top: 0.8rem; background: #1A3A3A; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist – $29</a>
   </div>
+
+  <!-- Valencia -->
   <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
-    <strong>🇪🇸 Valencia Relocation Checklist (April 2026 Edition)</strong><br>
-    DANA flood map, 12 verified Black Book contacts, DNV €2,849 threshold.<br>
-    <a href="https://books.salahnomad.com/b/valencia-relocation-checklist-2026" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist for $29</a>
+    <strong>🇪🇸 Valencia Relocation Checklist</strong><br>
+    DANA flood map, 12 verified Black Book contacts.<br>
+    <a href="https://books.salahnomad.com/b/valencia-relocation-checklist-2026" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Checklist – $29</a>
   </div>
+
+  <!-- Sevilla -->
   <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
-    <strong>🇪🇸 Seville Relocation Codex (April 2026 Edition)</strong><br>
-    Thermal & acoustic sanctuary matrix, Feria/Semana Santa survival, 30+ pages.<br>
-    <a href="https://books.salahnomad.com/b/seville-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex for $29</a>
+    <strong>🇪🇸 Seville Relocation Codex</strong><br>
+    Thermal & acoustic sanctuary matrix, Feria/Semana Santa survival.<br>
+    <a href="https://books.salahnomad.com/b/seville-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex – $29</a>
   </div>
-  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
-    <strong>🇪🇸 Granada Relocation Codex (April 2026 Edition)</strong><br>
-    Altitude & thermal sanctuary matrix, winter heating reality, 27+ pages.<br>
-    <a href="https://books.salahnomad.com/b/granada-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex for $29</a>
+
+  <!-- Barcelona -->
+  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
+    <strong>🇪🇸 Barcelona Relocation Codex (April 2026)</strong><br>
+    Housing Emergency Kit, Fiscal & Acoustic Sanctuary Map, 13 verified contacts.<br>
+    <a href="https://books.salahnomad.com/b/barcelona-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #1A5A5A; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex – $39</a>
   </div>
+
 </div>
 
-*Bundle available: Add both for $49 ($15 savings).*
+<!-- Bundle Ultimate Spain -->
+<div style="background: linear-gradient(135deg, #1A3A3A 0%, #1A5A5A 100%); color: white; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
+  <strong style="font-size: 1.3rem;">🇪🇸 Ultimate Spain Relocation Bundle – $89</strong><br>
+  <span style="opacity: 0.9;">Málaga + Valencia + Sevilla + Barcelona. Save $27.</span><br>
+  <a href="https://books.salahnomad.com/b/ultimate-spain-bundle" style="display: inline-block; margin-top: 1rem; background: #C9A227; color: #1A3A3A; padding: 0.7rem 2rem; text-decoration: none; border-radius: 4px; font-weight: 700;">👉 Get All 4 Guides</a>
+</div>
+
+<div style="background: linear-gradient(135deg, #C9A227, #B88A1A); color: #1A3A3A; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
+  <strong style="font-size: 1.3rem;">🌊 Full Mediterranean Collection – $119</strong><br>
+  <span>Málaga + Valencia + Barcelona + Seville + Granada. Save $46.</span><br>
+  <a href="https://books.salahnomad.com/b/full-mediterranean-collection" style="display: inline-block; margin-top: 1rem; background: #1A3A3A; color: #C9A227; padding: 0.7rem 2rem; text-decoration: none; border-radius: 4px; font-weight: 700;">👉 Get All 5 Guides</a>
+</div>
 
 ### 2. The Philosophy (The Soul)
 Discover how to ground your digital life in the wisdom of the earth.  
@@ -102,4 +122,4 @@ Discover how to ground your digital life in the wisdom of the earth.
 
 *“Málaga is my port. The Mediterranean is my story. Welcome to the Codex.”*  
 **— Salah Nomad**  
-*Last updated: 22 April 2026*
+*Last updated: 2 May 2026*
