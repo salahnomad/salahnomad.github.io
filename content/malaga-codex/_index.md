@@ -101,6 +101,13 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
     <a href="https://books.salahnomad.com/b/barcelona-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #1A5A5A; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex – $39</a>
   </div>
 
+  <!-- Granada -->
+  <div style="flex: 1; min-width: 220px; background: #f5f5f0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+    <strong>🇪🇸 Granada Relocation Codex</strong><br>
+    Altitude & thermal sanctuary matrix, winter heating reality.<br>
+    <a href="https://books.salahnomad.com/b/granada-relocation-codex" style="display: inline-block; margin-top: 0.8rem; background: #C9A227; color: #1A3A3A; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: 600;">👉 Get the Codex – $29</a>
+  </div>
+
 </div>
 
 <!-- Bundle Ultimate Spain -->
