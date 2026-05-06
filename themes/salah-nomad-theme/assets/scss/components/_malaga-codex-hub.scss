@@ -1,0 +1,439 @@
+// --- Mediterranean Codex Hub Styles ---
+
+.hub-container {
+  background-color: var(--color-background);
+  width: 100%;
+
+  // Correction du fil d'Ariane
+  .breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    @media (max-width: 768px) {
+      white-space: normal;
+      word-break: break-word;
+      padding: 0 0.75rem;
+    }
+  }
+
+  // Grille principale avec sidebar
+  .hub-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hub-main {
+    flex: 3;
+    min-width: 0;
+  }
+
+  .hub-sidebar {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .hub-header {
+    position: relative;
+    text-align: center;
+    padding-bottom: 4rem;
+
+    .hub-hero-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+    .hub-title-area {
+      margin-top: -100px;
+      position: relative;
+      z-index: 2;
+      padding: 0 1.5rem;
+
+      @media (max-width: 768px) {
+        margin-top: -50px;
+      }
+    }
+
+    .hub-main-title {
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      word-break: break-word;
+      margin-bottom: 0.5rem;
+    }
+
+    .hub-subtitle {
+      font-size: 1.2rem;
+      color: var(--color-text-secondary);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .rooted-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-background-alt);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      border: 1px solid var(--color-text-accent);
+      margin-top: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+  }
+
+  .hub-proof-section {
+    padding: 4rem 0;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  // Grille de l'archipel (hub principal)
+  .archipelago-grid {
+    padding: 4rem 0;
+    background-color: var(--color-background-alt);
+
+    .section-label {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      color: var(--color-text-accent);
+      margin-bottom: 2rem;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .archipelago-card {
+      background: var(--color-background);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-color: var(--color-text-accent);
+      }
+
+      h3 {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+      }
+
+      p {
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+      }
+
+      .card-tag {
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--color-text-secondary);
+        opacity: 0.7;
+      }
+
+      &.primary {
+        border: 2px solid var(--color-text-accent);
+        background: linear-gradient(135deg, var(--color-background) 0%, rgba(245, 158, 11, 0.05) 100%);
+      }
+    }
+  }
+
+  // Section des dispatches (news)
+  .dispatches-grid {
+    padding: 4rem 0;
+    background-color: var(--color-background-alt);
+
+    .section-label {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      color: var(--color-text-accent);
+      margin-bottom: 2rem;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .dispatch-card {
+      background: var(--color-background);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-color: var(--color-text-accent);
+      }
+
+      .card-tag {
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--color-text-secondary);
+        opacity: 0.7;
+        margin-bottom: 0.5rem;
+      }
+
+      // Lien cliquable pour la miniature (effet zoom)
+      .dispatch-thumbnail-link {
+        display: block;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+
+        .dispatch-thumbnail {
+          width: 100%;
+          transition: transform 0.3s ease;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+
+        &:hover .dispatch-thumbnail {
+          transform: scale(1.05);
+        }
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+        a {
+          color: var(--color-text-headings);
+          text-decoration: none;
+          &:hover {
+            color: var(--color-text-accent);
+          }
+        }
+      }
+
+      p {
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+
+      .hub-btn {
+        align-self: flex-start;
+        margin-top: auto;
+      }
+    }
+  }
+
+  .hub-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-text-headings);
+    color: white !important;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+
+    &.secondary {
+      background-color: transparent;
+      border: 1px solid var(--color-text-headings);
+      color: var(--color-text-headings) !important;
+
+      &:hover {
+        background-color: var(--color-text-headings);
+        color: white !important;
+      }
+    }
+
+    &:not(.secondary):hover {
+      background-color: var(--color-text-accent);
+    }
+  }
+
+  .hub-footer-cta {
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--color-background);
+
+    .cta-content {
+      max-width: 600px;
+      margin: 0 auto;
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .hub-grid {
+      flex-direction: column;
+    }
+    .hub-main,
+    .hub-sidebar {
+      flex: auto;
+      width: 100%;
+    }
+    .hub-header {
+      .hub-title-area {
+        margin-top: -50px;
+      }
+      .hub-subtitle {
+        font-size: 1rem;
+      }
+    }
+    .archipelago-grid {
+      .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .archipelago-card {
+        padding: 1.5rem;
+      }
+    }
+    .dispatches-grid {
+      .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .dispatch-card {
+        padding: 1rem;
+      }
+    }
+    .hub-footer-cta {
+      padding: 2rem 0;
+    }
+  }
+}
+
+// --- Correctif Dark Mode pour les cartes du hub et les boutons ---
+@media (prefers-color-scheme: dark) {
+  .hub-container {
+    .archipelago-grid .archipelago-card,
+    .dispatches-grid .dispatch-card {
+      background: #1e2a2a !important;
+      border-color: #2a3a3a !important;
+      color: #e0e0e0 !important;
+
+      h3, h3 a {
+        color: #c9a227 !important;
+      }
+
+      p, .card-tag {
+        color: #cccccc !important;
+      }
+
+      .hub-btn.secondary {
+        border-color: #c9a227 !important;
+        color: #c9a227 !important;
+        background: transparent !important;
+
+        &:hover {
+          background: #c9a227 !important;
+          color: #1a2a2a !important;
+        }
+      }
+
+      &.primary {
+        background: linear-gradient(135deg, #1e2a2a 0%, rgba(201, 162, 39, 0.15) 100%) !important;
+        border-color: #c9a227 !important;
+      }
+    }
+
+    // Correction des boutons primaires (Get the Checklist / Get the Codex)
+    .archipelago-card .hub-btn:not(.secondary),
+    .dispatches-grid .dispatch-card .hub-btn:not(.secondary) {
+      background: #c9a227 !important;
+      color: #1a2a2a !important;
+      border: none !important;
+
+      &:hover {
+        background: #d4af37 !important;
+        color: #0d1a1a !important;
+      }
+    }
+  }
+}
+
+// --- Correctif Dark Mode pour les blocs promotionnels de la section Logistics ---
+@media (prefers-color-scheme: dark) {
+  .hub-proof-section .container {
+    // Les conteneurs flex qui englobent les cartes
+    div[style*="display: flex"] {
+      // Chaque carte (Málaga, Valencia, etc.)
+      div[style*="flex: 1"] {
+        background: #1a2a2a !important;
+        border-left-color: #c9a227 !important;
+
+        strong {
+          color: #c9a227 !important;
+        }
+
+        // Texte secondaire dans les cartes
+        color: #e0e0e0 !important;
+
+        // Boutons "Get the Checklist / Get the Codex"
+        a {
+          background: #c9a227 !important;
+          color: #1a2a2a !important;
+          font-weight: bold !important;
+
+          &:hover {
+            background: #d4af37 !important;
+          }
+        }
+      }
+    }
+
+    // Bloc du bundle (Ultimate Spain / Full Mediterranean)
+    div[style*="background: linear-gradient"] {
+      border: 1px solid #c9a227 !important;
+
+      strong, span {
+        color: #ffffff !important;
+      }
+
+      a {
+        background: #c9a227 !important;
+        color: #1a2a2a !important;
+        font-weight: bold !important;
+      }
+    }
+  }
+}
