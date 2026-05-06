@@ -388,20 +388,51 @@
         color: #0d1a1a !important;
       }
     }
+  }
+}
 
-    // Blocs "🇪🇸 Málaga Relocation Checklist..." dans la section Logistics
-    .hub-proof-section .container div[style*="background: #f5f5f0"] {
-      background: #1e2a2a !important;
-      border-left-color: #c9a227 !important;
-      color: #e0e0e0 !important;
+// --- Correctif Dark Mode pour les blocs promotionnels de la section Logistics ---
+@media (prefers-color-scheme: dark) {
+  .hub-proof-section .container {
+    // Les conteneurs flex qui englobent les cartes
+    div[style*="display: flex"] {
+      // Chaque carte (Málaga, Valencia, etc.)
+      div[style*="flex: 1"] {
+        background: #1a2a2a !important;
+        border-left-color: #c9a227 !important;
 
-      strong {
-        color: #c9a227 !important;
+        strong {
+          color: #c9a227 !important;
+        }
+
+        // Texte secondaire dans les cartes
+        color: #e0e0e0 !important;
+
+        // Boutons "Get the Checklist / Get the Codex"
+        a {
+          background: #c9a227 !important;
+          color: #1a2a2a !important;
+          font-weight: bold !important;
+
+          &:hover {
+            background: #d4af37 !important;
+          }
+        }
+      }
+    }
+
+    // Bloc du bundle (Ultimate Spain / Full Mediterranean)
+    div[style*="background: linear-gradient"] {
+      border: 1px solid #c9a227 !important;
+
+      strong, span {
+        color: #ffffff !important;
       }
 
       a {
         background: #c9a227 !important;
         color: #1a2a2a !important;
+        font-weight: bold !important;
       }
     }
   }

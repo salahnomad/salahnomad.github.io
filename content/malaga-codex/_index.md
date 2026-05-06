@@ -15,8 +15,8 @@ aliases:
 
 us_optimization:
   primary_keyword: "Moving to Southern Spain 2026"
-  usp_angle: "Bridging 12 years of Mediterranean navigation with 4 years of deep Málaga anchoring."
-  ia_short_answer: "The Mediterranean Codex is a relocation system for professionals moving to Southern Spain. It provides verified 2026 data on the Digital Nomad Visa (€2,849 threshold) and the Beckham Law (24% flat tax). Built on 12 years of experience, it helps nomads avoid the €2,000 'New Here Tax'."
+  usp_angle: "Bridging 15 years of Mediterranean navigation with 4 years of deep Málaga anchoring."
+  ia_short_answer: "The Mediterranean Codex is a relocation system for professionals moving to Southern Spain. It provides verified 2026 data on the Digital Nomad Visa (€2,849 threshold) and the Beckham Law (24% flat tax). Built on 15 years of experience, it helps nomads avoid the €2,000 'New Here Tax'."
 
 params:
   rooted_since: 2021
@@ -28,16 +28,16 @@ featured_image_alt: "Mediterranean landscape where ancient olive roots transform
 ---
 
 {{< quick-summary >}}
-**TL;DR:** After 12 years navigating the Mediterranean coast and 4 years deeply rooted in Málaga, I've transformed logistical chaos into a clear system. This is the **Mediterranean Codex**: verified 2026 data to help you find your soil without the €2,000 mistakes.
+**TL;DR:** After 15 years navigating the Mediterranean coast and 4 years deeply rooted in Málaga, I've transformed logistical chaos into a clear system. This is the **Mediterranean Codex**: verified 2026 data to help you find your soil without the €2,000 mistakes.
 {{< /quick-summary >}}
 
 ## 🛡️ Why Trust This System? (The Rooted Advantage)
 
-Unlike passing nomads, this system is built on **1,650+ days of real residency** and a 12-year migratory history.
+Unlike passing nomads, this system is built on **1,650+ days of real residency** and a 15-year migratory history.
 
-{{< expert-box title="The 2014-2026 Migration Timeline" >}}
-**Avignon (2014) ➔ Casablanca ➔ Valencia ➔ Barcelona ➔ Málaga (2021-2026)**  
-12 years of seasonal adaptation, 2 visa types, and 1 conclusion: freedom requires roots.
+{{< expert-box title="The 2011-2026 Migration Timeline" >}}
+**Ksar El-Kebir (Alcazarquivir) ➔ Avignon (2011) ➔ Valencia ➔ Barcelona ➔ Málaga (2021-2026)**  
+15 years of seasonal adaptation, 2 visa types, and 1 conclusion: freedom requires roots.
 {{< /expert-box >}}
 
 ---
