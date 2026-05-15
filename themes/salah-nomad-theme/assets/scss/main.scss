@@ -21,11 +21,11 @@
 @import 'components/testimonial-cards';
 // AJOUTEZ CETTE LIGNE
 @import 'components/payhip-embed'; // <-- Nouveau fichier
-// ... autres composants ...
-// AJOUTEZ CETTE LIGNE POUR LE CHALLENGE-BOX
+// ... autres imports ...
 @import 'components/challenge-box';
-// AJOUTEZ CETTE LIGNE ICI - Import YouTube
-@import 'components/youtube'; // <-- NOUVEAU FICHIER YouTube
+@import 'components/figures';   // <-- AJOUTE CETTE LIGNE
+@import 'components/youtube';
+// ...
 
 // AJOUTEZ CETTE LIGNE POUR LA NEWSLETTER
 @import 'components/newsletter'; // <-- NOUVEAU COMPOSANT NEWSLETTER

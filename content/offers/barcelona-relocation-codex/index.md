@@ -13,6 +13,7 @@ aliases:
   - "/barcelona-codex/"
   - "/offers/barcelona/"
   - "/malaga-codex/barcelona-waitlist/"
+  - "/barcelona"
 
 us_optimization:
   primary_keyword: "Barcelona relocation guide 2026"
@@ -84,7 +85,7 @@ None of this appears in free blogs. All of it is in this guide.
 ---
 
 <!-- HOUSING EMERGENCY KIT SECTION -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
   <div style="flex: 1; min-width: 250px;">
     <h3 style="color: #1A3A3A; margin-top: 0;">🏚️ Housing Emergency Kit</h3>
     <p>Barcelona's rental market has 99 contacts per listing. That is 37 times more competitive than a balanced market.</p>
@@ -97,7 +98,7 @@ None of this appears in free blogs. All of it is in this guide.
 </div>
 
 <!-- SANCTUARY MAP SECTION -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img src="images/sanctuary-map-teaser.jpg" alt="Barcelona neighbourhood map showing acoustic risk zones and fiscal exposure — Fiscal & Acoustic Sanctuary Map" style="max-width: 100%; border-radius: 8px;">
   </div>
@@ -110,7 +111,7 @@ None of this appears in free blogs. All of it is in this guide.
 </div>
 
 <!-- BLACK BOOK SECTION -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A3A3A;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A3A3A;">
   <div style="flex: 1; min-width: 250px;">
     <h3 style="color: #1A3A3A; margin-top: 0;">🏛️ Verified Black Book</h3>
     <p>Every contact is commission-free, ICAB-verified, and field-tested with real client timelines and fees.</p>
@@ -123,7 +124,7 @@ None of this appears in free blogs. All of it is in this guide.
 </div>
 
 <!-- ANCHORING RITUALS SECTION -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img src="images/vermut-ritual-teaser.jpg" alt="Glass of red vermouth on a Gràcia bar counter, symbolizing the Barceloní Code anchoring ritual" style="max-width: 100%; border-radius: 8px;">
   </div>
@@ -201,7 +202,7 @@ Yes. Every figure — rent averages, DNV income threshold, Beckham Law condition
 Because Barcelona is Spain's most complex relocation market. Law 11/2025, Catalonia's specific fiscal regime, the most competitive rental market in Southern Europe, and the highest density of bureaucratic traps require deeper research and a larger verified contact network. The $39 reflects the depth of the intelligence, not a marketing decision. A single mistake avoided — a fiscal misstep, a scam deposit, an illegal lease — returns the price of the guide many times over.
 {{< /short-faq >}}
 
-{{< short-faq question="I already own the Málaga Checklist. Is Barcelona a different system?" >}}
+{{< short-faq question="I already own the Málaga Codex. Is Barcelona a different system?" >}}
 Yes. The two guides share the same editorial DNA — field-verified data, Black Book contacts, acoustic mapping — but Barcelona operates under Catalonia's distinct legal and fiscal framework. Law 11/2025 has no equivalent in Málaga. The Wealth Tax threshold is different. The rental market dynamics are different. The bureaucracy timelines are different. The Barcelona Codex is not a template — it is a separate field investigation.
 {{< /short-faq >}}
 
@@ -221,7 +222,7 @@ No. The Barcelona Relocation Codex is field intelligence — verified data, mapp
 
 ## Bundle & Save
 
-Already own the [Málaga Relocation Checklist](/offers/malaga-relocation-checklist/) ($29)?
+Already own the [Málaga Relocation Codex](/offers/malaga-relocation-checklist/) ($29)?
 
 Add the **Barcelona Codex** for only **$29** during checkout — total **$59**, saving $9 versus separate purchase.
 
@@ -243,7 +244,7 @@ The Barcelona Relocation Codex is part of a field-verified system covering South
 
 | City | Status | Price | Edition |
 |------|--------|-------|---------|
-| 🇪🇸 **Málaga** — The Lighthouse | ✅ Available | $29 | March 2026 |
+| 🇪🇸 **Málaga** — The Lighthouse | ✅ Available | $29 | May 2026 |
 | 🇪🇸 **Barcelona** — The Tech Capital | ✅ Available | $39 | April 2026 |
 | 🇪🇸 **Valencia** — The Mediterranean Corridor | ✅ Available | $29 | April 2026 |
 | 🇪🇸 **Seville** — The Ancestral Soul | ✅ Available | $29 | April 2026 |

@@ -342,8 +342,138 @@
   }
 }
 
-// --- Correctif Dark Mode pour les cartes du hub et les boutons ---
+// --- Styles pour les cartes et bundles de la section Logistics (remplace les styles inline) ---
+.hub-logistics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.hub-card {
+  flex: 1;
+  min-width: 220px;
+  background: #f5f5f0;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border-left: 4px solid #1A3A3A;
+  color: #1a1a1a;
+}
+
+// Variantes de couleur par ville
+.malaga-card {
+  border-left-color: #1A3A3A;
+}
+.valencia-card,
+.sevilla-card,
+.granada-card {
+  border-left-color: #C9A227;
+}
+.barcelona-card {
+  border-left-color: #1A5A5A;
+}
+
+.hub-card-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: #1A3A3A;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  &:hover {
+    background: darken(#1A3A3A, 10%);
+  }
+}
+
+// Bundles
+.hub-bundle {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+  &.ultimate-spain {
+    background: linear-gradient(135deg, #1A3A3A 0%, #1A5A5A 100%);
+  }
+  &.full-mediterranean {
+    background: linear-gradient(135deg, #C9A227, #B88A1A);
+    color: #1A3A3A;
+  }
+}
+
+.bundle-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.bundle-subtitle {
+  opacity: 0.9;
+}
+
+.bundle-btn,
+.hub-bundle-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.ultimate-spain .hub-bundle-btn {
+  background: #C9A227;
+  color: #1A3A3A;
+}
+
+.full-mediterranean .hub-bundle-btn {
+  background: #1A3A3A;
+  color: #C9A227;
+}
+
+// --- Mode sombre pour les cartes et bundles ---
 @media (prefers-color-scheme: dark) {
+  .hub-card {
+    background: #1e2a2a !important;
+    border-color: #2a3a3a !important;
+    color: #e0e0e0 !important;
+
+    strong {
+      color: #c9a227 !important;
+    }
+
+    .hub-card-btn {
+      background: #c9a227 !important;
+      color: #1a2a2a !important;
+      &:hover {
+        background: #d4af37 !important;
+      }
+    }
+  }
+
+  .hub-bundle {
+    border: 1px solid #c9a227 !important;
+    &.full-mediterranean {
+      background: linear-gradient(135deg, #1e2a2a, #2a3a3a) !important;
+      color: #e0e0e0 !important;
+      .hub-bundle-btn {
+        background: #c9a227 !important;
+        color: #1a2a2a !important;
+      }
+    }
+    &.ultimate-spain {
+      background: linear-gradient(135deg, #1e2a2a, #2a3a3a) !important;
+      color: #e0e0e0 !important;
+      .hub-bundle-btn {
+        background: #c9a227 !important;
+        color: #1a2a2a !important;
+      }
+    }
+  }
+
+  // Correction des anciens correctifs pour éviter les conflits
   .hub-container {
     .archipelago-grid .archipelago-card,
     .dispatches-grid .dispatch-card {
@@ -376,7 +506,7 @@
       }
     }
 
-    // Correction des boutons primaires (Get the Checklist / Get the Codex)
+    // Boutons primaires
     .archipelago-card .hub-btn:not(.secondary),
     .dispatches-grid .dispatch-card .hub-btn:not(.secondary) {
       background: #c9a227 !important;
@@ -390,50 +520,26 @@
     }
   }
 }
-
-// --- Correctif Dark Mode pour les blocs promotionnels de la section Logistics ---
+// --- Correctif Dark Mode pour les blocs des landing pages (Málaga, Barcelona, etc.) ---
 @media (prefers-color-scheme: dark) {
-  .hub-proof-section .container {
-    // Les conteneurs flex qui englobent les cartes
-    div[style*="display: flex"] {
-      // Chaque carte (Málaga, Valencia, etc.)
-      div[style*="flex: 1"] {
-        background: #1a2a2a !important;
-        border-left-color: #c9a227 !important;
+  .landing-box {
+    background: #1e2a2a !important;
+    border-color: #2a3a3a !important;
+    color: #e0e0e0 !important;
 
-        strong {
-          color: #c9a227 !important;
-        }
-
-        // Texte secondaire dans les cartes
-        color: #e0e0e0 !important;
-
-        // Boutons "Get the Checklist / Get the Codex"
-        a {
-          background: #c9a227 !important;
-          color: #1a2a2a !important;
-          font-weight: bold !important;
-
-          &:hover {
-            background: #d4af37 !important;
-          }
-        }
-      }
+    h3 {
+      color: #c9a227 !important;
     }
 
-    // Bloc du bundle (Ultimate Spain / Full Mediterranean)
-    div[style*="background: linear-gradient"] {
-      border: 1px solid #c9a227 !important;
+    p {
+      color: #e0e0e0 !important;
+    }
 
-      strong, span {
-        color: #ffffff !important;
-      }
-
-      a {
-        background: #c9a227 !important;
-        color: #1a2a2a !important;
-        font-weight: bold !important;
-      }
+    // Préserve les couleurs des textes en gras dans les bandeaux colorés
+    p[style*="color: #1A5A5A"],
+    p[style*="color: #C9A227"],
+    p[style*="color: #1A3A3A"] {
+      color: #c9a227 !important;
     }
   }
 }
