@@ -1,158 +1,233 @@
 ---
-title: "The Valencia Relocation Checklist (2026) – DANA Map, Black Book & DNV Threshold"
-subtitle: "Field‑tested. Verified. Rooted."
-description: "Stop guessing. Get the complete 2026 Valencia relocation blueprint: exclusive DANA flood risk zones, verified Black Book contacts, DNV income threshold, and anchoring rituals – all inside the PDF."
-date: 2026-04-12
-lastmod: 2026-04-12
+title: "The Valencia Relocation Codex (2026 Edition)"
+subtitle: "The logistical & acoustic blueprint to anchor your life in Valencia in 7 days – without paying the Nomad Tax"
+description: "Stop searching Idealista. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data: DNV threshold, real rents, DANA flood map, acoustic scores, and vetted contacts."
+date: 2026-03-15
+lastmod: 2026-05-19
 draft: false
 layout: "single"
 aliases:
-  - "/malaga-codex/valencia-waitlist/"
+  - "/valencia-codex/"
   - "/valencia-relocation-checklist/"
   - "/valencia"
-featured_image: "images/valencia-cover-FINALE.jpg"
-featured_image_alt: "Valencia Relocation Checklist cover – Mediterranean Codex"
+featured_image: "images/valencia-relocation-codex-cover-fpv-city-arts-sciences-16x9.jpg"
+featured_image_alt: "FPV drone flying over Valencia's City of Arts and Sciences at golden hour — cover image of The Valencia Relocation Codex 2026, field-tested relocation guide for digital nomads by Salah Nomad"
 ---
 
 {{< quick-summary >}}
-**TL;DR:** Moving to Valencia in 2026? This 24‑page field‑tested checklist gives you the exclusive DANA flood risk map, 12 verified Black Book contacts, the exact DNV income threshold, real neighborhood rents, and anchoring rituals – all verified for March 2026. Instant PDF.
+**TL;DR:** Moving to Valencia in 2026 is an exercise in navigating a city that balances technological ambition with the memory of water. This **38‑page PDF** gives you the exact sequence to settle in 7 days – without paying the "Nomad Tax" on rent, visas, or bad contracts.
 {{< /quick-summary >}}
 
-<a href="https://books.salahnomad.com/b/valencia-relocation-checklist-2026" class="btn-library" style="display: inline-block; background: #1a3a3a; color: #fff; padding: 1.2rem 2.8rem; text-decoration: none; font-weight: 700; font-size: 1.2rem; border-radius: 4px; letter-spacing: 0.5px; width: 100%; text-align: center; margin-bottom: 1.5rem;">📥 Get the Blueprint – $29</a>
+---
 
-<!-- IMAGE HERO (pleine largeur) -->
-{{< figure src="images/hero-flatlay.jpg" alt="Valencia relocation tools – leather notebook, key, coffee" class="full-width" >}}
+## Why Valencia Is Not Just Another Spanish City
+
+Valencia operates under the Comunidad Valenciana's distinct fiscal framework — a **€1,000,000 Wealth Tax exemption** (versus €700,000 nationally and €500,000 in Catalonia). The rental market has seen a **15.1% year‑on‑year increase** in the province. The acoustic environment is officially mapped into *Zonas Acústicamente Saturadas* (ZAS). And the **DANA flood of October 2025** rewrote the insurance landscape for 17 postal codes.
+
+None of this appears in free blogs. All of it is in this guide.
 
 ---
 
-## You cannot hack roots. But you can stop paying the “Nomad Tax.”
+## What You Get
 
-Valencia in 2026 is not the hidden gem it was three years ago. Rents have surged. The Digital Nomad Visa threshold has increased. And the 2025 DANA floods proved one thing: *water remembers what humans forget.*
+| Chapter | What It Covers |
+|---------|----------------|
+| 🌊 **The 5 Valencian Betrayals** | The DANA trap, the Ruzafa bubble, the Padrón backlog, the ático oven, and the expat bubble — five mistakes I watched good people make |
+| 🏚️ **Housing Emergency Kit** | The 2026 rental battlefield, the *Contrato de Temporada* trap, how to beat the landlord filter as a foreigner, your rental dossier, and the realistic Relocation Buffer |
+| 🌊 **DANA Flood & Acoustic Sanctuary Map** | Official flood risk zones (CHJ March 2026), ZAS acoustic scores per barrio, and the insurance clauses most new arrivals miss |
+| 🏛️ **The Bureaucracy Blueprint** | DNV (€2,849/month threshold), NLV, Beckham Law filing, NIE/TIE — with real-world Valencian Community timelines |
+| 📖 **Verified Black Book** | Commission‑free, verified contacts: immigration lawyers, fiscalists, notaries, NIE/TIE specialists, a relocation advisor, a post‑DANA insurance broker, and a nomad‑friendly bank — with exact fees and who to ask for |
+| 🏘️ **Neighborhood Oracle** | 6 barrio archetypes with 2026 rents, acoustic scores, flood risk ratings, fiber reality, and the right archetype for your work style |
+| 💶 **No‑Surprise Budget** | Winter vs. summer two‑season reality, one‑time setup costs, and the Housing Buffer calculation |
+| ⚓ **Anchoring Rituals — The Valencian Code** | 5 field‑tested practices — from the horchata that tastes like belonging, to the Turia kilometer that becomes yours |
+| ✅ **Pre‑Arrival Checklist** | D‑90 to D‑1: the exact sequence from your home country to your first signed lease |
+| 📅 **First 7 Days Schedule** | Day‑by‑day protocol from arrival to bureaucracy initiation to your first authentic paella at El Palmar |
+| 🔄 **Quarterly Updates** | Every new edition for 12 months — included in your purchase |
 
-This is not a tourist brochure. It’s a **field‑tested operational manual** – built over 3 months of on‑ground research with 4 local partners (immigration lawyers, property managers, gestorías).
-
-**What the PDF helps you avoid (inside only):**
-- ❌ Signing a 12‑month lease in a flood‑red zone
-- ❌ Paying illegal agency fees (up to thousands of euros)
-- ❌ Wasting weeks on *Padrón* appointments
-- ❌ The overpriced “trendy” neighborhoods that ruin your sleep
-
----
-
-## 🗺️ What’s inside the PDF (exclusive, not listed here)
-
-| Section | What you’ll discover (only in the PDF) |
-|---------|----------------------------------------|
-| 🚨 **DANA Flood Risk Map** | Official Valencia City Council zones (Green/Yellow/Red) + insurance clause checklist. Avoid €8,000–15,000 in potential losses. |
-| ⚖️ **Bureaucracy Blueprint** | The exact D‑60 to D‑0 timeline for DNV, NL Visa, NIE, Empadronamiento – with apostille expiration traps exposed. |
-| 🏛️ **Verified Black Book** | 12 commission‑free contacts (lawyers, gestorías, sworn translators, honest housing agents). All tested for English/Spanish and DNV/Beckham expertise. |
-| 📍 **Neighborhood Oracle** | 6 barrio archetypes with real 2026 rents, noise levels, and flood risk per street – so you don’t overpay. |
-| 💶 **No‑Surprise Budget** | Realistic monthly costs, including the “Summer Oven” AC spike and 21% IVA on coworking. |
-| ⚓ **Anchoring Rituals** | 5 sensory practices (horchata, mercado, Turia park, esmorzaret) to become a rooted local in 30 days. |
-| ✅ **Pre‑arrival + First 7 days** | Step‑by‑step from landing to signed lease. |
-| 🔄 **Quarterly updates** | You receive every new edition for 1 year. |
-
-*The exact numbers, contacts, and maps are only available inside the paid PDF – that’s why it’s worth $29.*
+*The exact numbers, contacts, maps, and legal clauses are only inside the paid PDF.*
 
 ---
 
-<!-- SECTION DANA MAP (texte à gauche, image à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #D4756A;">
-  <div style="flex: 1; min-width: 250px;">
-    <h3 style="color: #1A3A3A; margin-top: 0;">🚨 The DANA Flood Risk Map</h3>
-    <p>After the 2025 floods, the housing map changed completely. Insurance clauses were rewritten overnight.</p>
-    <p>Inside the PDF, you unlock the exact street‑level zones (Green/Yellow/Red) you must avoid to prevent signing a toxic 12‑month lease.</p>
-    <p style="font-weight: bold; color: #D4756A;">Don't sign a lease blind.</p>
-  </div>
+<!-- DANA FLOOD & ACOUSTIC SANCTUARY MAP SECTION -->
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
-    <img src="images/dana-map-teaser.jpg" alt="DANA Flood Risk Map – censored preview" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(-1deg);">
+    <img src="images/valencia-cobblestones-rain.jpg" alt="Cobblestones in Cabanyal after rain — the memory of the DANA flood held in the silt between stones" style="max-width: 100%; border-radius: 8px;">
+  </div>
+  <div style="flex: 1; min-width: 250px;">
+    <h3 style="color: #1A3A3A; margin-top: 0;">🌊 DANA Flood & Acoustic Sanctuary Map</h3>
+    <p>In Valencia, your neighbourhood choice is not aesthetic. It is hydrological and physiological.</p>
+    <p>The Codex maps every major neighbourhood by official flood risk (CHJ March 2026), acoustic saturation (ZAS zones), and thermal exposure — so you know where to anchor before you search a single listing.</p>
+    <p style="font-weight: bold; color: #C9A227;">Find your sanctuary. Not just a flat.</p>
   </div>
 </div>
 
-<!-- SECTION BLACK BOOK (image à gauche, texte à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
-  <div style="flex: 1; min-width: 250px; text-align: center;">
-    <img src="images/black-book-teaser.jpg" alt="Verified Black Book – leather notebook with stamp" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(1deg);">
-  </div>
+<!-- HOUSING EMERGENCY KIT SECTION -->
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
   <div style="flex: 1; min-width: 250px;">
-    <h3 style="color: #1A3A3A; margin-top: 0;">🏛️ Verified Black Book</h3>
-    <p>12 commission‑free contacts. Lawyers, gestorías, sworn translators, honest housing agents.</p>
-    <p>All tested for English/Spanish fluency and DNV/Beckham Law expertise. Zero affiliate links.</p>
-    <p style="font-weight: bold; color: #C9A227;">The contacts you can trust.</p>
+    <h3 style="color: #1A3A3A; margin-top: 0;">🏚️ Housing Emergency Kit</h3>
+    <p>Valencia's rental market in 2026 has seen a <strong>15.1% year‑on‑year price surge</strong> in the province. Landlords reject foreign applicants systematically — not because of nationality, but because your income is unseizable by Spanish courts.</p>
+    <p>Inside the Codex, you get the exact rental dossier that transforms you from "unknown foreigner" to "pre‑approved tenant" — and the legal framework to spot an illegal <em>Contrato de Temporada</em> before you sign.</p>
+    <p style="font-weight: bold; color: #1A5A5A;">Don't arrive blind. Arrive prepared.</p>
+  </div>
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img src="images/valencia-patraix-facade.jpg" alt="Residential façade in Patraix, Valencia — laundry hanging from a wrought-iron balcony, everyday dignity" style="max-width: 100%; border-radius: 8px;">
   </div>
 </div>
 
-<!-- SECTION BUDGET (texte à gauche, image à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
+<!-- VERIFIED BLACK BOOK SECTION -->
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A3A3A;">
   <div style="flex: 1; min-width: 250px;">
-    <h3 style="color: #1A3A3A; margin-top: 0;">💶 No‑Surprise Budget</h3>
-    <p>Realistic monthly costs (€1,830–2,460), including the “Summer Oven” AC spike and 21% IVA on coworking.</p>
-    <p>No fake “cheap Spain” numbers. This is what Valencia actually costs in 2026.</p>
-    <p style="font-weight: bold; color: #1A5A5A;">Budget with confidence.</p>
+    <h3 style="color: #1A3A3A; margin-top: 0;">📖 Verified Black Book</h3>
+    <p>Every contact is commission‑free, verified, and field‑tested with real client timelines and fees.</p>
+    <p>Immigration lawyers who resolve complex DNV cases others reject. Fiscalists who specialise in the Beckham Law + Valencian Wealth Tax exemption. A relocation advisor who has guided hundreds of expats. A post‑DANA insurance broker who understands the new exclusion clauses. A notary, a sworn translator, and a gestoría that bypasses the Padrón backlog.</p>
+    <p style="font-weight: bold; color: #1A3A3A;">The contacts you can trust. Verified May 2026.</p>
   </div>
   <div style="flex: 1; min-width: 250px; text-align: center;">
-    <img src="images/budget-teaser.jpg" alt="Budget chart – blurred values" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(-1deg);">
+    <img src="images/valencia-gestoria-desk.jpg" alt="Gestoría desk — EX-15 form, fountain pen, official stamp, half-drunk espresso under tungsten light" style="max-width: 100%; border-radius: 8px;">
   </div>
 </div>
 
-<!-- SECTION RITUALS (image à gauche, texte à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8D5C4;">
+<!-- ANCHORING RITUALS SECTION -->
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
-    <img src="images/horchata-ritual.jpg" alt="Horchata ritual – glass of horchata" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(1deg);">
+    <img src="images/valencia-horchata-glass.jpg" alt="Glass of horchata sweating on white Carrara marble — the condensation is the story, the ritual of arrival" style="max-width: 100%; border-radius: 8px;">
   </div>
   <div style="flex: 1; min-width: 250px;">
-    <h3 style="color: #1A3A3A; margin-top: 0;">⚓ Anchoring Rituals</h3>
-    <p>5 sensory practices (horchata, mercado, Turia park, esmorzaret) to become a rooted local in 30 days.</p>
-    <p>Integration is ritual. These habits transform you from digital ghost to resident.</p>
-    <p style="font-weight: bold; color: #8B6F47;">Belong, not just live.</p>
+    <h3 style="color: #1A3A3A; margin-top: 0;">⚓ The Valencian Code</h3>
+    <p>Relocation is logistics. Integration is ritual.</p>
+    <p>The Codex includes 5 field‑tested anchoring practices — from the horchata that tastes like belonging, to the Turia kilometer that becomes yours, to the esmorzaret where business and friendship happen. These are not "things to do". They are rites of passage.</p>
+    <p style="font-weight: bold; color: #C9A227;">Belong. Don't just live.</p>
   </div>
 </div>
 
 ---
 
-## 💬 What early readers say
+## What This Is Not
 
-{{< testimonial-card author="Marcus & Lena" role="E‑commerce founders, arrived Feb 2026" source="Beta readers" >}}
-"The DANA Flood Map saved us from signing a 12‑month lease in a red zone. We used the Black Book housing agent instead and secured a safe apartment. Worth every cent."
-{{< /testimonial-card >}}
+<ul style="list-style-type: none; padding-left: 0;">
+  <li style="margin-bottom: 8px;">✗ Not a tourist guide</li>
+  <li style="margin-bottom: 8px;">✗ Not "top 10 things to do in Valencia"</li>
+  <li style="margin-bottom: 8px;">✗ No theory — only field‑tested, source‑verified data</li>
+  <li style="margin-bottom: 8px;">✗ No unverifiable contacts</li>
+  <li style="margin-bottom: 8px;">✗ No affiliate commissions from listed professionals</li>
+  <li style="margin-bottom: 8px;">✗ No fabricated testimonials</li>
+</ul>
 
-{{< testimonial-card author="Sarah J." role="Software engineer, arrived March 2026" source="Community" >}}
-"I was stuck for weeks trying to get my Padrón appointment. The gestoría from the Black Book had it sorted in days. This PDF paid for itself ten times over."
-{{< /testimonial-card >}}
+> *"May you find your soil sooner than I did."*
+> **— Salah Nomad, Málaga → Valencia, May 2026**
 
 ---
 
-## ❓ Frequently asked questions
+## Who This Is For
 
-{{< short-faq question="Is this data really updated for March 2026?" >}}
-Yes. Every figure – rent averages, DNV threshold, Beckham Law conditions – has been verified against official sources (Real Decreto 126/2026, Valencia City Council GIS, Idealista trend data). The PDF includes a **Verification Log** with dates and sources.
+**This guide is for you if:**
+
+- You are a remote worker, freelancer, or digital nomad planning to relocate to Valencia in the next 6 months
+- You earn in USD, GBP, EUR, or another foreign currency and need to understand the Valencian fiscal landscape before committing
+- You have looked at Valencia listings on Idealista and felt the market was incomprehensible
+- You want to activate the Digital Nomad Visa or evaluate the Beckham Law — and need accurate May 2026 data, not a 2023 blog post
+- You value your time at more than the cost of a single mistake avoided
+
+**This guide is not for you if:**
+
+- You are looking for general Spain travel advice
+- You are planning a stay of less than 3 months
+- You are not prepared to engage with legal and fiscal complexity
+
+---
+
+## The 2026 Rental Reality — In Numbers
+
+The data that matters is inside the PDF. But here is the context:
+
+Valencia's rental market in 2026 is the fastest‑rising in Spain (+15.1% YoY in the province). Patraix — once the quiet local haven — has seen prices climb. Some popular barrios have become acoustic red zones for remote workers — the full 1‑to‑10 scores per neighbourhood are only inside the guide. The gap between what you see on a portal and what a prepared foreigner can actually access is the core intelligence this guide delivers.
+
+**The DANA insurance trap** is the single most expensive mistake new arrivals make. After October 2025, exclusion clauses multiplied in 17 postal codes. This guide maps them all.
+
+---
+
+## The Fiscal Advantage Most Nomads Discover Too Late
+
+The Comunidad Valenciana is Spain's most tax‑efficient region for high‑net‑worth individuals after Andalusia. The **€1,000,000 Wealth Tax exemption** — unique to the Comunidad Valenciana — can save you thousands of euros per year compared to Catalonia or Madrid.
+
+The Codex maps this landscape clearly — and tells you exactly when to consult a Valencian fiscal specialist, and which one.
+
+*The Codex does not constitute legal or fiscal advice. It maps the terrain. Your specialist navigates it.*
+
+---
+
+## Frequently Asked Questions
+
+{{< short-faq question="Is this data really updated for May 2026?" >}}
+Yes. Every figure — rent averages, DNV income threshold (€2,849/month gross per Real Decreto 126/2026), DANA flood zones (CHJ March 2026), acoustic scores, Black Book contact fees — has been verified against official sources. The PDF includes a Verification Log with exact dates and source references.
 {{< /short-faq >}}
 
-{{< short-faq question="Why should I pay $29 if I can find free blogs?" >}}
-Free blogs give you generic advice. This PDF gives you **exclusive, field‑verified data** – the DANA flood risk map, the exact Black Book contacts, the real 2026 budget, and the step‑by‑step bureaucracy timeline. It’s the shortcut that saves you weeks of research and thousands in mistakes.
+{{< short-faq question="Why is Valencia $29 when Barcelona is $39?" >}}
+Because Valencia operates under the Comunidad Valenciana's simpler fiscal and rental framework. Barcelona's Law 11/2025, higher Wealth Tax exposure, and significantly more competitive rental market require deeper research and a larger verified contact network. The $29 reflects the complexity of the market — not a quality difference.
 {{< /short-faq >}}
 
-{{< short-faq question="How do I get the quarterly updates?" >}}
-All buyers receive an email notification when a new version is released. The download link stays the same – you’ll always get the latest edition.
+{{< short-faq question="I already own the Málaga Codex. Is Valencia different?" >}}
+Yes. The two guides share the same editorial DNA — field‑verified data, Black Book contacts, acoustic mapping — but Valencia operates under the Comunidad Valenciana's distinct legal and fiscal framework. The Wealth Tax exemption is different (€1,000,000 vs. Andalusia's 100%). The DANA flood risk is unique. The rental market dynamics are different. The bureaucracy timelines are different. The Valencia Codex is not a template — it is a separate field investigation.
+{{< /short-faq >}}
+
+{{< short-faq question="What if I am still deciding between Valencia and another city?" >}}
+The Mediterranean Duo gives you any two city guides for $49 — saving $9 versus separate purchases. If you are comparing Valencia with Málaga, Barcelona, Seville, or Granada, the bundle is the right entry point. Each guide uses the same evaluation framework, so comparison is direct.
+{{< /short-faq >}}
+
+{{< short-faq question="How do quarterly updates work?" >}}
+All buyers receive an email notification when a new version is released. The download link on Payhip stays the same — you always access the latest edition at no additional cost. The next scheduled update is Q3 2026.
+{{< /short-faq >}}
+
+{{< short-faq question="Does this guide constitute legal or immigration advice?" >}}
+No. The Valencia Relocation Codex is field intelligence — verified data, mapped risks, and vetted contacts. It tells you what to look for and who to call. The Verified Black Book professionals provide the qualified advice for your specific situation.
 {{< /short-faq >}}
 
 ---
 
-## 📦 Bundle & save
+## Bundle & Save
 
-Already own the [Málaga Relocation Checklist](/offers/malaga-relocation-checklist/)? Add the **Valencia edition** for only **$15** during checkout (total $49).  
-Perfect if you’re still comparing coastal hubs before making your final decision.
+Already own the [Málaga Relocation Codex](/offers/malaga-relocation-checklist/) ($29)?
+
+Add the **Valencia Codex** for only **$29** during checkout — total **$58**, saving $9 versus separate purchase.
+
+Or go deeper with the **Mediterranean Bundle**:
+
+| Bundle | Guides Included | Price | Saving |
+|--------|----------------|-------|--------|
+| Mediterranean Duo | Any 2 guides | $49 | Save $9 |
+| Southern Spain Collection | Málaga + Valencia + Seville + Granada | $89 | Save $27 |
+| Full Mediterranean | All 5 guides including Barcelona | $119 | Save $46 |
+
+*All bundles include quarterly updates for 12 months.*
 
 ---
 
-<a href="https://books.salahnomad.com/b/valencia-relocation-checklist-2026" class="btn-library" style="display: inline-block; background: #C9A227; color: #1A3A3A; padding: 1.2rem 2.8rem; text-decoration: none; font-weight: 700; font-size: 1.2rem; border-radius: 4px; letter-spacing: 0.5px; width: 100%; text-align: center;">👉 Download the Checklist – $29</a>
+## The Complete Mediterranean Codex System
 
-*Instant PDF download*
+The Valencia Relocation Codex is part of a field‑verified system covering Southern Spain's key relocation destinations.
+
+| City | Status | Price | Edition |
+|------|--------|-------|---------|
+| 🇪🇸 **Málaga** — The Lighthouse | ✅ Available | $29 | May 2026 |
+| 🇪🇸 **Barcelona** — The Tech Capital | ✅ Available | $39 | April 2026 |
+| 🇪🇸 **Valencia** — The Mediterranean Corridor | ✅ Available | $29 | May 2026 |
+| 🇪🇸 **Seville** — The Ancestral Soul | ✅ Available | $29 | April 2026 |
+| 🇪🇸 **Granada** — The Altitude Sanctuary | ✅ Available | $29 | April 2026 |
+| 🛰️ **Satellites** (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+
+*Want the philosophy behind the system? Read [Algorithmic Sardines](/offers/algorithmic-sardines/) — the book that explains why roots matter more than routes.*
 
 ---
 
-<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-size: 0.9rem; text-align: center; color: #666;">
-  Rooted in Málaga since 2021 – now helping you root in Valencia.<br>
+<a href="https://books.salahnomad.com/b/valencia-relocation-checklist" class="btn-library" style="display: inline-block; background: #C9A227; color: #1A3A3A; padding: 1.2rem 2.8rem; text-decoration: none; font-weight: 700; font-size: 1.1rem; border-radius: 4px; letter-spacing: 0.5px; width: 100%; text-align: center; box-sizing: border-box;">Get the Valencia Relocation Codex — $29 →</a>
+
+*Instant PDF download · May 2026 Edition · Verified & Corrected · Edition 2026.4 Final+*
+
+---
+
+<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-size: 0.875rem; text-align: center; color: #666; line-height: 1.7;">
+  Rooted in Málaga since 2021 — field research conducted in Valencia, May 2026.<br>
   <strong>— Salah Nomad</strong><br>
-  <em>Mediterranean Codex System – April 2026</em>
+  <em>Mediterranean Codex System · salahnomad.com/valencia</em><br><br>
+  <strong>Disclaimer:</strong> This guide does not constitute legal, fiscal, or immigration advice. Consult a qualified professional for your personal situation. Black Book entries verified May 2026 — confirm current details before engagement. Purchasers receive update notifications by email — keep your receipt.
 </div>
