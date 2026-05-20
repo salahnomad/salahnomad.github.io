@@ -3,7 +3,7 @@ title: "The Seville Relocation Codex (2026) – Thermal Map, Black Book & DNV Th
 subtitle: "Field‑tested. Verified. Rooted."
 description: "Stop guessing. Get the complete 2026 Seville relocation blueprint: exclusive Thermal & Acoustic Sanctuary Map, verified Black Book contacts, DNV income threshold, and anchoring rituals – all inside the PDF."
 date: 2026-04-14
-lastmod: 2026-04-21
+lastmod: 2026-05-20
 draft: false
 layout: "single"
 aliases:
@@ -58,7 +58,7 @@ This is not a tourist brochure. It's a **field‑tested operational manual** –
 ---
 
 <!-- SECTION THERMAL MAP (texte à gauche, image à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #D4756A;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #D4756A;">
   <div style="flex: 1; min-width: 250px;">
     <h3 style="color: #1A3A3A; margin-top: 0;">🌡️ The Thermal & Acoustic Sanctuary Map</h3>
     <p>After the 2025 heat records (30 days above 40°C), the housing map changed completely. Some historic neighborhoods become unlivable ovens.</p>
@@ -71,7 +71,7 @@ This is not a tourist brochure. It's a **field‑tested operational manual** –
 </div>
 
 <!-- SECTION BLACK BOOK (image à gauche, texte à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #C9A227;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img src="images/black-book-teaser.jpg" alt="Verified professional contacts notebook with notary stamp and wax seal – commission-free resources inside the Codex" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(1deg);">
   </div>
@@ -84,7 +84,7 @@ This is not a tourist brochure. It's a **field‑tested operational manual** –
 </div>
 
 <!-- SECTION BUDGET (texte à gauche, image à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #1A5A5A;">
   <div style="flex: 1; min-width: 250px;">
     <h3 style="color: #1A3A3A; margin-top: 0;">💶 No‑Surprise Budget (Two‑Season Reality)</h3>
     <p>Realistic monthly costs (€2,000–2,400), including the "Summer Oven" AC spike and 21% IVA on coworking.</p>
@@ -97,7 +97,7 @@ This is not a tourist brochure. It's a **field‑tested operational manual** –
 </div>
 
 <!-- SECTION RITUALS (image à gauche, texte à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8D5C4;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8D5C4;">
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img src="images/ritual-teaser.jpg" alt="Plaza de España at dawn – empty and serene, representing the anchoring rituals protocol inside the Codex" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: rotate(1deg);">
   </div>
@@ -110,7 +110,7 @@ This is not a tourist brochure. It's a **field‑tested operational manual** –
 </div>
 
 <!-- SECTION ESCAPE ROUTES (texte à gauche, image à droite) -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #6B8E8E;">
+<div class="landing-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin: 3rem 0; background: #F9FAFB; padding: 2rem; border-radius: 12px; border-left: 4px solid #6B8E8E;">
   <div style="flex: 1; min-width: 250px;">
     <h3 style="color: #1A3A3A; margin-top: 0;">🚪 When to Leave (Escape Routes)</h3>
     <p>August in Seville is not a test of willpower – it's a physiological reality. Even locals flee.</p>
@@ -152,10 +152,33 @@ All buyers receive an email notification when a new version is released. The dow
 
 ---
 
-## 📦 Bundle & save
+## Bundle & Save
 
-Already own the [Málaga Relocation Checklist](/offers/malaga-relocation-checklist/)? Add the **Seville edition** for only **$15** during checkout (total $49).  
-Perfect if you're still comparing Andalusian anchors before making your final decision.
+Or go deeper with the official Mediterranean bundles:
+
+| Bundle | Guides Included | Price | Saving |
+|--------|----------------|-------|--------|
+| 🇪🇸 [Ultimate Spain Bundle](https://books.salahnomad.com/b/ultimate-spain-bundle) | Málaga + Valencia + Sevilla + Barcelona | $89 | Save $27 |
+| 🌊 [Full Mediterranean Collection](https://books.salahnomad.com/b/full-mediterranean-collection) | All 5 guides including Barcelona | $119 | Save $46 |
+
+[Explore the Full Collection →](https://books.salahnomad.com)
+
+---
+
+## The Complete Mediterranean Codex System
+
+The Seville Relocation Codex is part of a field‑verified system covering Southern Spain's key relocation destinations.
+
+| City | Status | Price | Edition |
+|------|--------|-------|---------|
+| 🇪🇸 [Málaga — The Lighthouse](https://books.salahnomad.com/b/malaga-relocation-checklist) | ✅ Available | $29 | May 2026 |
+| 🇪🇸 [Barcelona — The Tech Capital](https://books.salahnomad.com/b/barcelona-relocation-codex) | ✅ Available | $39 | April 2026 |
+| 🇪🇸 [Valencia — The Mediterranean Corridor](https://books.salahnomad.com/b/valencia-relocation-checklist-2026) | ✅ Available | $29 | May 2026 |
+| 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
+| 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
+| 🛰️ Satellites (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+
+*Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 
 ---
 
@@ -165,8 +188,11 @@ Perfect if you're still comparing Andalusian anchors before making your final de
 
 ---
 
-<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-size: 0.9rem; text-align: center; color: #666;">
-  Rooted in Málaga since 2021 – now helping you root in Seville.<br>
-  <strong>— Salah Nomad</strong><br>
-  <em>Mediterranean Codex System – April 2026</em>
+<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-size: 0.875rem; text-align: center; color: #666; line-height: 1.7;">
+  © 2026 Mediterranean Codex Series by Salah Nomad. All rights reserved.<br>
+  <strong>Download limit:</strong> Your purchase includes 5 downloads. Please save your file securely. If you exceed this limit, a new purchase is required.<br>
+  <strong>Updates included:</strong> This guide is updated quarterly. When you download the file, you always get the latest version — no need to buy again for the current edition.<br>
+  Current version: <a href="https://salahnomad.com/seville">salahnomad.com/seville</a><br><br>
+  <strong>Disclaimer:</strong> This guide does not constitute legal, fiscal, or immigration advice. Consult a qualified professional for your personal situation. Black Book entries verified April 2026 — confirm current details before engagement.<br><br>
+  Explore the Full Collection: <a href="https://books.salahnomad.com">books.salahnomad.com</a>
 </div>
