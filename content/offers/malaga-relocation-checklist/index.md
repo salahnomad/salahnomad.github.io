@@ -3,7 +3,7 @@ title: "The Málaga Relocation Codex (2026 Edition)"
 subtitle: "The logistical blueprint to anchor your life in Málaga in 7 days – without paying the Nomad Tax"
 description: "Stop searching Idealista. Stop guessing the rules. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data: DNV threshold, real rents, acoustic scores, and vetted contacts – inside the guide only."
 date: 2026-02-27
-lastmod: 2026-05-15
+lastmod: 2026-05-20
 draft: false
 layout: "single"
 aliases:

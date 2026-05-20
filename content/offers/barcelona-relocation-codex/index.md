@@ -3,7 +3,7 @@ title: "Barcelona Relocation Codex 2026 — The High-Stakes Chess Game"
 subtitle: "The only guide that maps Barcelona's fiscal traps, acoustic risk zones, and rental battlefield — field-verified April 2026."
 description: "Moving to Barcelona in 2026? Get the exact roadmap: Housing Emergency Kit, Fiscal & Acoustic Sanctuary Map, Verified Black Book, and the Barceloní Code. Field-tested data, zero tourist advice."
 date: 2026-04-25T09:00:00+02:00
-lastmod: 2026-05-02
+lastmod: 2026-05-20
 draft: false
 
 slug: "barcelona-relocation-codex"

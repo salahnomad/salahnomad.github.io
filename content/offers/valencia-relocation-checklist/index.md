@@ -3,7 +3,7 @@ title: "The Valencia Relocation Codex (2026 Edition)"
 subtitle: "The logistical & acoustic blueprint to anchor your life in Valencia in 7 days – without paying the Nomad Tax"
 description: "Stop searching Idealista. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data: DNV threshold, real rents, DANA flood map, acoustic scores, and vetted contacts."
 date: 2026-03-15
-lastmod: 2026-05-19
+lastmod: 2026-05-20
 draft: false
 layout: "single"
 aliases:
