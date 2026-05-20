@@ -171,7 +171,7 @@ Yes. The two guides share the same editorial DNA — field‑verified data, Blac
 {{< /short-faq >}}
 
 {{< short-faq question="What if I am still deciding between Valencia and another city?" >}}
-The Mediterranean Duo gives you any two city guides for $49 — saving $9 versus separate purchases. If you are comparing Valencia with Málaga, Barcelona, Seville, or Granada, the bundle is the right entry point. Each guide uses the same evaluation framework, so comparison is direct.
+The Ultimate Spain Bundle gives you Málaga + Valencia + Sevilla + Barcelona for $89 — saving $27 versus separate purchases. If you are comparing Valencia with other Spanish cities, the bundle is the right entry point. Each guide uses the same evaluation framework, so comparison is direct.
 {{< /short-faq >}}
 
 {{< short-faq question="How do quarterly updates work?" >}}
@@ -186,19 +186,14 @@ No. The Valencia Relocation Codex is field intelligence — verified data, mappe
 
 ## Bundle & Save
 
-Already own the [Málaga Relocation Codex](/offers/malaga-relocation-checklist/) ($29)?
-
-Add the **Valencia Codex** for only **$29** during checkout — total **$58**, saving $9 versus separate purchase.
-
-Or go deeper with the **Mediterranean Bundle**:
+Or go deeper with the official Mediterranean bundles:
 
 | Bundle | Guides Included | Price | Saving |
 |--------|----------------|-------|--------|
-| Mediterranean Duo | Any 2 guides | $49 | Save $9 |
-| Southern Spain Collection | Málaga + Valencia + Seville + Granada | $89 | Save $27 |
-| Full Mediterranean | All 5 guides including Barcelona | $119 | Save $46 |
+| 🇪🇸 [Ultimate Spain Bundle](https://books.salahnomad.com/b/ultimate-spain-bundle) | Málaga + Valencia + Sevilla + Barcelona | $89 | Save $27 |
+| 🌊 [Full Mediterranean Collection](https://books.salahnomad.com/b/full-mediterranean-collection) | All 5 guides including Barcelona | $119 | Save $46 |
 
-*All bundles include quarterly updates for 12 months.*
+[Explore the Full Collection →](https://books.salahnomad.com)
 
 ---
 
@@ -208,14 +203,14 @@ The Valencia Relocation Codex is part of a field‑verified system covering Sout
 
 | City | Status | Price | Edition |
 |------|--------|-------|---------|
-| 🇪🇸 **Málaga** — The Lighthouse | ✅ Available | $29 | May 2026 |
-| 🇪🇸 **Barcelona** — The Tech Capital | ✅ Available | $39 | April 2026 |
-| 🇪🇸 **Valencia** — The Mediterranean Corridor | ✅ Available | $29 | May 2026 |
-| 🇪🇸 **Seville** — The Ancestral Soul | ✅ Available | $29 | April 2026 |
-| 🇪🇸 **Granada** — The Altitude Sanctuary | ✅ Available | $29 | April 2026 |
-| 🛰️ **Satellites** (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+| 🇪🇸 [Málaga — The Lighthouse](https://books.salahnomad.com/b/malaga-relocation-checklist) | ✅ Available | $29 | May 2026 |
+| 🇪🇸 [Barcelona — The Tech Capital](https://books.salahnomad.com/b/barcelona-relocation-codex) | ✅ Available | $39 | April 2026 |
+| 🇪🇸 [Valencia — The Mediterranean Corridor](https://books.salahnomad.com/b/valencia-relocation-checklist-2026) | ✅ Available | $29 | May 2026 |
+| 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
+| 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
+| 🛰️ Satellites (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
 
-*Want the philosophy behind the system? Read [Algorithmic Sardines](/offers/algorithmic-sardines/) — the book that explains why roots matter more than routes.*
+*Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 
 ---
 
@@ -226,8 +221,10 @@ The Valencia Relocation Codex is part of a field‑verified system covering Sout
 ---
 
 <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-size: 0.875rem; text-align: center; color: #666; line-height: 1.7;">
-  Rooted in Málaga since 2021 — field research conducted in Valencia, May 2026.<br>
-  <strong>— Salah Nomad</strong><br>
-  <em>Mediterranean Codex System · salahnomad.com/valencia</em><br><br>
-  <strong>Disclaimer:</strong> This guide does not constitute legal, fiscal, or immigration advice. Consult a qualified professional for your personal situation. Black Book entries verified May 2026 — confirm current details before engagement. Purchasers receive update notifications by email — keep your receipt.
+  © 2026 Mediterranean Codex Series by Salah Nomad. All rights reserved.<br>
+  <strong>Download limit:</strong> Your purchase includes 5 downloads. Please save your file securely. If you exceed this limit, a new purchase is required.<br>
+  <strong>Updates included:</strong> This guide is updated quarterly. When you download the file, you always get the latest version — no need to buy again for the current edition.<br>
+  Current version: <a href="https://salahnomad.com/valencia">salahnomad.com/valencia</a><br><br>
+  <strong>Disclaimer:</strong> This guide does not constitute legal, fiscal, or immigration advice. Consult a qualified professional for your personal situation. Black Book entries verified May 2026 — confirm current details before engagement.<br><br>
+  Explore the Full Collection: <a href="https://books.salahnomad.com">books.salahnomad.com</a>
 </div>
