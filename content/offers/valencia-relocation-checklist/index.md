@@ -3,7 +3,7 @@ title: "The Valencia Relocation Codex (2026 Edition)"
 subtitle: "The logistical & acoustic blueprint to anchor your life in Valencia in 7 days – without paying the Nomad Tax"
 description: "Stop searching Idealista. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data: DNV threshold, real rents, DANA flood map, acoustic scores, and vetted contacts."
 date: 2026-03-15
-lastmod: 2026-05-20
+lastmod: 2026-05-28
 draft: false
 layout: "single"
 aliases:
@@ -208,7 +208,7 @@ The Valencia Relocation Codex is part of a field‑verified system covering Sout
 | 🇪🇸 [Valencia — The Mediterranean Corridor](https://books.salahnomad.com/b/valencia-relocation-checklist-2026) | ✅ Available | $29 | May 2026 |
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
-| 🛰️ Satellites (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+| 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 

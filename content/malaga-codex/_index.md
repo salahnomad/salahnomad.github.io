@@ -3,7 +3,7 @@ title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
 description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-05-02
+lastmod: 2026-05-28
 draft: false
 
 slug: "malaga-codex"
@@ -21,7 +21,7 @@ us_optimization:
 params:
   rooted_since: 2021
   days_anchored: 1650
-  last_update: "2026-05-02"
+  last_update: "2026-05-28"
 
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
@@ -53,7 +53,7 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
 *The Mediterranean Corridor for tech optimizers and resilient pioneers.*  
-👉 [**Get the Valencia Relocation Codex ($29) →**](/offers/valencia-relocation-checklist/) *(April 2026 Edition)*  
+👉 [**Get the Valencia Relocation Codex ($29) →**](/offers/valencia-relocation-checklist/) *(May 2026 Edition)*  
 👉 [**Get the Barcelona Relocation Codex ($39) →**](/offers/barcelona-relocation-codex/) *(April 2026 Edition)*
 
 ### 🌿 III. The Ancestral Cloud (Seville & Granada)
@@ -61,9 +61,9 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
 👉 [**Get the Seville Relocation Codex ($29) →**](/offers/seville-relocation-codex/) *(April 2026 Edition)*  
 👉 [**Get the Granada Relocation Codex ($29) →**](/offers/granada-relocation-codex/) *(April 2026 Edition)*
 
-### 🛰️ IV. The Satellites (Marbella, Tarifa, Fuengirola)
-*Niche guides for families, luxury, and active lifestyle.*  
-👉 [**Join Satellite Waitlist →**](/malaga-codex/satellite-waitlist/)
+### 🛰️ IV. The Satellites (Costa del Sol)
+*From the connected gateway of Torremolinos to the wild wind of Tarifa — seven towns, one coastline.*  
+👉 [**Get the Costa del Sol Satellite Guide ($29) →**](/offers/costa-del-sol-satellite-guide/) *(May 2026 Edition)*
 
 ---
 
@@ -108,6 +108,13 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
     <a href="https://books.salahnomad.com/b/granada-relocation-codex" class="hub-card-btn">👉 Get the Codex – $29</a>
   </div>
 
+  <!-- Costa del Sol -->
+  <div class="hub-card satellite-card">
+    <strong>🇪🇸 Costa del Sol Satellite Guide</strong><br>
+    7 towns, one coastline. Torremolinos to Tarifa.<br>
+    <a href="https://books.salahnomad.com/b/costa-del-sol-satellite-guide" class="hub-card-btn">👉 Get the Guide – $29</a>
+  </div>
+
 </div>
 
 <!-- Bundle Ultimate Spain -->
@@ -123,10 +130,16 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
   <a href="https://books.salahnomad.com/b/full-mediterranean-collection" class="hub-bundle-btn">👉 Get All 5 Guides</a>
 </div>
 
+<div class="hub-bundle ultimate-spain">
+  <strong class="bundle-title">🇪🇸 Spain Complete Bundle – $139</strong><br>
+  <span class="bundle-subtitle">All 6 guides: Málaga + Valencia + Barcelona + Seville + Granada + Costa del Sol. Save $35.</span><br>
+  <a href="https://books.salahnomad.com/b/spain-complete-bundle" class="hub-bundle-btn">👉 Get All 6 Guides</a>
+</div>
+
 ### 2. The Philosophy (The Soul)
 Discover how to ground your digital life in the wisdom of the earth.  
 {{< book_promo >}}
 
 *“Málaga is my port. The Mediterranean is my story. Welcome to the Codex.”*  
 **— Salah Nomad**  
-*Last updated: 2 May 2026*
+*Last updated: 28 May 2026*

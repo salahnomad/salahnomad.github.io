@@ -3,7 +3,7 @@ title: "Barcelona Relocation Codex 2026 — The High-Stakes Chess Game"
 subtitle: "The only guide that maps Barcelona's fiscal traps, acoustic risk zones, and rental battlefield — field-verified April 2026."
 description: "Moving to Barcelona in 2026? Get the exact roadmap: Housing Emergency Kit, Fiscal & Acoustic Sanctuary Map, Verified Black Book, and the Barceloní Code. Field-tested data, zero tourist advice."
 date: 2026-04-25T09:00:00+02:00
-lastmod: 2026-05-20
+lastmod: 2026-05-28
 draft: false
 
 slug: "barcelona-relocation-codex"
@@ -244,7 +244,7 @@ The Barcelona Relocation Codex is part of a field-verified system covering South
 | 🇪🇸 [Valencia — The Mediterranean Corridor](https://books.salahnomad.com/b/valencia-relocation-checklist-2026) | ✅ Available | $29 | May 2026 |
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
-| 🛰️ Satellites (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+| 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 

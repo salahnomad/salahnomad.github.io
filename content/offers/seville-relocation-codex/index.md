@@ -3,7 +3,7 @@ title: "The Seville Relocation Codex (2026) – Thermal Map, Black Book & DNV Th
 subtitle: "Field‑tested. Verified. Rooted."
 description: "Stop guessing. Get the complete 2026 Seville relocation blueprint: exclusive Thermal & Acoustic Sanctuary Map, verified Black Book contacts, DNV income threshold, and anchoring rituals – all inside the PDF."
 date: 2026-04-14
-lastmod: 2026-05-20
+lastmod: 2026-05-28
 draft: false
 layout: "single"
 aliases:
@@ -176,7 +176,7 @@ The Seville Relocation Codex is part of a field‑verified system covering South
 | 🇪🇸 [Valencia — The Mediterranean Corridor](https://books.salahnomad.com/b/valencia-relocation-checklist-2026) | ✅ Available | $29 | May 2026 |
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
-| 🛰️ Satellites (Marbella, Tarifa, Fuengirola) | ⏳ Waitlist | — | Coming 2026 |
+| 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 
