@@ -3,7 +3,7 @@ title: "The Málaga Relocation Codex (2026 Edition)"
 subtitle: "The logistical blueprint to anchor your life in Málaga in 7 days – without paying the Nomad Tax"
 description: "Stop searching Idealista. Stop guessing the rules. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data: DNV threshold, real rents, acoustic scores, and vetted contacts – inside the guide only."
 date: 2026-02-27
-lastmod: 2026-05-28
+lastmod: 2026-06-05
 draft: false
 layout: "single"
 aliases:
@@ -191,6 +191,7 @@ Or go deeper with the official Mediterranean bundles:
 |--------|----------------|-------|--------|
 | 🇪🇸 [Ultimate Spain Bundle](https://books.salahnomad.com/b/ultimate-spain-bundle) | Málaga + Valencia + Sevilla + Barcelona | $89 | Save $27 |
 | 🌊 [Full Mediterranean Collection](https://books.salahnomad.com/b/full-mediterranean-collection) | All 5 guides including Barcelona | $119 | Save $46 |
+| 🇪🇸 [Spain Complete Bundle](https://books.salahnomad.com/b/spain-complete-bundle) | All 7 guides including Madrid | $169 | Save $54 |
 
 [Explore the Full Collection →](https://books.salahnomad.com)
 
@@ -208,6 +209,7 @@ The Málaga Relocation Codex is part of a field‑verified system covering South
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
+| 🏛️ [Madrid — The Continental Chess Game](https://books.salahnomad.com/b/madrid-relocation-codex) | ✅ Available | $39 | June 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 

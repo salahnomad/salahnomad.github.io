@@ -3,7 +3,7 @@ title: "The Granada Relocation Codex (2026) – Altitude Map, Black Book & DNV T
 subtitle: "Field‑tested. Verified. Rooted."
 description: "Stop guessing. Get the complete 2026 Granada relocation blueprint: exclusive Altitude & Thermal Sanctuary Map, verified Black Book contacts, DNV income threshold, and anchoring rituals – all inside the PDF."
 date: 2026-04-22
-lastmod: 2026-05-28
+lastmod: 2026-06-05
 draft: false
 layout: "single"
 aliases:
@@ -159,6 +159,7 @@ Or go deeper with the official Mediterranean bundle:
 | Bundle | Guides Included | Price | Saving |
 |--------|----------------|-------|--------|
 | 🌊 [Full Mediterranean Collection](https://books.salahnomad.com/b/full-mediterranean-collection) | All 5 guides including Barcelona | $119 | Save $46 |
+| 🇪🇸 [Spain Complete Bundle](https://books.salahnomad.com/b/spain-complete-bundle) | All 7 guides including Madrid | $169 | Save $54 |
 
 [Explore the Full Collection →](https://books.salahnomad.com)
 
@@ -176,6 +177,7 @@ The Granada Relocation Codex is part of a field‑verified system covering South
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
+| 🏛️ [Madrid — The Continental Chess Game](https://books.salahnomad.com/b/madrid-relocation-codex) | ✅ Available | $39 | June 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 

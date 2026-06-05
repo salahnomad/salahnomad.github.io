@@ -3,7 +3,7 @@ title: "Costa del Sol Satellite Guide (May 2026) – 7 Towns, One Coastline"
 subtitle: "Desk‑researched. Verified. Commission‑Free."
 description: "Stop guessing. Get the complete 2026 Costa del Sol relocation blueprint: 7 towns mapped, verified Black Book contacts, DNV income threshold, acoustic scores, and anchoring rituals – all inside the PDF."
 date: 2026-05-23
-lastmod: 2026-05-29
+lastmod: 2026-06-05
 draft: false
 layout: "single"
 aliases:
@@ -147,7 +147,7 @@ All buyers receive an email notification when a new version is released. The dow
 |--------|----------------|-------|--------|
 | 🇪🇸 [Ultimate Spain Bundle](https://books.salahnomad.com/b/ultimate-spain-bundle) | Málaga + Valencia + Sevilla + Barcelona | $89 | Save $27 |
 | 🌊 [Full Mediterranean Collection](https://books.salahnomad.com/b/full-mediterranean-collection) | All 5 guides including Barcelona | $119 | Save $46 |
-| 🇪🇸 Spain Complete Bundle | All 6 guides including Costa del Sol | $139 | Save $35 · *Coming soon* |
+| 🇪🇸 [Spain Complete Bundle](https://books.salahnomad.com/b/spain-complete-bundle) | All 7 guides including Madrid | $169 | Save $54 |
 
 [Explore the Full Collection →](https://books.salahnomad.com)
 
@@ -165,6 +165,7 @@ The Costa del Sol Satellite Guide is part of a field‑verified system covering 
 | 🇪🇸 [Seville — The Ancestral Soul](https://books.salahnomad.com/b/seville-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🇪🇸 [Granada — The Altitude Sanctuary](https://books.salahnomad.com/b/granada-relocation-codex) | ✅ Available | $29 | April 2026 |
 | 🛰️ [Costa del Sol — The Satellites](https://books.salahnomad.com/b/costa-del-sol-satellite-guide) | ✅ Available | $29 | May 2026 |
+| 🏛️ [Madrid — The Continental Chess Game](https://books.salahnomad.com/b/madrid-relocation-codex) | ✅ Available | $39 | June 2026 |
 
 *Want the philosophy behind the system? Read [Algorithmic Sardines](https://books.salahnomad.com/b/algorithmic-sardines) — the book that explains why roots matter more than routes.*
 

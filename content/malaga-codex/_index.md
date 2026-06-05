@@ -1,9 +1,9 @@
 ---
 title: "Moving to Southern Spain (2026): The Mediterranean Codex System"
 subtitle: "From Málaga's tech hub to Seville's soul – your rooted relocation blueprint."
-description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified May 2026 data on visas, rents, and the Beckham Law."
+description: "Stop guessing. Get the exact roadmap from a nomad rooted in Málaga since 2021. Verified June 2026 data on visas, rents, and the Beckham Law."
 date: 2025-05-11T09:00:00+02:00
-lastmod: 2026-05-28
+lastmod: 2026-06-05
 draft: false
 
 slug: "malaga-codex"
@@ -21,7 +21,7 @@ us_optimization:
 params:
   rooted_since: 2021
   days_anchored: 1650
-  last_update: "2026-05-28"
+  last_update: "2026-06-05"
 
 featured_image: "images/hero-mediterranean-codex.jpg"
 featured_image_alt: "Mediterranean landscape where ancient olive roots transform into glowing digital circuits, symbolizing the Mediterranean Codex relocation system – rooted wisdom meeting digital sovereignty."
@@ -48,7 +48,7 @@ Navigate Southern Spain as a **Value Migrant**, not a tourist.
 
 ### ⚓ I. The Lighthouse (Málaga)
 *Your logistical, tech, and fiscal HQ.*  
-Verified May 2026 data on the Digital Nomad Visa and Beckham Law.  
+Verified June 2026 data on the Digital Nomad Visa and Beckham Law.  
 👉 [**Get the Málaga Relocation Codex ($29) →**](/offers/malaga-relocation-checklist/)
 
 ### 🌊 II. The Migratory Route (Valencia & Barcelona)
@@ -64,6 +64,10 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
 ### 🛰️ IV. The Satellites (Costa del Sol)
 *From the connected gateway of Torremolinos to the wild wind of Tarifa — seven towns, one coastline.*  
 👉 [**Get the Costa del Sol Satellite Guide ($29) →**](/offers/costa-del-sol-satellite-guide/) *(May 2026 Edition)*
+
+### 🏛️ V. The Capital (Madrid)
+*The Continental Chess Game. UGE processing, ZAS acoustic scores, and the most dense Black Book in the series.*  
+👉 [**Get the Madrid Relocation Codex ($39) →**](/offers/madrid-relocation-codex/) *(June 2026 Edition)*
 
 ---
 
@@ -115,6 +119,13 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
     <a href="https://books.salahnomad.com/b/costa-del-sol-satellite-guide" class="hub-card-btn">👉 Get the Guide – $29</a>
   </div>
 
+  <!-- Madrid -->
+  <div class="hub-card madrid-card">
+    <strong>🇪🇸 Madrid Relocation Codex (June 2026)</strong><br>
+    47 verified contacts, UGE processing, ZAS scores.<br>
+    <a href="https://books.salahnomad.com/b/madrid-relocation-codex" class="hub-card-btn">👉 Get the Codex – $39</a>
+  </div>
+
 </div>
 
 <!-- Bundle Ultimate Spain -->
@@ -130,10 +141,10 @@ Verified May 2026 data on the Digital Nomad Visa and Beckham Law.
   <a href="https://books.salahnomad.com/b/full-mediterranean-collection" class="hub-bundle-btn">👉 Get All 5 Guides</a>
 </div>
 
-<div class="hub-bundle ultimate-spain">
-  <strong class="bundle-title">🇪🇸 Spain Complete Bundle – $139</strong><br>
-  <span class="bundle-subtitle">All 6 guides: Málaga + Valencia + Barcelona + Seville + Granada + Costa del Sol. Save $35.</span><br>
-  <a href="https://books.salahnomad.com/b/spain-complete-bundle" class="hub-bundle-btn">👉 Get All 6 Guides</a>
+<div class="hub-bundle full-mediterranean">
+  <strong class="bundle-title">🇪🇸 Spain Complete Bundle – $169</strong><br>
+  <span class="bundle-subtitle">All 7 guides: Málaga + Valencia + Barcelona + Seville + Granada + Costa del Sol + Madrid. Save $54.</span><br>
+  <a href="https://books.salahnomad.com/b/spain-complete-bundle" class="hub-bundle-btn">👉 Get All 7 Guides</a>
 </div>
 
 ### 2. The Philosophy (The Soul)
@@ -142,4 +153,4 @@ Discover how to ground your digital life in the wisdom of the earth.
 
 *“Málaga is my port. The Mediterranean is my story. Welcome to the Codex.”*  
 **— Salah Nomad**  
-*Last updated: 28 May 2026*
+*Last updated: 5 June 2026*
