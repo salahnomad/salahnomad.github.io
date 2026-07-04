@@ -10,9 +10,8 @@ layout: "single"
 categories: ["malaga-codex", "news"]
 tags: ["flamenco", "bulería", "rooted-nomadism", "music", "malaga", "el-regreso", "mediterranean-codex", "triptych"]
 keywords: ["el regreso flamenco", "rooted nomadism song", "bulería malaga", "salah nomad music", "flamenco dawn", "morisco smile"]
-featured_image: "images/el-regreso-cover.jpg"
-featured_image_alt: "A weathered wooden table on a terrace at dawn, Málaga bay in golden mist, a closed leather notebook, a steaming cup, and a gold-repaired zellige tile."
-og_image: "images/el-regreso-short.jpg"
+featured_image: "images/el-regreso-short.jpg"
+featured_image_alt: "The official short film poster for El Regreso — the Andalusian cantaora at dawn in Málaga, with the title and credits in vintage typography."
 authors: ["Salah Nomad"]
 reading_time: 11
 toc: true
@@ -47,7 +46,7 @@ faq:
 
 *This story needed to end where it began — on a Málaga terrace, at dawn. After the rumba of the day and the soleá of the night, I wrote this bulería to let you **hear** the return. Not a comeback. Not a destination. The quiet, unshakeable knowledge that you never really left. Watch before reading to feel the compás, or after to understand the words. The dawn, like the song, is yours.*
 
-{{< figure src="images/el-regreso-short.jpg" alt="The official short film poster for El Regreso — the Andalusian cantaora at dawn in Málaga, with the title and credits in vintage typography." caption="The short film poster. The title, the name, the city. The dawn has a face now." >}}
+{{< figure src="images/el-regreso-cantaora.jpg" alt="A hyper-realistic photograph of an artist's studio in Málaga at dawn. On a wooden table, a canvas with a charcoal sketch of a woman's face, a coffee cup, a black shawl on a chair. Through the window, the Alcazaba against a rose-gold sky." caption="The atelier at dawn. The cantaora is reborn not in the street, but in the studio — a charcoal sketch, a shawl, a coffee. The return as creation." >}}
 
 ---
 
@@ -63,7 +62,7 @@ Now, the dawn.
 
 > *"The [rooted nomad](/glossary/rooted-nomadism/) has travelled through the day and the night. At dawn, she does not arrive. She simply opens her eyes and recognizes the terrace."*
 
-{{< figure src="images/el-regreso-cantaora.jpg" alt="A hyper-realistic photograph of an artist's studio in Málaga at dawn. On a wooden table, a canvas with a charcoal sketch of a woman's face, a coffee cup, a black shawl on a chair. Through the window, the Alcazaba against a rose-gold sky." caption="The atelier at dawn. The cantaora is reborn not in the street, but in the studio — a charcoal sketch, a shawl, a coffee. The return as creation." >}}
+{{< figure src="images/el-regreso-cuaderno.jpg" alt="Close-up on a marble café table with a worn leather notebook closed with an elastic band, a fountain pen beside it, golden dawn light casting a sharp rectangle across the scene." caption="The notebook without a message. The return is silent, patient, unwritten." >}}
 
 ---
 
