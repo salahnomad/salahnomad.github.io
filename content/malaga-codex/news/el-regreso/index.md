@@ -1,7 +1,7 @@
 ---
-title: "🌅 El Regreso — The Dawn of Rooted Nomadism"
+title: "🌅 El Regreso — The Dawn of Return"
 subtitle: "A bulería about returning without coming back, where the Morisco smiles and the terrace finally breathes."
-description: "The third song of the Rooted Nomad completes the triptych. After the day and the night, the dawn. Full lyrics, philosophy, and the story of a return that is not a destination."
+description: "After the day and the night, the dawn. The third Rooted Nomad song, a bulería of return. Full lyrics and story."
 date: 2026-07-02
 lastmod: 2026-07-02
 draft: false
