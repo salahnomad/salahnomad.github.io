@@ -40,7 +40,7 @@ faq:
     id="yjtNQMKHGYY"
     title="Arcilla de Luz 🕊️ Fandango de Huelva · Estilo Alosno | Rooted Nomadism | Salah Nomad"
     description="An afillá voice. A lone guitar. The clay that remembers. A fandango de Alosno in the style of Paco Toronjo. Full lyrics and story."
-    uploadDate="2026-07-17T00:00:00Z"
+    uploadDate="2026-07-12T00:00:00Z"
     duration="PT3M21S"
     caption="Watch the full film (3:21) — a cantaora alone on an empty tablao, the dust of Alcazarquivir in her throat."
 >}}
