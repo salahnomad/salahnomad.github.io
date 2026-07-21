@@ -310,7 +310,7 @@ enableRobotsTXT = true
     name = "My Story"
     url = "/stories-wisdom/salah-story/"
     weight = 40
-[[menu.main]]
+  [[menu.main]]
     identifier = "malaga_codex"
     name = "Málaga Codex"
     url = "#"
@@ -329,6 +329,13 @@ enableRobotsTXT = true
     url = "/malaga-codex/news/"
     parent = "malaga_codex"
     weight = 52
+
+  [[menu.main]]
+    name = "Relocation Guides"
+    url = "/malaga-codex/relocation/"
+    parent = "malaga_codex"
+    weight = 53
+
   [[menu.main]]
     identifier = "the_book"
     name = "The Book"
