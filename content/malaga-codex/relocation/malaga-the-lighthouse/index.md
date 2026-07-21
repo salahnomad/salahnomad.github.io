@@ -24,12 +24,14 @@ toc: true
 
 ## 🎬 The Song — "Málaga"
 
+## 🎬 The Song — "Málaga"
+
 {{< youtube
-    id="VIDEO_ID_HERE"
+    id="g_sbIw1k30Y"
     title="Málaga — Rumba Flamenca | Rooted Nomadism | Salah Nomad"
     description="A rumba flamenca dedicated to Málaga, the lighthouse that taught me how to stay."
-    uploadDate="2026-07-20T00:00:00Z"
-    duration="PT2M30S"
+    uploadDate="2026-07-21T00:00:00Z"
+    duration="PT2M19S"
     caption="Listen to 'Málaga' — a rumba celebrating the city that taught me how to anchor."
 >}}
 
