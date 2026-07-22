@@ -24,8 +24,6 @@ toc: true
 
 ## 🎬 The Song — "Málaga"
 
-## 🎬 The Song — "Málaga"
-
 {{< youtube
     id="g_sbIw1k30Y"
     title="Málaga — Rumba Flamenca | Rooted Nomadism | Salah Nomad"
