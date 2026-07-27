@@ -2,7 +2,7 @@
 title: "Mediterranean Codex — Relocation Guides"
 description: "Field-tested relocation guides for rooted nomads moving to Southern Spain. Not tourist guides. Operational manuals forged in four years of mistakes."
 date: 2026-07-21
-lastmod: 2026-07-24
+lastmod: 2026-07-27
 layout: "hub"
 categories: ["malaga-codex"]
 tags: ["relocation", "mediterranean-codex", "verified"]
@@ -38,6 +38,12 @@ A 600-kilometer detour that became two nights, a rumba, and a lesson the Turia h
 
 👉 [Read the Valencia story and get the Codex](/malaga-codex/relocation/valencia-the-detour/)
 
+### 🇪🇸 Seville — The Ancestral Forge
+
+A 9:00 AM Alsa bus, a €25 ticket, and a range of limestone mountains that rewired my understanding of exile. Seville doesn't welcome you — it tests you. Thermal sanctuary map, acoustic scores, and the exact barrios where you can survive 42°C without losing your mind.
+
+👉 [Read the Seville story and get the Codex](/malaga-codex/relocation/seville-the-mountains-between-us-remember/)
+
 ---
 
 ### Coming Next
@@ -45,7 +51,6 @@ A 600-kilometer detour that became two nights, a rumba, and a lesson the Turia h
 The Mediterranean Codex is a living series. These are the anchors I'm mapping next:
 
 - **Barcelona** — The Tech Capital. Law 11/2025, the most competitive rental market in Spain, and the Catalan fiscal maze.
-- **Seville** — The Ancestral Soul. Thermal sanctuary map, Feria survival, and the best tapas street you won't find on Instagram.
 - **Granada** — The Altitude Sanctuary. Why heating bills matter more than rent, and where to find fibre in a 1,000‑year‑old neighbourhood.
 - **Costa del Sol** — The Satellites. Seven towns, one coastline. Torremolinos to Tarifa.
 - **Madrid** — The Continental Chess Game. UGE processing, ZAS acoustic scores, and 47 verified contacts.
