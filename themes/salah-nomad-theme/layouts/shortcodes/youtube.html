@@ -1,7 +1,13 @@
 {{/* 
-  YOUTUBE SHORTCODE - GOLDEN MASTER (Salah Nomad)
+  YOUTUBE SHORTCODE - GOLDEN MASTER v2 (Salah Nomad)
   Objectif : Zéro Erreur GSC, SEO Dynamique, Fallbacks Robustes.
   Intégration : Compatible SCSS existant & JS Léger.
+  
+  CORRECTIONS v2 :
+  - Suppression de tous les | jsonify (remplacés par interpolation inline)
+  - thumbnailUrl écrit comme un vrai tableau JSON
+  - Suppression de interactionStatistic (valeur fictive "500")
+  - Suppression de itemprop="embedUrl" sur l'iframe (évite les URLs multiples GSC)
 */}}
 
 {{/* --- 1. SÉCURITÉ & LOGIQUE --- */}}
@@ -25,12 +31,8 @@
   {{ $uploadDate = .Page.Date.Format "2006-01-02T15:04:05-07:00" }}
 {{ end }}
 
-{{/* MINIATURES : Liste de secours (Array) pour éviter les erreurs 404 GSC */}}
-{{ $thumbnailUrls := slice 
-  (printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $videoID)
-  (printf "https://img.youtube.com/vi/%s/hqdefault.jpg" $videoID)
-  (printf "https://img.youtube.com/vi/%s/sddefault.jpg" $videoID)
-}}
+{{/* DURÉE : Valeur par défaut si non fournie */}}
+{{ $duration := .Get "duration" | default "PT15M00S" }}
 
 {{/* --- 2. HTML (Visuel) --- */}}
 <div class="video-container" data-youtube-id="{{ $videoID }}">
@@ -41,8 +43,7 @@
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
-      loading="lazy"
-      itemprop="embedUrl">
+      loading="lazy">
     </iframe>
     
     {{/* Overlay Click-to-Play optimisé - Appelle le JS namespace "salahNomadYouTube" */}}
@@ -62,22 +63,22 @@
 </div>
 
 {{/* --- 3. JSON-LD (Données Structurées Google) --- */}}
+{{/* Règle d'or : interpolation inline, PAS de jsonify */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": {{ $videoTitle | plainify | jsonify }},
-  "description": {{ $videoDescription | plainify | jsonify }},
-  "thumbnailUrl": {{ $thumbnailUrls | jsonify }},
+  "name": "{{ $videoTitle | plainify }}",
+  "description": "{{ $videoDescription | plainify }}",
+  "thumbnailUrl": [
+    "https://img.youtube.com/vi/{{ $videoID }}/maxresdefault.jpg",
+    "https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg",
+    "https://img.youtube.com/vi/{{ $videoID }}/sddefault.jpg"
+  ],
   "uploadDate": "{{ $uploadDate }}",
-  "duration": {{ .Get "duration" | default "PT15M00S" | jsonify }},
+  "duration": "{{ $duration }}",
   "contentUrl": "https://www.youtube.com/watch?v={{ $videoID }}",
   "embedUrl": "https://www.youtube.com/embed/{{ $videoID }}",
-  "interactionStatistic": {
-    "@type": "InteractionCounter",
-    "interactionType": "https://schema.org/WatchAction",
-    "userInteractionCount": {{ .Get "viewCount" | default "500" }}
-  },
   "publisher": {
     "@type": "Organization",
     "name": "Salah Nomad",

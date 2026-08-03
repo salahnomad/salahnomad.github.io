@@ -1,5 +1,6 @@
 {{/* layouts/partials/footer-widgets/widget-wisdom.html */}}
 {{/* --- MODIFIÉ : Simplification du titre pour le nouveau style SCSS --- */}}
+{{/* CORRECTION : jsonify | safeJS → JSON propre */}}
 {{ $config := .config }}
 {{ $contextPage := .context.Page }}
 {{ $allSiteQuotes := site.Data.quotes }}
@@ -29,7 +30,7 @@
       </blockquote>
 
       <script id="footer-quotes-data" type="application/json">
-        {{ $allSiteQuotes | jsonify (dict "indent" "  ") }}
+        {{ $allSiteQuotes | jsonify (dict "indent" "  ") | safeJS }}
       </script>
     {{ else }}
       <p><small>No wisdom to share at the moment (data/quotes.yaml might be missing or empty).</small></p>

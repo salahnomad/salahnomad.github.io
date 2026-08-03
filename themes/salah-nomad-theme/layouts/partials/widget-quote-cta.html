@@ -1,6 +1,7 @@
 {{/*
   layouts/partials/widget-quote-cta.html
   VERSION FINALE - Avec classe de bouton unifiée
+  CORRECTION : jsonify | safeJS → JSON propre
 */}}
 {{ $quotes := .quotes }}
 {{ $firstQuote := "" }}
@@ -19,6 +20,6 @@
 
 {{ if gt (len $quotes) 0 }}
 <script id="rotator-data-{{ .id_suffix }}" type="application/json">
-  {{ $quotes | jsonify }}
+  {{ $quotes | jsonify | safeJS }}
 </script>
 {{ end }}

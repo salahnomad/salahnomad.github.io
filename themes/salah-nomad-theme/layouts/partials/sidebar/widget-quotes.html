@@ -1,5 +1,6 @@
 {{/* themes/salah-nomad-theme/layouts/partials/sidebar/widget-quotes.html */}}
 {{/* VERSION MISE À JOUR pour le nouveau rotateur JS global */}}
+{{/* CORRECTION : jsonify | safeJS → JSON propre, pas de double-encodage */}}
 {{ $widgetConfig := index .Site.Params.sidebar "quotes" }}
 {{ $allQuotes := .Site.Data.quotes }}
 
@@ -20,9 +21,9 @@
         {{ end }}
       </blockquote>
 
-      {{/* On injecte les données avec un ID standard */}}
+      {{/* On injecte les données avec un ID standard — JSON propre */}}
       <script id="rotator-data-roots" type="application/json">
-        {{ $allQuotes | jsonify }}
+        {{ $allQuotes | jsonify | safeJS }}
       </script>
     </div>
   </div>

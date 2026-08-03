@@ -1,0 +1,48 @@
+{{/*
+  faq-auto.html
+  Auto-renders FAQ from frontmatter .Params.faq
+  Usage: {{< faq-auto >}}
+  Règle d'or : interpolation inline, PAS de jsonify
+*/}}
+
+{{ if .Page.Params.faq }}
+
+{{/* === JSON-LD FAQPage Schema === */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $faq := .Page.Params.faq }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.answer | plainify }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+
+{{/* === Section FAQ visible === */}}
+<section class="faq-section faq-auto" id="faq" aria-label="Frequently Asked Questions">
+  <h2 class="faq-section-title">❓ Frequently Asked Questions</h2>
+  <div itemscope itemtype="https://schema.org/FAQPage">
+    {{ range .Page.Params.faq }}
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 class="faq-question" itemprop="name">{{ .question }}</h3>
+      <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          {{ .answer | markdownify }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

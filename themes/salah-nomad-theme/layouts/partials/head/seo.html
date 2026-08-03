@@ -1,34 +1,36 @@
-{{/* layouts/partials/head/seo.html - Version FINALE CORRIGÉE et complète */}}
+{{/* layouts/partials/head/seo.html — Version FINALE v4
+     CORRECTION v4 : dates conditionnées sur .PublishDate.IsZero / .Lastmod.IsZero
+     (sur la homepage, .Date = date du dernier article ≠ nulle, mais .PublishDate = nulle)
+*/}}
 
 {{- $page := . -}}
 {{- $site := .Site -}}
 {{- $isHomePage := .IsHome -}}
 {{- $isPage := .IsPage -}}
-{{- $isTerm := eq .Kind "term" -}}
-{{- $isTaxonomy := eq .Kind "taxonomy" -}}
 
-{{- /* --- Définition des variables SEO clés --- */}}
+{{- /* --- Variables SEO clés --- */}}
 {{- $pageTitle := "" -}}
 {{- $finalTitle := "" -}}
 {{- $description := .Description | default (.Summary | plainify | truncate 160) | default $site.Params.description -}}
 {{- $permalink := .Permalink -}}
 
-{{- /* 1. Logique de définition du Titre de la page (sans le nom du site) */}}
+{{- /* 1. Titre de la page (sans le nom du site) */}}
 {{- if .Params.seo_title -}}
   {{- $pageTitle = .Params.seo_title -}}
 {{- else -}}
   {{- $pageTitle = .Title -}}
 {{- end -}}
 
-{{- /* 2. Logique d'assemblage du Titre final pour la balise <title> */}}
+{{- /* 2. Titre final pour la balise <title> */}}
 {{- if $isHomePage -}}
   {{- $finalTitle = printf "%s | %s" $site.Title $site.Params.description -}}
+{{- else if .Params.seo_title -}}
+  {{- $finalTitle = $pageTitle -}}
 {{- else -}}
   {{- $finalTitle = printf "%s | %s" $pageTitle $site.Title -}}
 {{- end -}}
 
-
-{{- /* --- Variables Open Graph & Twitter --- */}}
+{{- /* --- Open Graph & Twitter --- */}}
 {{- $ogType := cond $isPage "article" "website" -}}
 {{- $ogImage := "" -}}
 {{- $ogImageAlt := .Params.featured_image_alt | default $pageTitle -}}
@@ -53,10 +55,6 @@
     {{- end -}}
 {{- end -}}
 
-{{- /* ======================================================================= */ -}}
-{{- /* =================== BALISES META STANDARD =================== */ -}}
-{{- /* ======================================================================= */ -}}
-
 <title>{{ $finalTitle | plainify }}</title>
 
 <meta name="description" content="{{ $description }}">
@@ -75,8 +73,12 @@
 <meta property="og:image:alt" content="{{ $ogImageAlt | plainify }}">
 {{- end }}
 {{- if $isPage }}
+{{- if not .PublishDate.IsZero }}
 <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- if not .Lastmod.IsZero }}
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
 {{- range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end -}}
 {{- end }}
 
@@ -88,12 +90,7 @@
 {{- with $site.Params.author.twitter }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
 {{- if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $ogImageAlt | plainify }}">{{ end }}
 
-{{- /* ======================================================================= */ -}}
-{{- /* ==================== JSON-LD STRUCTURÉ ======================= */ -}}
-{{- /* ======================================================================= */ -}}
-
-{{- /* On conserve la logique qui a résolu les problèmes de Google */ -}}
-
+{{- /* --- JSON-LD Article (pages singles uniquement) --- */}}
 {{- if $isPage -}}
 <script type="application/ld+json">
 {
@@ -102,14 +99,18 @@
   "headline": "{{ $pageTitle }}",
   "description": "{{ $description }}",
   "image": "{{ $ogImage }}",
+  {{- if not .PublishDate.IsZero }}
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end }}
+  {{- if not .Lastmod.IsZero }}
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end }}
   "author": {
     "@type": "Person",
     "name": "{{ $site.Params.author.name }}"
   },
   "publisher": {
-    "@type": "Organization", 
+    "@type": "Organization",
     "name": "{{ $site.Title }}",
     "logo": {
       "@type": "ImageObject",
@@ -142,8 +143,12 @@
       "url": "{{ $permalink }}",
       "name": "{{ $pageTitle }}",
       "isPartOf": {"@id": "{{ $site.BaseURL }}#website"},
+      {{- if not .PublishDate.IsZero }}
       "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+      {{- end }}
+      {{- if not .Lastmod.IsZero }}
       "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+      {{- end }}
       "description": "{{ $description }}"
     }
   ]

@@ -11,7 +11,7 @@
 @import 'header';
 @import 'footer';
 @import 'sidebar';
-@import 'hero-featured'; 
+@import 'hero-featured';
 @import 'layout/mobile-menu';
 @import 'layout/taxonomies';
 @import "components/cta-ebook.css";
@@ -32,6 +32,9 @@
 
 // NOUVEAU : Research Notes
 @import 'components/research-notes';
+
+// NOUVEAU : FAQ auto-rendered from frontmatter via {{< faq-auto >}}
+@import 'components/faq-auto';
 
 @import 'article-card';
 @import 'single';
@@ -54,9 +57,9 @@
 
 // Styles for section/term list headers
 .posts-list-header {
-  margin-top: 2rem; 
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .separator-above-title,
@@ -64,36 +67,36 @@
   border: 0;
   height: 1px;
   background-color: #ccc; // Adaptez cette couleur à votre palette
-  width: 60%; 
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .separator-above-title {
-  margin-bottom: 0.75rem; 
+  margin-bottom: 0.75rem;
 }
 
 .posts-list-title {
   // margin-top: 0.75rem; // Déjà géré par la marge du bas de separator-above-title
-  margin-bottom: 0.75rem; 
+  margin-bottom: 0.75rem;
   font-size: 1.8rem; // Adaptez si besoin
   // Ajoutez d'autres styles si nécessaire (font-weight, color, etc.)
 }
 
 // .separator-below-title n'a pas besoin de marge en haut si .posts-list-title a une marge en bas.
-// Vous pouvez ajuster ces marges pour l'espacement exact que vous souhaitez.
+// Vous pouvez ajuster les marges pour l'espacement exact que vous souhaitez.
 
-/* 
+/*
 ==============================================
 Custom Styles for Author Portrait in Book Pages
 ==============================================
 */
 .author-image-circle {
-  
+
   // Assure que l'image elle-même devient un cercle
   img {
     border-radius: 50%;
-    
+
     // Optionnel : Ajoutez une petite bordure pour un effet plus net et professionnel.
     // La couleur 'var(--border-color)' utilisera la couleur de bordure définie dans vos variables,
     // s'adaptant ainsi automatiquement au mode clair/sombre.
