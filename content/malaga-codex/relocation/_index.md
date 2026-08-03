@@ -2,7 +2,7 @@
 title: "Mediterranean Codex — Relocation Guides"
 description: "Field-tested relocation guides for rooted nomads moving to Southern Spain. Not tourist guides. Operational manuals forged in four years of mistakes."
 date: 2026-07-21
-lastmod: 2026-07-27
+lastmod: 2026-08-03
 layout: "hub"
 categories: ["malaga-codex"]
 tags: ["relocation", "mediterranean-codex", "verified"]
@@ -44,13 +44,18 @@ A 9:00 AM Alsa bus, a €25 ticket, and a range of limestone mountains that rewi
 
 👉 [Read the Seville story and get the Codex](/malaga-codex/relocation/seville-the-mountains-between-us-remember/)
 
+### 🇪🇸 Barcelona — The Threshold
+
+Barcelona never tried to keep me. A café on Plaça Catalunya, a Miró mosaic trodden by millions, a bowl of Ghassoul clay that dismantled impostor syndrome at the Fira, a ghost bus to Ksar El‑Kébir glowing on a Girona departures board, and Sants station as a cathedral of movement. Barcelona doesn't hold you — it teaches you how to hold yourself. Micro‑barrio maps, acoustic risk scores, bureaucratic sequencing that saves you three months and €2,400, and the diaspora networks where Darija and Catalan trade jokes.
+
+👉 [Read the Barcelona story and get the Codex](/malaga-codex/relocation/barcelona-the-threshold/)
+
 ---
 
 ### Coming Next
 
 The Mediterranean Codex is a living series. These are the anchors I'm mapping next:
 
-- **Barcelona** — The Tech Capital. Law 11/2025, the most competitive rental market in Spain, and the Catalan fiscal maze.
 - **Granada** — The Altitude Sanctuary. Why heating bills matter more than rent, and where to find fibre in a 1,000‑year‑old neighbourhood.
 - **Costa del Sol** — The Satellites. Seven towns, one coastline. Torremolinos to Tarifa.
 - **Madrid** — The Continental Chess Game. UGE processing, ZAS acoustic scores, and 47 verified contacts.
