@@ -1,6 +1,48 @@
 /* ==================================================
-   HUB PAGE — MEDITERRANEAN CODEX RELOCATION
+   HUB PAGE — BASE LAYOUT & MEDITERRANEAN CODEX
    ================================================== */
+
+/* ---------- BASE HUB LAYOUT ---------- */
+.hub-page-container {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hub-page-container.has-sidebar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hub-page-container.no-sidebar .hub-main-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hub-main-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+}
+
+body { overflow-x: hidden; }
+
+.hub-featured-image, 
+.article-card img, 
+.responsive-image { 
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 991px) {
+  .hub-page-container.has-sidebar { 
+    grid-template-columns: 1fr; 
+  }
+}
 
 /* ---------- TABLEAUX COMPARATIFS ---------- */
 .hub-content table {
@@ -308,6 +350,121 @@
   z-index: 1;
 }
 
+/* ---------- LATEST DISPATCHES (RELOCATION GRID) ---------- */
+.dispatches-grid {
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.dispatches-grid .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.dispatches-grid .section-label {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--color-text-main, #264653);
+  border-bottom: 2px solid var(--color-sunset-gold, #F4A261);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.dispatches-grid .grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.archipelago-card.dispatch-card {
+  background: var(--color-bg-main, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--color-border, #e0e0e0);
+}
+
+.archipelago-card.dispatch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.dispatch-card .card-tag {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #666);
+  background: var(--color-bg-secondary, #f9f9f9);
+  border-bottom: 1px solid var(--color-border, #eee);
+}
+
+.dispatch-thumbnail {
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+
+.dispatch-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.archipelago-card.dispatch-card:hover .dispatch-thumbnail img {
+  transform: scale(1.05);
+}
+
+.dispatch-card h3 {
+  padding: 1.25rem 1.25rem 0.5rem;
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.dispatch-card h3 a {
+  text-decoration: none;
+  color: var(--color-text-main, #264653);
+}
+
+.dispatch-card h3 a:hover {
+  color: var(--color-terracotta, #E76F51);
+}
+
+.dispatch-card p {
+  padding: 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted, #555);
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.dispatch-card .hub-btn.secondary {
+  margin: 1.25rem;
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--color-sunset-gold, #F4A261);
+  color: var(--color-sunset-gold, #F4A261);
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.dispatch-card .hub-btn.secondary:hover {
+  background: var(--color-sunset-gold, #F4A261);
+  color: #fff;
+}
+
 /* ---------- DARK MODE ---------- */
 @media (prefers-color-scheme: dark) {
   html[data-theme='dark'] {
@@ -348,6 +505,35 @@
     .bundles-subtitle,
     .bundles-note {
       color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Dark mode pour les Dispatch Cards */
+    .archipelago-card.dispatch-card {
+      background: var(--color-dark-charcoal, #264653);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .archipelago-card.dispatch-card:hover {
+      box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+    }
+
+    .dispatch-card .card-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .dispatch-card h3 a {
+      color: #fff;
+    }
+
+    .dispatch-card p {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .dispatches-grid .section-label {
+      color: #fff;
     }
   }
 }

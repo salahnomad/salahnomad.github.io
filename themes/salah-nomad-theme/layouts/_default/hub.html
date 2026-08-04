@@ -30,27 +30,45 @@
         {{ .Content }}
       </div>
 
-      {{/* GRILLE DES ARTICLES */}}
-      <section class="hub-spokes-section">
-        <div class="posts-list-header">
-          <hr class="separator-above-title">
-          <h2 class="posts-list-title">Deep Dive into {{ .Title }}</h2>
-          <hr class="separator-below-title">
-        </div>
-
+      {{/* ==================================================================== */}}
+      {{/* GRILLE DES ARTICLES : DYNAMIQUE POUR TOUTES LES SECTIONS/CATEGORIES  */}}
+      {{/* ==================================================================== */}}
+      
+      {{ if not (.Params.hide_auto_grid | default false) }}
         {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
         {{ if $pages }}
-          <div class="article-grid list-page-grid">
-            {{ range $pages }}
-              {{ partial "article-card.html" . }}
-            {{ end }}
-          </div>
+          <section class="dispatches-grid">
+            <div class="container">
+              <h2 class="section-label">📖 Field Journals: {{ .Title }}</h2>
+              <div class="grid-layout">
+                {{ range $pages }}
+                  {{ $thumb := "" }}
+                  {{ with .Resources.GetMatch .Params.featured_image }}
+                    {{ $thumb = .Fill "600x400 webp q85 Center" }}
+                  {{ end }}
+                  <div class="archipelago-card dispatch-card">
+                    <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
+                    <a href="{{ .RelPermalink }}" class="dispatch-thumbnail-link">
+                      {{ if $thumb }}
+                        <div class="dispatch-thumbnail">
+                          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+                        </div>
+                      {{ end }}
+                    </a>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description | default .Summary | truncate 120 }}</p>
+                    <a href="{{ .RelPermalink }}" class="hub-btn secondary">Read more →</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </section>
         {{ else }}
           <div class="no-content-message">
             <p>Articles for this collection are being crafted.</p>
           </div>
         {{ end }}
-      </section>
+      {{ end }}
 
       {{/* NAVIGATION CONTEXTUELLE */}}
       {{ $currentSection := .Section }}
@@ -97,67 +115,6 @@
     {{ partial "sidebar.html" . }}
   {{ end }}
 </div>
-
-{{/* ===== CSS CORRIGÉ : SIDEBAR EN GRILLE + ANTI-DÉBORDEMENT ===== */}}
-<style>
-/* --- Conteneur principal --- */
-.hub-page-container {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* --- Grille à 2 colonnes quand la sidebar est présente --- */
-.hub-page-container.has-sidebar {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 2rem;
-  align-items: start;
-}
-
-/* --- Quand il n'y a pas de sidebar, on centre le contenu --- */
-.hub-page-container.no-sidebar .hub-main-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* --- Le contenu principal doit pouvoir rétrécir (clé anti-débordement) --- */
-.hub-main-content {
-  min-width: 0;
-  overflow-wrap: break-word;
-  overflow-x: hidden;
-}
-
-/* --- Anti-débordement global --- */
-body {
-  overflow-x: hidden;
-}
-
-/* --- Images responsives --- */
-.hub-featured-image,
-.article-card img,
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* --- Les tableaux larges scrollent au lieu de faire déborder la page --- */
-.hub-content table {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* --- Responsive : la sidebar passe sous le contenu sur mobile/tablette --- */
-@media (max-width: 991px) {
-  .hub-page-container.has-sidebar {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 
 {{/* JSON-LD */}}
 <script type="application/ld+json">
