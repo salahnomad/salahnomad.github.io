@@ -1,0 +1,27 @@
+{{ $title := .Get "title" }}
+{{ $subtitle := .Get "subtitle" }}
+{{ $description := .Get "description" }}
+{{ $features := .Get "features" }}
+{{ $price := .Get "price" }}
+{{ $url := .Get "url" }}
+{{ $formats := .Get "formats" }}
+
+<div class="book-cta-card">
+  <div class="book-cta-icon">📚</div>
+  <h3 class="book-cta-title">{{ $title }}</h3>
+  <p class="book-cta-subtitle">{{ $subtitle }}</p>
+  <p class="book-cta-description">{{ $description }}</p>
+  {{ with $features }}
+  <ul class="book-cta-features">
+    {{ range split . "|" }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  <a href="{{ $url }}" class="book-cta-button" target="_blank" rel="noopener">
+    Get the Book — {{ $price }}
+  </a>
+  {{ with $formats }}
+  <p class="book-cta-formats">{{ . }}</p>
+  {{ end }}
+</div>
