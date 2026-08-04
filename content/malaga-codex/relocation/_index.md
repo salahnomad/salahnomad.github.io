@@ -3,7 +3,7 @@ title: "Mediterranean Codex — Relocation Guides"
 description: "Field-tested relocation guides for rooted nomads moving to Southern Spain. Seven cities, seven field manuals. Not tourist guides. Operational manuals forged in four years of mistakes."
 date: 2026-07-21
 lastmod: 2026-08-04
-layout: "hub"
+layout: "relocation-hub"
 categories: ["malaga-codex"]
 tags: ["relocation", "mediterranean-codex", "verified"]
 featured_image: "images/mediterranean-codex-hub.jpg"

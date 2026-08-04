@@ -1,27 +1,53 @@
-{{ $title := .Get "title" }}
-{{ $subtitle := .Get "subtitle" }}
-{{ $description := .Get "description" }}
-{{ $features := .Get "features" }}
-{{ $price := .Get "price" }}
-{{ $url := .Get "url" }}
-{{ $formats := .Get "formats" }}
+{{/*
+  Shortcode : book-cta
+  Utilise les paramètres nommés :
+  - title
+  - subtitle
+  - description
+  - features (séparées par "|")
+  - price
+  - url
+  - formats
+*/}}
 
-<div class="book-cta-card">
-  <div class="book-cta-icon">📚</div>
-  <h3 class="book-cta-title">{{ $title }}</h3>
-  <p class="book-cta-subtitle">{{ $subtitle }}</p>
-  <p class="book-cta-description">{{ $description }}</p>
-  {{ with $features }}
-  <ul class="book-cta-features">
-    {{ range split . "|" }}
-    <li>{{ . }}</li>
-    {{ end }}
-  </ul>
-  {{ end }}
-  <a href="{{ $url }}" class="book-cta-button" target="_blank" rel="noopener">
-    Get the Book — {{ $price }}
-  </a>
-  {{ with $formats }}
-  <p class="book-cta-formats">{{ . }}</p>
-  {{ end }}
+{{ $title       := .Get "title" }}
+{{ $subtitle    := .Get "subtitle" }}
+{{ $description := .Get "description" }}
+{{ $features    := .Get "features" }}       {{/* ex: "🌳 The Olive Grove Economy ...|🎨 The Mosaic Mindset ...|🧭 Sardine Navigation ..." */}}
+{{ $price       := .Get "price" }}
+{{ $url         := .Get "url" }}
+{{ $formats     := .Get "formats" }}
+
+{{ $featuresList := split $features "|" }}
+
+<div class="book-cta-box">
+  <div class="book-cta-content">
+    <div class="book-cta-text">
+      <h3 class="book-title">{{ $title | markdownify }}</h3>
+      {{ with $subtitle }}
+        <p class="book-subtitle">{{ . | markdownify }}</p>
+      {{ end }}
+      {{ with $description }}
+        <p class="book-description">{{ . | markdownify }}</p>
+      {{ end }}
+      {{ if gt (len $featuresList) 0 }}
+        <ul class="book-features">
+          {{ range $featuresList }}
+            {{ $feature := trim . " " }}
+            {{ if ne $feature "" }}
+              <li>{{ $feature | markdownify }}</li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ with $url }}
+        <a href="{{ . }}" class="book-cta-button" target="_blank" rel="noopener">
+          Get the Book — {{ $price }}
+        </a>
+      {{ end }}
+      {{ with $formats }}
+        <p class="book-formats">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
 </div>

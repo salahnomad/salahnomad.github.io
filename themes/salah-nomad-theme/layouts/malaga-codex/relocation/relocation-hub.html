@@ -1,0 +1,147 @@
+{{ define "main" }}
+{{ $showSidebarOnThisPage := .Site.Params.listPageSidebar | default true }}
+{{ if isset .Params "sidebar" }}{{ $showSidebarOnThisPage = .Params.sidebar }}{{ end }}
+
+<div class="hub-page-container relocation-hub {{ if $showSidebarOnThisPage }}has-sidebar{{ else }}no-sidebar{{ end }}">
+  <div class="hub-main-content">
+    <article class="hub-page">
+      <header class="hub-header">
+        {{ with .Params.featured_image }}
+          {{ $image := $.Resources.GetMatch . }}
+          {{ if $image }}
+            {{ $image = $image.Fill "1200x400 webp q85 Center" }}
+            <img src="{{ $image.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" class="hub-featured-image" loading="lazy">
+          {{ end }}
+        {{ end }}
+        {{ partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+        {{ with .Params.us_optimization.ia_short_answer }}
+        <div class="ia-short-answer-card hub-ia-card">
+          <div class="ia-icon">🤖</div>
+          <div class="ia-content">
+            <strong>In a nutshell:</strong> {{ . }}
+          </div>
+        </div>
+        {{ end }}
+      </header>
+
+      <div class="hub-content">
+        {{ .Content }}
+      </div>
+
+      {{ if not (.Params.hide_auto_grid | default false) }}
+        {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
+        {{ if $pages }}
+          <section class="dispatches-grid">
+            <div class="container">
+              <h2 class="section-label">📖 Field Journals: {{ .Title }}</h2>
+              <div class="grid-layout">
+                {{ range $pages }}
+                  {{ $thumb := "" }}
+                  {{ with .Resources.GetMatch .Params.featured_image }}
+                    {{ $thumb = .Fill "600x400 webp q85 Center" }}
+                  {{ end }}
+                  <div class="archipelago-card dispatch-card">
+                    <div class="card-tag">{{ .Date.Format "Jan 2, 2006" }}</div>
+                    <a href="{{ .RelPermalink }}" class="dispatch-thumbnail-link">
+                      {{ if $thumb }}
+                        <div class="dispatch-thumbnail">
+                          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+                        </div>
+                      {{ end }}
+                    </a>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description | default .Summary | truncate 120 }}</p>
+                    <a href="{{ .RelPermalink }}" class="hub-btn secondary">Read more →</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </section>
+        {{ else }}
+          <div class="no-content-message">
+            <p>Articles for this collection are being crafted.</p>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      {{/* NAVIGATION CONTEXTUELLE */}}
+      {{ $currentSection := .Section }}
+      {{ $sections := where (where .Site.Sections "Section" "!=" "") ".Params.headless" "ne" true }}
+      {{ $prev := "" }}{{ $next := "" }}
+
+      {{ range $i, $s := $sections }}
+        {{ if eq $s.Section $currentSection }}
+          {{ if gt $i 0 }}{{ $prev = index $sections (sub $i 1) }}{{ end }}
+          {{ if lt (add $i 1) (len $sections) }}{{ $next = index $sections (add $i 1) }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if or $prev $next }}
+        <nav class="hub-context-nav">
+          <h3>Explore Related Hubs</h3>
+          <div class="hub-nav-grid">
+            {{ with $prev }}
+            <a href="{{ .RelPermalink }}" class="hub-nav-card prev-hub">
+              <span class="nav-arrow">&larr;</span>
+              <div>
+                <span class="nav-label">Previous Hub</span>
+                <strong>{{ .Title }}</strong>
+              </div>
+            </a>
+            {{ else }}<div></div>{{ end }}
+
+            {{ with $next }}
+            <a href="{{ .RelPermalink }}" class="hub-nav-card next-hub">
+              <div>
+                <span class="nav-label">Next Hub</span>
+                <strong>{{ .Title }}</strong>
+              </div>
+              <span class="nav-arrow">&rarr;</span>
+            </a>
+            {{ end }}
+          </div>
+        </nav>
+      {{ end }}
+    </article>
+  </div>
+
+  {{ if $showSidebarOnThisPage }}
+    {{ partial "sidebar.html" . }}
+  {{ end }}
+</div>
+
+{{/* JSON-LD */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "url": "{{ .Permalink }}",
+  {{ with .Params.us_optimization.ia_short_answer }}
+  "abstract": "{{ . | safeJS }}",
+  {{ end }}
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ len .RegularPagesRecursive }},
+    "itemListElement": [
+      {{ range $index, $page := .RegularPagesRecursive.ByDate.Reverse }}
+      {
+        "@type": "ListItem",
+        "position": {{ add $index 1 }},
+        "item": {
+          "@type": "Article",
+          "url": "{{ $page.Permalink }}",
+          "name": "{{ $page.Title }}",
+          "description": "{{ $page.Description | safeJS }}",
+          "datePublished": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}"
+        }
+      }{{ if ne (add $index 1) (len $.RegularPagesRecursive) }},{{ end }}
+      {{ end }}
+    ]
+  }
+}
+</script>
+{{ end }}

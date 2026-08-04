@@ -3,8 +3,9 @@
 @import 'variables';
 @import 'dark-mode';
 @import 'base';
-// Nouvel import pour les hubs
-@import 'hub';
+@import 'hub';                // styles génériques des hubs
+@import 'relocation-hub';     // styles spécifiques à la page relocation
+// … reste du fichier
 
 // Layouts
 @import 'layout'; // Si vous avez un _layout.scss général pour la structure de la page
@@ -25,6 +26,7 @@
 @import 'components/challenge-box';
 @import 'components/figures';   // <-- AJOUTE CETTE LIGNE
 @import 'components/youtube';
+@import 'components/relocation-hub';
 // ...
 
 // AJOUTEZ CETTE LIGNE POUR LA NEWSLETTER
