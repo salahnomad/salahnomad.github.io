@@ -247,8 +247,6 @@ body { overflow-x: hidden; }
 }
 
 /* ---------- BOOK CTA GÉNÉRIQUE (fallback pour les autres pages) ---------- */
-/* Style de base pour la classe .book-cta-box, utilisée par le shortcode partout. */
-/* La page Relocation le personnalise dans _relocation-hub.scss */
 .book-cta-box {
   padding: 2rem;
   margin: 2.5rem 0;
@@ -341,19 +339,22 @@ body { overflow-x: hidden; }
 }
 
 /* =============================================
-   SECTION « LATEST DISPATCHES » – NOUVEAU STYLE
+   SECTION « LATEST DISPATCHES » – DESIGN OLIVE & OR MIEL
+   Appliqué à tous les hubs (.hub-page-container et .hub-container)
    ============================================= */
 
-.hub-page-container .dispatches-grid {
+.hub-page-container .dispatches-grid,
+.hub-container .dispatches-grid {
   padding: 4rem 0;
-  background-color: var(--color-background-alt, #f9f9f9);
+  background-color: var(--color-sidebar-widget-bg, #1D3C34);   // vert olive profond
+  border-radius: 12px;
 
   .section-label {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.8rem;
-    color: var(--color-text-accent, #E76F51);
+    font-size: 1.15rem;
+    color: #F7C35C;                                             // jaune miel
     margin-bottom: 2rem;
   }
 
@@ -364,26 +365,27 @@ body { overflow-x: hidden; }
   }
 
   .dispatch-card {
-    background: var(--color-background, #fff);
-    padding: 1.5rem;
+    background: var(--color-sidebar-widget-bg, #1D3C34);
+    border: 1px solid var(--color-sidebar-widget-border, rgba(254,250,224,0.2));
+    padding: 1.8rem;
     border-radius: 12px;
-    border: 1px solid var(--color-border-light, #e0e0e0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
+    color: var(--color-sidebar-widget-text, #FEFAE0);           // texte clair
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      border-color: var(--color-text-accent, #E76F51);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border-color: #F7C35C;
     }
 
     .card-tag {
       font-size: 0.7rem;
       font-weight: bold;
       text-transform: uppercase;
-      color: var(--color-text-secondary, #555);
-      opacity: 0.7;
+      color: rgba(254, 250, 224, 0.7);
+      opacity: 0.8;
       margin-bottom: 0.5rem;
     }
 
@@ -414,17 +416,17 @@ body { overflow-x: hidden; }
       margin: 0.5rem 0;
 
       a {
-        color: var(--color-text-headings, #264653);
+        color: #F7C35C;
         text-decoration: none;
 
         &:hover {
-          color: var(--color-text-accent, #E76F51);
+          color: lighten(#F7C35C, 12%);
         }
       }
     }
 
     p {
-      color: var(--color-text-secondary, #555);
+      color: rgba(254, 250, 224, 0.75);
       font-size: 0.9rem;
       margin-bottom: 1rem;
       line-height: 1.4;
@@ -433,6 +435,31 @@ body { overflow-x: hidden; }
     .hub-btn {
       align-self: flex-start;
       margin-top: auto;
+    }
+
+    // Bouton "Read more" secondaire dans la carte
+    .hub-btn.secondary {
+      display: inline-block;
+      margin-top: auto;
+      padding: 0.8rem 1.8rem;
+      background: transparent;
+      color: #F7C35C !important;
+      border: 2px solid #F7C35C !important;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+
+      &::after {
+        content: none !important;            // évite la double flèche
+      }
+
+      &:hover {
+        background: #F7C35C !important;
+        color: #1D3C34 !important;           // vert olive
+        transform: translateY(-2px);
+      }
     }
   }
 }

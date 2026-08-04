@@ -4,8 +4,6 @@
 @import 'dark-mode';
 @import 'base';
 @import 'hub';                // styles génériques des hubs
-@import 'relocation-hub';     // styles spécifiques à la page relocation
-// … reste du fichier
 
 // Layouts
 @import 'layout'; // Si vous avez un _layout.scss général pour la structure de la page
@@ -20,22 +18,18 @@
 // Import des composants shortcodes du Sprint 3
 @import 'components/glossary-links';
 @import 'components/testimonial-cards';
-// AJOUTEZ CETTE LIGNE
-@import 'components/payhip-embed'; // <-- Nouveau fichier
-// ... autres imports ...
+@import 'components/payhip-embed';
 @import 'components/challenge-box';
-@import 'components/figures';   // <-- AJOUTE CETTE LIGNE
+@import 'components/figures';
 @import 'components/youtube';
-@import 'components/relocation-hub';
-// ...
 
-// AJOUTEZ CETTE LIGNE POUR LA NEWSLETTER
-@import 'components/newsletter'; // <-- NOUVEAU COMPOSANT NEWSLETTER
+// Newsletter
+@import 'components/newsletter';
 
-// NOUVEAU : Research Notes
+// Research Notes
 @import 'components/research-notes';
 
-// NOUVEAU : FAQ auto-rendered from frontmatter via {{< faq-auto >}}
+// FAQ auto-rendered from frontmatter via {{< faq-auto >}}
 @import 'components/faq-auto';
 
 @import 'article-card';
@@ -43,7 +37,7 @@
 @import 'pagination';
 @import 'related-posts';
 @import 'pages/linktree';
-@import 'pages/contact'; // <-- AJOUTER CETTE LIGNE
+@import 'pages/contact';
 @import 'pages/start-here';
 @import 'pages/start-here-v2';
 @import 'pages/faq';
@@ -51,8 +45,8 @@
 @import 'pages/blueprint';
 @import 'pages/ia-optimized';
 @import 'shortcodes';
-@import 'ebook-library'; // <--- AJOUTEZ CETTE LIGNE
-@import 'components/widget-cta-quotes'; // <-- AJOUTER CETTE LIGNE
+@import 'ebook-library';
+@import 'components/widget-cta-quotes';
 
 @import 'components/malaga-codex-hub';
 @import 'responsive';
@@ -68,7 +62,7 @@
 .separator-below-title {
   border: 0;
   height: 1px;
-  background-color: #ccc; // Adaptez cette couleur à votre palette
+  background-color: #ccc;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -79,14 +73,9 @@
 }
 
 .posts-list-title {
-  // margin-top: 0.75rem; // Déjà géré par la marge du bas de separator-above-title
   margin-bottom: 0.75rem;
-  font-size: 1.8rem; // Adaptez si besoin
-  // Ajoutez d'autres styles si nécessaire (font-weight, color, etc.)
+  font-size: 1.8rem;
 }
-
-// .separator-below-title n'a pas besoin de marge en haut si .posts-list-title a une marge en bas.
-// Vous pouvez ajuster les marges pour l'espacement exact que vous souhaitez.
 
 /*
 ==============================================
@@ -94,17 +83,13 @@ Custom Styles for Author Portrait in Book Pages
 ==============================================
 */
 .author-image-circle {
-
   // Assure que l'image elle-même devient un cercle
   img {
     border-radius: 50%;
-
-    // Optionnel : Ajoutez une petite bordure pour un effet plus net et professionnel.
-    // La couleur 'var(--border-color)' utilisera la couleur de bordure définie dans vos variables,
-    // s'adaptant ainsi automatiquement au mode clair/sombre.
     border: 3px solid var(--border-color, #eee);
-
-    // Optionnel : Une ombre douce pour donner un peu de profondeur.
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
+
+// ========== IMPORT DU RELOCATION HUB (doit être le dernier) ==========
+@import 'components/relocation-hub';
